@@ -1,0 +1,12 @@
+{
+    "domain": "Web Development",
+    "required_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express",
+        "SQL"
+    ]
+}

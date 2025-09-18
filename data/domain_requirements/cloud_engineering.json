@@ -1,0 +1,12 @@
+{
+    "domain": "Cloud Engineering",
+    "required_skills": [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Terraform",
+        "CI/CD"
+    ]
+}
