@@ -1,0 +1,1 @@
+Template: High test score ({score}) and covers {matched}/{total} required skills. Missing {missing}. Projects: {projects}; Experience: {experience} years. Confidence: {confidence:.2f} → {label}.
