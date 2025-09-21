@@ -1,0 +1,45 @@
+{
+  "per_class_metrics": {
+    "Fit": {
+      "precision": 0.14285714285714285,
+      "recall": 0.25,
+      "f1": 0.18181818181818182,
+      "support": 4
+    },
+    "Not Fit": {
+      "precision": 0.47619047619047616,
+      "recall": 0.449438202247191,
+      "f1": 0.4624277456647399,
+      "support": 89
+    },
+    "Partial Fit": {
+      "precision": 0.7559808612440191,
+      "recall": 0.7632850241545893,
+      "f1": 0.7596153846153846,
+      "support": 207
+    }
+  },
+  "average_metrics": {
+    "macro": {
+      "precision": 0.4583428267638794,
+      "recall": 0.4875744088005935,
+      "f1": 0.46795377069943545
+    },
+    "weighted": {
+      "precision": 0.6648013974329763,
+      "recall": 0.6633333333333333,
+      "f1": 0.6637457556893973
+    }
+  },
+  "uncertainty_analysis": {
+    "threshold": 0.55,
+    "uncertain_count": 32,
+    "uncertain_percentage": 10.666666666666668,
+    "mean_confidence": 0.7422230839729309,
+    "std_confidence": 0.13663174211978912
+  },
+  "calibration_stats": {
+    "mean_max_probability": 0.7422230839729309,
+    "std_max_probability": 0.13663174211978912
+  }
+}
