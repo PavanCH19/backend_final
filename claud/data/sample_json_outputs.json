@@ -1,17 +1,17 @@
 [
   {
     "label": "Partial Fit",
-    "confidence": 0.645,
+    "confidence": 0.57,
     "matched_skills": [
-      "pytorch",
-      "numpy"
+      "numpy",
+      "pytorch"
     ],
     "missing_skills": [
-      "scikit-learn",
       "pandas",
-      "python",
+      "docker",
       "deep learning",
-      "docker"
+      "scikit-learn",
+      "python"
     ],
     "feature_summary": {
       "skill_match_ratio": 0.286,
@@ -20,27 +20,27 @@
       "project_count": 1,
       "test_score_raw": 74
     },
-    "explanation": "Good test score (74/100) and covers few required skills (2/7 matched), but lacks scikit-learn, pandas, python. Has 1 project and 13 years of solid experience. Model confidence: 0.65 \u2192 Partial Fit. Recommend gaining experience in scikit-learn, pandas.",
+    "explanation": "Good test score (74/100) and covers few required skills (2/7 matched), but lacks pandas, docker, deep learning. Has 1 project and 13 years of solid experience. Model confidence: 0.57 \u2192 Partial Fit. Recommend gaining experience in pandas, docker.",
     "metadata": {
       "domain": "Data Science",
       "candidate_id": "candidate_0001",
-      "classification_timestamp": "2025-09-21T10:57:25.053944",
+      "classification_timestamp": "2025-09-21T12:13:57.000219",
       "model_version": "1.0"
     }
   },
   {
     "label": "Partial Fit",
-    "confidence": 0.717,
+    "confidence": 0.7,
     "matched_skills": [
-      "node.js",
       "mongodb",
-      "express",
-      "javascript"
+      "javascript",
+      "node.js",
+      "express"
     ],
     "missing_skills": [
-      "html",
       "react",
-      "css"
+      "css",
+      "html"
     ],
     "feature_summary": {
       "skill_match_ratio": 0.571,
@@ -49,27 +49,27 @@
       "project_count": 1,
       "test_score_raw": 62
     },
-    "explanation": "Good test score (62/100) and covers some required skills (4/7 matched), but lacks html, react, css. Has 1 project and 26 years of solid experience. Model confidence: 0.72 \u2192 Partial Fit. Recommend gaining experience in html, react.",
+    "explanation": "Good test score (62/100) and covers some required skills (4/7 matched), but lacks react, css, html. Has 1 project and 26 years of solid experience. Model confidence: 0.70 \u2192 Partial Fit. Recommend gaining experience in react, css.",
     "metadata": {
       "domain": "Web Development",
       "candidate_id": "candidate_0002",
-      "classification_timestamp": "2025-09-21T10:57:25.171551",
+      "classification_timestamp": "2025-09-21T12:13:57.082798",
       "model_version": "1.0"
     }
   },
   {
-    "label": "Partial Fit",
-    "confidence": 0.542,
+    "label": "Not Fit",
+    "confidence": 0.537,
     "matched_skills": [
-      "deep learning",
       "pandas",
+      "deep learning",
       "docker"
     ],
     "missing_skills": [
+      "numpy",
       "pytorch",
-      "python",
       "scikit-learn",
-      "numpy"
+      "python"
     ],
     "feature_summary": {
       "skill_match_ratio": 0.429,
@@ -78,27 +78,27 @@
       "project_count": 2,
       "test_score_raw": 77
     },
-    "explanation": "High test score (77/100) and covers some required skills (3/7 matched), but lacks pytorch, python, scikit-learn. Has 2 projects and 16 years of solid experience. Model confidence: 0.54 \u2192 Partial Fit. Recommend gaining experience in pytorch, python.",
+    "explanation": "High test score (77/100) and covers some required skills (3/7 matched), but lacks numpy, pytorch, scikit-learn. Has 2 projects and 16 years of solid experience. Model confidence: 0.54 \u2192 Not Fit.",
     "metadata": {
       "domain": "Data Science",
       "candidate_id": "candidate_0003",
-      "classification_timestamp": "2025-09-21T10:57:25.328332",
+      "classification_timestamp": "2025-09-21T12:13:57.157797",
       "model_version": "1.0"
     }
   },
   {
     "label": "Partial Fit",
-    "confidence": 0.967,
+    "confidence": 0.899,
     "matched_skills": [
-      "swift",
       "ios",
-      "android",
-      "react native"
+      "react native",
+      "swift",
+      "android"
     ],
     "missing_skills": [
+      "java",
       "flutter",
-      "kotlin",
-      "java"
+      "kotlin"
     ],
     "feature_summary": {
       "skill_match_ratio": 0.571,
@@ -107,27 +107,27 @@
       "project_count": 3,
       "test_score_raw": 95
     },
-    "explanation": "Excellent test score (95/100) and covers some required skills (4/7 matched), but lacks flutter, kotlin, java. Has strong portfolio (3 projects) and 15 years of solid experience. Model confidence: 0.97 \u2192 Partial Fit. Recommend gaining experience in flutter, kotlin.",
+    "explanation": "Excellent test score (95/100) and covers some required skills (4/7 matched), but lacks java, flutter, kotlin. Has strong portfolio (3 projects) and 15 years of solid experience. Model confidence: 0.90 \u2192 Partial Fit. Recommend gaining experience in java, flutter.",
     "metadata": {
       "domain": "Mobile Development",
       "candidate_id": "candidate_0004",
-      "classification_timestamp": "2025-09-21T10:57:25.425133",
+      "classification_timestamp": "2025-09-21T12:13:57.240260",
       "model_version": "1.0"
     }
   },
   {
     "label": "Not Fit",
-    "confidence": 0.725,
+    "confidence": 0.566,
     "matched_skills": [
       "deep learning"
     ],
     "missing_skills": [
-      "scikit-learn",
-      "pytorch",
       "pandas",
+      "docker",
+      "pytorch",
       "numpy",
-      "python",
-      "docker"
+      "scikit-learn",
+      "python"
     ],
     "feature_summary": {
       "skill_match_ratio": 0.143,
@@ -136,11 +136,11 @@
       "project_count": 2,
       "test_score_raw": 60
     },
-    "explanation": "Good test score (60/100) and covers few required skills (1/7 matched), but lacks scikit-learn, pytorch, pandas. Has 2 projects and 13 years of solid experience. Model confidence: 0.72 \u2192 Not Fit.",
+    "explanation": "Good test score (60/100) and covers few required skills (1/7 matched), but lacks pandas, docker, pytorch. Has 2 projects and 13 years of solid experience. Model confidence: 0.57 \u2192 Not Fit.",
     "metadata": {
       "domain": "Data Science",
       "candidate_id": "candidate_0005",
-      "classification_timestamp": "2025-09-21T10:57:25.548224",
+      "classification_timestamp": "2025-09-21T12:13:57.318141",
       "model_version": "1.0"
     }
   }
