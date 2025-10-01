@@ -1,0 +1,17 @@
+{
+  "label_to_idx": {
+    "Fit": 0,
+    "Not Fit": 1,
+    "Partial Fit": 2
+  },
+  "idx_to_label": {
+    "0": "Fit",
+    "1": "Not Fit",
+    "2": "Partial Fit"
+  },
+  "unique_labels": [
+    "Fit",
+    "Not Fit",
+    "Partial Fit"
+  ]
+}

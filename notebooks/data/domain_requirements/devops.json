@@ -1,0 +1,12 @@
+{
+  "domain": "DevOps",
+  "required_skills": [
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "Jenkins",
+    "Terraform",
+    "Linux",
+    "CI/CD"
+  ]
+}

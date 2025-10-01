@@ -1,0 +1,108 @@
+[
+  {
+    "label": "Not Fit",
+    "confidence": 0.905,
+    "matched_skills": [],
+    "missing_skills": [
+      "numpy",
+      "deep learning",
+      "pytorch",
+      "scikit-learn",
+      "docker",
+      "pandas",
+      "python"
+    ],
+    "feature_summary": {
+      "skill_match_ratio": 0.0,
+      "years_experience": 0,
+      "test_score_norm": 0.45,
+      "project_count": 1,
+      "test_score_raw": 45
+    },
+    "explanation": "Low test score (45/100) and covers few required skills (0/7 matched), but lacks numpy, deep learning, pytorch. Has 1 project and limited professional experience. Model confidence: 0.91 \u2192 Not Fit. Consider applying for Web Development roles (28% skill match with 2/7 required skills).",
+    "metadata": {
+      "domain": "Data Science",
+      "candidate_id": "candidate_1248",
+      "classification_timestamp": "2025-10-01T22:12:13.422293",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "Web Development",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "css",
+          "html"
+        ],
+        "key_missing_skills": [
+          "express",
+          "react",
+          "mongodb"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Mobile Development",
+        "skill_match_ratio": 0.0,
+        "matched_skills_count": 0,
+        "required_skills_count": 7,
+        "matched_skills": [],
+        "key_missing_skills": [
+          "kotlin",
+          "react native",
+          "java"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.0,
+        "matched_skills_count": 0,
+        "required_skills_count": 7,
+        "matched_skills": [],
+        "key_missing_skills": [
+          "ci/cd",
+          "terraform",
+          "linux"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Fit",
+    "confidence": 0.79,
+    "matched_skills": [
+      "deep learning",
+      "pytorch",
+      "scikit-learn",
+      "docker",
+      "pandas"
+    ],
+    "missing_skills": [
+      "numpy",
+      "python"
+    ],
+    "feature_summary": {
+      "skill_match_ratio": 0.714,
+      "years_experience": 0,
+      "test_score_norm": 0.97,
+      "project_count": 1,
+      "test_score_raw": 97
+    },
+    "explanation": "Excellent test score (97/100) and covers many required skills (5/7 matched), but lacks numpy, python. Has 1 project and limited professional experience. Model confidence: 0.79 \u2192 Fit.",
+    "metadata": {
+      "domain": "Data Science",
+      "candidate_id": "candidate_1246",
+      "classification_timestamp": "2025-10-01T22:12:13.647381",
+      "model_version": "1.0"
+    }
+  },
+  {
+    "error": "Classification failed: No requirements found for domain Data Analytics",
+    "candidate_id": "candidate_1247",
+    "timestamp": "2025-10-01T22:12:13.647381"
+  }
+]
