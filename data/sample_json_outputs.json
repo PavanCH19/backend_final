@@ -1,12 +1,12 @@
 [
   {
     "label": "Fit",
-    "confidence": 0.844,
+    "confidence": 0.557,
     "matched_skills": [
-      "pytorch",
-      "scikit-learn",
-      "deep learning",
       "docker",
+      "pytorch",
+      "deep learning",
+      "scikit-learn",
       "pandas"
     ],
     "missing_skills": [
@@ -16,17 +16,63 @@
     "feature_summary": {
       "skill_match_ratio": 0.714,
       "years_experience": 8,
-      "test_score_norm": 0.97,
+      "test_score_norm": 0.8,
       "project_count": 1,
-      "test_score_raw": 97
+      "test_score_raw": 80
     },
-    "explanation": "Excellent test score (97/100) and covers many required skills (5/7 matched), but lacks python, numpy. Has 1 project and 8 years of solid experience. Model confidence: 0.84 \u2192 Fit.",
+    "explanation": "High test score (80/100) and covers many required skills (5/7 matched), but lacks python, numpy. Has 1 project and 8 years of solid experience. Model confidence: 0.56 \u2192 Fit.",
     "metadata": {
       "domain": "Data Science",
       "candidate_id": "candidate_1246",
-      "classification_timestamp": "2025-10-03T15:54:17.758762",
+      "classification_timestamp": "2025-10-04T22:29:36.661746",
       "model_version": "1.0"
-    }
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "docker",
+          "ci/cd"
+        ],
+        "key_missing_skills": [
+          "kubernetes",
+          "terraform",
+          "aws"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Web Development",
+        "skill_match_ratio": 0.143,
+        "matched_skills_count": 1,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "node.js"
+        ],
+        "key_missing_skills": [
+          "react",
+          "javascript",
+          "html"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Mobile Development",
+        "skill_match_ratio": 0.0,
+        "matched_skills_count": 0,
+        "required_skills_count": 7,
+        "matched_skills": [],
+        "key_missing_skills": [
+          "swift",
+          "android",
+          "react native"
+        ]
+      }
+    ]
   },
   {
     "label": "Partial Fit",
@@ -35,11 +81,11 @@
       "python"
     ],
     "missing_skills": [
-      "numpy",
-      "pytorch",
-      "scikit-learn",
-      "deep learning",
       "docker",
+      "pytorch",
+      "numpy",
+      "deep learning",
+      "scikit-learn",
       "pandas"
     ],
     "feature_summary": {
@@ -49,11 +95,11 @@
       "project_count": 1,
       "test_score_raw": 72
     },
-    "explanation": "Good test score (72/100) and covers few required skills (1/7 matched), but lacks numpy, pytorch, scikit-learn. Has 1 project and 3 years of solid experience. Model confidence: 0.90 \u2192 Partial Fit. Recommend gaining experience in numpy, pytorch. Consider applying for Cybersecurity roles (14% skill match with 1/7 required skills).",
+    "explanation": "Good test score (72/100) and covers few required skills (1/7 matched), but lacks docker, pytorch, numpy. Has 1 project and 3 years of solid experience. Model confidence: 0.90 \u2192 Partial Fit. Recommend gaining experience in docker, pytorch. Consider applying for Cybersecurity roles (14% skill match with 1/7 required skills).",
     "metadata": {
       "domain": "Data Science",
       "candidate_id": "candidate_1247",
-      "classification_timestamp": "2025-10-03T15:54:17.811775",
+      "classification_timestamp": "2025-10-04T22:29:36.732141",
       "model_version": "1.0"
     },
     "alternative_domain_suggestions": [
@@ -67,9 +113,9 @@
           "python"
         ],
         "key_missing_skills": [
+          "cissp",
           "risk assessment",
-          "firewall",
-          "encryption"
+          "firewall"
         ]
       },
       {
@@ -80,9 +126,9 @@
         "required_skills_count": 7,
         "matched_skills": [],
         "key_missing_skills": [
-          "node.js",
+          "react",
           "javascript",
-          "mongodb"
+          "html"
         ]
       },
       {
@@ -93,9 +139,9 @@
         "required_skills_count": 7,
         "matched_skills": [],
         "key_missing_skills": [
-          "java",
-          "kotlin",
-          "android"
+          "swift",
+          "android",
+          "react native"
         ]
       }
     ]

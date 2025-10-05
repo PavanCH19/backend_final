@@ -124,7 +124,7 @@ class ResumeClassificationPipeline:
         )
         
         alternative_domains = None
-        if label in ["Partial Fit", "Not Fit"]:
+        if label in ["Partial Fit", "Not Fit", "Fit"]:
             alternative_domains = self._format_alternative_domains(
                 resume_features.get('alternative_domains', []), precision
             )
@@ -340,7 +340,7 @@ def get_sample_resumes():
                       "Node.js", "Pandas", "Scikit-learn"],
             "projects": ["Customer Churn Prediction"],
             "work_experience": [{"title": "Data Scientist", "years": 8}],
-            "test_score": 97,
+            "test_score": 80,
             "preferred_domain": "Data Science",
             "id": "candidate_1246"
         },
