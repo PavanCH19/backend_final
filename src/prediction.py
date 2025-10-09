@@ -336,21 +336,75 @@ def load_classification_pipeline():
 def get_sample_resumes():
     return [
         {
-            "skills": ["CI/CD", "PyTorch", "Deep Learning", "Docker", "R", 
-                      "Node.js", "Pandas", "Scikit-learn"],
-            "projects": ["Customer Churn Prediction"],
-            "work_experience": [{"title": "Data Scientist", "years": 8}],
-            "test_score": 80,
-            "preferred_domain": "Data Science",
-            "id": "candidate_1246"
+            "skills": [
+                "JavaScript", "React", "Node.js", "HTML", "CSS", "MongoDB", "Express",
+                "Python", "SQL", "Docker", "AWS", "CI/CD", "Kubernetes", "Terraform",
+                "Penetration Testing", "Network Security"
+            ],
+            "projects": ["Social Media Platform", "E-commerce Website", "CI/CD Pipeline Setup"],
+            "work_experience": [
+                {"title": "Full Stack Developer", "years": 5},
+                {"title": "DevOps Engineer", "years": 2}
+            ],
+            "test_score": 78,
+            "preferred_domain": "Web Development",
+            "id": "candidate_1250"
         },
         {
-            "skills": ["Python", "Machine Learning", "SQL", "Tableau"],
-            "projects": ["Sales Forecasting"],
-            "work_experience": [{"title": "Data Analyst", "years": 3}],
-            "test_score": 72,
-            "preferred_domain": "Data Science",
-            "id": "candidate_1247"
+            "skills": [
+                "Flutter", "Kotlin", "Java", "React Native", "Swift", "iOS", "Android",
+                "Python", "SQL", "Docker", "React.js", "Tailwind CSS", "AWS", "Terraform"
+            ],
+            "projects": ["Mobile Banking App", "Fitness Tracker", "Expense Tracker"],
+            "work_experience": [
+                {"title": "Mobile Developer", "years": 4},
+                {"title": "Data Analyst", "years": 1}
+            ],
+            "test_score": 82,
+            "preferred_domain": "Mobile Development",
+            "id": "candidate_1251"
+        },
+        {
+            "skills": [
+                "Docker", "Kubernetes", "AWS", "Jenkins", "Terraform", "Linux", "CI/CD",
+                "Python", "React.js", "Node.js", "SQL", "Flutter", "Penetration Testing"
+            ],
+            "projects": ["Infrastructure as Code", "Automated Deployment", "Monitoring Dashboard"],
+            "work_experience": [
+                {"title": "DevOps Engineer", "years": 6},
+                {"title": "Full Stack Developer", "years": 2}
+            ],
+            "test_score": 85,
+            "preferred_domain": "DevOps",
+            "id": "candidate_1252"
+        },
+        {
+            "skills": [
+                "Network Security", "Penetration Testing", "CISSP", "Firewall", "Encryption",
+                "Python", "Docker", "AWS", "React.js", "SQL", "Kubernetes"
+            ],
+            "projects": ["Vulnerability Assessment", "Incident Response Plan", "Security Information Dashboard"],
+            "work_experience": [
+                {"title": "Cybersecurity Engineer", "years": 5},
+                {"title": "DevOps Engineer", "years": 1}
+            ],
+            "test_score": 79,
+            "preferred_domain": "Cybersecurity",
+            "id": "candidate_1253"
+        },
+        {
+            "skills": [
+                "JavaScript", "Vue.js", "HTML", "CSS", "Node.js", "Express", "React",
+                "Docker", "Python", "AWS", "Kubernetes", "Flutter", "Penetration Testing"
+            ],
+            "projects": ["Task Management App", "E-commerce Website", "Mobile Inventory App"],
+            "work_experience": [
+                {"title": "Frontend Developer", "years": 3},
+                {"title": "Mobile Developer", "years": 2}
+            ],
+            "test_score": 76,
+            "preferred_domain": "Web Development",
+            "id": "candidate_1254"
         }
     ]
 
@@ -376,7 +430,12 @@ def main():
         output_file=DATA_DIR / 'sample_json_outputs.json'
     )
     
-    print(f"\nExample output:\n{json.dumps(results[0], indent=2)}")
+    print("\nExample output of all resumes:\n")
+    for i, resume in enumerate(results, start=1):
+        print(f"Resume {i}:")
+        print(json.dumps(resume, indent=2))
+        print("-" * 80)  # separator between resumes
+    
     print("\n✓ Step 10 Complete - Pipeline ready for production use")
     
     return classification_pipeline, results

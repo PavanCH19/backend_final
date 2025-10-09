@@ -1,6 +1,6 @@
 {
-  "skill_branch_dim": 78,
+  "skill_branch_dim": 128,
   "numeric_branch_dim": 4,
   "text_branch_dim": 128,
-  "final_vector_dim": 210
+  "final_vector_dim": 260
 }

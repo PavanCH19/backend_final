@@ -4,78 +4,7 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
-
-def get_domain_requirements():
-    """Define and return domain requirements for different job categories"""
-    return {
-        "data_science": {
-            "domain": "Data Science",
-            "required_skills": ["Python", "Pandas", "NumPy", "Scikit-learn", "PyTorch", "Docker", "Deep Learning"]
-        },
-        "web_development": {
-            "domain": "Web Development", 
-            "required_skills": ["JavaScript", "React", "Node.js", "HTML", "CSS", "MongoDB", "Express"]
-        },
-        "mobile_development": {
-            "domain": "Mobile Development",
-            "required_skills": ["Java", "Kotlin", "Swift", "React Native", "Flutter", "iOS", "Android"]
-        },
-        "devops": {
-            "domain": "DevOps",
-            "required_skills": ["Docker", "Kubernetes", "AWS", "Jenkins", "Terraform", "Linux", "CI/CD"]
-        },
-        "cybersecurity": {
-            "domain": "Cybersecurity",
-            "required_skills": ["Network Security", "Penetration Testing", "CISSP", "Firewall", "Encryption", "Python", "Risk Assessment"]
-        }
-    }
-
-
-def get_skill_pools():
-    """Return comprehensive skill pools for each domain"""
-    return {
-        "data_science": ["Python", "R", "SQL", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch", 
-                        "Matplotlib", "Seaborn", "Jupyter", "Docker", "Deep Learning", "Machine Learning", 
-                        "Statistics", "Data Visualization", "Big Data", "Spark", "Hadoop"],
-        "web_dev": ["JavaScript", "React", "Vue.js", "Angular", "Node.js", "Express", "HTML", "CSS", 
-                   "MongoDB", "PostgreSQL", "MySQL", "Redis", "GraphQL", "REST API", "TypeScript", 
-                   "Webpack", "Git", "Bootstrap", "Sass"],
-        "mobile": ["Java", "Kotlin", "Swift", "React Native", "Flutter", "Dart", "iOS", "Android", 
-                  "Xcode", "Android Studio", "Firebase", "SQLite", "Core Data", "UIKit", "SwiftUI"],
-        "devops": ["Docker", "Kubernetes", "AWS", "Azure", "GCP", "Jenkins", "Terraform", "Ansible", 
-                  "Linux", "Bash", "Python", "CI/CD", "Git", "Monitoring", "Nagios", "Prometheus"],
-        "security": ["Network Security", "Penetration Testing", "CISSP", "CEH", "Firewall", "Encryption", 
-                    "Python", "Wireshark", "Metasploit", "Nmap", "Risk Assessment", "Compliance", "SIEM"]
-    }
-
-
-def get_project_templates():
-    """Return project templates for each domain"""
-    return {
-        "data_science": ["Customer Churn Prediction", "Sales Forecasting Model", "Recommendation System", 
-                        "Fraud Detection Algorithm", "Image Classification", "Natural Language Processing"],
-        "web_dev": ["E-commerce Website", "Social Media Platform", "Portfolio Website", "Blog Platform", 
-                   "Task Management App", "Real-time Chat Application"],
-        "mobile": ["Weather App", "Fitness Tracker", "Food Delivery App", "Social Media App", 
-                  "Game Application", "Banking App"],
-        "devops": ["CI/CD Pipeline Setup", "Infrastructure as Code", "Container Orchestration", 
-                  "Monitoring Dashboard", "Automated Deployment", "Cloud Migration"],
-        "security": ["Vulnerability Assessment", "Security Audit", "Network Monitoring System", 
-                    "Incident Response Plan", "Security Training Program", "Compliance Framework"]
-    }
-
-
-def get_job_titles():
-    """Return job titles for each domain"""
-    return {
-        "data_science": ["Data Scientist", "ML Engineer", "Data Analyst", "Research Scientist"],
-        "web_dev": ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Web Developer"],
-        "mobile": ["iOS Developer", "Android Developer", "Mobile Developer", "App Developer"],
-        "devops": ["DevOps Engineer", "Site Reliability Engineer", "Cloud Engineer", "Infrastructure Engineer"],
-        "security": ["Security Analyst", "Cybersecurity Engineer", "Security Consultant", "SOC Analyst"]
-    }
-
+from .data_config import get_domain_requirements, get_skill_pools, get_project_templates, get_job_titles
 
 def get_skill_key_mapping():
     """Return mapping between domain names and skill pool keys"""
