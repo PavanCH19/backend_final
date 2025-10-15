@@ -59,6 +59,30 @@ app.post('/api/resume/classify', async (req, res) => {
     }
 });
 
+app.post('/api/another_model/predict', async (req, res) => {
+    try {
+        const inputData = req.body;
+        if (!inputData || Object.keys(inputData).length === 0) {
+            return res.status(400).json({
+                success: false,
+                error: 'Input data is required'
+            });
+        }
+        const result = await executePythonModel(
+            MODEL_CONFIGS.another_model,
+            'predict_function', // replace with actual function name
+            inputData,
+            60000 // 60 second timeout
+        );
+        res.json(result);
+    } catch (error) {
+        console.error('Another model prediction error:', error);
+        res.status(500).json(error);
+    }
+});
+
+
+
 // ============================================
 // START SERVER
 // ============================================
