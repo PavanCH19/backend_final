@@ -1,0 +1,7 @@
+{
+  "use_text_branch": true,
+  "skill_vocab_size": 127,
+  "numeric_dim": 8,
+  "text_dim": 128,
+  "num_classes": 3
+}

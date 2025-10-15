@@ -1,0 +1,34 @@
+{
+  "model_name": "resume_classifier",
+  "version": "1.0",
+  "created_date": "2025-10-15T21:40:14.454736",
+  "model_architecture": "hybrid_neural_network",
+  "input_features": {
+    "skill_vocabulary_size": 127,
+    "numeric_features": 4,
+    "text_features": 128,
+    "total_features": 263
+  },
+  "output_classes": [
+    "Fit",
+    "Not Fit",
+    "Partial Fit"
+  ],
+  "training_samples": 1400,
+  "validation_samples": 300,
+  "test_samples": 300,
+  "test_accuracy": 0.8399999737739563,
+  "test_loss": 0.35216617584228516,
+  "f1_macro": 0.8336974653485836,
+  "f1_weighted": 0.837919955183752,
+  "artifacts": {
+    "model_weights": "models/resume_classifier_complete.keras",
+    "savedmodel": "models/resume_classifier_savedmodel/",
+    "feature_scaler": "artifacts/feature_scaler.pkl",
+    "skill_vocabulary": "artifacts/skill_vocabulary.json",
+    "label_encoder": "artifacts/label_encoder.pkl",
+    "feature_builder": "artifacts/feature_vector_builder.pkl",
+    "domain_requirements": "artifacts/domain_requirements.json",
+    "explanation_config": "artifacts/explanation_config.json"
+  }
+}
