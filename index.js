@@ -29,7 +29,6 @@ const MODEL_CONFIGS = {
 
 const { executePythonModel } = require('./utils/pythonConnector');
 
-
 // ============================================
 // RESUME CLASSIFIER ENDPOINTS
 // ============================================
