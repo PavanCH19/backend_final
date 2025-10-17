@@ -7,7 +7,7 @@ const fileUpload = require("express-fileupload");
 router.use(fileUpload());
 
 // POST /resume upload route
-router.post("/resume", async (req, res) => {
+router.post("/upload-resume", async (req, res) => {
     const pdfFile = req.files?.resumeFile;
     const result = await processResume(pdfFile);
     res.status(result.status).json(result);

@@ -5,6 +5,7 @@ const app = express();
 const dotenv = require('dotenv');
 const dbConnect = require('./utils/dbConnect');
 const authRoutes = require('./routes/authRoute');
+const setupRoutes = require('./routes/setupRoute');
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
@@ -15,6 +16,7 @@ dotenv.config();
 dbConnect();
 //routes
 app.use('/api/auth', authRoutes);
+app.use('/api/setup', setupRoutes);
 
 // ============================================
 // MODEL CONFIGURATIONS
@@ -35,6 +37,7 @@ const MODEL_CONFIGS = {
 };
 
 const { executePythonModel } = require('./utils/pythonConnector');
+const { set } = require('./mail/smtp_config');
 
 // ============================================
 // RESUME CLASSIFIER ENDPOINTS

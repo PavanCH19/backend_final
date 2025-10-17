@@ -1,36 +1,37 @@
-const pdf = require("pdf-parse");
+const { PDFParse } = require("pdf-parse");
 const fs = require("fs");
 const path = require("path");
 
 const processResume = async (pdfFile) => {
-    const {}
   try {
-    if (!pdfFile) {
-      return { status: 400, message: "No PDF file uploaded" };
-    }
+    if (!pdfFile) return { status: 400, message: "No PDF file uploaded" };
 
-    // Save PDF temporarily
-    const uploadPath = path.join(__dirname, "../uploads", pdfFile.name);
+    const uploadDir = path.join(__dirname, "../uploads");
+    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir);
+
+    const uploadPath = path.join(uploadDir, pdfFile.name);
     await pdfFile.mv(uploadPath);
 
-    // Read PDF into buffer
     const dataBuffer = fs.readFileSync(uploadPath);
+    const parser = new PDFParse({ data: dataBuffer });
 
-    // Parse PDF
-    const data = await pdf(dataBuffer);
+    // Get text content
+    const textResult = await parser.getText();
 
-    // Extract email using regex
-    const emailMatch = data.text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}/);
-    const email = emailMatch ? emailMatch[0] : null;
+    // Get metadata and document info
+    const infoResult = await parser.getInfo();
 
-    // Delete the file after processing
     fs.unlinkSync(uploadPath);
+    await parser.destroy();
 
     return {
       status: 200,
       message: "PDF processed successfully",
-      text: data.text,
-      email: email
+      fullText: textResult.text,
+      numPages: infoResult.total,
+      metadata: infoResult.info,
+      dates: infoResult.getDateNode(),
+      pageInfo: infoResult.pages
     };
   } catch (error) {
     console.error("Error processing PDF:", error);
@@ -38,6 +39,4 @@ const processResume = async (pdfFile) => {
   }
 };
 
-module.exports = {
-  processResume
-};
+module.exports = { processResume };
