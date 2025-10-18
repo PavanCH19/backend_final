@@ -1,6 +1,7 @@
 const { PDFParse } = require("pdf-parse");
 const fs = require("fs");
 const path = require("path");
+const { text } = require("body-parser");
 
 const processResume = async (pdfFile) => {
   try {
@@ -23,15 +24,11 @@ const processResume = async (pdfFile) => {
 
     fs.unlinkSync(uploadPath);
     await parser.destroy();
-
+    console.log("PDF Info:", textResult.text);
     return {
       status: 200,
       message: "PDF processed successfully",
-      fullText: textResult.text,
-      numPages: infoResult.total,
-      metadata: infoResult.info,
-      dates: infoResult.getDateNode(),
-      pageInfo: infoResult.pages
+      fullText: textResult.text
     };
   } catch (error) {
     console.error("Error processing PDF:", error);
