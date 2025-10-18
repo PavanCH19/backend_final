@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require("bcryptjs");
 const env = require('dotenv');
 env.config();
-const User = require('../modules/user'); // Adjust the path to your User schema
+const User = require('../modules/userSchema'); // Adjust the path to your User schema
 
 
 // In-memory storage for OTP (use Redis or DB in production)
