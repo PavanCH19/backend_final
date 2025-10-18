@@ -1,7 +1,7 @@
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../modules/user");
+const User = require("../modules/userSchema");
 const dotenv = require("dotenv");
 
 dotenv.config(); // Load environment variables
@@ -73,14 +73,31 @@ const loginUser = async (data) => {
 const getUserDetails = async (data) => {
     const { email } = data;
     try {
-        // Fetch user details excluding the password
         const user = await User.findOne({ email }).select("-password");
-        return { status: 200, user };
+
+        if (!user) {
+            return { status: 404, msg: "User not found" };
+        }
+
+        const userDetails = {
+            profile: {
+                name: user.name,
+                email: user.email,
+                phone: user.phone,
+                location: user.location,
+            },
+            skills: user.skills,
+            education: user.education,
+            experience: user.experience,
+        };
+
+        return { status: 200, user: userDetails };
     } catch (error) {
         console.error("Error fetching user:", error);
         return { status: 500, msg: "Server error" };
     }
 };
+
 
 // =====================================
 // Controller: Update User Details
