@@ -133,84 +133,63 @@ const requestPasswordReset = async (data) => {
     }
 };
 
-// OTP Verification Endpoint
-const verifyOTP = (data) => {
-    let { email, otp } = data;
-    otp = Number(otp);
-    console.log(email, otp, otpStore[email])
 
-    if (otpStore[email]) {
-        const storedOtp = otpStore[email].otp;
-        const timestamp = otpStore[email].timestamp;
-        console.log(storedOtp === otp, storedOtp, otp)
+// Combined OTP verification + password reset
+const verifyAndReset = async (req, res) => {
+    try {
+        const { email, otp, newPassword } = req.body;
 
-        // Check if OTP matches
-        if (storedOtp === otp) {
-            const currentTime = Date.now();
-            const timeDifference = currentTime - timestamp;  // Calculate time difference
-            const otpValidityDuration = 10 * 60 * 1000; // 10 minutes in milliseconds
-
-            // Check if OTP is within the 10-minute window
-            if (timeDifference <= otpValidityDuration) {
-                // OTP is valid
-                delete otpStore[email];  // Remove OTP after verification
-                return { status: 200, msg: 'OTP verified. Proceed to reset password.' };
-            } else {
-                // OTP expired
-                return { status: 400, msg: 'OTP expired. Please request a new one.' };
-            }
-        } else {
-            // Invalid OTP
-            return { status: 400, msg: 'Invalid OTP.' };
+        // 1️⃣ Validate request
+        if (!email || !otp || !newPassword) {
+            return res.status(400).json({
+                status: 400,
+                message: "Email, OTP, and new password are required"
+            });
         }
-    } else {
-        return { status: 400, msg: 'OTP not found. Please request a new one.' };
+
+        // 2️⃣ Find user
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({
+                status: 404,
+                message: "User not found"
+            });
+        }
+
+        // 3️⃣ Verify OTP
+        if (!user.otp || user.otp !== otp) {
+            return res.status(400).json({
+                status: 400,
+                message: "Invalid or expired OTP"
+            });
+        }
+
+        // 4️⃣ Hash new password
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+        // 5️⃣ Update password & clear OTP
+        user.password = hashedPassword;
+        user.otp = undefined; // clear OTP after successful reset
+        await user.save();
+
+        // 6️⃣ Respond success
+        return res.status(200).json({
+            status: 200,
+            message: "OTP verified and password reset successfully"
+        });
+
+    } catch (error) {
+        console.error("Error in verifyAndReset:", error);
+        return res.status(500).json({
+            status: 500,
+            message: "Internal server error",
+            error: error.message
+        });
     }
 };
 
 
-// JWT Token Verification Endpoint (for Password Reset)
-const resetPassword = async (req, res) => {
-    const { token, newPassword } = req.body;
-
-    jwt.verify(token, process.env.JWT_SECRET, async (err, decoded) => {
-        if (err) {
-            return res.status(400).send({ msg: 'Invalid or expired token.' });
-        }
-
-        const { email } = decoded;
-
-        if (resetTokenStore[email] !== token) {
-            return res.status(400).send({ msg: 'Invalid reset request.' });
-        }
-
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(newPassword, salt);
-
-        try {
-            // 🔐 Update the password in MongoDB (Hash it if needed)
-            const result = await User.findOneAndUpdate(
-                { email },
-                { $set: { password: hashedPassword } }, // You should hash this!
-                { new: true }
-            );
-
-            if (!result) {
-                return res.status(404).send({ msg: 'User not found.' });
-            }
-
-            delete resetTokenStore[email];
-
-            res.status(200).send({ msg: 'Password successfully reset.' });
-        } catch (error) {
-            console.error(error);
-            res.status(500).send({ msg: 'Error updating password in database.' });
-        }
-    });
-};
-
 module.exports = {
     requestPasswordReset,
-    verifyOTP,
-    resetPassword
+    verifyAndReset
 }
