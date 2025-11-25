@@ -26,7 +26,7 @@ app.use('/api/interview', interviewRoutes);
 
 
 
-const { set } = require('./mail/smtp_config');
+// const { set } = require('./mail/smtp_config');
 
 // ============================================
 // RESUME CLASSIFIER ENDPOINTS

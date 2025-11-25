@@ -1,2 +1,5 @@
 node_modules
 .env
+venv
+
+/python_models/fine_tune/skill_ner_model
