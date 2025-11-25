@@ -198,7 +198,7 @@ const updateUserDetails = async (req) => {
                 }
             }
         };
-        console.log(updateData)
+        console.log('======================================================',updateData)
         updateFields(user, updateData);
 
         const updatedUser = await user.save();

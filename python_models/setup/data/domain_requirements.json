@@ -60,7 +60,7 @@
     ]
   },
   "ai_ml": {
-    "domain": "Ai Ml",
+    "domain": "Artificial Intelligence & Machine Learning",
     "required_skills": [
       "Python",
       "TensorFlow",
