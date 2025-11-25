@@ -1,0 +1,395 @@
+[
+  {
+    "label": "Fit",
+    "confidence": 0.999,
+    "matched_skills": [
+      "mongodb",
+      "javascript",
+      "express",
+      "node.js",
+      "react",
+      "html",
+      "css"
+    ],
+    "missing_skills": [],
+    "feature_summary": {
+      "skill_match_ratio": 1.0,
+      "years_experience": 7,
+      "test_score_norm": 0.78,
+      "project_count": 3,
+      "test_score_raw": 78
+    },
+    "explanation": "High test score (78/100) and covers most required skills (7/7 matched). Has strong portfolio (3 projects) and 7 years of solid experience. Model confidence: 1.00 \u2192 Fit.",
+    "metadata": {
+      "domain": "Web Development",
+      "candidate_id": "candidate_1250",
+      "classification_timestamp": "2025-10-15T19:47:48.613958",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.714,
+        "matched_skills_count": 5,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "ci/cd",
+          "terraform",
+          "docker",
+          "kubernetes",
+          "aws"
+        ],
+        "key_missing_skills": [
+          "jenkins",
+          "linux"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Cybersecurity",
+        "skill_match_ratio": 0.429,
+        "matched_skills_count": 3,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "penetration testing",
+          "python",
+          "network security"
+        ],
+        "key_missing_skills": [
+          "risk assessment",
+          "cissp",
+          "encryption"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Data Science",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "scikit-learn",
+          "deep learning",
+          "pandas"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Fit",
+    "confidence": 0.923,
+    "matched_skills": [
+      "react native",
+      "java",
+      "kotlin",
+      "ios",
+      "flutter",
+      "android",
+      "swift"
+    ],
+    "missing_skills": [],
+    "feature_summary": {
+      "skill_match_ratio": 1.0,
+      "years_experience": 5,
+      "test_score_norm": 0.82,
+      "project_count": 3,
+      "test_score_raw": 82
+    },
+    "explanation": "High test score (82/100) and covers most required skills (7/7 matched). Has strong portfolio (3 projects) and 5 years of solid experience. Model confidence: 0.92 \u2192 Fit.",
+    "metadata": {
+      "domain": "Mobile Development",
+      "candidate_id": "candidate_1251",
+      "classification_timestamp": "2025-10-15T19:47:48.695960",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.429,
+        "matched_skills_count": 3,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "aws",
+          "terraform",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "ci/cd",
+          "jenkins",
+          "kubernetes"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Data Science",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "scikit-learn",
+          "deep learning",
+          "pandas"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Cybersecurity",
+        "skill_match_ratio": 0.143,
+        "matched_skills_count": 1,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python"
+        ],
+        "key_missing_skills": [
+          "risk assessment",
+          "firewall",
+          "penetration testing"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Fit",
+    "confidence": 0.995,
+    "matched_skills": [
+      "ci/cd",
+      "terraform",
+      "docker",
+      "kubernetes",
+      "jenkins",
+      "aws",
+      "linux"
+    ],
+    "missing_skills": [],
+    "feature_summary": {
+      "skill_match_ratio": 1.0,
+      "years_experience": 8,
+      "test_score_norm": 0.85,
+      "project_count": 3,
+      "test_score_raw": 85
+    },
+    "explanation": "Excellent test score (85/100) and covers most required skills (7/7 matched). Has strong portfolio (3 projects) and 8 years of solid experience. Model confidence: 0.99 \u2192 Fit.",
+    "metadata": {
+      "domain": "DevOps",
+      "candidate_id": "candidate_1252",
+      "classification_timestamp": "2025-10-15T19:47:48.763102",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "Data Science",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "scikit-learn",
+          "deep learning",
+          "pandas"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Cybersecurity",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "penetration testing",
+          "python"
+        ],
+        "key_missing_skills": [
+          "risk assessment",
+          "firewall",
+          "cissp"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Web Development",
+        "skill_match_ratio": 0.143,
+        "matched_skills_count": 1,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "node.js"
+        ],
+        "key_missing_skills": [
+          "mongodb",
+          "javascript",
+          "express"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Fit",
+    "confidence": 0.888,
+    "matched_skills": [
+      "firewall",
+      "penetration testing",
+      "cissp",
+      "encryption",
+      "network security",
+      "python"
+    ],
+    "missing_skills": [
+      "risk assessment"
+    ],
+    "feature_summary": {
+      "skill_match_ratio": 0.857,
+      "years_experience": 6,
+      "test_score_norm": 0.79,
+      "project_count": 3,
+      "test_score_raw": 79
+    },
+    "explanation": "High test score (79/100) and covers most required skills (6/7 matched), but lacks risk assessment. Has strong portfolio (3 projects) and 6 years of solid experience. Model confidence: 0.89 \u2192 Fit.",
+    "metadata": {
+      "domain": "Cybersecurity",
+      "candidate_id": "candidate_1253",
+      "classification_timestamp": "2025-10-15T19:47:48.832512",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.429,
+        "matched_skills_count": 3,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "docker",
+          "aws",
+          "kubernetes"
+        ],
+        "key_missing_skills": [
+          "ci/cd",
+          "jenkins",
+          "terraform"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Data Science",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "scikit-learn",
+          "deep learning",
+          "pandas"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Web Development",
+        "skill_match_ratio": 0.0,
+        "matched_skills_count": 0,
+        "required_skills_count": 7,
+        "matched_skills": [],
+        "key_missing_skills": [
+          "mongodb",
+          "javascript",
+          "express"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Fit",
+    "confidence": 0.923,
+    "matched_skills": [
+      "javascript",
+      "express",
+      "node.js",
+      "react",
+      "html",
+      "css"
+    ],
+    "missing_skills": [
+      "mongodb"
+    ],
+    "feature_summary": {
+      "skill_match_ratio": 0.857,
+      "years_experience": 5,
+      "test_score_norm": 0.76,
+      "project_count": 3,
+      "test_score_raw": 76
+    },
+    "explanation": "High test score (76/100) and covers most required skills (6/7 matched), but lacks mongodb. Has strong portfolio (3 projects) and 5 years of solid experience. Model confidence: 0.92 \u2192 Fit.",
+    "metadata": {
+      "domain": "Web Development",
+      "candidate_id": "candidate_1254",
+      "classification_timestamp": "2025-10-15T19:47:48.902517",
+      "model_version": "1.0"
+    },
+    "alternative_domain_suggestions": [
+      {
+        "rank": 1,
+        "domain": "DevOps",
+        "skill_match_ratio": 0.429,
+        "matched_skills_count": 3,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "docker",
+          "aws",
+          "kubernetes"
+        ],
+        "key_missing_skills": [
+          "ci/cd",
+          "jenkins",
+          "terraform"
+        ]
+      },
+      {
+        "rank": 2,
+        "domain": "Data Science",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "python",
+          "docker"
+        ],
+        "key_missing_skills": [
+          "scikit-learn",
+          "deep learning",
+          "pandas"
+        ]
+      },
+      {
+        "rank": 3,
+        "domain": "Cybersecurity",
+        "skill_match_ratio": 0.286,
+        "matched_skills_count": 2,
+        "required_skills_count": 7,
+        "matched_skills": [
+          "penetration testing",
+          "python"
+        ],
+        "key_missing_skills": [
+          "risk assessment",
+          "firewall",
+          "cissp"
+        ]
+      }
+    ]
+  }
+]

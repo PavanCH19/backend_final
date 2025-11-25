@@ -1,0 +1,146 @@
+{
+  "data_science": {
+    "domain": "Data Science",
+    "required_skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "PyTorch",
+      "Docker",
+      "Deep Learning"
+    ]
+  },
+  "web_development": {
+    "domain": "Web Development",
+    "required_skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "Express"
+    ]
+  },
+  "mobile_development": {
+    "domain": "Mobile Development",
+    "required_skills": [
+      "Java",
+      "Kotlin",
+      "Swift",
+      "React Native",
+      "Flutter",
+      "iOS",
+      "Android"
+    ]
+  },
+  "devops": {
+    "domain": "DevOps",
+    "required_skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Jenkins",
+      "Terraform",
+      "Linux",
+      "CI/CD"
+    ]
+  },
+  "cybersecurity": {
+    "domain": "Cybersecurity",
+    "required_skills": [
+      "Network Security",
+      "Penetration Testing",
+      "CISSP",
+      "Firewall",
+      "Encryption",
+      "Python",
+      "Risk Assessment"
+    ]
+  },
+  "ai_ml": {
+    "domain": "Ai Ml",
+    "required_skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision"
+    ]
+  },
+  "cloud_computing": {
+    "domain": "Cloud Computing",
+    "required_skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Cloud Security"
+    ]
+  },
+  "blockchain": {
+    "domain": "Blockchain Development",
+    "required_skills": [
+      "Solidity",
+      "Ethereum",
+      "Smart Contracts",
+      "Web3.js",
+      "Truffle",
+      "Blockchain Architecture",
+      "Cryptography"
+    ]
+  },
+  "game_development": {
+    "domain": "Game Development",
+    "required_skills": [
+      "Unity",
+      "Unreal Engine",
+      "C#",
+      "C++",
+      "Game Physics",
+      "3D Modeling",
+      "Shader Programming"
+    ]
+  },
+  "embedded_systems": {
+    "domain": "Embedded Systems",
+    "required_skills": [
+      "C",
+      "C++",
+      "Microcontrollers",
+      "RTOS",
+      "IoT",
+      "Sensors",
+      "PCB Design"
+    ]
+  },
+  "ar_vr": {
+    "domain": "AR/VR Development",
+    "required_skills": [
+      "Unity",
+      "Unreal Engine",
+      "C#",
+      "Blender",
+      "3D Modeling",
+      "XR Interaction Toolkit",
+      "Oculus SDK"
+    ]
+  },
+  "ui_ux_design": {
+    "domain": "UI/UX Design",
+    "required_skills": [
+      "Figma",
+      "Adobe XD",
+      "Wireframing",
+      "Prototyping",
+      "User Research",
+      "Design Systems",
+      "Accessibility"
+    ]
+  }
+}
