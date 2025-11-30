@@ -102,12 +102,12 @@ def main(input_json):
     return mock_session_recommendations(input_json, k=5)
 
 
-user = {
-        "_id": "user_001",
-        "skills": ['java', 'nlp', 'tensorflow', 'data-structures'],
-        "target_domain": "ai_ml"
-    }
+# user = {
+#         "_id": "user_001",
+#         "skills": ['java', 'nlp', 'tensorflow', 'data-structures'],
+#         "target_domain": "ai_ml"
+#     }
     
-mock_result = mock_session_recommendations(user, k=5)
-print(json.dumps(mock_result, indent=2))
-print()
+# mock_result = mock_session_recommendations(user, k=5)
+# print(json.dumps(mock_result, indent=2))
+# print()
