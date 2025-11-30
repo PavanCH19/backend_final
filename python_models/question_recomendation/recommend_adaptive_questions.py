@@ -439,11 +439,16 @@ def recommend_adaptive_questions(domain_key, session_summary, questions_db, alre
     # -------------------------
     # RANKING & SELECTION
     # -------------------------
-    # Shuffle to add randomness for ties
-    random.shuffle(scored_questions)
-    
-    # Sort by total score (descending)
-    ranked_questions = sorted(scored_questions, key=lambda x: x["total_score"], reverse=True)
+    # === Smart Randomized Ranking (recommended) ===
+    ranked_questions = sorted(
+        scored_questions,
+        key=lambda x: (
+            x["total_score"] * 0.85   # 85% real relevance
+            + random.random() * 0.15  # 15% exploration randomness
+        ),
+        reverse=True
+    )
+
     
     # Select top-k ensuring type diversity
     selected = []
@@ -647,7 +652,7 @@ recommendations = recommend_adaptive_questions(
     session_summary=session_summary,
     questions_db=questions_db,
     already_asked_ids=already_asked_ids,
-    k=5
+    k=3
 )
 
 print("\n📦 MongoDB Document (Adaptive Recommendations):")
