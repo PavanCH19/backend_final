@@ -10,6 +10,38 @@ const SkillAnalysisSchema = new Schema({
     }
 }, { _id: false });
 
+// NEW: Detailed Summary Schema for storing comprehensive analysis
+const DetailedSummarySchema = new Schema({
+    session_stats: {
+        total_questions: Number,
+        questions_answered: Number,
+        mcq_attempted: Number,
+        subjective_attempted: Number,
+        voice_attempted: Number,
+        coding_attempted: Number,
+        overall_average: Number,
+        grade_distribution: Schema.Types.Mixed
+    },
+    recommendations: {
+        focus_skills: [String],
+        strong_skills: [String],
+        suggested_difficulty: String,
+        areas_to_improve: [String],
+        next_steps: [String]
+    },
+    voice_insights: {
+        confidence_score: Number,
+        clarity_score: Number,
+        speech_ratio: Number,
+        words_per_minute: Number,
+        recommendations: [String]
+    },
+    detailed_feedback: {
+        strengths: [String],
+        areas_needing_work: [String]
+    }
+}, { _id: false });
+
 const InterviewSessionSchema = new Schema({
     session_id: { type: String },  // optional unique session identifier
     domain: { type: String, required: true },
@@ -20,7 +52,8 @@ const InterviewSessionSchema = new Schema({
             "first_time",
             "adaptive_recommendation",
             "mixed_level",
-            "resume_session"
+            "resume_session",
+            "completed_session"  // Added for fallback cases
         ],
         default: "first_time"
     },
@@ -40,6 +73,9 @@ const InterviewSessionSchema = new Schema({
     score: { type: Number, default: null },
     accuracy: { type: Number, default: null },
 
+    // 🔥 NEW: Store complete detailed summary from Python analysis
+    detailed_summary: DetailedSummarySchema,
+
     // Session lifecycle
     startedAt: { type: Date, default: Date.now },
     completedAt: { type: Date, default: null },
@@ -57,9 +93,9 @@ const UserSchema = new Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     date: { type: Date, default: Date.now },
-    setupCompleted : {
-        type : Boolean,
-        default : false
+    setupCompleted: {
+        type: Boolean,
+        default: false
     },
 
     // Profile

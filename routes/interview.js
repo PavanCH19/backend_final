@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const fetchUser = require("../middleware/fetchUser");
-const { startInterview, submitTestController } = require("../controllers/interviewController");
+const { startInterview, submitTestController,
+    getSessiondata
+} = require("../controllers/interviewController");
 const fileUpload = require("express-fileupload");
 
 
@@ -14,6 +16,8 @@ router.use(
     })
 );
 
-router.post("/submit-test", submitTestController);
+router.post("/submit-test", fetchUser, submitTestController);
+
+router.post('/recent-sessions', fetchUser, getSessiondata);
 
 module.exports = router;
