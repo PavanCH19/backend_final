@@ -315,30 +315,35 @@ const submitTestController = async (req, res) => {
         const files = req.files || {};
         const results = [];
 
-        for (const [qid, userAnswer] of Object.entries(answers)) {
+        // Merge keys from answers JSON and uploaded files to ensure we catch all submissions
+        const allQids = new Set([...Object.keys(answers || {}), ...Object.keys(files)]);
+
+        for (const qid of allQids) {
+            const userAnswer = answers[qid] || ""; // Valid answer or empty string if only file
 
             // Use helper to look up question from loaded domain questions
             const question = domainQuestions[qid];
 
             if (!question) {
-                results.push({ qid, status: "error", reason: "Question not found in domain" });
+                // If it's a file for a non-existent question or irrelevant key, we can skip or log
+                // results.push({ qid, status: "error", reason: "Question not found in domain" });
                 continue;
             }
 
             let evaluationResult;
+            const qType = question.question_type;
 
             // -----------------------------------------
             // MCQ – normal JS evaluation
             // -----------------------------------------
-            // Handle both keys just in case
-            if (question.question_type === "mcq" || question.question_type === "multiple-choice") {
+            if (qType === "mcq" || qType === "multiple-choice") {
                 evaluationResult = evaluateMCQ(question, userAnswer);
             }
 
             // -----------------------------------------
             // SUBJECTIVE & CODING – call Python text evaluator
             // -----------------------------------------
-            if (question.question_type === "subjective" || question.question_type === "coding") {
+            else if (qType === "subjective" || qType === "coding") {
                 const payload = {
                     question: question,
                     user_answer: userAnswer
@@ -355,7 +360,7 @@ const submitTestController = async (req, res) => {
             // -----------------------------------------
             // VOICE – Comprehensive Voice Analysis + Text Evaluation
             // -----------------------------------------
-            if (question.question_type === "voice") {
+            else if (qType === "voice") {
                 // Check uploaded files first, then fallback to local path in answer (for testing)
                 let tempFilePath = null;
 
@@ -384,9 +389,9 @@ const submitTestController = async (req, res) => {
 
                 // 2. Text Evaluation (if transcript exists)
                 let textResult = null;
-                const transcript = voiceResult.transcription?.transcript;
+                const transcript = voiceResult.result?.transcription?.transcript || voiceResult.transcription?.transcript;
 
-                if (transcript && transcript.length > 0 && voiceResult.transcription.confidence !== "none") {
+                if (transcript && transcript.length > 0 && voiceResult.result?.transcription?.confidence !== "none") {
                     const textPayload = {
                         question: question,
                         user_answer: transcript
@@ -399,17 +404,17 @@ const submitTestController = async (req, res) => {
                     );
                 }
 
-                // 3. Merge Results
+                // 3. Merge Results (handle wrapper if needed)
                 evaluationResult = {
-                    voice_analysis: voiceResult,
-                    text_evaluation: textResult
+                    voice_analysis: voiceResult.result || voiceResult,
+                    text_evaluation: textResult ? (textResult.result || textResult) : null
                 };
             }
 
             // Final result aggregation
             results.push({
                 qid,
-                question_type: question.question_type,
+                question_type: qType,
                 evaluation: evaluationResult,
             });
         }
