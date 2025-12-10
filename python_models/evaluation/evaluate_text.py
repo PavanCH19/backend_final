@@ -620,5 +620,32 @@ def run_comprehensive_test():
     print("Results saved to: evaluation_results_production.json")
     print("="*80)
 
+
+# ============================================================
+# NODE.JS BRIDGE ENTRY POINT
+# ============================================================
+def evaluate_text(data):
+    """
+    Entry point for Node.js bridge.
+    Expected data format:
+    {
+        "question": { ... question dict from JSON ... },
+        "user_answer": "string answer"
+    }
+    """
+    try:
+        question = data.get("question")
+        user_answer = data.get("user_answer")
+
+        if not question or not user_answer:
+            return {"error": "Missing question or user_answer"}
+
+        # Use the existing single-question evaluation logic
+        result = evaluate_question_from_json(question, user_answer)
+        return result
+
+    except Exception as e:
+        return {"error": str(e), "traceback": str(e)}
+
 if __name__ == "__main__":
     run_comprehensive_test()
