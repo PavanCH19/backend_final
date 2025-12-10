@@ -1,5 +1,4 @@
 import json
-
 import os
 
 def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_dir, session_number=1):
@@ -36,7 +35,7 @@ def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_
             return None
     else:
         print(f"[ERROR] Domain file not found: {domain_file}")
-        return None
+        # Continue with empty DB, will fallback to 'General' topic
     
     # Create question lookup dictionary
     questions_map = {q["_id"]: q for q in questions_db}
@@ -178,7 +177,7 @@ def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_
                 })
 
     # -------------------------------
-    # COMPREHENSIVE SKILL ANALYSIS (Reused Logic)
+    # COMPREHENSIVE SKILL ANALYSIS 
     # -------------------------------
     skill_details = {}
     for skill, scores in skill_scores.items():
@@ -221,15 +220,12 @@ def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_
     # -------------------------------
     # OVERALL SESSION STATISTICS
     # -------------------------------
-    # -------------------------------
-    # OVERALL SESSION STATISTICS
-    # -------------------------------
     metadata = evaluation_json.get("metadata", {})
     all_scores = [item["score"] for item in formatted_answers]
     overall_avg = sum(all_scores) / len(all_scores) if all_scores else 0
     
     # -------------------------------
-    # DETAILED FEEDBACK ANALYSIS (Gather from sub/coding/voice)
+    # DETAILED FEEDBACK ANALYSIS
     # -------------------------------
     areas_needing_work = []
     strengths_found = []
@@ -282,9 +278,6 @@ def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_
             "recommended_practice": "Complete 3-5 more questions on this skill"
         })
     
-    # -------------------------------
-    # VOICE ANALYSIS INSIGHTS (if available)
-    # -------------------------------
     # -------------------------------
     # VOICE ANALYSIS INSIGHTS (Aggregated)
     # -------------------------------
@@ -359,13 +352,8 @@ def build_user_summary_from_answers(user_id, domain, evaluation_json, questions_
     print(f"Focus Areas: {recommendations['focus_skills']}")
     print(f"Suggested Difficulty: {recommendations['suggested_difficulty']}\n")
     
-    return result 
-    
+    return result
 
-
-# -------------------------
-# EXAMPLE USAGE WITH YOUR ACTUAL DATA
-# -------------------------
 
 # ============================================================
 # NODE.JS BRIDGE ENTRY POINT
@@ -381,256 +369,41 @@ def process_user_summary(data):
     }
     """
     try:
-        user_id = data.get("user_id")
+        user_id = data.get("user_id", "anonymous_user")
         domain = data.get("domain")
-        evaluation_json = data.get("evaluation_json")
+        evaluation_json = data.get("evaluation_json", data) # Fallback if passed directly
         questions_dir = data.get("questions_dir")
+        
+        # Attempt to infer questions_dir if not provided (relative to script)
+        if not questions_dir:
+             questions_dir = os.path.join(os.path.dirname(__file__), "domains")
 
-        if not all([user_id, domain, evaluation_json, questions_dir]):
-            return {"error": "Missing required fields"}
+        if not domain:
+            return {"error": "Missing domain field"}
+            
+        # If the input data IS the evaluation_json (common in direct calls), adapt
+        if "results" in data and "evaluation_json" not in data:
+            evaluation_json = data
 
         result = build_user_summary_from_answers(user_id, domain, evaluation_json, questions_dir)
         return result
 
     except Exception as e:
-        return {"error": str(e), "traceback": str(e)}
+        import traceback
+        return {"error": str(e), "traceback": traceback.format_exc()}
 
 if __name__ == "__main__":
-    # Test data (Optional: for local debugging)
-    data = {
-    "type": "success",
-    "domain": "ai_ml",
-    "message": "Test submitted successfully",
-    "results": [
-        {
-            "qid": "q_ai_0035",
-            "question_type": "coding",
-            "evaluation": {
-                "success": True,
-                "result": {
-                    "question_id": "q_ai_0035",
-                    "question_text": "Write a Python function that takes a NumPy array and normalizes it using Min-Max scaling to the range [0, 1].",
-                    "score": 0,
-                    "grade": "F",
-                    "performance_summary": {
-                        "key_concepts": "0/3 covered (0.0%)",
-                        "examples": "0/0 provided (0.0%)",
-                        "word_count": "6/0 words",
-                        "criteria_score": "0.0%"
-                    },
-                    "detailed_feedback": {
-                        "overall_assessment": "Your answer needs significant improvement. Review the missing content below.",
-                        "strengths": [
-                            "✓ Adequate answer length (6 words)"
-                        ],
-                        "areas_for_improvement": [
-                            {
-                                "area": "Missing Key Concepts",
-                                "count": 3,
-                                "details": [
-                                    {
-                                        "point": "Min-Max formula: (x - min) / (max - min)",
-                                        "importance": "Required",
-                                        "suggestion": "Include this key concept in your answer"
-                                    },
-                                    {
-                                        "point": "Handle edge case of constant array",
-                                        "importance": "Required",
-                                        "suggestion": "Include this key concept in your answer"
-                                    },
-                                    {
-                                        "point": "Use NumPy operations for efficiency",
-                                        "importance": "Required",
-                                        "suggestion": "Include this key concept in your answer"
-                                    }
-                                ]
-                            },
-                            {
-                                "area": "Evaluation Criteria",
-                                "count": 3,
-                                "details": [
-                                    {
-                                        "criterion": "Correctness",
-                                        "feedback": "Overall performance on this criterion",
-                                        "current_score": 0
-                                    },
-                                    {
-                                        "criterion": "Code Quality",
-                                        "feedback": "Overall performance on this criterion",
-                                        "current_score": 0
-                                    },
-                                    {
-                                        "criterion": "Edge Cases",
-                                        "feedback": "Overall performance on this criterion",
-                                        "current_score": 0
-                                    }
-                                ]
-                            }
-                        ],
-                        "what_was_covered": [],
-                        "what_to_add": {
-                            "missing_concepts": [
-                                {
-                                    "point": "Min-Max formula: (x - min) / (max - min)",
-                                    "importance": "Required",
-                                    "suggestion": "Include this key concept in your answer"
-                                },
-                                {
-                                    "point": "Handle edge case of constant array",
-                                    "importance": "Required",
-                                    "suggestion": "Include this key concept in your answer"
-                                },
-                                {
-                                    "point": "Use NumPy operations for efficiency",
-                                    "importance": "Required",
-                                    "suggestion": "Include this key concept in your answer"
-                                }
-                            ],
-                            "partially_covered": [],
-                            "missing_examples": []
-                        }
-                    },
-                    "criteria_performance": [
-                        {
-                            "criterion": "Correctness",
-                            "score": 0,
-                            "weight": 0.5,
-                            "weighted_score": 0,
-                            "feedback": "Overall performance on this criterion"
-                        },
-                        {
-                            "criterion": "Code Quality",
-                            "score": 0,
-                            "weight": 0.25,
-                            "weighted_score": 0,
-                            "feedback": "Overall performance on this criterion"
-                        },
-                        {
-                            "criterion": "Edge Cases",
-                            "score": 0,
-                            "weight": 0.25,
-                            "weighted_score": 0,
-                            "feedback": "Overall performance on this criterion"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "qid": "q_ai_0001",
-            "question_type": "multiple-choice",
-            "evaluation": {
-                "correct": True,
-                "score": 10,
-                "expected_answer": "Data with labeled output/target variables",
-                "user_answer": "Data with labeled output/target variables"
-            }
-        },
-        {
-            "qid": "q_ai_0023",
-            "question_type": "multiple-choice",
-            "evaluation": {
-                "correct": False,
-                "score": 0,
-                "expected_answer": "To tune hyperparameters and prevent overfitting during training.",
-                "user_answer": "To calculate the final, unbiased performance metric."
-            }
-        },
-        {
-            "qid": "q_ai_0033",
-            "question_type": "voice",
-            "evaluation": {
-                "voice_analysis": {
-                    "success": True,
-                    "result": {
-                        "silence_metrics": {
-                            "silence_ratio_percent": 54.2,
-                            "speech_ratio_percent": 45.79999999999999,
-                            "silence_time_seconds": 5.420000000000001,
-                            "normal_speech_time_seconds": 3.54,
-                            "low_volume_speech_time_seconds": 1.0399999999999991,
-                            "total_speech_time_seconds": 4.579999999999999,
-                            "total_duration_seconds": 10,
-                            "silence_segment_count": 7,
-                            "normal_speech_segment_count": 26,
-                            "low_volume_segment_count": 13
-                        },
-                        "speech_rate": {
-                            "estimated_syllables": 50,
-                            "estimated_words": 29.411764705882355,
-                            "words_per_minute_estimated": 385.30696121243267,
-                            "words_per_second_estimated": 6.421782686873878,
-                            "speaking_time_seconds": 4.579999999999999,
-                            "actual_word_count": 13,
-                            "words_per_minute_actual": 170.30567685589523,
-                            "words_per_second_actual": 2.838427947598254
-                        },
-                        "pitch_variation": {
-                            "mean_pitch_hz": 173.28402217287874,
-                            "median_pitch_hz": 164.81377845643496,
-                            "pitch_std_hz": 27.990579446146867,
-                            "pitch_range_hz": 152.31156558491202,
-                            "min_pitch_hz": 134.6458897635121,
-                            "max_pitch_hz": 286.9574553484241,
-                            "pitch_variation_percent": 16.15300654680196,
-                            "voiced_frame_count": 168
-                        },
-                        "clarity": {
-                            "spectral_flatness": 0.019460702314972878,
-                            "zero_crossing_rate": 0.10050169728434505,
-                            "spectral_centroid_hz": 1394.7114826943389,
-                            "clarity_score_percent": 98.0539321899414
-                        },
-                        "pacing": {
-                            "avg_speech_segment_duration_seconds": 0.11743589743589741,
-                            "speech_duration_std_seconds": 0.10833750560923255,
-                            "pacing_consistency_percent": 7.747538891701524,
-                            "total_speech_segments": 39,
-                            "min_segment_duration_seconds": 0.019999999999999574,
-                            "max_segment_duration_seconds": 0.47999999999999954
-                        },
-                        "expressiveness": {
-                            "energy_variation_rms": 0.006538851652294397,
-                            "mean_energy_rms": 0.006436733528971672,
-                            "dynamic_range_db": 58.58256912231445,
-                            "energy_variation_percent": 101.58648681640625,
-                            "expressiveness_score_percent": 58.07650327340098
-                        },
-                        "confidence": {
-                            "confidence_score_percent": 41.306053161621094,
-                            "silence_contribution": 45.79999999999999,
-                            "pitch_stability_contribution": 83.84699345319804,
-                            "energy_contribution": 26.955514907836914,
-                            "pacing_contribution": 20
-                        },
-                        "transcription": {
-                            "transcript": "hello welcome to my YouTube channel this is a Whisper audio thank you",
-                            "word_count": 13,
-                            "confidence": "high",
-                            "method": "Google Speech Recognition"
-                        }
-                    }
-                },
-                "text_evaluation": null
-            }
-        },
-        {
-            "qid": "q_ai_0024",
-            "question_type": "multiple-choice",
-            "evaluation": {
-                "correct": False,
-                "score": 0,
-                "expected_answer": "Series",
-                "user_answer": "Panel"
-            }
+    # Test execution
+    test_data = {
+        "type": "success",
+        "domain": "ai_ml",
+        "message": "Test submitted successfully",
+        "results": [], # (Truncated for brevity, normally huge)
+        "metadata": {
+            "totalQuestions": 5,
+            "answeredCount": 5
         }
-    ],
-    "metadata": {
-        "totalQuestions": 5,
-        "answeredCount": 5,
-        "hintsUsed": {},
-        "completedAt": "2025-12-06T07:26:02.681Z",
-        "timeRemaining": "44:17"
     }
-}
-    process_user_summary(data)
+    # Pass a valid path or mock it for local testing if needed
+    # process_user_summary(test_data)
+    pass

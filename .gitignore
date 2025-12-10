@@ -3,3 +3,4 @@ node_modules
 venv
 
 /python_models/fine_tune/skill_ner_model
+/python_models/fine_tune/__pycache__/extract_resume.cpython-312.pyc
