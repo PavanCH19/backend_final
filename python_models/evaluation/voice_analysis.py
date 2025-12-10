@@ -832,9 +832,38 @@ class ComprehensiveSpeechAnalyzer:
 # ============================================================
 # 🧪 EXAMPLE USAGE
 # ============================================================
+
+def evaluate_voice(data):
+    """
+    Entry point for Node.js bridge.
+    Expected data format: { "file_path": "path/to/audio.wav" }
+    """
+    try:
+        file_path = data.get("file_path")
+        if not file_path:
+            return {"error": "No file_path provided"}
+            
+        # Create analyzer
+        analyzer = ComprehensiveSpeechAnalyzer(
+            audio_file=file_path,
+            aggressiveness=data.get("aggressiveness", 3),
+            frame_duration_ms=data.get("frame_duration_ms", 20)
+        )
+        
+        # Run analysis (include transcription by default)
+        results = analyzer.analyze_all(include_transcription=True)
+        
+        return results
+
+    except Exception as e:
+        return {"error": str(e), "traceback": str(e)}
+
+# ============================================================
+# 🧪 EXAMPLE USAGE
+# ============================================================
 if __name__ == "__main__":
     # Replace with your audio file
-    AUDIO_FILE = "sp-anls.wav"
+    AUDIO_FILE = "input.wav"
     
     # Create analyzer
     analyzer = ComprehensiveSpeechAnalyzer(

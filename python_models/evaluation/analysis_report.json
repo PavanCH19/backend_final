@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "audio_file": "input.wav",
+        "sample_rate": 16000,
+        "frame_duration_ms": 20,
+        "vad_aggressiveness": 3
+    },
+    "results": {
+        "silence_metrics": {
+            "silence_ratio_percent": 54.2,
+            "speech_ratio_percent": 45.79999999999999,
+            "silence_time_seconds": 5.420000000000001,
+            "normal_speech_time_seconds": 3.54,
+            "low_volume_speech_time_seconds": 1.0399999999999991,
+            "total_speech_time_seconds": 4.579999999999999,
+            "total_duration_seconds": 10.0,
+            "silence_segment_count": 7,
+            "normal_speech_segment_count": 26,
+            "low_volume_segment_count": 13
+        },
+        "speech_rate": {
+            "estimated_syllables": 50,
+            "estimated_words": 29.411764705882355,
+            "words_per_minute_estimated": 385.30696121243267,
+            "words_per_second_estimated": 6.421782686873878,
+            "speaking_time_seconds": 4.579999999999999,
+            "actual_word_count": 13,
+            "words_per_minute_actual": 170.30567685589523,
+            "words_per_second_actual": 2.838427947598254
+        },
+        "pitch_variation": {
+            "mean_pitch_hz": 173.28402217287874,
+            "median_pitch_hz": 164.81377845643496,
+            "pitch_std_hz": 27.990579446146867,
+            "pitch_range_hz": 152.31156558491202,
+            "min_pitch_hz": 134.6458897635121,
+            "max_pitch_hz": 286.9574553484241,
+            "pitch_variation_percent": 16.15300654680196,
+            "voiced_frame_count": 168
+        },
+        "clarity": {
+            "spectral_flatness": 0.019460702314972878,
+            "zero_crossing_rate": 0.10050169728434505,
+            "spectral_centroid_hz": 1394.7114826943389,
+            "clarity_score_percent": 98.0539321899414
+        },
+        "pacing": {
+            "avg_speech_segment_duration_seconds": 0.11743589743589741,
+            "speech_duration_std_seconds": 0.10833750560923255,
+            "pacing_consistency_percent": 7.747538891701524,
+            "total_speech_segments": 39,
+            "min_segment_duration_seconds": 0.019999999999999574,
+            "max_segment_duration_seconds": 0.47999999999999954
+        },
+        "expressiveness": {
+            "energy_variation_rms": 0.006538851652294397,
+            "mean_energy_rms": 0.006436733528971672,
+            "dynamic_range_db": 58.58256912231445,
+            "energy_variation_percent": 101.58648681640625,
+            "expressiveness_score_percent": 58.07650327340098
+        },
+        "confidence": {
+            "confidence_score_percent": 41.306053161621094,
+            "silence_contribution": 45.79999999999999,
+            "pitch_stability_contribution": 83.84699345319804,
+            "energy_contribution": 26.955514907836914,
+            "pacing_contribution": 20.0
+        },
+        "transcription": {
+            "transcript": "hello welcome to my YouTube channel this is a Whisper audio thank you",
+            "word_count": 13,
+            "confidence": "high",
+            "method": "Google Speech Recognition"
+        }
+    }
+}

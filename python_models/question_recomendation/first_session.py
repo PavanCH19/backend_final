@@ -51,11 +51,13 @@ def first_session_recommendations(user_json, k=5):
         score = overlap
         scored.append((q, score))
     
-    # 5) Add randomness
-    random.shuffle(scored)
-    
-    # 6) Sort by score (descending)
-    ranked = sorted(scored, key=lambda x: x[1], reverse=True)
+    # 5) Random factor between 0 and 1
+    ranked = sorted(
+        scored,
+        key=lambda x: (x[1] * 0.7 + random.random() * 0.3),
+        reverse=True
+    )
+
     
     # 7) Pick top-k
     top_k = ranked[:k]
@@ -92,15 +94,15 @@ def main(input_json):
     # Python receives data as dict
     return first_session_recommendations(input_json, k=5)
 
-# print("\n\n[EXAMPLE 2] First Session")
-# print("=" * 70)
+print("\n\n[EXAMPLE 2] First Session")
+print("=" * 70)
 
-# user = {
-#         "_id": "user_001",
-#         "skills": ['java', 'nlp', 'tensorflow', 'data-structures'],
-#         "target_domain": "aiml"
-#     }
+user = {
+        "_id": "user_001",
+        "skills": ['java', 'nlp', 'tensorflow', 'data-structures'],
+        "target_domain": "ai_ml"
+    }
 
-# first_result = first_session_recommendations(user, k=5)
-# print("\n📦 Result (Store this in MongoDB):")
-# print(json.dumps(first_result, indent=2))
+first_result = first_session_recommendations(user, k=5)
+print("\n📦 Result (Store this in MongoDB):")
+print(json.dumps(first_result, indent=2))

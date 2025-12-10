@@ -63,11 +63,13 @@ def mock_session_recommendations(user_json, k=5):
         score = overlap * difficulty_penalty
         scored.append((q, score))
     
-    # Shuffle to avoid serial ranking when many ties
-    random.shuffle(scored)
-    
-    # 4) Rank by score (descending) and pick top-k
-    ranked = sorted(scored, key=lambda x: x[1], reverse=True)
+    # 4) Rank with score + random weight
+    ranked = sorted(
+        scored,
+        key=lambda x: (x[1] * 0.75 + random.random() * 0.25),
+        reverse=True
+    )
+
     top_k = ranked[:k]
     print(f"[INFO] Selected Top {k} Questions")
     
@@ -110,4 +112,3 @@ user = {
     
 mock_result = mock_session_recommendations(user, k=5)
 print(json.dumps(mock_result, indent=2))
-print()
