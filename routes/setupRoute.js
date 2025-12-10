@@ -3,6 +3,7 @@ const router = express.Router();
 const fileUpload = require("express-fileupload");
 const { processResume, classifyResume, mock_domain_questions } = require("../controllers/setupController");
 const fetchUser = require("../middleware/fetchUser");
+const User = require('../modules/userSchema')
 
 // Middleware for file upload
 router.use(fileUpload());
@@ -152,10 +153,15 @@ router.post('/setUp_result', fetchUser, async (req, res) => {
 
         console.log("CLEAN RESUME SENT TO PYTHON:", cleanResume);
 
+        // sending the data to the model to classify user to 'fit' or 'not-fit'
         const result = await classifyResume(cleanResume);
         console.log("CLASSIFIER RESULT:", result);
 
-        res.json({ success: true, data: result });
+        // update user as he completes the setup | update setupCompleted : true
+        let updatedUser = await User.findByIdAndUpdate(req.user.id, {setupCompleted : true }, { new : true })
+        console.log("updatedUser : ", updatedUser.setupCompleted)
+
+        res.status(200).json({ success: true, data: result });
 
     } catch (error) {
         console.error("❌ Resume classification error:", error);
