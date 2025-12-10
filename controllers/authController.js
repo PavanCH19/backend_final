@@ -52,18 +52,18 @@ const loginUser = async (data) => {
             return { success: false, status: 400, msg: "User not found" };
         }
 
-        if(user.firstLogin){
-            console.log("first login : ", user.firstLogin);
-            let updatedUser = await User.findByIdAndUpdate(user._id,
-                {
-                    $set : {firstLogin : false}
-                },
-                {
-                    new : true
-                }
-            )
-            console.log('first login updated : ', updatedUser.firstLogin)
-        }
+        // if(user.firstLogin){
+        //     console.log("first login : ", user.firstLogin);
+        //     let updatedUser = await User.findByIdAndUpdate(user._id,
+        //         {
+        //             $set : {firstLogin : false}
+        //         },
+        //         {
+        //             new : true
+        //         }
+        //     )
+        //     console.log('first login updated : ', updatedUser.firstLogin)
+        // }
 
         // 2️⃣ Compare password
         const isMatch = await bcrypt.compare(password, user.password);
@@ -93,7 +93,7 @@ const loginUser = async (data) => {
             status: 200,
             msg: "User logged in successfully",
             token,
-            firstTimeLogin : user.firstLogin,
+            setupCompleted : user.setupCompleted,
             user: userResponse,
         };
     } catch (error) {
@@ -134,13 +134,13 @@ const getUserDetails = async (email) => {
             projects: user.projects || [], // ✅ fixed typo
         };
 
-        // return {
-        //     success: true,
-        //     status: 200,
-        //     message: "User details fetched successfully",
-        //     data: userDetails,
-        // };
-        return user;
+        return {
+            success: true,
+            status: 200,
+            message: "User details fetched successfully",
+            data: userDetails,
+        };
+        // return user;
     } catch (error) {
         console.error("Error fetching user:", error);
         return {
