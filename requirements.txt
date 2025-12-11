@@ -6,3 +6,7 @@ pandas
 matplotlib
 scikit-learn
 seaborn
+nltk
+webrtcvad
+tf-keras
+pydub

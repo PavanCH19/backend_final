@@ -786,7 +786,6 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
 
 
 const submitTestController = async (req, res) => {
-    console.log("Submit test controller called", req.body);
     try {
         const files = req.files || {};
         logFormKeys(req.body, files);
