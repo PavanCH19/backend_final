@@ -11,9 +11,10 @@ router.use(fileUpload());
 router.post('/upload-resume', fetchUser, async (req, res) => {
     try {
         const pdfFile = req.files?.resumeFile;
-
+        console.log("❤️❤️❤️❤️", req.user)
         // Process the resume (controller already handles user update)
         const result = await processResume(pdfFile, req.user.id);
+
 
         // Return the controller response
         return res.status(result.status).json(result);
@@ -158,7 +159,7 @@ router.post('/setUp_result', fetchUser, async (req, res) => {
         console.log("CLASSIFIER RESULT:", result);
 
         // update user as he completes the setup | update setupCompleted : true
-        let updatedUser = await User.findByIdAndUpdate(req.user.id, {setupCompleted : true }, { new : true })
+        let updatedUser = await User.findByIdAndUpdate(req.user.id, { setupCompleted: true }, { new: true })
         console.log("updatedUser : ", updatedUser.setupCompleted)
 
         res.status(200).json({ success: true, data: result });

@@ -93,7 +93,7 @@ const loginUser = async (data) => {
             status: 200,
             msg: "User logged in successfully",
             token,
-            setupCompleted : user.setupCompleted,
+            setupCompleted: user.setupCompleted,
             user: userResponse,
         };
     } catch (error) {
@@ -213,7 +213,7 @@ const updateUserDetails = async (req) => {
                 }
             }
         };
-        console.log('======================================================',updateData)
+        console.log('======================================================', updateData)
         updateFields(user, updateData);
 
         const updatedUser = await user.save();
