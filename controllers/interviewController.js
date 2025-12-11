@@ -888,7 +888,7 @@ const submitTestController = async (req, res) => {
                         question,
                         user_answer: userAnswer
                     },
-                    45000
+                    90000
                 );
             }
 
@@ -938,7 +938,7 @@ const submitTestController = async (req, res) => {
                             question,
                             user_answer: transcript
                         },
-                        45000
+                        90000
                     );
                 }
 
