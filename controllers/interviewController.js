@@ -291,6 +291,7 @@ const evaluateMCQ = (question, userAnswer) => {
 
 
 const submitTestController = async (req, res) => {
+    console.log(req.body);
     try {
         let submissionData;
         // Handle different request formats (multipart with 'data' string, or direct JSON)
