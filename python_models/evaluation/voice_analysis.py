@@ -1,7 +1,7 @@
 import webrtcvad
 import wave
 import numpy as np
-from pydub import AudioSegment
+import soundfile as sf
 import librosa
 import speech_recognition as sr
 from typing import Dict, List, Tuple
@@ -29,18 +29,29 @@ class ComprehensiveSpeechAnalyzer:
         self.vad = webrtcvad.Vad(aggressiveness)
         
         # Load and convert audio
-        print("🎵 Loading and preprocessing audio...")
-        self.audio = AudioSegment.from_file(audio_file)
-        self.audio = self.audio.set_channels(1).set_frame_rate(self.sample_rate)
-
-        # adding validation to audio | if showrt audio an exception is raised
-        if len(self.audio) < 1000:
-            raise ValueError("Audio too short for analysis (<1 second).")
-
+        print(f"🎵 Loading and preprocessing audio: {audio_file}")
         
         # Save as temporary WAV for processing
         self.temp_wav = "temp_analysis.wav"
-        self.audio.export(self.temp_wav, format="wav")
+
+        try:
+            # Use librosa to load (handles resampling and mono conversion)
+            y, s = librosa.load(audio_file, sr=self.sample_rate, mono=True)
+            
+            # Validation: check length
+            if len(y) < self.sample_rate: # Less than 1 second
+                 raise ValueError("Audio too short for analysis (<1 second).")
+
+            # Convert to 16-bit PCM for WebRTC VAD
+            # librosa loads as float32 in [-1, 1], we need int16
+            y_int16 = (y * 32767).clip(-32768, 32767).astype(np.int16)
+            
+            # Write using soundfile
+            sf.write(self.temp_wav, y_int16, self.sample_rate, subtype='PCM_16')
+            
+        except Exception as e:
+            print(f"Error processing audio with librosa/soundfile: {e}")
+            raise e
         
         # Cache for results
         self._segments = None
