@@ -1,6 +1,10 @@
-node_modules
+node_modules/
 .env
-venv
+venv/
+tmp/
 
-/python_models/fine_tune/skill_ner_model
-/python_models/fine_tune/__pycache__/extractdata_resume.cpython-312.pyc
+python_models/fine_tune/skill_ner_model
+python_models/fine_tune/__pycache__/extractdata_resume.cpython-312.pyc
+python_models/evaluation/__pycache__/
+python_models/question_recomendation/__pycache__/
+**/__pycache__/

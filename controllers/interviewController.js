@@ -152,7 +152,8 @@ const startAdaptiveInterviewSession = async (user, domain, lastSession) => {
 const startInterview = async (req, res) => {
     try {
         const userId = req.user.id;
-        const domain = req.params.domain;
+        const domain = req.query.domain;
+        if(!domain) throw new Error("Query parameter 'domain' required")
         // -----------------------------------------
         // Fetch user
         // -----------------------------------------
@@ -230,7 +231,7 @@ const startInterview = async (req, res) => {
 
 
     } catch (error) {
-        console.error("Interview start error:", error);
+        // console.error("Interview start error:", error);
         return res.status(500).json({
             success: false,
             message: "Server error initializing interview session",
@@ -1020,14 +1021,7 @@ const submitTestController = async (req, res) => {
 const getSessiondata = async (req, res) => {
     try {
         const userId = req.user.id;
-        const { domain } = req.body;
-
-        if (!domain) {
-            return res.status(400).json({
-                success: false,
-                message: "Domain is required"
-            });
-        }
+        if(!userId) throw new Error('Authentication middleware error | user id not found in the request')
 
         const user = await User.findById(userId);
         if (!user) {
@@ -1038,7 +1032,6 @@ const getSessiondata = async (req, res) => {
         }
 
         const sessions = user.interview_sessions
-            .filter(s => s.domain === domain)
             .sort((a, b) => new Date(b.startedAt) - new Date(a.startedAt)); // Sort newest first
 
         return res.json({
@@ -1048,7 +1041,7 @@ const getSessiondata = async (req, res) => {
         });
 
     } catch (err) {
-        console.error("Get session data error:", err);
+        // console.error("Get session data error:", err);
         return res.status(500).json({
             success: false,
             message: "Failed to get sessions",

@@ -129,6 +129,7 @@ const getUserDetails = async (email) => {
                 location: user.profile?.location || "",
             },
             skills: user.skills || [],
+            skill_analysis : user.interview_sessions.skill_analysis,
             education: user.education || [],
             experience: user.experience || [],
             projects: user.projects || [], // ✅ fixed typo

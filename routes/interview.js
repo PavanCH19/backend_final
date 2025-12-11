@@ -48,7 +48,7 @@ router.post("/upload-resume", fetchUser, async (req, res) => {
 // ===============================
 // Other API Routes
 // ===============================
-router.get('/:domain', fetchUser, startInterview);
+router.get('/domain', fetchUser, startInterview);
 router.post("/submit-test", fetchUser, submitTestController);
 router.post('/recent-sessions', fetchUser, getSessiondata);
 
