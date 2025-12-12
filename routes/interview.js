@@ -50,6 +50,6 @@ router.post("/upload-resume", fetchUser, async (req, res) => {
 // ===============================
 router.get('/domain', fetchUser, startInterview);
 router.post("/submit-test", fetchUser, submitTestController);
-router.post('/recent-sessions', fetchUser, getSessiondata);
+router.get('/recent-sessions', fetchUser, getSessiondata);
 
 module.exports = router;
