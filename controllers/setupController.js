@@ -396,6 +396,16 @@ const update_user_profile = async (userId, extractedData) => {
       };
     }
 
+    // Check if extractedData indicates an error from Python script
+    if (extractedData.success === false) {
+      return {
+        success: false,
+        status: 500,
+        message: extractedData.error || "Failed to extract data from resume",
+        error: extractedData.error
+      };
+    }
+
     const { personal_info = {}, known_skills = [] } = extractedData;
 
     const user = await User.findById(userId);
@@ -407,16 +417,46 @@ const update_user_profile = async (userId, extractedData) => {
       };
     }
 
-    if (personal_info.name) user.profile.name = personal_info.name;
-    if (personal_info.phone) user.profile.phone = personal_info.phone;
+    // Only update fields that have values
+    let hasUpdates = false;
 
-    // add new skills
-    if (Array.isArray(known_skills)) {
-      const existing = user.skills || [];
-      user.skills = Array.from(new Set([...existing, ...known_skills]));
+    if (personal_info && typeof personal_info === "object") {
+      if (personal_info.name && personal_info.name.trim()) {
+        user.profile.name = personal_info.name.trim();
+        hasUpdates = true;
+      }
+      if (personal_info.phone && personal_info.phone.trim()) {
+        user.profile.phone = personal_info.phone.trim();
+        hasUpdates = true;
+      }
+      if (personal_info.location && personal_info.location.trim()) {
+        user.profile.location = personal_info.location.trim();
+        hasUpdates = true;
+      }
     }
 
-    await user.save();
+    // Add new skills only if there are any
+    if (Array.isArray(known_skills) && known_skills.length > 0) {
+      const existing = user.skills || [];
+      const newSkills = known_skills.filter(skill => skill && skill.trim());
+      if (newSkills.length > 0) {
+        user.skills = Array.from(new Set([...existing, ...newSkills]));
+        hasUpdates = true;
+      }
+    }
+
+    // Only save if there are actual updates
+    if (hasUpdates) {
+      await user.save();
+      console.log("✅ User profile updated successfully");
+    } else {
+      console.log("⚠️ No valid data to update in user profile");
+      return {
+        success: false,
+        status: 400,
+        message: "No valid data extracted from resume to update profile",
+      };
+    }
 
     return {
       success: true,
@@ -460,7 +500,31 @@ const processResume = async (pdfFile, userId) => {
       extractedText,
       60000
     );
-    console.log("❤️❤️❤️❤️", pythonResult)
+    console.log("❤️❤️❤️❤️", pythonResult);
+
+    // Check if Python script returned an error
+    if (pythonResult.result && pythonResult.result.success === false) {
+      return {
+        success: false,
+        status: 500,
+        message: "Failed to extract data from resume",
+        error: pythonResult.result.error || "Python script returned an error",
+        data: null,
+        fullText: extractedText
+      };
+    }
+
+    // Check if pythonResult.result exists and has valid data
+    if (!pythonResult.result || typeof pythonResult.result !== "object") {
+      return {
+        success: false,
+        status: 500,
+        message: "Invalid data returned from Python script",
+        data: null,
+        fullText: extractedText
+      };
+    }
+
     const updateResult = await update_user_profile(userId, pythonResult.result);
 
     return {

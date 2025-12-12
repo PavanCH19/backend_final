@@ -153,7 +153,7 @@ const startInterview = async (req, res) => {
     try {
         const userId = req.user.id;
         const domain = req.query.domain;
-        if(!domain) throw new Error("Query parameter 'domain' required")
+        if (!domain) throw new Error("Query parameter 'domain' required")
         // -----------------------------------------
         // Fetch user
         // -----------------------------------------
@@ -786,22 +786,261 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
 
 
 
+// const submitTestController = async (req, res) => {
+//     try {
+//         const files = req.files || {};
+//         logFormKeys(req.body, files);
+
+//         let submissionData;
+
+//         // Handle FormData (stringified JSON) OR raw JSON
+//         if (req.body.data) {
+//             submissionData =
+//                 typeof req.body.data === "string"
+//                     ? JSON.parse(req.body.data)
+//                     : req.body.data;
+//         } else {
+//             submissionData = req.body;
+//         }
+
+//         const {
+//             domain,
+//             answers = {},
+//             totalQuestions,
+//             answeredCount,
+//             hintsUsed,
+//             completedAt,
+//             timeRemaining
+//         } = submissionData;
+
+//         // --- MERGE answers from req.body (for FormData) ---
+//         // If "answers[qid]" keys exist in body, add them to our answers object
+//         Object.keys(req.body).forEach(key => {
+//             if (key.startsWith("answers[")) {
+//                 const qid = normalizeQid(key);
+//                 // Don't overwrite if likely already there, unless needed
+//                 if (!answers[qid]) {
+//                     answers[qid] = req.body[key];
+//                 }
+//             }
+//         });
+
+//         if (!domain) {
+//             return res.status(400).json({
+//                 type: "error",
+//                 message: "Domain is required"
+//             });
+//         }
+
+//         const domainQuestions = getQuestionsForDomain(domain);
+
+//         // Merge answer keys + file keys
+//         const allQids = new Set([
+//             ...Object.keys(answers).map(normalizeQid),
+//             ...Object.keys(files).map(normalizeQid)
+//         ]);
+
+//         const results = [];
+
+//         // --- FIXED: File finder that works for all naming cases ---
+//         const findFile = (qid) => {
+//             if (!files) return null;
+
+//             const directKey = `answers[${qid}]`;
+//             if (files[directKey]) return files[directKey];
+
+//             if (files[qid]) return files[qid];
+
+//             const foundKey = Object.keys(files).find(
+//                 (k) => normalizeQid(k) === qid
+//             );
+
+//             return foundKey ? files[foundKey] : null;
+//         };
+
+//         // ============================================
+//         // PROCESS EACH QUESTION
+//         // ============================================
+//         for (const rawQid of allQids) {
+//             const qid = normalizeQid(rawQid);
+
+//             const question = domainQuestions[qid];
+//             if (!question) {
+//                 console.log(`⚠ Skipping unknown QID: ${qid}`);
+//                 continue;
+//             }
+
+//             const userAnswer = answers[qid] || "";
+//             const qType = question.question_type;
+
+//             let evaluationResult = null;
+
+//             // -------------- MCQ ----------------
+//             if (qType === "mcq" || qType === "multiple-choice") {
+//                 evaluationResult = evaluateMCQ(question, userAnswer);
+//             }
+
+//             // -------------- SUBJECTIVE / CODING ----------------
+//             else if (qType === "subjective" || qType === "coding") {
+//                 evaluationResult = await executePythonModel(
+//                     MODEL_CONFIGS.text_eval,
+//                     "evaluate_text",
+//                     {
+//                         question,
+//                         user_answer: userAnswer
+//                     },
+//                     1000000
+//                 );
+//             }
+
+//             // -------------- VOICE ----------------
+//             else if (qType === "voice") {
+//                 let audioFilePath = null;
+//                 const fileObj = findFile(qid);
+
+//                 if (fileObj) {
+//                     audioFilePath = fileObj.tempFilePath;
+//                 }
+
+//                 if (!audioFilePath) {
+//                     console.error(`[SubmitTest] Audio file missing for QID: ${qid}`);
+//                     console.error(`[SubmitTest] Received file keys: ${Object.keys(files).join(', ')}`);
+//                     results.push({
+//                         qid,
+//                         question_type: qType,
+//                         status: "error",
+//                         reason: `Audio file missing. Received keys: [${Object.keys(files).join(', ')}]`
+//                     });
+//                     continue;
+//                 }
+
+//                 // Resolve to absolute path to avoid Python CWD issues
+//                 const absoluteAudioPath = path.resolve(audioFilePath);
+//                 console.log(`[SubmitTest] Processing audio at: ${absoluteAudioPath}`);
+
+//                 const voiceResult = await executePythonModel(
+//                     MODEL_CONFIGS.voice_analysis,
+//                     "evaluate_voice",
+//                     { file_path: absoluteAudioPath },
+//                     120000
+//                 );
+
+//                 // If transcript exists → run text evaluation
+//                 let textResult = null;
+//                 const transcript =
+//                     voiceResult?.result?.transcription?.transcript ||
+//                     voiceResult?.transcription?.transcript;
+
+//                 if (transcript) {
+//                     textResult = await executePythonModel(
+//                         MODEL_CONFIGS.text_eval,
+//                         "evaluate_text",
+//                         {
+//                             question,
+//                             user_answer: transcript
+//                         },
+//                         90000
+//                     );
+//                 }
+
+//                 evaluationResult = {
+//                     voice_analysis: voiceResult.result || voiceResult,
+//                     text_evaluation: textResult ? textResult.result || textResult : null
+//                 };
+//             }
+
+//             // Push evaluation result
+//             results.push({
+//                 qid,
+//                 question_type: qType,
+//                 evaluation: evaluationResult
+//             });
+//         }
+
+//         // ============= FINAL RESPONSE TO FRONTEND ============
+//         const responseData = {
+//             type: "success",
+//             message: "Test submitted successfully",
+//             domain,
+//             results,
+//             metadata: {
+//                 totalQuestions,
+//                 answeredCount,
+//                 hintsUsed,
+//                 completedAt,
+//                 timeRemaining
+//             }
+//         };
+
+//         res.status(200).json(responseData);
+
+//         // =======================================================
+//         // BACKGROUND SUMMARY GENERATION (unchanged)
+//         // =======================================================
+//         setImmediate(async () => {
+//             try {
+//                 const userId = req.user?.id;
+//                 if (!userId) return;
+
+//                 const payload = {
+//                     user_id: userId,
+//                     domain,
+//                     evaluation_json: responseData,
+//                     questions_dir: domainsDir
+//                 };
+
+//                 const summaryResult = await executePythonModel(
+//                     MODEL_CONFIGS.build_summary,
+//                     "process_user_summary",
+//                     payload,
+//                     30000
+//                 );
+
+//                 await updateUserInterviewSession(userId, domain, summaryResult, responseData);
+
+//             } catch (err) {
+//                 console.error("Background process error:", err);
+//             }
+//         });
+
+//     } catch (err) {
+//         console.error("Submit error:", err);
+//         if (!res.headersSent) {
+//             res.status(500).json({
+//                 type: "error",
+//                 message: "Server failed to submit test",
+//                 error: err.message
+//             });
+//         }
+//     }
+// };
+
 const submitTestController = async (req, res) => {
     try {
+        console.log("\n================= submitTestController START =================");
+
         const files = req.files || {};
+        console.log("[STEP-1] Raw form keys received:");
         logFormKeys(req.body, files);
 
         let submissionData;
 
-        // Handle FormData (stringified JSON) OR raw JSON
+        // ----------------------------
+        // STEP 2: Extract submissionData
+        // ----------------------------
+        console.log("[STEP-2] Checking if req.body.data exists (FormData JSON)...");
         if (req.body.data) {
+            console.log("[STEP-2] Body contains 'data' → parsing JSON");
             submissionData =
                 typeof req.body.data === "string"
                     ? JSON.parse(req.body.data)
                     : req.body.data;
         } else {
+            console.log("[STEP-2] No 'data' field → using raw body");
             submissionData = req.body;
         }
+
+        console.log("[STEP-2] submissionData =", submissionData);
 
         const {
             domain,
@@ -813,98 +1052,130 @@ const submitTestController = async (req, res) => {
             timeRemaining
         } = submissionData;
 
-        // --- MERGE answers from req.body (for FormData) ---
-        // If "answers[qid]" keys exist in body, add them to our answers object
+        // ----------------------------
+        // STEP 3: Merge answers from req.body
+        // ----------------------------
+        console.log("[STEP-3] Merging answers from direct body keys...");
         Object.keys(req.body).forEach(key => {
             if (key.startsWith("answers[")) {
                 const qid = normalizeQid(key);
-                // Don't overwrite if likely already there, unless needed
+                console.log(`→ Found body answer key: ${key} → qid=${qid}`);
                 if (!answers[qid]) {
                     answers[qid] = req.body[key];
                 }
             }
         });
 
+        console.log("[STEP-3] Final merged answers =", answers);
+
         if (!domain) {
+            console.log("[ERROR] No domain found.");
             return res.status(400).json({
                 type: "error",
                 message: "Domain is required"
             });
         }
 
+        // ----------------------------
+        // STEP 4: Load domain questions
+        // ----------------------------
+        console.log(`[STEP-4] Loading questions for domain: ${domain}`);
         const domainQuestions = getQuestionsForDomain(domain);
+        console.log(`[STEP-4] Loaded ${Object.keys(domainQuestions).length} questions.`);
 
-        // Merge answer keys + file keys
+        // Merge answer + file QIDs
+        console.log("[STEP-5] Merging QIDs from answers & files...");
         const allQids = new Set([
             ...Object.keys(answers).map(normalizeQid),
             ...Object.keys(files).map(normalizeQid)
         ]);
+        console.log("[STEP-5] Final QIDs to process:", [...allQids]);
 
         const results = [];
 
-        // --- FIXED: File finder that works for all naming cases ---
+        // ----------------------------
+        // File finder logs
+        // ----------------------------
         const findFile = (qid) => {
-            if (!files) return null;
+            console.log(`[FILE-FIND] Searching file for QID: ${qid}`);
+
+            if (!files) {
+                console.log("[FILE-FIND] No files found at all.");
+                return null;
+            }
 
             const directKey = `answers[${qid}]`;
-            if (files[directKey]) return files[directKey];
+            if (files[directKey]) {
+                console.log(`[FILE-FIND] Found direct key: ${directKey}`);
+                return files[directKey];
+            }
 
-            if (files[qid]) return files[qid];
+            if (files[qid]) {
+                console.log(`[FILE-FIND] Found plain key: ${qid}`);
+                return files[qid];
+            }
 
-            const foundKey = Object.keys(files).find(
-                (k) => normalizeQid(k) === qid
-            );
+            const foundKey = Object.keys(files).find(k => normalizeQid(k) === qid);
+            if (foundKey) {
+                console.log(`[FILE-FIND] Found normalized key: ${foundKey}`);
+                return files[foundKey];
+            }
 
-            return foundKey ? files[foundKey] : null;
+            console.log("[FILE-FIND] No matching file found.");
+            return null;
         };
 
         // ============================================
-        // PROCESS EACH QUESTION
+        // STEP 6: PROCESS EACH QUESTION
         // ============================================
+        console.log("\n================= PROCESSING QUESTIONS =================");
+
         for (const rawQid of allQids) {
             const qid = normalizeQid(rawQid);
 
+            console.log(`\n[QUESTION] Processing QID: ${qid}`);
+
             const question = domainQuestions[qid];
             if (!question) {
-                console.log(`⚠ Skipping unknown QID: ${qid}`);
+                console.log(`⚠ [QUESTION] Skipping unknown QID: ${qid}`);
                 continue;
             }
 
+            console.log(`[QUESTION] Question type = ${question.question_type}`);
             const userAnswer = answers[qid] || "";
+            let evaluationResult = null;
             const qType = question.question_type;
 
-            let evaluationResult = null;
-
-            // -------------- MCQ ----------------
+            // ---------------- MCQ ----------------
             if (qType === "mcq" || qType === "multiple-choice") {
+                console.log(`[MCQ] Evaluating MCQ for QID ${qid}`);
                 evaluationResult = evaluateMCQ(question, userAnswer);
+                console.log(`[MCQ] Result:`, evaluationResult);
             }
 
-            // -------------- SUBJECTIVE / CODING ----------------
+            // ---------------- SUBJECTIVE / CODING ----------------
             else if (qType === "subjective" || qType === "coding") {
+                console.log(`[TEXT] Evaluating subjective/coding for QID ${qid}`);
                 evaluationResult = await executePythonModel(
                     MODEL_CONFIGS.text_eval,
                     "evaluate_text",
-                    {
-                        question,
-                        user_answer: userAnswer
-                    },
+                    { question, user_answer: userAnswer },
                     1000000
                 );
+                console.log(`[TEXT] Python returned:`, evaluationResult);
             }
 
-            // -------------- VOICE ----------------
+            // ---------------- VOICE ----------------
             else if (qType === "voice") {
-                let audioFilePath = null;
-                const fileObj = findFile(qid);
+                console.log(`[VOICE] Evaluating voice for QID ${qid} ...`);
 
-                if (fileObj) {
-                    audioFilePath = fileObj.tempFilePath;
-                }
+                const fileObj = findFile(qid);
+                console.log(`[VOICE] fileObj =`, fileObj);
+
+                let audioFilePath = fileObj ? fileObj.tempFilePath : null;
 
                 if (!audioFilePath) {
-                    console.error(`[SubmitTest] Audio file missing for QID: ${qid}`);
-                    console.error(`[SubmitTest] Received file keys: ${Object.keys(files).join(', ')}`);
+                    console.error(`[VOICE] Missing audio file for QID ${qid}`);
                     results.push({
                         qid,
                         question_type: qType,
@@ -914,33 +1185,36 @@ const submitTestController = async (req, res) => {
                     continue;
                 }
 
-                // Resolve to absolute path to avoid Python CWD issues
                 const absoluteAudioPath = path.resolve(audioFilePath);
-                console.log(`[SubmitTest] Processing audio at: ${absoluteAudioPath}`);
+                console.log(`[VOICE] Using absolute path: ${absoluteAudioPath}`);
 
+                // ----- Python Voice Analysis -----
+                console.log("[VOICE] Calling Python evaluate_voice...");
                 const voiceResult = await executePythonModel(
                     MODEL_CONFIGS.voice_analysis,
                     "evaluate_voice",
                     { file_path: absoluteAudioPath },
                     120000
                 );
+                console.log("[PY-VOICE] Returned:", voiceResult);
 
-                // If transcript exists → run text evaluation
-                let textResult = null;
+                // ----- Transcript → Optional Text Eval -----
                 const transcript =
                     voiceResult?.result?.transcription?.transcript ||
                     voiceResult?.transcription?.transcript;
 
+                console.log("[VOICE] Transcript detected:", transcript);
+
+                let textResult = null;
                 if (transcript) {
+                    console.log("[VOICE+TEXT] Running text evaluation on transcript...");
                     textResult = await executePythonModel(
                         MODEL_CONFIGS.text_eval,
                         "evaluate_text",
-                        {
-                            question,
-                            user_answer: transcript
-                        },
+                        { question, user_answer: transcript },
                         90000
                     );
+                    console.log("[VOICE+TEXT] Python returned:", textResult);
                 }
 
                 evaluationResult = {
@@ -949,7 +1223,8 @@ const submitTestController = async (req, res) => {
                 };
             }
 
-            // Push evaluation result
+            console.log(`[RESULT] Final evaluation for QID ${qid}:`, evaluationResult);
+
             results.push({
                 qid,
                 question_type: qType,
@@ -957,7 +1232,8 @@ const submitTestController = async (req, res) => {
             });
         }
 
-        // ============= FINAL RESPONSE TO FRONTEND ============
+        // ============= FINAL RESPONSE =============
+        console.log("\n================= FINAL RESPONSE SENT TO FRONTEND =================");
         const responseData = {
             type: "success",
             message: "Test submitted successfully",
@@ -972,14 +1248,15 @@ const submitTestController = async (req, res) => {
             }
         };
 
+        console.log("[RESPONSE] responseData =", responseData);
         res.status(200).json(responseData);
 
-        // =======================================================
-        // BACKGROUND SUMMARY GENERATION (unchanged)
-        // =======================================================
+        // ============= BACKGROUND SUMMARY =============
+        console.log("\n================= BACKGROUND SUMMARY START =================");
         setImmediate(async () => {
             try {
                 const userId = req.user?.id;
+                console.log("[BG] userId =", userId);
                 if (!userId) return;
 
                 const payload = {
@@ -989,6 +1266,7 @@ const submitTestController = async (req, res) => {
                     questions_dir: domainsDir
                 };
 
+                console.log("[BG] Calling Python build_summary...");
                 const summaryResult = await executePythonModel(
                     MODEL_CONFIGS.build_summary,
                     "process_user_summary",
@@ -996,8 +1274,11 @@ const submitTestController = async (req, res) => {
                     30000
                 );
 
+                console.log("[BG] Summary result:", summaryResult);
+
                 await updateUserInterviewSession(userId, domain, summaryResult, responseData);
 
+                console.log("[BG] Session updated.");
             } catch (err) {
                 console.error("Background process error:", err);
             }
@@ -1017,11 +1298,10 @@ const submitTestController = async (req, res) => {
 
 
 
-
 const getSessiondata = async (req, res) => {
     try {
         const userId = req.user.id;
-        if(!userId) throw new Error('Authentication middleware error | user id not found in the request')
+        if (!userId) throw new Error('Authentication middleware error | user id not found in the request')
 
         const user = await User.findById(userId);
         if (!user) {

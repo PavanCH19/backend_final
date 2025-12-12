@@ -1,24 +1,53 @@
 const express = require("express");
 const router = express.Router();
-const fileUpload = require("express-fileupload");
 const { processResume, classifyResume, mock_domain_questions } = require("../controllers/setupController");
 const fetchUser = require("../middleware/fetchUser");
 const User = require('../modules/userSchema')
 
-// Middleware for file upload
-router.use(fileUpload());
+// Note: fileUpload middleware is already configured globally in index.js
 
 router.post('/upload-resume', fetchUser, async (req, res) => {
     try {
-        const pdfFile = req.files?.resumeFile;
-        console.log("❤️❤️❤️❤️", req.user)
+        // Check if file was uploaded
+        if (!req.files || !req.files.resumeFile) {
+            return res.status(400).json({
+                success: false,
+                status: 400,
+                message: "No file uploaded. Please select a resume file.",
+            });
+        }
+
+        const pdfFile = req.files.resumeFile;
+
+        // Validate file type
+        if (pdfFile.mimetype !== 'application/pdf') {
+            return res.status(400).json({
+                success: false,
+                status: 400,
+                message: "Invalid file type. Please upload a PDF file.",
+            });
+        }
+
+        console.log("❤️❤️❤️❤️", req.user);
+
         // Process the resume (controller already handles user update)
         const result = await processResume(pdfFile, req.user.id);
-
 
         // Return the controller response
         return res.status(result.status).json(result);
     } catch (error) {
+        console.error("Resume upload error:", error);
+
+        // Handle busboy/multipart errors specifically
+        if (error.message && error.message.includes("Unexpected end of form")) {
+            return res.status(400).json({
+                success: false,
+                status: 400,
+                message: "File upload incomplete. Please try again.",
+                error: "The file upload was interrupted or incomplete.",
+            });
+        }
+
         return res.status(500).json({
             success: false,
             status: 500,

@@ -121,6 +121,15 @@ const getUserDetails = async (email) => {
         }
 
         // Build clean structured response
+        // Safely get skill_analysis from the last interview session
+        let skillAnalysis = null;
+        if (user.interview_sessions &&
+            Array.isArray(user.interview_sessions) &&
+            user.interview_sessions.length > 0) {
+            const lastSession = user.interview_sessions[user.interview_sessions.length - 1];
+            skillAnalysis = lastSession?.skill_analysis || null;
+        }
+
         const userDetails = {
             profile: {
                 name: user.profile?.name || "",
@@ -129,12 +138,16 @@ const getUserDetails = async (email) => {
                 location: user.profile?.location || "",
             },
             skills: user.skills || [],
-            skill_analysis : user.interview_sessions[user.interview_sessions.length-1].skill_analysis,
+            skill_analysis: skillAnalysis || {
+                stronger_skills: [],
+                weaker_skills: [],
+                skill_averages: {}
+            },
             education: user.education || [],
             experience: user.experience || [],
             projects: user.projects || [], // ✅ fixed typo
         };
-console.log(userDetails)
+        console.log(userDetails)
         return {
             success: true,
             status: 200,
