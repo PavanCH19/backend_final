@@ -3,6 +3,7 @@ const router = express.Router();
 const { processResume, classifyResume, mock_domain_questions } = require("../controllers/setupController");
 const fetchUser = require("../middleware/fetchUser");
 const User = require('../modules/userSchema')
+const mongoose = require("mongoose");
 
 // Note: fileUpload middleware is already configured globally in index.js
 
@@ -163,11 +164,72 @@ function normalizeDomain(input) {
 }
 
 
+/**
+ * Saves alternative suggested domains into the user's resume_session.
+ * If no resume_session exists, a new one will be created.
+ */
+/**
+ * Saves alternative suggested domains at USER ROOT LEVEL.
+ * Also ensures a resume_session exists and marks it completed.
+ */
+const saveAlternativeDomains = async (userId, suggestions, domain) => {
+    try {
+        const user = await User.findById(userId);
+        if (!user) {
+            console.error("User not found while saving suggested domains.");
+            return null;
+        }
+
+        console.log("Saving suggestions:", suggestions);
+
+        /* -----------------------------------------------------
+           1. Save suggestions at ROOT LEVEL (REQUIRED)
+        ----------------------------------------------------- */
+        user.alternative_suggested_domains = suggestions || [];
+
+        /* -----------------------------------------------------
+           2. Maintain resume_session for tracking purposes
+        ----------------------------------------------------- */
+        let session = user.interview_sessions.find(
+            (s) => s.session_type === "resume_session"
+        );
+
+        if (!session) {
+            session = {
+                session_id: new mongoose.Types.ObjectId().toString(),
+                domain: domain || "General",
+                session_type: "resume_session",
+                session_number: (user.interview_sessions?.length || 0) + 1,
+                status: "completed",
+                startedAt: new Date(),
+                completedAt: new Date()
+            };
+
+            user.interview_sessions.push(session);
+        } else {
+            session.completedAt = new Date();
+            session.status = "completed";
+        }
+
+        /* -----------------------------------------------------
+           3. Save user document
+        ----------------------------------------------------- */
+        await user.save();
+
+        return session;
+
+    } catch (err) {
+        console.error("Error saving alternative domain suggestions:", err);
+        return null;
+    }
+};
+
 
 
 router.post('/setUp_result', fetchUser, async (req, res) => {
     try {
         console.log("========================", req.body);
+
         const cleanResume = {
             id: req.user.id,
             skills: req.body.skills || [],
@@ -175,29 +237,115 @@ router.post('/setUp_result', fetchUser, async (req, res) => {
             work_experience: req.body.work_experience || [],
             test_score: req.body.test_score || 0,
             preferred_domain: req.body.preferred_domain
-            //preferred_domain: normalizeDomain(req.body.preferred_domain || "")
         };
 
-        // Also set domain for Python
         cleanResume.domain = cleanResume.preferred_domain;
 
         console.log("CLEAN RESUME SENT TO PYTHON:", cleanResume);
 
-        // sending the data to the model to classify user to 'fit' or 'not-fit'
-        const result = await classifyResume(cleanResume);
-        console.log("CLASSIFIER RESULT:", result);
+        // Send to Python classifier
+        const classification = await classifyResume(cleanResume);
+        console.log("CLASSIFIER RESULT:", classification);
 
-        // update user as he completes the setup | update setupCompleted : true
-        let updatedUser = await User.findByIdAndUpdate(req.user.id, { setupCompleted: true }, { new: true })
-        console.log("updatedUser : ", updatedUser.setupCompleted)
+        const resultData = classification?.data?.result;
 
-        res.status(200).json({ success: true, data: result });
+        if (!resultData) {
+            return res.status(500).json({
+                success: false,
+                message: "Classifier returned no result"
+            });
+        }
+
+        // Extract the suggestions from model output
+        const suggestions = resultData.alternative_domain_suggestions || [];
+
+        // Save to interview session
+        await saveAlternativeDomains(
+            req.user.id,
+            suggestions,
+            cleanResume.preferred_domain
+        );
+
+        // Mark setup as completed
+        const updatedUser = await User.findByIdAndUpdate(
+            req.user.id,
+            { setupCompleted: true },
+            { new: true }
+        );
+
+        res.status(200).json({
+            success: true,
+            data: classification
+        });
 
     } catch (error) {
         console.error("❌ Resume classification error:", error);
         res.status(500).json({ success: false, error: error.message });
     }
 });
+
+
+// router.post('/setUp_result', fetchUser, async (req, res) => {
+//     try {
+//         console.log("========================", req.body);
+//         const cleanResume = {
+//             id: req.user.id,
+//             skills: req.body.skills || [],
+//             projects: req.body.projects || [],
+//             work_experience: req.body.work_experience || [],
+//             test_score: req.body.test_score || 0,
+//             preferred_domain: req.body.preferred_domain
+//             //preferred_domain: normalizeDomain(req.body.preferred_domain || "")
+//         };
+
+//         // Also set domain for Python
+//         cleanResume.domain = cleanResume.preferred_domain;
+
+//         console.log("CLEAN RESUME SENT TO PYTHON:", cleanResume);
+
+//         // sending the data to the model to classify user to 'fit' or 'not-fit'
+//         const result = await classifyResume(cleanResume);
+//         console.log("CLASSIFIER RESULT:", result);
+
+//         // update user as he completes the setup | update setupCompleted : true
+//         let updatedUser = await User.findByIdAndUpdate(req.user.id, { setupCompleted: true }, { new: true })
+//         console.log("updatedUser : ", updatedUser.setupCompleted)
+
+//         res.status(200).json({ success: true, data: result });
+
+//     } catch (error) {
+//         console.error("❌ Resume classification error:", error);
+//         res.status(500).json({ success: false, error: error.message });
+//     }
+// });
+
+
+router.get('/alternative-domain-suggestions', fetchUser, async(req,res)=>{
+    try {
+        const user = await User.findById(req.user.id).select('alternative_suggested_domains');
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found."
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            alternative_suggested_domains: user.alternative_suggested_domains
+        });
+
+    } catch (error) {
+        console.error("❌ Error fetching alternative domain suggestions:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Internal server error.",
+            error: error.message
+        });
+    }
+})
+
 
 
 

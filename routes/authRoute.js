@@ -16,6 +16,7 @@ router.post('/loginUser', async (req, res) => {
     res.status(result.status).json(result)
 });
 
+// endpoint : /api/auth/getUserDetails | method : GET
 router.get('/getUserDetails', fetchUser, async (req, res) => {
     const userId = req.user.email;
     const result = await getUserDetails(userId);

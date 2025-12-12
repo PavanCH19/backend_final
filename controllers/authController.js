@@ -105,6 +105,7 @@ const loginUser = async (data) => {
 // =======================================
 // Controller: Get User Details
 // =======================================
+// endpoint : /api/auth/getUserDetails | method : GET
 const getUserDetails = async (email) => {
     try {
         console.log("Fetching details for:", email);
@@ -126,7 +127,9 @@ const getUserDetails = async (email) => {
         if (user.interview_sessions &&
             Array.isArray(user.interview_sessions) &&
             user.interview_sessions.length > 0) {
+            console.log("✨ number of interviews", user.interview_sessions.length)
             const lastSession = user.interview_sessions[user.interview_sessions.length - 1];
+            console.log("❤️",lastSession)
             skillAnalysis = lastSession?.skill_analysis || null;
         }
 
@@ -136,6 +139,8 @@ const getUserDetails = async (email) => {
                 email: user.email,
                 phone: user.profile?.phone || "",
                 location: user.profile?.location || "",
+                github : user.profile?.github,
+                linkedin : user.profile?.linkedin,
             },
             skills: user.skills || [],
             skill_analysis: skillAnalysis || {
@@ -146,6 +151,7 @@ const getUserDetails = async (email) => {
             education: user.education || [],
             experience: user.experience || [],
             projects: user.projects || [], // ✅ fixed typo
+            target_domains : user.target_domains || [],
         };
         console.log(userDetails)
         return {

@@ -711,9 +711,6 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
 
     const summary = summaryResult?.result || summaryResult;
 
-    // Update existing or create new session
-    let sessionIndex = user.interview_sessions.map(s => s.domain).lastIndexOf(domain);
-
     const sessionStats = summary.session_stats || {};
     const recommendations = summary.recommendations || {};
 
@@ -736,56 +733,35 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
         return mcqResults.length ? (correct / mcqResults.length) * 100 : null;
     };
 
-    if (sessionIndex !== -1) {
-        // Update existing session
-        const session = user.interview_sessions[sessionIndex];
-        session.status = "completed";
-        session.completedAt = new Date();
-        session.score = sessionStats.overall_average || 0;
-        session.accuracy = calculateAccuracy();
-
-        session.skill_analysis = {
+    // ALWAYS CREATE A NEW SESSION – DO NOT UPDATE EXISTING ONES
+    user.interview_sessions.push({
+        session_id: `sess_${domain}_${Date.now()}`,
+        domain,
+        status: "completed",
+        session_type: "adaptive_recommendation",   // or derive logically; previously "first_time"
+        questions: responseData.results.map(r => r.qid),
+        score: sessionStats.overall_average || 0,
+        accuracy: calculateAccuracy(),
+        skill_analysis: {
             stronger_skills: summary.top_skills || [],
             weaker_skills: summary.weak_skills || [],
             skill_averages: buildSkillAverages()
-        };
-
-        session.message = recommendations.next_steps
+        },
+        message: recommendations.next_steps
             ? `Analysis complete. Suggested: ${recommendations.suggested_difficulty}. Next: ${recommendations.next_steps.slice(0, 2).join(". ")}`
-            : `Session completed. Score: ${session.score.toFixed(1)}/100`;
-
-        session.detailed_summary = summary;
-
-    } else {
-        // Create new session
-        user.interview_sessions.push({
-            session_id: `sess_${domain}_${Date.now()}`,
-            domain,
-            status: "completed",
-            session_type: "first_time",
-            questions: responseData.results.map(r => r.qid),
-            score: sessionStats.overall_average || 0,
-            accuracy: calculateAccuracy(),
-            skill_analysis: {
-                stronger_skills: summary.top_skills || [],
-                weaker_skills: summary.weak_skills || [],
-                skill_averages: buildSkillAverages()
-            },
-            message: recommendations.next_steps
-                ? `Analysis complete. Suggested: ${recommendations.suggested_difficulty}. Next: ${recommendations.next_steps.slice(0, 2).join(". ")}`
-                : `Session completed. Score: ${(sessionStats.overall_average || 0).toFixed(1)}/100`,
-            startedAt: new Date(),
-            completedAt: new Date(),
-            detailed_summary: summary
-        });
-    }
+            : `Session completed. Score: ${(sessionStats.overall_average || 0).toFixed(1)}/100`,
+        startedAt: new Date(),
+        completedAt: new Date(),
+        detailed_summary: summary
+    });
+    console.log("")
 
     await user.save();
-    console.log(`✅ Updated session for user ${userId}`);
+    console.log(`✅ Added new session for user ${userId}`);
 };
 
 
-
+//
 // const submitTestController = async (req, res) => {
 //     try {
 //         const files = req.files || {};

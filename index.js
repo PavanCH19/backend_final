@@ -50,6 +50,7 @@ const authRoutes = require('./routes/authRoute');
 const setupRoutes = require('./routes/setupRoute');
 const interviewRoutes = require('./routes/interview');
 const dashBoardRoutes = require('./routes/dashboard');
+const gamificationRoutes = require('./routes/gamification')
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
@@ -75,7 +76,8 @@ app.use(express.static('public'));
 app.use('/api/auth', authRoutes);
 app.use('/api/setup', setupRoutes);
 app.use('/api/interview', interviewRoutes);
-app.use('/api/dashboard', dashBoardRoutes)
+app.use('/api/dashboard', dashBoardRoutes);
+app.use("/api/gamification", gamificationRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
