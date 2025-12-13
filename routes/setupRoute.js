@@ -346,6 +346,36 @@ router.get('/alternative-domain-suggestions', fetchUser, async(req,res)=>{
     }
 })
 
+router.put('/add-target-domain', fetchUser, async(req, res)=>{
+    try{
+        const userId = req.user.id;
+        const {domain} = req.body;        
+        const user = await User.findById(userId)
+        const found = user.target_domains.filter((dom)=>{
+            return dom === domain;
+        })
+        if(found.length>0) {
+            res.status(400).json({  
+                message : "domain already exists. chooose another"
+            })
+        }
+        const updated_user = await User.findByIdAndUpdate(
+            userId,
+            { $push: { target_domains: domain } },
+            { new: true }
+          )
+
+        res.status(200).json(updated_user)
+    }
+    catch(err){
+        res.status(500).json({
+            message : err.message || "Internal server Error",
+            error : err
+        })
+    }
+
+})
+
 
 
 
