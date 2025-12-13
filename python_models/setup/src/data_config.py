@@ -6,7 +6,7 @@ def get_domain_requirements():
             "required_skills": ["Python", "Pandas", "NumPy", "Scikit-learn", "PyTorch", "Docker", "Deep Learning"]
         },
         "web_development": {
-            "domain": "Web Development", 
+            "domain": "Web Development",
             "required_skills": ["JavaScript", "React", "Node.js", "HTML", "CSS", "MongoDB", "Express"]
         },
         "mobile_development": {
@@ -19,181 +19,220 @@ def get_domain_requirements():
         },
         "cybersecurity": {
             "domain": "Cybersecurity",
-            "required_skills": ["Network Security", "Penetration Testing", "CISSP", "Firewall", "Encryption", "Python", "Risk Assessment"]
+            "required_skills": ["Network Security", "Penetration Testing", "CISSP", "Firewall", "Encryption", "Python"]
         },
         "ai_ml": {
-            "domain": "Artificial Intelligence & Machine Learning",
+            "domain": "AI & Machine Learning",
             "required_skills": ["Python", "TensorFlow", "PyTorch", "Keras", "Deep Learning", "NLP", "Computer Vision"]
         },
         "cloud_computing": {
             "domain": "Cloud Computing",
-            "required_skills": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", "Cloud Security"]
+            "required_skills": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform"]
         },
         "blockchain": {
             "domain": "Blockchain Development",
-            "required_skills": ["Solidity", "Ethereum", "Smart Contracts", "Web3.js", "Truffle", "Blockchain Architecture", "Cryptography"]
+            "required_skills": ["Solidity", "Ethereum", "Smart Contracts", "Web3.js", "Cryptography"]
         },
         "game_development": {
             "domain": "Game Development",
-            "required_skills": ["Unity", "Unreal Engine", "C#", "C++", "Game Physics", "3D Modeling", "Shader Programming"]
+            "required_skills": ["Unity", "Unreal Engine", "C#", "C++", "Game Physics"]
         },
         "embedded_systems": {
             "domain": "Embedded Systems",
-            "required_skills": ["C", "C++", "Microcontrollers", "RTOS", "IoT", "Sensors", "PCB Design"]
+            "required_skills": ["C", "C++", "Microcontrollers", "RTOS", "IoT"]
         },
         "ar_vr": {
-            "domain": "AR/VR Development",
-            "required_skills": ["Unity", "Unreal Engine", "C#", "Blender", "3D Modeling", "XR Interaction Toolkit", "Oculus SDK"]
+            "domain": "AR / VR Development",
+            "required_skills": ["Unity", "C#", "3D Modeling", "XR Toolkit", "Oculus SDK"]
         },
         "ui_ux_design": {
-            "domain": "UI/UX Design",
-            "required_skills": ["Figma", "Adobe XD", "Wireframing", "Prototyping", "User Research", "Design Systems", "Accessibility"]
+            "domain": "UI / UX Design",
+            "required_skills": ["Figma", "Wireframing", "Prototyping", "User Research", "Accessibility"]
+        },
+
+        # 🔥 LANGUAGE / FRAMEWORK DOMAINS
+        "java_development": {
+            "domain": "Java Development",
+            "required_skills": ["Java", "OOP", "Spring Boot", "Hibernate", "Microservices"]
+        },
+        "python_development": {
+            "domain": "Python Development",
+            "required_skills": ["Python", "Django", "Flask", "FastAPI", "REST APIs"]
+        },
+        "nodejs_development": {
+            "domain": "Node.js Development",
+            "required_skills": ["Node.js", "Express", "MongoDB", "JWT", "Async Programming"]
+        },
+        "javascript_development": {
+            "domain": "JavaScript Development",
+            "required_skills": ["JavaScript", "ES6+", "DOM", "Promises", "Browser APIs"]
+        },
+        "react_development": {
+            "domain": "React Development",
+            "required_skills": ["React", "Hooks", "Redux", "React Router", "Performance Optimization"]
         }
     }
-
-
 def get_skill_pools():
     """Return comprehensive skill pools for each domain"""
     return {
         "data_science": [
-            "Python", "R", "SQL", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch", 
-            "Matplotlib", "Seaborn", "Jupyter", "Docker", "Deep Learning", "Machine Learning", 
-            "Statistics", "Data Visualization", "Big Data", "Spark", "Hadoop", "Keras", "XGBoost",
-            "Feature Engineering", "A/B Testing", "Time Series", "Clustering", "Regression", "Classification"
+            "Python", "R", "SQL", "Pandas", "NumPy", "Scikit-learn",
+            "TensorFlow", "PyTorch", "Statistics", "ML", "DL"
         ],
-        "web_dev": [
-            "JavaScript", "React", "Vue.js", "Angular", "Node.js", "Express", "HTML", "CSS", 
-            "MongoDB", "PostgreSQL", "MySQL", "Redis", "GraphQL", "REST API", "TypeScript", 
-            "Webpack", "Git", "Bootstrap", "Sass", "Tailwind CSS", "Next.js", "Nuxt.js", "Django",
-            "Flask", "FastAPI", "Spring Boot", "PHP", "Laravel", "Ruby on Rails", "OAuth", "JWT"
+        "web_development": [
+            "JavaScript", "React", "Node.js", "HTML", "CSS",
+            "MongoDB", "PostgreSQL", "REST API", "JWT"
         ],
-        "mobile": [
-            "Java", "Kotlin", "Swift", "React Native", "Flutter", "Dart", "iOS", "Android", 
-            "Xcode", "Android Studio", "Firebase", "SQLite", "Core Data", "UIKit", "SwiftUI",
-            "Jetpack Compose", "Realm", "Push Notifications", "In-App Purchases", "MapKit", "Camera API"
+        "mobile_development": [
+            "Java", "Kotlin", "Swift", "Flutter", "React Native"
         ],
         "devops": [
-            "Docker", "Kubernetes", "AWS", "Azure", "GCP", "Jenkins", "Terraform", "Ansible", 
-            "Linux", "Bash", "Python", "CI/CD", "Git", "Monitoring", "Nagios", "Prometheus",
-            "Grafana", "ELK Stack", "GitLab CI", "GitHub Actions", "CircleCI", "Chef", "Puppet",
-            "Helm", "Vault", "Consul", "Nginx", "Apache", "Load Balancing"
+            "Docker", "Kubernetes", "AWS", "Terraform", "CI/CD", "Linux"
         ],
-        "security": [
-            "Network Security", "Penetration Testing", "CISSP", "CEH", "Firewall", "Encryption", 
-            "Python", "Wireshark", "Metasploit", "Nmap", "Risk Assessment", "Compliance", "SIEM",
-            "Burp Suite", "Kali Linux", "SQL Injection", "XSS", "OWASP", "Security Policies",
-            "IAM", "Zero Trust", "Threat Modeling", "Forensics", "Malware Analysis"
+        "cybersecurity": [
+            "Network Security", "Penetration Testing", "Encryption",
+            "Wireshark", "Metasploit", "OWASP"
         ],
         "ai_ml": [
-            "Python", "TensorFlow", "PyTorch", "Keras", "OpenCV", "Hugging Face", "Transformers", 
-            "NLP", "Deep Learning", "Reinforcement Learning", "GANs", "Speech Recognition", 
-            "BERT", "LSTM", "Attention Mechanisms", "Computer Vision", "Data Augmentation"
+            "Python", "TensorFlow", "PyTorch", "NLP",
+            "Computer Vision", "Transformers"
         ],
-        "cloud": [
-            "AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", "Ansible", "Serverless", 
-            "CloudFormation", "Cloud Security", "IAM", "Lambda", "DevOps Integration", "Load Balancing"
+        "cloud_computing": [
+            "AWS", "Azure", "GCP", "Docker", "Kubernetes", "IAM"
         ],
         "blockchain": [
-            "Solidity", "Ethereum", "Hyperledger", "Smart Contracts", "Web3.js", "Truffle", 
-            "Ganache", "Metamask", "DeFi", "NFT", "Consensus Mechanisms", "Cryptography", 
-            "Blockchain Architecture", "Rust", "Polkadot", "Solana"
+            "Solidity", "Ethereum", "Smart Contracts", "Web3", "Cryptography"
         ],
         "game_development": [
-            "Unity", "Unreal Engine", "C#", "C++", "3D Modeling", "Blender", "Shader Programming", 
-            "Game Physics", "AI for Games", "Animation", "VR Integration", "Level Design", 
-            "Audio Design", "Optimization"
+            "Unity", "Unreal Engine", "C#", "C++", "Game AI"
         ],
-        "embedded": [
-            "C", "C++", "Microcontrollers", "ARM", "Raspberry Pi", "Arduino", "IoT", "Sensors", 
-            "RTOS", "UART", "SPI", "I2C", "PCB Design", "Firmware", "MQTT", "Embedded Linux"
+        "embedded_systems": [
+            "C", "C++", "RTOS", "IoT", "Microcontrollers"
         ],
         "ar_vr": [
-            "Unity", "Unreal Engine", "C#", "3D Modeling", "XR Interaction Toolkit", "Oculus SDK", 
-            "ARKit", "ARCore", "Vuforia", "Motion Tracking", "Spatial Mapping", "Hand Tracking"
+            "Unity", "XR Toolkit", "ARKit", "ARCore", "3D Modeling"
         ],
-        "ui_ux": [
-            "Figma", "Adobe XD", "Sketch", "InVision", "Wireframing", "Prototyping", "User Research",
-            "Design Systems", "Typography", "Color Theory", "Accessibility", "Interaction Design",
-            "User Testing", "Journey Mapping"
+        "ui_ux_design": [
+            "Figma", "Wireframes", "User Research", "Accessibility"
+        ],
+
+        # 🔥 Language / Framework
+        "java": [
+            "Java", "Spring Boot", "Hibernate", "JPA", "Microservices", "JUnit"
+        ],
+        "python": [
+            "Python", "Django", "Flask", "FastAPI", "AsyncIO"
+        ],
+        "nodejs": [
+            "Node.js", "Express", "MongoDB", "JWT", "Socket.io"
+        ],
+        "javascript": [
+            "JavaScript", "ES6+", "DOM", "Promises", "Event Loop"
+        ],
+        "react": [
+            "React", "Hooks", "Redux", "Next.js", "Performance Optimization"
         ]
     }
-
-
 def get_project_templates():
     """Return project templates for each domain"""
     return {
-        "data_science": ["Customer Churn Prediction", "Sales Forecasting Model", "Recommendation System", 
-                        "Fraud Detection Algorithm", "Image Classification", "Natural Language Processing",
-                        "Sentiment Analysis Tool", "Price Prediction Model", "Supply Chain Optimization",
-                        "Credit Risk Assessment", "Anomaly Detection System", "Market Basket Analysis"],
-        "web_dev": ["E-commerce Website", "Social Media Platform", "Portfolio Website", "Blog Platform", 
-                   "Task Management App", "Real-time Chat Application", "Video Streaming Service",
-                   "Online Learning Platform", "Restaurant Booking System", "Job Portal",
-                   "Content Management System", "Music Player App", "Weather Dashboard"],
-        "mobile": ["Weather App", "Fitness Tracker", "Food Delivery App", "Social Media App", 
-                  "Game Application", "Banking App", "E-commerce App", "Music Streaming App",
-                  "Travel Planner", "Expense Tracker", "Recipe App", "Language Learning App"],
-        "devops": ["CI/CD Pipeline Setup", "Infrastructure as Code", "Container Orchestration", 
-                  "Monitoring Dashboard", "Automated Deployment", "Cloud Migration",
-                  "Log Aggregation System", "Backup and Recovery", "Auto-scaling Setup",
-                  "Multi-cloud Strategy", "Disaster Recovery Plan", "GitOps Implementation"],
-        "security": ["Vulnerability Assessment", "Security Audit", "Network Monitoring System", 
-                    "Incident Response Plan", "Security Training Program", "Compliance Framework",
-                    "Penetration Testing Report", "Security Information Dashboard", "Access Control System",
-                    "Threat Intelligence Platform", "Data Loss Prevention", "Security Automation"],
-        "ai_ml": ["Chatbot with NLP", "Image Captioning", "Voice Recognition", "Text Summarizer", 
-                 "Recommendation Engine", "Face Detection System", "Autonomous Driving Simulation",
-                 "GAN-based Image Generation", "AI-based Tutoring System", "Reinforcement Learning Game Agent"],
-        "cloud": ["Serverless Architecture", "Cloud Cost Optimizer", "Scalable Web App on AWS", 
-                 "Cloud Backup System", "Multi-region Deployment", "Containerized Microservices", 
-                 "Load Balancer Setup", "Cloud Monitoring System", "Auto-healing Infrastructure"],
-        "blockchain": ["NFT Marketplace", "DeFi Lending Platform", "Decentralized Voting System", 
-                      "Supply Chain Blockchain", "Smart Contract Wallet", "Crypto Payment Gateway",
-                      "Blockchain-based Identity Verification", "DAO Platform", "Token Exchange System"],
-        "game_development": ["2D Platformer", "3D Adventure Game", "Racing Game", "Multiplayer Shooter", 
-                    "Puzzle Game", "VR Exploration Game", "Strategy Simulation", "Educational Game"],
-        "embedded": ["Smart Home Automation", "IoT Weather Station", "Industrial Sensor Network", 
-                    "Smart Parking System", "Energy Monitoring Device", "Wearable Health Tracker", 
-                    "Drone Controller", "IoT Security Camera"],
-        "ar_vr": ["Virtual Museum Tour", "AR Furniture Placement", "VR Training Simulator", 
-                  "AR Shopping App", "VR Real Estate Tour", "Immersive Education Platform", 
-                  "Mixed Reality Game"],
-        "ui_ux": ["Design System for SaaS App", "Redesign of E-commerce Checkout Flow", "Mobile-first Dashboard", 
-                 "Accessibility Improvement Project", "Onboarding Flow Design", "Dark Mode Interface",
-                 "User Research Report", "Design Prototype for Social App"]
+        "data_science": [
+            "Customer Churn Prediction",
+            "Recommendation System",
+            "Fraud Detection"
+        ],
+        "web_development": [
+            "E-commerce Website",
+            "Social Media Platform",
+            "Online Learning Platform"
+        ],
+        "mobile_development": [
+            "Fitness Tracker App",
+            "Food Delivery App",
+            "Banking App"
+        ],
+        "devops": [
+            "CI/CD Pipeline",
+            "Infrastructure as Code",
+            "Monitoring System"
+        ],
+        "cybersecurity": [
+            "Vulnerability Assessment",
+            "Penetration Testing Tool",
+            "Security Dashboard"
+        ],
+        "ai_ml": [
+            "Chatbot",
+            "Face Recognition",
+            "Text Summarizer"
+        ],
+        "cloud_computing": [
+            "Serverless Web App",
+            "Cloud Cost Optimizer"
+        ],
+        "blockchain": [
+            "NFT Marketplace",
+            "DeFi Platform"
+        ],
+        "game_development": [
+            "2D Platformer",
+            "3D Adventure Game"
+        ],
+        "embedded_systems": [
+            "Smart Home Automation",
+            "IoT Weather Station"
+        ],
+        "ar_vr": [
+            "Virtual Museum",
+            "AR Shopping App"
+        ],
+        "ui_ux_design": [
+            "Design System",
+            "Mobile App Redesign"
+        ],
+
+        # 🔥 Language / Framework
+        "java": [
+            "Spring Boot REST API",
+            "Banking Management System"
+        ],
+        "python": [
+            "FastAPI Backend",
+            "Automation Tool"
+        ],
+        "nodejs": [
+            "Authentication API",
+            "Real-time Chat Server"
+        ],
+        "javascript": [
+            "Interactive Dashboard",
+            "Browser Game"
+        ],
+        "react": [
+            "Admin Dashboard",
+            "E-commerce Frontend"
+        ]
     }
-
-
 def get_job_titles():
     """Return job titles for each domain"""
     return {
-        "data_science": ["Data Scientist", "ML Engineer", "Data Analyst", "Research Scientist",
-                        "Business Intelligence Analyst", "Data Engineer", "Analytics Manager",
-                        "Quantitative Analyst", "Data Architect"],
-        "web_dev": ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Web Developer",
-                   "UI Developer", "JavaScript Developer", "React Developer", "Node.js Developer",
-                   "Software Engineer", "Web Architect"],
-        "mobile": ["iOS Developer", "Android Developer", "Mobile Developer", "App Developer",
-                  "React Native Developer", "Flutter Developer", "Mobile Architect",
-                  "Mobile UI/UX Developer", "Mobile QA Engineer"],
-        "devops": ["DevOps Engineer", "Site Reliability Engineer", "Cloud Engineer", "Infrastructure Engineer",
-                  "Platform Engineer", "Release Engineer", "Build Engineer", "Systems Engineer",
-                  "Automation Engineer"],
-        "security": ["Security Analyst", "Cybersecurity Engineer", "Security Consultant", "SOC Analyst",
-                    "Penetration Tester", "Security Architect", "Information Security Manager",
-                    "Threat Intelligence Analyst", "Security Operations Engineer"],
-        "ai_ml": ["AI Engineer", "ML Engineer", "Deep Learning Engineer", "NLP Engineer",
-                 "Computer Vision Engineer", "AI Research Scientist", "Data Scientist"],
-        "cloud": ["Cloud Engineer", "Cloud Solutions Architect", "Cloud Administrator", "DevOps Engineer",
-                 "Cloud Security Specialist", "Site Reliability Engineer"],
-        "blockchain": ["Blockchain Developer", "Smart Contract Engineer", "Web3 Developer", 
-                      "Blockchain Architect", "DeFi Engineer", "Crypto Developer"],
-        "game_development": ["Game Developer", "Unity Developer", "Unreal Developer", "Game Designer", 
-                    "Technical Artist", "Gameplay Programmer", "Level Designer"],
-        "embedded": ["Embedded Engineer", "IoT Developer", "Firmware Engineer", "Hardware Design Engineer",
-                    "Systems Engineer", "Embedded Software Developer"],
-        "ar_vr": ["AR Developer", "VR Developer", "Unity XR Engineer", "3D Interaction Designer", 
-                  "Immersive Experience Designer", "AR/VR Research Engineer"],
-        "ui_ux": ["UI Designer", "UX Designer", "Product Designer", "Interaction Designer",
-                 "Design Researcher", "Visual Designer", "UX Strategist"]
+        "data_science": ["Data Scientist", "ML Engineer", "Data Analyst"],
+        "web_development": ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
+        "mobile_development": ["Android Developer", "iOS Developer", "Flutter Developer"],
+        "devops": ["DevOps Engineer", "SRE", "Cloud Engineer"],
+        "cybersecurity": ["Security Analyst", "Penetration Tester"],
+        "ai_ml": ["AI Engineer", "ML Engineer"],
+        "cloud_computing": ["Cloud Architect", "Cloud Engineer"],
+        "blockchain": ["Blockchain Developer", "Web3 Engineer"],
+        "game_development": ["Game Developer", "Unity Developer"],
+        "embedded_systems": ["Embedded Engineer", "Firmware Developer"],
+        "ar_vr": ["AR Developer", "VR Engineer"],
+        "ui_ux_design": ["UX Designer", "UI Designer"],
+
+        # 🔥 Language / Framework
+        "java": ["Java Developer", "Backend Engineer"],
+        "python": ["Python Developer", "API Developer"],
+        "nodejs": ["Node.js Developer", "Backend Engineer"],
+        "javascript": ["JavaScript Developer", "Frontend Developer"],
+        "react": ["React Developer", "UI Engineer"]
     }

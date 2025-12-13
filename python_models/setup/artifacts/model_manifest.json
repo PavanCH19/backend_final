@@ -1,13 +1,13 @@
 {
   "model_name": "resume_classifier",
   "version": "1.0",
-  "created_date": "2025-11-25T19:10:01.415728",
+  "created_date": "2025-12-13T11:00:51.089942",
   "model_architecture": "hybrid_neural_network",
   "input_features": {
-    "skill_vocabulary_size": 210,
+    "skill_vocabulary_size": 99,
     "numeric_features": 4,
     "text_features": 128,
-    "total_features": 346
+    "total_features": 235
   },
   "output_classes": [
     "Fit",
@@ -17,10 +17,10 @@
   "training_samples": 1400,
   "validation_samples": 300,
   "test_samples": 300,
-  "test_accuracy": 0.8199999928474426,
-  "test_loss": 0.37820902466773987,
-  "f1_macro": 0.811302294197031,
-  "f1_weighted": 0.8193242240215926,
+  "test_accuracy": 0.8700000047683716,
+  "test_loss": 0.3312356173992157,
+  "f1_macro": 0.8559075395279935,
+  "f1_weighted": 0.868222209332409,
   "artifacts": {
     "model_weights": "models/resume_classifier_complete.keras",
     "savedmodel": "models/resume_classifier_savedmodel/",

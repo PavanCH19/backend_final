@@ -330,79 +330,263 @@ def load_json_artifacts():
 
 def get_sample_resumes():
     return [
+        # -------------------- WEB / FULL STACK --------------------
         {
             "skills": [
                 "JavaScript", "React", "Node.js", "HTML", "CSS", "MongoDB", "Express",
-                "Python", "SQL", "Docker", "AWS", "CI/CD", "Kubernetes", "Terraform",
-                "Penetration Testing", "Network Security"
+                "Python", "SQL", "Docker", "AWS", "CI/CD"
             ],
-            "projects": ["Social Media Platform", "E-commerce Website", "CI/CD Pipeline Setup"],
+            "projects": ["Social Media Platform", "E-commerce Website"],
             "work_experience": [
-                {"title": "Full Stack Developer", "years": 5},
-                {"title": "DevOps Engineer", "years": 2}
+                {"title": "Full Stack Developer", "years": 5}
             ],
             "test_score": 48,
             "preferred_domain": "Web Development",
             "id": "candidate_1250"
         },
+
+        # -------------------- MOBILE DEVELOPMENT --------------------
         {
             "skills": [
-                "Flutter", "Kotlin", "Java", "React Native", "Swift", "iOS", "Android",
-                "Python", "SQL", "Docker", "React.js", "Tailwind CSS", "AWS", "Terraform"
+                "Flutter", "Kotlin", "Java", "React Native", "Swift",
+                "iOS", "Android", "Firebase", "AWS"
             ],
-            "projects": ["Mobile Banking App", "Fitness Tracker", "Expense Tracker"],
+            "projects": ["Mobile Banking App", "Fitness Tracker"],
             "work_experience": [
-                {"title": "Mobile Developer", "years": 4},
-                {"title": "Data Analyst", "years": 1}
+                {"title": "Mobile Developer", "years": 4}
             ],
             "test_score": 82,
             "preferred_domain": "Mobile Development",
             "id": "candidate_1251"
         },
+
+        # -------------------- DEVOPS --------------------
         {
             "skills": [
-                "Docker", "Kubernetes", "AWS", "Jenkins", "Terraform", "Linux", "CI/CD",
-                "Python", "React.js", "Node.js", "SQL", "Flutter", "Penetration Testing"
+                "Docker", "Kubernetes", "AWS", "Jenkins", "Terraform",
+                "Linux", "CI/CD", "Python"
             ],
-            "projects": ["Infrastructure as Code", "Automated Deployment", "Monitoring Dashboard"],
+            "projects": ["Infrastructure as Code", "Monitoring Dashboard"],
             "work_experience": [
-                {"title": "DevOps Engineer", "years": 6},
-                {"title": "Full Stack Developer", "years": 2}
+                {"title": "DevOps Engineer", "years": 6}
             ],
             "test_score": 85,
             "preferred_domain": "DevOps",
             "id": "candidate_1252"
         },
+
+        # -------------------- CYBERSECURITY --------------------
         {
             "skills": [
-                "Network Security", "Penetration Testing", "CISSP", "Firewall", "Encryption",
-                "Python", "Docker", "AWS", "React.js", "SQL", "Kubernetes"
+                "Network Security", "Penetration Testing", "CISSP",
+                "Firewall", "Encryption", "Python", "AWS"
             ],
-            "projects": ["Vulnerability Assessment", "Incident Response Plan", "Security Information Dashboard"],
+            "projects": ["Vulnerability Assessment", "Security Information Dashboard"],
             "work_experience": [
-                {"title": "Cybersecurity Engineer", "years": 5},
-                {"title": "DevOps Engineer", "years": 1}
+                {"title": "Cybersecurity Engineer", "years": 5}
             ],
             "test_score": 79,
             "preferred_domain": "Cybersecurity",
             "id": "candidate_1253"
         },
+
+        # -------------------- DATA SCIENCE --------------------
         {
             "skills": [
-                "JavaScript", "Vue.js", "HTML", "CSS", "Node.js", "Express", "React",
-                "Docker", "Python", "AWS", "Kubernetes", "Flutter", "Penetration Testing"
+                "Python", "Pandas", "NumPy", "Scikit-learn",
+                "TensorFlow", "SQL", "Statistics"
             ],
-            "projects": ["Task Management App", "E-commerce Website", "Mobile Inventory App"],
+            "projects": ["Customer Churn Prediction", "Sales Forecasting Model"],
             "work_experience": [
-                {"title": "Frontend Developer", "years": 3},
-                {"title": "Mobile Developer", "years": 2}
+                {"title": "Data Scientist", "years": 3}
             ],
-            "test_score": 76,
-            "preferred_domain": "Web Development",
+            "test_score": 88,
+            "preferred_domain": "Data Science",
             "id": "candidate_1254"
+        },
+
+        # -------------------- AI / ML --------------------
+        {
+            "skills": [
+                "Python", "TensorFlow", "PyTorch",
+                "Deep Learning", "NLP", "Computer Vision"
+            ],
+            "projects": ["Chatbot with NLP", "Face Recognition System"],
+            "work_experience": [
+                {"title": "ML Engineer", "years": 4}
+            ],
+            "test_score": 91,
+            "preferred_domain": "AI & Machine Learning",
+            "id": "candidate_1255"
+        },
+
+        # -------------------- CLOUD COMPUTING --------------------
+        {
+            "skills": [
+                "AWS", "Azure", "Docker", "Kubernetes",
+                "Terraform", "IAM"
+            ],
+            "projects": ["Serverless Web App", "Cloud Cost Optimizer"],
+            "work_experience": [
+                {"title": "Cloud Engineer", "years": 5}
+            ],
+            "test_score": 84,
+            "preferred_domain": "Cloud Computing",
+            "id": "candidate_1256"
+        },
+
+        # -------------------- BLOCKCHAIN --------------------
+        {
+            "skills": [
+                "Solidity", "Ethereum", "Smart Contracts",
+                "Web3.js", "Cryptography"
+            ],
+            "projects": ["NFT Marketplace", "DeFi Platform"],
+            "work_experience": [
+                {"title": "Blockchain Developer", "years": 3}
+            ],
+            "test_score": 78,
+            "preferred_domain": "Blockchain Development",
+            "id": "candidate_1257"
+        },
+
+        # -------------------- GAME DEVELOPMENT --------------------
+        {
+            "skills": [
+                "Unity", "C#", "Game Physics",
+                "3D Modeling", "Shader Programming"
+            ],
+            "projects": ["2D Platformer", "3D Adventure Game"],
+            "work_experience": [
+                {"title": "Game Developer", "years": 4}
+            ],
+            "test_score": 73,
+            "preferred_domain": "Game Development",
+            "id": "candidate_1258"
+        },
+
+        # -------------------- EMBEDDED SYSTEMS --------------------
+        {
+            "skills": [
+                "C", "C++", "Microcontrollers",
+                "RTOS", "IoT", "Sensors"
+            ],
+            "projects": ["Smart Home Automation", "IoT Weather Station"],
+            "work_experience": [
+                {"title": "Embedded Engineer", "years": 5}
+            ],
+            "test_score": 80,
+            "preferred_domain": "Embedded Systems",
+            "id": "candidate_1259"
+        },
+
+        # -------------------- AR / VR --------------------
+        {
+            "skills": [
+                "Unity", "C#", "XR Toolkit",
+                "3D Modeling", "Oculus SDK"
+            ],
+            "projects": ["Virtual Museum", "VR Training Simulator"],
+            "work_experience": [
+                {"title": "AR/VR Developer", "years": 3}
+            ],
+            "test_score": 77,
+            "preferred_domain": "AR / VR Development",
+            "id": "candidate_1260"
+        },
+
+        # -------------------- UI / UX --------------------
+        {
+            "skills": [
+                "Figma", "Wireframing", "Prototyping",
+                "User Research", "Accessibility"
+            ],
+            "projects": ["Design System", "Mobile App Redesign"],
+            "work_experience": [
+                {"title": "UX Designer", "years": 4}
+            ],
+            "test_score": 74,
+            "preferred_domain": "UI / UX Design",
+            "id": "candidate_1261"
+        },
+
+        # ==================== LANGUAGE / FRAMEWORK DOMAINS ====================
+
+        # -------------------- JAVA --------------------
+        {
+            "skills": [
+                "Java", "Spring Boot", "Hibernate",
+                "JPA", "Microservices", "REST APIs"
+            ],
+            "projects": ["Banking Management System", "Spring Boot REST API"],
+            "work_experience": [
+                {"title": "Java Developer", "years": 5}
+            ],
+            "test_score": 83,
+            "preferred_domain": "Java Development",
+            "id": "candidate_1262"
+        },
+
+        # -------------------- PYTHON --------------------
+        {
+            "skills": [
+                "Python", "Django", "Flask",
+                "FastAPI", "AsyncIO", "REST APIs"
+            ],
+            "projects": ["FastAPI Backend", "Automation Tool"],
+            "work_experience": [
+                {"title": "Python Developer", "years": 4}
+            ],
+            "test_score": 86,
+            "preferred_domain": "Python Development",
+            "id": "candidate_1263"
+        },
+
+        # -------------------- NODE.JS --------------------
+        {
+            "skills": [
+                "Node.js", "Express", "MongoDB",
+                "JWT", "Socket.io", "REST APIs"
+            ],
+            "projects": ["Authentication API", "Real-time Chat Server"],
+            "work_experience": [
+                {"title": "Node.js Developer", "years": 4}
+            ],
+            "test_score": 81,
+            "preferred_domain": "Node.js Development",
+            "id": "candidate_1264"
+        },
+
+        # -------------------- JAVASCRIPT --------------------
+        {
+            "skills": [
+                "JavaScript", "ES6+", "DOM",
+                "Promises", "Event Loop"
+            ],
+            "projects": ["Interactive Dashboard", "Browser Game"],
+            "work_experience": [
+                {"title": "JavaScript Developer", "years": 3}
+            ],
+            "test_score": 75,
+            "preferred_domain": "JavaScript Development",
+            "id": "candidate_1265"
+        },
+
+        # -------------------- REACT --------------------
+        {
+            "skills": [
+                "React", "Hooks", "Redux",
+                "Next.js", "Performance Optimization"
+            ],
+            "projects": ["Admin Dashboard", "E-commerce Frontend"],
+            "work_experience": [
+                {"title": "React Developer", "years": 4}
+            ],
+            "test_score": 87,
+            "preferred_domain": "React Development",
+            "id": "candidate_1266"
         }
     ]
-
 
 # ============================================================================
 # Main Pipeline Function
@@ -445,11 +629,96 @@ def main(data):
     return results
 
 
-# Keep your existing if __name__ == "__main__" for local testing
+# # Keep your existing if __name__ == "__main__" for local testing
+# if __name__ == "__main__":
+#     print(f"Base path set to: {BASE_PATH}")
+#     sample_resumes = get_sample_resumes()
+    
+#     # For local testing, process all sample
+#     for i, resume in enumerate(sample_resumes):
+#         print(f"\n--- Classifying Sample Resume {i+1}/{len(sample_resumes)} ---")
+#         result = main(resume)
+#         print(json.dumps(result, indent=2))
+
+from data_config import get_domain_requirements
+
+def get_all_expected_domains():
+    return set(
+        d["domain"]
+        for d in get_domain_requirements().values()
+    )
+def extract_predicted_domain(result: dict):
+    """
+    Safely extract predicted domain from classification result
+    """
+    if not isinstance(result, dict):
+        return None
+
+    # CURRENT OFFICIAL LOCATION (your pipeline output)
+    if "metadata" in result and isinstance(result["metadata"], dict):
+        domain = result["metadata"].get("domain")
+        if domain:
+            return domain
+
+    # Fallbacks (future-proofing)
+    for key in ["predicted_domain", "best_domain", "domain"]:
+        if key in result:
+            return result[key]
+
+    return None
+
+
+    
 if __name__ == "__main__":
     print(f"Base path set to: {BASE_PATH}")
+
     sample_resumes = get_sample_resumes()
-    
-    # For local testing, process first sample
-    results = main(sample_resumes[0])
-    print(json.dumps(results, indent=2))
+    expected_domains = get_all_expected_domains()
+    detected_domains = set()
+    failed_resumes = []
+
+    for i, resume in enumerate(sample_resumes):
+        print(f"\n--- Classifying Sample Resume {i+1}/{len(sample_resumes)} ---")
+
+        try:
+            result = main(resume)
+            print(json.dumps(result, indent=2))
+
+            predicted_domain = extract_predicted_domain(result)
+
+            if predicted_domain:
+                detected_domains.add(predicted_domain)
+            else:
+                print("❌ Domain not found in result structure")
+                failed_resumes.append(resume["id"])
+
+        except Exception as e:
+            print(f"❌ Error while processing {resume['id']}: {str(e)}")
+            failed_resumes.append(resume["id"])
+
+    # ---------------- SUMMARY ----------------
+    print("\n================ DOMAIN COVERAGE REPORT ================")
+
+    print(f"Expected Domains ({len(expected_domains)}):")
+    for d in sorted(expected_domains):
+        print(f"  ✔ {d}")
+
+    print(f"\nDetected Domains ({len(detected_domains)}):")
+    for d in sorted(detected_domains):
+        print(f"  ✅ {d}")
+
+    missing_domains = expected_domains - detected_domains
+
+    if missing_domains:
+        print("\n❌ MISSING DOMAINS (No resume classified into these):")
+        for d in sorted(missing_domains):
+            print(f"  ❌ {d}")
+    else:
+        print("\n🎉 SUCCESS: All domains classified at least once!")
+
+    if failed_resumes:
+        print("\n⚠ Failed Resume IDs:")
+        for r in failed_resumes:
+            print(f"  - {r}")
+    else:
+        print("\n✅ All resumes processed successfully")

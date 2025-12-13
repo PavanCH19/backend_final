@@ -10,17 +10,22 @@ def get_skill_key_mapping():
     """Return mapping between domain names and skill pool keys"""
     return {
         "data_science": "data_science",
-        "web_development": "web_dev",
-        "mobile_development": "mobile",
+        "web_development": "web_development",
+        "mobile_development": "mobile_development",
         "devops": "devops",
-        "cybersecurity": "security",
+        "cybersecurity": "cybersecurity",
         "ai_ml": "ai_ml",
-        "cloud_computing": "cloud",
+        "cloud_computing": "cloud_computing",
         "blockchain": "blockchain",
         "game_development": "game_development",
-        "embedded_systems": "embedded",
+        "embedded_systems": "embedded_systems",
         "ar_vr": "ar_vr",
-        "ui_ux_design": "ui_ux"
+        "ui_ux_design": "ui_ux_design",
+        "java_development": "java",
+        "python_development": "python",
+        "nodejs_development": "nodejs",
+        "javascript_development": "javascript",
+        "react_development": "react"
     }
 
 
@@ -37,7 +42,9 @@ def generate_fit_resume_skills(required_skills, domain_skills):
     """Generate skills for a 'fit' candidate"""
     required_count = max(1, int(len(required_skills) * random.uniform(0.7, 1.0)))
     selected_required = random.sample(required_skills, required_count)
-    additional_domain = random.sample([s for s in domain_skills if s not in selected_required], random.randint(2, 5))
+    available_additional = [s for s in domain_skills if s not in selected_required]
+    num_additional = min(len(available_additional), random.randint(2, 5))
+    additional_domain = random.sample(available_additional, num_additional)
     selected_skills = selected_required + additional_domain
     test_score = int(random.uniform(75, 100))
     n_projects = random.randint(1, 4)
@@ -50,13 +57,17 @@ def generate_partial_fit_resume_skills(required_skills, domain_skills):
     if random.choice([True, False]):
         required_count = max(1, int(len(required_skills) * random.uniform(0.4, 0.69)))
         selected_required = random.sample(required_skills, required_count)
-        additional_domain = random.sample([s for s in domain_skills if s not in selected_required], random.randint(1, 3))
+        available_additional = [s for s in domain_skills if s not in selected_required]
+        num_additional = min(len(available_additional), random.randint(1, 3))
+        additional_domain = random.sample(available_additional, num_additional)
         selected_skills = selected_required + additional_domain
         test_score = int(random.uniform(30, 100))
     else:
         required_count = max(0, int(len(required_skills) * random.uniform(0.0, 1.0)))
         selected_required = random.sample(required_skills, required_count) if required_count > 0 else []
-        additional_domain = random.sample([s for s in domain_skills if s not in selected_required], random.randint(1, 4))
+        available_additional = [s for s in domain_skills if s not in selected_required]
+        num_additional = min(len(available_additional), random.randint(1, 4))
+        additional_domain = random.sample(available_additional, num_additional)
         selected_skills = selected_required + additional_domain
         test_score = int(random.uniform(50, 74))
     
@@ -71,15 +82,20 @@ def generate_not_fit_resume_skills(required_skills, domain_skills, other_skills)
         selected_required = random.sample(required_skills, required_count) if required_count > 0 else []
         
         if random.choice([True, False]):
-            selected_skills = selected_required + random.sample(other_skills, random.randint(2, 6))
+            num_other = min(len(other_skills), random.randint(2, 6))
+            selected_skills = selected_required + random.sample(other_skills, num_other)
         else:
-            additional_domain = random.sample([s for s in domain_skills if s not in selected_required], random.randint(0, 2))
+            available_additional = [s for s in domain_skills if s not in selected_required]
+            num_additional = min(len(available_additional), random.randint(0, 2))
+            additional_domain = random.sample(available_additional, num_additional)
             selected_skills = selected_required + additional_domain
         test_score = int(random.uniform(0, 100))
     else:
         required_count = max(0, int(len(required_skills) * random.uniform(0.0, 1.0)))
         selected_required = random.sample(required_skills, required_count) if required_count > 0 else []
-        additional_domain = random.sample([s for s in domain_skills if s not in selected_required], random.randint(1, 4))
+        available_additional = [s for s in domain_skills if s not in selected_required]
+        num_additional = min(len(available_additional), random.randint(1, 4))
+        additional_domain = random.sample(available_additional, num_additional)
         selected_skills = selected_required + additional_domain
         test_score = int(random.uniform(0, 49))
     

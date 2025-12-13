@@ -55,12 +55,11 @@
       "CISSP",
       "Firewall",
       "Encryption",
-      "Python",
-      "Risk Assessment"
+      "Python"
     ]
   },
   "ai_ml": {
-    "domain": "Artificial Intelligence & Machine Learning",
+    "domain": "AI & Machine Learning",
     "required_skills": [
       "Python",
       "TensorFlow",
@@ -79,8 +78,7 @@
       "GCP",
       "Docker",
       "Kubernetes",
-      "Terraform",
-      "Cloud Security"
+      "Terraform"
     ]
   },
   "blockchain": {
@@ -90,8 +88,6 @@
       "Ethereum",
       "Smart Contracts",
       "Web3.js",
-      "Truffle",
-      "Blockchain Architecture",
       "Cryptography"
     ]
   },
@@ -102,9 +98,7 @@
       "Unreal Engine",
       "C#",
       "C++",
-      "Game Physics",
-      "3D Modeling",
-      "Shader Programming"
+      "Game Physics"
     ]
   },
   "embedded_systems": {
@@ -114,33 +108,77 @@
       "C++",
       "Microcontrollers",
       "RTOS",
-      "IoT",
-      "Sensors",
-      "PCB Design"
+      "IoT"
     ]
   },
   "ar_vr": {
-    "domain": "AR/VR Development",
+    "domain": "AR / VR Development",
     "required_skills": [
       "Unity",
-      "Unreal Engine",
       "C#",
-      "Blender",
       "3D Modeling",
-      "XR Interaction Toolkit",
+      "XR Toolkit",
       "Oculus SDK"
     ]
   },
   "ui_ux_design": {
-    "domain": "UI/UX Design",
+    "domain": "UI / UX Design",
     "required_skills": [
       "Figma",
-      "Adobe XD",
       "Wireframing",
       "Prototyping",
       "User Research",
-      "Design Systems",
       "Accessibility"
+    ]
+  },
+  "java_development": {
+    "domain": "Java Development",
+    "required_skills": [
+      "Java",
+      "OOP",
+      "Spring Boot",
+      "Hibernate",
+      "Microservices"
+    ]
+  },
+  "python_development": {
+    "domain": "Python Development",
+    "required_skills": [
+      "Python",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "REST APIs"
+    ]
+  },
+  "nodejs_development": {
+    "domain": "Node.js Development",
+    "required_skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Async Programming"
+    ]
+  },
+  "javascript_development": {
+    "domain": "JavaScript Development",
+    "required_skills": [
+      "JavaScript",
+      "ES6+",
+      "DOM",
+      "Promises",
+      "Browser APIs"
+    ]
+  },
+  "react_development": {
+    "domain": "React Development",
+    "required_skills": [
+      "React",
+      "Hooks",
+      "Redux",
+      "React Router",
+      "Performance Optimization"
     ]
   }
 }
