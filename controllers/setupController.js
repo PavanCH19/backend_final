@@ -378,7 +378,7 @@ const extract_data = async (pdfFile) => {
 
 const update_user_profile = async (userId, extractedData) => {
   try {
-    console.log("🔥 extractedData:", extractedData);
+    // console.log("🔥 extractedData:", extractedData);
 
     if (!userId) {
       return {
@@ -500,7 +500,7 @@ const processResume = async (pdfFile, userId) => {
       extractedText,
       60000
     );
-    console.log("❤️❤️❤️❤️", pythonResult);
+    // console.log("❤️❤️❤️❤️", pythonResult);
 
     // Check if Python script returned an error
     if (pythonResult.result && pythonResult.result.success === false) {

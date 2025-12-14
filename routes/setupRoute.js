@@ -175,12 +175,13 @@ function normalizeDomain(input) {
 const saveAlternativeDomains = async (userId, suggestions, domain) => {
     try {
         const user = await User.findById(userId);
+        // console.log("😎User before updating the setup results",user )
         if (!user) {
             console.error("User not found while saving suggested domains.");
             return null;
         }
 
-        console.log("Saving suggestions:", suggestions);
+        // console.log("Saving suggestions:", suggestions);
 
         /* -----------------------------------------------------
            1. Save suggestions at ROOT LEVEL (REQUIRED)
@@ -215,6 +216,8 @@ const saveAlternativeDomains = async (userId, suggestions, domain) => {
            3. Save user document
         ----------------------------------------------------- */
         await user.save();
+        const saved = await User.findById(userId)
+        // console.log("Saved user updated target domains?", saved);
 
         return session;
 
@@ -228,8 +231,8 @@ const saveAlternativeDomains = async (userId, suggestions, domain) => {
 
 router.post('/setUp_result', fetchUser, async (req, res) => {
     try {
-        console.log("========================", req.body);
-
+        let user = await User.findById(req.user.id)
+        // console.log(" 😘 User when /setup-result hit : ", user)
         const cleanResume = {
             id: req.user.id,
             skills: req.body.skills || [],
@@ -241,7 +244,11 @@ router.post('/setUp_result', fetchUser, async (req, res) => {
 
         cleanResume.domain = cleanResume.preferred_domain;
 
-        console.log("CLEAN RESUME SENT TO PYTHON:", cleanResume);
+        // checking the user if target domain is updated?
+        user = await User.findById(req.user.id)
+        console.log(" 😘 User before sending the data to python : ", user)
+
+        // console.log("CLEAN RESUME SENT TO PYTHON:", cleanResume);
 
         // Send to Python classifier
         const classification = await classifyResume(cleanResume);
@@ -275,7 +282,8 @@ router.post('/setUp_result', fetchUser, async (req, res) => {
 
         res.status(200).json({
             success: true,
-            data: classification
+            data: classification,
+            user : updatedUser
         });
 
     } catch (error) {

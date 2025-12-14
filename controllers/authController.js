@@ -220,7 +220,17 @@ const updateUserDetails = async (req) => {
                         target[key] = updatedArray;
                     } else {
                         // Array of primitives (like skills)
-                        target[key] = [...value];
+                        //find if the value is already present
+                        let found = target[key].filter((item)=>{
+                            return item === value[0]
+                        })
+                        // console.log("value", value)
+                        // console.log("💕found : ",found) 
+                        // if not found append the value in the source to value in the target | if found skip append it is already exists
+                        if(found.length === 0){
+                            target[key] = [...target[key],...value];  //bug fixed to not to overwrite the existing array 
+                            // console.log("💕target[key]", target[key])
+                        }  
                     }
 
                 } else if (value && typeof value === "object") {
@@ -235,8 +245,11 @@ const updateUserDetails = async (req) => {
         };
         console.log('======================================================', updateData)
         updateFields(user, updateData);
+        // console.log("🫥🫡 user after updating the target domains", user)
 
         const updatedUser = await user.save();
+        console.log("🫥🫡 user after saving the target domains", user)
+
         return {
             status: 200,
             success: true,
