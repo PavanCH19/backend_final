@@ -65,17 +65,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-/* =======================
-   CORS (MUST BE FIRST)
-======================= */
-// const corsOptions = {
-//    origin: "*",
-//    credentials: true,
-//    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-//    allowedHeaders: ["Content-Type", "Authorization"]
-// };
+app.use(cors({
+   origin: "http://localhost:5173", // frontend URL
+   credentials: true,
+   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+   allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-app.use(cors());
 
 /* =======================
    Database
@@ -86,10 +82,10 @@ dbConnect();
    File Upload (before body parsing)
 ======================= */
 app.use(fileUpload({
-    useTempFiles: true,
-    tempFileDir: './tmp/',
-    createParentPath: true,
-    limits: { fileSize: 10 * 1024 * 1024 }
+   useTempFiles: true,
+   tempFileDir: './tmp/',
+   createParentPath: true,
+   limits: { fileSize: 10 * 1024 * 1024 }
 }));
 
 /* =======================
@@ -116,6 +112,6 @@ app.use('/api/gamification', gamificationRoutes);
    Server
 ======================= */
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+   console.log(`Server is running on port ${PORT}`);
 });
 
