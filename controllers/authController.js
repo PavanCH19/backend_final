@@ -74,12 +74,7 @@ const loginUser = async (data) => {
         // 3️⃣ Prepare safe user payload for JWT
         const userPayload = {
             id: user._id,
-            email: user.email,
-            profile: user.profile || {},
-            skills: user.skills || [],
-            education: user.education || [],
-            experience: user.experience || [],
-            date: user.date,
+            email: user.email
         };
 
         // 4️⃣ Generate JWT token

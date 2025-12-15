@@ -3,160 +3,1847 @@
     "_id": "q_web_0001",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "HTML Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "Which HTML tag is used to define an unordered list?",
-    "options": ["<ul>", "<ol>", "<li>", "<list>"],
-    "answer": "<ul>",
-    "explanation": "The <ul> tag defines an unordered (bulleted) list in HTML.",
-    "tags": ["HTML", "Frontend"],
-    "hints": ["Used for bullet points."],
-    "required_skills": ["HTML", "CSS"]
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of web development?",
+    "options": [
+      "Create desktop-only applications",
+      "Build interactive and accessible websites/web applications",
+      "Design hardware systems",
+      "Develop operating systems"
+    ],
+    "answer": "Build interactive and accessible websites/web applications",
+    "explanation": "Web development focuses on creating functional, interactive, and accessible applications for the web.",
+    "tags": ["Web Development", "Fundamentals"],
+    "required_skills": ["Web Basics"],
+    "hints": ["Web applications"]
   },
   {
     "_id": "q_web_0002",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "CSS Styling",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "Which CSS property controls the text size?",
-    "options": ["font-style", "text-size", "font-size", "text-style"],
-    "answer": "font-size",
-    "explanation": "The font-size property in CSS specifies the size of the text.",
-    "tags": ["CSS", "Styling"],
-    "hints": ["Related to text appearance."],
-    "required_skills": ["CSS"]
+    "topic": "Frontend vs Backend",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which part of web development handles user interface and user interaction?",
+    "options": [
+      "Backend",
+      "Database layer",
+      "Frontend",
+      "Server middleware"
+    ],
+    "answer": "Frontend",
+    "explanation": "Frontend development focuses on UI, UX, and client-side interactions.",
+    "tags": ["Web Development", "Frontend"],
+    "required_skills": ["HTML", "CSS", "JavaScript"],
+    "hints": ["Client-side"]
   },
   {
     "_id": "q_web_0003",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "JavaScript Basics",
-    "difficulty": 2,
-    "difficulty_label": "Moderate",
-    "estimated_time_sec": 90,
-    "text": "What is the correct way to write a JavaScript array?",
-    "options": ["var colors = (1:red, 2:green)", "var colors = ['red', 'green']", "var colors = 'red', 'green'", "var colors = {red, green}"],
-    "answer": "var colors = ['red', 'green']",
-    "explanation": "Arrays in JavaScript are defined using square brackets [] with elements separated by commas.",
-    "tags": ["JavaScript", "Programming"],
-    "hints": ["Use square brackets."],
-    "required_skills": ["JavaScript"]
+    "topic": "HTML",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main role of HTML in web development?",
+    "options": [
+      "Styling web pages",
+      "Handling server logic",
+      "Structuring web content",
+      "Managing databases"
+    ],
+    "answer": "Structuring web content",
+    "explanation": "HTML provides the structural foundation of web pages.",
+    "tags": ["Web Development", "HTML"],
+    "required_skills": ["HTML5"],
+    "hints": ["Page structure"]
   },
   {
     "_id": "q_web_0004",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "React Fundamentals",
-    "difficulty": 2,
-    "difficulty_label": "Moderate",
-    "estimated_time_sec": 120,
-    "text": "In React, which hook is used to handle state in functional components?",
-    "options": ["useEffect", "useState", "useContext", "useReducer"],
-    "answer": "useState",
-    "explanation": "useState is a built-in React hook for managing component state.",
-    "tags": ["React", "Hooks"],
-    "hints": ["Think about data storage within a component."],
-    "required_skills": ["React", "JavaScript"]
+    "topic": "CSS",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which CSS concept controls the layout of elements in two dimensions?",
+    "options": [
+      "Float",
+      "Positioning",
+      "Flexbox",
+      "Grid"
+    ],
+    "answer": "Grid",
+    "explanation": "CSS Grid enables two-dimensional layout control (rows and columns).",
+    "tags": ["Web Development", "CSS"],
+    "required_skills": ["CSS Grid"],
+    "hints": ["Rows and columns"]
   },
   {
     "_id": "q_web_0005",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "Node.js Basics",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "text": "Which module in Node.js is used to create a server?",
-    "options": ["http", "fs", "os", "url"],
-    "answer": "http",
-    "explanation": "The built-in 'http' module allows creation of an HTTP server in Node.js.",
-    "tags": ["Node.js", "Backend"],
-    "hints": ["Think about handling requests and responses."],
-    "required_skills": ["Node.js"]
+    "topic": "JavaScript",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary role of JavaScript in web development?",
+    "options": [
+      "Define document structure",
+      "Style web pages",
+      "Add interactivity and dynamic behavior",
+      "Store user data permanently"
+    ],
+    "answer": "Add interactivity and dynamic behavior",
+    "explanation": "JavaScript enables dynamic content updates and user interaction.",
+    "tags": ["Web Development", "JavaScript"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Dynamic behavior"]
   },
   {
     "_id": "q_web_0006",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "Express.js",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "text": "Which method in Express.js is used to handle GET requests?",
-    "options": ["app.fetch()", "app.get()", "app.request()", "app.route()"],
-    "answer": "app.get()",
-    "explanation": "The app.get() method is used in Express to handle HTTP GET requests.",
-    "tags": ["Express", "Node.js"],
-    "hints": ["Commonly used to fetch data."],
-    "required_skills": ["Express", "Node.js"]
+    "topic": "HTTP",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which HTTP method is typically used to retrieve data from a server?",
+    "options": [
+      "POST",
+      "PUT",
+      "GET",
+      "DELETE"
+    ],
+    "answer": "GET",
+    "explanation": "GET requests retrieve data without modifying server resources.",
+    "tags": ["Web Development", "HTTP"],
+    "required_skills": ["Web Protocols"],
+    "hints": ["Fetch data"]
   },
   {
     "_id": "q_web_0007",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "MongoDB",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "text": "Which command is used to insert a document into a MongoDB collection?",
-    "options": ["db.collection.insertOne()", "db.collection.add()", "db.collection.push()", "db.collection.saveDoc()"],
-    "answer": "db.collection.insertOne()",
-    "explanation": "The insertOne() method inserts a single document into a MongoDB collection.",
-    "tags": ["MongoDB", "Database"],
-    "hints": ["Used for adding data."],
-    "required_skills": ["MongoDB"]
+    "topic": "Responsive Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of responsive web design?",
+    "options": [
+      "Increase server speed",
+      "Support multiple programming languages",
+      "Ensure usability across different screen sizes",
+      "Improve database performance"
+    ],
+    "answer": "Ensure usability across different screen sizes",
+    "explanation": "Responsive design adapts layouts to different devices and screen sizes.",
+    "tags": ["Web Development", "Responsive Design"],
+    "required_skills": ["Responsive Layouts"],
+    "hints": ["Multiple devices"]
   },
   {
     "_id": "q_web_0008",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "React Components",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Frontend Frameworks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "In React, how do you pass data from a parent to a child component?",
-    "options": ["Using Redux", "Using Props", "Using Context", "Using Hooks"],
-    "answer": "Using Props",
-    "explanation": "Props are used to pass data from a parent component to a child component in React.",
-    "tags": ["React", "Props"],
-    "hints": ["One-way data flow concept."],
-    "required_skills": ["React"]
+    "text": "Which JavaScript framework uses a component-based architecture?",
+    "options": [
+      "jQuery",
+      "React",
+      "PHP",
+      "Django"
+    ],
+    "answer": "React",
+    "explanation": "React builds UIs using reusable components.",
+    "tags": ["Web Development", "Frontend Frameworks"],
+    "required_skills": ["React"],
+    "hints": ["Components"]
   },
   {
     "_id": "q_web_0009",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "JavaScript ES6",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Backend",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "Which keyword is used to declare a constant in JavaScript?",
-    "options": ["let", "const", "var", "define"],
-    "answer": "const",
-    "explanation": "The const keyword declares a block-scoped, read-only variable.",
-    "tags": ["JavaScript", "ES6"],
-    "hints": ["Cannot be reassigned."],
-    "required_skills": ["JavaScript"]
+    "text": "Which responsibility belongs to backend development?",
+    "options": [
+      "Styling buttons",
+      "Handling server-side logic and APIs",
+      "Designing layouts",
+      "Animating UI elements"
+    ],
+    "answer": "Handling server-side logic and APIs",
+    "explanation": "Backend development manages business logic, APIs, and server operations.",
+    "tags": ["Web Development", "Backend"],
+    "required_skills": ["Server-side Programming"],
+    "hints": ["Server logic"]
   },
   {
     "_id": "q_web_0010",
     "question_type": "multiple-choice",
     "domain": "Web Development",
-    "topic": "API Integration",
+    "topic": "Databases",
     "difficulty": 5,
     "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "Which HTTP method is commonly used to update data on a server?",
-    "options": ["GET", "POST", "PUT", "PATCH"],
-    "answer": "PUT",
-    "explanation": "PUT is used to update existing resources on the server.",
-    "tags": ["API", "HTTP"],
-    "hints": ["Think CRUD operations."],
-    "required_skills": ["Express", "Node.js"]
+    "estimated_time_sec": 180,
+    "text": "Which database type is commonly used in web applications for structured data?",
+    "options": [
+      "Graph database",
+      "Relational database",
+      "Key-value store",
+      "File system"
+    ],
+    "answer": "Relational database",
+    "explanation": "Relational databases store structured data using tables and schemas.",
+    "tags": ["Web Development", "Databases"],
+    "required_skills": ["SQL"],
+    "hints": ["Tables"]
+  },
+
+  {
+    "_id": "q_web_0011",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "APIs",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of RESTful APIs?",
+    "options": [
+      "Render HTML pages",
+      "Enable communication between client and server",
+      "Style web pages",
+      "Manage authentication only"
+    ],
+    "answer": "Enable communication between client and server",
+    "explanation": "REST APIs allow data exchange using standard HTTP methods.",
+    "tags": ["Web Development", "APIs"],
+    "required_skills": ["REST"],
+    "hints": ["Client-server"]
+  },
+  {
+    "_id": "q_web_0012",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice helps protect web applications from XSS attacks?",
+    "options": [
+      "Disabling JavaScript",
+      "Input sanitization and output encoding",
+      "Increasing server memory",
+      "Using GET requests only"
+    ],
+    "answer": "Input sanitization and output encoding",
+    "explanation": "Proper validation and encoding prevent malicious script execution.",
+    "tags": ["Web Development", "Security"],
+    "required_skills": ["Web Security"],
+    "hints": ["Script injection"]
+  },
+  {
+    "_id": "q_web_0013",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Authentication",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which mechanism is commonly used for stateless authentication in web apps?",
+    "options": [
+      "Sessions",
+      "Cookies only",
+      "JWT",
+      "CAPTCHA"
+    ],
+    "answer": "JWT",
+    "explanation": "JWT enables stateless authentication using signed tokens.",
+    "tags": ["Web Development", "Authentication"],
+    "required_skills": ["Auth Systems"],
+    "hints": ["Token-based"]
+  },
+  {
+    "_id": "q_web_0014",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique improves web performance by reducing server load?",
+    "options": [
+      "Code duplication",
+      "Caching",
+      "Larger images",
+      "Synchronous requests"
+    ],
+    "answer": "Caching",
+    "explanation": "Caching stores frequently accessed data to reduce repeated processing.",
+    "tags": ["Web Development", "Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Reuse data"]
+  },
+  {
+    "_id": "q_web_0015",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Build Tools",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary role of build tools like Webpack?",
+    "options": [
+      "Write backend logic",
+      "Bundle and optimize frontend assets",
+      "Design UI layouts",
+      "Manage databases"
+    ],
+    "answer": "Bundle and optimize frontend assets",
+    "explanation": "Build tools prepare code and assets for efficient deployment.",
+    "tags": ["Web Development", "Build Tools"],
+    "required_skills": ["Webpack"],
+    "hints": ["Asset bundling"]
+  },
+  {
+    "_id": "q_web_0016",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main goal of end-to-end (E2E) testing?",
+    "options": [
+      "Test individual functions",
+      "Verify complete user workflows",
+      "Optimize performance",
+      "Improve UI design"
+    ],
+    "answer": "Verify complete user workflows",
+    "explanation": "E2E testing ensures the application works as expected from user perspective.",
+    "tags": ["Web Development", "Testing"],
+    "required_skills": ["E2E Testing"],
+    "hints": ["User flow"]
+  },
+  {
+    "_id": "q_web_0017",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice improves search engine optimization (SEO)?",
+    "options": [
+      "Using inline styles only",
+      "Semantic HTML and meaningful metadata",
+      "Blocking crawlers",
+      "Large JavaScript bundles"
+    ],
+    "answer": "Semantic HTML and meaningful metadata",
+    "explanation": "Semantic structure helps search engines understand content.",
+    "tags": ["Web Development", "SEO"],
+    "required_skills": ["SEO Basics"],
+    "hints": ["Search visibility"]
+  },
+  {
+    "_id": "q_web_0018",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Accessibility",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which attribute improves accessibility for screen readers?",
+    "options": [
+      "class",
+      "id",
+      "aria-label",
+      "style"
+    ],
+    "answer": "aria-label",
+    "explanation": "ARIA labels provide context for assistive technologies.",
+    "tags": ["Web Development", "Accessibility"],
+    "required_skills": ["Accessible Web Design"],
+    "hints": ["Screen readers"]
+  },
+  {
+    "_id": "q_web_0019",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of a web deployment process?",
+    "options": [
+      "Write source code",
+      "Move applications from development to production",
+      "Design web pages",
+      "Test algorithms"
+    ],
+    "answer": "Move applications from development to production",
+    "explanation": "Deployment makes applications accessible to end users.",
+    "tags": ["Web Development", "Deployment"],
+    "required_skills": ["DevOps Basics"],
+    "hints": ["Go live"]
+  },
+  {
+    "_id": "q_web_0020",
+    "question_type": "multiple-choice",
+    "domain": "Web Development",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are Progressive Web Apps (PWAs) important in modern web development?",
+    "options": [
+      "They replace backend servers",
+      "They provide native-app-like experiences on the web",
+      "They eliminate JavaScript",
+      "They require constant internet connection"
+    ],
+    "answer": "They provide native-app-like experiences on the web",
+    "explanation": "PWAs combine web reach with offline support and performance benefits.",
+    "tags": ["Web Development", "PWA"],
+    "required_skills": ["Modern Web"],
+    "hints": ["App-like web"]
+  },
+
+  {
+    "_id": "q_web_0021",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Web Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain how the web works, including the role of the client, server, and HTTP protocol.",
+    "expected_answer": {
+      "key_points": [
+        "Client-server architecture",
+        "Role of browser as client",
+        "HTTP request and response cycle",
+        "Stateless nature of HTTP"
+      ],
+      "example_scenarios": [
+        "Loading a website using a browser",
+        "Submitting a form to a web server"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["HTTP", "Web Basics"],
+    "required_skills": ["Web Fundamentals"],
+    "hints": [
+      "Think about what happens when you type a URL",
+      "Consider request-response flow"
+    ]
+  },
+  {
+    "_id": "q_web_0022",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "HTML",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the structure of an HTML document and the purpose of semantic HTML tags.",
+    "expected_answer": {
+      "key_points": [
+        "DOCTYPE declaration",
+        "Head and body sections",
+        "Semantic tags like header, footer, section, article",
+        "Benefits for accessibility and SEO"
+      ],
+      "example_scenarios": [
+        "Building a blog page",
+        "Designing a news website layout"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Structural Explanation", "weight": 0.4 },
+      { "criterion": "Use of Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["HTML", "Semantic Web"],
+    "required_skills": ["HTML"],
+    "hints": [
+      "Think about page layout",
+      "Focus on meaning rather than styling"
+    ]
+  },
+  {
+    "_id": "q_web_0023",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "CSS",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the CSS box model and its importance in webpage layout design.",
+    "expected_answer": {
+      "key_points": [
+        "Content, padding, border, margin",
+        "Box sizing property",
+        "Impact on layout and spacing"
+      ],
+      "example_scenarios": [
+        "Designing card layouts",
+        "Aligning elements on a webpage"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Accuracy", "weight": 0.4 },
+      { "criterion": "Layout Understanding", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["CSS", "Layout"],
+    "required_skills": ["CSS"],
+    "hints": [
+      "Think in terms of spacing",
+      "Visualize nested rectangles"
+    ]
+  },
+  {
+    "_id": "q_web_0024",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "JavaScript Basics",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the role of JavaScript in web development and how it enhances user interaction.",
+    "expected_answer": {
+      "key_points": [
+        "Client-side scripting",
+        "Event handling",
+        "DOM manipulation",
+        "Dynamic behavior"
+      ],
+      "example_scenarios": [
+        "Form validation",
+        "Interactive buttons and menus"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Role Explanation", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["JavaScript", "Frontend"],
+    "required_skills": ["JavaScript"],
+    "hints": [
+      "Think about interactivity",
+      "Focus on browser execution"
+    ]
+  },
+  {
+    "_id": "q_web_0025",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Responsive Design",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain responsive web design and techniques used to achieve it.",
+    "expected_answer": {
+      "key_points": [
+        "Media queries",
+        "Flexible layouts",
+        "Responsive images",
+        "Mobile-first approach"
+      ],
+      "example_scenarios": [
+        "Designing a mobile-friendly website",
+        "Supporting multiple screen sizes"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Design Understanding", "weight": 0.4 },
+      { "criterion": "Technical Methods", "weight": 0.3 },
+      { "criterion": "Practical Insight", "weight": 0.3 }
+    ],
+    "tags": ["Responsive Design", "CSS"],
+    "required_skills": ["CSS", "HTML"],
+    "hints": [
+      "Think about different devices",
+      "Consider screen width changes"
+    ]
+  },
+
+  {
+    "_id": "q_web_0026",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the purpose of frontend frameworks and libraries such as React or Angular.",
+    "expected_answer": {
+      "key_points": [
+        "Component-based architecture",
+        "Reusability",
+        "State management",
+        "Improved development efficiency"
+      ],
+      "example_scenarios": [
+        "Building a dashboard",
+        "Creating a single-page application"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Practical Usage", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["React", "Angular"],
+    "required_skills": ["JavaScript"],
+    "hints": [
+      "Think about UI reusability",
+      "Focus on application scale"
+    ]
+  },
+  {
+    "_id": "q_web_0027",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Backend Basics",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the role of backend development in a web application.",
+    "expected_answer": {
+      "key_points": [
+        "Server-side logic",
+        "Database interaction",
+        "API handling",
+        "Authentication and authorization"
+      ],
+      "example_scenarios": [
+        "User login system",
+        "Data storage and retrieval"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architecture Understanding", "weight": 0.4 },
+      { "criterion": "Technical Coverage", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Backend", "Server"],
+    "required_skills": ["Backend Development"],
+    "hints": [
+      "Think about data processing",
+      "Focus on server responsibilities"
+    ]
+  },
+  {
+    "_id": "q_web_0028",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain RESTful APIs and the principles behind REST architecture.",
+    "expected_answer": {
+      "key_points": [
+        "Stateless communication",
+        "HTTP methods",
+        "Resource-based design",
+        "Client-server separation"
+      ],
+      "example_scenarios": [
+        "Fetching data for a web app",
+        "Backend services for mobile apps"
+      ],
+      "minimum_word_count": 170
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["REST", "API"],
+    "required_skills": ["Web APIs"],
+    "hints": [
+      "Think in terms of resources",
+      "Focus on HTTP methods"
+    ]
+  },
+  {
+    "_id": "q_web_0029",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Authentication",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain common authentication mechanisms used in web applications.",
+    "expected_answer": {
+      "key_points": [
+        "Session-based authentication",
+        "Token-based authentication",
+        "JWT",
+        "Security considerations"
+      ],
+      "example_scenarios": [
+        "Login system",
+        "Protected routes in applications"
+      ],
+      "minimum_word_count": 170
+    },
+    "evaluation_criteria": [
+      { "criterion": "Security Understanding", "weight": 0.4 },
+      { "criterion": "Technical Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Authentication", "Security"],
+    "required_skills": ["Web Security"],
+    "hints": [
+      "Think about user identity",
+      "Focus on secure access"
+    ]
+  },
+  {
+    "_id": "q_web_0030",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Web Performance",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain techniques used to improve website performance.",
+    "expected_answer": {
+      "key_points": [
+        "Minification",
+        "Lazy loading",
+        "Caching",
+        "Reducing HTTP requests"
+      ],
+      "example_scenarios": [
+        "Optimizing an e-commerce website",
+        "Improving page load speed"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Optimization Knowledge", "weight": 0.4 },
+      { "criterion": "Practical Techniques", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Performance", "Optimization"],
+    "required_skills": ["Web Optimization"],
+    "hints": [
+      "Think about loading time",
+      "Focus on user experience"
+    ]
+  },
+  {
+    "_id": "q_web_0031",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Version Control",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of version control systems in web development.",
+    "expected_answer": {
+      "key_points": [
+        "Code tracking",
+        "Collaboration",
+        "Branching and merging",
+        "Rollback capability"
+      ],
+      "example_scenarios": [
+        "Team-based development",
+        "Managing feature updates"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Awareness", "weight": 0.4 },
+      { "criterion": "Practical Value", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Git", "Version Control"],
+    "required_skills": ["Git"],
+    "hints": [
+      "Think about teamwork",
+      "Focus on code history"
+    ]
+  },
+  {
+    "_id": "q_web_0032",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Web Security",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain common web security threats and how they can be mitigated.",
+    "expected_answer": {
+      "key_points": [
+        "XSS",
+        "CSRF",
+        "SQL Injection",
+        "Security best practices"
+      ],
+      "example_scenarios": [
+        "Protecting user data",
+        "Securing web forms"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Threat Understanding", "weight": 0.4 },
+      { "criterion": "Mitigation Techniques", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Web Security"],
+    "required_skills": ["Security"],
+    "hints": [
+      "Think like an attacker",
+      "Focus on prevention"
+    ]
+  },
+  {
+    "_id": "q_web_0033",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Deployment",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the process of deploying a web application to a production environment.",
+    "expected_answer": {
+      "key_points": [
+        "Build process",
+        "Hosting platforms",
+        "Environment variables",
+        "Monitoring"
+      ],
+      "example_scenarios": [
+        "Deploying a React app",
+        "Hosting a backend API"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Deployment", "Hosting"],
+    "required_skills": ["Deployment"],
+    "hints": [
+      "Think about production readiness",
+      "Focus on environment setup"
+    ]
+  },
+  {
+    "_id": "q_web_0034",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the concept of Single Page Applications and their advantages.",
+    "expected_answer": {
+      "key_points": [
+        "Client-side routing",
+        "Reduced page reloads",
+        "Improved user experience",
+        "Frontend-backend separation"
+      ],
+      "example_scenarios": [
+        "Web dashboards",
+        "Social media platforms"
+      ],
+      "minimum_word_count": 170
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architectural Understanding", "weight": 0.4 },
+      { "criterion": "Advantages Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["SPA", "Frontend Architecture"],
+    "required_skills": ["Frontend Frameworks"],
+    "hints": [
+      "Think about navigation",
+      "Focus on user flow"
+    ]
+  },
+  {
+    "_id": "q_web_0035",
+    "question_type": "subjective",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain web accessibility and why it is important in modern web development.",
+    "expected_answer": {
+      "key_points": [
+        "Accessibility principles",
+        "WCAG guidelines",
+        "Inclusive design",
+        "Assistive technologies"
+      ],
+      "example_scenarios": [
+        "Screen reader support",
+        "Keyboard navigation"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Awareness", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Accessibility", "Inclusive Design"],
+    "required_skills": ["Web Standards"],
+    "hints": [
+      "Think about diverse users",
+      "Focus on usability"
+    ]
+  },
+
+  {
+    "_id": "q_web_0036",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Building websites and web apps", "Frontend and backend", "Runs on browsers"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Web Basics"],
+    "required_skills": ["HTML"],
+    "hints": ["Websites and applications"]
+  },
+  {
+    "_id": "q_web_0037",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Frontend vs Backend",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the difference between frontend and backend development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Frontend is user interface", "Backend handles logic and database", "Both work together"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Frontend", "Backend"],
+    "required_skills": ["HTML", "Basics"],
+    "hints": ["Client vs server"]
+  },
+  {
+    "_id": "q_web_0038",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "HTML",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is HTML and why is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Structure of web pages", "Uses tags", "Defines content"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["HTML"],
+    "required_skills": ["HTML"],
+    "hints": ["Page structure"]
+  },
+  {
+    "_id": "q_web_0039",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "CSS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is CSS and how does it help web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Styles web pages", "Controls layout and colors", "Improves appearance"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["CSS"],
+    "required_skills": ["CSS"],
+    "hints": ["Styling"]
+  },
+  {
+    "_id": "q_web_0040",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "JavaScript",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What role does JavaScript play in web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Adds interactivity", "Handles events", "Runs in browser"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["JavaScript"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Dynamic behavior"]
+  },
+  {
+    "_id": "q_web_0041",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Responsive Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is responsive web design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Works on all screen sizes", "Uses media queries", "Improves user experience"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Responsive Design"],
+    "required_skills": ["CSS"],
+    "hints": ["Mobile-friendly"]
+  },
+  {
+    "_id": "q_web_0042",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Frameworks",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a frontend framework?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Reusable components", "Speeds development", "Examples like React"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Frameworks"],
+    "required_skills": ["JavaScript"],
+    "hints": ["React, Angular"]
+  },
+  {
+    "_id": "q_web_0043",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Backend",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does a backend server do?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Handles requests", "Processes logic", "Connects to database"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Backend"],
+    "required_skills": ["Server Basics"],
+    "hints": ["Server-side"]
+  },
+  {
+    "_id": "q_web_0044",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Databases",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why are databases used in web applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Store data", "Retrieve information", "Persistent storage"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Database"],
+    "required_skills": ["SQL Basics"],
+    "hints": ["Store data"]
+  },
+  {
+    "_id": "q_web_0045",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "HTTP",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is HTTP and how does it work?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Client-server protocol", "Request and response", "Stateless communication"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["HTTP"],
+    "required_skills": ["Web Basics"],
+    "hints": ["Request-response"]
+  },
+  {
+    "_id": "q_web_0046",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "APIs",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is an API in web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Communication interface", "Connects services", "Uses endpoints"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["API"],
+    "required_skills": ["HTTP"],
+    "hints": ["Data exchange"]
+  },
+  {
+    "_id": "q_web_0047",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is security important in web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Protects data", "Prevents attacks", "User trust"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Security"],
+    "required_skills": ["Web Basics"],
+    "hints": ["Protect users"]
+  },
+  {
+    "_id": "q_web_0048",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Deployment",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does deploying a website mean?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Publishing online", "Hosting servers", "Making site live"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Deployment"],
+    "required_skills": ["Hosting Basics"],
+    "hints": ["Go live"]
+  },
+  {
+    "_id": "q_web_0049",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Testing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is testing important for websites?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Find bugs", "Ensure quality", "Improve reliability"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Testing"],
+    "required_skills": ["Debugging"],
+    "hints": ["Bug detection"]
+  },
+  {
+    "_id": "q_web_0050",
+    "question_type": "voice",
+    "domain": "Web Development",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see web development evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Progressive web apps", "Web3 and AI integration", "Faster web technologies"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Web Basics"],
+    "hints": ["Next-gen web"]
+  },
+  {
+    "_id": "q_web_0051",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "HTML Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if an HTML page has a title tag.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_title(title):\n    pass",
+      "function_signature": "has_title(title: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return bool(title)",
+      "key_concepts": ["HTML", "Title tag"]
+    },
+    "test_cases": [
+      {
+        "input": "\"Home Page\"",
+        "expected_output": "True",
+        "description": "Title present"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct title detection" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple boolean check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty title" }
+    ],
+    "tags": ["Web", "HTML"],
+    "required_skills": ["Python"],
+    "hints": ["Check if string is not empty"]
+  },
+
+  {
+    "_id": "q_web_0052",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "CSS Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a CSS color value is valid hex color.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_hex(color):\n    pass",
+      "function_signature": "valid_hex(color: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return color.startswith('#') and len(color) in [4, 7]",
+      "key_concepts": ["CSS", "Colors"]
+    },
+    "test_cases": [
+      {
+        "input": "\"#fff\"",
+        "expected_output": "True",
+        "description": "Short hex color"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Hex color validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invalid color" }
+    ],
+    "tags": ["Web", "CSS"],
+    "required_skills": ["Python"],
+    "hints": ["Hex colors start with #"]
+  },
+
+  {
+    "_id": "q_web_0053",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "JavaScript Logic",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to toggle a boolean state (used in UI interactions).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def toggle(state):\n    pass",
+      "function_signature": "toggle(state: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return not state",
+      "key_concepts": ["JavaScript logic", "UI state"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "False",
+        "description": "State toggled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Toggle works correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+    ],
+    "tags": ["Web", "JavaScript"],
+    "required_skills": ["Python"],
+    "hints": ["Use not operator"]
+  },
+
+  {
+    "_id": "q_web_0054",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Forms",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if password length is valid (>=8 characters).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_password(password):\n    pass",
+      "function_signature": "valid_password(password: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return len(password) >= 8",
+      "key_concepts": ["Form validation", "Security"]
+    },
+    "test_cases": [
+      {
+        "input": "\"mypassword\"",
+        "expected_output": "True",
+        "description": "Valid password"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Password validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles short password" }
+    ],
+    "tags": ["Web", "Forms"],
+    "required_skills": ["Python"],
+    "hints": ["Minimum length is 8"]
+  },
+
+  {
+    "_id": "q_web_0055",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Routing",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a route is protected.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_protected(route):\n    pass",
+      "function_signature": "is_protected(route: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return route.startswith('/admin')",
+      "key_concepts": ["Routing", "Authorization"]
+    },
+    "test_cases": [
+      {
+        "input": "\"/admin/dashboard\"",
+        "expected_output": "True",
+        "description": "Protected route"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Route identified correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple string check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles public routes" }
+    ],
+    "tags": ["Web", "Routing"],
+    "required_skills": ["Python"],
+    "hints": ["Admin routes start with /admin"]
+  },
+
+  {
+    "_id": "q_web_0056",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "HTTP Status",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return HTTP status message based on code.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def status_message(code):\n    pass",
+      "function_signature": "status_message(code: int) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"OK\" if code == 200 else \"Error\"",
+      "key_concepts": ["HTTP", "Status codes"]
+    },
+    "test_cases": [
+      {
+        "input": "404",
+        "expected_output": "\"Error\"",
+        "description": "Client error"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Status returned correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles success code" }
+    ],
+    "tags": ["Web", "HTTP"],
+    "required_skills": ["Python"],
+    "hints": ["200 means OK"]
+  },
+
+  {
+    "_id": "q_web_0057",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Sessions",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if user session is active.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def session_active(active):\n    pass",
+      "function_signature": "session_active(active: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return active",
+      "key_concepts": ["Sessions", "Authentication"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Session active"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Session status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles inactive session" }
+    ],
+    "tags": ["Web", "Sessions"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean value"]
+  },
+
+  {
+    "_id": "q_web_0058",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Pagination",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate total number of pages.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def total_pages(items, per_page):\n    pass",
+      "function_signature": "total_pages(items: int, per_page: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return (items + per_page - 1) // per_page",
+      "key_concepts": ["Pagination", "UI lists"]
+    },
+    "test_cases": [
+      {
+        "input": "25, 10",
+        "expected_output": "3",
+        "description": "Page calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Pages calculated correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses integer math" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles exact division" }
+    ],
+    "tags": ["Web", "Pagination"],
+    "required_skills": ["Python"],
+    "hints": ["Use ceiling division"]
+  },
+
+  {
+    "_id": "q_web_0059",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Cookies",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if cookies are enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def cookies_enabled(enabled):\n    pass",
+      "function_signature": "cookies_enabled(enabled: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return enabled",
+      "key_concepts": ["Cookies", "Client storage"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "False",
+        "description": "Cookies disabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Cookie status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles enabled case" }
+    ],
+    "tags": ["Web", "Cookies"],
+    "required_skills": ["Python"],
+    "hints": ["Return flag"]
+  },
+
+  {
+    "_id": "q_web_0060",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Search",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if search query exists.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_query(query):\n    pass",
+      "function_signature": "has_query(query: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return bool(query.strip())",
+      "key_concepts": ["Search", "User input"]
+    },
+    "test_cases": [
+      {
+        "input": "\"  \"",
+        "expected_output": "False",
+        "description": "Empty query"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Query detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses strip()" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles spaces" }
+    ],
+    "tags": ["Web", "Search"],
+    "required_skills": ["Python"],
+    "hints": ["Remove whitespace"]
+  },
+
+  {
+    "_id": "q_web_0061",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "API",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to format API response status.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def api_status(success):\n    pass",
+      "function_signature": "api_status(success: bool) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"status\": \"success\" if success else \"failure\"}",
+      "key_concepts": ["API response", "Backend communication"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "{\"status\":\"success\"}",
+        "description": "API success"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Response formatted" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear dictionary" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure case" }
+    ],
+    "tags": ["Web", "API"],
+    "required_skills": ["Python"],
+    "hints": ["Return status key"]
+  },
+
+  {
+    "_id": "q_web_0062",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if page load time is acceptable (<3 seconds).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def fast_load(time):\n    pass",
+      "function_signature": "fast_load(time: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return time < 3",
+      "key_concepts": ["Performance", "Page speed"]
+    },
+    "test_cases": [
+      {
+        "input": "2.5",
+        "expected_output": "True",
+        "description": "Fast page load"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Performance validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles slow load" }
+    ],
+    "tags": ["Web", "Performance"],
+    "required_skills": ["Python"],
+    "hints": ["Threshold is 3 seconds"]
+  },
+
+  {
+    "_id": "q_web_0063",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if meta description is present.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_meta(description):\n    pass",
+      "function_signature": "has_meta(description: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return bool(description)",
+      "key_concepts": ["SEO", "Meta tags"]
+    },
+    "test_cases": [
+      {
+        "input": "\"Best site\"",
+        "expected_output": "True",
+        "description": "Meta description present"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Meta tag detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty meta" }
+    ],
+    "tags": ["Web", "SEO"],
+    "required_skills": ["Python"],
+    "hints": ["Check non-empty string"]
+  },
+
+  {
+    "_id": "q_web_0064",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to detect basic XSS input.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_xss(input_text):\n    pass",
+      "function_signature": "is_xss(input_text: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return \"<script\" in input_text.lower()",
+      "key_concepts": ["Web security", "XSS"]
+    },
+    "test_cases": [
+      {
+        "input": "\"<script>alert(1)</script>\"",
+        "expected_output": "True",
+        "description": "XSS detected"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "XSS detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Case handling" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles safe input" }
+    ],
+    "tags": ["Web", "Security"],
+    "required_skills": ["Python"],
+    "hints": ["Look for <script>"]
+  },
+
+  {
+    "_id": "q_web_0065",
+    "question_type": "coding",
+    "domain": "Web Development",
+    "topic": "Deployment",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if website deployment was successful.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def deployment_success(status):\n    pass",
+      "function_signature": "deployment_success(status: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Live\" if status else \"Failed\"",
+      "key_concepts": ["Deployment", "Web hosting"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Live\"",
+        "description": "Deployment success"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Deployment status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable output" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure" }
+    ],
+    "tags": ["Web", "Deployment"],
+    "required_skills": ["Python"],
+    "hints": ["Check status flag"]
   }
 ]

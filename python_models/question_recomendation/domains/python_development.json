@@ -1,0 +1,1847 @@
+[
+  {
+    "_id": "q_py_0001",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary advantage of Python as a programming language?",
+    "options": [
+      "Low-level memory control",
+      "High execution speed",
+      "Simple syntax and readability",
+      "Hardware-specific execution"
+    ],
+    "answer": "Simple syntax and readability",
+    "explanation": "Python emphasizes readability and simplicity, which improves developer productivity.",
+    "tags": ["Python", "Fundamentals"],
+    "required_skills": ["Python Basics"],
+    "hints": ["Readable code"]
+  },
+  {
+    "_id": "q_py_0002",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Interpreter",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "How is Python code executed?",
+    "options": [
+      "Compiled directly to machine code",
+      "Interpreted line by line",
+      "Converted to bytecode and executed by a virtual machine",
+      "Executed only in browsers"
+    ],
+    "answer": "Converted to bytecode and executed by a virtual machine",
+    "explanation": "Python code is compiled into bytecode and run by the Python Virtual Machine (PVM).",
+    "tags": ["Python", "Execution"],
+    "required_skills": ["Python Internals"],
+    "hints": ["Bytecode"]
+  },
+  {
+    "_id": "q_py_0003",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Data Types",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which Python data type is immutable?",
+    "options": [
+      "List",
+      "Dictionary",
+      "Set",
+      "Tuple"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation, making them immutable.",
+    "tags": ["Python", "Data Types"],
+    "required_skills": ["Python Data Structures"],
+    "hints": ["Cannot change values"]
+  },
+  {
+    "_id": "q_py_0004",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Memory Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "How does Python manage memory?",
+    "options": [
+      "Manual allocation only",
+      "Stack-based memory only",
+      "Automatic memory management with garbage collection",
+      "Operating system controlled memory only"
+    ],
+    "answer": "Automatic memory management with garbage collection",
+    "explanation": "Python uses reference counting and garbage collection to manage memory.",
+    "tags": ["Python", "Memory Management"],
+    "required_skills": ["Memory Concepts"],
+    "hints": ["Automatic cleanup"]
+  },
+  {
+    "_id": "q_py_0005",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Functions",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a lambda function in Python?",
+    "options": [
+      "A named reusable function",
+      "A function with no return value",
+      "An anonymous single-expression function",
+      "A recursive function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small, anonymous functions defined using the lambda keyword.",
+    "tags": ["Python", "Functions"],
+    "required_skills": ["Functional Programming"],
+    "hints": ["Anonymous function"]
+  },
+  {
+    "_id": "q_py_0006",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "OOP",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which concept allows a Python class to have methods with the same name but different behavior?",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    "answer": "Polymorphism",
+    "explanation": "Polymorphism allows methods to behave differently based on context.",
+    "tags": ["Python", "OOP"],
+    "required_skills": ["Object-Oriented Programming"],
+    "hints": ["Multiple forms"]
+  },
+  {
+    "_id": "q_py_0007",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Exception Handling",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which block is always executed in Python exception handling?",
+    "options": [
+      "try",
+      "except",
+      "else",
+      "finally"
+    ],
+    "answer": "finally",
+    "explanation": "The finally block executes regardless of whether an exception occurs.",
+    "tags": ["Python", "Exceptions"],
+    "required_skills": ["Error Handling"],
+    "hints": ["Always runs"]
+  },
+  {
+    "_id": "q_py_0008",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Modules & Packages",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of Python packages?",
+    "options": [
+      "Store binary data",
+      "Organize related modules into namespaces",
+      "Improve execution speed",
+      "Replace virtual environments"
+    ],
+    "answer": "Organize related modules into namespaces",
+    "explanation": "Packages help structure large Python projects by grouping modules.",
+    "tags": ["Python", "Packages"],
+    "required_skills": ["Project Structure"],
+    "hints": ["Code organization"]
+  },
+  {
+    "_id": "q_py_0009",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "File Handling",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which mode is used to open a file for both reading and writing?",
+    "options": [
+      "r",
+      "w",
+      "a",
+      "r+"
+    ],
+    "answer": "r+",
+    "explanation": "The r+ mode allows reading and writing without truncating the file.",
+    "tags": ["Python", "File Handling"],
+    "required_skills": ["IO Operations"],
+    "hints": ["Read and write"]
+  },
+  {
+    "_id": "q_py_0010",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Iterators",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is an iterator in Python?",
+    "options": [
+      "A loop construct",
+      "An object that stores all values at once",
+      "An object that returns items one at a time",
+      "A recursive function"
+    ],
+    "answer": "An object that returns items one at a time",
+    "explanation": "Iterators generate values lazily using __iter__ and __next__.",
+    "tags": ["Python", "Iterators"],
+    "required_skills": ["Iteration"],
+    "hints": ["Lazy evaluation"]
+  },
+
+  {
+    "_id": "q_py_0011",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Generators",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What keyword is used to create a generator in Python?",
+    "options": [
+      "return",
+      "yield",
+      "lambda",
+      "pass"
+    ],
+    "answer": "yield",
+    "explanation": "The yield keyword produces a value and pauses function execution.",
+    "tags": ["Python", "Generators"],
+    "required_skills": ["Advanced Python"],
+    "hints": ["Pause execution"]
+  },
+  {
+    "_id": "q_py_0012",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Decorators",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary use of decorators in Python?",
+    "options": [
+      "Modify class inheritance",
+      "Change function behavior without modifying its code",
+      "Improve syntax highlighting",
+      "Optimize memory allocation"
+    ],
+    "answer": "Change function behavior without modifying its code",
+    "explanation": "Decorators wrap functions to extend or modify behavior.",
+    "tags": ["Python", "Decorators"],
+    "required_skills": ["Advanced Functions"],
+    "hints": ["Function wrapper"]
+  },
+  {
+    "_id": "q_py_0013",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Concurrency",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why does Python use the Global Interpreter Lock (GIL)?",
+    "options": [
+      "To improve network speed",
+      "To allow true parallelism",
+      "To ensure thread safety in memory management",
+      "To limit memory usage"
+    ],
+    "answer": "To ensure thread safety in memory management",
+    "explanation": "The GIL prevents multiple threads from executing Python bytecode simultaneously.",
+    "tags": ["Python", "Concurrency"],
+    "required_skills": ["Threading"],
+    "hints": ["Thread safety"]
+  },
+  {
+    "_id": "q_py_0014",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Multiprocessing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which Python module bypasses the GIL by using separate processes?",
+    "options": [
+      "threading",
+      "asyncio",
+      "multiprocessing",
+      "concurrent"
+    ],
+    "answer": "multiprocessing",
+    "explanation": "The multiprocessing module uses multiple processes instead of threads.",
+    "tags": ["Python", "Parallelism"],
+    "required_skills": ["Parallel Programming"],
+    "hints": ["Multiple processes"]
+  },
+  {
+    "_id": "q_py_0015",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which framework is commonly used for unit testing in Python?",
+    "options": [
+      "Django",
+      "NumPy",
+      "unittest",
+      "Flask"
+    ],
+    "answer": "unittest",
+    "explanation": "unittest is Python’s built-in testing framework.",
+    "tags": ["Python", "Testing"],
+    "required_skills": ["Unit Testing"],
+    "hints": ["Test framework"]
+  },
+  {
+    "_id": "q_py_0016",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Web Development",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which Python framework is known for being lightweight and flexible?",
+    "options": [
+      "Django",
+      "Flask",
+      "Pyramid",
+      "FastAPI"
+    ],
+    "answer": "Flask",
+    "explanation": "Flask is a micro-framework focused on simplicity and flexibility.",
+    "tags": ["Python", "Web Development"],
+    "required_skills": ["Flask"],
+    "hints": ["Micro-framework"]
+  },
+  {
+    "_id": "q_py_0017",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Data Science",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which Python library is primarily used for numerical computing?",
+    "options": [
+      "Pandas",
+      "Matplotlib",
+      "NumPy",
+      "Seaborn"
+    ],
+    "answer": "NumPy",
+    "explanation": "NumPy provides efficient numerical operations and array structures.",
+    "tags": ["Python", "Data Science"],
+    "required_skills": ["Numerical Computing"],
+    "hints": ["Arrays and math"]
+  },
+  {
+    "_id": "q_py_0018",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique can improve Python performance?",
+    "options": [
+      "Using global variables extensively",
+      "Caching results",
+      "Avoiding built-in functions",
+      "Using dynamic typing everywhere"
+    ],
+    "answer": "Caching results",
+    "explanation": "Caching avoids repeated computation and improves execution speed.",
+    "tags": ["Python", "Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Reuse results"]
+  },
+  {
+    "_id": "q_py_0019",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Virtual Environments",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are virtual environments used in Python development?",
+    "options": [
+      "To increase execution speed",
+      "To isolate project dependencies",
+      "To replace package managers",
+      "To compile Python code"
+    ],
+    "answer": "To isolate project dependencies",
+    "explanation": "Virtual environments prevent dependency conflicts between projects.",
+    "tags": ["Python", "Environment"],
+    "required_skills": ["Environment Management"],
+    "hints": ["Dependency isolation"]
+  },
+  {
+    "_id": "q_py_0020",
+    "question_type": "multiple-choice",
+    "domain": "Python Development",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is Python widely adopted across multiple domains?",
+    "options": [
+      "Limited library support",
+      "Strong ecosystem and versatility",
+      "Low-level hardware access",
+      "Strict typing only"
+    ],
+    "answer": "Strong ecosystem and versatility",
+    "explanation": "Python’s rich libraries make it suitable for web, data, AI, and automation.",
+    "tags": ["Python", "Trends"],
+    "required_skills": ["Python Ecosystem"],
+    "hints": ["Multi-domain use"]
+  },
+  {
+    "_id": "q_python_0021",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Core Python",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the difference between lists, tuples, and sets in Python.",
+    "expected_answer": {
+      "key_points": [
+        "Lists are ordered and mutable",
+        "Tuples are ordered and immutable",
+        "Sets are unordered and store unique elements",
+        "Use cases for each data structure"
+      ],
+      "example_scenarios": [
+        "Using lists to store dynamic collections of user inputs",
+        "Using tuples for fixed configuration values"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Python Basics", "Data Structures"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about mutability and ordering",
+      "Consider real-world usage of each structure"
+    ]
+  },
+  {
+    "_id": "q_python_0022",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Functions",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "What are Python functions? Explain arguments, return values, and scope.",
+    "expected_answer": {
+      "key_points": [
+        "Function definition and purpose",
+        "Positional and keyword arguments",
+        "Return statement",
+        "Local and global scope"
+      ],
+      "example_scenarios": [
+        "Creating reusable utility functions",
+        "Separating logic using functions"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Explanation Quality", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Python Functions"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Mention how functions improve reusability",
+      "Include examples of arguments"
+    ]
+  },
+  {
+    "_id": "q_python_0023",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "OOP",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain Object-Oriented Programming in Python with classes and objects.",
+    "expected_answer": {
+      "key_points": [
+        "Class and object definitions",
+        "Attributes and methods",
+        "Constructor (__init__)",
+        "Benefits of OOP"
+      ],
+      "example_scenarios": [
+        "Modeling real-world entities like users or products",
+        "Using classes in large applications"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["OOP", "Python Classes"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Explain why OOP is useful",
+      "Mention encapsulation"
+    ]
+  },
+  {
+    "_id": "q_python_0024",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Exception Handling",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain exception handling in Python using try, except, else, and finally.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of exception handling",
+        "try and except blocks",
+        "else and finally usage",
+        "Common built-in exceptions"
+      ],
+      "example_scenarios": [
+        "Handling file read errors",
+        "Preventing program crashes"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Practical Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Exceptions", "Error Handling"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about runtime errors",
+      "Explain why finally is used"
+    ]
+  },
+  {
+    "_id": "q_python_0025",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "File Handling",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain file handling in Python and different file modes.",
+    "expected_answer": {
+      "key_points": [
+        "Opening and closing files",
+        "Read, write, append modes",
+        "Using with statement",
+        "File object methods"
+      ],
+      "example_scenarios": [
+        "Reading configuration files",
+        "Writing logs to a file"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Use Cases", "weight": 0.3 }
+    ],
+    "tags": ["File Handling"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Mention why 'with' is preferred",
+      "Explain file modes clearly"
+    ]
+  },
+  {
+    "_id": "q_python_0026",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Modules & Packages",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain Python modules and packages and their importance in project structure.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of modules and packages",
+        "Import statements",
+        "__init__.py usage",
+        "Code reusability"
+      ],
+      "example_scenarios": [
+        "Organizing large Python projects",
+        "Reusing utility modules"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Structure Explanation", "weight": 0.3 }
+    ],
+    "tags": ["Modules", "Packages"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about large applications",
+      "Explain how imports work"
+    ]
+  },
+  {
+    "_id": "q_python_0027",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Iterators & Generators",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain iterators and generators in Python and their advantages.",
+    "expected_answer": {
+      "key_points": [
+        "Iterator protocol",
+        "Generator functions using yield",
+        "Memory efficiency",
+        "Lazy evaluation"
+      ],
+      "example_scenarios": [
+        "Processing large datasets",
+        "Streaming data processing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Use Case Explanation", "weight": 0.3 }
+    ],
+    "tags": ["Generators", "Iterators"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Focus on memory usage",
+      "Compare with lists"
+    ]
+  },
+  {
+    "_id": "q_python_0028",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Decorators",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "What are decorators in Python? Explain how they work with examples.",
+    "expected_answer": {
+      "key_points": [
+        "Functions as first-class objects",
+        "Wrapper functions",
+        "@decorator syntax",
+        "Use cases of decorators"
+      ],
+      "example_scenarios": [
+        "Logging function calls",
+        "Access control and authentication"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Depth of Explanation", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Decorators", "Advanced Python"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think of functions modifying other functions",
+      "Mention real-world use"
+    ]
+  },
+  {
+    "_id": "q_python_0029",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Memory Management",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain memory management in Python including garbage collection.",
+    "expected_answer": {
+      "key_points": [
+        "Reference counting",
+        "Garbage collection mechanism",
+        "Memory allocation",
+        "Common memory issues"
+      ],
+      "example_scenarios": [
+        "Handling long-running applications",
+        "Optimizing memory usage"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Insight", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Memory Management"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Mention reference counting",
+      "Explain garbage collector role"
+    ]
+  },
+  {
+    "_id": "q_python_0030",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Multithreading & Multiprocessing",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain multithreading and multiprocessing in Python and the role of GIL.",
+    "expected_answer": {
+      "key_points": [
+        "Difference between threads and processes",
+        "Global Interpreter Lock (GIL)",
+        "Use cases for each approach",
+        "Performance considerations"
+      ],
+      "example_scenarios": [
+        "CPU-bound vs I/O-bound tasks",
+        "Parallel data processing"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Clarity", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Practical Understanding", "weight": 0.3 }
+    ],
+    "tags": ["Multithreading", "Multiprocessing"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Explain why GIL exists",
+      "Compare performance aspects"
+    ]
+  },
+  {
+    "_id": "q_python_0031",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Virtual Environments",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "What are virtual environments in Python and why are they used?",
+    "expected_answer": {
+      "key_points": [
+        "Definition of virtual environments",
+        "Dependency isolation",
+        "Common tools like venv or virtualenv",
+        "Benefits in development"
+      ],
+      "example_scenarios": [
+        "Managing dependencies for multiple projects",
+        "Avoiding version conflicts"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Virtual Environment"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about dependency conflicts",
+      "Mention real project usage"
+    ]
+  },
+  {
+    "_id": "q_python_0032",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Testing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain unit testing in Python and the role of frameworks like unittest or pytest.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of unit testing",
+        "Test cases and assertions",
+        "Benefits of automated testing",
+        "Popular testing frameworks"
+      ],
+      "example_scenarios": [
+        "Testing business logic",
+        "Preventing regressions"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Testing Knowledge", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Testing", "Unit Testing"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Explain why tests are important",
+      "Mention assertions"
+    ]
+  },
+  {
+    "_id": "q_python_0033",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Performance Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss techniques to optimize Python program performance.",
+    "expected_answer": {
+      "key_points": [
+        "Efficient data structures",
+        "Algorithm optimization",
+        "Profiling tools",
+        "Avoiding unnecessary computations"
+      ],
+      "example_scenarios": [
+        "Optimizing data processing scripts",
+        "Improving response time of applications"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Coverage", "weight": 0.3 }
+    ],
+    "tags": ["Optimization"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about time and space complexity",
+      "Mention profiling"
+    ]
+  },
+  {
+    "_id": "q_python_0034",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "APIs",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how to consume REST APIs in Python.",
+    "expected_answer": {
+      "key_points": [
+        "HTTP methods",
+        "Using requests library",
+        "Handling JSON responses",
+        "Error handling"
+      ],
+      "example_scenarios": [
+        "Integrating third-party services",
+        "Fetching data from web APIs"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Understanding", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["REST API"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about HTTP requests",
+      "Mention JSON parsing"
+    ]
+  },
+  {
+    "_id": "q_python_0035",
+    "question_type": "subjective",
+    "domain": "Python Development",
+    "topic": "Packaging & Distribution",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how Python applications are packaged and distributed.",
+    "expected_answer": {
+      "key_points": [
+        "setup.py or pyproject.toml",
+        "Using pip",
+        "Versioning",
+        "Distribution formats"
+      ],
+      "example_scenarios": [
+        "Sharing reusable libraries",
+        "Deploying Python tools"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Packaging", "Distribution"],
+    "required_skills": ["Python"],
+    "hints": [
+      "Think about pip installation",
+      "Mention version control"
+    ]
+  },
+  {
+    "_id": "q_python_0036",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Python and why is it popular?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["High-level language", "Easy to read syntax", "Wide range of applications"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Python Basics"],
+    "required_skills": ["Python"],
+    "hints": ["Readable syntax"]
+  },
+  {
+    "_id": "q_python_0037",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Variables",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are variables in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Store data", "Dynamic typing", "No explicit declaration"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Variables"],
+    "required_skills": ["Python"],
+    "hints": ["Containers for values"]
+  },
+  {
+    "_id": "q_python_0038",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Data Types",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main data types in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["int", "float", "string", "list", "tuple", "dictionary"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Types"],
+    "required_skills": ["Python"],
+    "hints": ["Built-in types"]
+  },
+  {
+    "_id": "q_python_0039",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Control Flow",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are control flow statements in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["if-else", "for loop", "while loop"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Control Flow"],
+    "required_skills": ["Python"],
+    "hints": ["Decision making"]
+  },
+  {
+    "_id": "q_python_0040",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Functions",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a function in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Reusable code block", "Defined using def", "Improves modularity"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Functions"],
+    "required_skills": ["Python"],
+    "hints": ["Reusable logic"]
+  },
+  {
+    "_id": "q_python_0041",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Lists",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a list in Python and how is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Ordered collection", "Mutable", "Stores multiple values"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Lists"],
+    "required_skills": ["Python"],
+    "hints": ["Square brackets"]
+  },
+  {
+    "_id": "q_python_0042",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Tuples",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the difference between a list and a tuple?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["List is mutable", "Tuple is immutable", "Performance benefits"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Tuples"],
+    "required_skills": ["Python"],
+    "hints": ["Mutable vs immutable"]
+  },
+  {
+    "_id": "q_python_0043",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Dictionaries",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a dictionary in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Key-value pairs", "Unordered collection", "Fast lookups"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Dictionary"],
+    "required_skills": ["Python"],
+    "hints": ["Key-value mapping"]
+  },
+  {
+    "_id": "q_python_0044",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Exception Handling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is exception handling in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["try-except blocks", "Handles runtime errors", "Prevents crashes"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Exceptions"],
+    "required_skills": ["Python"],
+    "hints": ["Error handling"]
+  },
+  {
+    "_id": "q_python_0045",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "File Handling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is file handling done in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["open function", "Read and write modes", "File objects"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["File Handling"],
+    "required_skills": ["Python"],
+    "hints": ["Read/write files"]
+  },
+  {
+    "_id": "q_python_0046",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Modules",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are modules and packages in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Reusable code files", "Import statement", "Organized code"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Modules"],
+    "required_skills": ["Python"],
+    "hints": ["Import reuse"]
+  },
+  {
+    "_id": "q_python_0047",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "OOP",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the object-oriented programming concepts in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Class and object", "Inheritance", "Encapsulation", "Polymorphism"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["OOP"],
+    "required_skills": ["Python"],
+    "hints": ["Classes and objects"]
+  },
+  {
+    "_id": "q_python_0048",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Virtual Environments",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a virtual environment in Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Isolated environment", "Manages dependencies", "Avoids conflicts"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Virtual Environment"],
+    "required_skills": ["Python"],
+    "hints": ["venv"]
+  },
+  {
+    "_id": "q_python_0049",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Applications",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are common applications of Python?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Web development", "Data analysis", "Automation", "Machine learning"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Applications"],
+    "required_skills": ["Python"],
+    "hints": ["Where Python is used"]
+  },
+  {
+    "_id": "q_python_0050",
+    "question_type": "voice",
+    "domain": "Python Development",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career opportunities are available for Python developers?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Software developer", "Data analyst", "Backend developer", "Automation engineer"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Python"],
+    "hints": ["Python job roles"]
+  },
+  {
+    "_id": "q_python_0051",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a number is positive.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_positive(n):\n    pass",
+      "function_signature": "is_positive(n: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return n > 0",
+      "key_concepts": ["Conditional statements", "Integers"]
+    },
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "True",
+        "description": "Positive number"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct positivity check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero and negatives" }
+    ],
+    "tags": ["Python", "Basics"],
+    "required_skills": ["Python"],
+    "hints": ["Check n > 0"]
+  },
+
+  {
+    "_id": "q_python_0052",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Numbers",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a number is even.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_even(n):\n    pass",
+      "function_signature": "is_even(n: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return n % 2 == 0",
+      "key_concepts": ["Modulo operator", "Even/Odd"]
+    },
+    "test_cases": [
+      {
+        "input": "4",
+        "expected_output": "True",
+        "description": "Even number"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Even check correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses modulo" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles odd numbers" }
+    ],
+    "tags": ["Python", "Numbers"],
+    "required_skills": ["Python"],
+    "hints": ["Use % operator"]
+  },
+
+  {
+    "_id": "q_python_0053",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Strings",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a string is empty.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_empty(s):\n    pass",
+      "function_signature": "is_empty(s: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return s == \"\"",
+      "key_concepts": ["Strings", "Comparison"]
+    },
+    "test_cases": [
+      {
+        "input": "\"\"",
+        "expected_output": "True",
+        "description": "Empty string"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Empty string detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles non-empty string" }
+    ],
+    "tags": ["Python", "Strings"],
+    "required_skills": ["Python"],
+    "hints": ["Compare with empty string"]
+  },
+
+  {
+    "_id": "q_python_0054",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Lists",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return the length of a list.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def list_length(lst):\n    pass",
+      "function_signature": "list_length(lst: list) -> int"
+    },
+    "expected_answer": {
+      "solution": "return len(lst)",
+      "key_concepts": ["Lists", "len()"]
+    },
+    "test_cases": [
+      {
+        "input": "[1, 2, 3]",
+        "expected_output": "3",
+        "description": "List length"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Length returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses built-in len" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "Lists"],
+    "required_skills": ["Python"],
+    "hints": ["Use len()"]
+  },
+
+  {
+    "_id": "q_python_0055",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Lists",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return the first element of a list.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def first_element(lst):\n    pass",
+      "function_signature": "first_element(lst: list) -> any"
+    },
+    "expected_answer": {
+      "solution": "return lst[0] if lst else None",
+      "key_concepts": ["Indexing", "Lists"]
+    },
+    "test_cases": [
+      {
+        "input": "[10, 20, 30]",
+        "expected_output": "10",
+        "description": "First element"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct element returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe indexing" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "Lists"],
+    "required_skills": ["Python"],
+    "hints": ["Index 0"]
+  },
+
+  {
+    "_id": "q_python_0056",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Functions",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to add two numbers.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def add(a, b):\n    pass",
+      "function_signature": "add(a: int, b: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return a + b",
+      "key_concepts": ["Functions", "Addition"]
+    },
+    "test_cases": [
+      {
+        "input": "3, 7",
+        "expected_output": "10",
+        "description": "Addition"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Sum correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero" }
+    ],
+    "tags": ["Python", "Functions"],
+    "required_skills": ["Python"],
+    "hints": ["Use + operator"]
+  },
+
+  {
+    "_id": "q_python_0057",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Control Flow",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if a number lies within a range.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def in_range(n, low, high):\n    pass",
+      "function_signature": "in_range(n: int, low: int, high: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return low <= n <= high",
+      "key_concepts": ["Comparison operators", "Ranges"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 1, 10",
+        "expected_output": "True",
+        "description": "Number in range"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Range check correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Chained comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundaries" }
+    ],
+    "tags": ["Python", "Control Flow"],
+    "required_skills": ["Python"],
+    "hints": ["Use <= operators"]
+  },
+
+  {
+    "_id": "q_python_0058",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Dictionaries",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to get value from dictionary by key.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def get_value(d, key):\n    pass",
+      "function_signature": "get_value(d: dict, key: str) -> any"
+    },
+    "expected_answer": {
+      "solution": "return d.get(key)",
+      "key_concepts": ["Dictionaries", "get() method"]
+    },
+    "test_cases": [
+      {
+        "input": "{'a': 1}, 'a'",
+        "expected_output": "1",
+        "description": "Value fetched"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct value returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses get()" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles missing key" }
+    ],
+    "tags": ["Python", "Dictionary"],
+    "required_skills": ["Python"],
+    "hints": ["Use dict.get()"]
+  },
+
+  {
+    "_id": "q_python_0059",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Loops",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate sum of list elements.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def sum_list(lst):\n    pass",
+      "function_signature": "sum_list(lst: list) -> int"
+    },
+    "expected_answer": {
+      "solution": "return sum(lst)",
+      "key_concepts": ["Loops", "sum()"]
+    },
+    "test_cases": [
+      {
+        "input": "[1, 2, 3]",
+        "expected_output": "6",
+        "description": "Sum of list"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Sum correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses built-in sum" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "Loops"],
+    "required_skills": ["Python"],
+    "hints": ["Use sum()"]
+  },
+
+  {
+    "_id": "q_python_0060",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Strings",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert string to uppercase.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def to_upper(s):\n    pass",
+      "function_signature": "to_upper(s: str) -> str"
+    },
+    "expected_answer": {
+      "solution": "return s.upper()",
+      "key_concepts": ["String methods", "Immutability"]
+    },
+    "test_cases": [
+      {
+        "input": "\"python\"",
+        "expected_output": "\"PYTHON\"",
+        "description": "Uppercase conversion"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Converted correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses upper()" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty string" }
+    ],
+    "tags": ["Python", "Strings"],
+    "required_skills": ["Python"],
+    "hints": ["Use upper()"]
+  },
+
+  {
+    "_id": "q_python_0061",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Boolean Logic",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to toggle a boolean value.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def toggle(flag):\n    pass",
+      "function_signature": "toggle(flag: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return not flag",
+      "key_concepts": ["Boolean logic", "Negation"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "False",
+        "description": "Toggle boolean"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Toggle correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses not operator" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+    ],
+    "tags": ["Python", "Boolean"],
+    "required_skills": ["Python"],
+    "hints": ["Use not"]
+  },
+
+  {
+    "_id": "q_python_0062",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Exceptions",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to safely divide two numbers.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def safe_divide(a, b):\n    pass",
+      "function_signature": "safe_divide(a: int, b: int) -> float"
+    },
+    "expected_answer": {
+      "solution": "return a / b if b != 0 else 0",
+      "key_concepts": ["Exception handling", "Division safety"]
+    },
+    "test_cases": [
+      {
+        "input": "10, 0",
+        "expected_output": "0",
+        "description": "Division by zero"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Safe division" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Conditional check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles normal division" }
+    ],
+    "tags": ["Python", "Exceptions"],
+    "required_skills": ["Python"],
+    "hints": ["Check denominator"]
+  },
+
+  {
+    "_id": "q_python_0063",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Sets",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if element exists in a set.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def exists(s, x):\n    pass",
+      "function_signature": "exists(s: set, x: any) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return x in s",
+      "key_concepts": ["Sets", "Membership"]
+    },
+    "test_cases": [
+      {
+        "input": "{1,2,3}, 2",
+        "expected_output": "True",
+        "description": "Element exists"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Membership checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses in operator" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles missing element" }
+    ],
+    "tags": ["Python", "Sets"],
+    "required_skills": ["Python"],
+    "hints": ["Use in operator"]
+  },
+
+  {
+    "_id": "q_python_0064",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Tuples",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return first element of a tuple.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def first_tuple(t):\n    pass",
+      "function_signature": "first_tuple(t: tuple) -> any"
+    },
+    "expected_answer": {
+      "solution": "return t[0] if t else None",
+      "key_concepts": ["Tuples", "Indexing"]
+    },
+    "test_cases": [
+      {
+        "input": "(5, 6, 7)",
+        "expected_output": "5",
+        "description": "First tuple element"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Element returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe indexing" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty tuple" }
+    ],
+    "tags": ["Python", "Tuples"],
+    "required_skills": ["Python"],
+    "hints": ["Index 0"]
+  },
+
+  {
+    "_id": "q_python_0065",
+    "question_type": "coding",
+    "domain": "Python Development",
+    "topic": "Math",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate square of a number.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def square(n):\n    pass",
+      "function_signature": "square(n: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return n * n",
+      "key_concepts": ["Arithmetic", "Multiplication"]
+    },
+    "test_cases": [
+      {
+        "input": "6",
+        "expected_output": "36",
+        "description": "Square calculated"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Square correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero and negatives" }
+    ],
+    "tags": ["Python", "Math"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply number by itself"]
+  }
+]

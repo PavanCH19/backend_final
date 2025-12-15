@@ -1,0 +1,1847 @@
+[
+  {
+    "_id": "q_react_0001",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is React primarily used for?",
+    "options": [
+      "Database management",
+      "Building user interfaces",
+      "Server-side scripting",
+      "Operating system development"
+    ],
+    "answer": "Building user interfaces",
+    "explanation": "React is a JavaScript library focused on building interactive user interfaces.",
+    "tags": ["React", "Fundamentals"],
+    "required_skills": ["JavaScript", "React Basics"],
+    "hints": ["UI library"]
+  },
+  {
+    "_id": "q_react_0002",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "JSX",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is JSX in React?",
+    "options": [
+      "A database query language",
+      "A JavaScript extension for writing UI code",
+      "A CSS preprocessor",
+      "A backend framework"
+    ],
+    "answer": "A JavaScript extension for writing UI code",
+    "explanation": "JSX allows HTML-like syntax within JavaScript.",
+    "tags": ["React", "JSX"],
+    "required_skills": ["JSX"],
+    "hints": ["HTML in JS"]
+  },
+  {
+    "_id": "q_react_0003",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Components",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which type of component is preferred in modern React?",
+    "options": [
+      "Class components",
+      "Functional components",
+      "Static components",
+      "Inline components"
+    ],
+    "answer": "Functional components",
+    "explanation": "Functional components with hooks are the modern standard in React.",
+    "tags": ["React", "Components"],
+    "required_skills": ["Functional Components"],
+    "hints": ["Hooks-based"]
+  },
+  {
+    "_id": "q_react_0004",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Virtual DOM",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of the Virtual DOM?",
+    "options": [
+      "Direct database updates",
+      "Improve rendering performance",
+      "Replace the real DOM completely",
+      "Manage CSS styles"
+    ],
+    "answer": "Improve rendering performance",
+    "explanation": "The Virtual DOM minimizes direct DOM manipulation for better performance.",
+    "tags": ["React", "Virtual DOM"],
+    "required_skills": ["Rendering Optimization"],
+    "hints": ["Efficient updates"]
+  },
+  {
+    "_id": "q_react_0005",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Props",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What are props in React?",
+    "options": [
+      "Internal component state",
+      "Functions for lifecycle management",
+      "Inputs passed to components",
+      "CSS properties"
+    ],
+    "answer": "Inputs passed to components",
+    "explanation": "Props allow data to be passed from parent to child components.",
+    "tags": ["React", "Props"],
+    "required_skills": ["Component Communication"],
+    "hints": ["Read-only data"]
+  },
+  {
+    "_id": "q_react_0006",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "State",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "How is state managed in functional components?",
+    "options": [
+      "this.state",
+      "setState()",
+      "useState hook",
+      "Redux only"
+    ],
+    "answer": "useState hook",
+    "explanation": "useState enables state management in functional components.",
+    "tags": ["React", "State"],
+    "required_skills": ["Hooks"],
+    "hints": ["State hook"]
+  },
+  {
+    "_id": "q_react_0007",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Hooks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which hook is used to perform side effects in React?",
+    "options": [
+      "useState",
+      "useEffect",
+      "useMemo",
+      "useRef"
+    ],
+    "answer": "useEffect",
+    "explanation": "useEffect handles side effects like data fetching and subscriptions.",
+    "tags": ["React", "Hooks"],
+    "required_skills": ["Side Effects"],
+    "hints": ["Lifecycle replacement"]
+  },
+  {
+    "_id": "q_react_0008",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Lists & Keys",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are keys important when rendering lists in React?",
+    "options": [
+      "For styling list items",
+      "For routing",
+      "To help React identify elements efficiently",
+      "To handle API calls"
+    ],
+    "answer": "To help React identify elements efficiently",
+    "explanation": "Keys help React optimize rendering and reconciliation.",
+    "tags": ["React", "Lists"],
+    "required_skills": ["Reconciliation"],
+    "hints": ["Unique identifiers"]
+  },
+  {
+    "_id": "q_react_0009",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Controlled Components",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What defines a controlled component in React?",
+    "options": [
+      "DOM manages its own state",
+      "State is controlled by React",
+      "Uses only class components",
+      "Cannot handle user input"
+    ],
+    "answer": "State is controlled by React",
+    "explanation": "Controlled components rely on React state for form data.",
+    "tags": ["React", "Forms"],
+    "required_skills": ["Form Handling"],
+    "hints": ["State-driven input"]
+  },
+  {
+    "_id": "q_react_0010",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Context API",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What problem does the Context API solve?",
+    "options": [
+      "Component styling",
+      "Prop drilling",
+      "API routing",
+      "State immutability"
+    ],
+    "answer": "Prop drilling",
+    "explanation": "Context allows data sharing without passing props through every level.",
+    "tags": ["React", "Context API"],
+    "required_skills": ["Global State"],
+    "hints": ["Avoid deep props"]
+  },
+
+  {
+    "_id": "q_react_0011",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which hook helps memoize computed values?",
+    "options": [
+      "useEffect",
+      "useCallback",
+      "useMemo",
+      "useReducer"
+    ],
+    "answer": "useMemo",
+    "explanation": "useMemo prevents expensive recalculations.",
+    "tags": ["React", "Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Memoization"]
+  },
+  {
+    "_id": "q_react_0012",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "useCallback",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is useCallback used in React?",
+    "options": [
+      "To manage component state",
+      "To memoize functions",
+      "To fetch data",
+      "To create refs"
+    ],
+    "answer": "To memoize functions",
+    "explanation": "useCallback prevents unnecessary function re-creation.",
+    "tags": ["React", "Hooks"],
+    "required_skills": ["Function Optimization"],
+    "hints": ["Stable functions"]
+  },
+  {
+    "_id": "q_react_0013",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "State Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which library is commonly used for global state management in React?",
+    "options": [
+      "Axios",
+      "Redux",
+      "Jest",
+      "Webpack"
+    ],
+    "answer": "Redux",
+    "explanation": "Redux manages predictable global application state.",
+    "tags": ["React", "State Management"],
+    "required_skills": ["Redux"],
+    "hints": ["Global store"]
+  },
+  {
+    "_id": "q_react_0014",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Routing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which library is used for routing in React applications?",
+    "options": [
+      "React Router",
+      "Express",
+      "Next.js",
+      "Axios"
+    ],
+    "answer": "React Router",
+    "explanation": "React Router handles client-side routing.",
+    "tags": ["React", "Routing"],
+    "required_skills": ["Routing"],
+    "hints": ["SPA navigation"]
+  },
+  {
+    "_id": "q_react_0015",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Data Fetching",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which library is commonly used for HTTP requests in React?",
+    "options": [
+      "Redux",
+      "Axios",
+      "Lodash",
+      "Babel"
+    ],
+    "answer": "Axios",
+    "explanation": "Axios simplifies HTTP requests and response handling.",
+    "tags": ["React", "Networking"],
+    "required_skills": ["API Integration"],
+    "hints": ["HTTP client"]
+  },
+  {
+    "_id": "q_react_0016",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which library is commonly used for testing React components?",
+    "options": [
+      "Mocha",
+      "React Testing Library",
+      "JUnit",
+      "Cypress only"
+    ],
+    "answer": "React Testing Library",
+    "explanation": "It focuses on testing components from a user perspective.",
+    "tags": ["React", "Testing"],
+    "required_skills": ["Component Testing"],
+    "hints": ["User-centric tests"]
+  },
+  {
+    "_id": "q_react_0017",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Build Tools",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the role of tools like Vite or Webpack in React?",
+    "options": [
+      "Manage databases",
+      "Bundle and optimize code",
+      "Design UI components",
+      "Handle authentication"
+    ],
+    "answer": "Bundle and optimize code",
+    "explanation": "Build tools prepare React apps for production.",
+    "tags": ["React", "Build Tools"],
+    "required_skills": ["Bundlers"],
+    "hints": ["Code bundling"]
+  },
+  {
+    "_id": "q_react_0018",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice helps prevent XSS attacks in React?",
+    "options": [
+      "Using dangerouslySetInnerHTML",
+      "Automatic escaping of JSX",
+      "Disabling state updates",
+      "Inline scripts"
+    ],
+    "answer": "Automatic escaping of JSX",
+    "explanation": "React escapes values by default to prevent XSS.",
+    "tags": ["React", "Security"],
+    "required_skills": ["Web Security"],
+    "hints": ["XSS prevention"]
+  },
+  {
+    "_id": "q_react_0019",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is required before deploying a React application?",
+    "options": [
+      "Manual DOM updates",
+      "Production build",
+      "Server-side rendering only",
+      "Removing JavaScript"
+    ],
+    "answer": "Production build",
+    "explanation": "A production build optimizes code for deployment.",
+    "tags": ["React", "Deployment"],
+    "required_skills": ["Deployment"],
+    "hints": ["Optimized build"]
+  },
+  {
+    "_id": "q_react_0020",
+    "question_type": "multiple-choice",
+    "domain": "React Development",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is React widely adopted in modern web development?",
+    "options": [
+      "Because it replaces JavaScript",
+      "Component-based architecture and strong ecosystem",
+      "It eliminates backend development",
+      "It only supports small applications"
+    ],
+    "answer": "Component-based architecture and strong ecosystem",
+    "explanation": "React’s reusability and ecosystem make it highly scalable.",
+    "tags": ["React", "Trends"],
+    "required_skills": ["Modern Frontend"],
+    "hints": ["Reusable components"]
+  },
+    {
+    "_id": "q_react_0021",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "React Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain what React is and list its key features.",
+    "expected_answer": {
+      "key_points": [
+        "React is a JavaScript library for building user interfaces",
+        "Component-based architecture",
+        "Virtual DOM concept",
+        "Unidirectional data flow"
+      ],
+      "example_scenarios": [
+        "Building reusable UI components for a dashboard",
+        "Creating a single-page application with dynamic views"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["React", "Frontend"],
+    "required_skills": ["JavaScript", "React Basics"],
+    "hints": [
+      "Focus on how React simplifies UI development",
+      "Mention Virtual DOM benefits"
+    ]
+  },
+  {
+    "_id": "q_react_0022",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "JSX",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "What is JSX in React? Explain its advantages.",
+    "expected_answer": {
+      "key_points": [
+        "JSX is a syntax extension for JavaScript",
+        "Allows HTML-like code in JavaScript",
+        "Improves readability",
+        "JSX is transpiled to JavaScript"
+      ],
+      "example_scenarios": [
+        "Creating readable component templates",
+        "Embedding JavaScript expressions in UI"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Accuracy", "weight": 0.4 },
+      { "criterion": "Explanation Quality", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["JSX", "React Syntax"],
+    "required_skills": ["JavaScript"],
+    "hints": [
+      "Think about how JSX mixes HTML and JS",
+      "Mention transpilation"
+    ]
+  },
+  {
+    "_id": "q_react_0023",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Components",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Differentiate between functional components and class components in React.",
+    "expected_answer": {
+      "key_points": [
+        "Functional components are plain JavaScript functions",
+        "Class components use ES6 classes",
+        "Hooks usage in functional components",
+        "Lifecycle methods in class components"
+      ],
+      "example_scenarios": [
+        "Using functional components with hooks for state",
+        "Legacy code using class components"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparative Understanding", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Components", "React"],
+    "required_skills": ["React"],
+    "hints": [
+      "Mention hooks and lifecycle methods",
+      "Compare syntax and usage"
+    ]
+  },
+  {
+    "_id": "q_react_0024",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "State & Props",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the difference between state and props in React.",
+    "expected_answer": {
+      "key_points": [
+        "Props are read-only data passed to components",
+        "State is managed within a component",
+        "State changes cause re-rendering",
+        "Props enable component reusability"
+      ],
+      "example_scenarios": [
+        "Passing user data via props",
+        "Managing form input using state"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Clarity", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["State", "Props"],
+    "required_skills": ["React"],
+    "hints": [
+      "Think about data flow",
+      "Mention immutability of props"
+    ]
+  },
+  {
+    "_id": "q_react_0025",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Hooks",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain React Hooks and describe useState and useEffect.",
+    "expected_answer": {
+      "key_points": [
+        "Hooks allow state in functional components",
+        "useState manages component state",
+        "useEffect handles side effects",
+        "Rules of hooks"
+      ],
+      "example_scenarios": [
+        "Fetching API data using useEffect",
+        "Managing counter state with useState"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Practical Explanation", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Hooks", "React"],
+    "required_skills": ["React Hooks"],
+    "hints": [
+      "Explain side effects",
+      "Mention dependency array"
+    ]
+  },
+  {
+    "_id": "q_react_0026",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Lifecycle",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the React component lifecycle and its phases.",
+    "expected_answer": {
+      "key_points": [
+        "Mounting phase",
+        "Updating phase",
+        "Unmounting phase",
+        "Lifecycle methods or hook equivalents"
+      ],
+      "example_scenarios": [
+        "Fetching data during component mount",
+        "Cleaning up subscriptions on unmount"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Depth", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Explanation", "weight": 0.3 }
+    ],
+    "tags": ["Lifecycle", "React"],
+    "required_skills": ["Advanced React"],
+    "hints": [
+      "Mention useEffect equivalents",
+      "Explain each phase clearly"
+    ]
+  },
+  {
+    "_id": "q_react_0027",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Virtual DOM",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What is the Virtual DOM and how does React use it?",
+    "expected_answer": {
+      "key_points": [
+        "Virtual DOM is a lightweight copy of real DOM",
+        "Diffing algorithm",
+        "Efficient updates",
+        "Performance improvement"
+      ],
+      "example_scenarios": [
+        "Updating UI without full page reload",
+        "Handling frequent state changes efficiently"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Virtual DOM", "Performance"],
+    "required_skills": ["React Internals"],
+    "hints": [
+      "Think about DOM manipulation cost",
+      "Mention reconciliation"
+    ]
+  },
+  {
+    "_id": "q_react_0028",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Forms",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain controlled and uncontrolled components in React forms.",
+    "expected_answer": {
+      "key_points": [
+        "Controlled components use state",
+        "Uncontrolled components use refs",
+        "Form handling differences",
+        "Use cases"
+      ],
+      "example_scenarios": [
+        "Validating form input using state",
+        "Simple form using refs"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Forms", "React"],
+    "required_skills": ["React Basics"],
+    "hints": [
+      "Focus on input handling",
+      "Mention refs"
+    ]
+  },
+  {
+    "_id": "q_react_0029",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Routing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how routing is implemented in React applications.",
+    "expected_answer": {
+      "key_points": [
+        "Client-side routing",
+        "React Router usage",
+        "Routes and Links",
+        "Single Page Application concept"
+      ],
+      "example_scenarios": [
+        "Navigating between pages without reload",
+        "Protected routes for authentication"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Implementation Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Routing", "React Router"],
+    "required_skills": ["React"],
+    "hints": [
+      "Mention SPA behavior",
+      "Think about navigation"
+    ]
+  },
+  {
+    "_id": "q_react_0030",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Performance Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss techniques to optimize performance in React applications.",
+    "expected_answer": {
+      "key_points": [
+        "Memoization",
+        "React.memo and useCallback",
+        "Lazy loading",
+        "Avoiding unnecessary re-renders"
+      ],
+      "example_scenarios": [
+        "Optimizing large lists",
+        "Reducing re-render cost"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Depth", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Practicality", "weight": 0.3 }
+    ],
+    "tags": ["Performance", "Optimization"],
+    "required_skills": ["Advanced React"],
+    "hints": [
+      "Think about re-renders",
+      "Mention memoization"
+    ]
+  },
+  {
+    "_id": "q_react_0031",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Context API",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the Context API and when it should be used.",
+    "expected_answer": {
+      "key_points": [
+        "Avoids prop drilling",
+        "Global state sharing",
+        "Provider and Consumer",
+        "Use cases"
+      ],
+      "example_scenarios": [
+        "Theme management",
+        "Authentication state"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Context API", "State Management"],
+    "required_skills": ["React"],
+    "hints": [
+      "Think about prop drilling",
+      "Mention global data"
+    ]
+  },
+  {
+    "_id": "q_react_0032",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Error Handling",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What are error boundaries in React and why are they used?",
+    "expected_answer": {
+      "key_points": [
+        "Catch JavaScript errors",
+        "Prevent app crash",
+        "Component-level handling",
+        "Limitations of error boundaries"
+      ],
+      "example_scenarios": [
+        "Handling UI crashes gracefully",
+        "Displaying fallback UI"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Explanation", "weight": 0.3 }
+    ],
+    "tags": ["Error Boundaries", "React"],
+    "required_skills": ["React"],
+    "hints": [
+      "Think about try-catch alternative",
+      "Mention fallback UI"
+    ]
+  },
+  {
+    "_id": "q_react_0033",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Testing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how React components can be tested.",
+    "expected_answer": {
+      "key_points": [
+        "Unit testing components",
+        "Testing tools like Jest",
+        "React Testing Library",
+        "Importance of testing"
+      ],
+      "example_scenarios": [
+        "Testing button click behavior",
+        "Validating form submission"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Knowledge", "weight": 0.4 },
+      { "criterion": "Tool Awareness", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Testing", "React"],
+    "required_skills": ["React Testing"],
+    "hints": [
+      "Mention testing libraries",
+      "Focus on component behavior"
+    ]
+  },
+  {
+    "_id": "q_react_0034",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "State Management",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Compare Redux with Context API for state management in React.",
+    "expected_answer": {
+      "key_points": [
+        "Redux architecture",
+        "Context API simplicity",
+        "Use cases for each",
+        "Scalability considerations"
+      ],
+      "example_scenarios": [
+        "Large-scale application state",
+        "Small app global state"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparative Analysis", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Redux", "State Management"],
+    "required_skills": ["Advanced React"],
+    "hints": [
+      "Think about scalability",
+      "Mention boilerplate"
+    ]
+  },
+  {
+    "_id": "q_react_0035",
+    "question_type": "subjective",
+    "domain": "React Development",
+    "topic": "Deployment",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the steps involved in deploying a React application.",
+    "expected_answer": {
+      "key_points": [
+        "Build process",
+        "Environment configuration",
+        "Hosting platforms",
+        "Post-deployment considerations"
+      ],
+      "example_scenarios": [
+        "Deploying on Netlify",
+        "Hosting on cloud platforms"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Understanding", "weight": 0.4 },
+      { "criterion": "Completeness", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Deployment", "React"],
+    "required_skills": ["React", "Web Deployment"],
+    "hints": [
+      "Think about build step",
+      "Mention hosting"
+    ]
+  },
+  {
+    "_id": "q_react_0036",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is React and why is it used in web development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["JavaScript library", "Component-based UI", "Efficient UI updates"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["React Basics"],
+    "required_skills": ["JavaScript"],
+    "hints": ["UI library"]
+  },
+  {
+    "_id": "q_react_0037",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Components",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a component in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Reusable UI unit", "Function or class", "Returns JSX"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Components"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Reusable blocks"]
+  },
+  {
+    "_id": "q_react_0038",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "JSX",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is JSX in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["JavaScript XML", "HTML-like syntax", "Used in components"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["JSX"],
+    "required_skills": ["JavaScript"],
+    "hints": ["HTML in JS"]
+  },
+  {
+    "_id": "q_react_0039",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Props",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are props in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Component inputs", "Read-only data", "Passed from parent"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Props"],
+    "required_skills": ["React Basics"],
+    "hints": ["Component data"]
+  },
+  {
+    "_id": "q_react_0040",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "State",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is state in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Component data", "Can change over time", "Triggers re-render"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["State"],
+    "required_skills": ["React Basics"],
+    "hints": ["Dynamic data"]
+  },
+  {
+    "_id": "q_react_0041",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Hooks",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are React hooks?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Functions for state and lifecycle", "useState", "useEffect"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Hooks"],
+    "required_skills": ["React"],
+    "hints": ["useState"]
+  },
+  {
+    "_id": "q_react_0042",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Lifecycle",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the component lifecycle in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Mounting", "Updating", "Unmounting"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Lifecycle"],
+    "required_skills": ["React"],
+    "hints": ["Component phases"]
+  },
+  {
+    "_id": "q_react_0043",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Events",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How are events handled in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Synthetic events", "Event handlers", "CamelCase naming"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Events"],
+    "required_skills": ["JavaScript"],
+    "hints": ["onClick"]
+  },
+  {
+    "_id": "q_react_0044",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Conditional Rendering",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is conditional rendering in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Render based on condition", "if-else", "ternary operator"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Conditional Rendering"],
+    "required_skills": ["React"],
+    "hints": ["Show/hide UI"]
+  },
+  {
+    "_id": "q_react_0045",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Lists and Keys",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why are keys important when rendering lists in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Unique identification", "Efficient re-rendering", "Avoids UI bugs"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Keys"],
+    "required_skills": ["React"],
+    "hints": ["Unique id"]
+  },
+  {
+    "_id": "q_react_0046",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Forms",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How are forms handled in React?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Controlled components", "State handling", "onChange events"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Forms"],
+    "required_skills": ["React"],
+    "hints": ["Controlled input"]
+  },
+  {
+    "_id": "q_react_0047",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Routing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is routing in React applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Navigation between pages", "React Router", "Single Page Application"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Routing"],
+    "required_skills": ["React"],
+    "hints": ["React Router"]
+  },
+  {
+    "_id": "q_react_0048",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How can performance be optimized in a React application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Memoization", "Avoid unnecessary renders", "Code splitting"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Performance"],
+    "required_skills": ["React"],
+    "hints": ["useMemo"]
+  },
+  {
+    "_id": "q_react_0049",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Testing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is testing important in React development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Ensures UI correctness", "Prevents bugs", "Tools like Jest"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Testing"],
+    "required_skills": ["React"],
+    "hints": ["Jest"]
+  },
+  {
+    "_id": "q_react_0050",
+    "question_type": "voice",
+    "domain": "React Development",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career opportunities are available for React developers?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Frontend developer", "Full stack developer", "UI engineer"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["React"],
+    "hints": ["Frontend roles"]
+  },
+  {
+    "_id": "q_react_0051",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React functional component that returns a simple heading.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Heading() {\n  \n}",
+      "function_signature": "Heading() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <h1>Hello React</h1>;",
+      "key_concepts": ["JSX", "Functional components"]
+    },
+    "test_cases": [
+      {
+        "input": "Render component",
+        "expected_output": "<h1>Hello React</h1>",
+        "description": "Heading rendered"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Component renders correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean JSX" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No props required" }
+    ],
+    "tags": ["React", "JSX"],
+    "required_skills": ["React", "JavaScript"],
+    "hints": ["Return JSX element"]
+  },
+
+  {
+    "_id": "q_react_0052",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Props",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component that displays a name passed as prop.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Welcome(props) {\n  \n}",
+      "function_signature": "Welcome(props) -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <p>Hello {props.name}</p>;",
+      "key_concepts": ["Props", "Component communication"]
+    },
+    "test_cases": [
+      {
+        "input": "name='Shivani'",
+        "expected_output": "Hello Shivani",
+        "description": "Prop rendered"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Prop displayed" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses props correctly" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles missing prop" }
+    ],
+    "tags": ["React", "Props"],
+    "required_skills": ["React"],
+    "hints": ["Access props.name"]
+  },
+
+  {
+    "_id": "q_react_0053",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "State",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a React component using useState to manage a counter.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Counter() {\n  \n}",
+      "function_signature": "Counter() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "const [count, setCount] = React.useState(0); return <p>{count}</p>;",
+      "key_concepts": ["useState", "State management"]
+    },
+    "test_cases": [
+      {
+        "input": "Initial render",
+        "expected_output": "0",
+        "description": "Initial state"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "State initialized" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Proper hook usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No state mutation" }
+    ],
+    "tags": ["React", "State"],
+    "required_skills": ["React"],
+    "hints": ["Use useState hook"]
+  },
+
+  {
+    "_id": "q_react_0054",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Events",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React button with an onClick handler.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function ClickBtn() {\n  \n}",
+      "function_signature": "ClickBtn() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <button onClick={() => alert('Clicked')}>Click</button>;",
+      "key_concepts": ["Events", "onClick"]
+    },
+    "test_cases": [
+      {
+        "input": "Click button",
+        "expected_output": "Alert triggered",
+        "description": "Click handled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Event works" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Inline handler" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No side effects" }
+    ],
+    "tags": ["React", "Events"],
+    "required_skills": ["React"],
+    "hints": ["Use onClick"]
+  },
+
+  {
+    "_id": "q_react_0055",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Conditional Rendering",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component that conditionally renders text.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Status({loggedIn}) {\n  \n}",
+      "function_signature": "Status(props) -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <p>{loggedIn ? 'Welcome' : 'Please Login'}</p>;",
+      "key_concepts": ["Conditional rendering", "Ternary operator"]
+    },
+    "test_cases": [
+      {
+        "input": "loggedIn=true",
+        "expected_output": "Welcome",
+        "description": "User logged in"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Condition evaluated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable JSX" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles false case" }
+    ],
+    "tags": ["React", "Conditional"],
+    "required_skills": ["React"],
+    "hints": ["Use ternary operator"]
+  },
+
+  {
+    "_id": "q_react_0056",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Lists",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component to render a list of items.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function List({items}) {\n  \n}",
+      "function_signature": "List(props) -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <ul>{items.map(i => <li key={i}>{i}</li>)}</ul>;",
+      "key_concepts": ["Lists", "map()", "Keys"]
+    },
+    "test_cases": [
+      {
+        "input": "items=[1,2,3]",
+        "expected_output": "3 list items",
+        "description": "List rendered"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "List displayed" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses keys" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["React", "Lists"],
+    "required_skills": ["React"],
+    "hints": ["Use map()"]
+  },
+
+  {
+    "_id": "q_react_0057",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Forms",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a controlled input component.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function InputBox() {\n  \n}",
+      "function_signature": "InputBox() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "const [val, setVal] = React.useState(''); return <input value={val} onChange={e => setVal(e.target.value)} />;",
+      "key_concepts": ["Controlled components", "Forms"]
+    },
+    "test_cases": [
+      {
+        "input": "Type text",
+        "expected_output": "State updated",
+        "description": "Input controlled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "State synced" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Proper handler" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty input" }
+    ],
+    "tags": ["React", "Forms"],
+    "required_skills": ["React"],
+    "hints": ["Bind value and onChange"]
+  },
+
+  {
+    "_id": "q_react_0058",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "useEffect",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a React component using useEffect to log message on mount.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Logger() {\n  \n}",
+      "function_signature": "Logger() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "React.useEffect(() => { console.log('Mounted'); }, []); return null;",
+      "key_concepts": ["useEffect", "Lifecycle"]
+    },
+    "test_cases": [
+      {
+        "input": "Component mount",
+        "expected_output": "Console log",
+        "description": "Effect executed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Effect runs once" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Dependency array used" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No reruns" }
+    ],
+    "tags": ["React", "Hooks"],
+    "required_skills": ["React"],
+    "hints": ["Empty dependency array"]
+  },
+
+  {
+    "_id": "q_react_0059",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Fragments",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component using Fragment.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Demo() {\n  \n}",
+      "function_signature": "Demo() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <> <h1>A</h1><h2>B</h2> </>;",
+      "key_concepts": ["Fragments", "JSX grouping"]
+    },
+    "test_cases": [
+      {
+        "input": "Render component",
+        "expected_output": "Two headings",
+        "description": "Fragment rendered"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "No extra DOM" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean JSX" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Multiple children" }
+    ],
+    "tags": ["React", "Fragments"],
+    "required_skills": ["React"],
+    "hints": ["Use <> </>"]
+  },
+
+  {
+    "_id": "q_react_0060",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Styling",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component with inline styling.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Styled() {\n  \n}",
+      "function_signature": "Styled() -> JSX"
+    },
+    "expected_answer": {
+      "solution": "return <p style={{color:'red'}}>Text</p>;",
+      "key_concepts": ["Inline styles", "JSX objects"]
+    },
+    "test_cases": [
+      {
+        "input": "Render component",
+        "expected_output": "Red text",
+        "description": "Style applied"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Style rendered" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Valid style object" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No CSS errors" }
+    ],
+    "tags": ["React", "Styling"],
+    "required_skills": ["React"],
+    "hints": ["Style as object"]
+  },
+
+  {
+    "_id": "q_react_0061",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Components",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a React component that returns null.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function Empty() {\n  \n}",
+      "function_signature": "Empty() -> JSX | null"
+    },
+    "expected_answer": {
+      "solution": "return null;",
+      "key_concepts": ["Conditional rendering", "Null return"]
+    },
+    "test_cases": [
+      {
+        "input": "Render component",
+        "expected_output": "Nothing rendered",
+        "description": "Null component"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Nothing rendered" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Valid React pattern" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No errors" }
+    ],
+    "tags": ["React", "Components"],
+    "required_skills": ["React"],
+    "hints": ["Return null"]
+  },
+
+  {
+    "_id": "q_react_0062",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Keys",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain why keys are needed in React lists.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "// Explain in comment",
+      "function_signature": "N/A"
+    },
+    "expected_answer": {
+      "solution": "Keys help React identify elements for efficient updates.",
+      "key_concepts": ["Reconciliation", "Keys"]
+    },
+    "test_cases": [
+      {
+        "input": "N/A",
+        "expected_output": "Explanation provided",
+        "description": "Conceptual answer"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct explanation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear wording" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Mentions uniqueness" }
+    ],
+    "tags": ["React", "Keys"],
+    "required_skills": ["React"],
+    "hints": ["Think reconciliation"]
+  },
+
+  {
+    "_id": "q_react_0063",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Hooks",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a custom hook that returns true.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "function useFlag() {\n  \n}",
+      "function_signature": "useFlag() -> boolean"
+    },
+    "expected_answer": {
+      "solution": "return true;",
+      "key_concepts": ["Custom hooks", "Reuse"]
+    },
+    "test_cases": [
+      {
+        "input": "Call hook",
+        "expected_output": "true",
+        "description": "Hook returns value"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Hook works" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Hook naming" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No side effects" }
+    ],
+    "tags": ["React", "Hooks"],
+    "required_skills": ["React"],
+    "hints": ["Hooks start with use"]
+  },
+
+  {
+    "_id": "q_react_0064",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Explain React.memo usage.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "// Explain in comment",
+      "function_signature": "N/A"
+    },
+    "expected_answer": {
+      "solution": "React.memo prevents unnecessary re-renders of components.",
+      "key_concepts": ["Memoization", "Performance"]
+    },
+    "test_cases": [
+      {
+        "input": "N/A",
+        "expected_output": "Explanation provided",
+        "description": "Concept explained"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct concept" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear explanation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Mentions props comparison" }
+    ],
+    "tags": ["React", "Performance"],
+    "required_skills": ["React"],
+    "hints": ["Think re-render optimization"]
+  },
+
+  {
+    "_id": "q_react_0065",
+    "question_type": "coding",
+    "domain": "React Development",
+    "topic": "Lifecycle",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Which hook replaces componentDidMount?",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": ["react"],
+      "starter_code": "// Answer in comment",
+      "function_signature": "N/A"
+    },
+    "expected_answer": {
+      "solution": "useEffect with empty dependency array",
+      "key_concepts": ["Lifecycle", "Hooks"]
+    },
+    "test_cases": [
+      {
+        "input": "N/A",
+        "expected_output": "useEffect",
+        "description": "Correct hook"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct hook named" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Concise answer" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Mentions dependency array" }
+    ],
+    "tags": ["React", "Lifecycle"],
+    "required_skills": ["React"],
+    "hints": ["Runs once on mount"]
+  }
+]

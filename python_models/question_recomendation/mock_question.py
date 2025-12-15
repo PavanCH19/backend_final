@@ -23,6 +23,10 @@ def mock_session_recommendations(user_json, k=5):
     """
     
     print("\n=== MOCK SESSION START ===")
+
+    def is_mcq(question):
+        return question.get("question_type", "").lower() == "multiple-choice"
+
     
     # 1) Load questions
     domain = user_json["target_domain"]
@@ -34,16 +38,29 @@ def mock_session_recommendations(user_json, k=5):
     
     # 2) Build diverse pool (match on tags OR required_skills)
     diverse_pool = []
+    # for q in questions:
+    #     q_tags = [t.lower() for t in q.get("tags", [])]
+    #     q_required = [r.lower() for r in q.get("required_skills", [])]
+    #     # match if any user skill appears in tags OR required_skills
+    #     if any(skill in q_tags or skill in q_required for skill in user_skills):
+    #         diverse_pool.append(q)
     for q in questions:
+        # Skip non-MCQ questions
+        if not is_mcq(q):
+            continue
+
         q_tags = [t.lower() for t in q.get("tags", [])]
         q_required = [r.lower() for r in q.get("required_skills", [])]
-        # match if any user skill appears in tags OR required_skills
+
         if any(skill in q_tags or skill in q_required for skill in user_skills):
             diverse_pool.append(q)
+
     
     if not diverse_pool:
         print("[INFO] No direct skill match found → using full question list")
-        diverse_pool = questions
+        # diverse_pool = questions
+        diverse_pool = [q for q in questions if is_mcq(q)]
+
     else:
         print(f"[INFO] Diverse pool created with {len(diverse_pool)} questions")
     
@@ -85,13 +102,25 @@ def mock_session_recommendations(user_json, k=5):
         "question_ids": []  # For easy tracking
     }
     
+    # for q, score in top_k:
+    #     result["questions_recommended"].append({
+    #         "question": q,
+    #         "score": round(score, 2),
+    #         "reasoning": f"Matched tags/required_skills: {', '.join((q.get('tags') or []) + (q.get('required_skills') or [])) or 'No direct match'}"
+    #     })
+    #     result["question_ids"].append(q["_id"])
     for q, score in top_k:
+        if not is_mcq(q):
+            continue
+
         result["questions_recommended"].append({
             "question": q,
             "score": round(score, 2),
             "reasoning": f"Matched tags/required_skills: {', '.join((q.get('tags') or []) + (q.get('required_skills') or [])) or 'No direct match'}"
         })
         result["question_ids"].append(q["_id"])
+
+
     
     print("=== MOCK SESSION READY ===\n")
     return result

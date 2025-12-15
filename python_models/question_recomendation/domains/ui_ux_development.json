@@ -1,0 +1,1910 @@
+[
+  {
+    "_id": "q_uiux_0001",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of UX design?",
+    "options": [
+      "Create visually attractive screens",
+      "Improve system performance",
+      "Enhance overall user satisfaction and usability",
+      "Reduce development cost"
+    ],
+    "answer": "Enhance overall user satisfaction and usability",
+    "explanation": "UX design focuses on creating meaningful, efficient, and satisfying user experiences.",
+    "tags": ["UI/UX", "UX Design"],
+    "required_skills": ["User Research"],
+    "hints": ["User experience"]
+  },
+  {
+    "_id": "q_uiux_0002",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "UI vs UX",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main difference between UI and UX design?",
+    "options": [
+      "UI focuses on backend logic, UX on frontend code",
+      "UI focuses on visual elements, UX focuses on overall experience",
+      "UI is optional, UX is mandatory",
+      "UI handles usability testing only"
+    ],
+    "answer": "UI focuses on visual elements, UX focuses on overall experience",
+    "explanation": "UI deals with look and feel, while UX addresses how users interact and feel about the product.",
+    "tags": ["UI/UX", "Design Basics"],
+    "required_skills": ["Design Fundamentals"],
+    "hints": ["Look vs experience"]
+  },
+  {
+    "_id": "q_uiux_0003",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "User Research",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of user personas?",
+    "options": [
+      "Create fictional UI designs",
+      "Represent target users and their needs",
+      "Increase development speed",
+      "Replace usability testing"
+    ],
+    "answer": "Represent target users and their needs",
+    "explanation": "Personas help designers empathize with users and design user-centered solutions.",
+    "tags": ["UI/UX", "User Research"],
+    "required_skills": ["Persona Creation"],
+    "hints": ["Target users"]
+  },
+  {
+    "_id": "q_uiux_0004",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Usability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which usability principle emphasizes keeping interfaces simple?",
+    "options": [
+      "Flexibility",
+      "Minimalism",
+      "Consistency",
+      "Affordance"
+    ],
+    "answer": "Minimalism",
+    "explanation": "Minimalist design removes unnecessary elements to reduce cognitive load.",
+    "tags": ["UI/UX", "Usability"],
+    "required_skills": ["Usability Principles"],
+    "hints": ["Less is more"]
+  },
+  {
+    "_id": "q_uiux_0005",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Information Architecture",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main goal of information architecture?",
+    "options": [
+      "Improve color contrast",
+      "Organize content logically and intuitively",
+      "Increase animation usage",
+      "Enhance typography only"
+    ],
+    "answer": "Organize content logically and intuitively",
+    "explanation": "Information architecture helps users find information efficiently.",
+    "tags": ["UI/UX", "Information Architecture"],
+    "required_skills": ["Content Structuring"],
+    "hints": ["Content organization"]
+  },
+  {
+    "_id": "q_uiux_0006",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Wireframing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of wireframes?",
+    "options": [
+      "Finalize color palettes",
+      "Define layout and structure early",
+      "Implement animations",
+      "Conduct A/B testing"
+    ],
+    "answer": "Define layout and structure early",
+    "explanation": "Wireframes act as blueprints for layout and functionality.",
+    "tags": ["UI/UX", "Wireframing"],
+    "required_skills": ["Wireframe Design"],
+    "hints": ["Design blueprint"]
+  },
+  {
+    "_id": "q_uiux_0007",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Prototyping",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are prototypes important in UX design?",
+    "options": [
+      "They replace final development",
+      "They allow early testing and feedback",
+      "They improve backend performance",
+      "They reduce need for research"
+    ],
+    "answer": "They allow early testing and feedback",
+    "explanation": "Prototypes help validate ideas before full development.",
+    "tags": ["UI/UX", "Prototyping"],
+    "required_skills": ["Prototyping Tools"],
+    "hints": ["Early feedback"]
+  },
+  {
+    "_id": "q_uiux_0008",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Visual Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which principle ensures visual elements appear balanced?",
+    "options": [
+      "Contrast",
+      "Hierarchy",
+      "Alignment",
+      "Balance"
+    ],
+    "answer": "Balance",
+    "explanation": "Balance distributes visual weight evenly across a layout.",
+    "tags": ["UI/UX", "Visual Design"],
+    "required_skills": ["Visual Principles"],
+    "hints": ["Visual stability"]
+  },
+  {
+    "_id": "q_uiux_0009",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Accessibility",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which guideline ensures accessibility for users with disabilities?",
+    "options": [
+      "ISO 9001",
+      "WCAG",
+      "IEEE 802.11",
+      "Agile Manifesto"
+    ],
+    "answer": "WCAG",
+    "explanation": "WCAG defines standards for accessible digital content.",
+    "tags": ["UI/UX", "Accessibility"],
+    "required_skills": ["Accessible Design"],
+    "hints": ["Accessibility standards"]
+  },
+  {
+    "_id": "q_uiux_0010",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Interaction Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does affordance refer to in UI design?",
+    "options": [
+      "Visual aesthetics",
+      "System performance",
+      "How users perceive possible actions",
+      "Content hierarchy"
+    ],
+    "answer": "How users perceive possible actions",
+    "explanation": "Affordances indicate how elements should be used.",
+    "tags": ["UI/UX", "Interaction Design"],
+    "required_skills": ["Interaction Design"],
+    "hints": ["Action cues"]
+  },
+
+  {
+    "_id": "q_uiux_0011",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Usability Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main objective of usability testing?",
+    "options": [
+      "Increase development speed",
+      "Identify usability issues",
+      "Finalize UI colors",
+      "Improve backend logic"
+    ],
+    "answer": "Identify usability issues",
+    "explanation": "Usability testing evaluates how easily users can complete tasks.",
+    "tags": ["UI/UX", "Testing"],
+    "required_skills": ["Usability Testing"],
+    "hints": ["User difficulties"]
+  },
+  {
+    "_id": "q_uiux_0012",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Design Systems",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a design system?",
+    "options": [
+      "A single UI screen",
+      "A reusable collection of components and guidelines",
+      "A testing framework",
+      "A deployment pipeline"
+    ],
+    "answer": "A reusable collection of components and guidelines",
+    "explanation": "Design systems ensure consistency and scalability.",
+    "tags": ["UI/UX", "Design Systems"],
+    "required_skills": ["Design Consistency"],
+    "hints": ["Reusable components"]
+  },
+  {
+    "_id": "q_uiux_0013",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Typography",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is typography important in UI design?",
+    "options": [
+      "Improves backend speed",
+      "Enhances readability and hierarchy",
+      "Reduces memory usage",
+      "Controls animations"
+    ],
+    "answer": "Enhances readability and hierarchy",
+    "explanation": "Typography guides users and improves content clarity.",
+    "tags": ["UI/UX", "Typography"],
+    "required_skills": ["Typography"],
+    "hints": ["Readable text"]
+  },
+  {
+    "_id": "q_uiux_0014",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Color Theory",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of color contrast in UI design?",
+    "options": [
+      "Decorative styling",
+      "Improve accessibility and readability",
+      "Reduce development time",
+      "Enhance animations"
+    ],
+    "answer": "Improve accessibility and readability",
+    "explanation": "Proper contrast ensures text and elements are distinguishable.",
+    "tags": ["UI/UX", "Color Theory"],
+    "required_skills": ["Color Usage"],
+    "hints": ["Text visibility"]
+  },
+  {
+    "_id": "q_uiux_0015",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Navigation",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which navigation principle helps users know where they are?",
+    "options": [
+      "Feedback",
+      "Orientation",
+      "Consistency",
+      "Affordance"
+    ],
+    "answer": "Orientation",
+    "explanation": "Orientation cues help users understand their location in the interface.",
+    "tags": ["UI/UX", "Navigation"],
+    "required_skills": ["Navigation Design"],
+    "hints": ["You are here"]
+  },
+  {
+    "_id": "q_uiux_0016",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Responsive Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is responsive design?",
+    "options": [
+      "Designing for desktops only",
+      "Adapting layouts to different screen sizes",
+      "Improving server response time",
+      "Optimizing database queries"
+    ],
+    "answer": "Adapting layouts to different screen sizes",
+    "explanation": "Responsive design ensures usability across devices.",
+    "tags": ["UI/UX", "Responsive Design"],
+    "required_skills": ["Responsive Layouts"],
+    "hints": ["Multiple devices"]
+  },
+  {
+    "_id": "q_uiux_0017",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "UX Laws",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which UX law states that decision time increases with number of choices?",
+    "options": [
+      "Fitts’s Law",
+      "Hick’s Law",
+      "Jakob’s Law",
+      "Tesler’s Law"
+    ],
+    "answer": "Hick’s Law",
+    "explanation": "Hick’s Law explains how choice overload affects decision-making time.",
+    "tags": ["UI/UX", "UX Laws"],
+    "required_skills": ["UX Principles"],
+    "hints": ["More choices"]
+  },
+  {
+    "_id": "q_uiux_0018",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Error Handling",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the best practice for error messages in UX?",
+    "options": [
+      "Use technical jargon",
+      "Hide errors",
+      "Provide clear and helpful guidance",
+      "Display error codes only"
+    ],
+    "answer": "Provide clear and helpful guidance",
+    "explanation": "Good error messages help users recover quickly.",
+    "tags": ["UI/UX", "Error Handling"],
+    "required_skills": ["UX Writing"],
+    "hints": ["Helpful feedback"]
+  },
+  {
+    "_id": "q_uiux_0019",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Metrics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which metric measures how easily users can complete tasks?",
+    "options": [
+      "Bounce rate",
+      "Task success rate",
+      "Page views",
+      "Session duration"
+    ],
+    "answer": "Task success rate",
+    "explanation": "Task success rate directly reflects usability effectiveness.",
+    "tags": ["UI/UX", "UX Metrics"],
+    "required_skills": ["UX Measurement"],
+    "hints": ["Task completion"]
+  },
+  {
+    "_id": "q_uiux_0020",
+    "question_type": "multiple-choice",
+    "domain": "UI/UX Design",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is UX design increasingly important in digital products?",
+    "options": [
+      "It reduces server cost",
+      "It differentiates products in competitive markets",
+      "It replaces development",
+      "It eliminates testing"
+    ],
+    "answer": "It differentiates products in competitive markets",
+    "explanation": "Strong UX improves user retention and brand loyalty.",
+    "tags": ["UI/UX", "UX Strategy"],
+    "required_skills": ["Product Design"],
+    "hints": ["User-centered advantage"]
+  },
+
+  {
+    "_id": "q_uiux_0021",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "UX Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the difference between UI design and UX design.",
+    "expected_answer": {
+      "key_points": [
+        "UI focuses on visual design and interface elements",
+        "UX focuses on user experience and usability",
+        "UI is a subset of UX",
+        "Both aim to improve user satisfaction"
+      ],
+      "example_scenarios": [
+        "Designing buttons and colors for a mobile app",
+        "Improving navigation flow in an e-commerce website"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["UI", "UX", "Design Basics"],
+    "required_skills": ["UX Fundamentals"],
+    "hints": [
+      "Think about visuals vs experience",
+      "Consider user interaction flow"
+    ]
+  },
+  {
+    "_id": "q_uiux_0022",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "User Research",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the importance of user research in UX design.",
+    "expected_answer": {
+      "key_points": [
+        "Understanding user needs and pain points",
+        "Data-driven design decisions",
+        "Reducing design assumptions",
+        "Improving usability and satisfaction"
+      ],
+      "example_scenarios": [
+        "Conducting interviews before redesigning a website",
+        "Using surveys to understand user expectations"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Practical Application", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["User Research", "UX"],
+    "required_skills": ["UX Research"],
+    "hints": [
+      "Focus on user needs",
+      "Think about research methods"
+    ]
+  },
+  {
+    "_id": "q_uiux_0023",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Design Thinking",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the design thinking process used in UI/UX design.",
+    "expected_answer": {
+      "key_points": [
+        "Empathize",
+        "Define",
+        "Ideate",
+        "Prototype",
+        "Test"
+      ],
+      "example_scenarios": [
+        "Improving a food delivery app",
+        "Redesigning a student portal"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Explanation", "weight": 0.4 },
+      { "criterion": "Logical Flow", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Design Thinking", "UX Process"],
+    "required_skills": ["UX Design"],
+    "hints": [
+      "Think step-by-step",
+      "User-centric approach"
+    ]
+  },
+  {
+    "_id": "q_uiux_0024",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Wireframing",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "What is wireframing and why is it important in UI/UX design?",
+    "expected_answer": {
+      "key_points": [
+        "Low-fidelity layout representation",
+        "Focus on structure and functionality",
+        "Early feedback",
+        "Cost-effective design iteration"
+      ],
+      "example_scenarios": [
+        "Planning a mobile app layout",
+        "Structuring a dashboard interface"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Wireframe", "UX"],
+    "required_skills": ["UI/UX Basics"],
+    "hints": [
+      "Think layout before visuals",
+      "Early design stage"
+    ]
+  },
+  {
+    "_id": "q_uiux_0025",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Prototyping",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain prototyping and its role in UX design.",
+    "expected_answer": {
+      "key_points": [
+        "Interactive model of the product",
+        "Validates design ideas",
+        "Improves usability",
+        "Facilitates stakeholder feedback"
+      ],
+      "example_scenarios": [
+        "Clickable app prototype",
+        "Website navigation testing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Application", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Prototype", "UX"],
+    "required_skills": ["UX Design"],
+    "hints": [
+      "Think interaction",
+      "Testing before development"
+    ]
+  },
+  {
+    "_id": "q_uiux_0026",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Usability Testing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What is usability testing and how is it conducted?",
+    "expected_answer": {
+      "key_points": [
+        "Testing product with real users",
+        "Identifying usability issues",
+        "Task-based evaluation",
+        "Iterative improvement"
+      ],
+      "example_scenarios": [
+        "Testing checkout flow",
+        "Evaluating mobile app navigation"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Usability Testing", "UX"],
+    "required_skills": ["UX Evaluation"],
+    "hints": [
+      "Real users",
+      "Task-based testing"
+    ]
+  },
+  {
+    "_id": "q_uiux_0027",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Information Architecture",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain information architecture and its importance in UX design.",
+    "expected_answer": {
+      "key_points": [
+        "Content organization",
+        "Navigation structure",
+        "Improves findability",
+        "Enhances usability"
+      ],
+      "example_scenarios": [
+        "Structuring an e-learning platform",
+        "Organizing an e-commerce catalog"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Application", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Information Architecture", "UX"],
+    "required_skills": ["UX Design"],
+    "hints": [
+      "Content structure",
+      "Navigation clarity"
+    ]
+  },
+  {
+    "_id": "q_uiux_0028",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Visual Design",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss the role of color, typography, and spacing in UI design.",
+    "expected_answer": {
+      "key_points": [
+        "Visual hierarchy",
+        "Readability",
+        "Consistency",
+        "User perception"
+      ],
+      "example_scenarios": [
+        "Designing a landing page",
+        "Improving mobile app readability"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Design Principles", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Visual Design", "UI"],
+    "required_skills": ["UI Design"],
+    "hints": [
+      "Think aesthetics",
+      "User readability"
+    ]
+  },
+  {
+    "_id": "q_uiux_0029",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Accessibility",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain accessibility in UI/UX design and why it is important.",
+    "expected_answer": {
+      "key_points": [
+        "Inclusive design",
+        "WCAG guidelines",
+        "Assistive technologies",
+        "Legal and ethical importance"
+      ],
+      "example_scenarios": [
+        "Designing for visually impaired users",
+        "Keyboard-only navigation support"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Accessibility", "Inclusive Design"],
+    "required_skills": ["UI/UX Design"],
+    "hints": [
+      "Think inclusivity",
+      "Different user abilities"
+    ]
+  },
+  {
+    "_id": "q_uiux_0030",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Interaction Design",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What is interaction design and how does it enhance user experience?",
+    "expected_answer": {
+      "key_points": [
+        "User interaction flow",
+        "Feedback mechanisms",
+        "Micro-interactions",
+        "Improved usability"
+      ],
+      "example_scenarios": [
+        "Button hover effects",
+        "Form validation feedback"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Interaction Design", "UX"],
+    "required_skills": ["UX Design"],
+    "hints": [
+      "Think user actions",
+      "Feedback loops"
+    ]
+  },
+  {
+    "_id": "q_uiux_0031",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Heuristic Evaluation",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain heuristic evaluation in UX design and list common usability heuristics.",
+    "expected_answer": {
+      "key_points": [
+        "Expert-based evaluation",
+        "Usability heuristics",
+        "Early issue detection",
+        "Cost-effective testing"
+      ],
+      "example_scenarios": [
+        "Evaluating a banking app",
+        "Reviewing a dashboard UI"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Coverage", "weight": 0.3 }
+    ],
+    "tags": ["Heuristic Evaluation", "UX"],
+    "required_skills": ["UX Evaluation"],
+    "hints": [
+      "Expert review",
+      "Usability principles"
+    ]
+  },
+  {
+    "_id": "q_uiux_0032",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Mobile UX",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss key UX considerations when designing mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Screen size constraints",
+        "Touch interactions",
+        "Performance",
+        "Consistency"
+      ],
+      "example_scenarios": [
+        "Designing a food delivery app",
+        "Creating a fitness tracking app"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Insight", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Mobile UX", "UI/UX"],
+    "required_skills": ["Mobile Design"],
+    "hints": [
+      "Touch-based design",
+      "Small screens"
+    ]
+  },
+  {
+    "_id": "q_uiux_0033",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "UX Metrics",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain common UX metrics used to measure user experience.",
+    "expected_answer": {
+      "key_points": [
+        "Task success rate",
+        "Time on task",
+        "Error rate",
+        "User satisfaction"
+      ],
+      "example_scenarios": [
+        "Evaluating onboarding flow",
+        "Measuring checkout success"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Metric Understanding", "weight": 0.4 },
+      { "criterion": "Application", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["UX Metrics", "Evaluation"],
+    "required_skills": ["UX Analysis"],
+    "hints": [
+      "Quantitative measures",
+      "User behavior"
+    ]
+  },
+  {
+    "_id": "q_uiux_0034",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "Design Systems",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "What is a design system and why is it important for scalable UI design?",
+    "expected_answer": {
+      "key_points": [
+        "Reusable components",
+        "Consistency",
+        "Scalability",
+        "Team collaboration"
+      ],
+      "example_scenarios": [
+        "Large enterprise applications",
+        "Multi-platform products"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Depth", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Design System", "UI"],
+    "required_skills": ["UI Architecture"],
+    "hints": [
+      "Think reusability",
+      "Large-scale products"
+    ]
+  },
+  {
+    "_id": "q_uiux_0035",
+    "question_type": "subjective",
+    "domain": "UI/UX Design",
+    "topic": "UX Challenges",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss common challenges faced in UI/UX design projects and how they can be addressed.",
+    "expected_answer": {
+      "key_points": [
+        "Conflicting stakeholder requirements",
+        "Time constraints",
+        "User diversity",
+        "Iterative improvements"
+      ],
+      "example_scenarios": [
+        "Startup product development",
+        "Enterprise software redesign"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Problem Analysis", "weight": 0.4 },
+      { "criterion": "Solution Approach", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["UX Challenges", "Design Process"],
+    "required_skills": ["UI/UX Design"],
+    "hints": [
+      "Think real-world issues",
+      "Balancing users and business"
+    ]
+  },
+
+  {
+    "_id": "q_uiux_0036",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is UI/UX design and why is it important?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "UI focuses on visual design",
+        "UX focuses on user experience",
+        "Improves usability and satisfaction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["UIUX Basics"],
+    "required_skills": ["Design Thinking"],
+    "hints": ["Interface vs experience"]
+  },
+  {
+    "_id": "q_uiux_0037",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "UI vs UX",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the difference between UI design and UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "UI is visual and interactive elements",
+        "UX is overall user journey",
+        "Both work together"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["UI vs UX"],
+    "required_skills": ["Design Basics"],
+    "hints": ["Look vs feel"]
+  },
+  {
+    "_id": "q_uiux_0038",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "User-Centered Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does user-centered design mean?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Design based on user needs",
+        "Focus on usability",
+        "Continuous user feedback"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["User-Centered Design"],
+    "required_skills": ["Empathy"],
+    "hints": ["Design for users"]
+  },
+  {
+    "_id": "q_uiux_0039",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Usability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is usability in UI/UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Ease of use",
+        "Efficiency",
+        "Error reduction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Usability"],
+    "required_skills": ["UX Basics"],
+    "hints": ["Easy to use"]
+  },
+  {
+    "_id": "q_uiux_0040",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Wireframing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a wireframe and why is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Basic layout structure",
+        "Low-fidelity design",
+        "Planning before visual design"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Wireframe"],
+    "required_skills": ["Sketching"],
+    "hints": ["Blueprint of design"]
+  },
+  {
+    "_id": "q_uiux_0041",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Prototyping",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a prototype in UI/UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Interactive model",
+        "Simulates user interaction",
+        "Used for testing ideas"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Prototype"],
+    "required_skills": ["Figma"],
+    "hints": ["Clickable design"]
+  },
+  {
+    "_id": "q_uiux_0042",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Visual Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What elements are part of visual design in UI?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Color",
+        "Typography",
+        "Layout and spacing"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Visual Design"],
+    "required_skills": ["Design Principles"],
+    "hints": ["Colors and fonts"]
+  },
+  {
+    "_id": "q_uiux_0043",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Accessibility",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is accessibility in UI/UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Design for all users",
+        "Supports disabilities",
+        "Inclusive experience"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Accessibility"],
+    "required_skills": ["Inclusive Design"],
+    "hints": ["Design for everyone"]
+  },
+  {
+    "_id": "q_uiux_0044",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "User Research",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is user research important in UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Understand user needs",
+        "Validate assumptions",
+        "Reduce design errors"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["User Research"],
+    "required_skills": ["Research Methods"],
+    "hints": ["Know your users"]
+  },
+  {
+    "_id": "q_uiux_0045",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Interaction Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is interaction design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "How users interact",
+        "Buttons and gestures",
+        "Smooth user flow"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Interaction Design"],
+    "required_skills": ["UX Design"],
+    "hints": ["User actions"]
+  },
+  {
+    "_id": "q_uiux_0046",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Consistency",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is consistency important in UI design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Predictable interface",
+        "Improves usability",
+        "Reduces learning curve"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Consistency"],
+    "required_skills": ["UI Principles"],
+    "hints": ["Same look and behavior"]
+  },
+  {
+    "_id": "q_uiux_0047",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Testing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is usability testing?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Testing with real users",
+        "Identify problems",
+        "Improve design"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Usability Testing"],
+    "required_skills": ["Testing"],
+    "hints": ["User feedback"]
+  },
+  {
+    "_id": "q_uiux_0048",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Design Tools",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What tools are commonly used for UI/UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Figma",
+        "Adobe XD",
+        "Sketch"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Design Tools"],
+    "required_skills": ["UI Tools"],
+    "hints": ["Design software"]
+  },
+  {
+    "_id": "q_uiux_0049",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career roles exist in UI/UX design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "UI designer",
+        "UX designer",
+        "Product designer"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Design Basics"],
+    "hints": ["Design roles"]
+  },
+  {
+    "_id": "q_uiux_0050",
+    "question_type": "voice",
+    "domain": "UI/UX Design",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see UI/UX design evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Personalized experiences",
+        "Voice and gesture interfaces",
+        "AI-assisted design tools"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["UX Basics"],
+    "hints": ["Next-gen interfaces"]
+  },
+  {
+    "_id": "q_uiux_0051",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Usability",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check whether a button is enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_button_enabled(state):\n    pass",
+      "function_signature": "is_button_enabled(state: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Enabled\" if state else \"Disabled\"",
+      "key_concepts": ["Button state", "Usability"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Enabled\"",
+        "description": "Button enabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct button state" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear conditional logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles disabled state" }
+    ],
+    "tags": ["UI/UX", "Usability"],
+    "required_skills": ["Python"],
+    "hints": ["Use if-else"]
+  },
+
+  {
+    "_id": "q_uiux_0052",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Forms",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a form input field is empty.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_empty(value):\n    pass",
+      "function_signature": "is_empty(value: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return value.strip() == \"\"",
+      "key_concepts": ["Form validation", "User input"]
+    },
+    "test_cases": [
+      {
+        "input": "\"\"",
+        "expected_output": "True",
+        "description": "Empty input"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Empty check correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses string methods" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles whitespace" }
+    ],
+    "tags": ["UI/UX", "Forms"],
+    "required_skills": ["Python"],
+    "hints": ["Use strip()"]
+  },
+
+  {
+    "_id": "q_uiux_0053",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Accessibility",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if text contrast ratio meets minimum accessibility standard (>=4.5).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def contrast_ok(ratio):\n    pass",
+      "function_signature": "contrast_ok(ratio: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return ratio >= 4.5",
+      "key_concepts": ["Accessibility", "Contrast ratio"]
+    },
+    "test_cases": [
+      {
+        "input": "4.5",
+        "expected_output": "True",
+        "description": "Meets accessibility"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Contrast validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles lower ratio" }
+    ],
+    "tags": ["UI/UX", "Accessibility"],
+    "required_skills": ["Python"],
+    "hints": ["Minimum is 4.5"]
+  },
+
+  {
+    "_id": "q_uiux_0054",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Navigation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to determine the next page in navigation.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def next_page(current, pages):\n    pass",
+      "function_signature": "next_page(current: int, pages: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return current + 1 if current < pages else pages",
+      "key_concepts": ["Navigation", "User flow"]
+    },
+    "test_cases": [
+      {
+        "input": "2, 5",
+        "expected_output": "3",
+        "description": "Navigate forward"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct navigation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles last page" }
+    ],
+    "tags": ["UI/UX", "Navigation"],
+    "required_skills": ["Python"],
+    "hints": ["Do not exceed page count"]
+  },
+
+  {
+    "_id": "q_uiux_0055",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Feedback",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to show success or error message after form submission.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def submit_message(success):\n    pass",
+      "function_signature": "submit_message(success: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Success\" if success else \"Error\"",
+      "key_concepts": ["User feedback", "Status messages"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "\"Error\"",
+        "description": "Submission failed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct message" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles success case" }
+    ],
+    "tags": ["UI/UX", "Feedback"],
+    "required_skills": ["Python"],
+    "hints": ["Check success flag"]
+  },
+
+  {
+    "_id": "q_uiux_0056",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Layout",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if screen width supports desktop layout (>=1024px).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_desktop(width):\n    pass",
+      "function_signature": "is_desktop(width: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return width >= 1024",
+      "key_concepts": ["Responsive design", "Layouts"]
+    },
+    "test_cases": [
+      {
+        "input": "1200",
+        "expected_output": "True",
+        "description": "Desktop layout"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Layout detection correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles smaller screens" }
+    ],
+    "tags": ["UI/UX", "Responsive"],
+    "required_skills": ["Python"],
+    "hints": ["Desktop starts at 1024px"]
+  },
+
+  {
+    "_id": "q_uiux_0057",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Color Theme",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to toggle between light and dark theme.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def toggle_theme(theme):\n    pass",
+      "function_signature": "toggle_theme(theme: str) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"dark\" if theme == \"light\" else \"light\"",
+      "key_concepts": ["Themes", "User preference"]
+    },
+    "test_cases": [
+      {
+        "input": "\"light\"",
+        "expected_output": "\"dark\"",
+        "description": "Theme toggled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Theme toggled correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles dark input" }
+    ],
+    "tags": ["UI/UX", "Theme"],
+    "required_skills": ["Python"],
+    "hints": ["Switch light ↔ dark"]
+  },
+
+  {
+    "_id": "q_uiux_0058",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Typography",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if font size is readable (>=16px).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def readable_font(size):\n    pass",
+      "function_signature": "readable_font(size: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return size >= 16",
+      "key_concepts": ["Typography", "Readability"]
+    },
+    "test_cases": [
+      {
+        "input": "14",
+        "expected_output": "False",
+        "description": "Too small font"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Font size validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles exact limit" }
+    ],
+    "tags": ["UI/UX", "Typography"],
+    "required_skills": ["Python"],
+    "hints": ["Minimum 16px"]
+  },
+
+  {
+    "_id": "q_uiux_0059",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Icons",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if an icon is visible.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def icon_visible(visible):\n    pass",
+      "function_signature": "icon_visible(visible: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return visible",
+      "key_concepts": ["Icons", "Visual clarity"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Icon visible"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Visibility correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invisible state" }
+    ],
+    "tags": ["UI/UX", "Icons"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean value"]
+  },
+
+  {
+    "_id": "q_uiux_0060",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Error Handling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to validate email input format.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_email(email):\n    pass",
+      "function_signature": "valid_email(email: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return \"@\" in email and \".\" in email",
+      "key_concepts": ["Validation", "Error prevention"]
+    },
+    "test_cases": [
+      {
+        "input": "\"test@mail.com\"",
+        "expected_output": "True",
+        "description": "Valid email"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Email validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invalid email" }
+    ],
+    "tags": ["UI/UX", "Forms"],
+    "required_skills": ["Python"],
+    "hints": ["Check @ and ."]
+  },
+
+  {
+    "_id": "q_uiux_0061",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Progress Indicators",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate progress percentage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def progress(done, total):\n    pass",
+      "function_signature": "progress(done: int, total: int) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (done / total) * 100 if total > 0 else 0",
+      "key_concepts": ["Progress bar", "User feedback"]
+    },
+    "test_cases": [
+      {
+        "input": "25, 50",
+        "expected_output": "50.0",
+        "description": "Half completed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Progress calculated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe division" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero total" }
+    ],
+    "tags": ["UI/UX", "Progress"],
+    "required_skills": ["Python"],
+    "hints": ["(done/total)*100"]
+  },
+
+  {
+    "_id": "q_uiux_0062",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "User Preferences",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to save user preference.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def save_preference(key, value):\n    pass",
+      "function_signature": "save_preference(key: str, value: str) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {key: value}",
+      "key_concepts": ["Preferences", "Personalization"]
+    },
+    "test_cases": [
+      {
+        "input": "\"theme\", \"dark\"",
+        "expected_output": "{\"theme\":\"dark\"}",
+        "description": "Preference saved"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Preference stored" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear dictionary" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty value" }
+    ],
+    "tags": ["UI/UX", "Preferences"],
+    "required_skills": ["Python"],
+    "hints": ["Return key-value pair"]
+  },
+
+  {
+    "_id": "q_uiux_0063",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Onboarding",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if onboarding is completed.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def onboarding_done(steps_completed, total_steps):\n    pass",
+      "function_signature": "onboarding_done(steps_completed: int, total_steps: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return steps_completed >= total_steps",
+      "key_concepts": ["Onboarding", "User journey"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 5",
+        "expected_output": "True",
+        "description": "Onboarding completed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Completion detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles partial steps" }
+    ],
+    "tags": ["UI/UX", "Onboarding"],
+    "required_skills": ["Python"],
+    "hints": ["Compare steps"]
+  },
+
+  {
+    "_id": "q_uiux_0064",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "Consistency",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if two UI components use the same style.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def same_style(style1, style2):\n    pass",
+      "function_signature": "same_style(style1: str, style2: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return style1 == style2",
+      "key_concepts": ["Consistency", "Design systems"]
+    },
+    "test_cases": [
+      {
+        "input": "\"primary\", \"primary\"",
+        "expected_output": "True",
+        "description": "Styles match"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Consistency checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles mismatch" }
+    ],
+    "tags": ["UI/UX", "DesignSystem"],
+    "required_skills": ["Python"],
+    "hints": ["Compare strings"]
+  },
+
+  {
+    "_id": "q_uiux_0065",
+    "question_type": "coding",
+    "domain": "UI/UX Design",
+    "topic": "User Satisfaction",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate average user rating.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def average_rating(ratings):\n    pass",
+      "function_signature": "average_rating(ratings: list) -> float"
+    },
+    "expected_answer": {
+      "solution": "return sum(ratings) / len(ratings) if ratings else 0",
+      "key_concepts": ["User feedback", "UX metrics"]
+    },
+    "test_cases": [
+      {
+        "input": "[4, 5, 3]",
+        "expected_output": "4.0",
+        "description": "Average rating"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Average calculated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Handles empty list" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Avoids division by zero" }
+    ],
+    "tags": ["UI/UX", "Metrics"],
+    "required_skills": ["Python"],
+    "hints": ["Sum / count"]
+  }
+]

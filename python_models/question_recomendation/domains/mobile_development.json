@@ -1,0 +1,1847 @@
+[
+{
+    "_id": "q_md_0001",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of mobile application development?",
+    "options": [
+      "Develop desktop software",
+      "Create applications optimized for mobile devices",
+      "Design hardware drivers",
+      "Build database servers"
+    ],
+    "answer": "Create applications optimized for mobile devices",
+    "explanation": "Mobile development focuses on building apps tailored for mobile platforms like Android and iOS.",
+    "tags": ["Mobile Development", "Fundamentals"],
+    "required_skills": ["Mobile Basics"],
+    "hints": ["Mobile platforms"]
+  },
+  {
+    "_id": "q_md_0002",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Platforms",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which operating systems dominate the mobile market?",
+    "options": [
+      "Windows and Linux",
+      "Android and iOS",
+      "macOS and Windows",
+      "ChromeOS and Linux"
+    ],
+    "answer": "Android and iOS",
+    "explanation": "Android and iOS are the most widely used mobile operating systems.",
+    "tags": ["Mobile Development", "Platforms"],
+    "required_skills": ["Platform Knowledge"],
+    "hints": ["Major mobile OS"]
+  },
+  {
+    "_id": "q_md_0003",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Native Development",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which language is primarily used for native Android development?",
+    "options": [
+      "Swift",
+      "Kotlin",
+      "JavaScript",
+      "C#"
+    ],
+    "answer": "Kotlin",
+    "explanation": "Kotlin is the preferred language for native Android app development.",
+    "tags": ["Mobile Development", "Android"],
+    "required_skills": ["Android Development"],
+    "hints": ["Android language"]
+  },
+  {
+    "_id": "q_md_0004",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Native Development",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which language is primarily used for native iOS development?",
+    "options": [
+      "Objective-C",
+      "Swift",
+      "Java",
+      "Python"
+    ],
+    "answer": "Swift",
+    "explanation": "Swift is the modern language for native iOS application development.",
+    "tags": ["Mobile Development", "iOS"],
+    "required_skills": ["iOS Development"],
+    "hints": ["Apple ecosystem"]
+  },
+  {
+    "_id": "q_md_0005",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Cross-Platform",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which framework allows building cross-platform mobile apps using JavaScript?",
+    "options": [
+      "Flutter",
+      "React Native",
+      "Xamarin",
+      "SwiftUI"
+    ],
+    "answer": "React Native",
+    "explanation": "React Native uses JavaScript and React to build cross-platform mobile apps.",
+    "tags": ["Mobile Development", "Cross-Platform"],
+    "required_skills": ["React Native"],
+    "hints": ["JavaScript based"]
+  },
+  {
+    "_id": "q_md_0006",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "UI Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of adaptive UI in mobile apps?",
+    "options": [
+      "Increase code size",
+      "Support different screen sizes and orientations",
+      "Reduce network usage",
+      "Improve database performance"
+    ],
+    "answer": "Support different screen sizes and orientations",
+    "explanation": "Adaptive UI ensures consistent usability across devices and screen sizes.",
+    "tags": ["Mobile Development", "UI"],
+    "required_skills": ["Responsive Design"],
+    "hints": ["Multiple screens"]
+  },
+  {
+    "_id": "q_md_0007",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Architecture",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which architecture pattern separates UI, business logic, and data layers?",
+    "options": [
+      "MVC",
+      "MVVM",
+      "Monolithic",
+      "Singleton"
+    ],
+    "answer": "MVVM",
+    "explanation": "MVVM improves testability and separation of concerns in mobile apps.",
+    "tags": ["Mobile Development", "Architecture"],
+    "required_skills": ["App Architecture"],
+    "hints": ["View-ViewModel"]
+  },
+  {
+    "_id": "q_md_0008",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is memory management critical in mobile apps?",
+    "options": [
+      "To increase app size",
+      "To avoid crashes and battery drain",
+      "To improve network speed",
+      "To simplify UI design"
+    ],
+    "answer": "To avoid crashes and battery drain",
+    "explanation": "Efficient memory use ensures app stability and better battery life.",
+    "tags": ["Mobile Development", "Performance"],
+    "required_skills": ["Performance Optimization"],
+    "hints": ["Stability and battery"]
+  },
+  {
+    "_id": "q_md_0009",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Networking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which protocol is commonly used for mobile app backend communication?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "HTTP/HTTPS",
+      "SNMP"
+    ],
+    "answer": "HTTP/HTTPS",
+    "explanation": "Mobile apps typically communicate with servers using HTTP-based APIs.",
+    "tags": ["Mobile Development", "Networking"],
+    "required_skills": ["API Integration"],
+    "hints": ["REST communication"]
+  },
+  {
+    "_id": "q_md_0010",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Data Storage",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which storage option is best for storing small key-value data on mobile devices?",
+    "options": [
+      "SQLite",
+      "Shared Preferences / UserDefaults",
+      "Cloud storage",
+      "External SD card"
+    ],
+    "answer": "Shared Preferences / UserDefaults",
+    "explanation": "Key-value storage is ideal for small configuration or user preference data.",
+    "tags": ["Mobile Development", "Storage"],
+    "required_skills": ["Local Storage"],
+    "hints": ["Key-value data"]
+  },
+
+  {
+    "_id": "q_md_0011",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice helps secure sensitive data in mobile applications?",
+    "options": [
+      "Plain text storage",
+      "Hardcoding credentials",
+      "Encryption",
+      "Disabling authentication"
+    ],
+    "answer": "Encryption",
+    "explanation": "Encryption protects sensitive data stored or transmitted by mobile apps.",
+    "tags": ["Mobile Development", "Security"],
+    "required_skills": ["Mobile Security"],
+    "hints": ["Protect data"]
+  },
+  {
+    "_id": "q_md_0012",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of automated UI testing in mobile apps?",
+    "options": [
+      "Improve backend performance",
+      "Verify user interface behavior",
+      "Design layouts",
+      "Reduce app size"
+    ],
+    "answer": "Verify user interface behavior",
+    "explanation": "UI tests ensure screens and interactions work as expected.",
+    "tags": ["Mobile Development", "Testing"],
+    "required_skills": ["Mobile Testing"],
+    "hints": ["UI validation"]
+  },
+  {
+    "_id": "q_md_0013",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "App Lifecycle",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is understanding the app lifecycle important in mobile development?",
+    "options": [
+      "To improve animation quality",
+      "To manage resources efficiently",
+      "To design icons",
+      "To increase download size"
+    ],
+    "answer": "To manage resources efficiently",
+    "explanation": "Lifecycle awareness helps handle memory, background tasks, and state changes.",
+    "tags": ["Mobile Development", "Lifecycle"],
+    "required_skills": ["Lifecycle Management"],
+    "hints": ["State changes"]
+  },
+  {
+    "_id": "q_md_0014",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "APIs",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which API is commonly used to access device features like camera and GPS?",
+    "options": [
+      "Database API",
+      "Platform-specific APIs",
+      "File Transfer API",
+      "Email API"
+    ],
+    "answer": "Platform-specific APIs",
+    "explanation": "Native APIs provide access to hardware and OS-level features.",
+    "tags": ["Mobile Development", "Device APIs"],
+    "required_skills": ["Native APIs"],
+    "hints": ["Hardware access"]
+  },
+  {
+    "_id": "q_md_0015",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is required before publishing an app to the App Store or Play Store?",
+    "options": [
+      "Local testing only",
+      "Code signing and store compliance",
+      "Database migration",
+      "Server shutdown"
+    ],
+    "answer": "Code signing and store compliance",
+    "explanation": "Apps must meet platform guidelines and be properly signed.",
+    "tags": ["Mobile Development", "Deployment"],
+    "required_skills": ["App Publishing"],
+    "hints": ["Store rules"]
+  },
+  {
+    "_id": "q_md_0016",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Notifications",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of push notifications?",
+    "options": [
+      "Increase app size",
+      "Engage users with timely updates",
+      "Replace in-app UI",
+      "Improve rendering speed"
+    ],
+    "answer": "Engage users with timely updates",
+    "explanation": "Push notifications keep users informed and engaged.",
+    "tags": ["Mobile Development", "Notifications"],
+    "required_skills": ["Push Services"],
+    "hints": ["User engagement"]
+  },
+  {
+    "_id": "q_md_0017",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Offline Support",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is offline functionality important in mobile apps?",
+    "options": [
+      "To increase storage usage",
+      "To support users with unreliable connectivity",
+      "To replace cloud services",
+      "To reduce UI complexity"
+    ],
+    "answer": "To support users with unreliable connectivity",
+    "explanation": "Offline support improves usability when network access is limited.",
+    "tags": ["Mobile Development", "Offline"],
+    "required_skills": ["Offline Caching"],
+    "hints": ["No internet"]
+  },
+  {
+    "_id": "q_md_0018",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "App Size Optimization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice helps reduce mobile app size?",
+    "options": [
+      "Including unused libraries",
+      "Code shrinking and resource optimization",
+      "Adding high-resolution assets only",
+      "Disabling compression"
+    ],
+    "answer": "Code shrinking and resource optimization",
+    "explanation": "Optimized builds reduce download size and improve install rates.",
+    "tags": ["Mobile Development", "Optimization"],
+    "required_skills": ["Build Optimization"],
+    "hints": ["Smaller APK/IPA"]
+  },
+  {
+    "_id": "q_md_0019",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Analytics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is analytics important in mobile applications?",
+    "options": [
+      "To increase app permissions",
+      "To understand user behavior and improve features",
+      "To replace testing",
+      "To reduce app performance"
+    ],
+    "answer": "To understand user behavior and improve features",
+    "explanation": "Analytics provides insights into usage patterns and user engagement.",
+    "tags": ["Mobile Development", "Analytics"],
+    "required_skills": ["App Analytics"],
+    "hints": ["User behavior"]
+  },
+  {
+    "_id": "q_md_0020",
+    "question_type": "multiple-choice",
+    "domain": "Mobile Development",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is cross-platform mobile development gaining popularity?",
+    "options": [
+      "It eliminates native performance",
+      "It allows single codebase for multiple platforms",
+      "It removes need for testing",
+      "It increases development time"
+    ],
+    "answer": "It allows single codebase for multiple platforms",
+    "explanation": "Cross-platform tools reduce cost and development time while reaching wider audiences.",
+    "tags": ["Mobile Development", "Trends"],
+    "required_skills": ["Cross-Platform Frameworks"],
+    "hints": ["One codebase"]
+  },
+  {
+    "_id": "q_mobile_0021",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Mobile App Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the basic architecture of a mobile application and its core components.",
+    "expected_answer": {
+      "key_points": [
+        "User interface layer",
+        "Business logic layer",
+        "Data layer",
+        "Interaction between components"
+      ],
+      "example_scenarios": [
+        "Android app using Activities, ViewModels, and Room",
+        "iOS app using ViewControllers and Core Data"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Structure Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Mobile Architecture", "App Basics"],
+    "required_skills": ["Mobile Development"],
+    "hints": [
+      "Think in terms of layers",
+      "Relate architecture to Android or iOS components"
+    ]
+  },
+  {
+    "_id": "q_mobile_0022",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Android Components",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the lifecycle of an Android Activity and explain why it is important.",
+    "expected_answer": {
+      "key_points": [
+        "onCreate, onStart, onResume",
+        "onPause, onStop, onDestroy",
+        "State management",
+        "Resource handling"
+      ],
+      "example_scenarios": [
+        "Handling screen rotation",
+        "Managing background tasks during app pause"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Lifecycle Understanding", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 }
+    ],
+    "tags": ["Android", "Activity Lifecycle"],
+    "required_skills": ["Android Development"],
+    "hints": [
+      "Focus on state transitions",
+      "Explain why misuse causes crashes or leaks"
+    ]
+  },
+  {
+    "_id": "q_mobile_0023",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the MVC architecture used in iOS application development.",
+    "expected_answer": {
+      "key_points": [
+        "Model responsibilities",
+        "View responsibilities",
+        "Controller responsibilities",
+        "Data flow in MVC"
+      ],
+      "example_scenarios": [
+        "Displaying API data in a table view",
+        "Separating UI logic from data logic"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architectural Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["iOS", "MVC"],
+    "required_skills": ["iOS Development"],
+    "hints": [
+      "Explain responsibilities clearly",
+      "Avoid mixing controller and model logic"
+    ]
+  },
+  {
+    "_id": "q_mobile_0024",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Cross-Platform Development",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain cross-platform mobile development and its advantages and limitations.",
+    "expected_answer": {
+      "key_points": [
+        "Single codebase concept",
+        "Performance trade-offs",
+        "Platform-specific access",
+        "Development speed"
+      ],
+      "example_scenarios": [
+        "Using Flutter for Android and iOS",
+        "Using React Native for startup applications"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Pros and Cons", "weight": 0.3 },
+      { "criterion": "Practical Insight", "weight": 0.3 }
+    ],
+    "tags": ["Cross-Platform", "Flutter", "React Native"],
+    "required_skills": ["Mobile Development"],
+    "hints": [
+      "Compare native vs cross-platform",
+      "Mention real-world constraints"
+    ]
+  },
+  {
+    "_id": "q_mobile_0025",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "UI Design",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of responsive UI design in mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Different screen sizes",
+        "Orientation changes",
+        "User experience consistency",
+        "Layout adaptability"
+      ],
+      "example_scenarios": [
+        "Supporting tablets and phones",
+        "Handling portrait and landscape modes"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "UI Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["UI Design", "Responsive Design"],
+    "required_skills": ["Mobile UI"],
+    "hints": [
+      "Think about user experience",
+      "Mention adaptive layouts"
+    ]
+  },
+  {
+    "_id": "q_mobile_0026",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Networking",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how REST APIs are consumed in mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "HTTP methods",
+        "JSON parsing",
+        "Asynchronous calls",
+        "Error handling"
+      ],
+      "example_scenarios": [
+        "Fetching user data from a server",
+        "Submitting form data to backend"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Implementation Insight", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["REST API", "Networking"],
+    "required_skills": ["Mobile Networking"],
+    "hints": [
+      "Mention async handling",
+      "Explain data serialization"
+    ]
+  },
+  {
+    "_id": "q_mobile_0027",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Data Storage",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Compare local storage options available in mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Shared Preferences / UserDefaults",
+        "SQLite / Room / Core Data",
+        "File storage",
+        "Use-case comparison"
+      ],
+      "example_scenarios": [
+        "Saving user login state",
+        "Storing offline application data"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparison Quality", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Local Storage", "Persistence"],
+    "required_skills": ["Mobile Data Management"],
+    "hints": [
+      "Compare based on data size",
+      "Mention performance considerations"
+    ]
+  },
+  {
+    "_id": "q_mobile_0028",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Security",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss common security challenges in mobile applications and how they can be mitigated.",
+    "expected_answer": {
+      "key_points": [
+        "Insecure data storage",
+        "Network vulnerabilities",
+        "Authentication risks",
+        "Secure coding practices"
+      ],
+      "example_scenarios": [
+        "Protecting API keys",
+        "Securing user credentials"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Security Awareness", "weight": 0.4 },
+      { "criterion": "Mitigation Strategies", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Mobile Security"],
+    "required_skills": ["Secure Mobile Development"],
+    "hints": [
+      "Think about data exposure",
+      "Mention encryption and secure APIs"
+    ]
+  },
+  {
+    "_id": "q_mobile_0029",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Performance Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain techniques used to improve performance of mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Efficient memory usage",
+        "Reducing UI overdraw",
+        "Background task optimization",
+        "Caching strategies"
+      ],
+      "example_scenarios": [
+        "Improving app launch time",
+        "Optimizing scrolling performance"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Optimization Knowledge", "weight": 0.4 },
+      { "criterion": "Practical Techniques", "weight": 0.3 },
+      { "criterion": "Technical Depth", "weight": 0.3 }
+    ],
+    "tags": ["Performance", "Optimization"],
+    "required_skills": ["Advanced Mobile Development"],
+    "hints": [
+      "Focus on memory and CPU",
+      "Mention profiling tools"
+    ]
+  },
+  {
+    "_id": "q_mobile_0030",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "App Deployment",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the process of deploying a mobile application to an app store.",
+    "expected_answer": {
+      "key_points": [
+        "Build configuration",
+        "App signing",
+        "Store guidelines",
+        "Release management"
+      ],
+      "example_scenarios": [
+        "Publishing on Google Play Store",
+        "Publishing on Apple App Store"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Understanding", "weight": 0.4 },
+      { "criterion": "Completeness", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Deployment", "App Store"],
+    "required_skills": ["Mobile Deployment"],
+    "hints": [
+      "Mention review process",
+      "Include versioning"
+    ]
+  },
+  {
+    "_id": "q_mobile_0031",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Testing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain different types of testing used in mobile application development.",
+    "expected_answer": {
+      "key_points": [
+        "Unit testing",
+        "UI testing",
+        "Integration testing",
+        "Manual vs automated testing"
+      ],
+      "example_scenarios": [
+        "Testing login functionality",
+        "Automated UI flow testing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Testing Knowledge", "weight": 0.4 },
+      { "criterion": "Coverage", "weight": 0.3 },
+      { "criterion": "Practical Insight", "weight": 0.3 }
+    ],
+    "tags": ["Testing", "Quality Assurance"],
+    "required_skills": ["Mobile Testing"],
+    "hints": [
+      "Mention automation tools",
+      "Explain why testing is critical"
+    ]
+  },
+  {
+    "_id": "q_mobile_0032",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how push notifications work in mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Push notification architecture",
+        "Role of notification services",
+        "Device tokens",
+        "Use cases"
+      ],
+      "example_scenarios": [
+        "Order status updates",
+        "Breaking news alerts"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Workflow Understanding", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Push Notifications"],
+    "required_skills": ["Mobile Backend Integration"],
+    "hints": [
+      "Mention FCM or APNs",
+      "Explain delivery flow"
+    ]
+  },
+  {
+    "_id": "q_mobile_0033",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Offline Support",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how offline functionality can be implemented in mobile applications.",
+    "expected_answer": {
+      "key_points": [
+        "Local caching",
+        "Sync mechanisms",
+        "Conflict resolution",
+        "User experience considerations"
+      ],
+      "example_scenarios": [
+        "Offline note-taking app",
+        "Offline-first news reader"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Design Understanding", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Practicality", "weight": 0.3 }
+    ],
+    "tags": ["Offline Mode"],
+    "required_skills": ["Mobile Architecture"],
+    "hints": [
+      "Think about sync logic",
+      "Mention user transparency"
+    ]
+  },
+  {
+    "_id": "q_mobile_0034",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Accessibility",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss the importance of accessibility in mobile application development.",
+    "expected_answer": {
+      "key_points": [
+        "Inclusive design",
+        "Accessibility features",
+        "Legal and ethical importance",
+        "User experience improvement"
+      ],
+      "example_scenarios": [
+        "Screen reader support",
+        "High contrast modes"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Accessibility"],
+    "required_skills": ["Mobile UI Design"],
+    "hints": [
+      "Think about diverse users",
+      "Mention assistive technologies"
+    ]
+  },
+  {
+    "_id": "q_mobile_0035",
+    "question_type": "subjective",
+    "domain": "Mobile Development",
+    "topic": "Mobile Trends",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss recent trends in mobile application development.",
+    "expected_answer": {
+      "key_points": [
+        "Cross-platform frameworks",
+        "App performance focus",
+        "Security emphasis",
+        "User-centric design"
+      ],
+      "example_scenarios": [
+        "Adoption of Flutter",
+        "Growth of super apps"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Trend Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Mobile Trends"],
+    "required_skills": ["Mobile Fundamentals"],
+    "hints": [
+      "Focus on current industry practices",
+      "Avoid outdated technologies"
+    ]
+  },
+  {
+    "_id": "q_mobile_0036",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is mobile application development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Developing apps for mobile devices", "Android and iOS platforms", "Uses specific SDKs"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Mobile Basics"],
+    "required_skills": ["Programming Basics"],
+    "hints": ["Apps for phones"]
+  },
+  {
+    "_id": "q_mobile_0037",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Platforms",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main mobile platforms used today?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Android", "iOS", "Different ecosystems"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Platforms"],
+    "required_skills": ["Mobile Basics"],
+    "hints": ["Android and iOS"]
+  },
+  {
+    "_id": "q_mobile_0038",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Native Apps",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a native mobile application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Built for a specific platform", "Uses platform languages", "Better performance"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Native Apps"],
+    "required_skills": ["Java or Swift"],
+    "hints": ["Platform-specific apps"]
+  },
+  {
+    "_id": "q_mobile_0039",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Hybrid Apps",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a hybrid mobile application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Single codebase", "Runs on multiple platforms", "Uses web technologies"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Hybrid Apps"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Cross-platform apps"]
+  },
+  {
+    "_id": "q_mobile_0040",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Android",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What programming languages are used for Android development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Java", "Kotlin", "Android SDK"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Android"],
+    "required_skills": ["Java or Kotlin"],
+    "hints": ["Android Studio"]
+  },
+  {
+    "_id": "q_mobile_0041",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "iOS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What programming languages are used for iOS development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Swift", "Objective-C", "Xcode IDE"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["iOS"],
+    "required_skills": ["Swift"],
+    "hints": ["Apple apps"]
+  },
+  {
+    "_id": "q_mobile_0042",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "UI Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is UI design important in mobile applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["User experience", "Ease of navigation", "Visual clarity"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Mobile UI"],
+    "required_skills": ["UI Basics"],
+    "hints": ["User-friendly design"]
+  },
+  {
+    "_id": "q_mobile_0043",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "APIs",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do mobile apps use APIs?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Fetch data from servers", "Enable app features", "Client-server communication"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["APIs"],
+    "required_skills": ["HTTP Basics"],
+    "hints": ["Backend communication"]
+  },
+  {
+    "_id": "q_mobile_0044",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Testing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is testing important in mobile app development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Bug detection", "Device compatibility", "App stability"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Testing"],
+    "required_skills": ["Debugging"],
+    "hints": ["Quality assurance"]
+  },
+  {
+    "_id": "q_mobile_0045",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Deployment",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does deploying a mobile app mean?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Publishing app", "Play Store or App Store", "User availability"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Deployment"],
+    "required_skills": ["Store Guidelines"],
+    "hints": ["App release"]
+  },
+  {
+    "_id": "q_mobile_0046",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What affects the performance of a mobile application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Memory usage", "Network calls", "Efficient code"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Smooth apps"]
+  },
+  {
+    "_id": "q_mobile_0047",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is security important in mobile applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Protects user data", "Prevents attacks", "Builds user trust"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Security"],
+    "required_skills": ["Security Basics"],
+    "hints": ["Data protection"]
+  },
+  {
+    "_id": "q_mobile_0048",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Offline Support",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is offline support in mobile apps?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Works without internet", "Local storage", "Better user experience"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Offline Mode"],
+    "required_skills": ["Local Storage"],
+    "hints": ["No internet usage"]
+  },
+  {
+    "_id": "q_mobile_0049",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career roles exist in mobile development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Android developer", "iOS developer", "Mobile app developer"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Mobile Basics"],
+    "hints": ["App developer roles"]
+  },
+  {
+    "_id": "q_mobile_0050",
+    "question_type": "voice",
+    "domain": "Mobile Development",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see mobile development evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["5G applications", "AR/VR integration", "Cross-platform frameworks"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Mobile Basics"],
+    "hints": ["Next-gen mobile"]
+  },
+  {
+    "_id": "q_mobile_0051",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a mobile device is online.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_online(status):\n    pass",
+      "function_signature": "is_online(status: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return status",
+      "key_concepts": ["Connectivity", "Network status"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Device online"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Connectivity checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles offline case" }
+    ],
+    "tags": ["Mobile Development", "Connectivity"],
+    "required_skills": ["Python"],
+    "hints": ["Return the status flag"]
+  },
+
+  {
+    "_id": "q_mobile_0052",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "UI",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a button is clickable.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_clickable(enabled):\n    pass",
+      "function_signature": "is_clickable(enabled: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return enabled",
+      "key_concepts": ["UI state", "User interaction"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "False",
+        "description": "Button disabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Clickable state correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles enabled state" }
+    ],
+    "tags": ["Mobile Development", "UI"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean value"]
+  },
+
+  {
+    "_id": "q_mobile_0053",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Permissions",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a permission is granted.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_permission(granted):\n    pass",
+      "function_signature": "has_permission(granted: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return granted",
+      "key_concepts": ["Permissions", "Security"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Permission granted"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Permission checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles denied permission" }
+    ],
+    "tags": ["Mobile Development", "Permissions"],
+    "required_skills": ["Python"],
+    "hints": ["Use the boolean flag"]
+  },
+
+  {
+    "_id": "q_mobile_0054",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Navigation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to move to the next screen index.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def next_screen(current, total):\n    pass",
+      "function_signature": "next_screen(current: int, total: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return current + 1 if current < total else total",
+      "key_concepts": ["Navigation", "Screen flow"]
+    },
+    "test_cases": [
+      {
+        "input": "2, 5",
+        "expected_output": "3",
+        "description": "Navigate forward"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Navigation logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles last screen" }
+    ],
+    "tags": ["Mobile Development", "Navigation"],
+    "required_skills": ["Python"],
+    "hints": ["Do not exceed total"]
+  },
+
+  {
+    "_id": "q_mobile_0055",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "State Management",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to toggle app dark mode state.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def toggle_dark_mode(enabled):\n    pass",
+      "function_signature": "toggle_dark_mode(enabled: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return not enabled",
+      "key_concepts": ["State management", "Themes"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "False",
+        "description": "Dark mode toggled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Toggle works" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses negation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+    ],
+    "tags": ["Mobile Development", "State"],
+    "required_skills": ["Python"],
+    "hints": ["Use not operator"]
+  },
+
+  {
+    "_id": "q_mobile_0056",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Storage",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to save a key-value pair in local storage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def save_local(key, value):\n    pass",
+      "function_signature": "save_local(key: str, value: str) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {key: value}",
+      "key_concepts": ["Local storage", "Persistence"]
+    },
+    "test_cases": [
+      {
+        "input": "\"token\", \"abc123\"",
+        "expected_output": "{\"token\":\"abc123\"}",
+        "description": "Data saved"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Data stored" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple dictionary" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty value" }
+    ],
+    "tags": ["Mobile Development", "Storage"],
+    "required_skills": ["Python"],
+    "hints": ["Return key-value pair"]
+  },
+
+  {
+    "_id": "q_mobile_0057",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if app launch time is acceptable (<2 seconds).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def fast_launch(time):\n    pass",
+      "function_signature": "fast_launch(time: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return time < 2",
+      "key_concepts": ["Performance", "App optimization"]
+    },
+    "test_cases": [
+      {
+        "input": "1.5",
+        "expected_output": "True",
+        "description": "Fast launch"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Launch time validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles slow launch" }
+    ],
+    "tags": ["Mobile Development", "Performance"],
+    "required_skills": ["Python"],
+    "hints": ["Threshold is 2 seconds"]
+  },
+
+  {
+    "_id": "q_mobile_0058",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Notifications",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if notifications are enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def notifications_on(enabled):\n    pass",
+      "function_signature": "notifications_on(enabled: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return enabled",
+      "key_concepts": ["Notifications", "User settings"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "False",
+        "description": "Notifications disabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Notification status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles enabled state" }
+    ],
+    "tags": ["Mobile Development", "Notifications"],
+    "required_skills": ["Python"],
+    "hints": ["Return flag"]
+  },
+
+  {
+    "_id": "q_mobile_0059",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Forms",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to validate mobile number length (10 digits).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_mobile(number):\n    pass",
+      "function_signature": "valid_mobile(number: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return len(number) == 10 and number.isdigit()",
+      "key_concepts": ["Form validation", "Input checking"]
+    },
+    "test_cases": [
+      {
+        "input": "\"9876543210\"",
+        "expected_output": "True",
+        "description": "Valid mobile number"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Number validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses string methods" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles non-digit input" }
+    ],
+    "tags": ["Mobile Development", "Forms"],
+    "required_skills": ["Python"],
+    "hints": ["Check length and digits"]
+  },
+
+  {
+    "_id": "q_mobile_0060",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "API Integration",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to format API response for mobile app.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def api_response(success):\n    pass",
+      "function_signature": "api_response(success: bool) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"status\": \"success\" if success else \"failure\"}",
+      "key_concepts": ["API handling", "Backend communication"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "{\"status\":\"success\"}",
+        "description": "API success"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Response formatted" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear dictionary" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure" }
+    ],
+    "tags": ["Mobile Development", "API"],
+    "required_skills": ["Python"],
+    "hints": ["Return status key"]
+  },
+
+  {
+    "_id": "q_mobile_0061",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Sensors",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if accelerometer data is available.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def accel_available(flag):\n    pass",
+      "function_signature": "accel_available(flag: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return flag",
+      "key_concepts": ["Sensors", "Hardware access"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Sensor available"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Sensor status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles unavailable sensor" }
+    ],
+    "tags": ["Mobile Development", "Sensors"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean"]
+  },
+
+  {
+    "_id": "q_mobile_0062",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Location",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if GPS permission is enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def gps_enabled(permission):\n    pass",
+      "function_signature": "gps_enabled(permission: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return permission",
+      "key_concepts": ["GPS", "Permissions"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "False",
+        "description": "GPS disabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "GPS permission checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles enabled case" }
+    ],
+    "tags": ["Mobile Development", "Location"],
+    "required_skills": ["Python"],
+    "hints": ["Use permission flag"]
+  },
+
+  {
+    "_id": "q_mobile_0063",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Media",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if audio is muted.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_muted(muted):\n    pass",
+      "function_signature": "is_muted(muted: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return muted",
+      "key_concepts": ["Media", "Audio control"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Audio muted"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Mute status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles unmuted state" }
+    ],
+    "tags": ["Mobile Development", "Media"],
+    "required_skills": ["Python"],
+    "hints": ["Return flag"]
+  },
+
+  {
+    "_id": "q_mobile_0064",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Battery",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if battery level is low (<20%).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def low_battery(level):\n    pass",
+      "function_signature": "low_battery(level: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return level < 20",
+      "key_concepts": ["Battery management", "Power optimization"]
+    },
+    "test_cases": [
+      {
+        "input": "15",
+        "expected_output": "True",
+        "description": "Low battery"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Battery level checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles higher level" }
+    ],
+    "tags": ["Mobile Development", "Battery"],
+    "required_skills": ["Python"],
+    "hints": ["Check level < 20"]
+  },
+
+  {
+    "_id": "q_mobile_0065",
+    "question_type": "coding",
+    "domain": "Mobile Development",
+    "topic": "Lifecycle",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if app is in background.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def in_background(active):\n    pass",
+      "function_signature": "in_background(active: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return not active",
+      "key_concepts": ["App lifecycle", "Foreground/Background"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "True",
+        "description": "App in background"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Lifecycle state correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Boolean inversion" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles foreground state" }
+    ],
+    "tags": ["Mobile Development", "Lifecycle"],
+    "required_skills": ["Python"],
+    "hints": ["Background if not active"]
+  }
+]

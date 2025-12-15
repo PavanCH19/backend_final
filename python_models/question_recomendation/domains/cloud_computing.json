@@ -3,862 +3,1906 @@
     "_id": "q_cc_0001",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "AWS Compute",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is the core difference between Amazon EC2 and AWS Lambda?",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary characteristic that differentiates cloud computing from traditional on-premise infrastructure?",
     "options": [
-      "EC2 is pay-per-use; Lambda is a fixed monthly fee.",
-      "EC2 runs containers; Lambda runs virtual machines.",
-      "EC2 is an IaaS server; Lambda is a FaaS serverless compute service.",
-      "EC2 can scale automatically; Lambda cannot scale."
+      "Higher hardware cost",
+      "Elastic resource provisioning",
+      "Manual scalability",
+      "Local data storage only"
     ],
-    "answer": "EC2 is an IaaS server; Lambda is a FaaS serverless compute service.",
-    "explanation": "EC2 (Elastic Compute Cloud) provides virtual servers (IaaS) that you manage, while Lambda is an event-driven serverless platform (FaaS) where AWS manages the underlying compute resources.",
-    "tags": [
-      "AWS",
-      "Serverless",
-      "IaaS"
-    ],
-    "required_skills": [
-      "AWS"
-    ],
-    "hints": [
-      "Think about which one requires OS management."
-    ]
+    "answer": "Elastic resource provisioning",
+    "explanation": "cloud computing allows resources to be scaled up or down dynamically based on demand.",
+    "tags": ["cloud computing", "Fundamentals"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Think scalability"]
   },
   {
     "_id": "q_cc_0002",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Azure Identity",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "What service in Azure is used for managing user identities and access control?",
+    "topic": "Service Models",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cloud service model provides the highest level of abstraction for developers?",
     "options": [
-      "Azure Compute",
-      "Azure Storage Accounts",
-      "Azure Active Directory (Azure AD)",
-      "Azure Resource Group"
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
     ],
-    "answer": "Azure Active Directory (Azure AD)",
-    "explanation": "Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, used for single sign-on and multi-factor authentication.",
-    "tags": [
-      "Azure",
-      "Cloud Security",
-      "Identity"
-    ],
-    "required_skills": [
-      "Azure",
-      "Cloud Security"
-    ],
-    "hints": [
-      "It's the core directory service."
-    ]
+    "answer": "Software as a Service (SaaS)",
+    "explanation": "SaaS abstracts infrastructure and platform concerns, offering ready-to-use applications.",
+    "tags": ["cloud computing", "Service Models"],
+    "required_skills": ["Cloud Architecture"],
+    "hints": ["Least management responsibility"]
   },
   {
     "_id": "q_cc_0003",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Docker Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "What is the primary function of a Dockerfile?",
+    "topic": "Deployment Models",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cloud deployment model combines private and public cloud resources?",
     "options": [
-      "To define the networking between containers.",
-      "To provide instructions for building a Docker image.",
-      "To run the container on a remote host.",
-      "To define the configuration for a Kubernetes Pod."
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Community cloud"
     ],
-    "answer": "To provide instructions for building a Docker image.",
-    "explanation": "A Dockerfile is a text file containing commands that Docker uses to build an image, which includes all the necessary code, runtime, libraries, and dependencies.",
-    "tags": [
-      "Docker",
-      "Containers"
-    ],
-    "required_skills": [
-      "Docker"
-    ],
-    "hints": [
-      "It's the blueprint for the artifact."
-    ]
+    "answer": "Hybrid cloud",
+    "explanation": "Hybrid cloud integrates on-premise or private cloud resources with public cloud services.",
+    "tags": ["cloud computing", "Deployment Models"],
+    "required_skills": ["Cloud Design"],
+    "hints": ["Combination approach"]
   },
   {
     "_id": "q_cc_0004",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "GCP Networking",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What is a VPC (Virtual Private Cloud) in GCP?",
+    "topic": "Virtualization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What role does a hypervisor play in cloud computing?",
     "options": [
-      "A software component restricted to a single region.",
-      "A global, software-defined network that spans all regions.",
-      "A private subnet only accessible via VPN.",
-      "A dedicated hardware network for a single customer."
+      "Manages user authentication",
+      "Runs containerized applications",
+      "Enables multiple virtual machines on a single physical host",
+      "Handles network routing"
     ],
-    "answer": "A global, software-defined network that spans all regions.",
-    "explanation": "Unlike AWS and Azure, GCP VPC networks are global resources, not restricted to a single region, allowing subnets to be created in any region globally within the same VPC.",
-    "tags": [
-      "GCP",
-      "Networking"
-    ],
-    "required_skills": [
-      "GCP"
-    ],
-    "hints": [
-      "Consider how GCP's VPC is fundamentally different from others (AWS/Azure)."
-    ]
+    "answer": "Enables multiple virtual machines on a single physical host",
+    "explanation": "A hypervisor abstracts physical hardware to support multiple virtual machines.",
+    "tags": ["cloud computing", "Virtualization"],
+    "required_skills": ["Virtualization Concepts"],
+    "hints": ["VM management"]
   },
   {
     "_id": "q_cc_0005",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Kubernetes Concepts",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is a Pod in Kubernetes?",
+    "topic": "Scalability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is horizontal scaling in cloud systems?",
     "options": [
-      "A single running Docker container.",
-      "The smallest deployable unit that holds one or more containers.",
-      "A group of worker nodes.",
-      "A network load balancer."
+      "Increasing CPU power of a single server",
+      "Adding more servers to handle load",
+      "Reducing storage size",
+      "Upgrading network bandwidth"
     ],
-    "answer": "The smallest deployable unit that holds one or more containers.",
-    "explanation": "A Pod is the fundamental unit of execution in Kubernetes, encapsulating one or more containers, storage resources, and a unique network IP.",
-    "tags": [
-      "Kubernetes",
-      "Containers"
-    ],
-    "required_skills": [
-      "Kubernetes"
-    ],
-    "hints": [
-      "It's the wrapper for a container (or group of them)."
-    ]
+    "answer": "Adding more servers to handle load",
+    "explanation": "Horizontal scaling distributes workload across multiple instances.",
+    "tags": ["cloud computing", "Scalability"],
+    "required_skills": ["System Scaling"],
+    "hints": ["Scale out"]
   },
   {
     "_id": "q_cc_0006",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Cloud Security",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "Under the AWS Shared Responsibility Model, who is responsible for the security of the operating system (OS) when using an EC2 instance?",
+    "topic": "Availability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of availability zones in cloud platforms?",
     "options": [
-      "AWS",
-      "The customer",
-      "Both AWS and the customer equally",
-      "A third-party security vendor"
+      "Reduce storage cost",
+      "Improve security only",
+      "Provide fault tolerance and high availability",
+      "Increase CPU speed"
     ],
-    "answer": "The customer",
-    "explanation": "AWS is responsible for 'Security OF the Cloud' (the infrastructure), while the customer is responsible for 'Security IN the Cloud,' which includes OS patching and configuration, especially for EC2 instances.",
-    "tags": [
-      "Cloud Security",
-      "AWS",
-      "Compliance"
-    ],
-    "required_skills": [
-      "AWS",
-      "Cloud Security"
-    ],
-    "hints": [
-      "Is the OS part of the physical infrastructure or the software you install?"
-    ]
+    "answer": "Provide fault tolerance and high availability",
+    "explanation": "Availability zones isolate failures and improve application resilience.",
+    "tags": ["cloud computing", "Reliability"],
+    "required_skills": ["High Availability"],
+    "hints": ["Failure isolation"]
   },
   {
     "_id": "q_cc_0007",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Terraform State",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is the primary purpose of the Terraform state file?",
+    "topic": "Storage",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which type of cloud storage is best suited for unstructured data like images and videos?",
     "options": [
-      "To store sensitive credentials for infrastructure access.",
-      "To cache the output of the execution plan for faster execution.",
-      "To map real-world resources to your configuration and track metadata.",
-      "To log all API calls made to the cloud provider."
+      "Block storage",
+      "File storage",
+      "Object storage",
+      "Cache storage"
     ],
-    "answer": "To map real-world resources to your configuration and track metadata.",
-    "explanation": "The Terraform state file (`terraform.tfstate`) is critical for keeping track of the resources Terraform has created and managed, linking them back to the configuration files.",
-    "tags": [
-      "Terraform",
-      "IaC"
-    ],
-    "required_skills": [
-      "Terraform"
-    ],
-    "hints": [
-      "It's how Terraform knows what exists and how it's linked to your code."
-    ]
+    "answer": "Object storage",
+    "explanation": "Object storage efficiently handles large volumes of unstructured data.",
+    "tags": ["cloud computing", "Storage"],
+    "required_skills": ["Cloud Storage"],
+    "hints": ["Scalable data objects"]
   },
   {
     "_id": "q_cc_0008",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "AWS Serverless/Storage",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "Which AWS service combination is best suited for hosting static websites with high availability and low cost?",
+    "topic": "Networking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary function of a Virtual Private Cloud (VPC)?",
     "options": [
-      "EC2 with Elastic Load Balancer",
-      "Amazon RDS and ECS",
-      "Amazon S3 with CloudFront",
-      "AWS Lambda with API Gateway"
+      "Run virtual machines",
+      "Provide isolated network environments",
+      "Store backups",
+      "Manage identities"
     ],
-    "answer": "Amazon S3 with CloudFront",
-    "explanation": "Amazon S3 provides durable, low-cost object storage for the files, and CloudFront (CDN) is used to distribute the content globally for fast access and high availability.",
-    "tags": [
-      "AWS",
-      "Serverless",
-      "Networking"
-    ],
-    "required_skills": [
-      "AWS"
-    ],
-    "hints": [
-      "Look for the cheapest, most durable object storage combined with a CDN."
-    ]
+    "answer": "Provide isolated network environments",
+    "explanation": "A VPC allows users to define isolated and customizable virtual networks.",
+    "tags": ["cloud computing", "Networking"],
+    "required_skills": ["Cloud Networking"],
+    "hints": ["Network isolation"]
   },
   {
     "_id": "q_cc_0009",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Azure Storage",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 75,
-    "text": "In Azure, which storage option is designed for highly durable, low-cost storage of data that is infrequently accessed?",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does the shared responsibility model define?",
     "options": [
-      "Azure Premium File Shares",
-      "Azure Hot Blob Storage",
-      "Azure Cool Blob Storage",
-      "Azure Table Storage"
+      "Cost sharing between users",
+      "Responsibilities of cloud provider and customer",
+      "Data sharing policies",
+      "Network traffic distribution"
     ],
-    "answer": "Azure Cool Blob Storage",
-    "explanation": "Azure Cool Blob Storage is optimized for storing large amounts of data that are accessed infrequently (at least once a month), offering a lower storage cost than Hot storage.",
-    "tags": [
-      "Azure",
-      "Storage"
-    ],
-    "required_skills": [
-      "Azure"
-    ],
-    "hints": [
-      "The name hints at a lower temperature and frequency of access."
-    ]
+    "answer": "Responsibilities of cloud provider and customer",
+    "explanation": "Security and compliance responsibilities are divided between provider and user.",
+    "tags": ["cloud computing", "Security"],
+    "required_skills": ["Cloud Security"],
+    "hints": ["Who secures what"]
   },
   {
     "_id": "q_cc_0010",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Docker Networking",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is the default networking mode for containers that allows them to communicate with each other on the same host and with the external world (when exposing ports)?",
+    "topic": "Cost Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cloud pricing model charges users based on actual resource consumption?",
     "options": [
-      "Host mode",
-      "None mode",
-      "Overlay mode",
-      "Bridge mode"
+      "Fixed pricing",
+      "Subscription pricing",
+      "Pay-as-you-go",
+      "License-based pricing"
     ],
-    "answer": "Bridge mode",
-    "explanation": "The default network driver is the bridge network, which is automatically created by Docker. Containers on the same bridge network can communicate with each other via IP address.",
-    "tags": [
-      "Docker",
-      "Networking"
-    ],
-    "required_skills": [
-      "Docker"
-    ],
-    "hints": [
-      "It creates a private, isolated network on the host."
-    ]
+    "answer": "Pay-as-you-go",
+    "explanation": "Users pay only for the resources they consume during usage.",
+    "tags": ["cloud computing", "Pricing"],
+    "required_skills": ["Cloud Economics"],
+    "hints": ["Usage based"]
   },
+
   {
     "_id": "q_cc_0011",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Kubernetes Services",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is a Kubernetes Service of type NodePort used for?",
+    "topic": "Containers",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the key advantage of containers over virtual machines?",
     "options": [
-      "Exposing a service on a static port on each node's IP address.",
-      "Providing an internal cluster IP for service-to-service communication.",
-      "Assigning an external cloud load balancer to the service.",
-      "Handling persistent storage for the service's Pods."
+      "Better hardware isolation",
+      "Faster startup and lower overhead",
+      "Higher security by default",
+      "Dedicated operating systems"
     ],
-    "answer": "Exposing a service on a static port on each node's IP address.",
-    "explanation": "NodePort services expose the service on a fixed port on every node in the cluster, allowing external traffic to reach the service via `<NodeIP>:<NodePort>`.",
-    "tags": [
-      "Kubernetes",
-      "Networking"
-    ],
-    "required_skills": [
-      "Kubernetes"
-    ],
-    "hints": [
-      "It's the most primitive way to expose a service externally."
-    ]
+    "answer": "Faster startup and lower overhead",
+    "explanation": "Containers share the host OS kernel, making them lightweight and fast.",
+    "tags": ["cloud computing", "Containers"],
+    "required_skills": ["Docker Basics"],
+    "hints": ["Lightweight virtualization"]
   },
   {
     "_id": "q_cc_0012",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "GCP Databases",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "Which GCP service is a globally consistent, fully managed relational database service that offers unlimited scale?",
+    "topic": "Orchestration",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which tool is most commonly used for container orchestration?",
     "options": [
-      "Cloud SQL",
-      "BigQuery",
-      "Cloud Spanner",
-      "Firestore"
+      "Docker Compose",
+      "Ansible",
+      "Kubernetes",
+      "Terraform"
     ],
-    "answer": "Cloud Spanner",
-    "explanation": "Cloud Spanner is Google's unique, horizontally scalable, globally distributed database service that combines the features of a relational database with the non-relational scale.",
-    "tags": [
-      "GCP",
-      "Database"
-    ],
-    "required_skills": [
-      "GCP"
-    ],
-    "hints": [
-      "It is known for its horizontal scale and 99.999% availability."
-    ]
+    "answer": "Kubernetes",
+    "explanation": "Kubernetes automates deployment, scaling, and management of containers.",
+    "tags": ["cloud computing", "Kubernetes"],
+    "required_skills": ["Container Orchestration"],
+    "hints": ["Cluster management"]
   },
   {
     "_id": "q_cc_0013",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Cloud Security",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What fundamental security principle is enforced by IAM (Identity and Access Management) in all cloud environments?",
+    "topic": "Serverless",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary benefit of serverless computing?",
     "options": [
-      "Defense-in-Depth",
-      "Least Privilege",
-      "Separation of Duties",
-      "High Availability"
+      "Unlimited storage",
+      "No infrastructure management by users",
+      "Lower network latency",
+      "Dedicated servers"
     ],
-    "answer": "Least Privilege",
-    "explanation": "The principle of Least Privilege dictates that any user, program, or process should have only the minimum necessary permissions to perform its required function, which is the core goal of IAM policies.",
-    "tags": [
-      "Cloud Security",
-      "IAM"
-    ],
-    "required_skills": [
-      "Cloud Security"
-    ],
-    "hints": [
-      "It focuses on limiting permissions to only what is necessary."
-    ]
+    "answer": "No infrastructure management by users",
+    "explanation": "Serverless abstracts servers, allowing developers to focus only on code.",
+    "tags": ["cloud computing", "Serverless"],
+    "required_skills": ["Serverless Architecture"],
+    "hints": ["No server management"]
   },
   {
     "_id": "q_cc_0014",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Terraform Modules",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is the primary benefit of using Terraform modules?",
+    "topic": "Monitoring",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of cloud monitoring services?",
     "options": [
-      "To automatically provision the resources without a plan.",
-      "To perform state locking for concurrent operations.",
-      "Encapsulation and reuse of infrastructure configurations.",
-      "To encrypt sensitive data within the configuration files."
+      "Increase storage capacity",
+      "Track application performance and health",
+      "Deploy applications",
+      "Encrypt user data"
     ],
-    "answer": "Encapsulation and reuse of infrastructure configurations.",
-    "explanation": "Modules allow you to group related resources into a reusable unit, treating complex configurations as a single component, which promotes consistency and reduces code duplication.",
-    "tags": [
-      "Terraform",
-      "IaC"
-    ],
-    "required_skills": [
-      "Terraform"
-    ],
-    "hints": [
-      "Think about DRY (Don't Repeat Yourself) principles in coding."
-    ]
+    "answer": "Track application performance and health",
+    "explanation": "Monitoring helps detect issues, optimize performance, and ensure reliability.",
+    "tags": ["cloud computing", "Monitoring"],
+    "required_skills": ["Observability"],
+    "hints": ["Performance tracking"]
   },
   {
     "_id": "q_cc_0015",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "AWS Networking",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "Describe the main difference between a Security Group and a Network Access Control List (NACL) in AWS VPC.",
+    "topic": "Disaster Recovery",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does RTO (Recovery Time Objective) define?",
     "options": [
-      "Security Groups are global; NACLs are regional.",
-      "Security Groups are stateless and operate at the subnet level; NACLs are stateful and operate at the instance level.",
-      "Security Groups are stateful and operate at the instance level; NACLs are stateless and operate at the subnet level.",
-      "Security Groups only allow inbound traffic; NACLs only allow outbound traffic."
+      "Maximum acceptable data loss",
+      "Time required to restore services after failure",
+      "Backup frequency",
+      "System uptime percentage"
     ],
-    "answer": "Security Groups are stateful and operate at the instance level; NACLs are stateless and operate at the subnet level.",
-    "explanation": "Security Groups are stateful (return traffic is automatically allowed) and apply to individual EC2 instances. NACLs are stateless (both inbound and outbound rules must be defined) and apply to entire subnets.",
-    "tags": [
-      "AWS",
-      "Networking",
-      "Cloud Security"
-    ],
-    "required_skills": [
-      "AWS",
-      "Cloud Security"
-    ],
-    "hints": [
-      "Focus on the 'state' (stateful vs. stateless) and the 'level' (instance vs. subnet)."
-    ]
+    "answer": "Time required to restore services after failure",
+    "explanation": "RTO measures how quickly systems must be recovered after disruption.",
+    "tags": ["cloud computing", "Disaster Recovery"],
+    "required_skills": ["Business Continuity"],
+    "hints": ["Recovery time"]
   },
   {
     "_id": "q_cc_0016",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Azure Management",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 90,
-    "text": "What is the term for a logical container in Azure that allows you to manage and group related resources for billing, management, and access control?",
+    "topic": "Data Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cloud database type is optimized for horizontal scalability?",
     "options": [
-      "Subscription",
-      "Availability Zone",
-      "Resource Group",
-      "Management Group"
+      "Relational databases",
+      "Graph databases",
+      "NoSQL databases",
+      "In-memory databases"
     ],
-    "answer": "Resource Group",
-    "explanation": "A Resource Group is a container that holds related resources for an Azure solution. The group allows for easier management, deployment, and monitoring of resources together.",
-    "tags": [
-      "Azure",
-      "Management"
-    ],
-    "required_skills": [
-      "Azure"
-    ],
-    "hints": [
-      "It's the first level of organization for a deployed solution."
-    ]
+    "answer": "NoSQL databases",
+    "explanation": "NoSQL databases scale horizontally to handle large volumes of data.",
+    "tags": ["cloud computing", "Databases"],
+    "required_skills": ["Cloud Databases"],
+    "hints": ["Schema-less scaling"]
   },
   {
     "_id": "q_cc_0017",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Kubernetes Orchestration",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "Which Kubernetes object is primarily responsible for ensuring a specified number of identical Pod replicas are running at any given time, handling failures and scaling?",
+    "topic": "DevOps",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main goal of Infrastructure as Code (IaC)?",
     "options": [
-      "Service",
-      "ConfigMap",
-      "Deployment",
-      "PersistentVolumeClaim"
+      "Manual server configuration",
+      "Automated and repeatable infrastructure provisioning",
+      "Reducing application bugs",
+      "Improving UI performance"
     ],
-    "answer": "Deployment",
-    "explanation": "A Deployment provides declarative updates for Pods and ReplicaSets, allowing you to describe the desired state, and the Deployment controller will ensure the actual state matches the desired state (e.g., maintaining replica count).",
-    "tags": [
-      "Kubernetes",
-      "Orchestration"
-    ],
-    "required_skills": [
-      "Kubernetes"
-    ],
-    "hints": [
-      "This object manages the desired state for stateless applications."
-    ]
+    "answer": "Automated and repeatable infrastructure provisioning",
+    "explanation": "IaC enables infrastructure management through code and automation.",
+    "tags": ["cloud computing", "DevOps"],
+    "required_skills": ["IaC Tools"],
+    "hints": ["Code-based infra"]
   },
   {
     "_id": "q_cc_0018",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "GCP Serverless",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 105,
-    "text": "Which GCP serverless service provides a fully managed environment for deploying and scaling containerized applications (Docker images)?",
+    "topic": "Compliance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cloud feature helps meet regulatory and compliance requirements?",
     "options": [
-      "Cloud Functions",
-      "App Engine Standard",
-      "Compute Engine",
-      "Cloud Run"
+      "Auto-scaling",
+      "Identity and Access Management (IAM)",
+      "Load balancing",
+      "Content delivery networks"
     ],
-    "answer": "Cloud Run",
-    "explanation": "Cloud Run is Google's modern, fully managed compute platform that allows you to deploy containerized applications that can be invoked via web requests or Pub/Sub events, abstracting away all infrastructure management.",
-    "tags": [
-      "GCP",
-      "Serverless",
-      "Containers"
-    ],
-    "required_skills": [
-      "GCP",
-      "Docker"
-    ],
-    "hints": [
-      "It combines the ease of serverless with the flexibility of containers."
-    ]
+    "answer": "Identity and Access Management (IAM)",
+    "explanation": "IAM controls access to resources and supports compliance standards.",
+    "tags": ["cloud computing", "Compliance"],
+    "required_skills": ["Access Control"],
+    "hints": ["User permissions"]
   },
   {
     "_id": "q_cc_0019",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Cloud Security",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is the main purpose of AWS KMS, Azure Key Vault, or GCP Cloud KMS?",
+    "topic": "Edge Computing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary advantage of edge computing?",
     "options": [
-      "To store application source code.",
-      "Centralized management and auditing of encryption keys.",
-      "To perform intrusion detection on cloud networks.",
-      "To securely store database backup files."
+      "Lower cloud costs",
+      "Reduced latency by processing data closer to users",
+      "Unlimited storage",
+      "Higher encryption strength"
     ],
-    "answer": "Centralized management and auditing of encryption keys.",
-    "explanation": "All three services are Key Management Services (KMS), providing a robust, centralized, and highly secure method for creating, controlling, and managing the encryption keys used to protect data in cloud services.",
-    "tags": [
-      "Cloud Security",
-      "AWS",
-      "Azure",
-      "GCP",
-      "Key Management"
-    ],
-    "required_skills": [
-      "AWS",
-      "Azure",
-      "GCP",
-      "Cloud Security"
-    ],
-    "hints": [
-      "The name of the service is a strong clue."
-    ]
+    "answer": "Reduced latency by processing data closer to users",
+    "explanation": "Edge computing minimizes delay by moving computation near the data source.",
+    "tags": ["cloud computing", "Edge Computing"],
+    "required_skills": ["Distributed Systems"],
+    "hints": ["Closer to users"]
   },
   {
     "_id": "q_cc_0020",
     "question_type": "multiple-choice",
     "domain": "cloud computing",
-    "topic": "Terraform Management",
+    "topic": "Cloud Strategy",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "How does Terraform detect and handle configuration drift between the state file and the actual infrastructure?",
+    "text": "What is vendor lock-in in cloud computing?",
     "options": [
-      "It relies solely on API calls during `terraform apply` to fix errors.",
-      "It automatically synchronizes the state file every 5 minutes.",
-      "By running a refresh during `terraform plan` to read the actual state before comparison.",
-      "It can only detect drift if the state file is manually updated."
+      "High availability across regions",
+      "Dependency on a single cloud provider’s services",
+      "Automatic scaling failure",
+      "Security breach risk"
     ],
-    "answer": "By running a refresh during `terraform plan` to read the actual state before comparison.",
-    "explanation": "When you run `terraform plan` or `terraform apply`, Terraform first performs a 'refresh' (reading the current state of resources via API) and then compares that against the state file and the configuration to detect drift.",
-    "tags": [
-      "Terraform",
-      "IaC"
-    ],
-    "required_skills": [
-      "Terraform"
-    ],
-    "hints": [
-      "Which command performs a read of the current cloud state?"
-    ]
+    "answer": "Dependency on a single cloud provider’s services",
+    "explanation": "Vendor lock-in makes it difficult to migrate workloads to other providers.",
+    "tags": ["cloud computing", "Strategy"],
+    "required_skills": ["Cloud Architecture"],
+    "hints": ["Migration difficulty"]
   },
+
   {
-    "_id": "q_cc_0021",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0021",
+    "question_type": "subjective",
     "domain": "cloud computing",
-    "topic": "Kubernetes Networking",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "What is the primary function of an Ingress Controller in Kubernetes?",
-    "options": [
-      "To manage internal network traffic between Pods.",
-      "To provide high-performance storage volumes to Pods.",
-      "To enforce network policies between namespaces.",
-      "A reverse proxy that manages external HTTP/HTTPS access to services in a cluster."
-    ],
-    "answer": "A reverse proxy that manages external HTTP/HTTPS access to services in a cluster.",
-    "explanation": "The Ingress Controller is the component that fulfills the rules defined in the Ingress resource, acting as a gateway to handle routing, TLS termination, and load balancing for traffic coming into the cluster.",
-    "tags": [
-      "Kubernetes",
-      "Networking"
-    ],
-    "required_skills": [
-      "Kubernetes"
-    ],
-    "hints": [
-      "This resource is often used for layer 7 routing from outside the cluster."
-    ]
-  },
-  {
-    "_id": "q_cc_0022",
-    "question_type": "multiple-choice",
-    "domain": "cloud computing",
-    "topic": "Disaster Recovery",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "In a multi-region deployment, which disaster recovery strategy involves keeping a fully functional but scaled-down environment running in the secondary (backup) region?",
-    "options": [
-      "Backup and Restore",
-      "Cold Backup",
-      "Pilot Light",
-      "Warm Standby"
-    ],
-    "answer": "Pilot Light",
-    "explanation": "Pilot Light maintains the core infrastructure (like databases and critical components) running but non-essential elements (like application servers) are scaled down or turned off, providing a good balance between RTO/RPO and cost.",
-    "tags": [
-      "AWS",
-      "Azure",
-      "GCP",
-      "Architecture"
-    ],
-    "required_skills": [
-      "AWS",
-      "Azure",
-      "GCP"
-    ],
-    "hints": [
-      "The name suggests a minimal level of operation is always maintained."
-    ]
-  },
-  {
-    "_id": "q_cc_0023",
-    "question_type": "multiple-choice",
-    "domain": "cloud computing",
-    "topic": "Azure Microservices",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 150,
-    "text": "Which Azure service is the primary tool for managing the deployment, scaling, and orchestration of microservices using open-source standards?",
-    "options": [
-      "Azure Virtual Machines (VMs)",
-      "Azure Container Instances (ACI)",
-      "Azure Kubernetes Service (AKS)",
-      "Azure Service Fabric"
-    ],
-    "answer": "Azure Kubernetes Service (AKS)",
-    "explanation": "AKS is a managed Kubernetes offering that simplifies the deployment, management, and operations of Kubernetes, making it the preferred tool for microservices orchestration.",
-    "tags": [
-      "Azure",
-      "Kubernetes",
-      "Microservices"
-    ],
-    "required_skills": [
-      "Azure",
-      "Kubernetes"
-    ],
-    "hints": [
-      "It's the Azure version of the popular container orchestrator."
-    ]
-  },
-  {
-    "_id": "q_cc_0024",
-    "question_type": "multiple-choice",
-    "domain": "cloud computing",
-    "topic": "Cloud Security",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "What is the core principle of a Zero Trust security model?",
-    "options": [
-      "Trust internal network traffic but verify external traffic.",
-      "Encrypt all data at rest and in transit.",
-      "Never trust, always verify.",
-      "Establish a strong network perimeter and firewall."
-    ],
-    "answer": "Never trust, always verify.",
-    "explanation": "Zero Trust mandates that no user or device, regardless of location (inside or outside the network perimeter), is trusted by default. Verification is required from everyone and everything attempting to gain access to resources.",
-    "tags": [
-      "Cloud Security",
-      "Zero Trust"
-    ],
-    "required_skills": [
-      "Cloud Security"
-    ],
-    "hints": [
-      "It rejects the concept of a trusted network boundary."
-    ]
-  },
-  {
-    "_id": "q_cc_0025",
-    "question_type": "multiple-choice",
-    "domain": "cloud computing",
-    "topic": "AWS Analytics",
+    "topic": "Cloud Fundamentals",
     "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "Which AWS service is a fast, fully managed, petabyte-scale data warehouse service designed for complex analytical queries?",
-    "options": [
-      "Amazon DynamoDB",
-      "Amazon Redshift",
-      "Amazon SQS",
-      "Amazon Aurora"
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the concept of cloud computing and its key characteristics.",
+    "expected_answer": {
+      "key_points": [
+        "On-demand resource availability",
+        "Pay-as-you-go pricing model",
+        "Scalability and elasticity",
+        "Resource pooling and virtualization"
+      ],
+      "example_scenarios": [
+        "Using cloud storage instead of local hard drives",
+        "Hosting applications on cloud servers instead of physical machines"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
     ],
-    "answer": "Amazon Redshift",
-    "explanation": "Amazon Redshift is specifically optimized for analytical workloads, providing a high-performance data warehousing solution that can handle massive amounts of data.",
-    "tags": [
-      "AWS",
-      "Database"
-    ],
-    "required_skills": [
-      "AWS"
-    ],
+    "tags": ["Cloud Basics"],
+    "required_skills": ["Cloud Fundamentals"],
     "hints": [
-      "The name is often associated with big data analysis."
+      "Think about how resources are accessed remotely",
+      "Focus on flexibility and cost efficiency"
     ]
   },
   {
-    "_id": "q_cc_0026",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0022",
+    "question_type": "subjective",
     "domain": "cloud computing",
-    "topic": "GCP CI/CD",
+    "topic": "Service Models",
     "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What GCP tool can be used to automatically build, test, and deploy applications across multiple environments from source code?",
-    "options": [
-      "Cloud Logging",
-      "Cloud Build",
-      "Cloud Monitoring",
-      "Cloud Composer"
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Describe IaaS, PaaS, and SaaS cloud service models with examples.",
+    "expected_answer": {
+      "key_points": [
+        "Infrastructure as a Service definition",
+        "Platform as a Service definition",
+        "Software as a Service definition",
+        "Differences between the models"
+      ],
+      "example_scenarios": [
+        "Using virtual machines for custom deployments",
+        "Using cloud-hosted email services"
+      ],
+      "minimum_word_count": 130
+    },
+    "evaluation_criteria": [
+      { "criterion": "Model Differentiation", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "Cloud Build",
-    "explanation": "Cloud Build executes your builds on GCP's infrastructure, allowing you to create and deploy container images and application artifacts quickly and reliably.",
-    "tags": [
-      "GCP",
-      "CI/CD"
-    ],
-    "required_skills": [
-      "GCP"
-    ],
+    "tags": ["IaaS", "PaaS", "SaaS"],
+    "required_skills": ["Cloud Basics"],
     "hints": [
-      "The name suggests the process of compilation and artifact creation."
+      "Compare control vs convenience",
+      "Think about responsibility sharing"
     ]
   },
   {
-    "_id": "q_cc_0027",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0023",
+    "question_type": "subjective",
     "domain": "cloud computing",
-    "topic": "Docker Optimization",
+    "topic": "Deployment Models",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain public, private, hybrid, and community cloud deployment models.",
+    "expected_answer": {
+      "key_points": [
+        "Public cloud characteristics",
+        "Private cloud usage",
+        "Hybrid cloud integration",
+        "Community cloud purpose"
+      ],
+      "example_scenarios": [
+        "Startups using public cloud infrastructure",
+        "Enterprises combining private and public clouds"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Accuracy", "weight": 0.4 },
+      { "criterion": "Use-case Relevance", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Cloud Deployment"],
+    "required_skills": ["Cloud Architecture"],
+    "hints": [
+      "Think about data sensitivity",
+      "Consider cost and control trade-offs"
+    ]
+  },
+  {
+    "_id": "q_cloud_0024",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Virtualization",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain virtualization in cloud computing and its importance.",
+    "expected_answer": {
+      "key_points": [
+        "Concept of virtual machines",
+        "Role of hypervisors",
+        "Resource isolation",
+        "Efficiency improvement"
+      ],
+      "example_scenarios": [
+        "Running multiple operating systems on a single server",
+        "Efficient resource utilization in data centers"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Explanation Quality", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Virtualization"],
+    "required_skills": ["Cloud Infrastructure"],
+    "hints": [
+      "Think about hardware abstraction",
+      "Focus on efficiency gains"
+    ]
+  },
+  {
+    "_id": "q_cloud_0025",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Scalability",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain scalability in cloud computing and differentiate between vertical and horizontal scaling.",
+    "expected_answer": {
+      "key_points": [
+        "Meaning of scalability",
+        "Vertical scaling concept",
+        "Horizontal scaling concept",
+        "Advantages of scalable systems"
+      ],
+      "example_scenarios": [
+        "Scaling an e-commerce website during sales",
+        "Adding servers to handle increased traffic"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Scalability"],
+    "required_skills": ["Cloud Architecture"],
+    "hints": [
+      "Think about handling workload changes",
+      "Compare adding power vs adding machines"
+    ]
+  },
+  {
+    "_id": "q_cloud_0026",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Load Balancing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe load balancing in cloud environments and its benefits.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of load balancing",
+        "Traffic distribution",
+        "High availability",
+        "Fault tolerance"
+      ],
+      "example_scenarios": [
+        "Distributing web traffic across multiple servers",
+        "Ensuring uptime during peak usage"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Application Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Load Balancing"],
+    "required_skills": ["Cloud Networking"],
+    "hints": [
+      "Think about traffic management",
+      "Focus on reliability"
+    ]
+  },
+  {
+    "_id": "q_cloud_0027",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Cloud Storage",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain different types of cloud storage services.",
+    "expected_answer": {
+      "key_points": [
+        "Object storage",
+        "Block storage",
+        "File storage",
+        "Use cases for each type"
+      ],
+      "example_scenarios": [
+        "Storing media files in object storage",
+        "Using block storage for databases"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Clarity", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Coverage", "weight": 0.3 }
+    ],
+    "tags": ["Cloud Storage"],
+    "required_skills": ["Cloud Basics"],
+    "hints": [
+      "Think about data access patterns",
+      "Consider performance needs"
+    ]
+  },
+  {
+    "_id": "q_cloud_0028",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Security",
     "difficulty": 4,
     "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "How do you significantly reduce the size of a Docker image for production environments by separating build-time dependencies from runtime dependencies?",
-    "options": [
-      "Using the `docker slim` command.",
-      "Using multi-stage builds.",
-      "Placing all commands in a single Dockerfile layer.",
-      "Always using the `latest` tag."
+    "estimated_time_sec": 360,
+    "text": "Discuss major security challenges in cloud computing and possible mitigation strategies.",
+    "expected_answer": {
+      "key_points": [
+        "Data breaches",
+        "Identity and access management",
+        "Shared responsibility model",
+        "Security best practices"
+      ],
+      "example_scenarios": [
+        "Securing customer data in cloud databases",
+        "Preventing unauthorized access to cloud resources"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Risk Understanding", "weight": 0.4 },
+      { "criterion": "Mitigation Strategies", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "Using multi-stage builds.",
-    "explanation": "Multi-stage builds allow you to use a full build environment image (with compilers, test tools) and then copy only the necessary final artifacts into a much smaller, production-ready base image.",
-    "tags": [
-      "Docker",
-      "Performance"
-    ],
-    "required_skills": [
-      "Docker"
-    ],
+    "tags": ["Cloud Security"],
+    "required_skills": ["Cloud Security"],
     "hints": [
-      "Think about separating the development environment from the final artifact."
+      "Think about data protection",
+      "Consider responsibility division"
     ]
   },
   {
-    "_id": "q_cc_0028",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0029",
+    "question_type": "subjective",
     "domain": "cloud computing",
-    "topic": "Terraform Commands",
+    "topic": "Cost Management",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain cloud cost management and strategies to optimize cloud spending.",
+    "expected_answer": {
+      "key_points": [
+        "Pay-as-you-go pricing",
+        "Cost monitoring",
+        "Resource optimization",
+        "Budget control techniques"
+      ],
+      "example_scenarios": [
+        "Shutting down unused virtual machines",
+        "Using auto-scaling to reduce costs"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Understanding", "weight": 0.4 },
+      { "criterion": "Strategies", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Cloud Cost"],
+    "required_skills": ["Cloud Management"],
+    "hints": [
+      "Think about usage tracking",
+      "Focus on efficiency"
+    ]
+  },
+  {
+    "_id": "q_cloud_0030",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "High Availability",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain high availability in cloud systems and how it is achieved.",
+    "expected_answer": {
+      "key_points": [
+        "Fault tolerance",
+        "Redundancy",
+        "Multi-region deployment",
+        "Service continuity"
+      ],
+      "example_scenarios": [
+        "Deploying applications across multiple regions",
+        "Ensuring uptime for critical services"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Depth", "weight": 0.4 },
+      { "criterion": "Implementation Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["High Availability"],
+    "required_skills": ["Cloud Architecture"],
+    "hints": [
+      "Think about failure handling",
+      "Consider redundancy"
+    ]
+  },
+  {
+    "_id": "q_cloud_0031",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Disaster Recovery",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss disaster recovery in cloud computing and its importance.",
+    "expected_answer": {
+      "key_points": [
+        "Disaster recovery planning",
+        "Backup strategies",
+        "Recovery time objectives",
+        "Business continuity"
+      ],
+      "example_scenarios": [
+        "Restoring services after data center failure",
+        "Maintaining service availability during outages"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Planning Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Disaster Recovery"],
+    "required_skills": ["Cloud Reliability"],
+    "hints": [
+      "Think about failure scenarios",
+      "Focus on recovery speed"
+    ]
+  },
+  {
+    "_id": "q_cloud_0032",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Containers",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain containerization and its role in cloud computing.",
+    "expected_answer": {
+      "key_points": [
+        "Container concept",
+        "Difference between containers and virtual machines",
+        "Portability",
+        "Efficient deployment"
+      ],
+      "example_scenarios": [
+        "Deploying microservices using containers",
+        "Consistent application environments"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Containers"],
+    "required_skills": ["Cloud Development"],
+    "hints": [
+      "Think about lightweight deployment",
+      "Compare with virtualization"
+    ]
+  },
+  {
+    "_id": "q_cloud_0033",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Serverless Computing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain serverless computing and its advantages.",
+    "expected_answer": {
+      "key_points": [
+        "Event-driven execution",
+        "No server management",
+        "Automatic scaling",
+        "Cost efficiency"
+      ],
+      "example_scenarios": [
+        "Running backend APIs without managing servers",
+        "Handling event-based data processing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Clarity", "weight": 0.4 },
+      { "criterion": "Advantages", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Serverless"],
+    "required_skills": ["Cloud Services"],
+    "hints": [
+      "Think about abstraction level",
+      "Focus on operational simplicity"
+    ]
+  },
+  {
+    "_id": "q_cloud_0034",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Monitoring",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss the importance of monitoring in cloud environments.",
+    "expected_answer": {
+      "key_points": [
+        "Performance monitoring",
+        "Resource utilization",
+        "Fault detection",
+        "Service optimization"
+      ],
+      "example_scenarios": [
+        "Tracking application performance",
+        "Detecting system failures early"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Operational Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Cloud Monitoring"],
+    "required_skills": ["Cloud Operations"],
+    "hints": [
+      "Think about visibility",
+      "Focus on proactive management"
+    ]
+  },
+  {
+    "_id": "q_cloud_0035",
+    "question_type": "subjective",
+    "domain": "cloud computing",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss emerging trends in cloud computing.",
+    "expected_answer": {
+      "key_points": [
+        "Edge computing",
+        "Hybrid and multi-cloud",
+        "Increased automation",
+        "Industry adoption"
+      ],
+      "example_scenarios": [
+        "Using edge computing for IoT applications",
+        "Organizations adopting multi-cloud strategies"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Trend Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Cloud Trends"],
+    "required_skills": ["Cloud Awareness"],
+    "hints": [
+      "Think about scalability and distribution",
+      "Consider future adoption"
+    ]
+  },
+  
+  {
+    "_id": "q_cloud_0036",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Fundamentals",
     "difficulty": 2,
     "difficulty_label": "Novice",
-    "estimated_time_sec": 45,
-    "text": "What Terraform command is used to apply the configuration changes defined in your plan file to the infrastructure?",
-    "options": [
-      "`terraform init`",
-      "`terraform validate`",
-      "`terraform destroy`",
-      "`terraform apply`"
+    "estimated_time_sec": 120,
+    "text": "What is cloud computing in simple terms?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "On-demand computing resources",
+        "Access over the internet",
+        "No need to own physical hardware"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Simple explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Everyday example used" }
     ],
-    "answer": "`terraform apply`",
-    "explanation": "The `terraform apply` command executes the actions proposed in a Terraform plan, provisioning and modifying the real-world infrastructure resources accordingly.",
-    "tags": [
-      "Terraform",
-      "IaC"
-    ],
-    "required_skills": [
-      "Terraform"
-    ],
-    "hints": [
-      "It's the final action step."
-    ]
+    "transcription_required": true,
+    "tags": ["Cloud Basics"],
+    "required_skills": ["Basic IT Knowledge"],
+    "hints": ["Internet-based services"]
   },
   {
-    "_id": "q_cc_0029",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0037",
+    "question_type": "voice",
     "domain": "cloud computing",
-    "topic": "Cloud Security",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "What is the term for a path or method by which an attacker can gain unauthorized access to a system?",
-    "options": [
-      "Access Point",
-      "Attack Vector",
-      "Load Balancer",
-      "Network Peering"
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why do organizations prefer cloud computing?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Cost savings",
+        "Scalability",
+        "Flexibility"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "Attack Vector",
-    "explanation": "An Attack Vector is the method used to exploit a vulnerability, such as phishing, brute force attacks, or unpatched software, to compromise a system.",
-    "tags": [
-      "Cloud Security",
-      "Threats"
-    ],
-    "required_skills": [
-      "Cloud Security"
-    ],
-    "hints": [
-      "It defines the route an exploit takes."
-    ]
+    "transcription_required": true,
+    "tags": ["Benefits"],
+    "required_skills": ["Basic IT Knowledge"],
+    "hints": ["Pay-as-you-go"]
   },
   {
-    "_id": "q_cc_0030",
-    "question_type": "multiple-choice",
+    "_id": "q_cloud_0038",
+    "question_type": "voice",
     "domain": "cloud computing",
-    "topic": "Kubernetes Scaling",
+    "topic": "Service Models",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main cloud service models?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "IaaS",
+        "PaaS",
+        "SaaS"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Service Models"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Infrastructure, Platform, Software"]
+  },
+  {
+    "_id": "q_cloud_0039",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "IaaS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Infrastructure as a Service (IaaS)?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Virtual machines",
+        "Storage and networking",
+        "User manages OS and apps"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["IaaS"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Virtual servers"]
+  },
+  {
+    "_id": "q_cloud_0040",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "PaaS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Explain Platform as a Service (PaaS).",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Development platform",
+        "No infrastructure management",
+        "Focus on application code"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["PaaS"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Developer-friendly"]
+  },
+  {
+    "_id": "q_cloud_0041",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "SaaS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Software as a Service (SaaS)?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Ready-to-use applications",
+        "Access via browser",
+        "No installation required"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["SaaS"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Gmail, Google Docs"]
+  },
+  {
+    "_id": "q_cloud_0042",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Deployment Models",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the different cloud deployment models?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Public cloud",
+        "Private cloud",
+        "Hybrid cloud"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Deployment Models"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Public vs private"]
+  },
+  {
+    "_id": "q_cloud_0043",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Public Cloud",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a public cloud?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Shared infrastructure",
+        "Owned by cloud provider",
+        "Accessible to multiple users"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Public Cloud"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["AWS, Azure"]
+  },
+  {
+    "_id": "q_cloud_0044",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Private Cloud",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a private cloud?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Dedicated infrastructure",
+        "Used by single organization",
+        "More control and security"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Private Cloud"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Single organization"]
+  },
+  {
+    "_id": "q_cloud_0045",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Hybrid Cloud",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Explain the concept of a hybrid cloud.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Combination of public and private cloud",
+        "Data sharing between environments",
+        "Flexible deployment"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Hybrid Cloud"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Best of both"]
+  },
+  {
+    "_id": "q_cloud_0046",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are some common security concerns in cloud computing?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Data breaches",
+        "Unauthorized access",
+        "Compliance issues"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Security"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Data protection"]
+  },
+  {
+    "_id": "q_cloud_0047",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Scalability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does scalability mean in cloud computing?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Increase or decrease resources",
+        "Based on demand",
+        "Automatic scaling"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Scalability"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Traffic spikes"]
+  },
+  {
+    "_id": "q_cloud_0048",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Availability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is high availability in cloud computing?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Minimal downtime",
+        "Redundant resources",
+        "Continuous service"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["High Availability"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Always available"]
+  },
+  {
+    "_id": "q_cloud_0049",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Use Cases",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Mention two real-world use cases of cloud computing.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Data storage",
+        "Web application hosting"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Use Cases"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Web apps"]
+  },
+  {
+    "_id": "q_cloud_0050",
+    "question_type": "voice",
+    "domain": "cloud computing",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see cloud computing evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Increased adoption",
+        "AI integration",
+        "More automation"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Cloud everywhere"]
+  },
+   {
+    "_id": "q_cloud_0051",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Cloud Basics",
     "difficulty": 1,
     "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "What does the Horizontal Pod Autoscaler (HPA) in Kubernetes primarily scale?",
-    "options": [
-      "The number of worker nodes in the cluster.",
-      "The storage capacity of a Persistent Volume.",
-      "The number of Pod replicas based on observed CPU/Memory utilization.",
-      "The CPU and memory allocated to a single Pod."
+    "estimated_time_sec": 240,
+    "text": "Write a function to check whether a cloud service is public or private based on input.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def cloud_type(service):\n    pass",
+      "function_signature": "cloud_type(service: str) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Public Cloud\" if service.lower() in ['aws','azure','gcp'] else \"Private Cloud\"",
+      "key_concepts": ["Public cloud", "Private cloud"]
+    },
+    "test_cases": [
+      {
+        "input": "\"AWS\"",
+        "expected_output": "\"Public Cloud\"",
+        "description": "Public cloud provider"
+      }
     ],
-    "answer": "The number of Pod replicas based on observed CPU/Memory utilization.",
-    "explanation": "The HPA automatically scales the number of Pod replicas in a Deployment or ReplicaSet up or down to match observed utilization metrics (like CPU or memory) to the configured target.",
-    "tags": [
-      "Kubernetes",
-      "Orchestration"
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct cloud type" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles unknown provider" }
     ],
-    "required_skills": [
-      "Kubernetes"
+    "tags": ["Python", "Cloud"],
+    "required_skills": ["Python"],
+    "hints": ["Check provider name"]
+  },
+
+  {
+    "_id": "q_cloud_0052",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Virtual Machines",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate total VM cost based on hours used and rate per hour.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def vm_cost(hours, rate):\n    pass",
+      "function_signature": "vm_cost(hours: float, rate: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return hours * rate",
+      "key_concepts": ["Virtual machines", "Pay-as-you-go"]
+    },
+    "test_cases": [
+      {
+        "input": "10, 5",
+        "expected_output": "50",
+        "description": "VM cost calculation"
+      }
     ],
-    "hints": [
-      "The name suggests it scales horizontally, not vertically."
-    ]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct cost" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero hours" }
+    ],
+    "tags": ["Python", "Cloud", "VM"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply hours and rate"]
+  },
+
+  {
+    "_id": "q_cloud_0053",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Storage",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert storage from GB to MB.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def gb_to_mb(gb):\n    pass",
+      "function_signature": "gb_to_mb(gb: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return gb * 1024",
+      "key_concepts": ["Cloud storage", "Unit conversion"]
+    },
+    "test_cases": [
+      {
+        "input": "2",
+        "expected_output": "2048",
+        "description": "GB to MB"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct conversion" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero value" }
+    ],
+    "tags": ["Python", "Cloud", "Storage"],
+    "required_skills": ["Python"],
+    "hints": ["1 GB = 1024 MB"]
+  },
+
+  {
+    "_id": "q_cloud_0054",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Availability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate service availability percentage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def availability(uptime, total_time):\n    pass",
+      "function_signature": "availability(uptime: float, total_time: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (uptime / total_time) * 100 if total_time > 0 else 0",
+      "key_concepts": ["Availability", "Uptime"]
+    },
+    "test_cases": [
+      {
+        "input": "99, 100",
+        "expected_output": "99.0",
+        "description": "Availability calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct percentage" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe division" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero total time" }
+    ],
+    "tags": ["Python", "Cloud", "Reliability"],
+    "required_skills": ["Python"],
+    "hints": ["(uptime/total)*100"]
+  },
+
+  {
+    "_id": "q_cloud_0055",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Auto Scaling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to decide whether to scale up based on CPU usage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def scale_decision(cpu_usage):\n    pass",
+      "function_signature": "scale_decision(cpu_usage: float) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Scale Up\" if cpu_usage > 75 else \"No Action\"",
+      "key_concepts": ["Auto scaling", "CPU threshold"]
+    },
+    "test_cases": [
+      {
+        "input": "80",
+        "expected_output": "\"Scale Up\"",
+        "description": "High CPU usage"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct decision" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary value" }
+    ],
+    "tags": ["Python", "Cloud", "Auto Scaling"],
+    "required_skills": ["Python"],
+    "hints": ["Compare CPU usage"]
+  },
+
+  {
+    "_id": "q_cloud_0056",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Load Balancing",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to distribute requests evenly across servers.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def distribute_requests(requests, servers):\n    pass",
+      "function_signature": "distribute_requests(requests: int, servers: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return requests // servers if servers > 0 else 0",
+      "key_concepts": ["Load balancing", "Request distribution"]
+    },
+    "test_cases": [
+      {
+        "input": "100, 4",
+        "expected_output": "25",
+        "description": "Even distribution"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct distribution" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero servers" }
+    ],
+    "tags": ["Python", "Cloud", "Load Balancing"],
+    "required_skills": ["Python"],
+    "hints": ["Divide requests by servers"]
+  },
+
+  {
+    "_id": "q_cloud_0057",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Serverless",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute serverless cost based on number of executions.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def serverless_cost(executions, cost_per_exec):\n    pass",
+      "function_signature": "serverless_cost(executions: int, cost_per_exec: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return executions * cost_per_exec",
+      "key_concepts": ["Serverless computing", "Execution-based billing"]
+    },
+    "test_cases": [
+      {
+        "input": "1000, 0.0002",
+        "expected_output": "0.2",
+        "description": "Serverless pricing"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct cost" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero executions" }
+    ],
+    "tags": ["Python", "Cloud", "Serverless"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply executions and cost"]
+  },
+
+  {
+    "_id": "q_cloud_0058",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Regions",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a cloud region is supported.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_region_supported(region):\n    pass",
+      "function_signature": "is_region_supported(region: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return region.lower() in ['us-east-1','us-west-1','eu-central-1']",
+      "key_concepts": ["Cloud regions", "Geographical availability"]
+    },
+    "test_cases": [
+      {
+        "input": "\"us-east-1\"",
+        "expected_output": "True",
+        "description": "Supported region"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct region check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear list usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles unsupported region" }
+    ],
+    "tags": ["Python", "Cloud"],
+    "required_skills": ["Python"],
+    "hints": ["Check region in list"]
+  },
+
+  {
+    "_id": "q_cloud_0059",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Monitoring",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to trigger an alert if memory usage exceeds a threshold.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def memory_alert(usage):\n    pass",
+      "function_signature": "memory_alert(usage: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return usage > 80",
+      "key_concepts": ["Monitoring", "Alerting"]
+    },
+    "test_cases": [
+      {
+        "input": "85",
+        "expected_output": "True",
+        "description": "High memory usage"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Alert logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles threshold value" }
+    ],
+    "tags": ["Python", "Cloud", "Monitoring"],
+    "required_skills": ["Python"],
+    "hints": ["Compare usage with threshold"]
+  },
+
+  {
+    "_id": "q_cloud_0060",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Backup",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate backup storage cost per month.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def backup_cost(storage_gb, cost_per_gb):\n    pass",
+      "function_signature": "backup_cost(storage_gb: float, cost_per_gb: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return storage_gb * cost_per_gb",
+      "key_concepts": ["Backup", "Cloud storage cost"]
+    },
+    "test_cases": [
+      {
+        "input": "50, 0.1",
+        "expected_output": "5.0",
+        "description": "Backup cost"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct cost" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable code" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero storage" }
+    ],
+    "tags": ["Python", "Cloud", "Backup"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply storage and cost"]
+  },
+
+  {
+    "_id": "q_cloud_0061",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "SLA",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if SLA is violated based on downtime.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def sla_violation(downtime):\n    pass",
+      "function_signature": "sla_violation(downtime: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return downtime > 1",
+      "key_concepts": ["SLA", "Downtime limits"]
+    },
+    "test_cases": [
+      {
+        "input": "2",
+        "expected_output": "True",
+        "description": "SLA violated"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct SLA check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary downtime" }
+    ],
+    "tags": ["Python", "Cloud", "SLA"],
+    "required_skills": ["Python"],
+    "hints": ["Check downtime limit"]
+  },
+
+  {
+    "_id": "q_cloud_0062",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Security",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to verify if multi-factor authentication is enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_mfa_enabled(mfa):\n    pass",
+      "function_signature": "is_mfa_enabled(mfa: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return mfa",
+      "key_concepts": ["Cloud security", "MFA"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "MFA enabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct MFA status" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles False value" }
+    ],
+    "tags": ["Python", "Cloud", "Security"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean value"]
+  },
+
+  {
+    "_id": "q_cloud_0063",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Containers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate total container memory usage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def container_memory(memories):\n    pass",
+      "function_signature": "container_memory(memories: list) -> int"
+    },
+    "expected_answer": {
+      "solution": "return sum(memories)",
+      "key_concepts": ["Containers", "Resource usage"]
+    },
+    "test_cases": [
+      {
+        "input": "[256, 512, 128]",
+        "expected_output": "896",
+        "description": "Total memory usage"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct total" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses sum()" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "Cloud", "Containers"],
+    "required_skills": ["Python"],
+    "hints": ["Sum all values"]
+  },
+
+  {
+    "_id": "q_cloud_0064",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Networking",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if an IP address is private.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_private_ip(ip):\n    pass",
+      "function_signature": "is_private_ip(ip: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return ip.startswith('10.') or ip.startswith('192.168.')",
+      "key_concepts": ["Cloud networking", "Private IP"]
+    },
+    "test_cases": [
+      {
+        "input": "\"192.168.1.1\"",
+        "expected_output": "True",
+        "description": "Private IP"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct IP classification" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear string check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles public IP" }
+    ],
+    "tags": ["Python", "Cloud", "Networking"],
+    "required_skills": ["Python"],
+    "hints": ["Check IP prefix"]
+  },
+
+  {
+    "_id": "q_cloud_0065",
+    "question_type": "coding",
+    "domain": "cloud computing",
+    "topic": "Cost Optimization",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to recommend shutting down idle resources based on usage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def optimize_cost(usage):\n    pass",
+      "function_signature": "optimize_cost(usage: float) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Shut Down\" if usage < 10 else \"Keep Running\"",
+      "key_concepts": ["Cost optimization", "Idle resources"]
+    },
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "\"Shut Down\"",
+        "description": "Low usage"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct recommendation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary usage" }
+    ],
+    "tags": ["Python", "Cloud"],
+    "required_skills": ["Python"],
+    "hints": ["Check usage threshold"]
   }
 ]

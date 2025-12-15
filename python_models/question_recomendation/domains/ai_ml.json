@@ -3,830 +3,6 @@
     "_id": "q_ai_0001",
     "question_type": "multiple-choice",
     "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "What does supervised learning primarily use to train a model?",
-    "options": [
-      "Unlabeled data",
-      "Data with labeled output/target variables",
-      "Rewards and penalties",
-      "Only feature data, no targets"
-    ],
-    "answer": "Data with labeled output/target variables",
-    "explanation": "Supervised learning requires input data that is already mapped to a known output. The algorithm learns the mapping function from the input to the output.",
-    "tags": [
-      "Fundamentals",
-      "Supervised Learning"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "Think about having a 'teacher' to guide the learning."
-    ]
-  },
-  {
-    "_id": "q_ai_0002",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "In the context of Neural Networks, what is a perceptron?",
-    "options": [
-      "A type of convolutional layer",
-      "A single neuron with a threshold activation function",
-      "A recurrent unit used in NLP",
-      "A loss function"
-    ],
-    "answer": "A single neuron with a threshold activation function",
-    "explanation": "The perceptron is the simplest artificial neural network, representing a single neuron, which is the fundamental unit of a neural network.",
-    "tags": [
-      "Deep Learning",
-      "Neural Networks"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It's the basic building block of a network."
-    ]
-  },
-  {
-    "_id": "q_ai_0003",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Python Libraries",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "Which Python library is most commonly used for numerical operations and array manipulation in ML?",
-    "options": [
-      "Pandas",
-      "Matplotlib",
-      "NumPy",
-      "Scipy"
-    ],
-    "answer": "NumPy",
-    "explanation": "NumPy (Numerical Python) is essential for handling multi-dimensional arrays (tensors) efficiently, which are the fundamental data structures in ML and Deep Learning.",
-    "tags": [
-      "Python",
-      "Libraries"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "It handles array and matrix operations."
-    ]
-  },
-  {
-    "_id": "q_ai_0004",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Frameworks",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the key functional difference between TensorFlow and Keras?",
-    "options": [
-      "TensorFlow is only for CPU; Keras is only for GPU.",
-      "TensorFlow is the underlying framework; Keras is a high-level API for rapid prototyping on top of it.",
-      "TensorFlow uses eager execution; Keras uses static graphs.",
-      "Keras is owned by Microsoft; TensorFlow is owned by Google."
-    ],
-    "answer": "TensorFlow is the underlying framework; Keras is a high-level API for rapid prototyping on top of it.",
-    "explanation": "Keras was designed to be a user-friendly neural network API. It runs on top of backend frameworks like TensorFlow (or PyTorch since version 2.0).",
-    "tags": [
-      "TensorFlow",
-      "Keras",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "TensorFlow",
-      "Keras"
-    ],
-    "hints": [
-      "One is a backend engine; the other is a wrapper for ease of use."
-    ]
-  },
-  {
-    "_id": "q_ai_0005",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "Which activation function is most commonly used in the output layer for a binary classification problem?",
-    "options": [
-      "ReLU",
-      "Tanh",
-      "Sigmoid",
-      "Softmax"
-    ],
-    "answer": "Sigmoid",
-    "explanation": "The Sigmoid function maps the output to a value between 0 and 1, which can be interpreted as a probability, making it ideal for binary classification.",
-    "tags": [
-      "Deep Learning",
-      "Neural Networks"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It squashes the output into a probability (0 to 1)."
-    ]
-  },
-  {
-    "_id": "q_ai_0006",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Computer Vision",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the primary role of the convolution operation in a Convolutional Neural Network (CNN)?",
-    "options": [
-      "To reduce the dimension of the feature maps",
-      "To extract relevant features from the input image",
-      "To manage the vanishing gradient problem",
-      "To normalize the input data"
-    ],
-    "answer": "To extract relevant features from the input image",
-    "explanation": "The convolution layer applies filters (kernels) to the input image to detect features like edges, textures, and patterns, forming feature maps.",
-    "tags": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "hints": [
-      "It performs feature detection using filters."
-    ]
-  },
-  {
-    "_id": "q_ai_0007",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Frameworks",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What is 'eager execution' in TensorFlow/PyTorch, and which framework is inherently eager?",
-    "options": [
-      "Static graph execution; TensorFlow",
-      "Immediate operation execution; PyTorch",
-      "Delayed graph compilation; TensorFlow",
-      "Remote computation; PyTorch"
-    ],
-    "answer": "Immediate operation execution; PyTorch",
-    "explanation": "Eager execution means operations are executed immediately as they are called, making debugging easier and code feel more 'Pythonic'. PyTorch was built with eager execution (dynamic graph) as its default.",
-    "tags": [
-      "TensorFlow",
-      "PyTorch",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "TensorFlow",
-      "PyTorch"
-    ],
-    "hints": [
-      "One framework is famous for its dynamic computation graph."
-    ]
-  },
-  {
-    "_id": "q_ai_0008",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What key issue do Recurrent Neural Networks (RNNs) struggle with, necessitating the use of LSTMs or GRUs?",
-    "options": [
-      "Lack of activation functions",
-      "Inability to handle images",
-      "Vanishing and exploding gradients",
-      "Only processing short sequences"
-    ],
-    "answer": "Vanishing and exploding gradients",
-    "explanation": "During backpropagation through time (BPTT), the gradients can either vanish (making learning long-term dependencies impossible) or explode (leading to unstable learning). LSTMs and GRUs solve this using 'gates'.",
-    "tags": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Deep Learning",
-      "NLP"
-    ],
-    "hints": [
-      "It relates to the stability of the backpropagation process over long sequences."
-    ]
-  },
-  {
-    "_id": "q_ai_0009",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Evaluation Metrics",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 75,
-    "text": "Why is accuracy a poor metric for evaluating a model on an imbalanced classification dataset (e.g., 95% negative, 5% positive)?",
-    "options": [
-      "It only works for regression problems.",
-      "A model can achieve high accuracy by simply predicting the majority class.",
-      "Accuracy is too slow to calculate.",
-      "It cannot handle categorical outputs."
-    ],
-    "answer": "A model can achieve high accuracy by simply predicting the majority class.",
-    "explanation": "If a model always predicts the majority class (negative), it achieves 95% accuracy while being useless for the minority (positive) class. Metrics like F1-Score, Precision, and Recall are better.",
-    "tags": [
-      "Fundamentals",
-      "Evaluation"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "Consider a spam classifier where 99% of emails are not spam."
-    ]
-  },
-  {
-    "_id": "q_ai_0010",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning Optimization",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is the primary function of a Batch Normalization layer in a Neural Network?",
-    "options": [
-      "To prevent overfitting by randomly dropping neurons.",
-      "To normalize the input features of the training data.",
-      "To stabilize and speed up the training process by normalizing the inputs to each layer.",
-      "To calculate the loss during backpropagation."
-    ],
-    "answer": "To stabilize and speed up the training process by normalizing the inputs to each layer.",
-    "explanation": "Batch Normalization addresses the problem of internal covariate shift by normalizing the output of a preceding layer to have zero mean and unit variance before passing it to the next layer.",
-    "tags": [
-      "Deep Learning",
-      "Optimization"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It helps keep input distributions consistent across layers during training."
-    ]
-  },
-  {
-    "_id": "q_ai_0011",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Computer Vision",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is the key difference between Object Detection and Image Classification?",
-    "options": [
-      "Detection only works with black-and-white images; Classification works with color.",
-      "Detection identifies objects and their locations (bounding boxes); Classification identifies the single primary class of the whole image.",
-      "Classification requires a GPU; Detection does not.",
-      "Detection uses CNNs; Classification uses RNNs."
-    ],
-    "answer": "Detection identifies objects and their locations (bounding boxes); Classification identifies the single primary class of the whole image.",
-    "explanation": "Image Classification outputs a single label (e.g., 'cat' or 'dog'). Object Detection outputs multiple labels AND bounding box coordinates for each object found in the image.",
-    "tags": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Computer Vision"
-    ],
-    "hints": [
-      "One task involves localizing the object within the image."
-    ]
-  },
-  {
-    "_id": "q_ai_0012",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Data Preprocessing",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is 'One-Hot Encoding' primarily used for in ML data preprocessing?",
-    "options": [
-      "Scaling numerical features to a small range.",
-      "Converting categorical features into a numerical format for algorithms.",
-      "Reducing the number of features via principal component analysis.",
-      "Filling in missing values in the dataset."
-    ],
-    "answer": "Converting categorical features into a numerical format for algorithms.",
-    "explanation": "One-Hot Encoding converts a single categorical feature (like 'Red', 'Blue', 'Green') into multiple binary (0 or 1) columns, preventing the algorithm from incorrectly inferring an ordinal relationship.",
-    "tags": [
-      "Fundamentals",
-      "Python"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "It turns words/categories into a numerical vector representation."
-    ]
-  },
-  {
-    "_id": "q_ai_0013",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What critical advancement did the Transformer model (e.g., in BERT/GPT) introduce to replace Recurrent/Convolutional layers for sequence processing?",
-    "options": [
-      "The ReLU activation function",
-      "The concept of attention mechanisms",
-      "LSTMs with forget gates",
-      "A new type of dropout technique"
-    ],
-    "answer": "The concept of attention mechanisms",
-    "explanation": "The Transformer introduced the self-attention mechanism, which allows the model to weigh the importance of different words in a sequence relative to the word being processed, eliminating the need for sequential processing of RNNs.",
-    "tags": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "hints": [
-      "It's the core idea from the paper 'Attention Is All You Need'."
-    ]
-  },
-  {
-    "_id": "q_ai_0014",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Frameworks",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "In PyTorch, what method must you override to define the forward pass computation of a custom neural network module?",
-    "options": [
-      "__init__()",
-      "backward()",
-      "forward()",
-      "calculate()"
-    ],
-    "answer": "forward()",
-    "explanation": "In PyTorch, when defining a module that inherits from `nn.Module`, the core computation is defined in the `forward()` method. PyTorch's autograd then automatically creates the `backward()` method.",
-    "tags": [
-      "PyTorch",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "PyTorch"
-    ],
-    "hints": [
-      "It represents the direction of computation from input to output."
-    ]
-  },
-  {
-    "_id": "q_ai_0015",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is the 'vanishing gradient problem' and which activation function often exacerbates it?",
-    "options": [
-      "Gradients become too large; ReLU",
-      "Gradients approach zero; Sigmoid/Tanh",
-      "Loss function returns NaN; Softmax",
-      "Learning rate is too high; ReLU"
-    ],
-    "answer": "Gradients approach zero; Sigmoid/Tanh",
-    "explanation": "When gradients become extremely small, earlier layers stop learning. Sigmoid and Tanh functions, with their bounded outputs and flat tails, have derivatives that are often close to zero, causing the problem.",
-    "tags": [
-      "Deep Learning",
-      "Optimization"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It concerns the flow of gradient information backward through layers."
-    ]
-  },
-  {
-    "_id": "q_ai_0016",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Computer Vision",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 180,
-    "text": "Describe the purpose of the Non-Maximum Suppression (NMS) step in Object Detection pipelines (like YOLO or R-CNN).",
-    "options": [
-      "To increase the number of bounding boxes around an object.",
-      "To merge multiple overlapping bounding boxes for the same object into one final box.",
-      "To speed up the convolution layer's computation.",
-      "To choose the correct classification label for the object."
-    ],
-    "answer": "To merge multiple overlapping bounding boxes for the same object into one final box.",
-    "explanation": "Object detection models often generate many overlapping bounding boxes for the same object. NMS removes all but the most confident box by using a threshold (IoU) to filter overlaps.",
-    "tags": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Computer Vision"
-    ],
-    "hints": [
-      "It tidies up the final output boxes."
-    ]
-  },
-  {
-    "_id": "q_ai_0017",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Regularization",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 105,
-    "text": "What is the key difference between L1 (Lasso) and L2 (Ridge) regularization?",
-    "options": [
-      "L1 is used for Deep Learning; L2 is for linear models.",
-      "L1 adds the sum of absolute weights; L2 adds the sum of squared weights.",
-      "L1 leads to smaller weights; L2 leads to true feature selection (zeroing weights).",
-      "L1 is only used in Keras; L2 is only used in PyTorch."
-    ],
-    "answer": "L1 adds the sum of absolute weights; L2 adds the sum of squared weights.",
-    "explanation": "L1 regularization adds the absolute value of the magnitude of the coefficients to the loss function, which can lead to sparse models (some weights becoming exactly zero, hence feature selection). L2 adds the squared magnitude.",
-    "tags": [
-      "Fundamentals",
-      "Optimization"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "One term is absolute, the other is squared."
-    ]
-  },
-  {
-    "_id": "q_ai_0018",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "In Generative Adversarial Networks (GANs), what is the primary role of the Discriminator network during training?",
-    "options": [
-      "To generate realistic new data samples from noise.",
-      "To classify the generated data as either real (from the dataset) or fake (from the Generator).",
-      "To provide the loss gradient directly to the Generator.",
-      "To perform dimensionality reduction on the input data."
-    ],
-    "answer": "To classify the generated data as either real (from the dataset) or fake (from the Generator).",
-    "explanation": "The Discriminator acts as a binary classifier, learning to distinguish between the real data samples from the training set and the fake data samples created by the Generator.",
-    "tags": [
-      "Deep Learning",
-      "GANs"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It plays the role of the 'policeman' or 'critic'."
-    ]
-  },
-  {
-    "_id": "q_ai_0019",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "In the context of BERT, what does the Masked Language Modeling (MLM) task help the model pre-train for?",
-    "options": [
-      "Generating coherent long sequences of text.",
-      "Predicting the next word in a sequence.",
-      "Learning deep bidirectional representations from the context of surrounding words.",
-      "Classifying documents based on their topic."
-    ],
-    "answer": "Learning deep bidirectional representations from the context of surrounding words.",
-    "explanation": "MLM involves masking out some tokens and predicting the original tokens based on the surrounding context (both left and right), which allows BERT to learn truly bidirectional representations of the language.",
-    "tags": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "hints": [
-      "The 'M' stands for 'Masked'."
-    ]
-  },
-  {
-    "_id": "q_ai_0020",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Frameworks",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 240,
-    "text": "In TensorFlow/Keras, what is the significance of using the `tf.function` decorator?",
-    "options": [
-      "It enables asynchronous execution on CPU only.",
-      "It converts a standard Python function into a TensorFlow Graph for performance optimization.",
-      "It automatically handles hyperparameter tuning.",
-      "It manages all I/O operations from disk."
-    ],
-    "answer": "It converts a standard Python function into a TensorFlow Graph for performance optimization.",
-    "explanation": "`tf.function` compiles a Python function into a callable TensorFlow graph, which allows for performance benefits like faster execution and better deployment options, overcoming Python's overhead.",
-    "tags": [
-      "TensorFlow",
-      "Optimization"
-    ],
-    "required_skills": [
-      "TensorFlow",
-      "Keras"
-    ],
-    "hints": [
-      "It involves graph compilation and serialization."
-    ]
-  },
-  {
-    "_id": "q_ai_0021",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Model Deployment",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 150,
-    "text": "What is the difference between latency and throughput in the context of model deployment?",
-    "options": [
-      "Latency is only for CPU; Throughput is for GPU.",
-      "Latency is the time for a single prediction; Throughput is the number of predictions per second.",
-      "Latency is the memory usage; Throughput is the model size.",
-      "Latency applies to batch inference; Throughput applies to real-time inference."
-    ],
-    "answer": "Latency is the time for a single prediction; Throughput is the number of predictions per second.",
-    "explanation": "Latency is the time delay between sending a request and receiving a response. Throughput (or QPS - queries per second) is the total volume of work processed over a time unit.",
-    "tags": [
-      "Fundamentals",
-      "Deployment"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "One is time per item; the other is items per time."
-    ]
-  },
-  {
-    "_id": "q_ai_0022",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Computer Vision",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "Explain the concept of 'Feature Pyramid Networks (FPN)' used in advanced Object Detection models.",
-    "options": [
-      "A network that stacks pooling layers only.",
-      "A network that uses a pyramid of filters to detect features at only one scale.",
-      "A network that processes input images at multiple scales to fuse low-resolution, high-semantic feature maps with high-resolution, low-semantic feature maps.",
-      "A model that performs image segmentation only."
-    ],
-    "answer": "A network that processes input images at multiple scales to fuse low-resolution, high-semantic feature maps with high-resolution, low-semantic feature maps.",
-    "explanation": "FPNs address the difficulty of detecting objects of vastly different sizes by building a feature pyramid that combines high-level semantic information (good for large objects) with low-level fine-grained information (good for small objects).",
-    "tags": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Computer Vision"
-    ],
-    "hints": [
-      "It helps a model see both the forest and the trees."
-    ]
-  },
-  {
-    "_id": "q_ai_0023",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Model Training",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is the purpose of a validation set during the training of a machine learning model?",
-    "options": [
-      "To test the model after final deployment.",
-      "To tune hyperparameters and prevent overfitting during training.",
-      "To calculate the final, unbiased performance metric.",
-      "To combine with the training set to maximize data."
-    ],
-    "answer": "To tune hyperparameters and prevent overfitting during training.",
-    "explanation": "The validation set provides an unbiased evaluation of a model fit on the training set while tuning the model's hyperparameters and tracking its performance to decide when to stop training (early stopping).",
-    "tags": [
-      "Fundamentals",
-      "Training"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "It's the dataset used for 'checking your work' as you learn."
-    ]
-  },
-  {
-    "_id": "q_ai_0024",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Python Libraries",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "Which Pandas data structure is equivalent to a single column or vector in a spreadsheet?",
-    "options": [
-      "DataFrame",
-      "Panel",
-      "Series",
-      "Index"
-    ],
-    "answer": "Series",
-    "explanation": "A Pandas Series is a one-dimensional labeled array capable of holding any data type, representing a single column of a DataFrame.",
-    "tags": [
-      "Python",
-      "Libraries"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "It is the one-dimensional component of a two-dimensional structure."
-    ]
-  },
-  {
-    "_id": "q_ai_0025",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "What is the main goal of 'Tokenization' in Natural Language Processing?",
-    "options": [
-      "Removing stop words from the text.",
-      "Converting text into meaningful, discrete units (tokens) for model processing.",
-      "Converting words into numerical vectors.",
-      "Grouping similar documents together."
-    ],
-    "answer": "Converting text into meaningful, discrete units (tokens) for model processing.",
-    "explanation": "Tokenization is the process of breaking down raw text into words, sub-words, phrases, or symbols, which are then used as the inputs to a language model.",
-    "tags": [
-      "NLP"
-    ],
-    "required_skills": [
-      "NLP"
-    ],
-    "hints": [
-      "It creates the discrete input units from a continuous stream of text."
-    ]
-  },
-  {
-    "_id": "q_ai_0026",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Frameworks",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "How does Keras/TensorFlow manage the multi-GPU training process?",
-    "options": [
-      "It automatically distributes the model by default without any setup.",
-      "It requires a custom loop and manual gradient averaging.",
-      "It uses distribution strategies (e.g., MirroredStrategy) to efficiently handle data parallelism.",
-      "It is limited to CPU training only."
-    ],
-    "answer": "It uses distribution strategies (e.g., MirroredStrategy) to efficiently handle data parallelism.",
-    "explanation": "TensorFlow provides specialized distribution strategies, like the MirroredStrategy, which replicate the model on all devices and use collective communications to reduce the gradients, making multi-GPU training much easier.",
-    "tags": [
-      "TensorFlow",
-      "Keras",
-      "Optimization"
-    ],
-    "required_skills": [
-      "TensorFlow",
-      "Keras"
-    ],
-    "hints": [
-      "The solution is encapsulated in specific high-level 'strategy' APIs."
-    ]
-  },
-  {
-    "_id": "q_ai_0027",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "What is the 'embedding layer' in a Neural Network used for in NLP?",
-    "options": [
-      "Scaling the input words to a small range (0 to 1).",
-      "Converting one-hot vectors into a dense, low-dimensional vector space representing semantic meaning.",
-      "Creating the final output classification vector.",
-      "Performing convolution on the text."
-    ],
-    "answer": "Converting one-hot vectors into a dense, low-dimensional vector space representing semantic meaning.",
-    "explanation": "The embedding layer takes high-dimensional sparse representations (like one-hot encodings) and maps them to dense vectors where distances represent semantic similarity, which is crucial for deep learning models.",
-    "tags": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "hints": [
-      "It translates words into meaningful spatial locations."
-    ]
-  },
-  {
-    "_id": "q_ai_0028",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Computer Vision",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "After a convolution layer in a CNN, what is the primary role of a 'Max Pooling' layer?",
-    "options": [
-      "To increase the spatial dimensions of the feature map.",
-      "To reduce the spatial dimensions, providing translational invariance and reducing computation.",
-      "To apply an activation function to the outputs.",
-      "To add noise for regularization."
-    ],
-    "answer": "To reduce the spatial dimensions, providing translational invariance and reducing computation.",
-    "explanation": "Max Pooling takes the maximum value from a region, reducing the width and height of the feature map. This makes the features learned more robust to small shifts in the input (translational invariance).",
-    "tags": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "required_skills": [
-      "Computer Vision",
-      "Deep Learning"
-    ],
-    "hints": [
-      "It shrinks the feature map size and makes the features more robust."
-    ]
-  },
-  {
-    "_id": "q_ai_0029",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is 'Dropout' and how does it prevent overfitting in neural networks?",
-    "options": [
-      "A technique to automatically stop training when loss increases.",
-      "It randomly reduces the learning rate during training.",
-      "It randomly sets a fraction of the neuron outputs to zero during training, preventing co-adaptation of features.",
-      "A method to normalize the input data features."
-    ],
-    "answer": "It randomly sets a fraction of the neuron outputs to zero during training, preventing co-adaptation of features.",
-    "explanation": "Dropout forces the network to learn more robust features by ensuring that no single neuron is overly reliant on any other, effectively training a collection of smaller, thinned networks.",
-    "tags": [
-      "Deep Learning",
-      "Optimization"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
-    "hints": [
-      "It temporarily 'turns off' neurons during forward and backward passes."
-    ]
-  },
-  {
-    "_id": "q_ai_0030",
-    "question_type": "multiple-choice",
-    "domain": "Artificial Intelligence & Machine Learning",
     "topic": "PyTorch",
     "difficulty": 5,
     "difficulty_label": "Expert",
@@ -839,443 +15,1833 @@
       "The output of the previous layer in the network."
     ],
     "answer": "The gradients of the loss with respect to all Tensors with `requires_grad=True`.",
-    "explanation": "This function performs the backpropagation step. It calculates the gradients of the scalar output (typically the loss) with respect to every Tensor involved in the computation graph that has `requires_grad=True`.",
-    "tags": [
-      "PyTorch",
-      "Deep Learning"
+    "explanation": "It performs backpropagation by computing gradients of the scalar output with respect to all tensors that require gradients.",
+    "tags": ["PyTorch", "Autograd"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used for backpropagation"]
+  },
+  {
+    "_id": "q_ai_0002",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of setting `retain_graph=True` in `loss.backward()`?",
+    "options": [
+      "To improve numerical stability",
+      "To prevent gradient clipping",
+      "To allow multiple backward passes on the same computation graph",
+      "To freeze model parameters"
     ],
-    "required_skills": [
-      "PyTorch"
+    "answer": "To allow multiple backward passes on the same computation graph",
+    "explanation": "By default, PyTorch frees the computation graph after backward; retain_graph=True keeps it for reuse.",
+    "tags": ["PyTorch", "Autograd"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Related to computation graph reuse"]
+  },
+  {
+    "_id": "q_ai_0003",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which operation breaks the computation graph in PyTorch?",
+    "options": [
+      "Calling `.detach()` on a tensor",
+      "Calling `.requires_grad_(True)`",
+      "Using `torch.add()`",
+      "Calling `loss.backward()`"
     ],
+    "answer": "Calling `.detach()` on a tensor",
+    "explanation": "detach() returns a tensor that shares data but is disconnected from the computation graph.",
+    "tags": ["PyTorch", "Computation Graph"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Stops gradient flow"]
+  },
+  {
+    "_id": "q_ai_0004",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What happens if `optimizer.zero_grad()` is not called before backpropagation?",
+    "options": [
+      "Gradients are automatically overwritten",
+      "Gradients accumulate across iterations",
+      "The model parameters reset",
+      "Backward pass fails"
+    ],
+    "answer": "Gradients accumulate across iterations",
+    "explanation": "PyTorch accumulates gradients by default, so they must be cleared manually each iteration.",
+    "tags": ["PyTorch", "Optimization"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Gradients are additive"]
+  },
+  {
+    "_id": "q_ai_0005",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch module is responsible for switching layers like Dropout and BatchNorm between training and inference modes?",
+    "options": [
+      "`model.eval()`",
+      "`model.train(False)`",
+      "`torch.no_grad()`",
+      "`optimizer.step()`"
+    ],
+    "answer": "`model.eval()`",
+    "explanation": "model.eval() sets the model to evaluation mode affecting Dropout and BatchNorm behavior.",
+    "tags": ["PyTorch", "Model Evaluation"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used during inference"]
+  },
+  {
+    "_id": "q_ai_0006",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does `torch.no_grad()` primarily help with?",
+    "options": [
+      "Improving model accuracy",
+      "Disabling parameter updates",
+      "Reducing memory usage during inference",
+      "Resetting gradients"
+    ],
+    "answer": "Reducing memory usage during inference",
+    "explanation": "It disables gradient tracking, saving memory and computation during inference.",
+    "tags": ["PyTorch", "Inference"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used during evaluation"]
+  },
+  {
+    "_id": "q_ai_0007",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which optimizer adaptively adjusts learning rates using both first and second moments of gradients?",
+    "options": [
+      "SGD",
+      "RMSprop",
+      "Adam",
+      "Adagrad"
+    ],
+    "answer": "Adam",
+    "explanation": "Adam combines momentum (first moment) and RMSprop-like adaptive learning rates (second moment).",
+    "tags": ["PyTorch", "Optimization"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Popular adaptive optimizer"]
+  },
+  {
+    "_id": "q_ai_0008",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the role of `state_dict()` in PyTorch?",
+    "options": [
+      "Defines the model architecture",
+      "Stores optimizer hyperparameters only",
+      "Contains model parameters and buffers",
+      "Executes forward propagation"
+    ],
+    "answer": "Contains model parameters and buffers",
+    "explanation": "state_dict stores learnable parameters and persistent buffers like running mean.",
+    "tags": ["PyTorch", "Model Saving"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used for checkpointing"]
+  },
+  {
+    "_id": "q_ai_0009",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch feature enables dynamic computation graphs?",
+    "options": [
+      "Static graph compilation",
+      "Eager execution",
+      "TorchScript tracing",
+      "ONNX export"
+    ],
+    "answer": "Eager execution",
+    "explanation": "PyTorch builds computation graphs dynamically during runtime via eager execution.",
+    "tags": ["PyTorch", "Execution Model"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Graph built on the fly"]
+  },
+  {
+    "_id": "q_ai_0010",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does gradient clipping primarily prevent?",
+    "options": [
+      "Overfitting",
+      "Exploding gradients",
+      "Vanishing gradients",
+      "Bias shift"
+    ],
+    "answer": "Exploding gradients",
+    "explanation": "Gradient clipping limits gradient magnitude to stabilize training.",
+    "tags": ["PyTorch", "Training Stability"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used in RNNs"]
+  },
+
+  {
+    "_id": "q_ai_0011",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch API enables model serialization for deployment?",
+    "options": [
+      "torch.save",
+      "torch.jit.script",
+      "torch.load",
+      "torch.clone"
+    ],
+    "answer": "torch.jit.script",
+    "explanation": "TorchScript converts models into a serializable and deployable form.",
+    "tags": ["PyTorch", "Deployment"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used for production"]
+  },
+  {
+    "_id": "q_ai_0012",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of `pin_memory=True` in a DataLoader?",
+    "options": [
+      "Speeds up CPU computation",
+      "Improves GPU transfer performance",
+      "Reduces dataset size",
+      "Enables multi-threading"
+    ],
+    "answer": "Improves GPU transfer performance",
+    "explanation": "Pinned memory allows faster host-to-device data transfer.",
+    "tags": ["PyTorch", "DataLoader"],
+    "required_skills": ["PyTorch"],
+    "hints": ["GPU related"]
+  },
+  {
+    "_id": "q_ai_0013",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does `torch.nn.Parameter` signify?",
+    "options": [
+      "A constant tensor",
+      "A tensor excluded from gradients",
+      "A trainable tensor registered in a module",
+      "A frozen model weight"
+    ],
+    "answer": "A trainable tensor registered in a module",
+    "explanation": "Parameters are tensors automatically added to model parameters.",
+    "tags": ["PyTorch", "Model Parameters"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Trainable weights"]
+  },
+  {
+    "_id": "q_ai_0014",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch utility synchronizes CUDA operations?",
+    "options": [
+      "torch.cuda.empty_cache()",
+      "torch.cuda.synchronize()",
+      "torch.cuda.device()",
+      "torch.cuda.stream()"
+    ],
+    "answer": "torch.cuda.synchronize()",
+    "explanation": "It blocks CPU until all CUDA kernels finish execution.",
+    "tags": ["PyTorch", "CUDA"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Used for timing"]
+  },
+  {
+    "_id": "q_ai_0015",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What happens if a tensor has `requires_grad=False`?",
+    "options": [
+      "It cannot be used in computation",
+      "It will not track gradients",
+      "It throws an error during backward",
+      "It resets gradients automatically"
+    ],
+    "answer": "It will not track gradients",
+    "explanation": "Gradients are computed only for tensors with requires_grad=True.",
+    "tags": ["PyTorch", "Autograd"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Gradient tracking"]
+  },
+  {
+    "_id": "q_ai_0016",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which loss function is numerically stable for multi-class classification?",
+    "options": [
+      "MSELoss",
+      "NLLLoss",
+      "CrossEntropyLoss",
+      "BCELoss"
+    ],
+    "answer": "CrossEntropyLoss",
+    "explanation": "It combines LogSoftmax and NLLLoss in a numerically stable way.",
+    "tags": ["PyTorch", "Loss Functions"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Softmax included"]
+  },
+  {
+    "_id": "q_ai_0017",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the effect of `model.train()`?",
+    "options": [
+      "Freezes weights",
+      "Enables dropout and batch normalization updates",
+      "Disables gradients",
+      "Runs inference mode"
+    ],
+    "answer": "Enables dropout and batch normalization updates",
+    "explanation": "Training mode activates stochastic layers like Dropout.",
+    "tags": ["PyTorch", "Training Mode"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Opposite of eval"]
+  },
+  {
+    "_id": "q_ai_0018",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch component handles distributed training?",
+    "options": [
+      "torch.optim",
+      "torch.distributed",
+      "torch.multiprocessing",
+      "torch.cuda"
+    ],
+    "answer": "torch.distributed",
+    "explanation": "torch.distributed supports multi-process and multi-node training.",
+    "tags": ["PyTorch", "Distributed Training"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Multi-node support"]
+  },
+  {
+    "_id": "q_ai_0019",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of `torch.utils.checkpoint`?",
+    "options": [
+      "Save model checkpoints",
+      "Reduce GPU memory usage",
+      "Improve optimizer speed",
+      "Freeze layers"
+    ],
+    "answer": "Reduce GPU memory usage",
+    "explanation": "Checkpointing trades compute for memory by recomputing activations.",
+    "tags": ["PyTorch", "Memory Optimization"],
+    "required_skills": ["PyTorch"],
+    "hints": ["Recomputation strategy"]
+  },
+  {
+    "_id": "q_ai_0020",
+    "question_type": "multiple-choice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "PyTorch",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which PyTorch method is used to move a model to GPU?",
+    "options": [
+      "model.cuda()",
+      "model.cpu()",
+      "model.to_numpy()",
+      "model.clone()"
+    ],
+    "answer": "model.cuda()",
+    "explanation": "model.cuda() moves model parameters to GPU memory.",
+    "tags": ["PyTorch", "CUDA"],
+    "required_skills": ["PyTorch"],
+    "hints": ["GPU execution"]
+  },
+
+  {
+    "_id": "q_ai_0021",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Machine Learning Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the difference between supervised, unsupervised, and reinforcement learning with suitable examples.",
+    "expected_answer": {
+      "key_points": [
+        "Supervised learning uses labeled data",
+        "Unsupervised learning uses unlabeled data",
+        "Reinforcement learning uses rewards and penalties",
+        "Clear examples for each learning type"
+      ],
+      "example_scenarios": [
+        "Email spam classification using labeled emails",
+        "Customer segmentation using clustering",
+        "Game-playing agents learning through rewards"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Machine Learning", "Learning Paradigms"],
+    "required_skills": ["Machine Learning Basics"],
     "hints": [
-      "It is the key mechanism for backpropagation."
+      "Focus on data labeling differences",
+      "Explain how feedback is used in each approach"
+    ]
+  },
+  {
+    "_id": "q_ai_0022",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Neural Networks",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the structure of an artificial neural network and explain the role of activation functions.",
+    "expected_answer": {
+      "key_points": [
+        "Input, hidden, and output layers",
+        "Weights and bias",
+        "Non-linearity introduced by activation functions",
+        "Examples like ReLU, Sigmoid, Softmax"
+      ],
+      "example_scenarios": [
+        "Digit recognition using a feedforward network",
+        "Binary classification using sigmoid activation"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Structural Explanation", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Neural Networks", "Deep Learning"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Explain why linear models are insufficient",
+      "Mention common activation functions"
+    ]
+  },
+  {
+    "_id": "q_ai_0023",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain overfitting and underfitting in machine learning models and discuss methods to handle them.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of overfitting",
+        "Definition of underfitting",
+        "Bias-variance tradeoff",
+        "Techniques such as regularization and data augmentation"
+      ],
+      "example_scenarios": [
+        "Model performing well on training data but poorly on test data",
+        "Simple linear model failing on complex data"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Mitigation Techniques", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Overfitting", "Model Training"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Relate concepts to bias and variance",
+      "Mention training vs validation performance"
+    ]
+  },
+  {
+    "_id": "q_ai_0024",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain gradient descent and its variants used in training deep learning models.",
+    "expected_answer": {
+      "key_points": [
+        "Basic gradient descent mechanism",
+        "Batch, stochastic, and mini-batch variants",
+        "Learning rate importance",
+        "Advantages and limitations"
+      ],
+      "example_scenarios": [
+        "Training a neural network on image data",
+        "Large-scale datasets requiring mini-batch optimization"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Coverage", "weight": 0.3 }
+    ],
+    "tags": ["Optimization", "Gradient Descent"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Explain how weights are updated",
+      "Compare different variants"
+    ]
+  },
+  {
+    "_id": "q_ai_0025",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Convolutional Neural Networks",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the working of a Convolutional Neural Network (CNN) and its main components.",
+    "expected_answer": {
+      "key_points": [
+        "Convolution operation",
+        "Pooling layers",
+        "Feature extraction hierarchy",
+        "Fully connected layers"
+      ],
+      "example_scenarios": [
+        "Image classification tasks",
+        "Face recognition systems"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architecture Explanation", "weight": 0.4 },
+      { "criterion": "Application Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["CNN", "Deep Learning"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Focus on spatial feature extraction",
+      "Mention kernel and stride concepts"
+    ]
+  },
+  {
+    "_id": "q_ai_0026",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe word embeddings and explain why they are important in NLP tasks.",
+    "expected_answer": {
+      "key_points": [
+        "Dense vector representation of words",
+        "Captures semantic relationships",
+        "Reduces dimensionality",
+        "Examples such as Word2Vec, GloVe"
+      ],
+      "example_scenarios": [
+        "Sentiment analysis of reviews",
+        "Semantic similarity detection"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Accuracy", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["NLP", "Word Embeddings"],
+    "required_skills": ["Natural Language Processing"],
+    "hints": [
+      "Compare with one-hot encoding",
+      "Explain semantic similarity"
+    ]
+  },
+  {
+    "_id": "q_ai_0027",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain precision, recall, F1-score, and accuracy. When should each metric be used?",
+    "expected_answer": {
+      "key_points": [
+        "Definition of each metric",
+        "Confusion matrix relation",
+        "Imbalanced data considerations"
+      ],
+      "example_scenarios": [
+        "Medical diagnosis systems",
+        "Spam detection problems"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Metric Understanding", "weight": 0.4 },
+      { "criterion": "Use-case Justification", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Evaluation Metrics", "Classification"],
+    "required_skills": ["Machine Learning"],
+    "hints": [
+      "Think about false positives vs false negatives",
+      "Relate metrics to real risks"
+    ]
+  },
+  {
+    "_id": "q_ai_0028",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Regularization",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain regularization in machine learning and describe L1 and L2 regularization.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of regularization",
+        "L1 sparsity effect",
+        "L2 weight shrinkage",
+        "Impact on generalization"
+      ],
+      "example_scenarios": [
+        "Preventing overfitting in regression models",
+        "Feature selection using L1 regularization"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Technical Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Regularization", "Generalization"],
+    "required_skills": ["Machine Learning"],
+    "hints": [
+      "Explain penalty terms",
+      "Compare L1 vs L2 behavior"
+    ]
+  },
+  {
+    "_id": "q_ai_0029",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Recurrent Neural Networks",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain Recurrent Neural Networks (RNNs) and discuss the vanishing gradient problem.",
+    "expected_answer": {
+      "key_points": [
+        "Sequence processing capability",
+        "Hidden state recurrence",
+        "Cause of vanishing gradients",
+        "Limitations of standard RNNs"
+      ],
+      "example_scenarios": [
+        "Language modeling tasks",
+        "Time-series prediction"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Problem Explanation", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["RNN", "Sequence Models"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Think about long-term dependencies",
+      "Mention backpropagation through time"
+    ]
+  },
+  {
+    "_id": "q_ai_0030",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "LSTM & GRU",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Compare LSTM and GRU architectures and explain how they overcome limitations of basic RNNs.",
+    "expected_answer": {
+      "key_points": [
+        "LSTM gating mechanisms",
+        "GRU simplified structure",
+        "Handling long-term dependencies",
+        "Performance trade-offs"
+      ],
+      "example_scenarios": [
+        "Speech recognition systems",
+        "Machine translation tasks"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparative Analysis", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["LSTM", "GRU"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Compare gate structures",
+      "Explain memory handling"
     ]
   },
   {
     "_id": "q_ai_0031",
     "question_type": "subjective",
     "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 300,
-    "text": "Explain the concept of transfer learning in deep learning. Describe how it works and provide two real-world scenarios where it would be beneficial.",
+    "topic": "Clustering",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the concept of clustering and describe the K-means clustering algorithm.",
     "expected_answer": {
       "key_points": [
-        "Transfer learning involves using a pre-trained model on a new, related task",
-        "The model has learned features from a large dataset that can be reused",
-        "Common approach: freeze early layers, fine-tune later layers",
-        "Benefits include reduced training time and improved performance with limited data"
+        "Purpose of clustering",
+        "K-means algorithm steps",
+        "Distance measures",
+        "Cluster centroid concept"
       ],
       "example_scenarios": [
-        "Using ImageNet pre-trained models for medical image classification",
-        "Using BERT for domain-specific text classification tasks"
+        "Customer segmentation",
+        "Document grouping"
       ],
-      "minimum_word_count": 150
+      "minimum_word_count": 120
     },
     "evaluation_criteria": [
-      {
-        "criterion": "Conceptual Understanding",
-        "weight": 0.4,
-        "description": "Demonstrates clear understanding of transfer learning principles"
-      },
-      {
-        "criterion": "Real-world Application",
-        "weight": 0.3,
-        "description": "Provides relevant and practical examples"
-      },
-      {
-        "criterion": "Technical Depth",
-        "weight": 0.3,
-        "description": "Explains implementation details and benefits"
-      }
+      { "criterion": "Algorithm Explanation", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "tags": [
-      "Deep Learning",
-      "Transfer Learning",
-      "Model Training"
-    ],
-    "required_skills": [
-      "Deep Learning"
-    ],
+    "tags": ["Clustering", "Unsupervised Learning"],
+    "required_skills": ["Machine Learning"],
     "hints": [
-      "Think about reusing knowledge from one problem to solve another",
-      "Consider scenarios with limited training data"
+      "Think about similarity measures",
+      "Explain centroid updates"
     ]
   },
   {
     "_id": "q_ai_0032",
     "question_type": "subjective",
     "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Model Evaluation",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 360,
-    "text": "Compare and contrast Precision, Recall, and F1-Score as evaluation metrics. In what scenarios would you prioritize each metric? Provide concrete examples.",
+    "topic": "Dimensionality Reduction",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain dimensionality reduction and describe the working of Principal Component Analysis (PCA).",
     "expected_answer": {
       "key_points": [
-        "Precision: TP/(TP+FP) - measures accuracy of positive predictions",
-        "Recall: TP/(TP+FN) - measures coverage of actual positives",
-        "F1-Score: harmonic mean of precision and recall",
-        "Trade-off exists between precision and recall"
+        "Curse of dimensionality",
+        "Variance maximization",
+        "Eigenvectors and eigenvalues",
+        "Benefits of PCA"
       ],
-      "scenario_examples": [
-        "High Precision: Spam detection (avoid false positives)",
-        "High Recall: Cancer detection (avoid false negatives)",
-        "Balanced F1: General classification tasks"
+      "example_scenarios": [
+        "Data visualization",
+        "Noise reduction in datasets"
       ],
-      "minimum_word_count": 200
+      "minimum_word_count": 150
     },
     "evaluation_criteria": [
-      {
-        "criterion": "Mathematical Understanding",
-        "weight": 0.35,
-        "description": "Correctly explains formulas and calculations"
-      },
-      {
-        "criterion": "Practical Application",
-        "weight": 0.35,
-        "description": "Provides relevant real-world scenarios"
-      },
-      {
-        "criterion": "Comparative Analysis",
-        "weight": 0.3,
-        "description": "Clearly differentiates between metrics"
-      }
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Technical Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "tags": [
-      "Evaluation Metrics",
-      "Model Performance"
-    ],
-    "required_skills": [
-      "Python",
-      "Machine Learning"
-    ],
+    "tags": ["PCA", "Dimensionality Reduction"],
+    "required_skills": ["Machine Learning"],
     "hints": [
-      "Consider the cost of false positives vs false negatives",
-      "Think about imbalanced datasets"
+      "Explain variance preservation",
+      "Mention dimensionality trade-offs"
     ]
   },
   {
     "_id": "q_ai_0033",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Ethics in AI",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss ethical challenges in Artificial Intelligence and the importance of responsible AI development.",
+    "expected_answer": {
+      "key_points": [
+        "Bias and fairness",
+        "Privacy concerns",
+        "Transparency",
+        "Societal impact"
+      ],
+      "example_scenarios": [
+        "Biased hiring algorithms",
+        "Facial recognition privacy issues"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["AI Ethics", "Responsible AI"],
+    "required_skills": ["AI Fundamentals"],
+    "hints": [
+      "Think about real-world consequences",
+      "Discuss fairness and accountability"
+    ]
+  },
+  {
+    "_id": "q_ai_0034",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the advantages and limitations of transfer learning in deep learning applications.",
+    "expected_answer": {
+      "key_points": [
+        "Reuse of learned representations",
+        "Reduced training data requirement",
+        "Domain mismatch issues",
+        "Fine-tuning strategies"
+      ],
+      "example_scenarios": [
+        "Medical image analysis using pretrained CNNs",
+        "Text classification using pretrained language models"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Critical Analysis", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Transfer Learning", "Deep Learning"],
+    "required_skills": ["Deep Learning"],
+    "hints": [
+      "Consider data availability",
+      "Discuss fine-tuning vs freezing layers"
+    ]
+  },
+  {
+    "_id": "q_ai_0035",
+    "question_type": "subjective",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Model Deployment",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the challenges involved in deploying machine learning models in real-world environments.",
+    "expected_answer": {
+      "key_points": [
+        "Scalability challenges",
+        "Data drift and model decay",
+        "Monitoring and maintenance",
+        "System integration issues"
+      ],
+      "example_scenarios": [
+        "Deploying models in cloud environments",
+        "Real-time prediction systems"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Understanding", "weight": 0.4 },
+      { "criterion": "Technical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Model Deployment", "MLOps"],
+    "required_skills": ["Machine Learning", "Deployment"],
+    "hints": [
+      "Think about lifecycle management",
+      "Consider real-time constraints"
+    ]
+  },
+  {
+    "_id": "q_ai_0036",
     "question_type": "voice",
     "domain": "Artificial Intelligence & Machine Learning",
     "topic": "Fundamentals",
     "difficulty": 2,
     "difficulty_label": "Novice",
     "estimated_time_sec": 120,
-    "text": "Explain in your own words what overfitting is and how you would detect it in a machine learning model.",
+    "text": "What is machine learning and why is it useful?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": [
-        "Model performs well on training data but poorly on unseen data",
-        "Model memorizes rather than generalizes patterns",
-        "Detection: gap between training and validation performance",
-        "Solutions: regularization, more data, simpler model"
-      ],
+      "key_concepts": ["Learning from data", "Automation of decisions", "Improves with experience"],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      {
-        "criterion": "Clarity",
-        "weight": 0.3,
-        "description": "Clear and understandable explanation"
-      },
-      {
-        "criterion": "Completeness",
-        "weight": 0.4,
-        "description": "Covers main concepts of overfitting"
-      },
-      {
-        "criterion": "Examples",
-        "weight": 0.3,
-        "description": "Provides relevant examples or analogies"
-      }
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Simple example" }
     ],
     "transcription_required": true,
-    "tags": [
-      "Fundamentals",
-      "Model Training",
-      "Overfitting"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "Think about memorization vs understanding",
-      "Consider the training vs validation accuracy"
-    ]
-  },
-  {
-    "_id": "q_ai_0034",
-    "question_type": "voice",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "NLP",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 180,
-    "text": "Describe the architecture of a Transformer model and explain why it revolutionized NLP. Include discussion of the attention mechanism.",
-    "voice_instructions": "Provide a detailed explanation. You have up to 3 minutes.",
-    "expected_answer": {
-      "key_concepts": [
-        "Self-attention mechanism allows parallel processing",
-        "Encoder-decoder architecture",
-        "Multi-head attention captures different relationships",
-        "Positional encoding for sequence information",
-        "Eliminated need for recurrence (RNNs)"
-      ],
-      "minimum_duration_sec": 90,
-      "maximum_duration_sec": 180
-    },
-    "evaluation_criteria": [
-      {
-        "criterion": "Technical Accuracy",
-        "weight": 0.4,
-        "description": "Correctly explains Transformer components"
-      },
-      {
-        "criterion": "Depth of Understanding",
-        "weight": 0.35,
-        "description": "Shows deep understanding of attention mechanism"
-      },
-      {
-        "criterion": "Communication",
-        "weight": 0.25,
-        "description": "Explains complex concepts clearly"
-      }
-    ],
-    "transcription_required": true,
-    "tags": [
-      "NLP",
-      "Deep Learning",
-      "Transformers"
-    ],
-    "required_skills": [
-      "NLP",
-      "Deep Learning"
-    ],
-    "hints": [
-      "Focus on the 'Attention is All You Need' paper",
-      "Explain why attention is better than recurrence"
-    ]
-  },
-  {
-    "_id": "q_ai_0035",
-    "question_type": "coding",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Python Libraries",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 300,
-    "text": "Write a Python function that takes a NumPy array and normalizes it using Min-Max scaling to the range [0, 1].",
-    "coding_instructions": {
-      "language": "python",
-      "allowed_libraries": [
-        "numpy"
-      ],
-      "starter_code": "import numpy as np\n\ndef min_max_normalize(arr):\n    # Your code here\n    pass",
-      "function_signature": "min_max_normalize(arr: np.ndarray) -> np.ndarray"
-    },
-    "expected_answer": {
-      "solution": "import numpy as np\n\ndef min_max_normalize(arr):\n    \"\"\"\n    Normalize array to range [0, 1] using Min-Max scaling.\n    \n    Args:\n        arr: NumPy array to normalize\n    \n    Returns:\n        Normalized NumPy array\n    \"\"\"\n    min_val = np.min(arr)\n    max_val = np.max(arr)\n    \n    # Handle edge case where all values are the same\n    if max_val == min_val:\n        return np.zeros_like(arr)\n    \n    normalized = (arr - min_val) / (max_val - min_val)\n    return normalized",
-      "key_concepts": [
-        "Min-Max formula: (x - min) / (max - min)",
-        "Handle edge case of constant array",
-        "Use NumPy operations for efficiency"
-      ]
-    },
-    "test_cases": [
-      {
-        "input": "np.array([1, 2, 3, 4, 5])",
-        "expected_output": "np.array([0.0, 0.25, 0.5, 0.75, 1.0])",
-        "description": "Basic normalization"
-      },
-      {
-        "input": "np.array([10, 10, 10])",
-        "expected_output": "np.array([0.0, 0.0, 0.0])",
-        "description": "All values same"
-      },
-      {
-        "input": "np.array([-5, 0, 5])",
-        "expected_output": "np.array([0.0, 0.5, 1.0])",
-        "description": "Negative values"
-      }
-    ],
-    "evaluation_criteria": [
-      {
-        "criterion": "Correctness",
-        "weight": 0.5,
-        "description": "All test cases pass"
-      },
-      {
-        "criterion": "Code Quality",
-        "weight": 0.25,
-        "description": "Clean, readable code with proper variable names"
-      },
-      {
-        "criterion": "Edge Cases",
-        "weight": 0.25,
-        "description": "Handles edge cases appropriately"
-      }
-    ],
-    "tags": [
-      "Python",
-      "NumPy",
-      "Data Preprocessing"
-    ],
-    "required_skills": [
-      "Python"
-    ],
-    "hints": [
-      "Formula: (x - min) / (max - min)",
-      "Consider what happens when all values are the same"
-    ]
-  },
-  {
-    "_id": "q_ai_0036",
-    "question_type": "coding",
-    "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "Deep Learning",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 900,
-    "text": "Implement a simple Neural Network class from scratch using only NumPy. Include forward propagation, backpropagation, and a training loop. The network should have one hidden layer with sigmoid activation and output layer with sigmoid activation for binary classification.",
-    "coding_instructions": {
-      "language": "python",
-      "allowed_libraries": [
-        "numpy"
-      ],
-      "starter_code": "import numpy as np\n\nclass NeuralNetwork:\n    def __init__(self, input_size, hidden_size, output_size):\n        # Initialize weights and biases\n        pass\n    \n    def sigmoid(self, x):\n        # Your code here\n        pass\n    \n    def sigmoid_derivative(self, x):\n        # Your code here\n        pass\n    \n    def forward(self, X):\n        # Your code here\n        pass\n    \n    def backward(self, X, y, output):\n        # Your code here\n        pass\n    \n    def train(self, X, y, epochs, learning_rate):\n        # Your code here\n        pass",
-      "function_signature": "class NeuralNetwork"
-    },
-    "expected_answer": {
-      "solution": "import numpy as np\n\nclass NeuralNetwork:\n    def __init__(self, input_size, hidden_size, output_size):\n        # Initialize weights with small random values\n        self.W1 = np.random.randn(input_size, hidden_size) * 0.01\n        self.b1 = np.zeros((1, hidden_size))\n        self.W2 = np.random.randn(hidden_size, output_size) * 0.01\n        self.b2 = np.zeros((1, output_size))\n    \n    def sigmoid(self, x):\n        return 1 / (1 + np.exp(-np.clip(x, -500, 500)))\n    \n    def sigmoid_derivative(self, x):\n        return x * (1 - x)\n    \n    def forward(self, X):\n        # Hidden layer\n        self.z1 = np.dot(X, self.W1) + self.b1\n        self.a1 = self.sigmoid(self.z1)\n        \n        # Output layer\n        self.z2 = np.dot(self.a1, self.W2) + self.b2\n        self.a2 = self.sigmoid(self.z2)\n        \n        return self.a2\n    \n    def backward(self, X, y, output):\n        m = X.shape[0]\n        \n        # Output layer gradients\n        dz2 = output - y\n        dW2 = np.dot(self.a1.T, dz2) / m\n        db2 = np.sum(dz2, axis=0, keepdims=True) / m\n        \n        # Hidden layer gradients\n        dz1 = np.dot(dz2, self.W2.T) * self.sigmoid_derivative(self.a1)\n        dW1 = np.dot(X.T, dz1) / m\n        db1 = np.sum(dz1, axis=0, keepdims=True) / m\n        \n        return dW1, db1, dW2, db2\n    \n    def train(self, X, y, epochs, learning_rate):\n        losses = []\n        \n        for epoch in range(epochs):\n            # Forward pass\n            output = self.forward(X)\n            \n            # Calculate loss (binary cross-entropy)\n            loss = -np.mean(y * np.log(output + 1e-8) + (1 - y) * np.log(1 - output + 1e-8))\n            losses.append(loss)\n            \n            # Backward pass\n            dW1, db1, dW2, db2 = self.backward(X, y, output)\n            \n            # Update weights\n            self.W1 -= learning_rate * dW1\n            self.b1 -= learning_rate * db1\n            self.W2 -= learning_rate * dW2\n            self.b2 -= learning_rate * db2\n            \n            if epoch % 100 == 0:\n                print(f'Epoch {epoch}, Loss: {loss:.4f}')\n        \n        return losses\n    \n    def predict(self, X):\n        output = self.forward(X)\n        return (output > 0.5).astype(int)",
-      "key_concepts": [
-        "Weight initialization with small random values",
-        "Forward propagation through layers",
-        "Backpropagation with chain rule",
-        "Gradient descent weight updates",
-        "Binary cross-entropy loss"
-      ]
-    },
-    "test_cases": [
-      {
-        "input": "# XOR problem\nX = np.array([[0,0], [0,1], [1,0], [1,1]])\ny = np.array([[0], [1], [1], [0]])\nnn = NeuralNetwork(2, 4, 1)\nnn.train(X, y, 5000, 0.5)\npredictions = nn.predict(X)",
-        "expected_output": "predictions should be close to [[0], [1], [1], [0]]",
-        "description": "XOR classification problem"
-      }
-    ],
-    "evaluation_criteria": [
-      {
-        "criterion": "Correctness",
-        "weight": 0.4,
-        "description": "Correct implementation of forward and backward pass"
-      },
-      {
-        "criterion": "Code Quality",
-        "weight": 0.2,
-        "description": "Clean, well-structured code"
-      },
-      {
-        "criterion": "Mathematical Accuracy",
-        "weight": 0.3,
-        "description": "Correct gradient calculations"
-      },
-      {
-        "criterion": "Performance",
-        "weight": 0.1,
-        "description": "Model converges and learns"
-      }
-    ],
-    "tags": [
-      "Deep Learning",
-      "Neural Networks",
-      "NumPy",
-      "Backpropagation"
-    ],
-    "required_skills": [
-      "Python",
-      "Deep Learning"
-    ],
-    "hints": [
-      "Remember to clip values in sigmoid to avoid overflow",
-      "Use small random initialization for weights",
-      "Add small epsilon in log calculations to avoid log(0)"
-    ]
+    "tags": ["Fundamentals"],
+    "required_skills": ["Python"],
+    "hints": ["Data-driven learning"]
   },
   {
     "_id": "q_ai_0037",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Explain the difference between training data and testing data.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Training for learning", "Testing for evaluation", "Generalization check"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear comparison" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Both sets explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Analogy used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Split"],
+    "required_skills": ["Python"],
+    "hints": ["Practice vs exam"]
+  },
+  {
+    "_id": "q_ai_0038",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Data",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is data quality important in machine learning?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Garbage in garbage out", "Noise affects models", "Accuracy depends on data"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear reasoning" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Impact explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Real-world example" }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Quality"],
+    "required_skills": ["Python"],
+    "hints": ["Clean vs noisy data"]
+  },
+  {
+    "_id": "q_ai_0039",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is supervised learning? Give one example.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Uses labeled data", "Input-output mapping", "Example like spam detection"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Concept clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Correct definition" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Valid example" }
+    ],
+    "transcription_required": true,
+    "tags": ["Supervised Learning"],
+    "required_skills": ["Python"],
+    "hints": ["Labeled data"]
+  },
+  {
+    "_id": "q_ai_0040",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Explain unsupervised learning in simple terms.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["No labels", "Pattern discovery", "Clustering"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Simple explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Use case mentioned" }
+    ],
+    "transcription_required": true,
+    "tags": ["Unsupervised Learning"],
+    "required_skills": ["Python"],
+    "hints": ["No labels"]
+  },
+  {
+    "_id": "q_ai_0041",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Models",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a machine learning model?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Mathematical representation", "Learns patterns", "Used for prediction"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Definition clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Purpose explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Example used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Model"],
+    "required_skills": ["Python"],
+    "hints": ["Prediction function"]
+  },
+  {
+    "_id": "q_ai_0042",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Training",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What happens during the training phase of a machine learning model?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Learning from data", "Parameter updates", "Error reduction"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Process clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Steps explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Analogy used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Training"],
+    "required_skills": ["Python"],
+    "hints": ["Learning from mistakes"]
+  },
+  {
+    "_id": "q_ai_0043",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Evaluation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is model accuracy?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Correct predictions", "Total predictions", "Performance metric"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Metric explained" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Correct definition" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Simple calculation" }
+    ],
+    "transcription_required": true,
+    "tags": ["Accuracy"],
+    "required_skills": ["Python"],
+    "hints": ["Correct vs total"]
+  },
+  {
+    "_id": "q_ai_0044",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Bias and Variance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is underfitting in machine learning?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Model too simple", "High bias", "Poor performance"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Concept clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Cause explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Analogy used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Underfitting"],
+    "required_skills": ["Python"],
+    "hints": ["Too simple model"]
+  },
+  {
+    "_id": "q_ai_0045",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Generalization",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is generalization important in machine learning?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Works on unseen data", "Avoids memorization", "Real-world usability"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Reasoning clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Importance explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Practical example" }
+    ],
+    "transcription_required": true,
+    "tags": ["Generalization"],
+    "required_skills": ["Python"],
+    "hints": ["Unseen data"]
+  },
+  {
+    "_id": "q_ai_0046",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Overfitting",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How can overfitting be reduced in a machine learning model?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Regularization", "More data", "Simpler models"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Solutions clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Multiple methods mentioned" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Example provided" }
+    ],
+    "transcription_required": true,
+    "tags": ["Overfitting"],
+    "required_skills": ["Python"],
+    "hints": ["Reduce complexity"]
+  },
+  {
+    "_id": "q_ai_0047",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Reinforcement Learning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is reinforcement learning in simple terms?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Learning through rewards", "Trial and error", "Agent and environment"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Simple explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Simple scenario" }
+    ],
+    "transcription_required": true,
+    "tags": ["Reinforcement Learning"],
+    "required_skills": ["Python"],
+    "hints": ["Rewards and penalties"]
+  },
+  {
+    "_id": "q_ai_0048",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Preprocessing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is data preprocessing required before training a model?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Handles missing values", "Removes noise", "Improves performance"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Key steps mentioned" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Example used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["Clean data"]
+  },
+  {
+    "_id": "q_ai_0049",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Applications",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Mention two real-world applications of machine learning.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Recommendation systems", "Spam filtering", "Voice assistants"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Two applications given" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Relevant examples" }
+    ],
+    "transcription_required": true,
+    "tags": ["Applications"],
+    "required_skills": ["Python"],
+    "hints": ["Daily life examples"]
+  },
+  {
+    "_id": "q_ai_0050",
+    "question_type": "voice",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does it mean for a model to perform well on unseen data?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": ["Generalization", "Not memorizing training data", "Reliable predictions"],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Concept clear" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Meaning explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Practical example" }
+    ],
+    "transcription_required": true,
+    "tags": ["Generalization"],
+    "required_skills": ["Python"],
+    "hints": ["Unseen test data"]
+  },
+  {
+    "_id": "q_ai_0051",
     "question_type": "coding",
     "domain": "Artificial Intelligence & Machine Learning",
-    "topic": "PyTorch",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 600,
-    "text": "Create a simple CNN in PyTorch for MNIST digit classification. The model should have 2 convolutional layers, max pooling, and 2 fully connected layers.",
+    "topic": "NumPy Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a Python function to compute the sum of all elements in a NumPy array.",
     "coding_instructions": {
       "language": "python",
-      "allowed_libraries": [
-        "torch",
-        "torch.nn",
-        "torch.optim"
-      ],
-      "starter_code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass MNIST_CNN(nn.Module):\n    def __init__(self):\n        super(MNIST_CNN, self).__init__()\n        # Define layers here\n        pass\n    \n    def forward(self, x):\n        # Define forward pass\n        pass",
-      "function_signature": "class MNIST_CNN(nn.Module)"
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef array_sum(arr):\n    pass",
+      "function_signature": "array_sum(arr: np.ndarray) -> float"
     },
     "expected_answer": {
-      "solution": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass MNIST_CNN(nn.Module):\n    def __init__(self):\n        super(MNIST_CNN, self).__init__()\n        # Convolutional layers\n        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)  # 28x28x1 -> 28x28x32\n        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1) # 14x14x32 -> 14x14x64\n        \n        # Pooling layer\n        self.pool = nn.MaxPool2d(2, 2)  # 2x2 pooling\n        \n        # Fully connected layers\n        self.fc1 = nn.Linear(64 * 7 * 7, 128)  # After 2 pooling: 28->14->7\n        self.fc2 = nn.Linear(128, 10)  # 10 classes for digits 0-9\n        \n        # Dropout for regularization\n        self.dropout = nn.Dropout(0.25)\n    \n    def forward(self, x):\n        # First conv block\n        x = self.pool(F.relu(self.conv1(x)))  # 28x28x32 -> 14x14x32\n        \n        # Second conv block\n        x = self.pool(F.relu(self.conv2(x)))  # 14x14x64 -> 7x7x64\n        \n        # Flatten\n        x = x.view(-1, 64 * 7 * 7)\n        \n        # Fully connected layers\n        x = F.relu(self.fc1(x))\n        x = self.dropout(x)\n        x = self.fc2(x)\n        \n        return x\n\n# Example usage\nmodel = MNIST_CNN()\nprint(model)\n\n# Test with random input\ntest_input = torch.randn(1, 1, 28, 28)\noutput = model(test_input)\nprint(f'Output shape: {output.shape}')  # Should be [1, 10]",
-      "key_concepts": [
-        "Conv2d for feature extraction",
-        "MaxPool2d for dimensionality reduction",
-        "ReLU activation function",
-        "Dropout for regularization",
-        "Proper dimension calculations through layers"
-      ]
+      "solution": "return np.sum(arr)",
+      "key_concepts": ["Array aggregation", "NumPy sum"]
     },
     "test_cases": [
       {
-        "input": "test_input = torch.randn(1, 1, 28, 28)\nmodel = MNIST_CNN()\noutput = model(test_input)",
-        "expected_output": "output.shape == torch.Size([1, 10])",
-        "description": "Output shape verification"
-      },
-      {
-        "input": "test_batch = torch.randn(32, 1, 28, 28)\noutput = model(test_batch)",
-        "expected_output": "output.shape == torch.Size([32, 10])",
-        "description": "Batch processing"
+        "input": "np.array([1, 2, 3])",
+        "expected_output": "6",
+        "description": "Basic sum"
       }
     ],
     "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Returns correct sum" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable and concise" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty arrays" }
+    ],
+    "tags": ["Python", "NumPy"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.sum()"]
+  },
+
+  {
+    "_id": "q_ai_0052",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a Python function to compute the median of a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef compute_median(arr):\n    pass",
+      "function_signature": "compute_median(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.median(arr)",
+      "key_concepts": ["Median", "Statistical measures"]
+    },
+    "test_cases": [
       {
-        "criterion": "Architecture Correctness",
-        "weight": 0.4,
-        "description": "Correct layer configuration and dimensions"
-      },
-      {
-        "criterion": "PyTorch Best Practices",
-        "weight": 0.3,
-        "description": "Proper use of nn.Module, super(), etc."
-      },
-      {
-        "criterion": "Code Quality",
-        "weight": 0.3,
-        "description": "Clean, readable implementation"
+        "input": "np.array([3, 1, 2])",
+        "expected_output": "2.0",
+        "description": "Odd count"
       }
     ],
-    "tags": [
-      "PyTorch",
-      "CNN",
-      "Computer Vision",
-      "Deep Learning"
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Median computed correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear implementation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles even-sized arrays" }
     ],
-    "required_skills": [
-      "PyTorch",
-      "Deep Learning"
+    "tags": ["Python", "NumPy", "Statistics"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.median()"]
+  },
+
+  {
+    "_id": "q_ai_0053",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Data Preprocessing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to clip all values in a NumPy array between 0 and 1.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef clip_values(arr):\n    pass",
+      "function_signature": "clip_values(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.clip(arr, 0, 1)",
+      "key_concepts": ["Clipping", "Value bounding"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([-1, 0.5, 2])",
+        "expected_output": "np.array([0.0, 0.5, 1.0])",
+        "description": "Values out of range"
+      }
     ],
-    "hints": [
-      "Remember MNIST images are 28x28 grayscale",
-      "Calculate output dimensions after each pooling layer",
-      "Use view() to flatten before fully connected layers"
-    ]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct clipping" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Efficient NumPy usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary values" }
+    ],
+    "tags": ["Python", "NumPy", "Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.clip()"]
+  },
+
+  {
+    "_id": "q_ai_0054",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Distance Metrics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute Manhattan distance between two NumPy vectors.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef manhattan_distance(a, b):\n    pass",
+      "function_signature": "manhattan_distance(a: np.ndarray, b: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.sum(np.abs(a - b))",
+      "key_concepts": ["Manhattan distance", "Absolute difference"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2]), np.array([3,4])",
+        "expected_output": "4",
+        "description": "Basic distance"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Distance computed correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized solution" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero distance" }
+    ],
+    "tags": ["Python", "NumPy", "Distance"],
+    "required_skills": ["Python"],
+    "hints": ["Use abs and sum"]
+  },
+
+  {
+    "_id": "q_ai_0055",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Activation Functions",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to implement the ReLU activation function.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef relu(x):\n    pass",
+      "function_signature": "relu(x: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.maximum(0, x)",
+      "key_concepts": ["ReLU", "Activation function"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([-1, 0, 2])",
+        "expected_output": "np.array([0, 0, 2])",
+        "description": "Negative and positive values"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Applies ReLU correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses vectorized ops" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zeros correctly" }
+    ],
+    "tags": ["Python", "NumPy", "Neural Networks"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.maximum()"]
+  },
+  {
+    "_id": "q_ai_0056",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Array Operations",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a Python function to find the maximum value in a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef find_max(arr):\n    pass",
+      "function_signature": "find_max(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.max(arr)",
+      "key_concepts": ["Maximum value", "NumPy aggregation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1, 5, 3])",
+        "expected_output": "5",
+        "description": "Find max value"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct maximum returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean code" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles negative values" }
+    ],
+    "tags": ["Python", "NumPy"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.max()"]
+  },
+
+  {
+    "_id": "q_ai_0057",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Array Operations",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a Python function to find the minimum value in a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef find_min(arr):\n    pass",
+      "function_signature": "find_min(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.min(arr)",
+      "key_concepts": ["Minimum value", "NumPy aggregation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([2, -1, 4])",
+        "expected_output": "-1",
+        "description": "Find min value"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct minimum returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable implementation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles mixed values" }
+    ],
+    "tags": ["Python", "NumPy"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.min()"]
+  },
+
+  {
+    "_id": "q_ai_0058",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Matrix Operations",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a Python function to compute the matrix multiplication of two NumPy matrices.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef matrix_multiply(a, b):\n    pass",
+      "function_signature": "matrix_multiply(a: np.ndarray, b: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.matmul(a, b)",
+      "key_concepts": ["Matrix multiplication", "Linear algebra"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([[1,2],[3,4]]), np.array([[5,6],[7,8]])",
+        "expected_output": "np.array([[19,22],[43,50]])",
+        "description": "Basic matrix multiplication"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct multiplication" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy operations" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles incompatible shapes" }
+    ],
+    "tags": ["Python", "NumPy", "Linear Algebra"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.matmul() or @ operator"]
+  },
+
+  {
+    "_id": "q_ai_0059",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Probability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute the probability distribution of values in a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef probability_distribution(arr):\n    pass",
+      "function_signature": "probability_distribution(arr: np.ndarray) -> dict"
+    },
+    "expected_answer": {
+      "solution": "values, counts = np.unique(arr, return_counts=True)\nreturn dict(zip(values, counts / len(arr)))",
+      "key_concepts": ["Probability distribution", "Frequency"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,1,2])",
+        "expected_output": "{1: 0.6666666666666666, 2: 0.3333333333333333}",
+        "description": "Simple distribution"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Probabilities sum to 1" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles single-value arrays" }
+    ],
+    "tags": ["Python", "NumPy", "Probability"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.unique()"]
+  },
+
+  {
+    "_id": "q_ai_0060",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Loss Functions",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute Mean Squared Error (MSE) between true and predicted values.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef mean_squared_error(y_true, y_pred):\n    pass",
+      "function_signature": "mean_squared_error(y_true: np.ndarray, y_pred: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.mean((y_true - y_pred) ** 2)",
+      "key_concepts": ["MSE", "Regression loss"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2]), np.array([2,4])",
+        "expected_output": "2.5",
+        "description": "Basic MSE"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct MSE value" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized computation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero error" }
+    ],
+    "tags": ["Python", "NumPy", "Loss Function"],
+    "required_skills": ["Python"],
+    "hints": ["Subtract, square, then mean"]
+  },
+
+  {
+    "_id": "q_ai_0061",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Feature Scaling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to scale a NumPy array by dividing each element by the maximum value.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef scale_by_max(arr):\n    pass",
+      "function_signature": "scale_by_max(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return arr / np.max(arr)",
+      "key_concepts": ["Scaling", "Normalization"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([2,4,6])",
+        "expected_output": "np.array([0.33333333, 0.66666667, 1.0])",
+        "description": "Scale values"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct scaling" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles max=0 safely" }
+    ],
+    "tags": ["Python", "NumPy", "Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["Divide by maximum value"]
+  },
+
+  {
+    "_id": "q_ai_0062",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Thresholding",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert a NumPy array into binary values using a threshold.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef apply_threshold(arr, threshold):\n    pass",
+      "function_signature": "apply_threshold(arr: np.ndarray, threshold: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return (arr >= threshold).astype(int)",
+      "key_concepts": ["Thresholding", "Binary conversion"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0.2,0.7,0.5]), 0.5",
+        "expected_output": "np.array([0,1,1])",
+        "description": "Binary thresholding"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Threshold applied correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized approach" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles equality case" }
+    ],
+    "tags": ["Python", "NumPy"],
+    "required_skills": ["Python"],
+    "hints": ["Use comparison operators"]
+  },
+
+  {
+    "_id": "q_ai_0063",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Evaluation Metrics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate accuracy given true and predicted labels.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef calculate_accuracy(y_true, y_pred):\n    pass",
+      "function_signature": "calculate_accuracy(y_true: np.ndarray, y_pred: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.mean(y_true == y_pred)",
+      "key_concepts": ["Accuracy", "Classification metric"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,0,1]), np.array([1,1,1])",
+        "expected_output": "0.6666666666666666",
+        "description": "Partial match"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Accuracy computed correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty arrays" }
+    ],
+    "tags": ["Python", "NumPy", "Metrics"],
+    "required_skills": ["Python"],
+    "hints": ["Compare and take mean"]
+  },
+
+  {
+    "_id": "q_ai_0064",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Randomization",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to shuffle a NumPy array randomly.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef shuffle_array(arr):\n    pass",
+      "function_signature": "shuffle_array(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "np.random.shuffle(arr)\nreturn arr",
+      "key_concepts": ["Random shuffle", "Data randomization"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4])",
+        "expected_output": "Array with same elements in random order",
+        "description": "Shuffle elements"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "All elements preserved" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Proper NumPy usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles small arrays" }
+    ],
+    "tags": ["Python", "NumPy"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.random.shuffle()"]
+  },
+
+  {
+    "_id": "q_ai_0065",
+    "question_type": "coding",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "topic": "Data Splitting",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to split a NumPy array into training and testing sets using a given ratio.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef train_test_split(arr, train_ratio):\n    pass",
+      "function_signature": "train_test_split(arr: np.ndarray, train_ratio: float) -> tuple"
+    },
+    "expected_answer": {
+      "solution": "split = int(len(arr) * train_ratio)\nreturn arr[:split], arr[split:]",
+      "key_concepts": ["Train-test split", "Data preparation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4,5]), 0.6",
+        "expected_output": "(np.array([1,2,3]), np.array([4,5]))",
+        "description": "Basic split"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct split size" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles ratio bounds" }
+    ],
+    "tags": ["Python", "NumPy", "Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["Compute index using ratio"]
   }
 ]

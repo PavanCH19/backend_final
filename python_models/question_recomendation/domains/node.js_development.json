@@ -1,0 +1,1907 @@
+[
+  {
+    "_id": "q_node_0001",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is Node.js primarily used for?",
+    "options": [
+      "Developing desktop applications only",
+      "Server-side JavaScript execution",
+      "Designing UI layouts",
+      "Database management"
+    ],
+    "answer": "Server-side JavaScript execution",
+    "explanation": "Node.js allows JavaScript to run on the server using the V8 engine.",
+    "tags": ["Node.js", "Fundamentals"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Server-side JS"]
+  },
+  {
+    "_id": "q_node_0002",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Architecture",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What architecture does Node.js follow?",
+    "options": [
+      "Multi-threaded blocking",
+      "Single-threaded event-driven non-blocking",
+      "Process-based synchronous",
+      "Multi-process blocking"
+    ],
+    "answer": "Single-threaded event-driven non-blocking",
+    "explanation": "Node.js uses an event loop and non-blocking I/O for high scalability.",
+    "tags": ["Node.js", "Architecture"],
+    "required_skills": ["Event Loop"],
+    "hints": ["Non-blocking I/O"]
+  },
+  {
+    "_id": "q_node_0003",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Event Loop",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the role of the event loop in Node.js?",
+    "options": [
+      "Compile JavaScript code",
+      "Handle asynchronous callbacks",
+      "Manage database schemas",
+      "Render HTML pages"
+    ],
+    "answer": "Handle asynchronous callbacks",
+    "explanation": "The event loop processes asynchronous operations efficiently.",
+    "tags": ["Node.js", "Event Loop"],
+    "required_skills": ["Async Programming"],
+    "hints": ["Async handling"]
+  },
+  {
+    "_id": "q_node_0004",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Modules",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which module system is used by default in Node.js?",
+    "options": [
+      "AMD",
+      "CommonJS",
+      "ES Modules only",
+      "RequireJS"
+    ],
+    "answer": "CommonJS",
+    "explanation": "Node.js traditionally uses CommonJS with require() and module.exports.",
+    "tags": ["Node.js", "Modules"],
+    "required_skills": ["Module System"],
+    "hints": ["require()"]
+  },
+  {
+    "_id": "q_node_0005",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "npm",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of npm?",
+    "options": [
+      "Run Node.js applications",
+      "Manage Node.js packages and dependencies",
+      "Compile JavaScript",
+      "Host databases"
+    ],
+    "answer": "Manage Node.js packages and dependencies",
+    "explanation": "npm is the package manager for Node.js ecosystem.",
+    "tags": ["Node.js", "npm"],
+    "required_skills": ["Package Management"],
+    "hints": ["Dependencies"]
+  },
+  {
+    "_id": "q_node_0006",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Asynchronous Programming",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which construct is preferred for handling asynchronous code in modern Node.js?",
+    "options": [
+      "Callbacks only",
+      "Promises with async/await",
+      "Blocking loops",
+      "Synchronous functions"
+    ],
+    "answer": "Promises with async/await",
+    "explanation": "Async/await provides cleaner and more readable asynchronous code.",
+    "tags": ["Node.js", "Async"],
+    "required_skills": ["Promises"],
+    "hints": ["Async/await"]
+  },
+  {
+    "_id": "q_node_0007",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "File System",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which core module is used for file operations in Node.js?",
+    "options": [
+      "http",
+      "path",
+      "fs",
+      "os"
+    ],
+    "answer": "fs",
+    "explanation": "The fs module provides APIs for file system operations.",
+    "tags": ["Node.js", "File System"],
+    "required_skills": ["File Handling"],
+    "hints": ["File operations"]
+  },
+  {
+    "_id": "q_node_0008",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "HTTP",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which module is used to create a basic HTTP server in Node.js?",
+    "options": [
+      "net",
+      "http",
+      "express",
+      "url"
+    ],
+    "answer": "http",
+    "explanation": "The http module allows creation of web servers in Node.js.",
+    "tags": ["Node.js", "HTTP"],
+    "required_skills": ["Web Servers"],
+    "hints": ["HTTP server"]
+  },
+  {
+    "_id": "q_node_0009",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Frameworks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which framework is most commonly used to build APIs in Node.js?",
+    "options": [
+      "Django",
+      "Flask",
+      "Express.js",
+      "Spring Boot"
+    ],
+    "answer": "Express.js",
+    "explanation": "Express.js is a minimal and flexible Node.js web framework.",
+    "tags": ["Node.js", "Frameworks"],
+    "required_skills": ["Express.js"],
+    "hints": ["Minimal framework"]
+  },
+  {
+    "_id": "q_node_0010",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Middleware",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is middleware in Express.js?",
+    "options": [
+      "Database layer",
+      "Function that handles request-response cycle",
+      "UI component",
+      "Deployment script"
+    ],
+    "answer": "Function that handles request-response cycle",
+    "explanation": "Middleware functions process requests before sending responses.",
+    "tags": ["Node.js", "Middleware"],
+    "required_skills": ["Express Middleware"],
+    "hints": ["Request processing"]
+  },
+
+  {
+    "_id": "q_node_0011",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Databases",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which database is commonly used with Node.js for NoSQL storage?",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Oracle"
+    ],
+    "answer": "MongoDB",
+    "explanation": "MongoDB integrates well with Node.js using JSON-like documents.",
+    "tags": ["Node.js", "Databases"],
+    "required_skills": ["MongoDB"],
+    "hints": ["NoSQL database"]
+  },
+  {
+    "_id": "q_node_0012",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Authentication",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which approach is commonly used for stateless authentication in Node.js APIs?",
+    "options": [
+      "Server sessions",
+      "JWT",
+      "Cookies only",
+      "CAPTCHA"
+    ],
+    "answer": "JWT",
+    "explanation": "JWT enables stateless authentication for scalable APIs.",
+    "tags": ["Node.js", "Authentication"],
+    "required_skills": ["JWT"],
+    "hints": ["Token-based"]
+  },
+  {
+    "_id": "q_node_0013",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which practice helps secure Node.js applications?",
+    "options": [
+      "Hardcoding secrets",
+      "Using environment variables",
+      "Disabling HTTPS",
+      "Ignoring input validation"
+    ],
+    "answer": "Using environment variables",
+    "explanation": "Environment variables prevent sensitive data exposure in code.",
+    "tags": ["Node.js", "Security"],
+    "required_skills": ["Secure Coding"],
+    "hints": ["Secrets management"]
+  },
+  {
+    "_id": "q_node_0014",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Streams",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the advantage of using streams in Node.js?",
+    "options": [
+      "Load entire file into memory",
+      "Process data in chunks",
+      "Block event loop",
+      "Simplify UI design"
+    ],
+    "answer": "Process data in chunks",
+    "explanation": "Streams handle large data efficiently without high memory usage.",
+    "tags": ["Node.js", "Streams"],
+    "required_skills": ["Stream API"],
+    "hints": ["Chunk processing"]
+  },
+  {
+    "_id": "q_node_0015",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Error Handling",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "How should errors be handled in asynchronous Node.js code?",
+    "options": [
+      "Using try-catch only",
+      "Ignoring errors",
+      "Using try-catch with async/await or promise catch",
+      "Restarting server"
+    ],
+    "answer": "Using try-catch with async/await or promise catch",
+    "explanation": "Proper error handling prevents crashes and ensures stability.",
+    "tags": ["Node.js", "Error Handling"],
+    "required_skills": ["Async Error Handling"],
+    "hints": ["Promise catch"]
+  },
+  {
+    "_id": "q_node_0016",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which library is commonly used for testing Node.js applications?",
+    "options": [
+      "JUnit",
+      "PyTest",
+      "Mocha",
+      "Selenium"
+    ],
+    "answer": "Mocha",
+    "explanation": "Mocha is a popular JavaScript testing framework for Node.js.",
+    "tags": ["Node.js", "Testing"],
+    "required_skills": ["Testing"],
+    "hints": ["Test framework"]
+  },
+  {
+    "_id": "q_node_0017",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique improves performance in Node.js applications?",
+    "options": [
+      "Blocking synchronous calls",
+      "Caching frequently used data",
+      "Large synchronous loops",
+      "Single request handling"
+    ],
+    "answer": "Caching frequently used data",
+    "explanation": "Caching reduces repeated computation and database calls.",
+    "tags": ["Node.js", "Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Reuse data"]
+  },
+  {
+    "_id": "q_node_0018",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Scalability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "How can Node.js applications be scaled effectively?",
+    "options": [
+      "Using single instance only",
+      "Using clustering or load balancing",
+      "Increasing synchronous code",
+      "Disabling async operations"
+    ],
+    "answer": "Using clustering or load balancing",
+    "explanation": "Clustering allows Node.js apps to utilize multiple CPU cores.",
+    "tags": ["Node.js", "Scalability"],
+    "required_skills": ["Clustering"],
+    "hints": ["Multi-core"]
+  },
+  {
+    "_id": "q_node_0019",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which tool is commonly used to manage Node.js processes in production?",
+    "options": [
+      "Webpack",
+      "PM2",
+      "Babel",
+      "ESLint"
+    ],
+    "answer": "PM2",
+    "explanation": "PM2 manages processes, restarts apps, and monitors performance.",
+    "tags": ["Node.js", "Deployment"],
+    "required_skills": ["Process Management"],
+    "hints": ["Production manager"]
+  },
+  {
+    "_id": "q_node_0020",
+    "question_type": "multiple-choice",
+    "domain": "Node.js Development",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is Node.js popular for building real-time applications?",
+    "options": [
+      "Blocking architecture",
+      "Event-driven and non-blocking nature",
+      "Heavy computation focus",
+      "Desktop-first design"
+    ],
+    "answer": "Event-driven and non-blocking nature",
+    "explanation": "Node.js efficiently handles concurrent real-time connections.",
+    "tags": ["Node.js", "Trends"],
+    "required_skills": ["Real-time Systems"],
+    "hints": ["Concurrency"]
+  },
+  {
+    "_id": "q_node_0021",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Node.js Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain what Node.js is and why it is suitable for building scalable network applications.",
+    "expected_answer": {
+      "key_points": [
+        "Node.js is a JavaScript runtime built on Chrome V8",
+        "Uses event-driven, non-blocking I/O",
+        "Single-threaded but highly scalable",
+        "Efficient for real-time applications"
+      ],
+      "example_scenarios": [
+        "Building a chat application",
+        "Creating a real-time notification system"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Node.js", "Backend"],
+    "required_skills": ["JavaScript"],
+    "hints": [
+      "Focus on non-blocking I/O",
+      "Mention real-time use cases"
+    ]
+  },
+  {
+    "_id": "q_node_0022",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Event Loop",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the Node.js event loop and how asynchronous operations are handled.",
+    "expected_answer": {
+      "key_points": [
+        "Event loop manages async callbacks",
+        "Phases of event loop",
+        "Call stack and callback queue",
+        "Non-blocking execution"
+      ],
+      "example_scenarios": [
+        "Handling multiple API requests",
+        "Processing file uploads asynchronously"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Accuracy", "weight": 0.4 },
+      { "criterion": "Depth", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["Event Loop", "Asynchronous"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention call stack and queues",
+      "Explain async behavior"
+    ]
+  },
+  {
+    "_id": "q_node_0023",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Modules",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain CommonJS modules in Node.js and how module exporting and importing works.",
+    "expected_answer": {
+      "key_points": [
+        "require() and module.exports",
+        "Modular programming",
+        "Code reusability",
+        "Built-in and custom modules"
+      ],
+      "example_scenarios": [
+        "Creating utility modules",
+        "Separating database logic"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Clarity", "weight": 0.4 },
+      { "criterion": "Practical Use", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Modules", "CommonJS"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Explain require and exports",
+      "Give simple examples"
+    ]
+  },
+  {
+    "_id": "q_node_0024",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Express.js",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe Express.js and explain how it simplifies backend development in Node.js.",
+    "expected_answer": {
+      "key_points": [
+        "Minimal web framework",
+        "Routing and middleware",
+        "Request-response handling",
+        "API development"
+      ],
+      "example_scenarios": [
+        "Building REST APIs",
+        "Creating backend for web applications"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Framework Understanding", "weight": 0.4 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Express.js", "Backend"],
+    "required_skills": ["Node.js", "Express"],
+    "hints": [
+      "Mention middleware",
+      "Explain routing"
+    ]
+  },
+  {
+    "_id": "q_node_0025",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Middleware",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain middleware in Express.js and its role in request processing.",
+    "expected_answer": {
+      "key_points": [
+        "Middleware functions",
+        "Request-response cycle",
+        "Built-in vs custom middleware",
+        "Execution order"
+      ],
+      "example_scenarios": [
+        "Authentication checks",
+        "Logging requests"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["Middleware", "Express.js"],
+    "required_skills": ["Express.js"],
+    "hints": [
+      "Think about request flow",
+      "Give real use cases"
+    ]
+  },
+  {
+    "_id": "q_node_0026",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Asynchronous Programming",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Compare callbacks, promises, and async/await in Node.js.",
+    "expected_answer": {
+      "key_points": [
+        "Callback pattern",
+        "Promise-based handling",
+        "Async/await syntax",
+        "Readability and error handling"
+      ],
+      "example_scenarios": [
+        "Fetching data from APIs",
+        "Database queries"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparison Quality", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Async", "Promises"],
+    "required_skills": ["JavaScript"],
+    "hints": [
+      "Focus on readability",
+      "Mention error handling"
+    ]
+  },
+  {
+    "_id": "q_node_0027",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "File System",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the Node.js file system (fs) module and its common use cases.",
+    "expected_answer": {
+      "key_points": [
+        "Reading and writing files",
+        "Synchronous vs asynchronous methods",
+        "Streams",
+        "File handling use cases"
+      ],
+      "example_scenarios": [
+        "Uploading files",
+        "Reading configuration files"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Use Cases", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["File System", "fs"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention async methods",
+      "Give examples"
+    ]
+  },
+  {
+    "_id": "q_node_0028",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "REST APIs",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how RESTful APIs are designed and implemented using Node.js and Express.",
+    "expected_answer": {
+      "key_points": [
+        "REST principles",
+        "HTTP methods",
+        "Status codes",
+        "Express routing"
+      ],
+      "example_scenarios": [
+        "User management system",
+        "Product catalog API"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "API Design Understanding", "weight": 0.4 },
+      { "criterion": "Implementation Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["REST", "APIs"],
+    "required_skills": ["Node.js", "Express"],
+    "hints": [
+      "Mention HTTP verbs",
+      "Explain routes"
+    ]
+  },
+  {
+    "_id": "q_node_0029",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Authentication",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain authentication and authorization in Node.js applications using JWT.",
+    "expected_answer": {
+      "key_points": [
+        "Difference between authentication and authorization",
+        "JWT structure",
+        "Token-based security",
+        "Middleware usage"
+      ],
+      "example_scenarios": [
+        "Securing REST APIs",
+        "Role-based access control"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Security Understanding", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Practical Relevance", "weight": 0.3 }
+    ],
+    "tags": ["JWT", "Security"],
+    "required_skills": ["Node.js", "Security"],
+    "hints": [
+      "Explain token flow",
+      "Mention middleware"
+    ]
+  },
+  {
+    "_id": "q_node_0030",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Error Handling",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain error handling mechanisms in Node.js and Express applications.",
+    "expected_answer": {
+      "key_points": [
+        "Try-catch blocks",
+        "Error-handling middleware",
+        "Custom error responses",
+        "Async error handling"
+      ],
+      "example_scenarios": [
+        "Handling API failures",
+        "Database error management"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Error Handling Knowledge", "weight": 0.4 },
+      { "criterion": "Implementation Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Error Handling"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention middleware",
+      "Cover async errors"
+    ]
+  },
+  {
+    "_id": "q_node_0031",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Databases",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how Node.js connects with databases and compare SQL and NoSQL usage.",
+    "expected_answer": {
+      "key_points": [
+        "Database drivers",
+        "ORM/ODM usage",
+        "SQL vs NoSQL",
+        "Scalability considerations"
+      ],
+      "example_scenarios": [
+        "Using MongoDB with Node.js",
+        "Using MySQL with Express"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Database Understanding", "weight": 0.4 },
+      { "criterion": "Comparison Quality", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Databases", "MongoDB"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention ODM/ORM",
+      "Give examples"
+    ]
+  },
+  {
+    "_id": "q_node_0032",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Streams",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain streams in Node.js and their advantages over traditional file handling.",
+    "expected_answer": {
+      "key_points": [
+        "Readable and writable streams",
+        "Memory efficiency",
+        "Pipe mechanism",
+        "Use cases"
+      ],
+      "example_scenarios": [
+        "Large file processing",
+        "Video streaming"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Streams"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention memory efficiency",
+      "Explain pipe()"
+    ]
+  },
+  {
+    "_id": "q_node_0033",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Performance",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss techniques to improve performance and scalability in Node.js applications.",
+    "expected_answer": {
+      "key_points": [
+        "Clustering",
+        "Load balancing",
+        "Caching",
+        "Asynchronous optimization"
+      ],
+      "example_scenarios": [
+        "High-traffic APIs",
+        "Real-time applications"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Performance Knowledge", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Performance", "Scalability"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention clustering",
+      "Think scalability"
+    ]
+  },
+  {
+    "_id": "q_node_0034",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Testing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain testing strategies for Node.js applications and the role of testing frameworks.",
+    "expected_answer": {
+      "key_points": [
+        "Unit and integration testing",
+        "Testing frameworks",
+        "Mocking",
+        "Test automation"
+      ],
+      "example_scenarios": [
+        "API endpoint testing",
+        "Middleware testing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Testing Knowledge", "weight": 0.4 },
+      { "criterion": "Framework Understanding", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Testing", "Node.js"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention unit testing",
+      "Give examples"
+    ]
+  },
+  {
+    "_id": "q_node_0035",
+    "question_type": "subjective",
+    "domain": "Node.js Development",
+    "topic": "Deployment",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the process of deploying a Node.js application in a production environment.",
+    "expected_answer": {
+      "key_points": [
+        "Environment configuration",
+        "Process managers",
+        "Security considerations",
+        "Monitoring"
+      ],
+      "example_scenarios": [
+        "Deploying REST APIs",
+        "Hosting backend services"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Deployment Understanding", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Deployment", "Production"],
+    "required_skills": ["Node.js"],
+    "hints": [
+      "Mention environment variables",
+      "Think production-ready"
+    ]
+  },
+   {
+    "_id": "q_node_0036",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Node.js and why is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "JavaScript runtime",
+        "Built on Chrome V8 engine",
+        "Used for server-side development"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Node Basics"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Server-side JavaScript"]
+  },
+  {
+    "_id": "q_node_0037",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Architecture",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the event-driven architecture in Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Event loop",
+        "Non-blocking operations",
+        "Asynchronous callbacks"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Event Loop"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Async execution"]
+  },
+  {
+    "_id": "q_node_0038",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Non-Blocking I/O",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does non-blocking I/O mean in Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Does not wait for tasks to finish",
+        "Improves performance",
+        "Handles multiple requests"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Non-blocking"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Does not wait"]
+  },
+  {
+    "_id": "q_node_0039",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "NPM",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is NPM and why is it important?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Node Package Manager",
+        "Manages dependencies",
+        "Provides reusable libraries"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["NPM"],
+    "required_skills": ["Node Basics"],
+    "hints": ["Package manager"]
+  },
+  {
+    "_id": "q_node_0040",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Modules",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are modules in Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Reusable code blocks",
+        "Built-in and custom modules",
+        "Use require or import"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Modules"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Reusable code"]
+  },
+  {
+    "_id": "q_node_0041",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Express.js",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Express.js and why is it used with Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Web framework for Node.js",
+        "Simplifies routing",
+        "Builds APIs easily"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Express"],
+    "required_skills": ["Node.js"],
+    "hints": ["Web framework"]
+  },
+  {
+    "_id": "q_node_0042",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Routing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is routing in a Node.js application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Handles HTTP requests",
+        "Maps URLs to logic",
+        "Uses methods like GET and POST"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Routing"],
+    "required_skills": ["HTTP Basics"],
+    "hints": ["URL handling"]
+  },
+  {
+    "_id": "q_node_0043",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Middleware",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is middleware in Express.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Functions between request and response",
+        "Modifies requests",
+        "Used for authentication and logging"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Middleware"],
+    "required_skills": ["Express.js"],
+    "hints": ["Request pipeline"]
+  },
+  {
+    "_id": "q_node_0044",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Databases",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How does Node.js connect to a database?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Uses database drivers",
+        "Supports SQL and NoSQL",
+        "Uses libraries like Mongoose"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Database"],
+    "required_skills": ["Database Basics"],
+    "hints": ["MongoDB, MySQL"]
+  },
+  {
+    "_id": "q_node_0045",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "REST APIs",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a REST API and how is it built using Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Uses HTTP methods",
+        "Stateless communication",
+        "Built using Express"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["REST API"],
+    "required_skills": ["HTTP"],
+    "hints": ["GET POST PUT DELETE"]
+  },
+  {
+    "_id": "q_node_0046",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Authentication",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is authentication handled in Node.js applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Login systems",
+        "JWT or sessions",
+        "Middleware based auth"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Authentication"],
+    "required_skills": ["Security Basics"],
+    "hints": ["JWT tokens"]
+  },
+  {
+    "_id": "q_node_0047",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Error Handling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How does error handling work in Node.js?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "try-catch blocks",
+        "Error middleware",
+        "Graceful failure handling"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Error Handling"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Handling failures"]
+  },
+  {
+    "_id": "q_node_0048",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Deployment",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is a Node.js application deployed?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Hosting platforms",
+        "Environment variables",
+        "Process managers like PM2"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Deployment"],
+    "required_skills": ["Server Basics"],
+    "hints": ["Production setup"]
+  },
+  {
+    "_id": "q_node_0049",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Performance",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What factors affect the performance of a Node.js application?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Async code",
+        "Event loop efficiency",
+        "Database queries"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Fast responses"]
+  },
+  {
+    "_id": "q_node_0050",
+    "question_type": "voice",
+    "domain": "Node.js Development",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career opportunities are available for Node.js developers?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Backend developer",
+        "Full stack developer",
+        "API developer"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Node.js"],
+    "hints": ["Server-side jobs"]
+  },
+  {
+    "_id": "q_node_0051",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a Node.js server is running.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function isServerRunning(status) {\n  \n}",
+      "function_signature": "isServerRunning(status: boolean) -> boolean"
+    },
+    "expected_answer": {
+      "solution": "return status;",
+      "key_concepts": ["Server status", "Runtime state"]
+    },
+    "test_cases": [
+      {
+        "input": "true",
+        "expected_output": "true",
+        "description": "Server running"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Status returned correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles stopped server" }
+    ],
+    "tags": ["Node.js", "Basics"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Return the boolean value"]
+  },
+
+  {
+    "_id": "q_node_0052",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Modules",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to export a value from a Node.js module.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function exportValue(value) {\n  \n}",
+      "function_signature": "exportValue(value: any) -> object"
+    },
+    "expected_answer": {
+      "solution": "return { value };",
+      "key_concepts": ["Modules", "module.exports"]
+    },
+    "test_cases": [
+      {
+        "input": "10",
+        "expected_output": "{ value: 10 }",
+        "description": "Value exported"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Object returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean object syntax" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles null value" }
+    ],
+    "tags": ["Node.js", "Modules"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Return an object"]
+  },
+
+  {
+    "_id": "q_node_0053",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Callbacks",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function that executes a callback.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function runCallback(cb) {\n  \n}",
+      "function_signature": "runCallback(cb: Function) -> any"
+    },
+    "expected_answer": {
+      "solution": "return cb();",
+      "key_concepts": ["Callbacks", "Asynchronous basics"]
+    },
+    "test_cases": [
+      {
+        "input": "() => 5",
+        "expected_output": "5",
+        "description": "Callback executed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Callback executed" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct invocation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles simple callback" }
+    ],
+    "tags": ["Node.js", "Callbacks"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Call the function"]
+  },
+
+  {
+    "_id": "q_node_0054",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Promises",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function that returns a resolved Promise.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function resolvedPromise(value) {\n  \n}",
+      "function_signature": "resolvedPromise(value: any) -> Promise"
+    },
+    "expected_answer": {
+      "solution": "return Promise.resolve(value);",
+      "key_concepts": ["Promises", "Async handling"]
+    },
+    "test_cases": [
+      {
+        "input": "10",
+        "expected_output": "Promise resolved with 10",
+        "description": "Promise resolved"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Promise resolved correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses Promise.resolve" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles any value" }
+    ],
+    "tags": ["Node.js", "Promises"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Use Promise.resolve"]
+  },
+
+  {
+    "_id": "q_node_0055",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Async/Await",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write an async function that returns a value.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "async function getValue() {\n  \n}",
+      "function_signature": "getValue() -> Promise<number>"
+    },
+    "expected_answer": {
+      "solution": "return 10;",
+      "key_concepts": ["Async/Await", "Promises"]
+    },
+    "test_cases": [
+      {
+        "input": "none",
+        "expected_output": "Promise resolved with 10",
+        "description": "Async return"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Async value returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses async function" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "No parameters needed" }
+    ],
+    "tags": ["Node.js", "Async"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Async functions return promises"]
+  },
+
+  {
+    "_id": "q_node_0056",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "File System",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return a file path string.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function getFilePath(name) {\n  \n}",
+      "function_signature": "getFilePath(name: string) -> string"
+    },
+    "expected_answer": {
+      "solution": "return './' + name;",
+      "key_concepts": ["File system", "Paths"]
+    },
+    "test_cases": [
+      {
+        "input": "\"data.txt\"",
+        "expected_output": "\"./data.txt\"",
+        "description": "Path returned"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Path created" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple concatenation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty name" }
+    ],
+    "tags": ["Node.js", "FileSystem"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Prefix with ./"]
+  },
+
+  {
+    "_id": "q_node_0057",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "HTTP",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return HTTP success response.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function successResponse() {\n  \n}",
+      "function_signature": "successResponse() -> object"
+    },
+    "expected_answer": {
+      "solution": "return { status: 200, message: 'OK' };",
+      "key_concepts": ["HTTP status", "Responses"]
+    },
+    "test_cases": [
+      {
+        "input": "none",
+        "expected_output": "{ status: 200, message: 'OK' }",
+        "description": "Success response"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Response correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear object" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Static response" }
+    ],
+    "tags": ["Node.js", "HTTP"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Status 200 means OK"]
+  },
+
+  {
+    "_id": "q_node_0058",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Middleware",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to simulate Express middleware next call.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function middleware(next) {\n  \n}",
+      "function_signature": "middleware(next: Function) -> any"
+    },
+    "expected_answer": {
+      "solution": "return next();",
+      "key_concepts": ["Middleware", "Express basics"]
+    },
+    "test_cases": [
+      {
+        "input": "() => 'next called'",
+        "expected_output": "'next called'",
+        "description": "Next executed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Next executed" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct call" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles function input" }
+    ],
+    "tags": ["Node.js", "Middleware"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Call next()"]
+  },
+
+  {
+    "_id": "q_node_0059",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Environment Variables",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to read an environment variable.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function readEnv(key) {\n  \n}",
+      "function_signature": "readEnv(key: string) -> string"
+    },
+    "expected_answer": {
+      "solution": "return process.env[key];",
+      "key_concepts": ["Environment variables", "Configuration"]
+    },
+    "test_cases": [
+      {
+        "input": "\"NODE_ENV\"",
+        "expected_output": "value of NODE_ENV",
+        "description": "Env variable read"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Env value returned" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses process.env" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles undefined key" }
+    ],
+    "tags": ["Node.js", "Environment"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Use process.env"]
+  },
+
+  {
+    "_id": "q_node_0060",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "JSON",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert object to JSON string.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function toJson(obj) {\n  \n}",
+      "function_signature": "toJson(obj: object) -> string"
+    },
+    "expected_answer": {
+      "solution": "return JSON.stringify(obj);",
+      "key_concepts": ["JSON", "Serialization"]
+    },
+    "test_cases": [
+      {
+        "input": "{a:1}",
+        "expected_output": "\"{\\\"a\\\":1}\"",
+        "description": "Object serialized"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "JSON created" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses JSON.stringify" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty object" }
+    ],
+    "tags": ["Node.js", "JSON"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Use JSON.stringify"]
+  },
+
+  {
+    "_id": "q_node_0061",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Error Handling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to throw an error if value is null.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function checkValue(val) {\n  \n}",
+      "function_signature": "checkValue(val: any) -> string"
+    },
+    "expected_answer": {
+      "solution": "if (val === null) throw new Error('Invalid'); return 'Valid';",
+      "key_concepts": ["Errors", "Validation"]
+    },
+    "test_cases": [
+      {
+        "input": "null",
+        "expected_output": "Error thrown",
+        "description": "Null value"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Error thrown" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses Error object" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles valid input" }
+    ],
+    "tags": ["Node.js", "Errors"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Throw new Error"]
+  },
+
+  {
+    "_id": "q_node_0062",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Timers",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return a timeout delay value.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function delay(ms) {\n  \n}",
+      "function_signature": "delay(ms: number) -> number"
+    },
+    "expected_answer": {
+      "solution": "return ms;",
+      "key_concepts": ["Timers", "Event loop"]
+    },
+    "test_cases": [
+      {
+        "input": "1000",
+        "expected_output": "1000",
+        "description": "Delay returned"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Delay correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero delay" }
+    ],
+    "tags": ["Node.js", "Timers"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Return the value"]
+  },
+
+  {
+    "_id": "q_node_0063",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Streams",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to simulate stream chunk return.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function streamChunk(data) {\n  \n}",
+      "function_signature": "streamChunk(data: any) -> any"
+    },
+    "expected_answer": {
+      "solution": "return data;",
+      "key_concepts": ["Streams", "Data flow"]
+    },
+    "test_cases": [
+      {
+        "input": "\"chunk\"",
+        "expected_output": "\"chunk\"",
+        "description": "Chunk returned"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Chunk handled" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles any data" }
+    ],
+    "tags": ["Node.js", "Streams"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Return data"]
+  },
+
+  {
+    "_id": "q_node_0064",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if request is authorized.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function isAuthorized(token) {\n  \n}",
+      "function_signature": "isAuthorized(token: string) -> boolean"
+    },
+    "expected_answer": {
+      "solution": "return token === 'valid';",
+      "key_concepts": ["Authorization", "Security"]
+    },
+    "test_cases": [
+      {
+        "input": "\"valid\"",
+        "expected_output": "true",
+        "description": "Authorized request"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Auth checked" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invalid token" }
+    ],
+    "tags": ["Node.js", "Security"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Compare token"]
+  },
+
+  {
+    "_id": "q_node_0065",
+    "question_type": "coding",
+    "domain": "Node.js Development",
+    "topic": "Deployment",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if Node app is in production mode.",
+    "coding_instructions": {
+      "language": "javascript",
+      "allowed_libraries": [],
+      "starter_code": "function isProduction(env) {\n  \n}",
+      "function_signature": "isProduction(env: string) -> boolean"
+    },
+    "expected_answer": {
+      "solution": "return env === 'production';",
+      "key_concepts": ["Deployment", "Environment modes"]
+    },
+    "test_cases": [
+      {
+        "input": "\"production\"",
+        "expected_output": "true",
+        "description": "Production mode"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Mode detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles dev mode" }
+    ],
+    "tags": ["Node.js", "Deployment"],
+    "required_skills": ["JavaScript"],
+    "hints": ["Check env string"]
+  }
+]

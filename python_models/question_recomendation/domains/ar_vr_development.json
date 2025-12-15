@@ -1,632 +1,1909 @@
 [
   {
-    "_id": "q_xr_0001",
+    "_id": "q_arvr_0001",
     "question_type": "multiple-choice",
     "domain": "AR/VR Development",
     "topic": "Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is the key difference between Virtual Reality (VR) and Augmented Reality (AR)?",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary difference between Augmented Reality (AR) and Virtual Reality (VR)?",
     "options": [
-      "VR uses headphones; AR uses speakers.",
-      "VR replaces the real world with a simulated one; AR overlays digital content onto the real world.",
-      "VR is only for gaming; AR is only for productivity.",
-      "VR requires the Unity engine; AR requires the Unreal engine."
+      "AR replaces the real world completely, VR overlays digital content",
+      "AR overlays digital content onto the real world, VR creates a fully virtual environment",
+      "AR and VR are identical technologies",
+      "VR requires cameras, AR does not"
     ],
-    "answer": "VR replaces the real world with a simulated one; AR overlays digital content onto the real world.",
-    "explanation": "VR creates a fully immersive, synthetic environment, while AR blends digital objects into the user's view of the physical world.",
-    "tags": ["Fundamentals", "VR", "AR"],
-    "required_skills": ["Unity", "Unreal Engine"],
-    "hints": ["Think about the level of immersion and the presence of the real world."]
+    "answer": "AR overlays digital content onto the real world, VR creates a fully virtual environment",
+    "explanation": "AR enhances the real-world view with virtual objects, while VR immerses users in a fully synthetic environment.",
+    "tags": ["AR", "VR", "Fundamentals"],
+    "required_skills": ["AR/VR Basics"],
+    "hints": ["Think real world vs virtual world"]
   },
   {
-    "_id": "q_xr_0002",
+    "_id": "q_arvr_0002",
     "question_type": "multiple-choice",
     "domain": "AR/VR Development",
-    "topic": "Unity/C#",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "In Unity's C# scripting, what function is called when a script starts, but only if the GameObject is active?",
+    "topic": "Rendering",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which rendering technique is most critical for achieving real-time performance in VR applications?",
     "options": [
-      "Update()",
-      "Awake()",
-      "Start()",
-      "FixedUpdate()"
+      "Ray tracing",
+      "Deferred rendering",
+      "Forward rendering with foveated rendering",
+      "Offline rendering"
     ],
-    "answer": "Start()",
-    "explanation": "`Start()` is called exactly once after the script's initialization (`Awake()`), right before the first frame update. It requires the component to be enabled.",
-    "tags": ["Unity", "C#"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["It runs after initialization but before the first frame."]
+    "answer": "Forward rendering with foveated rendering",
+    "explanation": "Foveated rendering reduces GPU workload by rendering high detail only where the user is looking.",
+    "tags": ["VR", "Rendering"],
+    "required_skills": ["3D Graphics"],
+    "hints": ["Eye-tracking optimization"]
   },
   {
-    "_id": "q_xr_0003",
+    "_id": "q_arvr_0003",
     "question_type": "multiple-choice",
     "domain": "AR/VR Development",
-    "topic": "Unreal Engine",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "In Unreal Engine, what is the component responsible for handling the player's view and VR camera position?",
+    "topic": "Tracking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does SLAM stand for in AR/VR systems?",
     "options": [
-      "Static Mesh Component",
-      "Sphere Collider",
-      "Spring Arm Component",
-      "Camera Component"
+      "Simultaneous Localization and Mapping",
+      "Spatial Light and Motion",
+      "System Level Augmented Mapping",
+      "Synchronized Location and Modeling"
     ],
-    "answer": "Camera Component",
-    "explanation": "The Camera Component defines where the player's view originates and how it is rendered. In VR, the HMD typically controls the position and orientation of this component.",
-    "tags": ["Unreal Engine", "VR"],
-    "required_skills": ["Unreal Engine"],
-    "hints": ["It defines what the user sees."]
+    "answer": "Simultaneous Localization and Mapping",
+    "explanation": "SLAM enables devices to map environments while tracking their position within them.",
+    "tags": ["AR", "Tracking"],
+    "required_skills": ["Computer Vision"],
+    "hints": ["Mapping + positioning"]
   },
   {
-    "_id": "q_xr_0004",
+    "_id": "q_arvr_0004",
     "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Hardware",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which sensor is essential for head tracking in VR headsets?",
+    "options": [
+      "GPS",
+      "Gyroscope",
+      "Microphone",
+      "Proximity sensor"
+    ],
+    "answer": "Gyroscope",
+    "explanation": "Gyroscopes measure angular velocity, enabling accurate head rotation tracking.",
+    "tags": ["VR", "Sensors"],
+    "required_skills": ["AR/VR Hardware"],
+    "hints": ["Rotation detection"]
+  },
+  {
+    "_id": "q_arvr_0005",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Latency",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is motion-to-photon latency critical in VR systems?",
+    "options": [
+      "It affects battery life",
+      "It determines image resolution",
+      "It directly impacts user comfort and motion sickness",
+      "It controls audio synchronization"
+    ],
+    "answer": "It directly impacts user comfort and motion sickness",
+    "explanation": "High latency causes a mismatch between head movement and visual feedback, leading to discomfort.",
+    "tags": ["VR", "Performance"],
+    "required_skills": ["System Optimization"],
+    "hints": ["Motion sickness"]
+  },
+  {
+    "_id": "q_arvr_0006",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "AR Frameworks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which framework is primarily used for AR development on iOS devices?",
+    "options": [
+      "ARCore",
+      "Vuforia",
+      "ARKit",
+      "OpenXR"
+    ],
+    "answer": "ARKit",
+    "explanation": "ARKit is Apple’s AR framework designed specifically for iOS devices.",
+    "tags": ["AR", "Frameworks"],
+    "required_skills": ["iOS AR Development"],
+    "hints": ["Apple ecosystem"]
+  },
+  {
+    "_id": "q_arvr_0007",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "VR Frameworks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which standard aims to unify VR and AR APIs across different platforms?",
+    "options": [
+      "WebXR",
+      "OpenXR",
+      "ARKit",
+      "SteamVR"
+    ],
+    "answer": "OpenXR",
+    "explanation": "OpenXR provides a common API for AR/VR across hardware and platforms.",
+    "tags": ["AR/VR", "Standards"],
+    "required_skills": ["Cross-platform Development"],
+    "hints": ["Unified API"]
+  },
+  {
+    "_id": "q_arvr_0008",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "3D Interaction",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which interaction technique allows users to grab and manipulate virtual objects naturally?",
+    "options": [
+      "Ray casting",
+      "Gesture-based interaction",
+      "Button-based input",
+      "Keyboard input"
+    ],
+    "answer": "Gesture-based interaction",
+    "explanation": "Hand and gesture tracking provide intuitive object manipulation in 3D space.",
+    "tags": ["VR", "Interaction"],
+    "required_skills": ["Human-Computer Interaction"],
+    "hints": ["Hand movement"]
+  },
+  {
+    "_id": "q_arvr_0009",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Performance Optimization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which frame rate is generally considered minimum for a comfortable VR experience?",
+    "options": [
+      "30 FPS",
+      "45 FPS",
+      "60 FPS",
+      "90 FPS"
+    ],
+    "answer": "90 FPS",
+    "explanation": "Higher frame rates reduce latency and motion sickness in VR environments.",
+    "tags": ["VR", "Performance"],
+    "required_skills": ["Graphics Optimization"],
+    "hints": ["Smooth visuals"]
+  },
+  {
+    "_id": "q_arvr_0010",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Spatial Computing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does spatial anchoring enable in AR applications?",
+    "options": [
+      "Faster rendering",
+      "Persistent placement of virtual objects in real-world locations",
+      "Higher resolution graphics",
+      "Audio synchronization"
+    ],
+    "answer": "Persistent placement of virtual objects in real-world locations",
+    "explanation": "Spatial anchors allow virtual content to remain fixed relative to the physical environment.",
+    "tags": ["AR", "Spatial Computing"],
+    "required_skills": ["AR Development"],
+    "hints": ["Object persistence"]
+  },
+
+  {
+    "_id": "q_arvr_0011",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Game Engines",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which game engine is most widely used for AR/VR development?",
+    "options": [
+      "CryEngine",
+      "Unity",
+      "Godot",
+      "Panda3D"
+    ],
+    "answer": "Unity",
+    "explanation": "Unity provides extensive AR/VR SDK support and cross-platform capabilities.",
+    "tags": ["AR/VR", "Game Engines"],
+    "required_skills": ["Unity"],
+    "hints": ["Popular engine"]
+  },
+  {
+    "_id": "q_arvr_0012",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Depth Perception",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which visual cue is most important for depth perception in VR?",
+    "options": [
+      "Color contrast",
+      "Binocular disparity",
+      "Texture resolution",
+      "Brightness"
+    ],
+    "answer": "Binocular disparity",
+    "explanation": "Slight differences between left and right eye images create depth perception.",
+    "tags": ["VR", "Perception"],
+    "required_skills": ["3D Vision"],
+    "hints": ["Two-eye effect"]
+  },
+  {
+    "_id": "q_arvr_0013",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Audio",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is spatial audio used for in AR/VR?",
+    "options": [
+      "Reducing file size",
+      "Enhancing directional sound perception",
+      "Improving microphone quality",
+      "Noise cancellation"
+    ],
+    "answer": "Enhancing directional sound perception",
+    "explanation": "Spatial audio simulates sound direction and distance for immersion.",
+    "tags": ["AR/VR", "Audio"],
+    "required_skills": ["Audio Processing"],
+    "hints": ["3D sound"]
+  },
+  {
+    "_id": "q_arvr_0014",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Input Devices",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which input device provides force feedback in VR?",
+    "options": [
+      "Controller buttons",
+      "Haptic gloves",
+      "Touch screen",
+      "Keyboard"
+    ],
+    "answer": "Haptic gloves",
+    "explanation": "Haptic devices simulate touch and resistance for realistic interaction.",
+    "tags": ["VR", "Haptics"],
+    "required_skills": ["Hardware Integration"],
+    "hints": ["Force feedback"]
+  },
+  {
+    "_id": "q_arvr_0015",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Networking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the biggest challenge in multi-user VR environments?",
+    "options": [
+      "Rendering quality",
+      "Network latency synchronization",
+      "Hardware cost",
+      "Audio playback"
+    ],
+    "answer": "Network latency synchronization",
+    "explanation": "Low latency and synchronization are essential for shared immersive experiences.",
+    "tags": ["VR", "Networking"],
+    "required_skills": ["Distributed Systems"],
+    "hints": ["Multi-user sync"]
+  },
+  {
+    "_id": "q_arvr_0016",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Web-Based AR/VR",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which API enables AR/VR experiences directly in web browsers?",
+    "options": [
+      "WebGL",
+      "WebXR",
+      "Three.js",
+      "Canvas API"
+    ],
+    "answer": "WebXR",
+    "explanation": "WebXR provides browser-based support for immersive AR and VR experiences.",
+    "tags": ["WebXR", "AR/VR"],
+    "required_skills": ["Web Development"],
+    "hints": ["Browser-based XR"]
+  },
+  {
+    "_id": "q_arvr_0017",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "User Experience",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are teleportation techniques used in VR navigation?",
+    "options": [
+      "To improve graphics quality",
+      "To reduce motion sickness",
+      "To increase frame rate",
+      "To simplify rendering"
+    ],
+    "answer": "To reduce motion sickness",
+    "explanation": "Teleportation avoids continuous movement, reducing sensory conflict.",
+    "tags": ["VR", "UX"],
+    "required_skills": ["UX Design"],
+    "hints": ["Comfort technique"]
+  },
+  {
+    "_id": "q_arvr_0018",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "AR Tracking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is marker-based AR?",
+    "options": [
+      "AR using GPS only",
+      "AR that relies on predefined visual markers",
+      "AR without cameras",
+      "AR based on voice input"
+    ],
+    "answer": "AR that relies on predefined visual markers",
+    "explanation": "Marker-based AR detects known patterns to place virtual objects.",
+    "tags": ["AR", "Tracking"],
+    "required_skills": ["Computer Vision"],
+    "hints": ["Pattern detection"]
+  },
+  {
+    "_id": "q_arvr_0019",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which file format is commonly used for 3D models in AR/VR?",
+    "options": [
+      ".mp4",
+      ".glTF",
+      ".wav",
+      ".json"
+    ],
+    "answer": ".glTF",
+    "explanation": "glTF is optimized for efficient transmission and rendering of 3D content.",
+    "tags": ["AR/VR", "3D Models"],
+    "required_skills": ["3D Asset Management"],
+    "hints": ["Efficient 3D format"]
+  },
+  {
+    "_id": "q_arvr_0020",
+    "question_type": "multiple-choice",
+    "domain": "AR/VR Development",
+    "topic": "Ethics & Safety",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a major safety concern in extended VR usage?",
+    "options": [
+      "Low resolution",
+      "Eye strain and disorientation",
+      "High storage usage",
+      "Network bandwidth"
+    ],
+    "answer": "Eye strain and disorientation",
+    "explanation": "Prolonged immersion can cause visual fatigue and spatial disorientation.",
+    "tags": ["VR", "Health & Safety"],
+    "required_skills": ["Human Factors"],
+    "hints": ["User well-being"]
+  },
+
+  {
+    "_id": "q_arvr_0021",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "AR & VR Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the difference between Augmented Reality (AR) and Virtual Reality (VR).",
+    "expected_answer": {
+      "key_points": [
+        "AR overlays digital content onto the real world",
+        "VR creates a fully immersive virtual environment",
+        "Hardware differences",
+        "User interaction differences"
+      ],
+      "example_scenarios": [
+        "AR used in navigation applications",
+        "VR used in immersive gaming"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["AR", "VR", "Fundamentals"],
+    "required_skills": ["AR/VR Basics"],
+    "hints": [
+      "Focus on immersion level",
+      "Think about user perception of reality"
+    ]
+  },
+  {
+    "_id": "q_arvr_0022",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "AR System Components",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the core components of an Augmented Reality system and their roles.",
+    "expected_answer": {
+      "key_points": [
+        "Sensors and cameras",
+        "Processing unit",
+        "Display devices",
+        "Tracking and registration"
+      ],
+      "example_scenarios": [
+        "Mobile AR applications",
+        "AR-based industrial maintenance tools"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Component Explanation", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Augmented Reality", "System Design"],
+    "required_skills": ["AR Development"],
+    "hints": [
+      "Consider both hardware and software components",
+      "Think about how real-world alignment is achieved"
+    ]
+  },
+  {
+    "_id": "q_arvr_0023",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "VR Hardware",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the role of head-mounted displays (HMDs) in virtual reality systems.",
+    "expected_answer": {
+      "key_points": [
+        "Immersive visual display",
+        "Head tracking",
+        "Field of view",
+        "User comfort considerations"
+      ],
+      "example_scenarios": [
+        "VR gaming headsets",
+        "VR training simulators"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding of Hardware", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["VR Hardware", "HMD"],
+    "required_skills": ["VR Fundamentals"],
+    "hints": [
+      "Think about immersion",
+      "Focus on visual and motion tracking aspects"
+    ]
+  },
+  {
+    "_id": "q_arvr_0024",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Tracking Techniques",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain marker-based and markerless tracking techniques used in AR.",
+    "expected_answer": {
+      "key_points": [
+        "Marker-based tracking using predefined patterns",
+        "Markerless tracking using sensors and vision",
+        "Advantages and limitations",
+        "Use cases of each approach"
+      ],
+      "example_scenarios": [
+        "AR textbooks using markers",
+        "Markerless AR navigation apps"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Application Insight", "weight": 0.3 }
+    ],
+    "tags": ["AR Tracking", "Computer Vision"],
+    "required_skills": ["AR Development"],
+    "hints": [
+      "Compare dependency on physical markers",
+      "Think about environment awareness"
+    ]
+  },
+  {
+    "_id": "q_arvr_0025",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Game Engines",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss the role of game engines like Unity or Unreal Engine in AR/VR development.",
+    "expected_answer": {
+      "key_points": [
+        "Scene rendering",
+        "Physics simulation",
+        "Cross-platform support",
+        "AR/VR SDK integration"
+      ],
+      "example_scenarios": [
+        "VR games developed in Unity",
+        "AR applications built using Unreal Engine"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Insight", "weight": 0.4 },
+      { "criterion": "Tool Understanding", "weight": 0.3 },
+      { "criterion": "Practical Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Unity", "Unreal Engine"],
+    "required_skills": ["AR/VR Development"],
+    "hints": [
+      "Think about rendering and interaction",
+      "Consider developer productivity"
+    ]
+  },
+  {
+    "_id": "q_arvr_0026",
+    "question_type": "subjective",
     "domain": "AR/VR Development",
     "topic": "3D Modeling",
     "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the recommended maximum triangle count for a single, primary character or object in a performance-critical VR scene?",
-    "options": [
-      "5 million triangles",
-      "500,000 to 1 million triangles",
-      "50,000 to 100,000 triangles",
-      "Under 1,000 triangles"
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of 3D models in AR/VR applications.",
+    "expected_answer": {
+      "key_points": [
+        "Visual realism",
+        "User immersion",
+        "Interaction with virtual objects",
+        "Performance considerations"
+      ],
+      "example_scenarios": [
+        "3D furniture models in AR shopping apps",
+        "3D characters in VR games"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "50,000 to 100,000 triangles",
-    "explanation": "VR requires rendering two eyes at high frame rates (e.g., 90 FPS). High polygon counts are costly, making severe optimization necessary. While specific limits vary, 50k-100k per major asset is a common target to maintain performance.",
-    "tags": ["3D Modeling", "Optimization"],
-    "required_skills": ["3D Modeling", "Unity", "Unreal Engine"],
-    "hints": ["VR is very demanding because everything is rendered twice."]
+    "tags": ["3D Modeling", "AR/VR Content"],
+    "required_skills": ["3D Basics"],
+    "hints": [
+      "Focus on realism and interaction",
+      "Think about performance impact"
+    ]
   },
   {
-    "_id": "q_xr_0005",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0027",
+    "question_type": "subjective",
     "domain": "AR/VR Development",
-    "topic": "XR Interaction Toolkit",
+    "topic": "User Interaction",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe different user interaction techniques used in VR environments.",
+    "expected_answer": {
+      "key_points": [
+        "Controller-based interaction",
+        "Gesture-based interaction",
+        "Eye tracking",
+        "Haptic feedback"
+      ],
+      "example_scenarios": [
+        "Hand tracking in VR training",
+        "Controller-based VR gaming"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Interaction Understanding", "weight": 0.4 },
+      { "criterion": "Example Quality", "weight": 0.3 },
+      { "criterion": "Technical Depth", "weight": 0.3 }
+    ],
+    "tags": ["VR Interaction", "HCI"],
+    "required_skills": ["VR Development"],
+    "hints": [
+      "Think about natural interaction",
+      "Consider user comfort"
+    ]
+  },
+  {
+    "_id": "q_arvr_0028",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Performance Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain performance optimization techniques for AR/VR applications.",
+    "expected_answer": {
+      "key_points": [
+        "Frame rate optimization",
+        "Level of detail management",
+        "Efficient rendering techniques",
+        "Latency reduction"
+      ],
+      "example_scenarios": [
+        "Optimizing VR games for smooth experience",
+        "Mobile AR performance tuning"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Optimization", "Performance"],
+    "required_skills": ["Advanced AR/VR"],
+    "hints": [
+      "Focus on frame rate and latency",
+      "Think about hardware constraints"
+    ]
+  },
+  {
+    "_id": "q_arvr_0029",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "AR SDKs",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Compare popular AR SDKs such as ARCore and ARKit.",
+    "expected_answer": {
+      "key_points": [
+        "Platform support",
+        "Tracking capabilities",
+        "Development tools",
+        "Limitations"
+      ],
+      "example_scenarios": [
+        "Android AR applications",
+        "iOS AR applications"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparative Analysis", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["ARCore", "ARKit"],
+    "required_skills": ["AR Development"],
+    "hints": [
+      "Think about platform differences",
+      "Consider tracking features"
+    ]
+  },
+  {
+    "_id": "q_arvr_0030",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "VR Applications",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss real-world applications of virtual reality beyond gaming.",
+    "expected_answer": {
+      "key_points": [
+        "Education and training",
+        "Healthcare applications",
+        "Architecture and design",
+        "Industrial simulations"
+      ],
+      "example_scenarios": [
+        "Medical surgery simulations",
+        "Virtual classrooms"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Application Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["VR Applications"],
+    "required_skills": ["VR Fundamentals"],
+    "hints": [
+      "Think beyond entertainment",
+      "Consider professional use cases"
+    ]
+  },
+  {
+    "_id": "q_arvr_0031",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Spatial Computing",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the concept of spatial computing and its role in AR/VR systems.",
+    "expected_answer": {
+      "key_points": [
+        "Understanding physical space digitally",
+        "Spatial mapping",
+        "Real-time interaction",
+        "Impact on user experience"
+      ],
+      "example_scenarios": [
+        "AR indoor navigation",
+        "Mixed reality workspaces"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Depth", "weight": 0.4 },
+      { "criterion": "Technical Insight", "weight": 0.3 },
+      { "criterion": "Application Understanding", "weight": 0.3 }
+    ],
+    "tags": ["Spatial Computing", "Mixed Reality"],
+    "required_skills": ["Advanced AR/VR"],
+    "hints": [
+      "Think about mapping physical environments",
+      "Consider real-time processing"
+    ]
+  },
+  {
+    "_id": "q_arvr_0032",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "UX Design",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss user experience (UX) challenges in AR/VR application design.",
+    "expected_answer": {
+      "key_points": [
+        "Motion sickness",
+        "User comfort",
+        "Intuitive interaction",
+        "Accessibility"
+      ],
+      "example_scenarios": [
+        "Reducing motion sickness in VR games",
+        "Designing intuitive AR interfaces"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "UX Awareness", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["UX Design", "AR/VR"],
+    "required_skills": ["AR/VR Design"],
+    "hints": [
+      "Think about human comfort",
+      "Focus on usability"
+    ]
+  },
+  {
+    "_id": "q_arvr_0033",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "AR in Industry",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain how augmented reality is used in industrial and manufacturing environments.",
+    "expected_answer": {
+      "key_points": [
+        "Maintenance assistance",
+        "Worker training",
+        "Error reduction",
+        "Productivity improvement"
+      ],
+      "example_scenarios": [
+        "AR-guided equipment repair",
+        "Assembly line training"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Application Understanding", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Industrial AR"],
+    "required_skills": ["AR Applications"],
+    "hints": [
+      "Think about real-time guidance",
+      "Consider efficiency gains"
+    ]
+  },
+  {
+    "_id": "q_arvr_0034",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Ethical & Social Issues",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss ethical and social challenges associated with AR/VR technologies.",
+    "expected_answer": {
+      "key_points": [
+        "Privacy concerns",
+        "Data security",
+        "Psychological impact",
+        "Social isolation"
+      ],
+      "example_scenarios": [
+        "Privacy issues in AR face recognition",
+        "Extended VR usage effects"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Ethics", "AR/VR Society"],
+    "required_skills": ["AR/VR Fundamentals"],
+    "hints": [
+      "Think about user data",
+      "Consider long-term social effects"
+    ]
+  },
+  {
+    "_id": "q_arvr_0035",
+    "question_type": "subjective",
+    "domain": "AR/VR Development",
+    "topic": "Future Trends",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss future trends and advancements expected in AR/VR technologies.",
+    "expected_answer": {
+      "key_points": [
+        "Hardware advancements",
+        "Improved realism",
+        "Integration with other technologies",
+        "Wider industry adoption"
+      ],
+      "example_scenarios": [
+        "Lightweight AR glasses",
+        "Enterprise-level mixed reality solutions"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Forward Thinking", "weight": 0.4 },
+      { "criterion": "Technical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["AR/VR Future", "Emerging Tech"],
+    "required_skills": ["Advanced AR/VR"],
+    "hints": [
+      "Think about current limitations",
+      "Project realistic future improvements"
+    ]
+  },
+  {
+    "_id": "q_arvr_0036",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "Fundamentals",
     "difficulty": 2,
     "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "In Unity's XR Interaction Toolkit, which component is used to enable a user's controller to pick up and hold an object?",
-    "options": [
-      "XR Base Controller",
-      "XR Grab Interactable",
-      "XR Ray Interactor",
-      "XR Controller"
+    "estimated_time_sec": 120,
+    "text": "What is Augmented Reality and how is it different from Virtual Reality?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "AR overlays digital content on real world",
+        "VR creates a fully virtual environment",
+        "Difference in user immersion"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear comparison" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Both AR and VR explained" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Real-world examples used" }
     ],
-    "answer": "XR Grab Interactable",
-    "explanation": "The `XR Grab Interactable` component must be attached to the object that the user wants to pick up, defining how the object behaves when interacted with by an `XR Interactor` (the controller).",
-    "tags": ["XR Interaction Toolkit", "Unity"],
-    "required_skills": ["Unity", "XR Interaction Toolkit"],
-    "hints": ["It describes the object's ability to be 'grabbed'."]
+    "transcription_required": true,
+    "tags": ["AR", "VR", "Fundamentals"],
+    "required_skills": ["Unity"],
+    "hints": ["Real world vs virtual world"]
   },
   {
-    "_id": "q_xr_0006",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0037",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "Oculus SDK",
+    "topic": "Applications",
     "difficulty": 2,
     "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is 'Passthrough' in the context of Oculus/Meta Quest development?",
-    "options": [
-      "A technique for optimizing frame rate.",
-      "The method for viewing the real-world environment through the headset's external cameras.",
-      "A type of low-latency networking for multiplayer VR.",
-      "The process of submitting an app to the Oculus Store."
+    "estimated_time_sec": 120,
+    "text": "Mention two real-world applications of AR technology.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "AR used in gaming",
+        "AR used in navigation or education"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "The method for viewing the real-world environment through the headset's external cameras.",
-    "explanation": "Passthrough enables mixed reality experiences by showing the user the real world while digitally overlaying virtual content, blurring the line between AR and VR.",
-    "tags": ["Oculus SDK", "VR", "AR"],
-    "required_skills": ["Oculus SDK"],
-    "hints": ["It refers to the video feed from outside the device."]
+    "transcription_required": true,
+    "tags": ["AR Applications"],
+    "required_skills": ["Unity"],
+    "hints": ["Think Pokémon GO"]
   },
   {
-    "_id": "q_xr_0007",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0038",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "Applications",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Where is Virtual Reality commonly used today?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Gaming",
+        "Training simulations",
+        "Virtual tours"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["VR Applications"],
+    "required_skills": ["Unity"],
+    "hints": ["Training and gaming"]
+  },
+  {
+    "_id": "q_arvr_0039",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "Hardware",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What hardware devices are commonly used in VR systems?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "VR headsets",
+        "Motion controllers",
+        "Sensors or cameras"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["VR Hardware"],
+    "required_skills": ["Unity"],
+    "hints": ["Head-mounted display"]
+  },
+  {
+    "_id": "q_arvr_0040",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "Tracking",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is tracking in AR/VR systems?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Tracking user position",
+        "Tracking orientation",
+        "Maintains immersion"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Tracking"],
+    "required_skills": ["Unity"],
+    "hints": ["Position and rotation"]
+  },
+  {
+    "_id": "q_arvr_0041",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "Development Tools",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is Unity commonly used for AR/VR development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Cross-platform support",
+        "Built-in AR/VR tools",
+        "Ease of development"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Unity"],
+    "required_skills": ["Unity"],
+    "hints": ["Cross-platform engine"]
+  },
+  {
+    "_id": "q_arvr_0042",
+    "question_type": "voice",
+    "domain": "AR/VR Development",
+    "topic": "User Interaction",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do users interact with objects in a VR environment?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Motion controllers",
+        "Hand tracking",
+        "Gaze-based interaction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Interaction"],
+    "required_skills": ["Unity"],
+    "hints": ["Controllers and gestures"]
+  },
+  {
+    "_id": "q_arvr_0043",
+    "question_type": "voice",
     "domain": "AR/VR Development",
     "topic": "Performance",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What is the primary visual phenomenon that causes motion sickness (simulator sickness) in VR applications, and what frame rate is generally considered the minimum safe threshold?",
-    "options": [
-      "Low texture resolution; 30 FPS",
-      "High visual complexity; 60 FPS",
-      "The disconnect between visual motion and inner ear perception; 90 FPS",
-      "Excessive bloom effects; 120 FPS"
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is performance optimization important in AR/VR applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Avoids motion sickness",
+        "Ensures smooth experience",
+        "Maintains high frame rate"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "The disconnect between visual motion and inner ear perception; 90 FPS",
-    "explanation": "Motion sickness is primarily caused by high latency or low frame rates, which create a mismatch between visual input and vestibular (inner ear) input. 90 FPS is the standard target for smooth, comfortable VR experiences.",
-    "tags": ["VR", "Performance"],
-    "required_skills": ["Unity", "Unreal Engine"],
-    "hints": ["It's related to the latency of visual updates."]
-  },
-  {
-    "_id": "q_xr_0008",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "Unity Optimization",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "Why is 'Single-Pass Stereo Rendering' (or 'Instanced Stereo') preferred over Multi-Pass Stereo Rendering for VR performance in Unity?",
-    "options": [
-      "It requires fewer draw calls, reducing CPU overhead by rendering both eyes simultaneously in one pass.",
-      "It reduces GPU temperature.",
-      "It allows the use of higher-resolution textures.",
-      "It makes raycasting more accurate."
-    ],
-    "answer": "It requires fewer draw calls, reducing CPU overhead by rendering both eyes simultaneously in one pass.",
-    "explanation": "Single-Pass Stereo avoids rendering the entire scene twice (Multi-Pass), cutting CPU-side overhead (draw calls) and GPU workload by nearly half, which is critical for meeting the 90 FPS VR requirement.",
-    "tags": ["Unity", "Optimization", "VR"],
+    "transcription_required": true,
+    "tags": ["Performance"],
     "required_skills": ["Unity"],
-    "hints": ["It consolidates the two eyes' rendering into a single operation."]
+    "hints": ["Frame rate"]
   },
   {
-    "_id": "q_xr_0009",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0044",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "AR Fundamentals",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 75,
-    "text": "What is 'Plane Detection' in AR, and why is it essential for AR applications?",
-    "options": [
-      "Detecting airborne objects; essential for flying games.",
-      "Identifying flat, horizontal, or vertical surfaces in the physical environment; essential for anchoring virtual content accurately.",
-      "Recognizing specific 2D images (markers); essential for marker-based AR.",
-      "Calculating the distance to an object; essential for physics."
-    ],
-    "answer": "Identifying flat, horizontal, or vertical surfaces in the physical environment; essential for anchoring virtual content accurately.",
-    "explanation": "AR frameworks (like AR Foundation, ARKit, ARCore) use computer vision to continuously scan the environment to find planes, which serve as the foundation upon which virtual objects can be placed and interacted with.",
-    "tags": ["AR", "Fundamentals"],
-    "required_skills": ["Unity", "Unreal Engine"],
-    "hints": ["It enables the placement of virtual objects on the floor or walls."]
-  },
-  {
-    "_id": "q_xr_0010",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "Unreal Engine",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "In Unreal Engine VR development, which setting or feature is used to slightly offset the view per eye to correct for distortion specific to a headset lens?",
-    "options": [
-      "Post Process Volume",
-      "The 'Lens Distortion' or 'Chromatic Aberration' settings in the HMD driver (handled by the engine's stereo rendering pipeline).",
-      "Level Streaming",
-      "Decal Projection"
-    ],
-    "answer": "The 'Lens Distortion' or 'Chromatic Aberration' settings in the HMD driver (handled by the engine's stereo rendering pipeline).",
-    "explanation": "Headset lenses physically distort the rendered image. The engine's stereo rendering pipeline applies a compensatory, inverse distortion to the image before it's displayed, correcting the effect for the user.",
-    "tags": ["Unreal Engine", "VR"],
-    "required_skills": ["Unreal Engine"],
-    "hints": ["It's a correction applied to the image to counteract the headset optics."]
-  },
-  {
-    "_id": "q_xr_0011",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "3D Modeling",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
+    "topic": "AR Concepts",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
     "estimated_time_sec": 120,
-    "text": "When exporting a game-ready mesh from Blender, what is a crucial step to ensure correct lighting and shading in the game engine (Unity/Unreal)?",
-    "options": [
-      "Applying a high-resolution texture map.",
-      "Subdividing the mesh multiple times.",
-      "Ensuring all normals are correctly calculated and facing outwards ('Recalculate Outside').",
-      "Reducing the number of materials to one."
+    "text": "What is marker-based AR?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Uses visual markers",
+        "Camera-based detection",
+        "Triggers virtual content"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "Ensuring all normals are correctly calculated and facing outwards ('Recalculate Outside').",
-    "explanation": "Surface normals define which direction light reflects off a surface. If normals are flipped (pointing inwards), the surface will appear dark or incorrectly shaded in the game engine.",
-    "tags": ["3D Modeling", "Blender"],
-    "required_skills": ["3D Modeling", "Blender"],
-    "hints": ["It relates to the direction light interacts with the surface."]
+    "transcription_required": true,
+    "tags": ["Marker-based AR"],
+    "required_skills": ["Unity"],
+    "hints": ["QR-like markers"]
   },
   {
-    "_id": "q_xr_0012",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0045",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "Oculus SDK",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is 'Asynchronous Spacewarp (ASW)' (or AWS in Unreal/Oculus) and when does the headset system typically invoke it?",
-    "options": [
-      "A rendering mode that reduces texture streaming.",
-      "A feature that only works on stationary VR experiences.",
-      "A technique that synthesizes an intermediate frame based on two previous frames and head motion data; invoked when the application frame rate drops below the target (e.g., below 45 FPS).",
-      "A tool for creating multiplayer lobbies."
-    ],
-    "answer": "A technique that synthesizes an intermediate frame based on two previous frames and head motion data; invoked when the application frame rate drops below the target (e.g., below 45 FPS).",
-    "explanation": "ASW attempts to maintain a smooth experience (e.g., 90 FPS perceived) by inserting synthetic frames when the application can't hit the target. It reduces motion sickness but can introduce artifacts if motion is complex.",
-    "tags": ["Oculus SDK", "VR", "Optimization"],
-    "required_skills": ["Oculus SDK"],
-    "hints": ["It's a performance fallback that generates fake frames."]
-  },
-  {
-    "_id": "q_xr_0013",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "XR Interaction Toolkit",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "AR Concepts",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
     "estimated_time_sec": 120,
-    "text": "Explain the difference between an `XR Ray Interactor` and an `XR Direct Interactor`.",
-    "options": [
-      "Ray is for movement; Direct is for teleportation.",
-      "Ray is for remote interaction (laser pointer); Direct is for physical, touch-based proximity interaction.",
-      "Ray is only for AR; Direct is only for VR.",
-      "Ray uses the CPU; Direct uses the GPU."
+    "text": "What is markerless AR?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "No physical markers",
+        "Uses sensors and camera",
+        "Plane detection"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "Ray is for remote interaction (laser pointer); Direct is for physical, touch-based proximity interaction.",
-    "explanation": "Direct Interactors register interaction when the controller physically touches the object (e.g., using a collider). Ray Interactors allow the user to select and interact with objects from a distance via a virtual laser pointer.",
-    "tags": ["XR Interaction Toolkit", "Unity"],
-    "required_skills": ["Unity", "XR Interaction Toolkit"],
-    "hints": ["One uses line-of-sight; the other uses physical contact."]
+    "transcription_required": true,
+    "tags": ["Markerless AR"],
+    "required_skills": ["Unity"],
+    "hints": ["ARCore / ARKit"]
   },
   {
-    "_id": "q_xr_0014",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0046",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "C# Optimization",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 180,
-    "text": "Why should VR developers avoid unnecessary use of the `FindObjectOfType()` or `GetComponent<T>()` methods within the C# `Update()` loop?",
-    "options": [
-      "They are asynchronous calls.",
-      "They cause memory leaks.",
-      "They are expensive, reflection-based calls that significantly increase CPU execution time and contribute to frame time jitter (non-determinism).",
-      "They only work with local variables."
+    "topic": "Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What challenges do developers face while designing AR/VR experiences?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "User comfort",
+        "Hardware limitations",
+        "Performance constraints"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "They are expensive, reflection-based calls that significantly increase CPU execution time and contribute to frame time jitter (non-determinism).",
-    "explanation": "These methods traverse large lists of objects/components. In VR, where the CPU budget per frame is extremely tight (around 11ms for 90 FPS), caching references in `Awake()` or `Start()` is mandatory for performance.",
-    "tags": ["C#", "Unity", "Optimization"],
-    "required_skills": ["C#", "Unity"],
-    "hints": ["It relates to traversing the scene hierarchy every frame."]
+    "transcription_required": true,
+    "tags": ["Design Challenges"],
+    "required_skills": ["Unity"],
+    "hints": ["Comfort and usability"]
   },
   {
-    "_id": "q_xr_0015",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0047",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "Unreal Engine",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is 'Forward Shading' and why is it preferred over 'Deferred Shading' in many VR applications using Unreal Engine?",
-    "options": [
-      "Forward Shading uses less VRAM.",
-      "Forward Shading has better support for complex materials.",
-      "Forward Shading handles anti-aliasing (like MSAA) and transparent surfaces better, and often results in higher performance on mobile/standalone VR hardware.",
-      "Deferred Shading only works on PC VR."
+    "topic": "Sensors",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What role do sensors play in AR/VR systems?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Detect movement",
+        "Track orientation",
+        "Improve realism"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "Forward Shading handles anti-aliasing (like MSAA) and transparent surfaces better, and often results in higher performance on mobile/standalone VR hardware.",
-    "explanation": "Forward Shading, while less efficient for many lights, is usually simpler and allows for better anti-aliasing techniques critical for VR visuals. Deferred Shading often relies on techniques that don't scale well in performance-constrained VR.",
-    "tags": ["Unreal Engine", "Optimization", "VR"],
-    "required_skills": ["Unreal Engine"],
-    "hints": ["It's a rendering path choice related to lighting and anti-aliasing quality."]
+    "transcription_required": true,
+    "tags": ["Sensors"],
+    "required_skills": ["Unity"],
+    "hints": ["Gyroscope, accelerometer"]
   },
   {
-    "_id": "q_xr_0016",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0048",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "VR Interaction",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "When designing a locomotion system for VR, what is the main advantage of 'Teleportation' over 'Continuous Movement' regarding user comfort?",
-    "options": [
-      "Teleportation is easier to implement.",
-      "Teleportation completely eliminates the visually induced vestibular conflict that causes motion sickness.",
-      "Teleportation requires less CPU processing.",
-      "Teleportation works better in confined spaces."
+    "topic": "User Experience",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is user experience critical in AR/VR applications?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Immersion",
+        "Comfort",
+        "Ease of interaction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "Teleportation completely eliminates the visually induced vestibular conflict that causes motion sickness.",
-    "explanation": "Continuous movement (smooth joystick motion) creates motion in the visual field that is not matched by the inner ear, causing sickness. Teleportation provides instant displacement, avoiding the conflict entirely, making it the safest locomotion method.",
-    "tags": ["VR", "Design"],
-    "required_skills": ["Unity", "Unreal Engine"],
-    "hints": ["It stops the mismatch between eyes and inner ear."]
+    "transcription_required": true,
+    "tags": ["UX"],
+    "required_skills": ["Unity"],
+    "hints": ["Comfort matters"]
   },
   {
-    "_id": "q_xr_0017",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0049",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "Oculus SDK",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "How does 'Fixed Foveated Rendering (FFR)', used by the Oculus SDK, improve GPU performance, and what is the visual trade-off?",
-    "options": [
-      "It reduces the complexity of shaders; Trade-off is less realistic lighting.",
-      "It renders the center of the viewport at full resolution and the periphery at a lower resolution; Trade-off is visual quality drop-off outside the focal point.",
-      "It skips rendering every second frame; Trade-off is increased latency.",
-      "It automatically reduces texture size; Trade-off is blurry textures."
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see AR/VR being used in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Education",
+        "Healthcare",
+        "Remote collaboration"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
     ],
-    "answer": "It renders the center of the viewport at full resolution and the periphery at a lower resolution; Trade-off is visual quality drop-off outside the focal point.",
-    "explanation": "FFR leverages the fact that human eyes only see high detail in the center of the retina. By lowering the resolution in the periphery, it reduces the number of pixels the GPU must shade, saving significant GPU power at the cost of slight peripheral blurriness.",
-    "tags": ["Oculus SDK", "VR", "Optimization"],
-    "required_skills": ["Oculus SDK"],
-    "hints": ["It optimizes based on the limitations of human peripheral vision."]
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Unity"],
+    "hints": ["Next-gen technology"]
   },
   {
-    "_id": "q_xr_0018",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0050",
+    "question_type": "voice",
     "domain": "AR/VR Development",
-    "topic": "AR/3D Modeling",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What skills are important for an AR/VR developer?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "3D understanding",
+        "Programming skills",
+        "Problem solving"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Skills"],
+    "required_skills": ["Unity"],
+    "hints": ["3D + coding"]
+  },
+  
+  {
+    "_id": "q_arvr_0051",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Vector Mathematics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
     "estimated_time_sec": 240,
-    "text": "What is the key challenge of lighting virtual objects in AR compared to VR, and what technology addresses this?",
-    "options": [
-      "AR requires real-time shadows; addressed by using pre-baked lightmaps.",
-      "AR requires estimating the real-world ambient lighting and reflections; addressed by Environmental Probes (or Light Estimation) to calculate the ambient color and cast subtle shadows.",
-      "AR objects must be placed far from the camera; addressed by using a large clipping plane.",
-      "AR requires higher triangle counts; addressed by aggressive LOD systems."
+    "text": "Write a Python function to compute the magnitude of a 3D vector used in AR/VR positioning.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef vector_magnitude(vec):\n    pass",
+      "function_signature": "vector_magnitude(vec: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.sqrt(np.sum(vec ** 2))",
+      "key_concepts": ["Vector magnitude", "3D space"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([3,4,0])",
+        "expected_output": "5.0",
+        "description": "3D vector magnitude"
+      }
     ],
-    "answer": "AR requires estimating the real-world ambient lighting and reflections; addressed by Environmental Probes (or Light Estimation) to calculate the ambient color and cast subtle shadows.",
-    "explanation": "For virtual objects to look real in AR, they must be illuminated by the real-world lighting. Light Estimation APIs capture the average light intensity and color, which is then fed into the shader to match the scene dynamically.",
-    "tags": ["AR", "3D Modeling", "Optimization"],
-    "required_skills": ["3D Modeling", "Unity", "Unreal Engine"],
-    "hints": ["The virtual light must match the invisible real light."]
-  },
-  {
-    "_id": "q_xr_0019",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "Unity/C#",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "Why should you use the `OnDestroy()` function instead of `OnDisable()` to clean up memory, remove listeners, or dispose of unmanaged resources?",
-    "options": [
-      "`OnDisable()` is called too frequently.",
-      "`OnDestroy()` is only called when the GameObject or script instance is completely destroyed, guaranteeing final cleanup.",
-      "`OnDisable()` only works in the Editor.",
-      "You should always use `Update()` for cleanup."
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct magnitude" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero vector" }
     ],
-    "answer": "`OnDestroy()` is only called when the GameObject or script instance is completely destroyed, guaranteeing final cleanup.",
-    "explanation": "`OnDisable()` is called every time the component is disabled/enabled, while `OnDestroy()` is the single, final call used to prevent resource leaks when the object is permanently removed.",
-    "tags": ["Unity", "C#"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["This function is the one-time final call in the object's lifecycle."]
+    "tags": ["Python", "NumPy", "3D Math"],
+    "required_skills": ["Python"],
+    "hints": ["Use square root of sum of squares"]
   },
+
   {
-    "_id": "q_xr_0020",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0052",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "XR Interaction Toolkit",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 75,
-    "text": "What is the main function of the 'XR Input Subsystem' in Unity's XR framework?",
-    "options": [
-      "To render 3D assets to the screen.",
-      "To manage physics calculations for the entire scene.",
-      "To abstract and normalize raw input data (like button presses and controller tracking) from various HMD/controller SDKs into a unified format.",
-      "To load and save game data."
-    ],
-    "answer": "To abstract and normalize raw input data (like button presses and controller tracking) from various HMD/controller SDKs into a unified format.",
-    "explanation": "The XR Input Subsystem handles the low-level communication with the hardware, making it possible to write a single script that works across Oculus, Vive, and other devices without custom code for each one.",
-    "tags": ["XR Interaction Toolkit", "Unity"],
-    "required_skills": ["Unity", "XR Interaction Toolkit"],
-    "hints": ["It creates a common language for hardware data."]
-  },
-  {
-    "_id": "q_xr_0021",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "3D Modeling",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "In the context of 3D performance, what does the term 'Overdraw' mean, and why is it particularly detrimental in VR?",
-    "options": [
-      "Drawing an object with too many polygons; detrimental because it consumes too much VRAM.",
-      "Drawing pixels that are subsequently overwritten by closer objects; detrimental because it wastes GPU fill rate and increases frame time.",
-      "Drawing too many textures in a scene; detrimental because it causes CPU bottlenecks.",
-      "Drawing an object that is outside the camera view; detrimental because it wastes CPU time."
-    ],
-    "answer": "Drawing pixels that are subsequently overwritten by closer objects; detrimental because it wastes GPU fill rate and increases frame time.",
-    "explanation": "Overdraw happens when many layers of transparent or partially transparent objects are stacked. The GPU must shade the same pixel multiple times, burning fill rate. Since VR requires shading two views, overdraw's cost is effectively doubled.",
-    "tags": ["3D Modeling", "Optimization"],
-    "required_skills": ["3D Modeling", "Unity", "Unreal Engine"],
-    "hints": ["It's the redundant rendering of pixels that aren't visible in the final image."]
-  },
-  {
-    "_id": "q_xr_0022",
-    "question_type": "multiple-choice",
-    "domain": "AR/VR Development",
-    "topic": "Unreal Engine",
+    "topic": "Coordinate Transformation",
     "difficulty": 2,
     "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the primary method for adding input handlers and game logic to an Actor using C++ in Unreal Engine?",
-    "options": [
-      "Overriding the `BeginPlay` function.",
-      "Using the `Tick` function.",
-      "Binding input actions within the `SetupPlayerInputComponent` function of a Pawn/Character.",
-      "Attaching a Blueprint."
+    "estimated_time_sec": 300,
+    "text": "Write a function to translate a 3D point by a given offset vector.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef translate_point(point, offset):\n    pass",
+      "function_signature": "translate_point(point: np.ndarray, offset: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return point + offset",
+      "key_concepts": ["Translation", "3D coordinates"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3]), np.array([1,1,1])",
+        "expected_output": "np.array([2,3,4])",
+        "description": "Point translation"
+      }
     ],
-    "answer": "Binding input actions within the `SetupPlayerInputComponent` function of a Pawn/Character.",
-    "explanation": "Input handling in UE C++ is typically managed by binding actions and axes to specific functions within the `SetupPlayerInputComponent` function of the Pawn or Character class.",
-    "tags": ["Unreal Engine", "C++"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["It's the specific function for connecting player input to code."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct translation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized operation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles negative offsets" }
+    ],
+    "tags": ["Python", "NumPy", "Transformations"],
+    "required_skills": ["Python"],
+    "hints": ["Add point and offset"]
   },
+
   {
-    "_id": "q_xr_0023",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0053",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "Unity/C#",
+    "topic": "Rotation",
     "difficulty": 2,
     "difficulty_label": "Novice",
-    "estimated_time_sec": 45,
-    "text": "How do you temporarily suspend all execution of code within a C# function in Unity without blocking the main thread?",
-    "options": [
-      "Using a `while(true)` loop.",
-      "Using the `Thread.Sleep()` method.",
-      "Using a `Coroutine` with a yield statement (e.g., `yield return null`).",
-      "By disabling the MonoBehaviour component."
+    "estimated_time_sec": 300,
+    "text": "Write a function to rotate a 2D point around the origin by a given angle (in radians).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef rotate_2d(point, angle):\n    pass",
+      "function_signature": "rotate_2d(point: np.ndarray, angle: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "x, y = point\nreturn np.array([x*np.cos(angle) - y*np.sin(angle), x*np.sin(angle) + y*np.cos(angle)])",
+      "key_concepts": ["Rotation matrix", "2D transformation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,0]), np.pi/2",
+        "expected_output": "np.array([0.0,1.0])",
+        "description": "90 degree rotation"
+      }
     ],
-    "answer": "Using a `Coroutine` with a yield statement (e.g., `yield return null`).",
-    "explanation": "Coroutines allow function execution to be paused and resumed over multiple frames, which is essential for managing sequential events and animations without causing the game to freeze.",
-    "tags": ["Unity", "C#"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["It's a special function type that works over multiple frames."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct rotation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear math usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero angle" }
+    ],
+    "tags": ["Python", "NumPy", "Rotation"],
+    "required_skills": ["Python"],
+    "hints": ["Use cosine and sine"]
   },
+
   {
-    "_id": "q_xr_0024",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0054",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "Oculus SDK",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is the primary purpose of the 'Guardian System' in Oculus/Meta Quest headsets?",
-    "options": [
-      "To prevent unauthorized app installation.",
-      "To establish a boundary around the playable area and warn the user when they approach or cross it.",
-      "To manage multiplayer session creation.",
-      "To track the user's hand gestures."
+    "topic": "Distance Calculation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute the distance between two 3D points.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef distance_3d(p1, p2):\n    pass",
+      "function_signature": "distance_3d(p1: np.ndarray, p2: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.sqrt(np.sum((p1 - p2) ** 2))",
+      "key_concepts": ["Euclidean distance", "3D space"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0,0,0]), np.array([1,2,2])",
+        "expected_output": "3.0",
+        "description": "3D distance"
+      }
     ],
-    "answer": "To establish a boundary around the playable area and warn the user when they approach or cross it.",
-    "explanation": "The Guardian System is a core safety feature that uses the headset's tracking to define a safe play space, preventing the user from physically hitting real-world objects.",
-    "tags": ["Oculus SDK", "VR", "Safety"],
-    "required_skills": ["Oculus SDK"],
-    "hints": ["It's the safety boundary for the player's physical space."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct distance" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Efficient computation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles identical points" }
+    ],
+    "tags": ["Python", "NumPy", "Spatial Computing"],
+    "required_skills": ["Python"],
+    "hints": ["Subtract points and apply sqrt"]
   },
+
   {
-    "_id": "q_xr_0025",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0055",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "XR Interaction Toolkit",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "When creating custom controller input processing in the XR Interaction Toolkit, what is the key component that transforms raw input (e.g., a button press) into an action recognized by the Interactor?",
-    "options": [
-      "Input Action Manager",
-      "XR Base Controller",
-      "Action-based Input System (using Input Actions)",
-      "XR Rig"
+    "topic": "Scaling",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to scale a 3D object uniformly by a given factor.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef scale_object(vertices, factor):\n    pass",
+      "function_signature": "scale_object(vertices: np.ndarray, factor: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return vertices * factor",
+      "key_concepts": ["Scaling", "3D geometry"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([[1,1,1]]), 2",
+        "expected_output": "np.array([[2,2,2]])",
+        "description": "Uniform scaling"
+      }
     ],
-    "answer": "Action-based Input System (using Input Actions)",
-    "explanation": "The modern XR Interaction Toolkit uses the Unity Input System, specifically **Input Actions**, to map physical device inputs to abstract, reusable actions (e.g., 'Grip', 'Trigger Press'), which are then consumed by the XR Interactors.",
-    "tags": ["XR Interaction Toolkit", "Unity", "C#"],
-    "required_skills": ["Unity", "XR Interaction Toolkit", "C#"],
-    "hints": ["This system creates the abstract mapping layer for input."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct scaling" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero factor" }
+    ],
+    "tags": ["Python", "NumPy", "3D Objects"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply by factor"]
   },
+
   {
-    "_id": "q_xr_0026",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0056",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "3D Modeling",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "In the context of 3D character animation optimization for VR, what is the benefit of using 'Blend Shapes' (or 'Morph Targets') over traditional bone/joint rigging for facial expressions?",
-    "options": [
-      "Blend Shapes are easier to author.",
-      "Blend Shapes allow for more complex deformation using vertex displacement, which is often cheaper to compute for facial animation than complex bone chains.",
-      "Blend Shapes only work for static objects.",
-      "Blend Shapes consume less VRAM than textures."
+    "topic": "Ray Casting",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute a point along a ray given origin, direction, and distance.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef ray_point(origin, direction, distance):\n    pass",
+      "function_signature": "ray_point(origin: np.ndarray, direction: np.ndarray, distance: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return origin + direction * distance",
+      "key_concepts": ["Ray casting", "Directional vectors"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0,0,0]), np.array([1,0,0]), 5",
+        "expected_output": "np.array([5,0,0])",
+        "description": "Ray point computation"
+      }
     ],
-    "answer": "Blend Shapes allow for more complex deformation using vertex displacement, which is often cheaper to compute for facial animation than complex bone chains.",
-    "explanation": "Blend Shapes store target vertex positions for specific expressions (e.g., 'smile'). The engine interpolates between these targets, offering high fidelity and reduced bone calculation overhead, which is valuable in VR's tight performance budget.",
-    "tags": ["3D Modeling", "Optimization"],
-    "required_skills": ["3D Modeling", "Blender"],
-    "hints": ["It's a vertex-based deformation technique."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct ray point" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable code" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero distance" }
+    ],
+    "tags": ["Python", "NumPy", "Ray Casting"],
+    "required_skills": ["Python"],
+    "hints": ["origin + direction * distance"]
   },
+
   {
-    "_id": "q_xr_0027",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0057",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "Unity/Shader Programming",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "What is 'Vulkan' in the context of Unity/Oculus development, and what is its primary performance advantage?",
-    "options": [
-      "A new C# scripting language; Advantage is better garbage collection.",
-      "A cross-platform 3D graphics and compute API; Advantage is lower CPU overhead due to its explicit, low-level driver model (reducing draw call cost).",
-      "A physics engine replacement; Advantage is better collision detection.",
-      "A high-level network protocol; Advantage is low latency."
+    "topic": "Collision Detection",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if two spheres intersect given their centers and radii.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef spheres_intersect(c1, r1, c2, r2):\n    pass",
+      "function_signature": "spheres_intersect(c1: np.ndarray, r1: float, c2: np.ndarray, r2: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return np.linalg.norm(c1 - c2) <= (r1 + r2)",
+      "key_concepts": ["Collision detection", "Bounding spheres"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0,0,0]),1,np.array([1,0,0]),1",
+        "expected_output": "True",
+        "description": "Intersecting spheres"
+      }
     ],
-    "answer": "A cross-platform 3D graphics and compute API; Advantage is lower CPU overhead due to its explicit, low-level driver model (reducing draw call cost).",
-    "explanation": "Vulkan (and DirectX 12/Metal) is a next-generation graphics API that gives developers more control over the GPU pipeline, significantly reducing CPU bottlenecks associated with issuing draw calls, which is crucial for maximizing performance in VR.",
-    "tags": ["Unity", "Shader Programming", "Optimization"],
-    "required_skills": ["Unity", "Shader Programming"],
-    "hints": ["It's a graphics API designed to reduce the workload on the CPU."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Intersection logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Efficient computation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles touching spheres" }
+    ],
+    "tags": ["Python", "NumPy", "Collision"],
+    "required_skills": ["Python"],
+    "hints": ["Compare distance with sum of radii"]
   },
+
   {
-    "_id": "q_xr_0028",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0058",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "AR Fundamentals",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "What is 'SLAM' (Simultaneous Localization and Mapping) and what is its primary output for an AR application?",
-    "options": [
-      "A physics engine algorithm; Output is collision data.",
-      "A computer vision process that simultaneously builds a map of the environment and tracks the device's location within that map; Output is the persistent coordinate system (world anchor).",
-      "A rendering technique; Output is high-fidelity shadows.",
-      "A network protocol; Output is real-time user data."
+    "topic": "Normalization",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to normalize a direction vector used in VR navigation.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef normalize_vector(vec):\n    pass",
+      "function_signature": "normalize_vector(vec: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return vec / np.linalg.norm(vec)",
+      "key_concepts": ["Vector normalization", "Unit vectors"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([3,0,4])",
+        "expected_output": "np.array([0.6,0.0,0.8])",
+        "description": "Normalize vector"
+      }
     ],
-    "answer": "A computer vision process that simultaneously builds a map of the environment and tracks the device's location within that map; Output is the persistent coordinate system (world anchor).",
-    "explanation": "SLAM is the core technology in modern AR that allows the device to understand its position and orientation in 3D space, which is necessary to anchor virtual objects consistently to the real world.",
-    "tags": ["AR", "Fundamentals"],
-    "required_skills": ["Unity", "Unreal Engine"],
-    "hints": ["It's how the phone/headset knows where it is and what its surroundings look like."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct normalization" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy norms" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero vector safely" }
+    ],
+    "tags": ["Python", "NumPy", "Vectors"],
+    "required_skills": ["Python"],
+    "hints": ["Divide by vector magnitude"]
   },
+
   {
-    "_id": "q_xr_0029",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0059",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "Unreal Engine",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "In Unreal Engine's replication system for networked VR, why should input and movement be handled primarily on the server, even for the local player's character?",
-    "options": [
-      "To save client memory.",
-      "To ensure that all game logic runs deterministically and consistently on a single authority (the server), preventing cheating and state mismatch.",
-      "The client cannot process C++ code.",
-      "The server has access to more GPU resources."
+    "topic": "Frame Updates",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to update object position based on velocity and delta time.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef update_position(pos, vel, dt):\n    pass",
+      "function_signature": "update_position(pos: np.ndarray, vel: np.ndarray, dt: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return pos + vel * dt",
+      "key_concepts": ["Frame update", "Motion integration"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0,0,0]), np.array([1,0,0]), 2",
+        "expected_output": "np.array([2,0,0])",
+        "description": "Position update"
+      }
     ],
-    "answer": "To ensure that all game logic runs deterministically and consistently on a single authority (the server), preventing cheating and state mismatch.",
-    "explanation": "While the client predicts movement for responsiveness, the server must be the ultimate authority for position, collision, and critical gameplay state to maintain integrity and synchronize all players accurately.",
-    "tags": ["Unreal Engine", "C++", "Networking"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["This is the fundamental principle of preventing cheating and ensuring state synchronization."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct update" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple physics logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero velocity" }
+    ],
+    "tags": ["Python", "NumPy", "Simulation"],
+    "required_skills": ["Python"],
+    "hints": ["position + velocity * time"]
   },
+
   {
-    "_id": "q_xr_0030",
-    "question_type": "multiple-choice",
+    "_id": "q_arvr_0060",
+    "question_type": "coding",
     "domain": "AR/VR Development",
-    "topic": "XR Interaction Toolkit",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "When implementing a high-fidelity interaction where the user's virtual hand position must match the physical controller exactly, what is the preferred attachment type on the `XR Grab Interactable`?",
-    "options": [
-      "Fixed",
-      "Climb",
-      "Kinematic",
-      "Follow"
+    "topic": "Bounding Volumes",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if a point lies inside an axis-aligned bounding box (AABB).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef point_in_aabb(point, min_b, max_b):\n    pass",
+      "function_signature": "point_in_aabb(point: np.ndarray, min_b: np.ndarray, max_b: np.ndarray) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return np.all(point >= min_b) and np.all(point <= max_b)",
+      "key_concepts": ["AABB", "Spatial checks"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,1,1]), np.array([0,0,0]), np.array([2,2,2])",
+        "expected_output": "True",
+        "description": "Point inside box"
+      }
     ],
-    "answer": "Follow",
-    "explanation": "The `Follow` attachment type forces the grabbed object to follow the position and rotation of the interactor precisely, which is necessary for complex, realistic interactions where the player's physical movements directly control the object.",
-    "tags": ["XR Interaction Toolkit", "Unity", "Design"],
-    "required_skills": ["Unity", "XR Interaction Toolkit"],
-    "hints": ["This setting prioritizes the controller's exact tracking data."]
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct inclusion test" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition checks" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary points" }
+    ],
+    "tags": ["Python", "NumPy", "Collision"],
+    "required_skills": ["Python"],
+    "hints": ["Check min and max bounds"]
+  },
+
+  {
+    "_id": "q_arvr_0061",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Camera Systems",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute the forward direction of a camera given yaw angle.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef camera_forward(yaw):\n    pass",
+      "function_signature": "camera_forward(yaw: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.array([np.cos(yaw), 0, np.sin(yaw)])",
+      "key_concepts": ["Camera direction", "Yaw rotation"]
+    },
+    "test_cases": [
+      {
+        "input": "0",
+        "expected_output": "np.array([1.0,0.0,0.0])",
+        "description": "Facing forward"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct direction vector" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable math" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles angle wrapping" }
+    ],
+    "tags": ["Python", "NumPy", "Camera"],
+    "required_skills": ["Python"],
+    "hints": ["Use cosine and sine"]
+  },
+
+  {
+    "_id": "q_arvr_0062",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Interpolation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to linearly interpolate between two positions in 3D space.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef lerp(p1, p2, t):\n    pass",
+      "function_signature": "lerp(p1: np.ndarray, p2: np.ndarray, t: float) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return p1 + t * (p2 - p1)",
+      "key_concepts": ["Linear interpolation", "Smooth motion"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([0,0,0]), np.array([10,0,0]), 0.5",
+        "expected_output": "np.array([5,0,0])",
+        "description": "Midpoint interpolation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct interpolation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple formula" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles t=0 and t=1" }
+    ],
+    "tags": ["Python", "NumPy", "Animation"],
+    "required_skills": ["Python"],
+    "hints": ["Use p1 + t*(p2-p1)"]
+  },
+
+  {
+    "_id": "q_arvr_0063",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Scene Management",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to toggle visibility state of a virtual object.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def toggle_visibility(is_visible):\n    pass",
+      "function_signature": "toggle_visibility(is_visible: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return not is_visible",
+      "key_concepts": ["Visibility toggling", "Scene control"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "False",
+        "description": "Toggle off"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct toggle" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+    ],
+    "tags": ["Python", "AR/VR"],
+    "required_skills": ["Python"],
+    "hints": ["Invert boolean value"]
+  },
+
+  {
+    "_id": "q_arvr_0064",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Input Handling",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to map a controller trigger value to movement speed.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def map_trigger_to_speed(trigger):\n    pass",
+      "function_signature": "map_trigger_to_speed(trigger: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return max(0.0, min(trigger, 1.0)) * 5",
+      "key_concepts": ["Input mapping", "Controller input"]
+    },
+    "test_cases": [
+      {
+        "input": "0.5",
+        "expected_output": "2.5",
+        "description": "Half trigger press"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct speed mapping" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear bounds handling" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles out-of-range input" }
+    ],
+    "tags": ["Python", "Input"],
+    "required_skills": ["Python"],
+    "hints": ["Clamp trigger value"]
+  },
+
+  {
+    "_id": "q_arvr_0065",
+    "question_type": "coding",
+    "domain": "AR/VR Development",
+    "topic": "Frame Timing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute frames per second (FPS) given frame time in seconds.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def compute_fps(frame_time):\n    pass",
+      "function_signature": "compute_fps(frame_time: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return 1.0 / frame_time if frame_time > 0 else 0",
+      "key_concepts": ["FPS calculation", "Real-time rendering"]
+    },
+    "test_cases": [
+      {
+        "input": "0.016",
+        "expected_output": "62.5",
+        "description": "Approx 60 FPS"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct FPS value" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Handles division safely" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero frame time" }
+    ],
+    "tags": ["Python", "Rendering"],
+    "required_skills": ["Python"],
+    "hints": ["FPS = 1 / frame_time"]
   }
+
 ]

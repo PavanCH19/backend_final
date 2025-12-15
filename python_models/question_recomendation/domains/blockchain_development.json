@@ -4,629 +4,1904 @@
     "question_type": "multiple-choice",
     "domain": "Blockchain",
     "topic": "Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What are the three main properties that define a block in a blockchain?",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of a hash function in a blockchain?",
     "options": [
-      "Timestamp, Gas Limit, Nonce",
-      "Data, Hash of the current block, Hash of the previous block",
-      "Transaction ID, Public Key, Private Key",
-      "Merkle Root, difficulty, block height"
+      "To encrypt transaction data",
+      "To uniquely identify blocks and ensure immutability",
+      "To reduce transaction size",
+      "To validate user identity"
     ],
-    "answer": "Data, Hash of the current block, Hash of the previous block",
-    "explanation": "A block must contain transactional data, its own cryptographic hash, and the hash of the preceding block to create the cryptographic chain.",
-    "tags": ["Blockchain Architecture", "Fundamentals"],
-    "required_skills": ["Blockchain Architecture"],
-    "hints": ["Think about what links one block to the next."]
+    "answer": "To uniquely identify blocks and ensure immutability",
+    "explanation": "Cryptographic hash functions link blocks together and make tampering detectable.",
+    "tags": ["Blockchain", "Hashing"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Think integrity and immutability"]
   },
   {
     "_id": "q_bc_0002",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Ethereum",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "What is 'Gas' used for on the Ethereum network?",
+    "topic": "Consensus Mechanisms",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What problem does the Proof of Work (PoW) consensus mechanism primarily solve?",
     "options": [
-      "As the main unit of currency (ETH)",
-      "As compensation for miners to execute transactions and smart contract computations",
-      "As a measure of network latency",
-      "To store data off-chain"
+      "Data encryption",
+      "Double-spending",
+      "Smart contract execution",
+      "Key distribution"
     ],
-    "answer": "As compensation for miners to execute transactions and smart contract computations",
-    "explanation": "Gas is a unit that measures the computational effort required to execute operations on the Ethereum Virtual Machine (EVM). It prevents infinite loops and pays for resource usage.",
-    "tags": ["Ethereum", "Fundamentals"],
-    "required_skills": ["Ethereum"],
-    "hints": ["It's the fee paid for computational work."]
+    "answer": "Double-spending",
+    "explanation": "PoW ensures that transactions cannot be spent more than once without network agreement.",
+    "tags": ["Blockchain", "Consensus"],
+    "required_skills": ["Distributed Systems"],
+    "hints": ["Same coin spent twice"]
   },
   {
     "_id": "q_bc_0003",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Smart Contracts",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "Which programming language is primarily used for writing smart contracts on Ethereum?",
+    "topic": "Cryptography",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which cryptographic technique is used to verify ownership of blockchain transactions?",
     "options": [
-      "Java",
-      "C++",
-      "Solidity",
-      "Python"
+      "Symmetric encryption",
+      "Hashing",
+      "Digital signatures",
+      "Steganography"
     ],
-    "answer": "Solidity",
-    "explanation": "Solidity is the most popular high-level, contract-oriented programming language designed specifically for implementing smart contracts on the Ethereum platform.",
-    "tags": ["Solidity", "Smart Contracts", "Ethereum"],
-    "required_skills": ["Solidity", "Ethereum", "Smart Contracts"],
-    "hints": ["Its name hints at its purpose on the EVM."]
+    "answer": "Digital signatures",
+    "explanation": "Digital signatures verify transaction authenticity and ownership using private keys.",
+    "tags": ["Blockchain", "Cryptography"],
+    "required_skills": ["Public Key Cryptography"],
+    "hints": ["Private key usage"]
   },
   {
     "_id": "q_bc_0004",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Truffle",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "What is the primary function of the Truffle framework in Ethereum development?",
+    "topic": "Blocks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which component links a block to its predecessor in a blockchain?",
     "options": [
-      "To mine new ETH coins quickly.",
-      "To handle smart contract compilation, deployment, testing, and debugging.",
-      "To connect mobile applications to the blockchain.",
-      "To manage private keys securely."
+      "Merkle root",
+      "Timestamp",
+      "Nonce",
+      "Previous block hash"
     ],
-    "answer": "To handle smart contract compilation, deployment, testing, and debugging.",
-    "explanation": "Truffle is a development environment, testing framework, and asset pipeline for Ethereum, making the full lifecycle of DApp creation easier.",
-    "tags": ["Truffle", "Smart Contracts"],
-    "required_skills": ["Truffle", "Smart Contracts"],
-    "hints": ["It's a full development toolkit for DApps."]
+    "answer": "Previous block hash",
+    "explanation": "Each block stores the hash of the previous block, forming a secure chain.",
+    "tags": ["Blockchain", "Data Structure"],
+    "required_skills": ["Blockchain Architecture"],
+    "hints": ["Chain formation"]
   },
   {
     "_id": "q_bc_0005",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Cryptography",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What cryptographic technique is used to create a fixed-size, unique fingerprint of a block's data, ensuring immutability?",
+    "topic": "Decentralization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does decentralization primarily eliminate in blockchain systems?",
     "options": [
-      "Asymmetric Encryption",
-      "Symmetric Encryption",
-      "Hashing (e.g., SHA-256)",
-      "Digital Signatures"
+      "Cryptography",
+      "Consensus",
+      "Single point of failure",
+      "Network latency"
     ],
-    "answer": "Hashing (e.g., SHA-256)",
-    "explanation": "Hashing is the process of generating a unique, fixed-size output from input data. Any change to the input data results in a completely different hash, guaranteeing data integrity and immutability.",
-    "tags": ["Cryptography", "Fundamentals"],
-    "required_skills": ["Cryptography"],
-    "hints": ["It turns data into a fixed-length fingerprint."]
+    "answer": "Single point of failure",
+    "explanation": "Decentralization distributes control across nodes, increasing fault tolerance.",
+    "tags": ["Blockchain", "Decentralization"],
+    "required_skills": ["Distributed Networks"],
+    "hints": ["No central authority"]
   },
   {
     "_id": "q_bc_0006",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Web3.js",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the primary role of the Web3.js library?",
+    "topic": "Smart Contracts",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main characteristic of a smart contract?",
     "options": [
-      "To write the smart contract logic.",
-      "To create the front-end UI interface.",
-      "To allow a client-side application (like a web browser) to interact with the Ethereum blockchain.",
-      "To manage the consensus mechanism."
+      "Manual execution",
+      "Immutable and self-executing code",
+      "Centralized control",
+      "Editable after deployment"
     ],
-    "answer": "To allow a client-side application (like a web browser) to interact with the Ethereum blockchain.",
-    "explanation": "Web3.js is a collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket.",
-    "tags": ["Web3.js", "Ethereum"],
-    "required_skills": ["Web3.js", "Ethereum"],
-    "hints": ["It bridges the web browser/client to the blockchain network."]
+    "answer": "Immutable and self-executing code",
+    "explanation": "Smart contracts automatically execute predefined logic and cannot be altered once deployed.",
+    "tags": ["Blockchain", "Smart Contracts"],
+    "required_skills": ["Solidity Basics"],
+    "hints": ["Code executes automatically"]
   },
   {
     "_id": "q_bc_0007",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Consensus",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What is the core difference between Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus mechanisms?",
+    "topic": "Ethereum",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is Gas in the Ethereum blockchain?",
     "options": [
-      "PoW uses hashing power to secure the chain; PoS uses staked currency.",
-      "PoW is energy efficient; PoS is not.",
-      "PoW is only used on Ethereum; PoS is only used on Bitcoin.",
-      "PoW validates transactions; PoS creates new blocks."
+      "A cryptocurrency",
+      "A measure of computational cost",
+      "A storage unit",
+      "A network protocol"
     ],
-    "answer": "PoW uses hashing power to secure the chain; PoS uses staked currency.",
-    "explanation": "PoW (e.g., Bitcoin) requires computational work (hashing) to validate blocks. PoS (e.g., Ethereum post-Merge) selects validators based on the amount of coin they have staked.",
-    "tags": ["Blockchain Architecture", "Ethereum"],
-    "required_skills": ["Blockchain Architecture", "Ethereum"],
-    "hints": ["One relies on computation; the other relies on financial commitment."]
+    "answer": "A measure of computational cost",
+    "explanation": "Gas represents the cost required to execute operations on the Ethereum network.",
+    "tags": ["Ethereum", "Gas"],
+    "required_skills": ["Ethereum"],
+    "hints": ["Execution cost"]
   },
   {
     "_id": "q_bc_0008",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Solidity",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is the function of the `require()` statement in Solidity?",
+    "topic": "Transactions",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a UTXO in blockchain systems like Bitcoin?",
     "options": [
-      "To define a custom error message.",
-      "To send funds to an address.",
-      "To check a condition and revert all state changes if the condition is false.",
-      "To log events to the blockchain."
+      "Unverified transaction output",
+      "Unspent transaction output",
+      "Unified transaction object",
+      "Unlimited transfer option"
     ],
-    "answer": "To check a condition and revert all state changes if the condition is false.",
-    "explanation": "The `require()` statement is used for checking inputs and conditions before execution. If the condition is false, the transaction fails, all state changes are reverted, and the remaining gas is consumed.",
-    "tags": ["Solidity", "Smart Contracts"],
-    "required_skills": ["Solidity", "Smart Contracts"],
-    "hints": ["It acts as a primary safety check for execution."]
+    "answer": "Unspent transaction output",
+    "explanation": "UTXOs represent the remaining spendable outputs of previous transactions.",
+    "tags": ["Blockchain", "Bitcoin"],
+    "required_skills": ["Bitcoin Architecture"],
+    "hints": ["Output not yet spent"]
   },
   {
     "_id": "q_bc_0009",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Ethereum",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What is the primary role of the Ethereum Virtual Machine (EVM)?",
+    "topic": "Mining",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What role does a nonce play in blockchain mining?",
     "options": [
-      "To manage the peer-to-peer network connections.",
-      "To act as the global, single-instance computer that executes smart contract bytecode.",
-      "To store the entire history of the blockchain.",
-      "To distribute rewards to miners."
+      "Encrypts transactions",
+      "Adjusts block difficulty",
+      "Helps achieve a valid hash",
+      "Stores transaction fees"
     ],
-    "answer": "To act as the global, single-instance computer that executes smart contract bytecode.",
-    "explanation": "The EVM is the runtime environment for smart contracts. It's a stack-based virtual machine that reads and executes smart contract bytecode, ensuring every node processes transactions identically.",
-    "tags": ["Ethereum", "Smart Contracts", "Blockchain Architecture"],
-    "required_skills": ["Ethereum", "Blockchain Architecture"],
-    "hints": ["It's the execution engine for all contract code."]
+    "answer": "Helps achieve a valid hash",
+    "explanation": "Miners vary the nonce to find a hash that meets the difficulty requirement.",
+    "tags": ["Blockchain", "Mining"],
+    "required_skills": ["Consensus Algorithms"],
+    "hints": ["Trial-and-error value"]
   },
   {
     "_id": "q_bc_0010",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Cryptography",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "How do public and private keys relate to digital signatures in a blockchain transaction?",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a 51% attack?",
     "options": [
-      "The private key encrypts the data; the public key decrypts it.",
-      "The public key creates the signature; the private key verifies it.",
-      "The private key creates the signature; the public key verifies that the signature belongs to the sender.",
-      "Both keys are required to create the transaction hash."
+      "A cryptographic vulnerability",
+      "Majority control over network hashing power",
+      "Smart contract failure",
+      "Wallet key compromise"
     ],
-    "answer": "The private key creates the signature; the public key verifies that the signature belongs to the sender.",
-    "explanation": "The private key is used to sign a transaction hash (proving ownership). The corresponding public key (which is derived from the private key) is used by other nodes to verify that signature without knowing the private key.",
-    "tags": ["Cryptography", "Fundamentals"],
-    "required_skills": ["Cryptography"],
-    "hints": ["The private key is used for proving; the public key is used for checking."]
+    "answer": "Majority control over network hashing power",
+    "explanation": "An attacker controlling over 50% of the network can manipulate transactions.",
+    "tags": ["Blockchain", "Security"],
+    "required_skills": ["Blockchain Security"],
+    "hints": ["Majority attack"]
   },
+
   {
     "_id": "q_bc_0011",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Smart Contracts",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "In Solidity, what is the storage location of a `mapping` variable?",
+    "topic": "Permission Models",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What defines a permissioned blockchain?",
     "options": [
-      "Memory",
-      "Storage",
-      "Calldata",
-      "Stack"
+      "Anyone can participate anonymously",
+      "Only authorized nodes can validate transactions",
+      "It does not use cryptography",
+      "It has no consensus mechanism"
     ],
-    "answer": "Storage",
-    "explanation": "Variables declared at the contract level (like mappings and state variables) are stored permanently on the blockchain state (storage). `Memory` and `calldata` are temporary areas for execution.",
-    "tags": ["Solidity", "Smart Contracts"],
-    "required_skills": ["Solidity", "Smart Contracts"],
-    "hints": ["It is a permanent state variable, not a temporary one."]
+    "answer": "Only authorized nodes can validate transactions",
+    "explanation": "Permissioned blockchains restrict participation to known entities.",
+    "tags": ["Blockchain", "Enterprise"],
+    "required_skills": ["Blockchain Types"],
+    "hints": ["Controlled access"]
   },
   {
     "_id": "q_bc_0012",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Web3.js",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What is the purpose of the ABI (Application Binary Interface) when interacting with a smart contract via Web3.js?",
+    "topic": "Scalability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is sharding in blockchain systems?",
     "options": [
-      "It contains the contract's source code.",
-      "It is the compiled bytecode of the contract.",
-      "It defines the contract's public methods and structures in JSON format, allowing external interaction.",
-      "It manages the contract's internal state variables."
+      "Encrypting data",
+      "Splitting the network into smaller partitions",
+      "Increasing block size",
+      "Reducing node count"
     ],
-    "answer": "It defines the contract's public methods and structures in JSON format, allowing external interaction.",
-    "explanation": "The ABI acts as the interface or 'manual' for a smart contract, telling Web3.js how to encode and decode function calls and data structures to interact with the bytecode on the EVM.",
-    "tags": ["Web3.js", "Smart Contracts"],
-    "required_skills": ["Web3.js", "Smart Contracts"],
-    "hints": ["It's the necessary translation layer between the client (JavaScript) and the contract (EVM bytecode)."]
+    "answer": "Splitting the network into smaller partitions",
+    "explanation": "Sharding improves scalability by processing transactions in parallel.",
+    "tags": ["Blockchain", "Scalability"],
+    "required_skills": ["Distributed Computing"],
+    "hints": ["Parallel processing"]
   },
   {
     "_id": "q_bc_0013",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Blockchain Architecture",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What does the 'Merkle Root' represent in a block header?",
+    "topic": "Layer 2 Solutions",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which Layer 2 solution enables off-chain transactions with periodic settlement on-chain?",
     "options": [
-      "The hash of the previous block.",
-      "The total amount of gas used in the block.",
-      "The cryptographic proof of all transactions included in the block.",
-      "The target difficulty for mining the block."
+      "Sidechains",
+      "Lightning Network",
+      "Proof of Stake",
+      "IPFS"
     ],
-    "answer": "The cryptographic proof of all transactions included in the block.",
-    "explanation": "The Merkle Root is the single hash at the top of a Merkle Tree, which is constructed from the hashes of all transactions in the block. It verifies that a specific transaction is included in the block efficiently.",
-    "tags": ["Blockchain Architecture", "Cryptography"],
-    "required_skills": ["Blockchain Architecture", "Cryptography"],
-    "hints": ["It's the summary hash of all transactions."]
+    "answer": "Lightning Network",
+    "explanation": "The Lightning Network processes transactions off-chain for faster and cheaper transfers.",
+    "tags": ["Blockchain", "Layer 2"],
+    "required_skills": ["Scaling Solutions"],
+    "hints": ["Off-chain payments"]
   },
   {
     "_id": "q_bc_0014",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Smart Contracts",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is a reentrancy attack in a smart contract, and what Solidity function helps mitigate it?",
+    "topic": "Tokens",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What distinguishes utility tokens from security tokens?",
     "options": [
-      "An attack where the contract cannot access its own funds; mitigated by `call()`.",
-      "An attack where an external contract repeatedly calls a vulnerable function before the initial call finishes; mitigated by the Checks-Effects-Interactions pattern or the `ReentrancyGuard`.",
-      "An attack based on predicting future block hashes; mitigated by using an oracle.",
-      "An attack where a transaction uses excessive gas; mitigated by setting a low gas limit."
+      "Mining process",
+      "Regulatory treatment",
+      "Consensus algorithm",
+      "Hashing method"
     ],
-    "answer": "An attack where an external contract repeatedly calls a vulnerable function before the initial call finishes; mitigated by the Checks-Effects-Interactions pattern or the `ReentrancyGuard`.",
-    "explanation": "Reentrancy allows an attacker to repeatedly withdraw funds before the contract's state is updated. The Checks-Effects-Interactions pattern ensures that state changes (effects) happen before any external calls (interactions).",
-    "tags": ["Solidity", "Smart Contracts", "Security"],
-    "required_skills": ["Solidity", "Smart Contracts"],
-    "hints": ["The DAO hack exploited this flaw. It involves an external call being intercepted."]
+    "answer": "Regulatory treatment",
+    "explanation": "Security tokens are regulated as financial securities, unlike utility tokens.",
+    "tags": ["Blockchain", "Tokens"],
+    "required_skills": ["Crypto Economics"],
+    "hints": ["Legal aspect"]
   },
   {
     "_id": "q_bc_0015",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Ethereum",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Consensus",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "What are 'Rollups' (both Optimistic and ZK) and what problem do they primarily solve for Ethereum?",
+    "text": "Which consensus mechanism selects validators based on stake ownership?",
     "options": [
-      "A new consensus mechanism; solves the 51% attack problem.",
-      "A storage solution for large files; solves high storage costs.",
-      "Layer 2 scaling solutions that bundle transactions off-chain and submit proof to L1; solves low throughput and high gas fees.",
-      "A cross-chain bridge; solves interoperability."
+      "Proof of Work",
+      "Proof of Authority",
+      "Proof of Stake",
+      "Delegated Proof of History"
     ],
-    "answer": "Layer 2 scaling solutions that bundle transactions off-chain and submit proof to L1; solves low throughput and high gas fees.",
-    "explanation": "Rollups are Layer 2 protocols that execute transactions outside the Ethereum Mainnet (Layer 1) but post the transaction data back to L1, drastically increasing transaction throughput (TPS) and reducing fees.",
-    "tags": ["Ethereum", "Blockchain Architecture"],
-    "required_skills": ["Ethereum", "Blockchain Architecture"],
-    "hints": ["They are the key to Ethereum's long-term scalability."]
+    "answer": "Proof of Stake",
+    "explanation": "Validators are chosen based on the amount of cryptocurrency they stake.",
+    "tags": ["Blockchain", "Consensus"],
+    "required_skills": ["Consensus Algorithms"],
+    "hints": ["Stake-based"]
   },
   {
     "_id": "q_bc_0016",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Solidity",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "What is the difference between `msg.sender` and `tx.origin` in a Solidity smart contract?",
+    "topic": "Data Structures",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of a Merkle Tree in blockchain?",
     "options": [
-      "`msg.sender` is always the contract address; `tx.origin` is always the user.",
-      "`msg.sender` is the immediate caller (user or contract); `tx.origin` is the original external account (EOA) that initiated the transaction.",
-      "`msg.sender` is only available in `payable` functions; `tx.origin` is always available.",
-      "They are identical in all circumstances."
+      "Block mining",
+      "Efficient transaction verification",
+      "Key generation",
+      "Consensus enforcement"
     ],
-    "answer": "`msg.sender` is the immediate caller (user or contract); `tx.origin` is the original external account (EOA) that initiated the transaction.",
-    "explanation": "`tx.origin` is the address that started the transaction chain. `msg.sender` is the address that called the current function. If a contract calls another contract, `tx.origin` remains the EOA, while `msg.sender` becomes the calling contract's address.",
-    "tags": ["Solidity", "Smart Contracts"],
-    "required_skills": ["Solidity", "Smart Contracts"],
-    "hints": ["One can change across calls; the other is constant for the whole transaction."]
+    "answer": "Efficient transaction verification",
+    "explanation": "Merkle Trees allow quick verification of transaction integrity.",
+    "tags": ["Blockchain", "Merkle Tree"],
+    "required_skills": ["Data Structures"],
+    "hints": ["Tree-based hashing"]
   },
   {
     "_id": "q_bc_0017",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Truffle",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "When writing Truffle tests in JavaScript/Mocha, why do developers often use `async/await`?",
+    "topic": "Privacy",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique enhances privacy by hiding transaction amounts?",
     "options": [
-      "To ensure tests run only once.",
-      "Because blockchain transactions are synchronous and need a pause.",
-      "Because interacting with the blockchain (sending transactions) is an asynchronous operation that returns a promise.",
-      "To measure the gas consumption of the function calls."
+      "SHA-256",
+      "Zero-Knowledge Proofs",
+      "Proof of Stake",
+      "Digital signatures"
     ],
-    "answer": "Because interacting with the blockchain (sending transactions) is an asynchronous operation that returns a promise.",
-    "explanation": "Blockchain operations (like sending a transaction to a network) do not return results immediately. They return Promises, which must be handled with `await` to ensure sequential execution and proper verification in the test script.",
-    "tags": ["Truffle", "Smart Contracts"],
-    "required_skills": ["Truffle"],
-    "hints": ["It's a standard pattern for handling operations that take time, like network calls."]
+    "answer": "Zero-Knowledge Proofs",
+    "explanation": "ZKPs allow verification without revealing sensitive transaction details.",
+    "tags": ["Blockchain", "Privacy"],
+    "required_skills": ["Advanced Cryptography"],
+    "hints": ["Prove without revealing"]
   },
   {
     "_id": "q_bc_0018",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Cryptography",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Interoperability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "What is the key advantage of using Elliptic Curve Digital Signature Algorithm (ECDSA) over RSA in Bitcoin and Ethereum?",
+    "text": "What is the goal of blockchain interoperability?",
     "options": [
-      "ECDSA is easier to implement.",
-      "ECDSA allows for faster block times.",
-      "ECDSA requires much smaller key sizes to provide the same level of security as RSA.",
-      "ECDSA is immune to quantum computing attacks."
+      "Increase block size",
+      "Enable communication between different blockchains",
+      "Reduce mining cost",
+      "Improve encryption"
     ],
-    "answer": "ECDSA requires much smaller key sizes to provide the same level of security as RSA.",
-    "explanation": "ECDSA offers comparable security to RSA with significantly shorter key lengths (e.g., a 256-bit ECDSA key is roughly equivalent in security to a 3072-bit RSA key), making transactions smaller and faster to process.",
-    "tags": ["Cryptography", "Fundamentals"],
-    "required_skills": ["Cryptography"],
-    "hints": ["It relates to the size of the cryptographic output."]
+    "answer": "Enable communication between different blockchains",
+    "explanation": "Interoperability allows data and asset exchange across blockchains.",
+    "tags": ["Blockchain", "Interoperability"],
+    "required_skills": ["Cross-chain Systems"],
+    "hints": ["Blockchain-to-blockchain"]
   },
   {
     "_id": "q_bc_0019",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Blockchain Architecture",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is the '51% Attack' threat in a Proof-of-Work network?",
+    "topic": "Forks",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a hard fork in blockchain?",
     "options": [
-      "An attack where 51% of network nodes are turned off.",
-      "An attack where one entity controls over 51% of the network's total hashing power, allowing them to reverse recent transactions and prevent new ones.",
-      "An attack where a single transaction consumes 51% of the block gas limit.",
-      "An attack where 51% of all stored data is corrupted."
+      "Temporary network split",
+      "Backward-incompatible protocol change",
+      "Mining difficulty adjustment",
+      "Validator replacement"
     ],
-    "answer": "An attack where one entity controls over 51% of the network's total hashing power, allowing them to reverse recent transactions and prevent new ones.",
-    "explanation": "Controlling over half of the network's mining power allows an attacker to ensure their version of the blockchain is accepted as the canonical one, enabling double-spending and other malicious acts.",
-    "tags": ["Blockchain Architecture", "Security"],
-    "required_skills": ["Blockchain Architecture"],
-    "hints": ["It's the critical threshold for dominating a decentralized network's consensus."]
+    "answer": "Backward-incompatible protocol change",
+    "explanation": "Hard forks require all nodes to upgrade to follow the new rules.",
+    "tags": ["Blockchain", "Forks"],
+    "required_skills": ["Blockchain Governance"],
+    "hints": ["Not backward compatible"]
   },
   {
     "_id": "q_bc_0020",
     "question_type": "multiple-choice",
     "domain": "Blockchain",
-    "topic": "Smart Contracts",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "What is the EIP-2535 (Diamond Standard) and what architectural problem does it solve for smart contracts?",
-    "options": [
-      "A new standard for NFT royalty payments.",
-      "A standard for creating modular smart contracts by allowing a single contract address to call functions across multiple implementation contracts; solves the 24KB contract size limit.",
-      "A new token standard replacing ERC-20.",
-      "A new security protocol for cross-chain communication."
-    ],
-    "answer": "A standard for creating modular smart contracts by allowing a single contract address to call functions across multiple implementation contracts; solves the 24KB contract size limit.",
-    "explanation": "EIP-2535 (Diamond) enables a single contract (the 'Diamond') to combine the functionality of multiple contracts (the 'Facets') through delegatecall, effectively bypassing the maximum contract size limit on Ethereum.",
-    "tags": ["Smart Contracts", "Solidity", "Ethereum"],
-    "required_skills": ["Solidity", "Ethereum", "Smart Contracts"],
-    "hints": ["It relates to contract size and modularity."]
-  },
-  {
-    "_id": "q_bc_0021",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Ethereum",
+    "topic": "Applications",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "What are 'sharding' and the 'data availability problem' in the context of Ethereum's scalability roadmap?",
+    "text": "Which application best demonstrates blockchain immutability?",
     "options": [
-      "Sharding divides the state storage; solves the front-running problem.",
-      "Sharding divides the chain into multiple parts for parallel processing; the data availability problem is ensuring all nodes can access the data posted to the shards for verification.",
-      "Sharding changes the consensus mechanism; solves network latency.",
-      "Sharding is a new storage type; the problem is data immutability."
+      "Online gaming",
+      "Supply chain tracking",
+      "Video streaming",
+      "Cloud storage"
     ],
-    "answer": "Sharding divides the chain into multiple parts for parallel processing; the data availability problem is ensuring all nodes can access the data posted to the shards for verification.",
-    "explanation": "Sharding increases throughput by dividing the workload. The data availability problem is ensuring that the data posted to the shards (especially by Rollups) is accessible to light nodes, often solved using techniques like data availability sampling.",
-    "tags": ["Ethereum", "Blockchain Architecture"],
-    "required_skills": ["Ethereum", "Blockchain Architecture"],
-    "hints": ["It relates to the decentralization and verification of data on Layer 2 solutions."]
+    "answer": "Supply chain tracking",
+    "explanation": "Immutable records ensure transparent and tamper-proof supply chain history.",
+    "tags": ["Blockchain", "Use Cases"],
+    "required_skills": ["Blockchain Applications"],
+    "hints": ["Traceability"]
   },
   {
-    "_id": "q_bc_0022",
-    "question_type": "multiple-choice",
+    "_id": "q_blockchain_0021",
+    "question_type": "subjective",
     "domain": "Blockchain",
-    "topic": "Cryptography",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 240,
-    "text": "What is the purpose of a Zero-Knowledge Proof (ZKP) in a blockchain environment?",
-    "options": [
-      "To prove that a transaction is invalid without revealing the private key.",
-      "To prove a statement is true without revealing the information that proves it.",
-      "To encrypt all transaction data permanently.",
-      "To generate a new block hash faster than PoW."
-    ],
-    "answer": "To prove a statement is true without revealing the information that proves it.",
-    "explanation": "ZKP allows a prover to convince a verifier that a certain statement is true without revealing any sensitive underlying information. This is used in ZK-Rollups to prove the correctness of off-chain state transitions without revealing the data itself.",
-    "tags": ["Cryptography", "Blockchain Architecture"],
-    "required_skills": ["Cryptography", "Blockchain Architecture"],
-    "hints": ["It allows verification without revealing privacy-sensitive data."]
-  },
-  {
-    "_id": "q_bc_0023",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Smart Contracts",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "In Solidity, what is the impact of using `call.value()` for sending Ether instead of `transfer()` or `send()`?",
-    "options": [
-      "It is deprecated and consumes more gas.",
-      "It allows the recipient contract to execute code with a customizable amount of gas, mitigating the 'stuck gas' problem of `transfer`/`send`.",
-      "It only works with externally owned accounts (EOAs), not other contracts.",
-      "It automatically reverts the transaction if the call fails."
-    ],
-    "answer": "It allows the recipient contract to execute code with a customizable amount of gas, mitigating the 'stuck gas' problem of `transfer`/`send`.",
-    "explanation": "`transfer()`/`send()` only forward a minimal 2300 gas, which is often insufficient for modern contracts, leading to potential failures. `call.value()` forwards almost all available gas, making it the preferred method despite requiring manual success checks.",
-    "tags": ["Solidity", "Smart Contracts", "Security"],
-    "required_skills": ["Solidity", "Smart Contracts"],
-    "hints": ["It relates to the gas limits passed to the recipient's fallback function."]
-  },
-  {
-    "_id": "q_bc_0024",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Ethereum",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "What is 'Finality' in a PoS Ethereum network, and how is it achieved?",
-    "options": [
-      "The point at which a block is guaranteed to be in the chain; achieved via a deterministic vote by 51% of validators.",
-      "The point at which a block is guaranteed to be in the chain; achieved via deterministic vote by 2/3 (66%) of the total staked ETH.",
-      "The point at which a block is mined; achieved via Proof-of-Work hashing.",
-      "The permanent storage of data; achieved via Merkle Trees."
-    ],
-    "answer": "The point at which a block is guaranteed to be in the chain; achieved via deterministic vote by 2/3 (66%) of the total staked ETH.",
-    "explanation": "Finality is when a block can be considered irreversible. In PoS Ethereum, once 2/3 of the staked ETH (validators) attest to a block in a two-stage process (Justification and Finalization), the block is finalized and cannot be reversed without catastrophic economic penalties (slashing).",
-    "tags": ["Ethereum", "Blockchain Architecture"],
-    "required_skills": ["Ethereum", "Blockchain Architecture"],
-    "hints": ["It is the key security guarantee in PoS, and the threshold is related to staking economics."]
-  },
-  {
-    "_id": "q_bc_0025",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Web3.js",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "When using Web3.js, what type of call is always free (gasless) and instantly resolved?",
-    "options": [
-      "Sending a transaction via `send()`",
-      "Calling a state-modifying function with `call()`",
-      "Calling a view or pure function via `call()`",
-      "Deploying a new contract"
-    ],
-    "answer": "Calling a view or pure function via `call()`",
-    "explanation": "View and pure functions do not modify the blockchain state. When called via Web3.js `call()`, the execution occurs locally on the node you are connected to, making it instant and free (no gas fee is paid).",
-    "tags": ["Web3.js", "Smart Contracts"],
-    "required_skills": ["Web3.js", "Smart Contracts"],
-    "hints": ["These functions only read data from the chain."]
-  },
-  {
-    "_id": "q_bc_0026",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Truffle",
+    "topic": "Blockchain Fundamentals",
     "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the purpose of the `truffle-config.js` file?",
-    "options": [
-      "To store the contract's ABI.",
-      "To define the network connections (e.g., development, mainnet, testnets) and compiler settings.",
-      "To manage all contract source code files.",
-      "To automatically generate the front-end code."
-    ],
-    "answer": "To define the network connections (e.g., development, mainnet, testnets) and compiler settings.",
-    "explanation": "The `truffle-config.js` file is the central configuration file where you specify which network addresses to deploy to, which RPC provider to use, and which Solidity compiler version to employ.",
-    "tags": ["Truffle"],
-    "required_skills": ["Truffle"],
-    "hints": ["It maps your development environment to the blockchain network."]
-  },
-  {
-    "_id": "q_bc_0027",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Solidity",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "Which token standard defines the basic structure for fungible tokens on Ethereum?",
-    "options": [
-      "ERC-721",
-      "ERC-1155",
-      "ERC-20",
-      "ERC-4626"
-    ],
-    "answer": "ERC-20",
-    "explanation": "ERC-20 is the most widely adopted standard for fungible tokens, defining functions like `totalSupply`, `balanceOf`, and `transfer`.",
-    "tags": ["Solidity", "Smart Contracts", "Ethereum"],
-    "required_skills": ["Solidity", "Smart Contracts", "Ethereum"],
-    "hints": ["It's the original and most common token standard."]
-  },
-  {
-    "_id": "q_bc_0028",
-    "question_type": "multiple-choice",
-    "domain": "Blockchain",
-    "topic": "Blockchain Architecture",
-    "difficulty": 1,
     "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is a 'node' in a blockchain network?",
-    "options": [
-      "A specific type of transaction.",
-      "A computer running the blockchain software to validate transactions and maintain the distributed ledger.",
-      "The cryptographic hash of a block.",
-      "A smart contract function."
+    "estimated_time_sec": 240,
+    "text": "Explain what blockchain technology is and describe its core characteristics.",
+    "expected_answer": {
+      "key_points": [
+        "Blockchain is a distributed and immutable ledger",
+        "Data is stored in blocks linked using cryptographic hashes",
+        "Decentralization removes the need for a central authority",
+        "Transparency and immutability ensure trust"
+      ],
+      "example_scenarios": [
+        "Tracking transactions in a cryptocurrency network",
+        "Maintaining transparent supply chain records"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "A computer running the blockchain software to validate transactions and maintain the distributed ledger.",
-    "explanation": "A node is any participant computer that communicates with other nodes to spread transaction information and achieve consensus on the state of the ledger.",
-    "tags": ["Blockchain Architecture", "Fundamentals"],
-    "required_skills": ["Blockchain Architecture"],
-    "hints": ["It's the physical or virtual computing resource of the network."]
+    "tags": ["Blockchain Basics"],
+    "required_skills": ["Blockchain Fundamentals"],
+    "hints": [
+      "Focus on decentralization and immutability",
+      "Explain why blockchain is trusted"
+    ]
   },
   {
-    "_id": "q_bc_0029",
-    "question_type": "multiple-choice",
+    "_id": "q_blockchain_0022",
+    "question_type": "subjective",
     "domain": "Blockchain",
-    "topic": "Cryptography",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the key security property provided by a cryptographic hash function in blockchain?",
-    "options": [
-      "Decryption",
-      "Collision resistance (different inputs rarely produce the same output)",
-      "Reversibility (easy to find the input from the output)",
-      "High gas consumption"
+    "topic": "Distributed Ledger Technology",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe how a distributed ledger works and explain how it differs from a traditional centralized database.",
+    "expected_answer": {
+      "key_points": [
+        "Ledger is shared across multiple nodes",
+        "Each node maintains a synchronized copy",
+        "Consensus mechanisms ensure agreement",
+        "Centralized databases rely on a single authority"
+      ],
+      "example_scenarios": [
+        "Peer-to-peer payment systems",
+        "Multi-organization data sharing platforms"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Comparison Accuracy", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
     ],
-    "answer": "Collision resistance (different inputs rarely produce the same output)",
-    "explanation": "Collision resistance is vital: it guarantees that it is computationally infeasible to find two different inputs that produce the same hash output, ensuring the immutability of the chain.",
-    "tags": ["Cryptography", "Fundamentals"],
-    "required_skills": ["Cryptography"],
-    "hints": ["It makes tampering detectable."]
+    "tags": ["Distributed Ledger"],
+    "required_skills": ["Blockchain"],
+    "hints": [
+      "Compare trust models",
+      "Mention synchronization across nodes"
+    ]
   },
   {
-    "_id": "q_bc_0030",
-    "question_type": "multiple-choice",
+    "_id": "q_blockchain_0023",
+    "question_type": "subjective",
     "domain": "Blockchain",
-    "topic": "Web3.js",
+    "topic": "Blocks and Hashing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the structure of a block in a blockchain and the role of cryptographic hashing.",
+    "expected_answer": {
+      "key_points": [
+        "Block contains data, previous hash, and timestamp",
+        "Hash ensures data integrity",
+        "Small data changes alter the hash completely",
+        "Linking hashes creates immutability"
+      ],
+      "example_scenarios": [
+        "Detecting tampering in transaction records",
+        "Securing financial transaction histories"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Accuracy", "weight": 0.4 },
+      { "criterion": "Technical Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Hashing", "Blocks"],
+    "required_skills": ["Cryptography Basics"],
+    "hints": [
+      "Explain hash chaining",
+      "Discuss why hashes ensure security"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0024",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Consensus Mechanisms",
     "difficulty": 4,
     "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "In Web3.js, how do you listen for changes or events emitted by a smart contract in real-time?",
-    "options": [
-      "By continuously polling the blockchain every second.",
-      "By using the contract's `once` method.",
-      "By establishing a WebSocket connection and using the contract's `events` subscription API.",
-      "By inspecting the transaction receipt after it confirms."
+    "estimated_time_sec": 360,
+    "text": "Explain the need for consensus mechanisms in blockchain and compare Proof of Work and Proof of Stake.",
+    "expected_answer": {
+      "key_points": [
+        "Consensus ensures agreement among nodes",
+        "Proof of Work uses computational power",
+        "Proof of Stake relies on validators' stake",
+        "Energy efficiency and scalability differences"
+      ],
+      "example_scenarios": [
+        "Bitcoin transaction validation",
+        "Ethereum validator-based consensus"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparative Analysis", "weight": 0.4 },
+      { "criterion": "Technical Depth", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "By establishing a WebSocket connection and using the contract's `events` subscription API.",
-    "explanation": "While polling works, it's inefficient. Web3.js and most providers support real-time event subscriptions via WebSockets, allowing the application to be notified immediately when an event is logged by the contract.",
-    "tags": ["Web3.js", "Smart Contracts", "Ethereum"],
-    "required_skills": ["Web3.js", "Ethereum"],
-    "hints": ["It requires a persistent, bidirectional connection to the node."]
+    "tags": ["Consensus", "PoW", "PoS"],
+    "required_skills": ["Blockchain Architecture"],
+    "hints": [
+      "Discuss energy consumption",
+      "Explain validator roles"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0025",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What are smart contracts? Explain how they work and their advantages.",
+    "expected_answer": {
+      "key_points": [
+        "Smart contracts are self-executing programs",
+        "They run on blockchain platforms",
+        "Automatically enforce rules",
+        "Reduce intermediaries and errors"
+      ],
+      "example_scenarios": [
+        "Automated insurance claim processing",
+        "Decentralized escrow services"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Use-case Relevance", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["Smart Contracts"],
+    "required_skills": ["Blockchain Programming"],
+    "hints": [
+      "Explain automation",
+      "Mention trustless execution"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0026",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Public vs Private Blockchain",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Differentiate between public, private, and consortium blockchains.",
+    "expected_answer": {
+      "key_points": [
+        "Public blockchains are open and permissionless",
+        "Private blockchains are restricted",
+        "Consortium blockchains are semi-decentralized",
+        "Trade-offs in transparency and control"
+      ],
+      "example_scenarios": [
+        "Cryptocurrency networks",
+        "Enterprise data sharing systems"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Comparison Accuracy", "weight": 0.4 },
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Coverage", "weight": 0.3 }
+    ],
+    "tags": ["Blockchain Types"],
+    "required_skills": ["Blockchain"],
+    "hints": [
+      "Focus on access control",
+      "Mention enterprise use cases"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0027",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrency",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain how cryptocurrency transactions are processed in a blockchain network.",
+    "expected_answer": {
+      "key_points": [
+        "Transaction creation and broadcast",
+        "Verification by nodes",
+        "Block inclusion",
+        "Ledger update"
+      ],
+      "example_scenarios": [
+        "Peer-to-peer digital payments",
+        "Cross-border money transfers"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Explanation", "weight": 0.4 },
+      { "criterion": "Accuracy", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Cryptocurrency"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": [
+      "Describe transaction flow",
+      "Mention block confirmation"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0028",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Security in Blockchain",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss the security features of blockchain technology and common attack vectors.",
+    "expected_answer": {
+      "key_points": [
+        "Immutability and cryptographic security",
+        "Decentralization reduces single point of failure",
+        "51% attack explanation",
+        "Smart contract vulnerabilities"
+      ],
+      "example_scenarios": [
+        "Preventing data tampering",
+        "Mitigating malicious mining attacks"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Security Understanding", "weight": 0.4 },
+      { "criterion": "Threat Analysis", "weight": 0.3 },
+      { "criterion": "Technical Depth", "weight": 0.3 }
+    ],
+    "tags": ["Blockchain Security"],
+    "required_skills": ["Blockchain Security"],
+    "hints": [
+      "Explain why attacks are difficult",
+      "Mention consensus weaknesses"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0029",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Blockchain Scalability",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain scalability challenges in blockchain systems and approaches to address them.",
+    "expected_answer": {
+      "key_points": [
+        "Limited transaction throughput",
+        "Latency issues",
+        "Layer-2 solutions",
+        "Sharding concepts"
+      ],
+      "example_scenarios": [
+        "High-volume payment networks",
+        "Decentralized applications with many users"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Problem Understanding", "weight": 0.4 },
+      { "criterion": "Solution Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Scalability"],
+    "required_skills": ["Advanced Blockchain"],
+    "hints": [
+      "Think about transaction limits",
+      "Mention off-chain solutions"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0030",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Blockchain Applications",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe non-financial applications of blockchain technology.",
+    "expected_answer": {
+      "key_points": [
+        "Supply chain management",
+        "Healthcare data integrity",
+        "Digital identity",
+        "Voting systems"
+      ],
+      "example_scenarios": [
+        "Tracking food provenance",
+        "Securing medical records"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Application Relevance", "weight": 0.4 },
+      { "criterion": "Coverage", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Blockchain Use Cases"],
+    "required_skills": ["Blockchain"],
+    "hints": [
+      "Think beyond cryptocurrency",
+      "Mention data integrity"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0031",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Tokenization",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain tokenization in blockchain and its significance.",
+    "expected_answer": {
+      "key_points": [
+        "Digital representation of assets",
+        "Fungible and non-fungible tokens",
+        "Ownership tracking",
+        "Liquidity enhancement"
+      ],
+      "example_scenarios": [
+        "Real estate tokenization",
+        "Digital collectibles"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Tokenization"],
+    "required_skills": ["Blockchain"],
+    "hints": [
+      "Explain asset representation",
+      "Mention NFTs"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0032",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Blockchain and Privacy",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss privacy challenges in blockchain and techniques used to enhance privacy.",
+    "expected_answer": {
+      "key_points": [
+        "Public visibility of transactions",
+        "Zero-knowledge proofs",
+        "Mixers and privacy coins",
+        "Trade-off between transparency and privacy"
+      ],
+      "example_scenarios": [
+        "Confidential financial transactions",
+        "Private enterprise blockchains"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Privacy Understanding", "weight": 0.4 },
+      { "criterion": "Technical Techniques", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Blockchain Privacy"],
+    "required_skills": ["Advanced Blockchain"],
+    "hints": [
+      "Think about transaction visibility",
+      "Mention cryptographic techniques"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0033",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Blockchain Governance",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain blockchain governance and why it is important.",
+    "expected_answer": {
+      "key_points": [
+        "Decision-making in blockchain networks",
+        "On-chain and off-chain governance",
+        "Protocol upgrades",
+        "Community participation"
+      ],
+      "example_scenarios": [
+        "Network protocol upgrades",
+        "Dispute resolution in decentralized systems"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Clarity", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["Governance"],
+    "required_skills": ["Blockchain"],
+    "hints": [
+      "Focus on decision processes",
+      "Mention stakeholder roles"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0034",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Blockchain Interoperability",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "What is blockchain interoperability and why is it important?",
+    "expected_answer": {
+      "key_points": [
+        "Ability of blockchains to communicate",
+        "Cross-chain transactions",
+        "Interoperability protocols",
+        "Improved scalability and usability"
+      ],
+      "example_scenarios": [
+        "Asset transfers across blockchains",
+        "Multi-chain decentralized applications"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Technical Insight", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Interoperability"],
+    "required_skills": ["Advanced Blockchain"],
+    "hints": [
+      "Think about cross-chain communication",
+      "Mention ecosystem growth"
+    ]
+  },
+  {
+    "_id": "q_blockchain_0035",
+    "question_type": "subjective",
+    "domain": "Blockchain",
+    "topic": "Future of Blockchain",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss the future potential of blockchain technology across industries.",
+    "expected_answer": {
+      "key_points": [
+        "Increased enterprise adoption",
+        "Integration with emerging technologies",
+        "Regulatory considerations",
+        "Long-term impact on digital trust"
+      ],
+      "example_scenarios": [
+        "Government record systems",
+        "Decentralized digital infrastructure"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Vision and Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Blockchain Future"],
+    "required_skills": ["Blockchain Fundamentals"],
+    "hints": [
+      "Think long-term",
+      "Mention industry adoption"
+    ]
+  },
+  
+  {
+    "_id": "q_blockchain_0036",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is blockchain technology in simple terms?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Distributed ledger",
+        "Blocks linked together",
+        "Data stored securely"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Simple explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Analogy or example used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Blockchain Basics"],
+    "required_skills": ["Basic Programming"],
+    "hints": ["Think digital ledger"]
+  },
+  {
+    "_id": "q_blockchain_0037",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a block in a blockchain?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Collection of transactions",
+        "Contains hash of previous block",
+        "Forms a chain"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Block"],
+    "required_skills": ["Basic Programming"],
+    "hints": ["Transactions grouped together"]
+  },
+  {
+    "_id": "q_blockchain_0038",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Architecture",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is blockchain called a decentralized system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "No central authority",
+        "Multiple nodes maintain ledger",
+        "Peer-to-peer network"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Decentralization"],
+    "required_skills": ["Networking Basics"],
+    "hints": ["No single controller"]
+  },
+  {
+    "_id": "q_blockchain_0039",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How does blockchain ensure data security?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Cryptographic hashing",
+        "Immutability",
+        "Distributed verification"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Security"],
+    "required_skills": ["Cryptography Basics"],
+    "hints": ["Hashing"]
+  },
+  {
+    "_id": "q_blockchain_0040",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Consensus",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a consensus mechanism in blockchain?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Agreement among nodes",
+        "Validates transactions",
+        "Maintains trust"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Consensus"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Agreement process"]
+  },
+  {
+    "_id": "q_blockchain_0041",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Consensus",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Explain Proof of Work in simple terms.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Solving complex puzzles",
+        "Energy intensive",
+        "Used in Bitcoin"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Proof of Work"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Mining"]
+  },
+  {
+    "_id": "q_blockchain_0042",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Consensus",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Proof of Stake and how is it different from Proof of Work?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Based on ownership stake",
+        "Less energy consumption",
+        "Different validation method"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Proof of Stake"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Energy efficient"]
+  },
+  {
+    "_id": "q_blockchain_0043",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Transactions",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a blockchain transaction?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Transfer of data or value",
+        "Recorded on ledger",
+        "Verified by network"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Transaction"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Data transfer"]
+  },
+  {
+    "_id": "q_blockchain_0044",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a smart contract?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Self-executing code",
+        "Runs on blockchain",
+        "Automates agreements"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Smart Contracts"],
+    "required_skills": ["Solidity Basics"],
+    "hints": ["Automatic execution"]
+  },
+  {
+    "_id": "q_blockchain_0045",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Types",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the difference between public and private blockchains?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Public is open to all",
+        "Private is permissioned",
+        "Different access control"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Blockchain Types"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Open vs restricted"]
+  },
+  {
+    "_id": "q_blockchain_0046",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrency",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is cryptocurrency?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Digital currency",
+        "Uses blockchain",
+        "Decentralized transactions"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Cryptocurrency"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Bitcoin"]
+  },
+  {
+    "_id": "q_blockchain_0047",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Use Cases",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Mention two real-world use cases of blockchain technology.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Supply chain",
+        "Finance or healthcare"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Use Cases"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Tracking and transparency"]
+  },
+  {
+    "_id": "q_blockchain_0048",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Advantages",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main advantages of using blockchain?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Transparency",
+        "Security",
+        "Decentralization"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Advantages"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Trustless system"]
+  },
+  {
+    "_id": "q_blockchain_0049",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Challenges",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What challenges does blockchain technology face?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Scalability",
+        "Energy consumption",
+        "Regulatory issues"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Challenges"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Scalability problems"]
+  },
+  {
+    "_id": "q_blockchain_0050",
+    "question_type": "voice",
+    "domain": "Blockchain",
+    "topic": "Future",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see blockchain technology evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Wider adoption",
+        "Integration with industries",
+        "Improved scalability"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future Trends"],
+    "required_skills": ["Blockchain Basics"],
+    "hints": ["Industry adoption"]
+  },
+  {
+    "_id": "q_bc_0051",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Hashing",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a Python function to compute the SHA-256 hash of a given string.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["hashlib"],
+      "starter_code": "import hashlib\n\ndef sha256_hash(data):\n    pass",
+      "function_signature": "sha256_hash(data: str) -> str"
+    },
+    "expected_answer": {
+      "solution": "return hashlib.sha256(data.encode()).hexdigest()",
+      "key_concepts": ["Cryptographic hash", "SHA-256"]
+    },
+    "test_cases": [
+      {
+        "input": "\"blockchain\"",
+        "expected_output": "Valid 64-character hexadecimal hash",
+        "description": "Hash generation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct hash output" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses hashlib properly" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty string" }
+    ],
+    "tags": ["Python", "Blockchain", "Cryptography"],
+    "required_skills": ["Python"],
+    "hints": ["Use hashlib.sha256"]
+  },
+
+  {
+    "_id": "q_bc_0052",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Block Structure",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to create a simple block dictionary with index, data, and previous hash.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def create_block(index, data, prev_hash):\n    pass",
+      "function_signature": "create_block(index: int, data: str, prev_hash: str) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"index\": index, \"data\": data, \"previous_hash\": prev_hash}",
+      "key_concepts": ["Block structure", "Immutable data"]
+    },
+    "test_cases": [
+      {
+        "input": "1, \"Genesis\", \"0\"",
+        "expected_output": "{\"index\":1,\"data\":\"Genesis\",\"previous_hash\":\"0\"}",
+        "description": "Genesis block"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Block created correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean dictionary structure" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty data" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Return a dictionary"]
+  },
+
+  {
+    "_id": "q_bc_0053",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Proof of Work",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if a hash satisfies a proof-of-work difficulty (leading zeros).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_proof(hash_value, difficulty):\n    pass",
+      "function_signature": "valid_proof(hash_value: str, difficulty: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return hash_value.startswith('0' * difficulty)",
+      "key_concepts": ["Proof of Work", "Difficulty level"]
+    },
+    "test_cases": [
+      {
+        "input": "\"000abc\", 3",
+        "expected_output": "True",
+        "description": "Valid proof"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct validation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero difficulty" }
+    ],
+    "tags": ["Python", "Blockchain", "Mining"],
+    "required_skills": ["Python"],
+    "hints": ["Check prefix zeros"]
+  },
+
+  {
+    "_id": "q_bc_0054",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Transactions",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to create a transaction record with sender, receiver, and amount.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def create_transaction(sender, receiver, amount):\n    pass",
+      "function_signature": "create_transaction(sender: str, receiver: str, amount: float) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"from\": sender, \"to\": receiver, \"amount\": amount}",
+      "key_concepts": ["Transaction record", "Value transfer"]
+    },
+    "test_cases": [
+      {
+        "input": "\"Alice\",\"Bob\",10",
+        "expected_output": "{\"from\":\"Alice\",\"to\":\"Bob\",\"amount\":10}",
+        "description": "Basic transaction"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Transaction created" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear fields" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero amount" }
+    ],
+    "tags": ["Python", "Blockchain", "Transactions"],
+    "required_skills": ["Python"],
+    "hints": ["Use sender, receiver, amount"]
+  },
+
+  {
+    "_id": "q_bc_0055",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Blockchain Validation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to verify that a block correctly references the previous block hash.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_valid_chain(prev_block, current_block):\n    pass",
+      "function_signature": "is_valid_chain(prev_block: dict, current_block: dict) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return current_block['previous_hash'] == prev_block['hash']",
+      "key_concepts": ["Chain integrity", "Hash linking"]
+    },
+    "test_cases": [
+      {
+        "input": "{'hash':'abc'}, {'previous_hash':'abc'}",
+        "expected_output": "True",
+        "description": "Valid link"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Validates link" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles missing keys" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Compare previous_hash"]
+  },
+
+  {
+    "_id": "q_bc_0056",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Merkle Tree (Basics)",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute a simple Merkle root from two transaction hashes.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["hashlib"],
+      "starter_code": "import hashlib\n\ndef merkle_root(hash1, hash2):\n    pass",
+      "function_signature": "merkle_root(hash1: str, hash2: str) -> str"
+    },
+    "expected_answer": {
+      "solution": "return hashlib.sha256((hash1 + hash2).encode()).hexdigest()",
+      "key_concepts": ["Merkle tree", "Hash combination"]
+    },
+    "test_cases": [
+      {
+        "input": "\"a\",\"b\"",
+        "expected_output": "Valid SHA-256 hash",
+        "description": "Merkle root"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct root" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses hashing correctly" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty hash" }
+    ],
+    "tags": ["Python", "Blockchain", "Merkle Tree"],
+    "required_skills": ["Python"],
+    "hints": ["Concatenate then hash"]
+  },
+
+  {
+    "_id": "q_bc_0057",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Wallet",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a wallet balance is sufficient for a transaction.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_sufficient_balance(balance, amount):\n    pass",
+      "function_signature": "has_sufficient_balance(balance: float, amount: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return balance >= amount",
+      "key_concepts": ["Wallet balance", "Transaction validation"]
+    },
+    "test_cases": [
+      {
+        "input": "50, 20",
+        "expected_output": "True",
+        "description": "Sufficient balance"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Balance check correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles equal values" }
+    ],
+    "tags": ["Python", "Blockchain", "Wallet"],
+    "required_skills": ["Python"],
+    "hints": ["Compare balance and amount"]
+  },
+
+  {
+    "_id": "q_bc_0058",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Consensus (Basics)",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to select the longest chain from a list of blockchains.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def longest_chain(chains):\n    pass",
+      "function_signature": "longest_chain(chains: list) -> list"
+    },
+    "expected_answer": {
+      "solution": "return max(chains, key=len)",
+      "key_concepts": ["Consensus", "Longest chain rule"]
+    },
+    "test_cases": [
+      {
+        "input": "[[1,2],[1,2,3]]",
+        "expected_output": "[1,2,3]",
+        "description": "Longest chain selection"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct chain selected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Efficient logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles equal length" }
+    ],
+    "tags": ["Python", "Blockchain", "Consensus"],
+    "required_skills": ["Python"],
+    "hints": ["Use max with key=len"]
+  },
+
+  {
+    "_id": "q_bc_0059",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts (Logic)",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to release funds only if a condition is met.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def release_funds(condition):\n    pass",
+      "function_signature": "release_funds(condition: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Funds Released\" if condition else \"Condition Not Met\"",
+      "key_concepts": ["Conditional execution", "Smart contract logic"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Funds Released\"",
+        "description": "Condition satisfied"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct condition check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear conditional logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles False case" }
+    ],
+    "tags": ["Python", "Blockchain", "Smart Contracts"],
+    "required_skills": ["Python"],
+    "hints": ["Use if-else"]
+  },
+
+  {
+    "_id": "q_bc_0060",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Timestamping",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to attach a timestamp to a block.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["time"],
+      "starter_code": "import time\n\ndef add_timestamp(block):\n    pass",
+      "function_signature": "add_timestamp(block: dict) -> dict"
+    },
+    "expected_answer": {
+      "solution": "block['timestamp'] = time.time()\nreturn block",
+      "key_concepts": ["Timestamping", "Block metadata"]
+    },
+    "test_cases": [
+      {
+        "input": "{\"data\":\"test\"}",
+        "expected_output": "Block with timestamp",
+        "description": "Timestamp added"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Timestamp present" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses time module" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Preserves existing fields" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Use time.time()"]
+  },
+
+  {
+    "_id": "q_bc_0061",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Difficulty Adjustment",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to increase mining difficulty if block time is too low.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def adjust_difficulty(current_difficulty, block_time):\n    pass",
+      "function_signature": "adjust_difficulty(current_difficulty: int, block_time: float) -> int"
+    },
+    "expected_answer": {
+      "solution": "return current_difficulty + 1 if block_time < 10 else current_difficulty",
+      "key_concepts": ["Difficulty adjustment", "Mining control"]
+    },
+    "test_cases": [
+      {
+        "input": "4, 5",
+        "expected_output": "5",
+        "description": "Increase difficulty"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct adjustment" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles high block time" }
+    ],
+    "tags": ["Python", "Blockchain", "Mining"],
+    "required_skills": ["Python"],
+    "hints": ["Compare block time"]
+  },
+
+  {
+    "_id": "q_bc_0062",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Nonce",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to increment a nonce value during mining.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def increment_nonce(nonce):\n    pass",
+      "function_signature": "increment_nonce(nonce: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return nonce + 1",
+      "key_concepts": ["Nonce", "Mining loop"]
+    },
+    "test_cases": [
+      {
+        "input": "10",
+        "expected_output": "11",
+        "description": "Nonce increment"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Nonce updated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple increment" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero nonce" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Add 1 to nonce"]
+  },
+
+  {
+    "_id": "q_bc_0063",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Ledger",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate total balance from a list of transactions.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def calculate_balance(transactions):\n    pass",
+      "function_signature": "calculate_balance(transactions: list) -> float"
+    },
+    "expected_answer": {
+      "solution": "return sum(tx['amount'] for tx in transactions)",
+      "key_concepts": ["Ledger", "Balance calculation"]
+    },
+    "test_cases": [
+      {
+        "input": "[{'amount':10},{'amount':20}]",
+        "expected_output": "30",
+        "description": "Total balance"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct balance" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses iteration properly" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "Blockchain", "Ledger"],
+    "required_skills": ["Python"],
+    "hints": ["Sum transaction amounts"]
+  },
+
+  {
+    "_id": "q_bc_0064",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Block Height",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to return the current height of a blockchain.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def block_height(chain):\n    pass",
+      "function_signature": "block_height(chain: list) -> int"
+    },
+    "expected_answer": {
+      "solution": "return len(chain)",
+      "key_concepts": ["Block height", "Chain length"]
+    },
+    "test_cases": [
+      {
+        "input": "[{}, {}, {}]",
+        "expected_output": "3",
+        "description": "Three blocks"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct height" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty chain" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Use length of list"]
+  },
+
+  {
+    "_id": "q_bc_0065",
+    "question_type": "coding",
+    "domain": "Blockchain",
+    "topic": "Validation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to verify that a transaction amount is positive.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_transaction(amount):\n    pass",
+      "function_signature": "valid_transaction(amount: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return amount > 0",
+      "key_concepts": ["Transaction validation", "Data integrity"]
+    },
+    "test_cases": [
+      {
+        "input": "5",
+        "expected_output": "True",
+        "description": "Valid amount"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct validation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero and negative" }
+    ],
+    "tags": ["Python", "Blockchain"],
+    "required_skills": ["Python"],
+    "hints": ["Amount must be greater than zero"]
   }
 ]

@@ -3,160 +3,1906 @@
     "_id": "q_ds_0001",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Python Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "Which of the following data types is immutable in Python?",
-    "options": ["List", "Dictionary", "Set", "Tuple"],
-    "answer": "Tuple",
-    "explanation": "Tuples in Python are immutable, meaning their elements cannot be changed after creation.",
-    "tags": ["Python", "Basics"],
-    "hints": ["Think about data structures that cannot be modified."],
-    "required_skills": ["Python"]
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of Data Science?",
+    "options": [
+      "Store large volumes of data",
+      "Extract meaningful insights from data",
+      "Develop web applications",
+      "Replace traditional databases"
+    ],
+    "answer": "Extract meaningful insights from data",
+    "explanation": "Data Science focuses on analyzing data to derive actionable insights and support decision-making.",
+    "tags": ["Data Science", "Fundamentals"],
+    "required_skills": ["Data Analysis"],
+    "hints": ["Insights from data"]
   },
   {
     "_id": "q_ds_0002",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "NumPy Operations",
-    "difficulty": 2,
-    "difficulty_label": "Moderate",
-    "estimated_time_sec": 90,
-    "text": "Which NumPy function is used to compute the mean of an array?",
-    "options": ["np.average()", "np.mean()", "np.median()", "np.mode()"],
-    "answer": "np.mean()",
-    "explanation": "NumPy provides the mean() function to compute the arithmetic mean of array elements.",
-    "tags": ["NumPy", "Data Analysis"],
-    "hints": ["Look for the central tendency function."],
-    "required_skills": ["NumPy"]
+    "topic": "Data Processing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which step comes first in a typical data science workflow?",
+    "options": [
+      "Model evaluation",
+      "Data cleaning",
+      "Data collection",
+      "Model deployment"
+    ],
+    "answer": "Data collection",
+    "explanation": "Data must be gathered before cleaning, analysis, and modeling can begin.",
+    "tags": ["Data Science", "Workflow"],
+    "required_skills": ["Data Handling"],
+    "hints": ["Before cleaning"]
   },
   {
     "_id": "q_ds_0003",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Pandas DataFrames",
-    "difficulty": 2,
-    "difficulty_label": "Moderate",
-    "estimated_time_sec": 100,
-    "text": "Which method in Pandas is used to read a CSV file?",
-    "options": ["pd.load_csv()", "pd.read_csv()", "pd.import_csv()", "pd.get_csv()"],
-    "answer": "pd.read_csv()",
-    "explanation": "The read_csv() method in Pandas is used to load CSV files into DataFrames.",
-    "tags": ["Pandas", "Data Handling"],
-    "hints": ["Most common file reading function."],
-    "required_skills": ["Pandas"]
+    "topic": "Statistics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which statistical measure is most affected by outliers?",
+    "options": [
+      "Median",
+      "Mode",
+      "Mean",
+      "Interquartile Range"
+    ],
+    "answer": "Mean",
+    "explanation": "The mean is sensitive to extreme values, unlike the median or IQR.",
+    "tags": ["Data Science", "Statistics"],
+    "required_skills": ["Statistical Analysis"],
+    "hints": ["Extreme values"]
   },
   {
     "_id": "q_ds_0004",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Scikit-learn Basics",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "Which Scikit-learn function is used to split a dataset into training and testing sets?",
-    "options": ["train_test_divide", "split_data", "train_test_split", "data_partition"],
-    "answer": "train_test_split",
-    "explanation": "train_test_split from sklearn.model_selection is used to split data into training and testing subsets.",
-    "tags": ["Scikit-learn", "Machine Learning"],
-    "hints": ["It's part of the model_selection module."],
-    "required_skills": ["Scikit-learn"]
+    "topic": "Data Cleaning",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of handling missing values in datasets?",
+    "options": [
+      "Increase dataset size",
+      "Improve model accuracy and reliability",
+      "Reduce computation time",
+      "Enhance visualization quality"
+    ],
+    "answer": "Improve model accuracy and reliability",
+    "explanation": "Missing values can bias results and reduce model performance if not handled properly.",
+    "tags": ["Data Science", "Data Cleaning"],
+    "required_skills": ["Data Preprocessing"],
+    "hints": ["Model quality"]
   },
   {
     "_id": "q_ds_0005",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Deep Learning - PyTorch",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Exploratory Data Analysis",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "In PyTorch, which class is used to define a neural network model?",
-    "options": ["torch.Net", "torch.nn.Module", "torch.model", "torch.Layer"],
-    "answer": "torch.nn.Module",
-    "explanation": "All neural networks in PyTorch are built by subclassing torch.nn.Module.",
-    "tags": ["PyTorch", "Deep Learning"],
-    "hints": ["Base class for neural network layers."],
-    "required_skills": ["PyTorch", "Deep Learning"]
+    "text": "What is the main objective of Exploratory Data Analysis (EDA)?",
+    "options": [
+      "Build predictive models",
+      "Deploy machine learning systems",
+      "Understand data patterns and relationships",
+      "Optimize database queries"
+    ],
+    "answer": "Understand data patterns and relationships",
+    "explanation": "EDA helps identify trends, anomalies, and relationships before modeling.",
+    "tags": ["Data Science", "EDA"],
+    "required_skills": ["Data Exploration"],
+    "hints": ["Initial understanding"]
   },
   {
     "_id": "q_ds_0006",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Model Evaluation",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "text": "Which metric is best suited for evaluating a classification model?",
-    "options": ["RMSE", "MAE", "Accuracy", "R-squared"],
-    "answer": "Accuracy",
-    "explanation": "Accuracy measures the proportion of correct predictions in classification tasks.",
-    "tags": ["Machine Learning", "Evaluation"],
-    "hints": ["Used for binary and multiclass tasks."],
-    "required_skills": ["Scikit-learn"]
+    "topic": "Machine Learning",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which machine learning algorithm is best suited for classification problems?",
+    "options": [
+      "Linear Regression",
+      "K-Means Clustering",
+      "Logistic Regression",
+      "Principal Component Analysis"
+    ],
+    "answer": "Logistic Regression",
+    "explanation": "Logistic Regression is commonly used for binary and multi-class classification.",
+    "tags": ["Data Science", "Machine Learning"],
+    "required_skills": ["ML Algorithms"],
+    "hints": ["Classification model"]
   },
   {
     "_id": "q_ds_0007",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Docker Basics",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Feature Engineering",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "Which Docker command is used to build an image from a Dockerfile?",
-    "options": ["docker run", "docker create", "docker build", "docker image"],
-    "answer": "docker build",
-    "explanation": "The 'docker build' command compiles a Docker image from the specified Dockerfile.",
-    "tags": ["Docker", "DevOps"],
-    "hints": ["Used before running containers."],
-    "required_skills": ["Docker"]
+    "text": "Why is feature scaling important in machine learning?",
+    "options": [
+      "To increase dataset size",
+      "To reduce noise",
+      "To ensure fair contribution of features",
+      "To remove outliers"
+    ],
+    "answer": "To ensure fair contribution of features",
+    "explanation": "Scaling prevents features with larger ranges from dominating model learning.",
+    "tags": ["Data Science", "Feature Engineering"],
+    "required_skills": ["Preprocessing"],
+    "hints": ["Feature dominance"]
   },
   {
     "_id": "q_ds_0008",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Feature Scaling",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 140,
-    "text": "Which Scikit-learn class is used for standardizing features?",
-    "options": ["MinMaxScaler", "StandardScaler", "Normalizer", "LabelEncoder"],
-    "answer": "StandardScaler",
-    "explanation": "StandardScaler standardizes features by removing the mean and scaling to unit variance.",
-    "tags": ["Preprocessing", "Scikit-learn"],
-    "hints": ["Used to normalize numerical features."],
-    "required_skills": ["Scikit-learn"]
+    "topic": "Dimensionality Reduction",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique is commonly used for dimensionality reduction?",
+    "options": [
+      "Linear Regression",
+      "Decision Trees",
+      "Principal Component Analysis",
+      "Naive Bayes"
+    ],
+    "answer": "Principal Component Analysis",
+    "explanation": "PCA reduces dimensionality while retaining maximum variance.",
+    "tags": ["Data Science", "PCA"],
+    "required_skills": ["Linear Algebra"],
+    "hints": ["Variance maximization"]
   },
   {
     "_id": "q_ds_0009",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Pandas Data Cleaning",
-    "difficulty": 2,
-    "difficulty_label": "Moderate",
-    "estimated_time_sec": 100,
-    "text": "Which Pandas function is used to remove missing values from a DataFrame?",
-    "options": ["dropna()", "fillna()", "replace()", "remove()"],
-    "answer": "dropna()",
-    "explanation": "The dropna() method removes rows or columns with missing values from a DataFrame.",
-    "tags": ["Pandas", "Data Cleaning"],
-    "hints": ["Opposite of fillna()."],
-    "required_skills": ["Pandas"]
+    "topic": "Model Evaluation",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which metric is most suitable for evaluating classification models with imbalanced datasets?",
+    "options": [
+      "Accuracy",
+      "Mean Squared Error",
+      "F1-score",
+      "R-squared"
+    ],
+    "answer": "F1-score",
+    "explanation": "F1-score balances precision and recall, making it effective for imbalanced data.",
+    "tags": ["Data Science", "Evaluation"],
+    "required_skills": ["Model Evaluation"],
+    "hints": ["Precision and recall"]
   },
   {
     "_id": "q_ds_0010",
     "question_type": "multiple-choice",
     "domain": "Data Science",
-    "topic": "Neural Networks",
+    "topic": "Overfitting",
     "difficulty": 5,
     "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is overfitting in machine learning?",
+    "options": [
+      "Model performs well on unseen data",
+      "Model is too simple",
+      "Model learns noise instead of patterns",
+      "Model has low variance"
+    ],
+    "answer": "Model learns noise instead of patterns",
+    "explanation": "Overfitting occurs when a model fits training data too closely and fails to generalize.",
+    "tags": ["Data Science", "Overfitting"],
+    "required_skills": ["ML Concepts"],
+    "hints": ["Poor generalization"]
+  },
+
+  {
+    "_id": "q_ds_0011",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Cross Validation",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of k-fold cross-validation?",
+    "options": [
+      "Increase dataset size",
+      "Reduce bias in model evaluation",
+      "Train multiple models simultaneously",
+      "Improve data visualization"
+    ],
+    "answer": "Reduce bias in model evaluation",
+    "explanation": "Cross-validation provides a more reliable estimate of model performance.",
+    "tags": ["Data Science", "Validation"],
+    "required_skills": ["Model Testing"],
+    "hints": ["Reliable evaluation"]
+  },
+  {
+    "_id": "q_ds_0012",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technology is commonly used for distributed data processing?",
+    "options": [
+      "MySQL",
+      "Apache Spark",
+      "Excel",
+      "NumPy"
+    ],
+    "answer": "Apache Spark",
+    "explanation": "Apache Spark supports large-scale distributed data processing.",
+    "tags": ["Data Science", "Big Data"],
+    "required_skills": ["Big Data Tools"],
+    "hints": ["Distributed processing"]
+  },
+  {
+    "_id": "q_ds_0013",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main purpose of data visualization?",
+    "options": [
+      "Store data efficiently",
+      "Reduce dataset size",
+      "Communicate insights clearly",
+      "Improve model accuracy"
+    ],
+    "answer": "Communicate insights clearly",
+    "explanation": "Visualization helps stakeholders understand patterns and insights easily.",
+    "tags": ["Data Science", "Visualization"],
+    "required_skills": ["Data Communication"],
+    "hints": ["Storytelling with data"]
+  },
+  {
+    "_id": "q_ds_0014",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Time Series",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which component captures long-term trends in time series data?",
+    "options": [
+      "Noise",
+      "Seasonality",
+      "Trend",
+      "Residual"
+    ],
+    "answer": "Trend",
+    "explanation": "The trend represents long-term movement in time series data.",
+    "tags": ["Data Science", "Time Series"],
+    "required_skills": ["Time Series Analysis"],
+    "hints": ["Long-term movement"]
+  },
+  {
+    "_id": "q_ds_0015",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Probability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which probability distribution is commonly used to model binary outcomes?",
+    "options": [
+      "Normal distribution",
+      "Poisson distribution",
+      "Binomial distribution",
+      "Exponential distribution"
+    ],
+    "answer": "Binomial distribution",
+    "explanation": "Binomial distribution models the number of successes in fixed trials.",
+    "tags": ["Data Science", "Probability"],
+    "required_skills": ["Probability Theory"],
+    "hints": ["Success or failure"]
+  },
+  {
+    "_id": "q_ds_0016",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Optimization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which optimization technique is commonly used to minimize loss functions?",
+    "options": [
+      "Gradient Descent",
+      "Random Search",
+      "Monte Carlo Simulation",
+      "Grid Search"
+    ],
+    "answer": "Gradient Descent",
+    "explanation": "Gradient Descent iteratively updates parameters to minimize loss.",
+    "tags": ["Data Science", "Optimization"],
+    "required_skills": ["Optimization Techniques"],
+    "hints": ["Loss minimization"]
+  },
+  {
+    "_id": "q_ds_0017",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Ethics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is algorithmic bias in data science?",
+    "options": [
+      "Random model error",
+      "Bias introduced by hardware",
+      "Systematic unfairness in model outcomes",
+      "High variance in predictions"
+    ],
+    "answer": "Systematic unfairness in model outcomes",
+    "explanation": "Algorithmic bias arises from biased data or design choices.",
+    "tags": ["Data Science", "Ethics"],
+    "required_skills": ["Responsible AI"],
+    "hints": ["Fairness issue"]
+  },
+  {
+    "_id": "q_ds_0018",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Deployment",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main challenge during deployment of data science models?",
+    "options": [
+      "Data collection",
+      "Model versioning and monitoring",
+      "Data visualization",
+      "Exploratory analysis"
+    ],
+    "answer": "Model versioning and monitoring",
+    "explanation": "Maintaining model performance in production requires monitoring and updates.",
+    "tags": ["Data Science", "MLOps"],
+    "required_skills": ["Model Deployment"],
+    "hints": ["Production issues"]
+  },
+  {
+    "_id": "q_ds_0019",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Databases",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which database type is best suited for structured tabular data?",
+    "options": [
+      "Graph database",
+      "Document database",
+      "Relational database",
+      "Key-value store"
+    ],
+    "answer": "Relational database",
+    "explanation": "Relational databases store structured data in tables with schemas.",
+    "tags": ["Data Science", "Databases"],
+    "required_skills": ["SQL"],
+    "hints": ["Tables and rows"]
+  },
+  {
+    "_id": "q_ds_0020",
+    "question_type": "multiple-choice",
+    "domain": "Data Science",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is AutoML gaining importance in Data Science?",
+    "options": [
+      "It replaces data collection",
+      "It automates model selection and tuning",
+      "It eliminates data preprocessing",
+      "It removes the need for statistics"
+    ],
+    "answer": "It automates model selection and tuning",
+    "explanation": "AutoML reduces manual effort and speeds up model development.",
+    "tags": ["Data Science", "AutoML"],
+    "required_skills": ["Advanced Data Science"],
+    "hints": ["Automation in ML"]
+  },
+
+  {
+    "_id": "q_ds_0021",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Science Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
     "estimated_time_sec": 240,
-    "text": "Which activation function helps prevent the vanishing gradient problem?",
-    "options": ["Sigmoid", "Tanh", "ReLU", "Softmax"],
-    "answer": "ReLU",
-    "explanation": "ReLU (Rectified Linear Unit) is widely used in deep networks for reducing vanishing gradient issues.",
-    "tags": ["Deep Learning", "Neural Networks"],
-    "hints": ["Most common in CNNs and deep nets."],
-    "required_skills": ["Deep Learning", "PyTorch"]
+    "text": "Explain what Data Science is and describe its key components.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of Data Science",
+        "Role of data collection, processing, and analysis",
+        "Importance of statistics and programming",
+        "Decision-making based on data insights"
+      ],
+      "example_scenarios": [
+        "Using data science to analyze customer purchasing behavior",
+        "Applying data science in healthcare for disease prediction"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Data Science", "Fundamentals"],
+    "required_skills": ["Data Analysis"],
+    "hints": [
+      "Think about how raw data is transformed into insights",
+      "Consider interdisciplinary aspects of data science"
+    ]
+  },
+  {
+    "_id": "q_ds_0022",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Collection",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Describe different sources of data used in data science projects.",
+    "expected_answer": {
+      "key_points": [
+        "Structured and unstructured data",
+        "Primary and secondary data sources",
+        "Internal and external data",
+        "Real-time and batch data"
+      ],
+      "example_scenarios": [
+        "Collecting user data from web applications",
+        "Using public datasets for research analysis"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Coverage", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Data Collection"],
+    "required_skills": ["Data Handling"],
+    "hints": [
+      "Consider where data originates from",
+      "Think about online and offline sources"
+    ]
+  },
+  {
+    "_id": "q_ds_0023",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Preprocessing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain data preprocessing and why it is an essential step in data science.",
+    "expected_answer": {
+      "key_points": [
+        "Handling missing values",
+        "Data cleaning and transformation",
+        "Normalization and scaling",
+        "Improving data quality"
+      ],
+      "example_scenarios": [
+        "Cleaning noisy customer transaction data",
+        "Preparing sensor data for analysis"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
+    ],
+    "tags": ["Data Preprocessing"],
+    "required_skills": ["Data Cleaning"],
+    "hints": [
+      "Think about issues in raw datasets",
+      "Consider steps before model building"
+    ]
+  },
+  {
+    "_id": "q_ds_0024",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Exploratory Data Analysis",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "What is Exploratory Data Analysis (EDA)? Explain its objectives and techniques.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of EDA",
+        "Summary statistics",
+        "Data visualization",
+        "Pattern and anomaly detection"
+      ],
+      "example_scenarios": [
+        "Analyzing sales trends using visual plots",
+        "Identifying outliers in financial datasets"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Clarity", "weight": 0.4 },
+      { "criterion": "Techniques Explained", "weight": 0.3 },
+      { "criterion": "Use-case Relevance", "weight": 0.3 }
+    ],
+    "tags": ["EDA", "Data Visualization"],
+    "required_skills": ["Data Analysis"],
+    "hints": [
+      "Think about understanding data before modeling",
+      "Consider visual and statistical methods"
+    ]
+  },
+  {
+    "_id": "q_ds_0025",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the role of statistics in data science.",
+    "expected_answer": {
+      "key_points": [
+        "Descriptive statistics",
+        "Inferential statistics",
+        "Probability distributions",
+        "Decision making under uncertainty"
+      ],
+      "example_scenarios": [
+        "Estimating average customer spending",
+        "Hypothesis testing in experiments"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Statistical Understanding", "weight": 0.4 },
+      { "criterion": "Application", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Statistics"],
+    "required_skills": ["Statistical Analysis"],
+    "hints": [
+      "Think about summarizing and inferring from data",
+      "Consider uncertainty and variability"
+    ]
+  },
+  {
+    "_id": "q_ds_0026",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Machine Learning Basics",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe how machine learning is used in data science workflows.",
+    "expected_answer": {
+      "key_points": [
+        "Role of models in prediction",
+        "Training and testing data",
+        "Supervised vs unsupervised learning",
+        "Model evaluation"
+      ],
+      "example_scenarios": [
+        "Predicting house prices",
+        "Customer segmentation using clustering"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Workflow Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Machine Learning", "Data Science"],
+    "required_skills": ["Machine Learning"],
+    "hints": [
+      "Think about prediction and pattern discovery",
+      "Consider where ML fits in the pipeline"
+    ]
+  },
+  {
+    "_id": "q_ds_0027",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of data visualization in data science.",
+    "expected_answer": {
+      "key_points": [
+        "Simplifying complex data",
+        "Identifying patterns and trends",
+        "Supporting decision-making",
+        "Effective communication of insights"
+      ],
+      "example_scenarios": [
+        "Dashboards for business reporting",
+        "Visualizing COVID-19 trends"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Visualization"],
+    "required_skills": ["Data Visualization"],
+    "hints": [
+      "Think about human interpretation of data",
+      "Consider charts and graphs"
+    ]
+  },
+  {
+    "_id": "q_ds_0028",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Feature Engineering",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "What is feature engineering and why is it important in data science?",
+    "expected_answer": {
+      "key_points": [
+        "Definition of feature engineering",
+        "Creating meaningful features",
+        "Improving model performance",
+        "Domain knowledge usage"
+      ],
+      "example_scenarios": [
+        "Creating time-based features from timestamps",
+        "Encoding categorical variables for models"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Feature Engineering"],
+    "required_skills": ["Data Science"],
+    "hints": [
+      "Think about transforming raw variables",
+      "Consider improving predictive power"
+    ]
+  },
+  {
+    "_id": "q_ds_0029",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the concept of Big Data and its challenges in data science.",
+    "expected_answer": {
+      "key_points": [
+        "Volume, velocity, and variety",
+        "Storage and processing challenges",
+        "Scalability issues",
+        "Impact on data analysis"
+      ],
+      "example_scenarios": [
+        "Processing social media data",
+        "Analyzing IoT sensor data"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Understanding", "weight": 0.4 },
+      { "criterion": "Challenges Explained", "weight": 0.3 },
+      { "criterion": "Relevance", "weight": 0.3 }
+    ],
+    "tags": ["Big Data"],
+    "required_skills": ["Data Processing"],
+    "hints": [
+      "Think about large-scale datasets",
+      "Consider limitations of traditional systems"
+    ]
+  },
+  {
+    "_id": "q_ds_0030",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Model Evaluation",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain different methods used to evaluate data science models.",
+    "expected_answer": {
+      "key_points": [
+        "Train-test split",
+        "Cross-validation",
+        "Performance metrics",
+        "Avoiding overfitting"
+      ],
+      "example_scenarios": [
+        "Evaluating a classification model",
+        "Comparing multiple regression models"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Evaluation Understanding", "weight": 0.4 },
+      { "criterion": "Techniques", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Model Evaluation"],
+    "required_skills": ["Machine Learning"],
+    "hints": [
+      "Think about measuring performance",
+      "Consider validation techniques"
+    ]
+  },
+  {
+    "_id": "q_ds_0031",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Ethics",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss ethical issues related to data collection and usage in data science.",
+    "expected_answer": {
+      "key_points": [
+        "Privacy concerns",
+        "Data security",
+        "Bias in data",
+        "Responsible data usage"
+      ],
+      "example_scenarios": [
+        "Handling user personal data",
+        "Bias in hiring datasets"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Ethical Awareness", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Data Ethics"],
+    "required_skills": ["Data Governance"],
+    "hints": [
+      "Think about responsible data handling",
+      "Consider user trust"
+    ]
+  },
+  {
+    "_id": "q_ds_0032",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Data Pipelines",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the concept of data pipelines and their importance in data science projects.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of data pipeline",
+        "ETL processes",
+        "Automation",
+        "Scalability and reliability"
+      ],
+      "example_scenarios": [
+        "Automated data ingestion for analytics",
+        "Real-time data processing systems"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Practical Understanding", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Data Pipelines"],
+    "required_skills": ["Data Engineering"],
+    "hints": [
+      "Think about end-to-end data flow",
+      "Consider automation benefits"
+    ]
+  },
+  {
+    "_id": "q_ds_0033",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain time series data and its importance in data science applications.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of time series data",
+        "Trend and seasonality",
+        "Forecasting concepts",
+        "Challenges in time series analysis"
+      ],
+      "example_scenarios": [
+        "Stock price forecasting",
+        "Demand prediction in retail"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Application Insight", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Time Series"],
+    "required_skills": ["Data Analysis"],
+    "hints": [
+      "Think about data over time",
+      "Consider forecasting use cases"
+    ]
+  },
+  {
+    "_id": "q_ds_0034",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Deployment",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Discuss the challenges involved in deploying data science models to production.",
+    "expected_answer": {
+      "key_points": [
+        "Scalability",
+        "Data drift",
+        "Monitoring models",
+        "Integration with systems"
+      ],
+      "example_scenarios": [
+        "Deploying a recommendation system",
+        "Monitoring a fraud detection model"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Understanding", "weight": 0.4 },
+      { "criterion": "Technical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Model Deployment"],
+    "required_skills": ["Data Science", "Deployment"],
+    "hints": [
+      "Think about real-world constraints",
+      "Consider model lifecycle"
+    ]
+  },
+  {
+    "_id": "q_ds_0035",
+    "question_type": "subjective",
+    "domain": "Data Science",
+    "topic": "Career & Applications",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the role of a data scientist and common real-world applications of data science.",
+    "expected_answer": {
+      "key_points": [
+        "Responsibilities of a data scientist",
+        "Business problem solving",
+        "Collaboration with teams",
+        "Industry applications"
+      ],
+      "example_scenarios": [
+        "Data science in e-commerce",
+        "Data science in finance"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Role Understanding", "weight": 0.4 },
+      { "criterion": "Application Awareness", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Data Science Careers"],
+    "required_skills": ["Data Science Basics"],
+    "hints": [
+      "Think about industry use cases",
+      "Consider day-to-day responsibilities"
+    ]
+  },
+  {
+    "_id": "q_ds_0036",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is data science and why is it important?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Extracting insights from data",
+        "Combines statistics and programming",
+        "Supports decision making"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core idea covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Simple example used" }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Science Basics"],
+    "required_skills": ["Python"],
+    "hints": ["Data-driven decisions"]
+  },
+  {
+    "_id": "q_ds_0037",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Data Types",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are structured and unstructured data?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Structured data in tables",
+        "Unstructured data like text or images",
+        "Different storage formats"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Types"],
+    "required_skills": ["Python"],
+    "hints": ["Tables vs text"]
+  },
+  {
+    "_id": "q_ds_0038",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Data Collection",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is data collected for data science projects?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Databases",
+        "APIs",
+        "Surveys or logs"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Collection"],
+    "required_skills": ["Python"],
+    "hints": ["APIs and databases"]
+  },
+  {
+    "_id": "q_ds_0039",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Data Cleaning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is data cleaning important in data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Removes errors",
+        "Improves data quality",
+        "Better analysis results"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Data Cleaning"],
+    "required_skills": ["Python"],
+    "hints": ["Garbage in garbage out"]
+  },
+  {
+    "_id": "q_ds_0040",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "EDA",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Exploratory Data Analysis (EDA)?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Understanding data patterns",
+        "Using statistics and plots",
+        "Identifying trends and outliers"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["EDA"],
+    "required_skills": ["Python"],
+    "hints": ["Data exploration"]
+  },
+  {
+    "_id": "q_ds_0041",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the role of statistics in data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Summarizing data",
+        "Finding patterns",
+        "Supporting conclusions"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Statistics"],
+    "required_skills": ["Python"],
+    "hints": ["Mean and variance"]
+  },
+  {
+    "_id": "q_ds_0042",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Visualization",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is data visualization important?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Easier understanding",
+        "Identifies trends",
+        "Supports communication"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Visualization"],
+    "required_skills": ["Python"],
+    "hints": ["Charts and graphs"]
+  },
+  {
+    "_id": "q_ds_0043",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Machine Learning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is machine learning related to data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "ML builds predictive models",
+        "Uses data for learning",
+        "Part of data science workflow"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Machine Learning"],
+    "required_skills": ["Python"],
+    "hints": ["Prediction models"]
+  },
+  {
+    "_id": "q_ds_0044",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Features",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are features in a data science model?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Input variables",
+        "Describe data characteristics",
+        "Used for prediction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Features"],
+    "required_skills": ["Python"],
+    "hints": ["Input columns"]
+  },
+  {
+    "_id": "q_ds_0045",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Model Evaluation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is model evaluation important in data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Measures performance",
+        "Checks accuracy",
+        "Prevents wrong conclusions"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Evaluation"],
+    "required_skills": ["Python"],
+    "hints": ["Metrics"]
+  },
+  {
+    "_id": "q_ds_0046",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is big data and how does it relate to data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Large volume data",
+        "High velocity and variety",
+        "Requires special tools"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Big Data"],
+    "required_skills": ["Python"],
+    "hints": ["Large datasets"]
+  },
+  {
+    "_id": "q_ds_0047",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Tools",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Name some common tools used in data science.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Python",
+        "Pandas and NumPy",
+        "Visualization libraries"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Tools"],
+    "required_skills": ["Python"],
+    "hints": ["Libraries"]
+  },
+  {
+    "_id": "q_ds_0048",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Ethics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is ethics important in data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Data privacy",
+        "Avoiding bias",
+        "Responsible use of data"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Ethics"],
+    "required_skills": ["Python"],
+    "hints": ["Privacy and bias"]
+  },
+  {
+    "_id": "q_ds_0049",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What roles exist in the field of data science?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Data analyst",
+        "Data scientist",
+        "Machine learning engineer"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Python"],
+    "hints": ["Job roles"]
+  },
+  {
+    "_id": "q_ds_0050",
+    "question_type": "voice",
+    "domain": "Data Science",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see data science evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "More automation",
+        "AI integration",
+        "Wider industry adoption"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Python"],
+    "hints": ["AI-driven insights"]
+  },
+  {
+    "_id": "q_ds_0051",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "NumPy Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate the mean of a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef compute_mean(arr):\n    pass",
+      "function_signature": "compute_mean(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.mean(arr)",
+      "key_concepts": ["Mean", "Central tendency"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4])",
+        "expected_output": "2.5",
+        "description": "Basic mean"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Mean computed correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy function" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty array" }
+    ],
+    "tags": ["Python", "NumPy", "Statistics"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.mean()"]
+  },
+
+  {
+    "_id": "q_ds_0052",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute the median of a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef compute_median(arr):\n    pass",
+      "function_signature": "compute_median(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.median(arr)",
+      "key_concepts": ["Median", "Statistical measure"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([3,1,2])",
+        "expected_output": "2.0",
+        "description": "Odd-length array"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Median correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable implementation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles even-length array" }
+    ],
+    "tags": ["Python", "NumPy", "Statistics"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.median()"]
+  },
+
+  {
+    "_id": "q_ds_0053",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Data Cleaning",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to remove NaN values from a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef remove_nan(arr):\n    pass",
+      "function_signature": "remove_nan(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return arr[~np.isnan(arr)]",
+      "key_concepts": ["Missing values", "Data cleaning"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1, np.nan, 2])",
+        "expected_output": "np.array([1.0, 2.0])",
+        "description": "Remove NaN"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "NaN removed correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy masking" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles all-NaN array" }
+    ],
+    "tags": ["Python", "NumPy", "Data Cleaning"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.isnan()"]
+  },
+
+  {
+    "_id": "q_ds_0054",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Feature Scaling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to perform Min-Max normalization on a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef min_max_scale(arr):\n    pass",
+      "function_signature": "min_max_scale(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "min_v, max_v = np.min(arr), np.max(arr)\nreturn (arr - min_v) / (max_v - min_v) if max_v != min_v else np.zeros_like(arr)",
+      "key_concepts": ["Normalization", "Feature scaling"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([2,4,6])",
+        "expected_output": "np.array([0.0,0.5,1.0])",
+        "description": "Min-Max scaling"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct scaling" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear variable usage" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles constant array" }
+    ],
+    "tags": ["Python", "NumPy", "Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["(x-min)/(max-min)"]
+  },
+
+  {
+    "_id": "q_ds_0055",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Exploratory Data Analysis",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute the variance of a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef compute_variance(arr):\n    pass",
+      "function_signature": "compute_variance(arr: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.var(arr)",
+      "key_concepts": ["Variance", "Data dispersion"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3])",
+        "expected_output": "0.6666666666666666",
+        "description": "Variance calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Variance correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy var" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles single value" }
+    ],
+    "tags": ["Python", "NumPy", "EDA"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.var()"]
+  },
+
+  {
+    "_id": "q_ds_0056",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Distance Metrics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute Euclidean distance between two NumPy arrays.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef euclidean_distance(a, b):\n    pass",
+      "function_signature": "euclidean_distance(a: np.ndarray, b: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.sqrt(np.sum((a - b) ** 2))",
+      "key_concepts": ["Euclidean distance", "Similarity"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2]), np.array([4,6])",
+        "expected_output": "5.0",
+        "description": "Distance calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Distance correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized ops" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles identical vectors" }
+    ],
+    "tags": ["Python", "NumPy", "Distance"],
+    "required_skills": ["Python"],
+    "hints": ["sqrt(sum((a-b)^2))"]
+  },
+
+  {
+    "_id": "q_ds_0057",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Probability",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute probability distribution of values in a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef probability_distribution(arr):\n    pass",
+      "function_signature": "probability_distribution(arr: np.ndarray) -> dict"
+    },
+    "expected_answer": {
+      "solution": "vals, cnts = np.unique(arr, return_counts=True)\nreturn dict(zip(vals, cnts/len(arr)))",
+      "key_concepts": ["Probability", "Frequency"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,1,2])",
+        "expected_output": "{1:0.6666666666666666,2:0.3333333333333333}",
+        "description": "Distribution"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Probabilities correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear mapping" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles single value" }
+    ],
+    "tags": ["Python", "NumPy", "Probability"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.unique()"]
+  },
+
+  {
+    "_id": "q_ds_0058",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Regression Metrics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute Mean Absolute Error (MAE).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef mean_absolute_error(y_true, y_pred):\n    pass",
+      "function_signature": "mean_absolute_error(y_true: np.ndarray, y_pred: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.mean(np.abs(y_true - y_pred))",
+      "key_concepts": ["MAE", "Regression metric"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2]), np.array([2,4])",
+        "expected_output": "1.5",
+        "description": "MAE calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "MAE correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Vectorized solution" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero error" }
+    ],
+    "tags": ["Python", "NumPy", "Metrics"],
+    "required_skills": ["Python"],
+    "hints": ["Mean of absolute errors"]
+  },
+
+  {
+    "_id": "q_ds_0059",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Classification Metrics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute accuracy score.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef accuracy(y_true, y_pred):\n    pass",
+      "function_signature": "accuracy(y_true: np.ndarray, y_pred: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.mean(y_true == y_pred)",
+      "key_concepts": ["Accuracy", "Classification"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,0,1]), np.array([1,1,1])",
+        "expected_output": "0.6666666666666666",
+        "description": "Accuracy score"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Accuracy correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty arrays" }
+    ],
+    "tags": ["Python", "NumPy", "Classification"],
+    "required_skills": ["Python"],
+    "hints": ["Mean of correct predictions"]
+  },
+
+  {
+    "_id": "q_ds_0060",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Sampling",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to randomly sample k elements from a NumPy array.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef random_sample(arr, k):\n    pass",
+      "function_signature": "random_sample(arr: np.ndarray, k: int) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.random.choice(arr, k, replace=False)",
+      "key_concepts": ["Sampling", "Random selection"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4]), 2",
+        "expected_output": "Array of length 2",
+        "description": "Random sample"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Sample size correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy random" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles k=0" }
+    ],
+    "tags": ["Python", "NumPy", "Sampling"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.random.choice"]
+  },
+
+  {
+    "_id": "q_ds_0061",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Correlation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to compute correlation coefficient between two arrays.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef correlation(a, b):\n    pass",
+      "function_signature": "correlation(a: np.ndarray, b: np.ndarray) -> float"
+    },
+    "expected_answer": {
+      "solution": "return np.corrcoef(a, b)[0,1]",
+      "key_concepts": ["Correlation", "Relationship"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3]), np.array([1,2,3])",
+        "expected_output": "1.0",
+        "description": "Perfect correlation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correlation correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses NumPy corrcoef" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles constant arrays" }
+    ],
+    "tags": ["Python", "NumPy", "Statistics"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.corrcoef"]
+  },
+
+  {
+    "_id": "q_ds_0062",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Outlier Detection",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to detect values greater than mean plus two standard deviations.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef detect_outliers(arr):\n    pass",
+      "function_signature": "detect_outliers(arr: np.ndarray) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "m, s = np.mean(arr), np.std(arr)\nreturn arr[arr > m + 2*s]",
+      "key_concepts": ["Outliers", "Standard deviation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,100])",
+        "expected_output": "np.array([100])",
+        "description": "Outlier detection"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Outliers detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles no outliers" }
+    ],
+    "tags": ["Python", "NumPy", "Outliers"],
+    "required_skills": ["Python"],
+    "hints": ["mean + 2*std"]
+  },
+
+  {
+    "_id": "q_ds_0063",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Data Splitting",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to split data into train and test sets using a ratio.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef train_test_split(arr, ratio):\n    pass",
+      "function_signature": "train_test_split(arr: np.ndarray, ratio: float) -> tuple"
+    },
+    "expected_answer": {
+      "solution": "idx = int(len(arr)*ratio)\nreturn arr[:idx], arr[idx:]",
+      "key_concepts": ["Train-test split", "Data preparation"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4,5]), 0.6",
+        "expected_output": "(np.array([1,2,3]), np.array([4,5]))",
+        "description": "Split data"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Split correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple indexing" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles ratio bounds" }
+    ],
+    "tags": ["Python", "NumPy", "Preprocessing"],
+    "required_skills": ["Python"],
+    "hints": ["Compute index from ratio"]
+  },
+
+  {
+    "_id": "q_ds_0064",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Time Series",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to compute moving average with window size k.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef moving_average(arr, k):\n    pass",
+      "function_signature": "moving_average(arr: np.ndarray, k: int) -> np.ndarray"
+    },
+    "expected_answer": {
+      "solution": "return np.convolve(arr, np.ones(k)/k, mode='valid')",
+      "key_concepts": ["Moving average", "Smoothing"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3,4]), 2",
+        "expected_output": "np.array([1.5,2.5,3.5])",
+        "description": "Moving average"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Average correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses convolution" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles k=1" }
+    ],
+    "tags": ["Python", "NumPy", "Time Series"],
+    "required_skills": ["Python"],
+    "hints": ["Use np.convolve"]
+  },
+
+  {
+    "_id": "q_ds_0065",
+    "question_type": "coding",
+    "domain": "Data Science",
+    "topic": "Data Validation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if all values in a NumPy array are positive.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": ["numpy"],
+      "starter_code": "import numpy as np\n\ndef all_positive(arr):\n    pass",
+      "function_signature": "all_positive(arr: np.ndarray) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return np.all(arr > 0)",
+      "key_concepts": ["Data validation", "Constraints"]
+    },
+    "test_cases": [
+      {
+        "input": "np.array([1,2,3])",
+        "expected_output": "True",
+        "description": "All positive"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Validation correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses np.all" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles negative values" }
+    ],
+    "tags": ["Python", "NumPy", "Validation"],
+    "required_skills": ["Python"],
+    "hints": ["Check arr > 0"]
   }
 ]

@@ -3,630 +3,1906 @@
     "_id": "q_devops_0001",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Docker Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "required_skills": ["Docker"],
-    "text": "What is a Docker container?",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of devops?",
     "options": [
-      "A virtual machine",
-      "A lightweight, standalone executable package that includes everything needed to run an application",
-      "A cloud storage service",
-      "A programming language"
+      "Replace system administrators",
+      "Increase software licensing cost",
+      "Improve collaboration between development and operations teams",
+      "Eliminate testing processes"
     ],
-    "answer": "A lightweight, standalone executable package that includes everything needed to run an application",
-    "explanation": "A Docker container is a lightweight, portable unit that packages an application and its dependencies together, allowing it to run consistently across different environments.",
-    "tags": ["docker", "containers", "fundamentals"],
-    "hints": ["Think about packaging applications with their dependencies."]
+    "answer": "Improve collaboration between development and operations teams",
+    "explanation": "devops focuses on collaboration, automation, and continuous delivery to improve software quality and speed.",
+    "tags": ["devops", "Fundamentals"],
+    "required_skills": ["devops Basics"],
+    "hints": ["Dev + Ops collaboration"]
   },
   {
     "_id": "q_devops_0002",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Linux Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "required_skills": ["Linux"],
-    "text": "Which Linux command is used to list files and directories?",
+    "topic": "CI/CD",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does Continuous Integration (CI) primarily ensure?",
     "options": [
-      "cd",
-      "ls",
-      "pwd",
-      "mkdir"
+      "Manual code deployment",
+      "Frequent code integration with automated testing",
+      "Elimination of version control",
+      "Faster hardware procurement"
     ],
-    "answer": "ls",
-    "explanation": "The 'ls' command lists files and directories in the current directory. It's one of the most commonly used Linux commands.",
-    "tags": ["linux", "commands", "basics"],
-    "hints": ["Think about the most common command to see what's in a directory."]
+    "answer": "Frequent code integration with automated testing",
+    "explanation": "CI ensures code is frequently merged and validated through automated tests.",
+    "tags": ["devops", "CI/CD"],
+    "required_skills": ["CI Tools"],
+    "hints": ["Frequent integration"]
   },
   {
     "_id": "q_devops_0003",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "CI/CD Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "required_skills": ["CI/CD"],
-    "text": "What does CI stand for in CI/CD?",
+    "topic": "Version Control",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which version control system is most commonly used in devops pipelines?",
     "options": [
-      "Container Integration",
-      "Continuous Integration",
-      "Cloud Infrastructure",
-      "Code Implementation"
+      "SVN",
+      "CVS",
+      "Git",
+      "Mercurial"
     ],
-    "answer": "Continuous Integration",
-    "explanation": "CI stands for Continuous Integration, a practice where developers frequently merge code changes into a central repository, followed by automated builds and tests.",
-    "tags": ["ci-cd", "fundamentals", "definitions"],
-    "hints": ["Think about continuously integrating code changes."]
+    "answer": "Git",
+    "explanation": "Git is widely used due to its distributed nature and branching capabilities.",
+    "tags": ["devops", "Version Control"],
+    "required_skills": ["Git"],
+    "hints": ["Distributed VCS"]
   },
   {
     "_id": "q_devops_0004",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "AWS Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "required_skills": ["AWS"],
-    "text": "What does EC2 stand for in AWS?",
+    "topic": "Automation",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is automation critical in devops practices?",
     "options": [
-      "Elastic Container Cloud",
-      "Elastic Compute Cloud",
-      "Extended Cloud Capacity",
-      "Electronic Cloud Computing"
+      "To increase manual effort",
+      "To reduce human error and improve consistency",
+      "To eliminate documentation",
+      "To slow down deployments"
     ],
-    "answer": "Elastic Compute Cloud",
-    "explanation": "EC2 stands for Elastic Compute Cloud, AWS's service that provides resizable compute capacity in the cloud through virtual servers.",
-    "tags": ["aws", "ec2", "fundamentals"],
-    "hints": ["Think about virtual servers that can scale elastically."]
+    "answer": "To reduce human error and improve consistency",
+    "explanation": "Automation ensures reliable, repeatable processes across environments.",
+    "tags": ["devops", "Automation"],
+    "required_skills": ["Scripting"],
+    "hints": ["Repeatable processes"]
   },
   {
     "_id": "q_devops_0005",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Jenkins Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "required_skills": ["Jenkins", "CI/CD"],
-    "text": "What is Jenkins primarily used for?",
+    "topic": "Infrastructure as Code",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is Infrastructure as Code (IaC)?",
     "options": [
-      "Database management",
-      "Continuous Integration and Continuous Delivery",
-      "Container orchestration",
-      "Cloud storage"
+      "Manual server configuration",
+      "Managing infrastructure using code and automation",
+      "Writing application logic",
+      "Monitoring system performance"
     ],
-    "answer": "Continuous Integration and Continuous Delivery",
-    "explanation": "Jenkins is an open-source automation server used to build, test, and deploy software, making it a key tool for CI/CD pipelines.",
-    "tags": ["jenkins", "ci-cd", "automation"],
-    "hints": ["Think about automating software builds and deployments."]
+    "answer": "Managing infrastructure using code and automation",
+    "explanation": "IaC enables automated, version-controlled infrastructure provisioning.",
+    "tags": ["devops", "IaC"],
+    "required_skills": ["Terraform", "CloudFormation"],
+    "hints": ["Code-defined infra"]
   },
   {
     "_id": "q_devops_0006",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Docker Commands",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 90,
-    "required_skills": ["Docker"],
-    "text": "Which Docker command is used to build an image from a Dockerfile?",
+    "topic": "Containers",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main benefit of containerization in devops?",
     "options": [
-      "docker run",
-      "docker build",
-      "docker create",
-      "docker make"
+      "Higher hardware cost",
+      "Application portability and consistency",
+      "Manual dependency management",
+      "Reduced scalability"
     ],
-    "answer": "docker build",
-    "explanation": "The 'docker build' command creates a Docker image from a Dockerfile and a context. The context is the set of files located in the specified PATH or URL.",
-    "tags": ["docker", "commands", "images"],
-    "hints": ["Think about the command that constructs images from instructions."]
+    "answer": "Application portability and consistency",
+    "explanation": "Containers package applications with dependencies for consistent execution across environments.",
+    "tags": ["devops", "Containers"],
+    "required_skills": ["Docker"],
+    "hints": ["Run anywhere"]
   },
   {
     "_id": "q_devops_0007",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Kubernetes Basics",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 120,
-    "required_skills": ["Kubernetes"],
-    "text": "What is a Pod in Kubernetes?",
+    "topic": "Container Orchestration",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which tool is most widely used for container orchestration?",
     "options": [
-      "A collection of nodes",
-      "The smallest deployable unit that can contain one or more containers",
-      "A type of storage volume",
-      "A network configuration"
+      "Docker Swarm",
+      "Ansible",
+      "Kubernetes",
+      "Puppet"
     ],
-    "answer": "The smallest deployable unit that can contain one or more containers",
-    "explanation": "A Pod is the smallest and simplest unit in Kubernetes. It represents a single instance of a running process and can contain one or more tightly coupled containers.",
-    "tags": ["kubernetes", "pods", "fundamentals"],
-    "hints": ["Think about the basic unit of deployment in Kubernetes."]
+    "answer": "Kubernetes",
+    "explanation": "Kubernetes automates container deployment, scaling, and management.",
+    "tags": ["devops", "Kubernetes"],
+    "required_skills": ["Kubernetes"],
+    "hints": ["Cluster orchestration"]
   },
   {
     "_id": "q_devops_0008",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Linux Permissions",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 90,
-    "required_skills": ["Linux"],
-    "text": "What does the command 'chmod 755 file.txt' do?",
+    "topic": "Monitoring",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary purpose of monitoring in devops?",
     "options": [
-      "Gives read, write, execute to owner; read and execute to group and others",
-      "Gives full permissions to everyone",
-      "Removes all permissions",
-      "Changes the file owner"
+      "Increase deployment frequency",
+      "Track system health and performance",
+      "Replace testing",
+      "Manage source code"
     ],
-    "answer": "Gives read, write, execute to owner; read and execute to group and others",
-    "explanation": "chmod 755 sets permissions where 7 (rwx) is for owner, 5 (r-x) for group, and 5 (r-x) for others. This is a common permission setting for executable files.",
-    "tags": ["linux", "permissions", "chmod"],
-    "hints": ["Think about octal notation: 7=rwx, 5=r-x."]
+    "answer": "Track system health and performance",
+    "explanation": "Monitoring helps detect issues early and maintain system reliability.",
+    "tags": ["devops", "Monitoring"],
+    "required_skills": ["Observability"],
+    "hints": ["System health"]
   },
   {
     "_id": "q_devops_0009",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Terraform Basics",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 90,
-    "required_skills": ["Terraform"],
-    "text": "What is Terraform primarily used for?",
+    "topic": "Logging",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is centralized logging important in devops?",
     "options": [
-      "Container orchestration",
-      "Infrastructure as Code (IaC)",
-      "Continuous Integration",
-      "Application monitoring"
+      "To increase log size",
+      "To simplify troubleshooting across distributed systems",
+      "To slow down applications",
+      "To replace monitoring tools"
     ],
-    "answer": "Infrastructure as Code (IaC)",
-    "explanation": "Terraform is an Infrastructure as Code tool that allows you to define and provision infrastructure using declarative configuration files.",
-    "tags": ["terraform", "iac", "fundamentals"],
-    "hints": ["Think about managing infrastructure through code."]
+    "answer": "To simplify troubleshooting across distributed systems",
+    "explanation": "Centralized logs help trace issues in microservices and cloud systems.",
+    "tags": ["devops", "Logging"],
+    "required_skills": ["ELK Stack"],
+    "hints": ["Distributed debugging"]
   },
   {
     "_id": "q_devops_0010",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "AWS Services",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 90,
-    "required_skills": ["AWS"],
-    "text": "What is Amazon S3 used for?",
+    "topic": "Cloud",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are cloud platforms widely adopted in devops?",
     "options": [
-      "Running virtual machines",
-      "Object storage service",
-      "Container orchestration",
-      "Database management"
+      "Limited scalability",
+      "On-demand resources and automation support",
+      "Higher maintenance effort",
+      "Manual provisioning"
     ],
-    "answer": "Object storage service",
-    "explanation": "Amazon S3 (Simple Storage Service) is an object storage service offering scalability, data availability, security, and performance for storing and retrieving any amount of data.",
-    "tags": ["aws", "s3", "storage"],
-    "hints": ["Think about storing files and objects in the cloud."]
+    "answer": "On-demand resources and automation support",
+    "explanation": "Cloud platforms enable rapid provisioning, scalability, and automation.",
+    "tags": ["devops", "Cloud"],
+    "required_skills": ["Cloud Computing"],
+    "hints": ["Elastic resources"]
   },
+
   {
     "_id": "q_devops_0011",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Jenkins Pipeline",
-    "difficulty": 2,
-    "difficulty_label": "Medium",
-    "estimated_time_sec": 120,
-    "required_skills": ["Jenkins", "CI/CD"],
-    "text": "What is a Jenkinsfile?",
+    "topic": "Configuration Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which tool is commonly used for configuration management?",
     "options": [
-      "A log file generated by Jenkins",
-      "A text file containing the definition of a Jenkins Pipeline",
-      "A configuration file for Jenkins plugins",
-      "A backup file"
+      "Jenkins",
+      "Ansible",
+      "GitHub",
+      "Docker"
     ],
-    "answer": "A text file containing the definition of a Jenkins Pipeline",
-    "explanation": "A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is checked into source control, enabling Pipeline-as-Code.",
-    "tags": ["jenkins", "pipeline", "jenkinsfile"],
-    "hints": ["Think about defining CI/CD pipelines as code."]
+    "answer": "Ansible",
+    "explanation": "Ansible automates configuration, deployment, and orchestration.",
+    "tags": ["devops", "Configuration Management"],
+    "required_skills": ["Ansible"],
+    "hints": ["Agentless automation"]
   },
   {
     "_id": "q_devops_0012",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Docker Networking",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "required_skills": ["Docker"],
-    "text": "What is the default network driver in Docker?",
+    "topic": "CI/CD Tools",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which tool is primarily used for CI/CD pipeline automation?",
     "options": [
-      "host",
-      "bridge",
-      "overlay",
-      "none"
+      "Nagios",
+      "Jenkins",
+      "Prometheus",
+      "Grafana"
     ],
-    "answer": "bridge",
-    "explanation": "The bridge network is the default network driver in Docker. Containers on the same bridge network can communicate with each other, while being isolated from containers on other networks.",
-    "tags": ["docker", "networking", "bridge"],
-    "hints": ["Think about the network that allows container-to-container communication on a single host."]
+    "answer": "Jenkins",
+    "explanation": "Jenkins automates build, test, and deployment pipelines.",
+    "tags": ["devops", "CI/CD"],
+    "required_skills": ["Jenkins"],
+    "hints": ["Pipeline automation"]
   },
   {
     "_id": "q_devops_0013",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Kubernetes Services",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
+    "topic": "Security",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "required_skills": ["Kubernetes"],
-    "text": "What is the purpose of a Kubernetes Service?",
+    "text": "What does DevSecOps emphasize?",
     "options": [
-      "To store persistent data",
-      "To provide stable networking endpoints to access Pods",
-      "To schedule Pods on nodes",
-      "To manage container images"
+      "Security after deployment",
+      "Security integrated throughout the devops lifecycle",
+      "Only network security",
+      "Manual security testing"
     ],
-    "answer": "To provide stable networking endpoints to access Pods",
-    "explanation": "A Kubernetes Service is an abstraction that defines a logical set of Pods and provides a stable IP address and DNS name for accessing them, even as Pods are created and destroyed.",
-    "tags": ["kubernetes", "services", "networking"],
-    "hints": ["Think about how to reliably access Pods that can be ephemeral."]
+    "answer": "Security integrated throughout the devops lifecycle",
+    "explanation": "DevSecOps embeds security practices into development and operations.",
+    "tags": ["devops", "DevSecOps"],
+    "required_skills": ["Security Automation"],
+    "hints": ["Shift-left security"]
   },
   {
     "_id": "q_devops_0014",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Linux Process Management",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "required_skills": ["Linux"],
-    "text": "Which command is used to view real-time system processes in Linux?",
+    "topic": "Reliability",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary focus of Site Reliability Engineering (SRE)?",
     "options": [
-      "ps",
-      "top",
-      "grep",
-      "find"
+      "Manual testing",
+      "System reliability and scalability",
+      "User interface design",
+      "Business analytics"
     ],
-    "answer": "top",
-    "explanation": "The 'top' command provides a dynamic real-time view of running processes, showing system resource usage including CPU, memory, and process information.",
-    "tags": ["linux", "processes", "monitoring"],
-    "hints": ["Think about monitoring system resources dynamically."]
+    "answer": "System reliability and scalability",
+    "explanation": "SRE applies engineering principles to ensure reliable systems.",
+    "tags": ["devops", "SRE"],
+    "required_skills": ["Reliability Engineering"],
+    "hints": ["Reliable systems"]
   },
   {
     "_id": "q_devops_0015",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Terraform State",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
+    "topic": "Deployment Strategies",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "required_skills": ["Terraform"],
-    "text": "What is the purpose of Terraform state?",
+    "text": "Which deployment strategy reduces downtime by switching traffic between two environments?",
     "options": [
-      "To store user credentials",
-      "To track the current state of managed infrastructure",
-      "To define infrastructure resources",
-      "To log error messages"
+      "Rolling deployment",
+      "Blue-green deployment",
+      "Canary deployment",
+      "Recreate deployment"
     ],
-    "answer": "To track the current state of managed infrastructure",
-    "explanation": "Terraform state is used to map real-world resources to your configuration, track metadata, and improve performance for large infrastructures by caching resource attributes.",
-    "tags": ["terraform", "state", "state-management"],
-    "hints": ["Think about how Terraform knows what infrastructure it manages."]
+    "answer": "Blue-green deployment",
+    "explanation": "Blue-green deployment enables instant rollback and zero downtime.",
+    "tags": ["devops", "Deployment"],
+    "required_skills": ["Release Management"],
+    "hints": ["Two environments"]
   },
   {
     "_id": "q_devops_0016",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "AWS IAM",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "required_skills": ["AWS"],
-    "text": "What does IAM stand for in AWS?",
+    "topic": "Microservices",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why are microservices aligned with devops practices?",
     "options": [
-      "Internet Access Management",
-      "Identity and Access Management",
-      "Infrastructure Automation Manager",
-      "Integrated Application Monitor"
+      "They reduce automation",
+      "They enable independent deployment and scaling",
+      "They require monolithic design",
+      "They increase system coupling"
     ],
-    "answer": "Identity and Access Management",
-    "explanation": "IAM (Identity and Access Management) is a service that helps you securely control access to AWS resources by managing authentication and authorization.",
-    "tags": ["aws", "iam", "security"],
-    "hints": ["Think about controlling who can access what in AWS."]
+    "answer": "They enable independent deployment and scaling",
+    "explanation": "Microservices allow teams to deploy and scale services independently.",
+    "tags": ["devops", "Microservices"],
+    "required_skills": ["Microservices Architecture"],
+    "hints": ["Independent services"]
   },
   {
     "_id": "q_devops_0017",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "CI/CD Pipeline",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "required_skills": ["CI/CD", "Jenkins"],
-    "text": "What is the main difference between Continuous Delivery and Continuous Deployment?",
+    "topic": "Metrics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which metric measures how often deployments fail?",
     "options": [
-      "There is no difference",
-      "Continuous Delivery requires manual approval for production deployment, Continuous Deployment is fully automated",
-      "Continuous Deployment is slower",
-      "Continuous Delivery only works with containers"
+      "Lead time",
+      "Change failure rate",
+      "MTTR",
+      "Deployment frequency"
     ],
-    "answer": "Continuous Delivery requires manual approval for production deployment, Continuous Deployment is fully automated",
-    "explanation": "Continuous Delivery means code is automatically prepared for release but requires manual approval. Continuous Deployment automatically deploys every change that passes tests to production.",
-    "tags": ["ci-cd", "deployment", "automation"],
-    "hints": ["Think about the level of automation in production deployments."]
+    "answer": "Change failure rate",
+    "explanation": "Change failure rate tracks failed deployments or incidents.",
+    "tags": ["devops", "Metrics"],
+    "required_skills": ["DORA Metrics"],
+    "hints": ["Failed changes"]
   },
   {
     "_id": "q_devops_0018",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Docker Volumes",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 150,
-    "required_skills": ["Docker"],
-    "text": "Why are Docker volumes preferred over bind mounts for persistent data?",
+    "topic": "Disaster Recovery",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does MTTR stand for in devops?",
     "options": [
-      "Volumes are faster",
-      "Volumes are managed by Docker and isolated from the host filesystem",
-      "Volumes use less disk space",
-      "Volumes are easier to delete"
+      "Mean Time To Repair",
+      "Maximum Time To Recover",
+      "Minimum Time To Run",
+      "Mean Traffic Transfer Rate"
     ],
-    "answer": "Volumes are managed by Docker and isolated from the host filesystem",
-    "explanation": "Docker volumes are managed by Docker, making them more portable and easier to back up. They're isolated from the host filesystem structure and work consistently across different host operating systems.",
-    "tags": ["docker", "volumes", "storage"],
-    "hints": ["Think about Docker-managed storage vs direct host filesystem access."]
+    "answer": "Mean Time To Repair",
+    "explanation": "MTTR measures how quickly systems recover from failures.",
+    "tags": ["devops", "Reliability"],
+    "required_skills": ["Incident Management"],
+    "hints": ["Recovery time"]
   },
   {
     "_id": "q_devops_0019",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Kubernetes Deployments",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 210,
-    "required_skills": ["Kubernetes"],
-    "text": "What is the purpose of a Deployment in Kubernetes?",
+    "topic": "Culture",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which principle emphasizes learning from failures in devops?",
     "options": [
-      "To store configuration data",
-      "To provide declarative updates for Pods and ReplicaSets",
-      "To expose Pods to external traffic",
-      "To manage persistent volumes"
+      "Blame culture",
+      "Continuous improvement",
+      "Strict hierarchy",
+      "Manual auditing"
     ],
-    "answer": "To provide declarative updates for Pods and ReplicaSets",
-    "explanation": "A Deployment provides declarative updates for Pods and ReplicaSets. You describe a desired state, and the Deployment controller changes the actual state to match at a controlled rate.",
-    "tags": ["kubernetes", "deployments", "pod-management"],
-    "hints": ["Think about managing the desired state of your application."]
+    "answer": "Continuous improvement",
+    "explanation": "devops promotes learning and improvement through feedback loops.",
+    "tags": ["devops", "Culture"],
+    "required_skills": ["Agile Mindset"],
+    "hints": ["Learning loop"]
   },
   {
     "_id": "q_devops_0020",
     "question_type": "multiple-choice",
     "domain": "devops",
-    "topic": "Linux Networking",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Future Trends",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "required_skills": ["Linux"],
-    "text": "Which command is used to display network connections and routing tables in Linux?",
+    "text": "Why is GitOps gaining popularity in devops?",
     "options": [
-      "ifconfig",
-      "netstat",
-      "ping",
-      "traceroute"
+      "It removes version control",
+      "It uses Git as the single source of truth for infrastructure",
+      "It eliminates CI/CD",
+      "It increases manual changes"
     ],
-    "answer": "netstat",
-    "explanation": "The 'netstat' command displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. It's essential for network troubleshooting.",
-    "tags": ["linux", "networking", "troubleshooting"],
-    "hints": ["Think about network statistics and connections."]
+    "answer": "It uses Git as the single source of truth for infrastructure",
+    "explanation": "GitOps manages infrastructure and deployments declaratively through Git.",
+    "tags": ["devops", "GitOps"],
+    "required_skills": ["GitOps Practices"],
+    "hints": ["Git as truth"]
   },
+  
   {
     "_id": "q_devops_0021",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Terraform Modules",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "devops Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
     "estimated_time_sec": 240,
-    "required_skills": ["Terraform"],
-    "text": "What is the primary benefit of using Terraform modules?",
-    "options": [
-      "Faster execution time",
-      "Code reusability and organization",
-      "Better error messages",
-      "Automatic resource cleanup"
+    "text": "Explain the concept of devops and its importance in modern software development.",
+    "expected_answer": {
+      "key_points": [
+        "devops integrates development and operations teams",
+        "Focus on collaboration, automation, and continuous delivery",
+        "Improves deployment frequency and reliability",
+        "Reduces development lifecycle time"
+      ],
+      "example_scenarios": [
+        "Faster release cycles in web application development",
+        "Improved collaboration between developers and system administrators"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "Code reusability and organization",
-    "explanation": "Terraform modules enable code reusability and better organization by packaging related resources together. They allow you to create reusable components and maintain DRY principles.",
-    "tags": ["terraform", "modules", "best-practices"],
-    "hints": ["Think about organizing and reusing infrastructure code."]
+    "tags": ["devops", "Software Development"],
+    "required_skills": ["devops Basics"],
+    "hints": [
+      "Think about culture and collaboration",
+      "Focus on speed and reliability"
+    ]
   },
   {
     "_id": "q_devops_0022",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "AWS VPC",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 210,
-    "required_skills": ["AWS"],
-    "text": "What is the purpose of a NAT Gateway in AWS VPC?",
-    "options": [
-      "To connect VPCs together",
-      "To allow instances in private subnets to access the internet",
-      "To balance load across EC2 instances",
-      "To store network logs"
+    "topic": "CI/CD",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the CI/CD pipeline and explain its role in devops practices.",
+    "expected_answer": {
+      "key_points": [
+        "Continuous Integration and Continuous Deployment",
+        "Automated build, test, and deploy stages",
+        "Early detection of bugs",
+        "Frequent and reliable releases"
+      ],
+      "example_scenarios": [
+        "Automated deployment of a web application after code commit",
+        "Running automated test suites on every pull request"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Pipeline Explanation", "weight": 0.4 },
+      { "criterion": "Practical Use", "weight": 0.3 },
+      { "criterion": "Technical Depth", "weight": 0.3 }
     ],
-    "answer": "To allow instances in private subnets to access the internet",
-    "explanation": "A NAT Gateway enables instances in private subnets to initiate outbound traffic to the internet while preventing inbound traffic from reaching those instances.",
-    "tags": ["aws", "vpc", "networking"],
-    "hints": ["Think about enabling outbound internet access from private subnets."]
+    "tags": ["CI/CD", "Automation"],
+    "required_skills": ["devops"],
+    "hints": [
+      "Think about automation",
+      "Explain stages in order"
+    ]
   },
   {
     "_id": "q_devops_0023",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Jenkins Security",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 180,
-    "required_skills": ["Jenkins", "CI/CD"],
-    "text": "What is the recommended way to store sensitive credentials in Jenkins?",
-    "options": [
-      "In plain text in Jenkinsfile",
-      "Using Jenkins Credentials Plugin",
-      "In environment variables on the Jenkins server",
-      "In build logs"
+    "topic": "Version Control",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the role of version control systems in devops and describe Git briefly.",
+    "expected_answer": {
+      "key_points": [
+        "Tracks code changes",
+        "Enables collaboration",
+        "Branching and merging",
+        "Git as a distributed version control system"
+      ],
+      "example_scenarios": [
+        "Multiple developers working on the same codebase",
+        "Rolling back to a stable version after failure"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "Using Jenkins Credentials Plugin",
-    "explanation": "The Jenkins Credentials Plugin provides a secure way to store and manage credentials, secrets, and certificates. It encrypts stored credentials and provides controlled access.",
-    "tags": ["jenkins", "security", "credentials"],
-    "hints": ["Think about secure credential management in Jenkins."]
+    "tags": ["Git", "Version Control"],
+    "required_skills": ["Git Basics"],
+    "hints": [
+      "Focus on collaboration",
+      "Mention branching"
+    ]
   },
   {
     "_id": "q_devops_0024",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Docker Multi-Stage Builds",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 210,
-    "required_skills": ["Docker"],
-    "text": "What is the primary advantage of Docker multi-stage builds?",
-    "options": [
-      "Faster container startup",
-      "Reduced final image size by separating build and runtime dependencies",
-      "Better network performance",
-      "Automatic scaling"
+    "topic": "Containerization",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain containerization and discuss how Docker supports devops workflows.",
+    "expected_answer": {
+      "key_points": [
+        "Containers package applications and dependencies",
+        "Lightweight compared to virtual machines",
+        "Docker images and containers",
+        "Consistency across environments"
+      ],
+      "example_scenarios": [
+        "Deploying applications consistently across development and production",
+        "Running microservices in isolated containers"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Use Cases", "weight": 0.3 },
+      { "criterion": "Technical Clarity", "weight": 0.3 }
     ],
-    "answer": "Reduced final image size by separating build and runtime dependencies",
-    "explanation": "Multi-stage builds allow you to use multiple FROM statements in a Dockerfile. You can copy artifacts from one stage to another, leaving behind build dependencies and reducing the final image size.",
-    "tags": ["docker", "multi-stage-builds", "optimization"],
-    "hints": ["Think about keeping only what's needed for runtime."]
+    "tags": ["Docker", "Containers"],
+    "required_skills": ["Containerization"],
+    "hints": [
+      "Compare with virtual machines",
+      "Focus on portability"
+    ]
   },
   {
     "_id": "q_devops_0025",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Kubernetes ConfigMaps",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 270,
-    "required_skills": ["Kubernetes"],
-    "text": "What is the difference between ConfigMaps and Secrets in Kubernetes?",
-    "options": [
-      "ConfigMaps are faster than Secrets",
-      "Secrets store sensitive data encoded in base64, ConfigMaps store non-sensitive configuration",
-      "ConfigMaps can only store text files",
-      "Secrets are automatically encrypted at rest"
+    "topic": "Configuration Management",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain configuration management and its significance in devops.",
+    "expected_answer": {
+      "key_points": [
+        "Maintains system consistency",
+        "Automates server configuration",
+        "Reduces configuration drift",
+        "Examples of configuration tools"
+      ],
+      "example_scenarios": [
+        "Managing hundreds of servers with the same configuration",
+        "Automated setup of application environments"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "Secrets store sensitive data encoded in base64, ConfigMaps store non-sensitive configuration",
-    "explanation": "Secrets are intended for sensitive data and stored base64-encoded (not encrypted by default), while ConfigMaps store non-sensitive configuration data. Secrets have additional security features like encryption at rest when configured.",
-    "tags": ["kubernetes", "configmaps", "secrets"],
-    "hints": ["Think about handling sensitive vs non-sensitive configuration."]
+    "tags": ["Configuration Management", "Automation"],
+    "required_skills": ["devops"],
+    "hints": [
+      "Think about automation",
+      "Mention consistency"
+    ]
   },
   {
     "_id": "q_devops_0026",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Linux SystemD",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Infrastructure as Code",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
     "estimated_time_sec": 300,
-    "required_skills": ["Linux"],
-    "text": "What is systemd in Linux?",
-    "options": [
-      "A file system",
-      "A system and service manager",
-      "A package manager",
-      "A shell scripting language"
+    "text": "What is Infrastructure as Code (IaC)? Explain its benefits in devops.",
+    "expected_answer": {
+      "key_points": [
+        "Infrastructure managed using code",
+        "Version-controlled infrastructure",
+        "Repeatable and scalable setups",
+        "Reduced manual errors"
+      ],
+      "example_scenarios": [
+        "Automated cloud resource provisioning",
+        "Recreating environments quickly during failures"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Clarity", "weight": 0.4 },
+      { "criterion": "Benefits Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "A system and service manager",
-    "explanation": "systemd is a system and service manager for Linux that provides parallelization capabilities, uses socket and D-Bus activation, and implements transactional dependency-based service control logic.",
-    "tags": ["linux", "systemd", "services"],
-    "hints": ["Think about what manages services and system initialization."]
+    "tags": ["IaC", "devops"],
+    "required_skills": ["Infrastructure Management"],
+    "hints": [
+      "Think of infrastructure as software",
+      "Mention automation"
+    ]
   },
   {
     "_id": "q_devops_0027",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Terraform Workspaces",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Monitoring & Logging",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
     "estimated_time_sec": 300,
-    "required_skills": ["Terraform"],
-    "text": "What is the primary use case for Terraform workspaces?",
-    "options": [
-      "To run multiple Terraform versions",
-      "To manage multiple instances of the same infrastructure configuration",
-      "To improve Terraform performance",
-      "To share state between teams"
+    "text": "Explain the importance of monitoring and logging in devops environments.",
+    "expected_answer": {
+      "key_points": [
+        "System performance tracking",
+        "Early issue detection",
+        "Log analysis for debugging",
+        "Improved reliability"
+      ],
+      "example_scenarios": [
+        "Detecting server downtime",
+        "Analyzing application errors using logs"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Operational Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "To manage multiple instances of the same infrastructure configuration",
-    "explanation": "Terraform workspaces allow you to manage multiple environments (dev, staging, prod) using the same configuration. Each workspace has its own state file.",
-    "tags": ["terraform", "workspaces", "environment-management"],
-    "hints": ["Think about managing dev, staging, and production environments."]
+    "tags": ["Monitoring", "Logging"],
+    "required_skills": ["devops"],
+    "hints": [
+      "Think about reliability",
+      "Focus on visibility"
+    ]
   },
   {
     "_id": "q_devops_0028",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "AWS Auto Scaling",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Cloud Computing",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
     "estimated_time_sec": 300,
-    "required_skills": ["AWS"],
-    "text": "What is the difference between horizontal and vertical scaling in AWS?",
-    "options": [
-      "Horizontal scaling adds more instances, vertical scaling increases instance size",
-      "Horizontal scaling is slower than vertical scaling",
-      "Vertical scaling is more cost-effective",
-      "There is no difference"
+    "text": "Explain how cloud computing supports devops practices.",
+    "expected_answer": {
+      "key_points": [
+        "On-demand resource provisioning",
+        "Scalability and flexibility",
+        "Cost efficiency",
+        "Supports automation"
+      ],
+      "example_scenarios": [
+        "Auto-scaling applications during peak traffic",
+        "Rapid environment setup for testing"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Linkage", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "Horizontal scaling adds more instances, vertical scaling increases instance size",
-    "explanation": "Horizontal scaling (scaling out) adds more instances to distribute load, while vertical scaling (scaling up) increases the size/capacity of existing instances. Horizontal scaling is generally preferred for better availability.",
-    "tags": ["aws", "scaling", "architecture"],
-    "hints": ["Think about adding more servers vs making servers bigger."]
+    "tags": ["Cloud", "devops"],
+    "required_skills": ["Cloud Basics"],
+    "hints": [
+      "Think about scalability",
+      "Mention elasticity"
+    ]
   },
   {
     "_id": "q_devops_0029",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "CI/CD Blue-Green Deployment",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Security in devops",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
     "estimated_time_sec": 360,
-    "required_skills": ["CI/CD", "AWS", "Kubernetes"],
-    "text": "What is a blue-green deployment strategy?",
-    "options": [
-      "Deploying to production during off-peak hours",
-      "Running two identical production environments, switching traffic between them",
-      "Using different colored labels for environments",
-      "Deploying to multiple regions simultaneously"
+    "text": "Explain the concept of DevSecOps and its importance.",
+    "expected_answer": {
+      "key_points": [
+        "Integrating security into devops",
+        "Security automation",
+        "Shift-left security",
+        "Reduced vulnerabilities"
+      ],
+      "example_scenarios": [
+        "Automated security scans in CI pipelines",
+        "Early detection of vulnerabilities in code"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Security Understanding", "weight": 0.4 },
+      { "criterion": "Integration Insight", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "Running two identical production environments, switching traffic between them",
-    "explanation": "Blue-green deployment maintains two identical production environments. You deploy to the inactive environment, test it, then switch traffic from the active (blue) to the new (green) environment, enabling instant rollback.",
-    "tags": ["ci-cd", "deployment-strategies", "blue-green"],
-    "hints": ["Think about having two production environments and switching between them."]
+    "tags": ["DevSecOps", "Security"],
+    "required_skills": ["devops", "Security Basics"],
+    "hints": [
+      "Think about security early",
+      "Mention automation"
+    ]
   },
   {
     "_id": "q_devops_0030",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "devops",
-    "topic": "Kubernetes StatefulSets",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 300,
-    "required_skills": ["Kubernetes"],
-    "text": "When should you use a StatefulSet instead of a Deployment in Kubernetes?",
-    "options": [
-      "For all production applications",
-      "When you need stable network identities and persistent storage for stateful applications",
-      "When you want faster pod creation",
-      "For stateless applications only"
+    "topic": "Microservices",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain microservices architecture and its relation to devops.",
+    "expected_answer": {
+      "key_points": [
+        "Independent services",
+        "Scalability and flexibility",
+        "Continuous deployment",
+        "Service isolation"
+      ],
+      "example_scenarios": [
+        "Independent deployment of services",
+        "Scaling individual services separately"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architectural Understanding", "weight": 0.4 },
+      { "criterion": "devops Alignment", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "When you need stable network identities and persistent storage for stateful applications",
-    "explanation": "StatefulSets are designed for stateful applications that require stable network identities, persistent storage, and ordered deployment/scaling. Examples include databases, distributed systems, and applications requiring stable hostnames.",
-    "tags": ["kubernetes", "statefulsets", "stateful-applications"],
-    "hints": ["Think about applications like databases that need stable identity and storage."]
+    "tags": ["Microservices", "devops"],
+    "required_skills": ["System Design"],
+    "hints": [
+      "Think modular",
+      "Mention independent deployment"
+    ]
+  },
+  {
+    "_id": "q_devops_0031",
+    "question_type": "subjective",
+    "domain": "devops",
+    "topic": "Release Management",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain different deployment strategies used in devops.",
+    "expected_answer": {
+      "key_points": [
+        "Blue-green deployment",
+        "Rolling deployment",
+        "Canary deployment",
+        "Risk reduction"
+      ],
+      "example_scenarios": [
+        "Gradual feature rollout",
+        "Zero-downtime deployments"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Strategy Explanation", "weight": 0.4 },
+      { "criterion": "Use-case Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Deployment Strategies", "devops"],
+    "required_skills": ["devops"],
+    "hints": [
+      "Think about risk",
+      "Mention downtime"
+    ]
+  },
+  {
+    "_id": "q_devops_0032",
+    "question_type": "subjective",
+    "domain": "devops",
+    "topic": "Automation",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Why is automation essential in devops practices?",
+    "expected_answer": {
+      "key_points": [
+        "Reduces manual effort",
+        "Improves consistency",
+        "Speeds up delivery",
+        "Minimizes errors"
+      ],
+      "example_scenarios": [
+        "Automated testing pipelines",
+        "Automated server provisioning"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Practical Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Automation", "devops"],
+    "required_skills": ["devops Basics"],
+    "hints": [
+      "Think speed",
+      "Mention consistency"
+    ]
+  },
+  {
+    "_id": "q_devops_0033",
+    "question_type": "subjective",
+    "domain": "devops",
+    "topic": "Scalability",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain scalability in devops and how it is achieved.",
+    "expected_answer": {
+      "key_points": [
+        "Horizontal and vertical scaling",
+        "Load balancing",
+        "Cloud-based scaling",
+        "Performance optimization"
+      ],
+      "example_scenarios": [
+        "Handling sudden traffic spikes",
+        "Scaling backend services dynamically"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
+    ],
+    "tags": ["Scalability", "devops"],
+    "required_skills": ["Cloud & devops"],
+    "hints": [
+      "Think traffic growth",
+      "Mention load balancing"
+    ]
+  },
+  {
+    "_id": "q_devops_0034",
+    "question_type": "subjective",
+    "domain": "devops",
+    "topic": "Disaster Recovery",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain disaster recovery planning in devops environments.",
+    "expected_answer": {
+      "key_points": [
+        "Backup strategies",
+        "Failover mechanisms",
+        "High availability",
+        "Business continuity"
+      ],
+      "example_scenarios": [
+        "Data center outage recovery",
+        "Failover to secondary servers"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Risk Management Understanding", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Disaster Recovery", "devops"],
+    "required_skills": ["Infrastructure Management"],
+    "hints": [
+      "Think failure scenarios",
+      "Mention backups"
+    ]
+  },
+  {
+    "_id": "q_devops_0035",
+    "question_type": "subjective",
+    "domain": "devops",
+    "topic": "devops Tools",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "List and explain common tools used in devops across different stages.",
+    "expected_answer": {
+      "key_points": [
+        "Tools for version control",
+        "CI/CD tools",
+        "Configuration management tools",
+        "Monitoring tools"
+      ],
+      "example_scenarios": [
+        "Using different tools in a CI/CD pipeline",
+        "Monitoring production systems"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Tool Awareness", "weight": 0.4 },
+      { "criterion": "Coverage", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["devops Tools", "Automation"],
+    "required_skills": ["devops Basics"],
+    "hints": [
+      "Think pipeline stages",
+      "Mention multiple categories of tools"
+    ]
+  },
+
+  {
+    "_id": "q_devops_0036",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is devops and why is it used in software development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Collaboration between development and operations",
+        "Faster software delivery",
+        "Improved reliability"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear explanation" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Purpose of devops covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Simple example or scenario" }
+    ],
+    "transcription_required": true,
+    "tags": ["devops Basics"],
+    "required_skills": ["Basic IT Knowledge"],
+    "hints": ["Dev + Ops collaboration"]
+  },
+  {
+    "_id": "q_devops_0037",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Culture",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What does devops culture mean?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Shared responsibility",
+        "Continuous collaboration",
+        "Automation mindset"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Culture"],
+    "required_skills": ["Teamwork"],
+    "hints": ["Collaboration"]
+  },
+  {
+    "_id": "q_devops_0038",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "CI/CD",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is CI/CD in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Continuous Integration",
+        "Continuous Deployment or Delivery",
+        "Automated build and release"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["CI/CD"],
+    "required_skills": ["Basic devops"],
+    "hints": ["Automation pipeline"]
+  },
+  {
+    "_id": "q_devops_0039",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Version Control",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is version control important in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Tracks code changes",
+        "Supports collaboration",
+        "Rollback capability"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Version Control"],
+    "required_skills": ["Git"],
+    "hints": ["Git"]
+  },
+  {
+    "_id": "q_devops_0040",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Automation",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What role does automation play in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Reduces manual effort",
+        "Improves consistency",
+        "Speeds up delivery"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Automation"],
+    "required_skills": ["Scripting"],
+    "hints": ["Automated tasks"]
+  },
+  {
+    "_id": "q_devops_0041",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Containers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a container and why is it useful in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Lightweight application packaging",
+        "Consistency across environments",
+        "Faster deployment"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Containers"],
+    "required_skills": ["Docker"],
+    "hints": ["Docker"]
+  },
+  {
+    "_id": "q_devops_0042",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Container Orchestration",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Kubernetes used for?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Manages containers",
+        "Scales applications",
+        "Ensures availability"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Kubernetes"],
+    "required_skills": ["Containers"],
+    "hints": ["Container orchestration"]
+  },
+  {
+    "_id": "q_devops_0043",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Infrastructure",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is Infrastructure as Code (IaC)?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Infrastructure defined using code",
+        "Version controlled",
+        "Automated provisioning"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["IaC"],
+    "required_skills": ["Terraform"],
+    "hints": ["Code-based infrastructure"]
+  },
+  {
+    "_id": "q_devops_0044",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Monitoring",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is monitoring important in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Detects issues early",
+        "Ensures system reliability",
+        "Improves performance"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Monitoring"],
+    "required_skills": ["Basic Monitoring"],
+    "hints": ["System health"]
+  },
+  {
+    "_id": "q_devops_0045",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Logging",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is logging and how does it help in devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Records system events",
+        "Helps in debugging",
+        "Supports monitoring"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Logging"],
+    "required_skills": ["Basic IT"],
+    "hints": ["Logs"]
+  },
+  {
+    "_id": "q_devops_0046",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is DevSecOps?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Security integrated into devops",
+        "Continuous security",
+        "Shift-left security"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["DevSecOps"],
+    "required_skills": ["Security Basics"],
+    "hints": ["Security early"]
+  },
+  {
+    "_id": "q_devops_0047",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Cloud",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How does cloud computing support devops practices?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "On-demand resources",
+        "Scalability",
+        "Faster deployments"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Cloud"],
+    "required_skills": ["Cloud Basics"],
+    "hints": ["Elastic resources"]
+  },
+  {
+    "_id": "q_devops_0048",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Deployment",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is continuous deployment?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Automatic production release",
+        "Minimal manual intervention",
+        "Frequent updates"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Continuous Deployment"],
+    "required_skills": ["CI/CD"],
+    "hints": ["Auto release"]
+  },
+  {
+    "_id": "q_devops_0049",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Benefits",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main benefits of devops?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Faster delivery",
+        "Improved quality",
+        "Better collaboration"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Benefits"],
+    "required_skills": ["devops Basics"],
+    "hints": ["Speed and quality"]
+  },
+  {
+    "_id": "q_devops_0050",
+    "question_type": "voice",
+    "domain": "devops",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see devops evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "More automation",
+        "AI-driven operations",
+        "Stronger security integration"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["devops Basics"],
+    "hints": ["Automation everywhere"]
+  },{
+    "_id": "q_devops_0051",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Linux Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check whether a Linux service is running based on a boolean flag.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_service_running(status):\n    pass",
+      "function_signature": "is_service_running(status: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Running\" if status else \"Stopped\"",
+      "key_concepts": ["Linux services", "Service status"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Running\"",
+        "description": "Service running"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct service state" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable conditional" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles stopped service" }
+    ],
+    "tags": ["Python", "devops", "Linux"],
+    "required_skills": ["Python"],
+    "hints": ["Use if-else"]
+  },
+
+  {
+    "_id": "q_devops_0052",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "CI/CD",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to determine if a build passes based on test result.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def build_status(tests_passed):\n    pass",
+      "function_signature": "build_status(tests_passed: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Build Successful\" if tests_passed else \"Build Failed\"",
+      "key_concepts": ["CI/CD pipeline", "Build status"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "\"Build Failed\"",
+        "description": "Tests failed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct build result" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both outcomes" }
+    ],
+    "tags": ["Python", "devops", "CI/CD"],
+    "required_skills": ["Python"],
+    "hints": ["Check test flag"]
+  },
+
+  {
+    "_id": "q_devops_0053",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Docker",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate Docker image size in MB from KB.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def image_size_mb(size_kb):\n    pass",
+      "function_signature": "image_size_mb(size_kb: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return size_kb / 1024",
+      "key_concepts": ["Docker images", "Storage units"]
+    },
+    "test_cases": [
+      {
+        "input": "2048",
+        "expected_output": "2.0",
+        "description": "Image size conversion"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct conversion" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero size" }
+    ],
+    "tags": ["Python", "devops", "Docker"],
+    "required_skills": ["Python"],
+    "hints": ["Divide by 1024"]
+  },
+
+  {
+    "_id": "q_devops_0054",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Kubernetes",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if a Kubernetes pod is healthy based on its status.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def pod_health(status):\n    pass",
+      "function_signature": "pod_health(status: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return status.lower() == \"running\"",
+      "key_concepts": ["Kubernetes pods", "Health check"]
+    },
+    "test_cases": [
+      {
+        "input": "\"Running\"",
+        "expected_output": "True",
+        "description": "Healthy pod"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct health status" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "String comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles non-running state" }
+    ],
+    "tags": ["Python", "devops", "Kubernetes"],
+    "required_skills": ["Python"],
+    "hints": ["Compare with 'running'"]
+  },
+
+  {
+    "_id": "q_devops_0055",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Monitoring",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to trigger an alert if CPU usage exceeds 80 percent.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def cpu_alert(cpu):\n    pass",
+      "function_signature": "cpu_alert(cpu: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return cpu > 80",
+      "key_concepts": ["Monitoring", "Alert thresholds"]
+    },
+    "test_cases": [
+      {
+        "input": "90",
+        "expected_output": "True",
+        "description": "High CPU usage"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Alert triggered correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles threshold value" }
+    ],
+    "tags": ["Python", "devops", "Monitoring"],
+    "required_skills": ["Python"],
+    "hints": ["Check if CPU > 80"]
+  },
+
+  {
+    "_id": "q_devops_0056",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Automation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to automate server restart decision.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def restart_server(error):\n    pass",
+      "function_signature": "restart_server(error: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Restart\" if error else \"No Action\"",
+      "key_concepts": ["Automation", "Self-healing systems"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Restart\"",
+        "description": "Error detected"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct decision" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles no error" }
+    ],
+    "tags": ["Python", "devops", "Automation"],
+    "required_skills": ["Python"],
+    "hints": ["Check error flag"]
+  },
+
+  {
+    "_id": "q_devops_0057",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Version Control",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to count the number of commits in a repository.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def commit_count(commits):\n    pass",
+      "function_signature": "commit_count(commits: list) -> int"
+    },
+    "expected_answer": {
+      "solution": "return len(commits)",
+      "key_concepts": ["Git", "Version control"]
+    },
+    "test_cases": [
+      {
+        "input": "[\"c1\",\"c2\",\"c3\"]",
+        "expected_output": "3",
+        "description": "Three commits"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct count" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "devops", "Git"],
+    "required_skills": ["Python"],
+    "hints": ["Use len()"]
+  },
+
+  {
+    "_id": "q_devops_0058",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Infrastructure",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate total infrastructure cost.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def infra_cost(costs):\n    pass",
+      "function_signature": "infra_cost(costs: list) -> float"
+    },
+    "expected_answer": {
+      "solution": "return sum(costs)",
+      "key_concepts": ["Infrastructure cost", "Cloud billing"]
+    },
+    "test_cases": [
+      {
+        "input": "[100, 200, 50]",
+        "expected_output": "350",
+        "description": "Total cost"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct total" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses sum()" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty list" }
+    ],
+    "tags": ["Python", "devops", "Infrastructure"],
+    "required_skills": ["Python"],
+    "hints": ["Sum all costs"]
+  },
+
+  {
+    "_id": "q_devops_0059",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Logging",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if a log level indicates an error.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_error_log(level):\n    pass",
+      "function_signature": "is_error_log(level: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return level.upper() == \"ERROR\"",
+      "key_concepts": ["Logging", "Log levels"]
+    },
+    "test_cases": [
+      {
+        "input": "\"ERROR\"",
+        "expected_output": "True",
+        "description": "Error log"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct log check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Case handling" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles INFO/WARN" }
+    ],
+    "tags": ["Python", "devops", "Logging"],
+    "required_skills": ["Python"],
+    "hints": ["Compare with ERROR"]
+  },
+
+  {
+    "_id": "q_devops_0060",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Security",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to validate whether a password meets minimum length requirement.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_password(password):\n    pass",
+      "function_signature": "valid_password(password: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return len(password) >= 8",
+      "key_concepts": ["Security", "Password policy"]
+    },
+    "test_cases": [
+      {
+        "input": "\"password123\"",
+        "expected_output": "True",
+        "description": "Valid password"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Password validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple length check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles short passwords" }
+    ],
+    "tags": ["Python", "devops", "Security"],
+    "required_skills": ["Python"],
+    "hints": ["Check length >= 8"]
+  },
+
+  {
+    "_id": "q_devops_0061",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Deployment",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if deployment is successful.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def deployment_status(success):\n    pass",
+      "function_signature": "deployment_status(success: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Deployed\" if success else \"Deployment Failed\"",
+      "key_concepts": ["Deployment", "Release status"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "\"Deployment Failed\"",
+        "description": "Deployment failure"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct deployment state" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles success case" }
+    ],
+    "tags": ["Python", "devops", "Deployment"],
+    "required_skills": ["Python"],
+    "hints": ["Check success flag"]
+  },
+
+  {
+    "_id": "q_devops_0062",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Scaling",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to decide scale up or scale down based on load.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def scale_action(load):\n    pass",
+      "function_signature": "scale_action(load: float) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Scale Up\" if load > 70 else \"Scale Down\"",
+      "key_concepts": ["Auto scaling", "Load management"]
+    },
+    "test_cases": [
+      {
+        "input": "30",
+        "expected_output": "\"Scale Down\"",
+        "description": "Low load"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct scaling action" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles threshold" }
+    ],
+    "tags": ["Python", "devops", "Scaling"],
+    "required_skills": ["Python"],
+    "hints": ["Compare load"]
+  },
+
+  {
+    "_id": "q_devops_0063",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Configuration",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if an environment variable exists.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def env_exists(env):\n    pass",
+      "function_signature": "env_exists(env: str) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return bool(env)",
+      "key_concepts": ["Environment variables", "Configuration"]
+    },
+    "test_cases": [
+      {
+        "input": "\"PATH\"",
+        "expected_output": "True",
+        "description": "Environment variable present"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct existence check" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty string" }
+    ],
+    "tags": ["Python", "devops", "Configuration"],
+    "required_skills": ["Python"],
+    "hints": ["Check truth value"]
+  },
+
+  {
+    "_id": "q_devops_0064",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Backup",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate backup size after compression.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def compressed_size(size, ratio):\n    pass",
+      "function_signature": "compressed_size(size: float, ratio: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return size * ratio",
+      "key_concepts": ["Backup", "Compression"]
+    },
+    "test_cases": [
+      {
+        "input": "100, 0.5",
+        "expected_output": "50",
+        "description": "Compressed backup"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct compression" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable calculation" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero size" }
+    ],
+    "tags": ["Python", "devops", "Backup"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply size and ratio"]
+  },
+
+  {
+    "_id": "q_devops_0065",
+    "question_type": "coding",
+    "domain": "devops",
+    "topic": "Reliability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate error rate percentage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def error_rate(errors, total):\n    pass",
+      "function_signature": "error_rate(errors: int, total: int) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (errors / total) * 100 if total > 0 else 0",
+      "key_concepts": ["Reliability", "Error rate"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 100",
+        "expected_output": "5.0",
+        "description": "Error rate calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct error rate" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe division" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero total" }
+    ],
+    "tags": ["Python", "devops", "Reliability"],
+    "required_skills": ["Python"],
+    "hints": ["(errors/total)*100"]
   }
 ]

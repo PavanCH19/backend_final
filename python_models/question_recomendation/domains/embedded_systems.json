@@ -3,630 +3,1903 @@
     "_id": "q_es_0001",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Microcontrollers",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is the primary difference between a microcontroller and a microprocessor?",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is an embedded system?",
     "options": [
-      "Microcontrollers only execute C code; Microprocessors only execute assembly.",
-      "Microcontrollers are faster than Microprocessors.",
-      "Microcontrollers have built-in RAM, ROM, and peripherals; Microprocessors typically require external chips for these components.",
-      "Microprocessors consume less power than Microcontrollers."
+      "A general-purpose computer",
+      "A computer system designed for a specific function",
+      "A cloud-based application",
+      "A high-performance server"
     ],
-    "answer": "Microcontrollers have built-in RAM, ROM, and peripherals; Microprocessors typically require external chips for these components.",
-    "explanation": "A microcontroller is a compact integrated circuit designed to govern a specific operation, containing a CPU, memory, and I/O peripherals on a single chip. A microprocessor is just the CPU.",
-    "tags": ["Microcontrollers", "Fundamentals"],
-    "required_skills": ["Microcontrollers"],
-    "hints": ["One is a 'computer on a chip'; the other is just a 'brain'."]
+    "answer": "A computer system designed for a specific function",
+    "explanation": "embedded system are dedicated systems designed to perform specific tasks within larger systems.",
+    "tags": ["embedded system", "Fundamentals"],
+    "required_skills": ["Embedded Basics"],
+    "hints": ["Dedicated function"]
   },
   {
     "_id": "q_es_0002",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "C Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "In C programming for embedded systems, what is the purpose of the `volatile` keyword?",
+    "topic": "Microcontrollers",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which component is typically integrated inside a microcontroller?",
     "options": [
-      "To declare a variable that cannot be changed.",
-      "To allow the variable to be modified only by interrupts.",
-      "To prevent the compiler from optimizing away reads and writes to a variable that may be changed externally (e.g., by hardware or interrupts).",
-      "To allocate the variable in permanent flash memory."
+      "External RAM only",
+      "CPU, RAM, ROM, and peripherals",
+      "Hard disk drive",
+      "Graphics processing unit"
     ],
-    "answer": "To prevent the compiler from optimizing away reads and writes to a variable that may be changed externally (e.g., by hardware or interrupts).",
-    "explanation": "`volatile` tells the compiler that the variable's value can change at any time without the compiler's knowledge, ensuring the code always reads it from memory.",
-    "tags": ["C", "Fundamentals"],
-    "required_skills": ["C"],
-    "hints": ["It addresses compiler optimization issues with external access."]
+    "answer": "CPU, RAM, ROM, and peripherals",
+    "explanation": "Microcontrollers integrate processing, memory, and I/O peripherals on a single chip.",
+    "tags": ["embedded system", "Microcontrollers"],
+    "required_skills": ["MCU Architecture"],
+    "hints": ["All-in-one chip"]
   },
   {
     "_id": "q_es_0003",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Microcontrollers/Peripherals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "Which interface is commonly used to debug and program a microcontroller by providing serial communication and control signals?",
+    "topic": "Real-Time Systems",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What defines a hard real-time system?",
     "options": [
-      "I2C",
-      "SPI",
-      "UART",
-      "JTAG/SWD"
+      "Occasional deadline misses are acceptable",
+      "Deadlines must always be met",
+      "Only software-based timing",
+      "Low-cost implementation"
     ],
-    "answer": "JTAG/SWD",
-    "explanation": "JTAG (Joint Test Action Group) or its simplified successor SWD (Serial Wire Debug) provides low-level hardware access for debugging, flashing firmware, and boundary scanning.",
-    "tags": ["Microcontrollers", "PCB Design"],
-    "required_skills": ["Microcontrollers", "PCB Design"],
-    "hints": ["This interface is required for step-by-step code execution and register inspection."]
+    "answer": "Deadlines must always be met",
+    "explanation": "Hard real-time systems require strict adherence to timing constraints.",
+    "tags": ["embedded system", "RTOS"],
+    "required_skills": ["Real-Time Concepts"],
+    "hints": ["No deadline miss"]
   },
   {
     "_id": "q_es_0004",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Sensors/Interfacing",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "Which serial communication protocol uses only two wires (SDA and SCL) and supports multiple 'slave' devices with unique addresses?",
+    "topic": "RTOS",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary function of an RTOS?",
     "options": [
-      "SPI (Serial Peripheral Interface)",
-      "UART (Universal Asynchronous Receiver/Transmitter)",
-      "I2C (Inter-Integrated Circuit)",
-      "CAN (Controller Area Network)"
+      "Increase clock speed",
+      "Manage task scheduling and timing",
+      "Provide graphical interface",
+      "Control power supply"
     ],
-    "answer": "I2C (Inter-Integrated Circuit)",
-    "explanation": "I2C uses a clock (SCL) and data (SDA) line. It is a master-slave protocol that supports multi-master communication and addresses multiple slave devices using a 7- or 10-bit address.",
-    "tags": ["Sensors", "Microcontrollers"],
-    "required_skills": ["Sensors", "Microcontrollers"],
-    "hints": ["It is known for its two-wire simplicity and addressing capabilities."]
+    "answer": "Manage task scheduling and timing",
+    "explanation": "RTOS ensures deterministic task execution and scheduling.",
+    "tags": ["embedded system", "RTOS"],
+    "required_skills": ["RTOS Fundamentals"],
+    "hints": ["Task scheduling"]
   },
   {
     "_id": "q_es_0005",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "RTOS",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 90,
-    "text": "What is the main objective of a Hard Real-Time Operating System (RTOS)?",
+    "topic": "Memory",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which memory type is non-volatile in embedded system?",
     "options": [
-      "To execute tasks as quickly as possible.",
-      "To maximize system throughput.",
-      "To guarantee that critical tasks complete within a specified deadline.",
-      "To reduce memory footprint."
+      "RAM",
+      "Cache",
+      "Flash",
+      "Registers"
     ],
-    "answer": "To guarantee that critical tasks complete within a specified deadline.",
-    "explanation": "Hard real-time systems fail if a deadline is missed, regardless of the magnitude of the error. The RTOS prioritizes deterministic timing over average performance.",
-    "tags": ["RTOS"],
-    "required_skills": ["RTOS"],
-    "hints": ["The focus is on strict, deterministic deadlines."]
+    "answer": "Flash",
+    "explanation": "Flash memory retains data even when power is removed.",
+    "tags": ["embedded system", "Memory"],
+    "required_skills": ["Memory Architecture"],
+    "hints": ["Retains data"]
   },
   {
     "_id": "q_es_0006",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "C++ Fundamentals",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "Why is using exceptions (`try-catch` blocks) generally discouraged or avoided in embedded systems development with C++?",
+    "topic": "Communication Protocols",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which communication protocol supports multi-master communication?",
     "options": [
-      "Exceptions are not supported by embedded compilers.",
-      "Exceptions require excessive code size and dynamic memory allocation, which is constrained and non-deterministic.",
-      "Exceptions are slower than returning error codes.",
-      "Exceptions only work with RTOS."
+      "UART",
+      "SPI",
+      "I2C",
+      "RS-232"
     ],
-    "answer": "Exceptions require excessive code size and dynamic memory allocation, which is constrained and non-deterministic.",
-    "explanation": "Exceptions incur significant memory overhead (code size) and can involve non-deterministic runtime stack unwinding and memory allocation, violating real-time constraints. Error codes are preferred.",
-    "tags": ["C++", "Fundamentals"],
-    "required_skills": ["C++"],
-    "hints": ["It relates to memory usage and predictable timing."]
+    "answer": "I2C",
+    "explanation": "I2C supports multiple masters and slaves on the same bus.",
+    "tags": ["embedded system", "Protocols"],
+    "required_skills": ["Embedded Communication"],
+    "hints": ["Multi-master bus"]
   },
   {
     "_id": "q_es_0007",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "IoT/Networking",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "Which IoT protocol is designed to be extremely lightweight, uses a publish/subscribe model, and is ideal for low-bandwidth, high-latency networks?",
+    "topic": "Interrupts",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the main advantage of using interrupts?",
     "options": [
-      "HTTP",
-      "MQTT (Message Queuing Telemetry Transport)",
-      "CoAP (Constrained Application Protocol)",
-      "SMTP"
+      "Simpler hardware design",
+      "Faster polling",
+      "Efficient CPU utilization",
+      "Reduced memory usage"
     ],
-    "answer": "MQTT (Message Queuing Telemetry Transport)",
-    "explanation": "MQTT is a client-server protocol where devices communicate through a central broker, consuming minimal power and bandwidth, making it standard for IoT sensor networks.",
-    "tags": ["IoT", "Microcontrollers"],
-    "required_skills": ["IoT"],
-    "hints": ["It uses topics and brokers for communication."]
+    "answer": "Efficient CPU utilization",
+    "explanation": "Interrupts allow the CPU to respond only when events occur.",
+    "tags": ["embedded system", "Interrupts"],
+    "required_skills": ["Interrupt Handling"],
+    "hints": ["Event-driven"]
   },
   {
     "_id": "q_es_0008",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Microcontrollers/Memory",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What are the primary sections of memory in a typical microcontroller, and what does the 'Stack' primarily hold?",
+    "topic": "Timers",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary use of timers in embedded system?",
     "options": [
-      "Flash, RAM, EEPROM; Stack holds global variables.",
-      "ROM, RAM, Registers; Stack holds function arguments and local variables.",
-      "Flash, RAM, Registers; Stack holds return addresses and local function variables during execution.",
-      "Heap, Stack, Code; Stack holds dynamically allocated memory."
+      "Store data",
+      "Measure and generate delays",
+      "Increase processing speed",
+      "Control voltage"
     ],
-    "answer": "Flash, RAM, Registers; Stack holds return addresses and local function variables during execution.",
-    "explanation": "The stack is a LIFO (Last-In, First-Out) region of RAM used for local variable storage and tracking function calls/returns. It grows and shrinks automatically with function execution.",
-    "tags": ["Microcontrollers", "C"],
-    "required_skills": ["Microcontrollers", "C"],
-    "hints": ["It's dynamic memory for active function calls."]
+    "answer": "Measure and generate delays",
+    "explanation": "Timers are used for time measurement, delays, and scheduling.",
+    "tags": ["embedded system", "Timers"],
+    "required_skills": ["Timer Configuration"],
+    "hints": ["Time control"]
   },
   {
     "_id": "q_es_0009",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "RTOS",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is 'Priority Inversion' in an RTOS, and how is it typically solved?",
+    "topic": "Embedded C",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is volatile keyword important in embedded C?",
     "options": [
-      "A situation where a high-priority task gets preempted by a lower-priority task holding a required resource (mutex); Solved by Priority Inheritance or Priority Ceiling.",
-      "A situation where two tasks have the same priority; Solved by using Time Slicing.",
-      "A bug in the task scheduler; Solved by using a different RTOS.",
-      "A failure in the interrupt handler; Solved by disabling interrupts."
+      "Improves execution speed",
+      "Prevents compiler optimization on changing variables",
+      "Reduces memory usage",
+      "Improves portability"
     ],
-    "answer": "A situation where a high-priority task gets preempted by a lower-priority task holding a required resource (mutex); Solved by Priority Inheritance or Priority Ceiling.",
-    "explanation": "Priority Inversion is a critical issue where a medium-priority task preempts the low-priority task, indirectly blocking the high-priority task. Priority Inheritance temporarily boosts the low-priority task's priority to that of the highest-priority blocked task.",
-    "tags": ["RTOS"],
-    "required_skills": ["RTOS"],
-    "hints": ["It involves a critical section lock and three different priority levels."]
+    "answer": "Prevents compiler optimization on changing variables",
+    "explanation": "volatile ensures the compiler reads variable values from memory every time.",
+    "tags": ["embedded system", "Embedded C"],
+    "required_skills": ["Embedded Programming"],
+    "hints": ["Hardware-updated variable"]
   },
   {
     "_id": "q_es_0010",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "PCB Design",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "In PCB design for high-speed digital circuits, what is the purpose of placing 'decoupling capacitors' (or 'bypass capacitors') close to the IC's power pins?",
+    "topic": "Power Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique is commonly used to reduce power consumption in embedded system?",
     "options": [
-      "To regulate the main power supply voltage.",
-      "To prevent electromagnetic interference (EMI) from escaping the board.",
-      "To smooth out voltage fluctuations caused by the IC's switching noise and provide a localized, low-impedance charge reservoir.",
-      "To prevent electrostatic discharge (ESD) damage."
+      "Overclocking",
+      "Polling",
+      "Sleep modes",
+      "Busy waiting"
     ],
-    "answer": "To smooth out voltage fluctuations caused by the IC's switching noise and provide a localized, low-impedance charge reservoir.",
-    "explanation": "Decoupling capacitors supply rapid bursts of current needed by the IC during high-speed switching and filter out transient noise from the IC before it affects the rest of the power bus.",
-    "tags": ["PCB Design"],
-    "required_skills": ["PCB Design"],
-    "hints": ["They are localized energy stores for switching demands."]
+    "answer": "Sleep modes",
+    "explanation": "Sleep modes reduce power consumption during idle periods.",
+    "tags": ["embedded system", "Power Management"],
+    "required_skills": ["Low Power Design"],
+    "hints": ["Low power state"]
   },
+
   {
     "_id": "q_es_0011",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Microcontrollers",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is Direct Memory Access (DMA), and why is it crucial for high-speed data transfer in embedded systems?",
+    "topic": "Sensors",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does an ADC do in an embedded system?",
     "options": [
-      "A method for the CPU to access flash memory directly.",
-      "A hardware mechanism that allows peripherals (like UART, SPI) to transfer data directly to/from memory without continuous CPU intervention, freeing up the CPU for other tasks.",
-      "A software routine for checking memory integrity.",
-      "A debugging protocol."
+      "Converts digital to analog",
+      "Converts analog to digital",
+      "Amplifies signals",
+      "Filters noise"
     ],
-    "answer": "A hardware mechanism that allows peripherals (like UART, SPI) to transfer data directly to/from memory without continuous CPU intervention, freeing up the CPU for other tasks.",
-    "explanation": "DMA drastically improves system throughput and efficiency by offloading large data transfers from the CPU, which would otherwise be consumed by repeated read/write operations for peripherals.",
-    "tags": ["Microcontrollers", "C"],
-    "required_skills": ["Microcontrollers", "C"],
-    "hints": ["It bypasses the CPU for bulk data movement."]
+    "answer": "Converts analog to digital",
+    "explanation": "ADC converts real-world analog signals into digital values.",
+    "tags": ["embedded system", "ADC"],
+    "required_skills": ["Signal Processing"],
+    "hints": ["Analog input"]
   },
   {
     "_id": "q_es_0012",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "C/C++",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "In C/C++, explain the concept of a reentrant function and why it is important in multi-threaded (RTOS) or interrupt-driven environments.",
+    "topic": "Debugging",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which debugging interface is commonly used in embedded system?",
     "options": [
-      "A function that returns a pointer to another function.",
-      "A function that calls itself recursively.",
-      "A function that can be safely interrupted and re-called by another thread or interrupt handler without corrupting shared data.",
-      "A function written entirely in assembly language."
+      "HDMI",
+      "USB",
+      "JTAG",
+      "Ethernet"
     ],
-    "answer": "A function that can be safely interrupted and re-called by another thread or interrupt handler without corrupting shared data.",
-    "explanation": "Reentrant functions achieve thread safety by avoiding the use of static or global variables, relying only on local (stack) variables, or protecting access to shared resources using mutexes/semaphores.",
-    "tags": ["C", "C++", "RTOS"],
-    "required_skills": ["C", "C++", "RTOS"],
-    "hints": ["It relates to thread safety and shared state management."]
+    "answer": "JTAG",
+    "explanation": "JTAG is widely used for debugging and programming embedded devices.",
+    "tags": ["embedded system", "Debugging"],
+    "required_skills": ["Debug Tools"],
+    "hints": ["Boundary scan"]
   },
   {
     "_id": "q_es_0013",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "RTOS",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "What is 'Jitter' in a real-time system, and what causes it?",
+    "topic": "Boot Process",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the role of a bootloader?",
     "options": [
-      "The total time it takes for a task to run; Caused by slow code.",
-      "The deviation in the worst-case execution time (WCET) of a task; Caused by network latency.",
-      "The variation in the time taken to respond to an external event (Interrupt Latency); Caused by high-priority task preemption or interrupt masking.",
-      "A bug in the task scheduler; Caused by deadlocks."
+      "Run application code only",
+      "Initialize hardware and load application",
+      "Handle interrupts",
+      "Schedule tasks"
     ],
-    "answer": "The variation in the time taken to respond to an external event (Interrupt Latency); Caused by high-priority task preemption or interrupt masking.",
-    "explanation": "Jitter is the unpredictability in timing. High jitter means the system response time is inconsistent, which is highly undesirable in control systems where precise, repeatable timing is critical.",
-    "tags": ["RTOS"],
-    "required_skills": ["RTOS"],
-    "hints": ["It measures the inconsistency or variability of timing."]
+    "answer": "Initialize hardware and load application",
+    "explanation": "Bootloaders prepare the system and load the main application.",
+    "tags": ["embedded system", "Bootloader"],
+    "required_skills": ["System Startup"],
+    "hints": ["Startup code"]
   },
   {
     "_id": "q_es_0014",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "IoT/Microcontrollers",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Buses",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "When implementing a Low Power Mode, what technique is used to ensure the microcontroller wakes up precisely at a future time without relying on a full CPU timer?",
+    "text": "Which bus protocol is commonly used in automotive embedded system?",
     "options": [
-      "Using the main CPU clock and a software loop.",
-      "Disabling all peripherals except the Watchdog Timer.",
-      "Using a dedicated, low-frequency Real-Time Clock (RTC) or a similar low-power timer to generate a precise wakeup interrupt.",
-      "Relying on an external network packet to trigger wakeup."
+      "USB",
+      "HDMI",
+      "CAN",
+      "PCIe"
     ],
-    "answer": "Using a dedicated, low-frequency Real-Time Clock (RTC) or a similar low-power timer to generate a precise wakeup interrupt.",
-    "explanation": "RTCs and low-power timers run off their own highly stable, minimal power source (often a separate crystal) and can generate an interrupt to wake the main system core from deep sleep at a defined time, saving significant power.",
-    "tags": ["IoT", "Microcontrollers", "Sensors"],
-    "required_skills": ["IoT", "Microcontrollers"],
-    "hints": ["This separate timer maintains accurate time while the rest of the system sleeps."]
+    "answer": "CAN",
+    "explanation": "CAN bus is widely used in automotive and industrial systems.",
+    "tags": ["embedded system", "Automotive"],
+    "required_skills": ["Automotive Protocols"],
+    "hints": ["Vehicle network"]
   },
   {
     "_id": "q_es_0015",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "C++",
+    "topic": "Testing",
     "difficulty": 5,
     "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "In embedded C++, how do you safely enforce a singleton pattern (ensuring only one instance of a class exists) without relying on dynamic memory allocation or exceptions?",
+    "estimated_time_sec": 180,
+    "text": "What is unit testing in embedded system?",
     "options": [
-      "Using a public static member variable to hold the instance.",
-      "Using `new` and `delete` with a private constructor.",
-      "Using a private constructor and a public static method that returns a reference to a locally defined static instance of the class.",
-      "Using a global variable and a synchronization primitive."
+      "Testing entire system",
+      "Testing individual software modules",
+      "Testing hardware only",
+      "Field testing"
     ],
-    "answer": "Using a private constructor and a public static method that returns a reference to a locally defined static instance of the class.",
-    "explanation": "This method (often called 'Meyers Singleton') uses a private constructor to prevent external instantiation and a static local variable within the public accessor function, which is initialized exactly once (thread-safe since C++11) and avoids heap memory.",
-    "tags": ["C++", "Fundamentals"],
-    "required_skills": ["C++"],
-    "hints": ["It combines constructor control with static local initialization."]
+    "answer": "Testing individual software modules",
+    "explanation": "Unit testing validates individual components in isolation.",
+    "tags": ["embedded system", "Testing"],
+    "required_skills": ["Embedded Testing"],
+    "hints": ["Module-level testing"]
   },
   {
     "_id": "q_es_0016",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "PCB Design",
+    "topic": "Safety",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "What is 'Impedance Matching' in PCB design, and why is it critical for signals over 100MHz (like high-speed communication)?",
+    "text": "Which standard is widely used for functional safety in automotive systems?",
     "options": [
-      "Matching the trace width to the component pad size; critical for manufacturing costs.",
-      "Matching the trace's characteristic impedance to the source and load impedance; critical to prevent signal reflections and maintain signal integrity.",
-      "Matching the power trace voltage to the signal voltage; critical for power consumption.",
-      "Matching the trace length for easier routing."
+      "ISO 9001",
+      "ISO 26262",
+      "IEEE 802.11",
+      "IEC 61850"
     ],
-    "answer": "Matching the trace's characteristic impedance to the source and load impedance; critical to prevent signal reflections and maintain signal integrity.",
-    "explanation": "When signal impedance changes, some energy is reflected back to the source, causing distortion, crosstalk, and reduced signal quality (loss of 'eye opening'). Matching ensures maximum power transfer and clean signal edges.",
-    "tags": ["PCB Design"],
-    "required_skills": ["PCB Design"],
-    "hints": ["It's the electrical 'echo' mitigation technique."]
+    "answer": "ISO 26262",
+    "explanation": "ISO 26262 addresses functional safety in road vehicles.",
+    "tags": ["embedded system", "Safety"],
+    "required_skills": ["Functional Safety"],
+    "hints": ["Automotive safety"]
   },
   {
     "_id": "q_es_0017",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Microcontrollers",
+    "topic": "IoT",
     "difficulty": 5,
     "difficulty_label": "Expert",
-    "estimated_time_sec": 240,
-    "text": "Explain the two common methods for handling Interrupt Service Routines (ISRs) and the advantage of the 'Split-Half' method.",
+    "estimated_time_sec": 180,
+    "text": "Which protocol is commonly used for lightweight IoT communication?",
     "options": [
-      "Short vs. Long; Split-Half is faster to debug.",
-      "All-in-ISR vs. Split-Half (Minimal-in-ISR); Split-Half transfers non-critical work to a lower-priority task/thread, minimizing ISR execution time and interrupt latency.",
-      "Hardware vs. Software; Split-Half uses only hardware.",
-      "Polled vs. Non-Polled; Split-Half reduces power consumption."
+      "HTTP",
+      "FTP",
+      "MQTT",
+      "SMTP"
     ],
-    "answer": "All-in-ISR vs. Split-Half (Minimal-in-ISR); Split-Half transfers non-critical work to a lower-priority task/thread, minimizing ISR execution time and interrupt latency.",
-    "explanation": "The Split-Half approach (often using RTOS semaphores or queues) keeps the ISR short, handles immediate hardware needs, and quickly exits. The bulk of the processing is deferred, improving determinism and keeping interrupt latency low.",
-    "tags": ["Microcontrollers", "RTOS", "C"],
-    "required_skills": ["Microcontrollers", "RTOS", "C"],
-    "hints": ["It’s a design pattern to minimize the time spent with interrupts disabled."]
+    "answer": "MQTT",
+    "explanation": "MQTT is lightweight and suitable for low-bandwidth embedded system.",
+    "tags": ["embedded system", "IoT"],
+    "required_skills": ["IoT Protocols"],
+    "hints": ["Publish-subscribe"]
   },
   {
     "_id": "q_es_0018",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "IoT/Security",
+    "topic": "Concurrency",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "In an IoT device update mechanism, what is the importance of using a digitally signed (cryptographically verified) Over-The-Air (OTA) firmware update?",
+    "text": "What issue occurs when multiple tasks access shared resources simultaneously?",
     "options": [
-      "It makes the firmware smaller for faster downloads.",
-      "It guarantees the authenticity and integrity of the new firmware, preventing unauthorized or malicious code from being flashed.",
-      "It automatically allocates the update to RAM instead of flash.",
-      "It increases the speed of the CPU during the update process."
+      "Deadlock",
+      "Starvation",
+      "Race condition",
+      "Livelock"
     ],
-    "answer": "It guarantees the authenticity and integrity of the new firmware, preventing unauthorized or malicious code from being flashed.",
-    "explanation": "The device uses an embedded public key to verify the signature of the incoming firmware package before flashing. This prevents 'man-in-the-middle' attacks and ensures the update came from a trusted source.",
-    "tags": ["IoT", "Microcontrollers", "Cryptography"],
-    "required_skills": ["IoT", "Microcontrollers"],
-    "hints": ["It addresses both 'who sent it' and 'was it tampered with'."]
+    "answer": "Race condition",
+    "explanation": "Race conditions arise when task execution order affects outcomes.",
+    "tags": ["embedded system", "Concurrency"],
+    "required_skills": ["RTOS Synchronization"],
+    "hints": ["Shared resource access"]
   },
   {
     "_id": "q_es_0019",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "Sensors",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the primary function of an ADC (Analog-to-Digital Converter) in a microcontroller system?",
+    "topic": "Firmware Updates",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is OTA in embedded system?",
     "options": [
-      "To convert digital signals to analog outputs (e.g., for audio).",
-      "To convert analog input signals (e.g., from a temperature sensor) into a discrete digital value for the CPU to process.",
-      "To increase the speed of the microcontroller clock.",
-      "To store non-volatile data."
+      "Offline Test Application",
+      "Over-The-Air firmware update",
+      "On-Time Analysis",
+      "Output Transfer Algorithm"
     ],
-    "answer": "To convert analog input signals (e.g., from a temperature sensor) into a discrete digital value for the CPU to process.",
-    "explanation": "Most real-world signals (temperature, light, pressure) are analog. The ADC is necessary to translate these continuous voltage signals into the binary numbers understood by the digital CPU.",
-    "tags": ["Sensors", "Microcontrollers"],
-    "required_skills": ["Sensors", "Microcontrollers"],
-    "hints": ["It bridges the real world to the digital world."]
+    "answer": "Over-The-Air firmware update",
+    "explanation": "OTA allows remote firmware updates without physical access.",
+    "tags": ["embedded system", "OTA"],
+    "required_skills": ["Firmware Management"],
+    "hints": ["Remote update"]
   },
   {
     "_id": "q_es_0020",
     "question_type": "multiple-choice",
     "domain": "embedded system",
-    "topic": "C Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "In C, what is a 'bit field' in a struct primarily used for in embedded programming?",
-    "options": [
-      "To create complex data types for mathematical operations.",
-      "To define variables that can only hold a single bit (0 or 1).",
-      "To save memory by allowing structure members to occupy less than a byte of storage.",
-      "To enable thread synchronization."
-    ],
-    "answer": "To save memory by allowing structure members to occupy less than a byte of storage.",
-    "explanation": "Bit fields allow packing several true/false flags or small integers into a single byte or word, which is efficient for managing hardware registers where each bit has a specific meaning.",
-    "tags": ["C", "Microcontrollers"],
-    "required_skills": ["C"],
-    "hints": ["It's a memory-saving technique for flags/registers."]
-  },
-  {
-    "_id": "q_es_0021",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "RTOS",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 60,
-    "text": "What is the primary role of a 'Mutex' (Mutual Exclusion) in an RTOS?",
-    "options": [
-      "To wake up a sleeping task.",
-      "To synchronize two different CPUs.",
-      "To ensure that only one task can access a shared resource (a Critical Section) at any given time.",
-      "To manage memory allocation."
-    ],
-    "answer": "To ensure that only one task can access a shared resource (a Critical Section) at any given time.",
-    "explanation": "A Mutex is a locking mechanism used to prevent race conditions and data corruption when multiple concurrent tasks attempt to read or write to the same shared memory or peripheral.",
-    "tags": ["RTOS"],
-    "required_skills": ["RTOS"],
-    "hints": ["It enforces exclusive access."]
-  },
-  {
-    "_id": "q_es_0022",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "PCB Design",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "What is a 'Gerber file' in the context of PCB design?",
-    "options": [
-      "A file that stores 3D models of the components.",
-      "The source file containing the schematic diagram.",
-      "The industry-standard file format used by manufacturers to describe the copper layers, soldermask, silkscreen, and drill holes of the PCB.",
-      "The final compiled firmware."
-    ],
-    "answer": "The industry-standard file format used by manufacturers to describe the copper layers, soldermask, silkscreen, and drill holes of the PCB.",
-    "explanation": "Gerber files (RS-274X or X2) are required by the board house to physically etch and manufacture the printed circuit board layers.",
-    "tags": ["PCB Design"],
-    "required_skills": ["PCB Design"],
-    "hints": ["It's the output file sent directly to the fabrication house."]
-  },
-  {
-    "_id": "q_es_0023",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "C/C++",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is the main concern with using dynamic memory allocation functions like `malloc()` or `new` in embedded systems with strict reliability requirements?",
-    "options": [
-      "They are slower than static allocation.",
-      "They cause the code to be larger.",
-      "They lead to memory fragmentation and non-deterministic behavior, which is dangerous for real-time and safety-critical systems.",
-      "They are not supported by embedded compilers."
-    ],
-    "answer": "They lead to memory fragmentation and non-deterministic behavior, which is dangerous for real-time and safety-critical systems.",
-    "explanation": "Repeated calls to dynamic memory functions can scatter small blocks of free memory (fragmentation) and the time taken for allocation is highly variable, making the system non-deterministic. Static or pool allocation is preferred.",
-    "tags": ["C", "C++", "Fundamentals"],
-    "required_skills": ["C", "C++"],
-    "hints": ["It relates to memory gaps and unpredictable timing."]
-  },
-  {
-    "_id": "q_es_0024",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "IoT/Networking",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "How does the LoRaWAN network topology differ significantly from traditional Wi-Fi/Bluetooth networks for IoT applications?",
-    "options": [
-      "LoRaWAN uses a mesh network; Wi-Fi uses star topology.",
-      "LoRaWAN uses short-range, high-bandwidth communication; Wi-Fi uses long-range, low-bandwidth.",
-      "LoRaWAN uses a star-of-stars topology with centralized gateways connecting end-devices to a network server over a long range; Wi-Fi is short-range and device-to-router.",
-      "LoRaWAN requires more power than Wi-Fi."
-    ],
-    "answer": "LoRaWAN uses a star-of-stars topology with centralized gateways connecting end-devices to a network server over a long range; Wi-Fi is short-range and device-to-router.",
-    "explanation": "LoRaWAN is designed for low-power, wide-area (LPWAN) communication, prioritizing range and battery life over high data rates, making it suitable for geographically dispersed sensors.",
-    "tags": ["IoT"],
-    "required_skills": ["IoT"],
-    "hints": ["Think about its core advantage: long range and low power."]
-  },
-  {
-    "_id": "q_es_0025",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "Microcontrollers",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is a Watchdog Timer (WDT), and why is it used in critical embedded systems?",
-    "options": [
-      "A timer used for precise PWM generation.",
-      "A security feature that encrypts the firmware.",
-      "A hardware timer that must be periodically 'kicked' (reset) by the software; if it expires, it resets the system to recover from deadlocks or runaway code.",
-      "A low-power timer used for deep sleep mode."
-    ],
-    "answer": "A hardware timer that must be periodically 'kicked' (reset) by the software; if it expires, it resets the system to recover from deadlocks or runaway code.",
-    "explanation": "The WDT acts as a crucial safety mechanism to prevent system failures. It forces a hard reset if the software gets stuck in an infinite loop or crashes, ensuring the device remains operational.",
-    "tags": ["Microcontrollers", "C"],
-    "required_skills": ["Microcontrollers", "C"],
-    "hints": ["It's the ultimate failsafe for frozen code."]
-  },
-  {
-    "_id": "q_es_0026",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "RTOS",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "What is the difference between a Preemptive and a Non-Preemptive RTOS scheduler?",
-    "options": [
-      "Non-Preemptive requires more memory.",
-      "Preemptive forces a running task to yield the CPU when a higher-priority task becomes ready; Non-Preemptive requires the running task to voluntarily yield.",
-      "Preemptive is only for hard real-time; Non-Preemptive is for soft real-time.",
-      "Non-Preemptive has lower latency."
-    ],
-    "answer": "Preemptive forces a running task to yield the CPU when a higher-priority task becomes ready; Non-Preemptive requires the running task to voluntarily yield.",
-    "explanation": "Preemption is key for responsiveness, ensuring that the highest-priority task is always running. Non-preemptive systems are simpler but introduce higher, less predictable latency.",
-    "tags": ["RTOS"],
-    "required_skills": ["RTOS"],
-    "hints": ["One scheduler forces context switches; the other waits politely."]
-  },
-  {
-    "_id": "q_es_0027",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "C++",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "When writing hardware abstraction layers (HAL) in embedded C++, why is the use of 'templates' beneficial?",
-    "options": [
-      "Templates enforce static linking.",
-      "Templates allow for generic code that can be instantiated with different hardware types (e.g., different SPI peripherals) without runtime overhead, promoting code reuse.",
-      "Templates reduce the code size significantly.",
-      "Templates are required for interrupt handlers."
-    ],
-    "answer": "Templates allow for generic code that can be instantiated with different hardware types (e.g., different SPI peripherals) without runtime overhead, promoting code reuse.",
-    "explanation": "Templates provide compile-time polymorphism. The compiler generates specialized code for each hardware instance, ensuring zero abstraction cost (unlike virtual functions) while maintaining reusable source code.",
-    "tags": ["C++", "Microcontrollers"],
-    "required_skills": ["C++", "Microcontrollers"],
-    "hints": ["It provides flexibility without incurring runtime penalty."]
-  },
-  {
-    "_id": "q_es_0028",
-    "question_type": "multiple-choice",
-    "domain": "embedded system",
-    "topic": "C Fundamentals",
+    "topic": "Future Trends",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "In C, explain the concept of 'linker scripts' and why they are necessary for embedded firmware development.",
+    "text": "Why is edge computing important for embedded system?",
     "options": [
-      "Linker scripts are used to manage I2C communication protocols.",
-      "Linker scripts define the exact memory layout of the final program image, specifying where code (.text), data (.data), and uninitialized data (.bss) sections reside in flash and RAM.",
-      "Linker scripts are used for hardware debugging only.",
-      "Linker scripts automatically generate header files."
+      "It increases latency",
+      "It reduces need for sensors",
+      "It enables local data processing with low latency",
+      "It eliminates cloud usage"
     ],
-    "answer": "Linker scripts define the exact memory layout of the final program image, specifying where code (.text), data (.data), and uninitialized data (.bss) sections reside in flash and RAM.",
-    "explanation": "Unlike desktop systems, embedded systems have highly specific, non-standard memory maps. The linker script is essential for placing code in Flash/ROM (Program Memory) and initialized/uninitialized variables in RAM (Data Memory) correctly.",
-    "tags": ["C", "Microcontrollers"],
-    "required_skills": ["C", "Microcontrollers"],
-    "hints": ["It's the map that tells the compiler output where to physically live in the chip."]
+    "answer": "It enables local data processing with low latency",
+    "explanation": "Edge computing processes data near the source for faster response.",
+    "tags": ["embedded system", "Edge Computing"],
+    "required_skills": ["Edge Systems"],
+    "hints": ["Low latency processing"]
+  },
+  
+  {
+    "_id": "q_embedded_0021",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Embedded System Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Define an embedded system and explain its key characteristics.",
+    "expected_answer": {
+      "key_points": [
+        "Embedded system definition",
+        "Dedicated functionality",
+        "Real-time operation",
+        "Hardware-software integration"
+      ],
+      "example_scenarios": [
+        "Washing machine controller",
+        "Microwave oven control system"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["embedded system", "Basics"],
+    "required_skills": ["Embedded Fundamentals"],
+    "hints": [
+      "Think about dedicated computing systems",
+      "Focus on real-time behavior"
+    ]
   },
   {
-    "_id": "q_es_0029",
-    "question_type": "multiple-choice",
+    "_id": "q_embedded_0022",
+    "question_type": "subjective",
     "domain": "embedded system",
-    "topic": "PCB Design",
+    "topic": "Microcontrollers",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the architecture of a microcontroller.",
+    "expected_answer": {
+      "key_points": [
+        "CPU core",
+        "Memory types",
+        "I/O peripherals",
+        "Timers and interrupts"
+      ],
+      "example_scenarios": [
+        "Arduino-based temperature control",
+        "8051-based LED control system"
+      ],
+      "minimum_word_count": 130
+    },
+    "evaluation_criteria": [
+      { "criterion": "Architecture Explanation", "weight": 0.4 },
+      { "criterion": "Technical Accuracy", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Microcontroller", "Architecture"],
+    "required_skills": ["Embedded Hardware"],
+    "hints": [
+      "Mention internal blocks",
+      "Explain their functions"
+    ]
+  },
+  {
+    "_id": "q_embedded_0023",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Real-Time Systems",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Differentiate between hard real-time and soft real-time systems.",
+    "expected_answer": {
+      "key_points": [
+        "Deadline constraints",
+        "Failure consequences",
+        "System predictability"
+      ],
+      "example_scenarios": [
+        "Airbag control system",
+        "Multimedia streaming system"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Accuracy", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "tags": ["Real-Time Systems"],
+    "required_skills": ["RTOS Basics"],
+    "hints": [
+      "Think about deadlines",
+      "Consider system failure impact"
+    ]
+  },
+  {
+    "_id": "q_embedded_0024",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Interrupts",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain interrupts and their role in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Interrupt definition",
+        "Interrupt service routine",
+        "Priority handling"
+      ],
+      "example_scenarios": [
+        "Keyboard input handling",
+        "Emergency stop button"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Explanation", "weight": 0.4 },
+      { "criterion": "Practical Use", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Interrupts"],
+    "required_skills": ["Embedded Programming"],
+    "hints": [
+      "Explain event handling",
+      "Mention ISR"
+    ]
+  },
+  {
+    "_id": "q_embedded_0025",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Timers and Counters",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Describe the working of timers and counters in microcontrollers.",
+    "expected_answer": {
+      "key_points": [
+        "Timer operation",
+        "Counter operation",
+        "Clock source usage"
+      ],
+      "example_scenarios": [
+        "PWM signal generation",
+        "Event counting applications"
+      ],
+      "minimum_word_count": 140
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Application Insight", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["Timers", "Counters"],
+    "required_skills": ["Microcontroller Programming"],
+    "hints": [
+      "Differentiate timer and counter",
+      "Mention clock signals"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0026",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Communication Protocols",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain UART, SPI, and I2C communication protocols.",
+    "expected_answer": {
+      "key_points": [
+        "UART characteristics",
+        "SPI communication model",
+        "I2C addressing"
+      ],
+      "example_scenarios": [
+        "Sensor data transmission",
+        "Display module interfacing"
+      ],
+      "minimum_word_count": 160
+    },
+    "evaluation_criteria": [
+      { "criterion": "Protocol Explanation", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Use Cases", "weight": 0.3 }
+    ],
+    "tags": ["UART", "SPI", "I2C"],
+    "required_skills": ["Embedded Communication"],
+    "hints": [
+      "Compare speed and wiring",
+      "Mention master-slave concept"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0027",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "RTOS",
     "difficulty": 4,
     "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "When routing a differential pair (e.g., USB, Ethernet, or high-speed serial), why is trace length matching critical?",
-    "options": [
-      "To reduce cost of the PCB.",
-      "To ensure that both signals arrive at the receiver simultaneously; length mismatch causes skew and common-mode noise, corrupting the signal integrity.",
-      "To increase the resistance of the traces.",
-      "To make the traces easier to inspect visually."
+    "estimated_time_sec": 360,
+    "text": "Explain the role of an RTOS in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Task scheduling",
+        "Context switching",
+        "Inter-task communication"
+      ],
+      "example_scenarios": [
+        "Automotive control systems",
+        "Industrial automation"
+      ],
+      "minimum_word_count": 170
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Real-time Understanding", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "To ensure that both signals arrive at the receiver simultaneously; length mismatch causes skew and common-mode noise, corrupting the signal integrity.",
-    "explanation": "Differential signaling relies on the receiver comparing the time difference between the two signals. A length mismatch introduces 'skew,' which degrades the signal and can lead to errors at high data rates.",
-    "tags": ["PCB Design"],
-    "required_skills": ["PCB Design"],
-    "hints": ["It's necessary for the receiver to correctly compare the two signals over time."]
+    "tags": ["RTOS"],
+    "required_skills": ["Advanced Embedded"],
+    "hints": [
+      "Think multitasking",
+      "Mention scheduling"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0028",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Memory",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Differentiate between RAM, ROM, EEPROM, and Flash memory.",
+    "expected_answer": {
+      "key_points": [
+        "Volatile vs non-volatile",
+        "Read-write capability",
+        "Usage in embedded system"
+      ],
+      "example_scenarios": [
+        "Firmware storage",
+        "Temporary data buffering"
+      ],
+      "minimum_word_count": 130
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Clarity", "weight": 0.4 },
+      { "criterion": "Comparison", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["Memory"],
+    "required_skills": ["Embedded Basics"],
+    "hints": [
+      "Focus on storage purpose",
+      "Mention volatility"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0029",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Power Management",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain power management techniques used in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Sleep modes",
+        "Dynamic voltage scaling",
+        "Low-power design"
+      ],
+      "example_scenarios": [
+        "Battery-powered IoT devices",
+        "Wearable electronics"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Insight", "weight": 0.4 },
+      { "criterion": "Techniques Explained", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Power Management"],
+    "required_skills": ["Embedded Design"],
+    "hints": [
+      "Think battery life",
+      "Mention sleep modes"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0030",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Sensors",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain how sensors are interfaced with embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Analog and digital sensors",
+        "ADC usage",
+        "Signal conditioning"
+      ],
+      "example_scenarios": [
+        "Temperature monitoring",
+        "Motion detection systems"
+      ],
+      "minimum_word_count": 130
+    },
+    "evaluation_criteria": [
+      { "criterion": "Interfacing Knowledge", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Sensors"],
+    "required_skills": ["Embedded Hardware"],
+    "hints": [
+      "Mention ADC",
+      "Explain signal flow"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0031",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Actuators",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Describe actuators and their role in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of actuators",
+        "Types of actuators",
+        "Control mechanisms"
+      ],
+      "example_scenarios": [
+        "Motor control",
+        "Robotic arm movement"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Application Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Actuators"],
+    "required_skills": ["Embedded Basics"],
+    "hints": [
+      "Think output devices",
+      "Mention control signals"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0032",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Bootloader",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the role of a bootloader in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "System startup process",
+        "Firmware loading",
+        "Memory initialization"
+      ],
+      "example_scenarios": [
+        "Firmware update mechanisms",
+        "Secure boot systems"
+      ],
+      "minimum_word_count": 170
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "System Understanding", "weight": 0.3 },
+      { "criterion": "Accuracy", "weight": 0.3 }
+    ],
+    "tags": ["Bootloader"],
+    "required_skills": ["Advanced Embedded"],
+    "hints": [
+      "Think system startup",
+      "Mention firmware loading"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0033",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Debugging",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain debugging techniques used in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "In-circuit debugging",
+        "Use of JTAG",
+        "Logging techniques"
+      ],
+      "example_scenarios": [
+        "Firmware fault diagnosis",
+        "Timing issue analysis"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Practical Knowledge", "weight": 0.4 },
+      { "criterion": "Tool Awareness", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Debugging"],
+    "required_skills": ["Embedded Debugging"],
+    "hints": [
+      "Mention hardware tools",
+      "Explain real-time issues"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0034",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Firmware Development",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the firmware development lifecycle in embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Requirement analysis",
+        "Development and testing",
+        "Deployment and maintenance"
+      ],
+      "example_scenarios": [
+        "Industrial controller firmware",
+        "Consumer electronics firmware"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Understanding", "weight": 0.4 },
+      { "criterion": "Structure", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
+    ],
+    "tags": ["Firmware"],
+    "required_skills": ["Embedded Software"],
+    "hints": [
+      "Think software lifecycle",
+      "Mention testing"
+    ]
+  },
+
+  {
+    "_id": "q_embedded_0035",
+    "question_type": "subjective",
+    "domain": "embedded system",
+    "topic": "Applications",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Discuss real-world applications of embedded system.",
+    "expected_answer": {
+      "key_points": [
+        "Consumer electronics",
+        "Automotive systems",
+        "Industrial automation"
+      ],
+      "example_scenarios": [
+        "Smart home devices",
+        "Automotive control units"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Application Coverage", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Applications"],
+    "required_skills": ["Embedded Fundamentals"],
+    "hints": [
+      "Think daily-use devices",
+      "Mention automation"
+    ]
   },
   {
-    "_id": "q_es_0030",
-    "question_type": "multiple-choice",
+    "_id": "q_embedded_0036",
+    "question_type": "voice",
     "domain": "embedded system",
-    "topic": "Microcontrollers/Peripherals",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "What is the primary trade-off when configuring an Analog-to-Digital Converter (ADC) for a higher number of bits (e.g., 12-bit vs. 16-bit)?",
-    "options": [
-      "Higher bit count increases power consumption.",
-      "Higher bit count increases the conversion speed (sampling rate).",
-      "Higher bit count increases the resolution (finer precision) but decreases the maximum sampling rate.",
-      "Higher bit count increases the input voltage range."
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is an embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Dedicated function",
+        "Combination of hardware and software",
+        "Part of a larger system"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3, "description": "Clear definition" },
+      { "criterion": "Completeness", "weight": 0.4, "description": "Core concept covered" },
+      { "criterion": "Examples", "weight": 0.3, "description": "Relevant example used" }
     ],
-    "answer": "Higher bit count increases the resolution (finer precision) but decreases the maximum sampling rate.",
-    "explanation": "The resolution is $2^N$ possible values, where N is the number of bits. Achieving higher precision (more bits) requires longer conversion times for the internal successive approximation register (SAR) or delta-sigma modulator, thus reducing the maximum frequency at which the ADC can sample.",
-    "tags": ["Microcontrollers", "Sensors"],
-    "required_skills": ["Microcontrollers", "Sensors"],
-    "hints": ["It's the classic resolution vs. speed conflict."]
+    "transcription_required": true,
+    "tags": ["Embedded Basics"],
+    "required_skills": ["C Programming"],
+    "hints": ["Single-purpose system"]
+  },
+  {
+    "_id": "q_embedded_0037",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Components",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are the main components of an embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Microcontroller or processor",
+        "Memory",
+        "Input and output devices"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Components"],
+    "required_skills": ["Basic Electronics"],
+    "hints": ["CPU, memory, I/O"]
+  },
+  {
+    "_id": "q_embedded_0038",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Microcontrollers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a microcontroller and where is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Single-chip computer",
+        "Controls embedded applications",
+        "Used in appliances and devices"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Microcontroller"],
+    "required_skills": ["C Programming"],
+    "hints": ["Arduino, PIC"]
+  },
+  {
+    "_id": "q_embedded_0039",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Microprocessor vs Microcontroller",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is the difference between a microprocessor and a microcontroller?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Microprocessor needs external components",
+        "Microcontroller is self-contained",
+        "Different application areas"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Comparison"],
+    "required_skills": ["Basic Electronics"],
+    "hints": ["Single chip vs system"]
+  },
+  {
+    "_id": "q_embedded_0040",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Programming",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Which programming languages are commonly used in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "C language",
+        "Embedded C",
+        "Assembly language"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Programming"],
+    "required_skills": ["C"],
+    "hints": ["Low-level languages"]
+  },
+  {
+    "_id": "q_embedded_0041",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Real-Time Systems",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a real-time embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Time constraints",
+        "Predictable response",
+        "Critical applications"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Real-Time"],
+    "required_skills": ["RTOS Basics"],
+    "hints": ["Timing matters"]
+  },
+  {
+    "_id": "q_embedded_0042",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "RTOS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is an RTOS and why is it used?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Real-Time Operating System",
+        "Task scheduling",
+        "Deterministic behavior"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["RTOS"],
+    "required_skills": ["Embedded OS"],
+    "hints": ["Task scheduling"]
+  },
+  {
+    "_id": "q_embedded_0043",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Memory",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What types of memory are used in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "RAM",
+        "ROM or Flash",
+        "EEPROM"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Memory"],
+    "required_skills": ["Electronics Basics"],
+    "hints": ["Volatile vs non-volatile"]
+  },
+  {
+    "_id": "q_embedded_0044",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Input Output",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are input and output devices in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Sensors as input",
+        "Actuators as output",
+        "Interface with environment"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["I/O"],
+    "required_skills": ["Electronics"],
+    "hints": ["Sensors and motors"]
+  },
+  {
+    "_id": "q_embedded_0045",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Communication Protocols",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What communication protocols are used in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "UART",
+        "SPI",
+        "I2C"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Protocols"],
+    "required_skills": ["Embedded Communication"],
+    "hints": ["Serial communication"]
+  },
+  {
+    "_id": "q_embedded_0046",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Power Management",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is power management important in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Battery-powered devices",
+        "Energy efficiency",
+        "Longer device life"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Power Management"],
+    "required_skills": ["Low Power Design"],
+    "hints": ["Battery life"]
+  },
+  {
+    "_id": "q_embedded_0047",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Debugging",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is debugging done in embedded system?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Using debuggers",
+        "Serial output",
+        "Emulators or simulators"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Debugging"],
+    "required_skills": ["Embedded Tools"],
+    "hints": ["JTAG"]
+  },
+  {
+    "_id": "q_embedded_0048",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Applications",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Mention two real-world applications of embedded system.",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Automotive systems",
+        "Home appliances",
+        "Medical devices"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Applications"],
+    "required_skills": ["Embedded Basics"],
+    "hints": ["Everyday devices"]
+  },
+  {
+    "_id": "q_embedded_0049",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Constraints",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What constraints do embedded system typically have?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Limited memory",
+        "Limited processing power",
+        "Timing constraints"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Constraints"],
+    "required_skills": ["System Design"],
+    "hints": ["Limited resources"]
+  },
+  {
+    "_id": "q_embedded_0050",
+    "question_type": "voice",
+    "domain": "embedded system",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see embedded system evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "IoT integration",
+        "Smarter devices",
+        "Low-power intelligent systems"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Embedded Basics"],
+    "hints": ["IoT and automation"]
+  },
+  {
+    "_id": "q_emb_0051",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check whether a GPIO pin state is HIGH or LOW.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def gpio_state(value):\n    pass",
+      "function_signature": "gpio_state(value: int) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"HIGH\" if value == 1 else \"LOW\"",
+      "key_concepts": ["GPIO", "Digital signals"]
+    },
+    "test_cases": [
+      {
+        "input": "1",
+        "expected_output": "\"HIGH\"",
+        "description": "Pin high"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct GPIO state" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles LOW state" }
+    ],
+    "tags": ["Embedded", "GPIO"],
+    "required_skills": ["Python"],
+    "hints": ["1 means HIGH"]
+  },
+
+  {
+    "_id": "q_emb_0052",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Sensors",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert ADC value to voltage assuming 10-bit ADC and 5V reference.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def adc_to_voltage(adc):\n    pass",
+      "function_signature": "adc_to_voltage(adc: int) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (adc / 1023) * 5",
+      "key_concepts": ["ADC", "Voltage conversion"]
+    },
+    "test_cases": [
+      {
+        "input": "512",
+        "expected_output": "2.5024437927663734",
+        "description": "Mid-scale ADC"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct voltage" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear formula" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles 0 and max ADC" }
+    ],
+    "tags": ["Embedded", "ADC"],
+    "required_skills": ["Python"],
+    "hints": ["ADC resolution is 1023"]
+  },
+
+  {
+    "_id": "q_emb_0053",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Timing",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to calculate delay time in milliseconds from clock cycles and clock frequency.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def delay_ms(cycles, freq):\n    pass",
+      "function_signature": "delay_ms(cycles: int, freq: int) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (cycles / freq) * 1000",
+      "key_concepts": ["Clock cycles", "Timing"]
+    },
+    "test_cases": [
+      {
+        "input": "16000, 16000000",
+        "expected_output": "1.0",
+        "description": "1 ms delay"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct delay" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Correct units" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero cycles" }
+    ],
+    "tags": ["Embedded", "Timing"],
+    "required_skills": ["Python"],
+    "hints": ["Time = cycles / frequency"]
+  },
+
+  {
+    "_id": "q_emb_0054",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "PWM",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate PWM duty cycle percentage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def duty_cycle(on_time, period):\n    pass",
+      "function_signature": "duty_cycle(on_time: float, period: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (on_time / period) * 100 if period > 0 else 0",
+      "key_concepts": ["PWM", "Duty cycle"]
+    },
+    "test_cases": [
+      {
+        "input": "2, 10",
+        "expected_output": "20.0",
+        "description": "20 percent duty cycle"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Duty cycle correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe division" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero period" }
+    ],
+    "tags": ["Embedded", "PWM"],
+    "required_skills": ["Python"],
+    "hints": ["(on_time / period) * 100"]
+  },
+
+  {
+    "_id": "q_emb_0055",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Communication",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if UART baud rate is supported (9600, 115200).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def supported_baud(rate):\n    pass",
+      "function_signature": "supported_baud(rate: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return rate in [9600, 115200]",
+      "key_concepts": ["UART", "Baud rate"]
+    },
+    "test_cases": [
+      {
+        "input": "9600",
+        "expected_output": "True",
+        "description": "Supported baud"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct baud validation" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles unsupported rate" }
+    ],
+    "tags": ["Embedded", "UART"],
+    "required_skills": ["Python"],
+    "hints": ["Check rate in list"]
+  },
+
+  {
+    "_id": "q_emb_0056",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "I2C",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to validate I2C device address (7-bit).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_i2c_address(addr):\n    pass",
+      "function_signature": "valid_i2c_address(addr: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return 0 <= addr <= 127",
+      "key_concepts": ["I2C", "Device addressing"]
+    },
+    "test_cases": [
+      {
+        "input": "64",
+        "expected_output": "True",
+        "description": "Valid I2C address"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Address validated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear range check" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary values" }
+    ],
+    "tags": ["Embedded", "I2C"],
+    "required_skills": ["Python"],
+    "hints": ["7-bit range is 0–127"]
+  },
+
+  {
+    "_id": "q_emb_0057",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "SPI",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check SPI mode validity (0 to 3).",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def valid_spi_mode(mode):\n    pass",
+      "function_signature": "valid_spi_mode(mode: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return mode in [0,1,2,3]",
+      "key_concepts": ["SPI", "Clock polarity and phase"]
+    },
+    "test_cases": [
+      {
+        "input": "2",
+        "expected_output": "True",
+        "description": "Valid SPI mode"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Mode validation correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invalid mode" }
+    ],
+    "tags": ["Embedded", "SPI"],
+    "required_skills": ["Python"],
+    "hints": ["SPI modes range 0–3"]
+  },
+
+  {
+    "_id": "q_emb_0058",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Memory",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to convert memory size from KB to bytes.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def kb_to_bytes(kb):\n    pass",
+      "function_signature": "kb_to_bytes(kb: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return kb * 1024",
+      "key_concepts": ["Memory", "Unit conversion"]
+    },
+    "test_cases": [
+      {
+        "input": "4",
+        "expected_output": "4096",
+        "description": "KB to bytes"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Correct conversion" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero KB" }
+    ],
+    "tags": ["Embedded", "Memory"],
+    "required_skills": ["Python"],
+    "hints": ["1 KB = 1024 bytes"]
+  },
+
+  {
+    "_id": "q_emb_0059",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Interrupts",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if an interrupt should be triggered based on signal change.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def interrupt_triggered(prev, curr):\n    pass",
+      "function_signature": "interrupt_triggered(prev: int, curr: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return prev != curr",
+      "key_concepts": ["Interrupts", "Edge detection"]
+    },
+    "test_cases": [
+      {
+        "input": "0, 1",
+        "expected_output": "True",
+        "description": "Rising edge"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Interrupt logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles no change" }
+    ],
+    "tags": ["Embedded", "Interrupts"],
+    "required_skills": ["Python"],
+    "hints": ["Trigger on change"]
+  },
+
+  {
+    "_id": "q_emb_0060",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "RTOS",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to check if a task misses its deadline.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def missed_deadline(exec_time, deadline):\n    pass",
+      "function_signature": "missed_deadline(exec_time: float, deadline: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return exec_time > deadline",
+      "key_concepts": ["RTOS", "Task scheduling"]
+    },
+    "test_cases": [
+      {
+        "input": "15, 10",
+        "expected_output": "True",
+        "description": "Deadline missed"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Deadline check correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles equal time" }
+    ],
+    "tags": ["Embedded", "RTOS"],
+    "required_skills": ["Python"],
+    "hints": ["Compare execution time"]
+  },
+
+  {
+    "_id": "q_emb_0061",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Power Management",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to estimate power consumption.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def power_consumption(voltage, current):\n    pass",
+      "function_signature": "power_consumption(voltage: float, current: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return voltage * current",
+      "key_concepts": ["Power", "Energy consumption"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 0.2",
+        "expected_output": "1.0",
+        "description": "Power calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Power correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple formula" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero current" }
+    ],
+    "tags": ["Embedded", "Power"],
+    "required_skills": ["Python"],
+    "hints": ["P = V × I"]
+  },
+
+  {
+    "_id": "q_emb_0062",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Watchdog Timer",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if watchdog timer should reset the system.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def watchdog_reset(timeout, elapsed):\n    pass",
+      "function_signature": "watchdog_reset(timeout: float, elapsed: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return elapsed > timeout",
+      "key_concepts": ["Watchdog timer", "System reliability"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 7",
+        "expected_output": "True",
+        "description": "Reset required"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Reset logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles normal case" }
+    ],
+    "tags": ["Embedded", "Watchdog"],
+    "required_skills": ["Python"],
+    "hints": ["Elapsed > timeout"]
+  },
+
+  {
+    "_id": "q_emb_0063",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Boot Process",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if boot sequence completed successfully.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def boot_status(flag):\n    pass",
+      "function_signature": "boot_status(flag: bool) -> str"
+    },
+    "expected_answer": {
+      "solution": "return \"Boot Successful\" if flag else \"Boot Failed\"",
+      "key_concepts": ["Bootloader", "System startup"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "\"Boot Successful\"",
+        "description": "Successful boot"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Boot status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable output" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure case" }
+    ],
+    "tags": ["Embedded", "Boot"],
+    "required_skills": ["Python"],
+    "hints": ["Check flag"]
+  },
+
+  {
+    "_id": "q_emb_0064",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Debugging",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if debug mode is enabled.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def debug_enabled(mode):\n    pass",
+      "function_signature": "debug_enabled(mode: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return mode",
+      "key_concepts": ["Debugging", "Development mode"]
+    },
+    "test_cases": [
+      {
+        "input": "False",
+        "expected_output": "False",
+        "description": "Debug disabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Debug flag correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+    ],
+    "tags": ["Embedded", "Debug"],
+    "required_skills": ["Python"],
+    "hints": ["Return boolean"]
+  },
+
+  {
+    "_id": "q_emb_0065",
+    "question_type": "coding",
+    "domain": "embedded system",
+    "topic": "Reliability",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to calculate system uptime percentage.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def uptime_percentage(uptime, total_time):\n    pass",
+      "function_signature": "uptime_percentage(uptime: float, total_time: float) -> float"
+    },
+    "expected_answer": {
+      "solution": "return (uptime / total_time) * 100 if total_time > 0 else 0",
+      "key_concepts": ["Reliability", "Uptime"]
+    },
+    "test_cases": [
+      {
+        "input": "95, 100",
+        "expected_output": "95.0",
+        "description": "Uptime calculation"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Uptime correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe division" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero total time" }
+    ],
+    "tags": ["Embedded", "Reliability"],
+    "required_skills": ["Python"],
+    "hints": ["(uptime/total)*100"]
   }
 ]

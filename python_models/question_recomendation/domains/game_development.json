@@ -3,630 +3,1917 @@
     "_id": "q_gd_0001",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unity Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "In Unity, which component is mandatory for a GameObject to exist in a Scene?",
+    "topic": "Fundamentals",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary objective of game development?",
     "options": [
-      "Rigidbody",
-      "Collider",
-      "Transform",
-      "Mesh Renderer"
+      "Create business software",
+      "Design interactive entertainment experiences",
+      "Develop operating systems",
+      "Build database systems"
     ],
-    "answer": "Transform",
-    "explanation": "Every GameObject in a Unity scene must have a Transform component, which defines its position, rotation, and scale in the world.",
-    "tags": ["Unity", "C#"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["It defines the object's spatial properties."]
+    "answer": "Design interactive entertainment experiences",
+    "explanation": "Game development focuses on creating interactive and engaging digital experiences for players.",
+    "tags": ["Game Development", "Fundamentals"],
+    "required_skills": ["Game Design Basics"],
+    "hints": ["Interactive entertainment"]
   },
   {
     "_id": "q_gd_0002",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "C# Fundamentals",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "In C#, what is the difference between `public` and `private` access modifiers?",
+    "topic": "Game Engines",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which game engine is most widely used for cross-platform game development?",
     "options": [
-      "`public` is for functions, `private` is for variables.",
-      "`public` is accessible from any class; `private` is accessible only within the defining class.",
-      "`public` is read-only; `private` is read-write.",
-      "They are identical in a Unity MonoBehaviour script."
+      "CryEngine",
+      "Unity",
+      "Panda3D",
+      "GameMaker"
     ],
-    "answer": "`public` is accessible from any class; `private` is accessible only within the defining class.",
-    "explanation": "`public` members are fully exposed, while `private` members are encapsulated within the class, following OOP principles.",
-    "tags": ["C#"],
-    "required_skills": ["C#"],
-    "hints": ["It controls visibility and encapsulation."]
+    "answer": "Unity",
+    "explanation": "Unity supports multi-platform development and has extensive community and asset support.",
+    "tags": ["Game Development", "Game Engines"],
+    "required_skills": ["Unity"],
+    "hints": ["Cross-platform engine"]
   },
   {
     "_id": "q_gd_0003",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unreal Engine Basics",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 45,
-    "text": "What is a 'Blueprint' in Unreal Engine?",
+    "topic": "Graphics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which graphics pipeline stage handles transforming 3D coordinates to 2D screen space?",
     "options": [
-      "A C++ code file.",
-      "The compiled executable game file.",
-      "A visual scripting system that allows non-programmers to create gameplay logic.",
-      "A 3D model asset."
+      "Rasterization",
+      "Vertex processing",
+      "Fragment shading",
+      "Texture mapping"
     ],
-    "answer": "A visual scripting system that allows non-programmers to create gameplay logic.",
-    "explanation": "Blueprints are UE's node-based visual scripting system, enabling rapid prototyping and implementation of game features without writing C++ code.",
-    "tags": ["Unreal Engine"],
-    "required_skills": ["Unreal Engine"],
-    "hints": ["It uses nodes and wires instead of text code."]
+    "answer": "Vertex processing",
+    "explanation": "Vertex processing applies transformations from object space to screen space.",
+    "tags": ["Game Development", "Graphics"],
+    "required_skills": ["3D Graphics"],
+    "hints": ["Coordinate transformation"]
   },
   {
     "_id": "q_gd_0004",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Game Physics",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is the primary role of a Rigidbody component in a game engine (Unity/Unreal)?",
+    "topic": "Physics",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of a physics engine in games?",
     "options": [
-      "To render the object's mesh.",
-      "To define the object's collision boundary.",
-      "To enable the object to be controlled by the physics engine (gravity, forces, torque).",
-      "To store game state variables."
+      "Render textures",
+      "Handle game logic",
+      "Simulate realistic motion and collisions",
+      "Manage sound effects"
     ],
-    "answer": "To enable the object to be controlled by the physics engine (gravity, forces, torque).",
-    "explanation": "The Rigidbody allows a GameObject to react to real-time physical forces and constraints simulated by the game engine.",
-    "tags": ["Game Physics", "Unity", "Unreal Engine"],
-    "required_skills": ["Unity", "Unreal Engine", "Game Physics"],
-    "hints": ["It gives objects mass and makes them 'physical'."]
+    "answer": "Simulate realistic motion and collisions",
+    "explanation": "Physics engines model forces, collisions, and movement for realism.",
+    "tags": ["Game Development", "Physics"],
+    "required_skills": ["Game Physics"],
+    "hints": ["Motion and collision"]
   },
   {
     "_id": "q_gd_0005",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unity Lifecycle",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "In Unity's MonoBehaviour lifecycle, which function is called once per frame for physics updates?",
+    "topic": "Game Loop",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary role of the game loop?",
     "options": [
-      "Update()",
-      "Start()",
-      "FixedUpdate()",
-      "LateUpdate()"
+      "Store game assets",
+      "Continuously update game state and render frames",
+      "Handle network communication only",
+      "Compile game code"
     ],
-    "answer": "FixedUpdate()",
-    "explanation": "`FixedUpdate()` is called at fixed time intervals (independent of frame rate) and should be used for all physics-related calculations, ensuring consistent simulation.",
-    "tags": ["Unity", "C#", "Game Physics"],
-    "required_skills": ["Unity", "C#", "Game Physics"],
-    "hints": ["Its name implies a fixed or consistent time step."]
+    "answer": "Continuously update game state and render frames",
+    "explanation": "The game loop drives updates, input handling, and rendering.",
+    "tags": ["Game Development", "Game Loop"],
+    "required_skills": ["Game Architecture"],
+    "hints": ["Update-render cycle"]
   },
   {
     "_id": "q_gd_0006",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "C++ Fundamentals",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "In C++, what is a pointer?",
+    "topic": "AI",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which technique is commonly used for enemy decision-making in games?",
     "options": [
-      "A constant value that cannot be changed.",
-      "A variable that stores the memory address of another variable.",
-      "A primitive data type like 'int' or 'float'.",
-      "A function that executes automatically."
+      "Bubble sort",
+      "Finite State Machines",
+      "Hash tables",
+      "Binary search"
     ],
-    "answer": "A variable that stores the memory address of another variable.",
-    "explanation": "Pointers are fundamental to C++ (and Unreal Engine development) for direct memory manipulation and efficient handling of large objects.",
-    "tags": ["C++", "Unreal Engine"],
-    "required_skills": ["C++", "Unreal Engine"],
-    "hints": ["It holds an address, not a value."]
+    "answer": "Finite State Machines",
+    "explanation": "FSMs model game AI behavior using defined states and transitions.",
+    "tags": ["Game Development", "Game AI"],
+    "required_skills": ["AI Programming"],
+    "hints": ["State-based behavior"]
   },
   {
     "_id": "q_gd_0007",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "3D Modeling",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 75,
-    "text": "What is the primary function of a UV Map in 3D modeling?",
+    "topic": "Animation",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What does skeletal animation enable?",
     "options": [
-      "To control the animation bone weights.",
-      "To define the mesh's collision shape.",
-      "To map a 2D texture onto the 3D surface of a mesh.",
-      "To calculate vertex normals."
+      "Static object rendering",
+      "Smooth character movement using bones",
+      "Texture compression",
+      "Audio synchronization"
     ],
-    "answer": "To map a 2D texture onto the 3D surface of a mesh.",
-    "explanation": "UV coordinates (U and V being the axes of the 2D map) tell the renderer how to wrap a 2D image (texture) around a 3D surface without distortion.",
-    "tags": ["3D Modeling"],
-    "required_skills": ["3D Modeling"],
-    "hints": ["It handles the unwrap and coordinates for textures."]
+    "answer": "Smooth character movement using bones",
+    "explanation": "Skeletal animation uses a bone structure to animate characters efficiently.",
+    "tags": ["Game Development", "Animation"],
+    "required_skills": ["Character Animation"],
+    "hints": ["Bone-based movement"]
   },
   {
     "_id": "q_gd_0008",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Shader Programming",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is the fundamental difference between a Vertex Shader and a Fragment (or Pixel) Shader?",
+    "topic": "Performance",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is frame rate optimization critical in games?",
     "options": [
-      "Vertex shaders run on the CPU; Fragment shaders run on the GPU.",
-      "Vertex shaders determine color; Fragment shaders determine position.",
-      "Vertex shaders process 3D vertex data (position/normals); Fragment shaders determine the final color of each pixel.",
-      "Fragment shaders are written in C++; Vertex shaders are written in C#."
+      "To increase file size",
+      "To reduce development cost",
+      "To ensure smooth gameplay and responsiveness",
+      "To improve network speed"
     ],
-    "answer": "Vertex shaders process 3D vertex data (position/normals); Fragment shaders determine the final color of each pixel.",
-    "explanation": "The Vertex Shader is the first stage, manipulating object geometry. The Fragment Shader (or Pixel Shader) is the final stage, calculating the output color for each pixel on the screen.",
-    "tags": ["Shader Programming"],
-    "required_skills": ["Shader Programming"],
-    "hints": ["One works with geometry points; the other works with screen colors."]
+    "answer": "To ensure smooth gameplay and responsiveness",
+    "explanation": "Higher and stable frame rates improve player experience.",
+    "tags": ["Game Development", "Performance"],
+    "required_skills": ["Optimization"],
+    "hints": ["Smooth gameplay"]
   },
   {
     "_id": "q_gd_0009",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unreal Engine C++",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "In Unreal Engine's C++, what macro is typically used to expose a variable to the Blueprint system?",
+    "topic": "Input Systems",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which input device provides six degrees of freedom?",
     "options": [
-      "GENERATED_BODY()",
-      "UFUNCTION()",
-      "UCLASS()",
-      "UPROPERTY()"
+      "Keyboard",
+      "Mouse",
+      "VR controller",
+      "Touch screen"
     ],
-    "answer": "UPROPERTY()",
-    "explanation": "The `UPROPERTY()` macro is used to decorate class member variables, allowing them to be accessible and editable within the Unreal Editor, including the Blueprint visual scripting system.",
-    "tags": ["Unreal Engine", "C++"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["It designates the variable as a property that the Editor can see."]
+    "answer": "VR controller",
+    "explanation": "VR controllers track position and rotation in 3D space.",
+    "tags": ["Game Development", "Input"],
+    "required_skills": ["Input Handling"],
+    "hints": ["3D movement"]
   },
   {
     "_id": "q_gd_0010",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unity Optimization",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "Why is caching a reference to `GetComponent<T>()` in the `Start()` or `Awake()` method a common optimization practice in Unity C#?",
+    "topic": "Audio",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of spatial audio in games?",
     "options": [
-      "To ensure the component is private.",
-      "Because `GetComponent<T>()` is a relatively expensive call that performs a search every time it's used.",
-      "To allow the component to be called from other scenes.",
-      "To use less memory."
+      "Reduce file size",
+      "Simulate directional sound",
+      "Improve graphics quality",
+      "Increase frame rate"
     ],
-    "answer": "Because `GetComponent<T>()` is a relatively expensive call that performs a search every time it's used.",
-    "explanation": "Calling `GetComponent<T>()` repeatedly in `Update()` can cause performance bottlenecks. Caching the result in a private variable during initialization avoids repeated lookups.",
-    "tags": ["Unity", "C#", "Optimization"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["This call involves traversing the GameObject's component list."]
+    "answer": "Simulate directional sound",
+    "explanation": "Spatial audio enhances immersion by positioning sound in 3D space.",
+    "tags": ["Game Development", "Audio"],
+    "required_skills": ["Game Audio"],
+    "hints": ["3D sound"]
   },
+
   {
     "_id": "q_gd_0011",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Game Physics",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is 'GJK' (Gilbert-Johnson-Keerthi) most commonly used for in a physics engine?",
+    "topic": "Networking",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is a major challenge in multiplayer game development?",
     "options": [
-      "Raycasting.",
-      "Collision detection between convex shapes.",
-      "Solving joint constraints.",
-      "Calculating fluid dynamics."
+      "Texture mapping",
+      "Network latency and synchronization",
+      "Audio mixing",
+      "Sprite animation"
     ],
-    "answer": "Collision detection between convex shapes.",
-    "explanation": "GJK is a highly efficient algorithm for determining the minimum distance between two convex sets, typically used to check if two convex colliders are currently intersecting.",
-    "tags": ["Game Physics"],
-    "required_skills": ["Game Physics"],
-    "hints": ["It's a foundational algorithm for finding contact points."]
+    "answer": "Network latency and synchronization",
+    "explanation": "Multiplayer games require consistent state across clients with minimal delay.",
+    "tags": ["Game Development", "Networking"],
+    "required_skills": ["Network Programming"],
+    "hints": ["Multiplayer sync"]
   },
   {
     "_id": "q_gd_0012",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "3D Modeling",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 120,
-    "text": "What is a normal map, and what is its primary use in rendering?",
+    "topic": "Level Design",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "What is the primary goal of level design?",
     "options": [
-      "A map that adjusts the mesh's geometric height.",
-      "A map that stores color data and texture details.",
-      "A map that stores surface normal vector data to simulate high-resolution geometric detail on a low-poly mesh.",
-      "A map that defines the object's transparency."
+      "Optimize shaders",
+      "Create engaging player experiences",
+      "Manage memory",
+      "Handle input devices"
     ],
-    "answer": "A map that stores surface normal vector data to simulate high-resolution geometric detail on a low-poly mesh.",
-    "explanation": "Normal maps use colored pixels to redirect light sources, giving the illusion of complex surface details (like bumps and scratches) without adding actual polygons.",
-    "tags": ["3D Modeling", "Shader Programming"],
-    "required_skills": ["3D Modeling", "Shader Programming"],
-    "hints": ["It uses RGB channels to encode XYZ directional information for light reflection."]
+    "answer": "Create engaging player experiences",
+    "explanation": "Level design shapes gameplay flow, challenge, and exploration.",
+    "tags": ["Game Development", "Level Design"],
+    "required_skills": ["Game Design"],
+    "hints": ["Player experience"]
   },
   {
     "_id": "q_gd_0013",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "C++ Fundamentals",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 105,
-    "text": "In C++, what is a 'Smart Pointer' and why are they preferred over raw pointers in modern development?",
+    "topic": "Assets",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which file format is commonly used for 3D models in games?",
     "options": [
-      "A pointer that can only point to functions; preferred for security.",
-      "A pointer that automatically manages the memory lifetime of the object it points to; preferred to prevent memory leaks.",
-      "A pointer used only in multi-threading; preferred for speed.",
-      "A pointer that is only available in the Unreal Engine API."
+      ".mp3",
+      ".png",
+      ".fbx",
+      ".txt"
     ],
-    "answer": "A pointer that automatically manages the memory lifetime of the object it points to; preferred to prevent memory leaks.",
-    "explanation": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`, or UE's `TSharedPtr`) use RAII (Resource Acquisition Is Initialization) to automatically release the memory when the pointer goes out of scope, eliminating memory leaks.",
-    "tags": ["C++"],
-    "required_skills": ["C++"],
-    "hints": ["They handle the `delete` operation for you."]
+    "answer": ".fbx",
+    "explanation": "FBX is widely used for exchanging 3D models and animations.",
+    "tags": ["Game Development", "Assets"],
+    "required_skills": ["3D Asset Pipeline"],
+    "hints": ["3D model format"]
   },
   {
     "_id": "q_gd_0014",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unity Scripting",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "In Unity C#, what is the use case for an `Interface` over an `Abstract Class` in game design patterns?",
+    "topic": "Scripting",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which language is primarily used for scripting in Unity?",
     "options": [
-      "Interfaces allow for multiple inheritance of functionality, while classes do not.",
-      "Interfaces are primarily for data storage; Abstract Classes are for behavior.",
-      "Interfaces must contain implemented methods; Abstract Classes cannot.",
-      "Interfaces require the use of the `virtual` keyword."
+      "Python",
+      "C#",
+      "C++",
+      "Java"
     ],
-    "answer": "Interfaces allow for multiple inheritance of functionality, while classes do not.",
-    "explanation": "A C# class can inherit from only one base class, but it can implement multiple interfaces. This is crucial for creating flexible components that can adopt different 'roles' (e.g., `IDamageable`, `IInteractable`).",
-    "tags": ["Unity", "C#", "Design Patterns"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["Think about implementing multiple contracts on a single component."]
+    "answer": "C#",
+    "explanation": "Unity uses C# for gameplay scripting and logic.",
+    "tags": ["Game Development", "Scripting"],
+    "required_skills": ["C#"],
+    "hints": ["Unity scripting"]
   },
   {
     "_id": "q_gd_0015",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unreal Engine Architecture",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Testing",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "Explain the relationship between an `AController` and an `APawn` in the Unreal Engine framework.",
+    "text": "What is playtesting primarily used for?",
     "options": [
-      "The `AController` is the physical body; the `APawn` defines the input logic.",
-      "The `APawn` is the physical body/representation in the world; the `AController` defines the 'brain' or behavior and input logic for that Pawn.",
-      "They are interchangeable terms for any movable object.",
-      "The `AController` is only for AI; the `APawn` is only for players."
+      "Code compilation",
+      "Bug fixing only",
+      "Evaluating gameplay and user experience",
+      "Optimizing shaders"
     ],
-    "answer": "The `APawn` is the physical body/representation in the world; the `AController` defines the 'brain' or behavior and input logic for that Pawn.",
-    "explanation": "This separation is key to UE design: Pawns handle world interaction (movement, collision), while Controllers (AController/APlayerController/AAIController) handle the intelligence, possessing the Pawn to control it.",
-    "tags": ["Unreal Engine", "C++", "Architecture"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["It's the separation of the 'mind' from the 'body'."]
+    "answer": "Evaluating gameplay and user experience",
+    "explanation": "Playtesting gathers feedback to improve balance and fun.",
+    "tags": ["Game Development", "Testing"],
+    "required_skills": ["Game QA"],
+    "hints": ["Player feedback"]
   },
   {
     "_id": "q_gd_0016",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Game Physics",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 150,
-    "text": "In a physics engine, why is the integration step (e.g., Verlet or Runge-Kutta) typically calculated at a fixed time step rather than in the main game loop's variable framerate?",
+    "topic": "Monetization",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Which monetization model is common in mobile games?",
     "options": [
-      "Fixed time steps use less CPU power.",
-      "Variable time steps introduce numerical instability and non-deterministic simulation due to different forces being applied at different rates.",
-      "Only the main rendering needs a fixed time step.",
-      "The fixed time step is required for all audio synchronization."
+      "Per-hour billing",
+      "In-app purchases",
+      "Hardware licensing",
+      "Subscription to engine"
     ],
-    "answer": "Variable time steps introduce numerical instability and non-deterministic simulation due to different forces being applied at different rates.",
-    "explanation": "Using a fixed time step (like 0.02 seconds) ensures that the physics simulation receives the same time delta regardless of the current frame rate, guaranteeing simulation consistency and determinism across different machines.",
-    "tags": ["Game Physics", "Optimization"],
-    "required_skills": ["Game Physics"],
-    "hints": ["It ensures that the simulation runs identically every time."]
+    "answer": "In-app purchases",
+    "explanation": "Mobile games often monetize through optional in-app purchases.",
+    "tags": ["Game Development", "Monetization"],
+    "required_skills": ["Game Economics"],
+    "hints": ["Microtransactions"]
   },
   {
     "_id": "q_gd_0017",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "3D Modeling/Optimization",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "What is 'Draw Call Batching' and why is it important for game performance?",
+    "topic": "UX",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
+    "estimated_time_sec": 180,
+    "text": "Why is user interface (UI) design critical in games?",
     "options": [
-      "Combining complex shader calculations into one file.",
-      "The process of combining multiple small mesh objects into a single larger draw call to reduce CPU overhead.",
-      "Optimizing the physics simulation for multiple rigidbodies.",
-      "Reducing the texture size to save VRAM."
+      "To increase code complexity",
+      "To ensure intuitive player interaction",
+      "To reduce asset size",
+      "To optimize network usage"
     ],
-    "answer": "The process of combining multiple small mesh objects into a single larger draw call to reduce CPU overhead.",
-    "explanation": "A draw call is a command sent from the CPU to the GPU. Combining multiple objects into one call significantly reduces the CPU's processing time spent preparing each call, improving overall framerate (CPU-bound optimization).",
-    "tags": ["Optimization", "3D Modeling"],
-    "required_skills": ["Unity", "Unreal Engine", "Optimization"],
-    "hints": ["It reduces communication overhead between the CPU and GPU."]
+    "answer": "To ensure intuitive player interaction",
+    "explanation": "Good UI design improves usability and player engagement.",
+    "tags": ["Game Development", "UI/UX"],
+    "required_skills": ["UI Design"],
+    "hints": ["Ease of use"]
   },
   {
     "_id": "q_gd_0018",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Shader Programming",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
+    "topic": "Memory Management",
+    "difficulty": 5,
+    "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "In PBR (Physically Based Rendering), what do the 'Albedo' and 'Metallic' maps typically represent?",
+    "text": "Why is memory management important in game development?",
     "options": [
-      "Albedo is ambient light; Metallic is diffuse light.",
-      "Albedo is the base color (without lighting/shadows); Metallic indicates how much the surface should behave like a metal or a dielectric.",
-      "Albedo defines geometry; Metallic defines texture tiling.",
-      "Albedo is the specular intensity; Metallic is the roughness."
+      "To increase loading times",
+      "To avoid crashes and performance issues",
+      "To simplify art design",
+      "To reduce player input"
     ],
-    "answer": "Albedo is the base color (without lighting/shadows); Metallic indicates how much the surface should behave like a metal or a dielectric.",
-    "explanation": "Albedo is the 'true' color. The Metallic map (usually grayscale) tells the shader whether to use the metallic reflection model (0=dielectric/non-metal, 1=metal).",
-    "tags": ["Shader Programming", "3D Modeling"],
-    "required_skills": ["Shader Programming", "3D Modeling"],
-    "hints": ["One is pure color; the other governs the reflection model."]
+    "answer": "To avoid crashes and performance issues",
+    "explanation": "Efficient memory usage ensures stability and performance.",
+    "tags": ["Game Development", "Memory"],
+    "required_skills": ["Performance Engineering"],
+    "hints": ["Avoid crashes"]
   },
   {
     "_id": "q_gd_0019",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unity/C# Data Structures",
+    "topic": "Build & Deployment",
     "difficulty": 5,
     "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "When implementing a high-performance game system in C#, why might you prefer `Array` or `NativeArray` over `List<T>` for critical, highly iterated data?",
+    "estimated_time_sec": 180,
+    "text": "What is the purpose of a game build process?",
     "options": [
-      "Arrays are easier to debug.",
-      "`List<T>` has better garbage collection.",
-      "`Array` and `NativeArray` offer contiguous memory layout, better cache locality, and `NativeArray` is suitable for the Unity DOTS/Jobs system.",
-      "Arrays automatically handle resizing and bounds checking."
+      "Write source code",
+      "Package assets and code into a runnable game",
+      "Design levels",
+      "Test network latency"
     ],
-    "answer": "`Array` and `NativeArray` offer contiguous memory layout, better cache locality, and `NativeArray` is suitable for the Unity DOTS/Jobs system.",
-    "explanation": "Arrays provide a contiguous block of memory, which the CPU can process faster due to better cache utilization. `NativeArray` extends this, allowing memory to be passed safely to Unity's Job System for multi-threaded processing.",
-    "tags": ["Unity", "C#", "Optimization"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["It relates to how memory is physically stored and accessed by the CPU cache."]
+    "answer": "Package assets and code into a runnable game",
+    "explanation": "Build processes compile code and bundle assets for distribution.",
+    "tags": ["Game Development", "Deployment"],
+    "required_skills": ["Build Systems"],
+    "hints": ["Executable creation"]
   },
   {
     "_id": "q_gd_0020",
     "question_type": "multiple-choice",
     "domain": "Game Development",
-    "topic": "Unreal Engine/C++ Memory",
+    "topic": "Future Trends",
     "difficulty": 5,
     "difficulty_label": "Expert",
     "estimated_time_sec": 180,
-    "text": "How does Unreal Engine's Garbage Collection system, paired with smart pointers like `TWeakObjectPtr`, handle references to `UObject` derived classes?",
+    "text": "Why is procedural content generation used in modern games?",
     "options": [
-      "`TWeakObjectPtr` maintains a strong reference, preventing GC.",
-      "The GC system destroys `UObjects` immediately when they go out of scope, regardless of pointers.",
-      "The GC system checks for unreferenced `UObjects` periodically; `TWeakObjectPtr` allows a temporary, non-owning reference that won't prevent the object from being collected.",
-      "Only C++ raw pointers are used for `UObjects`."
+      "To eliminate graphics",
+      "To reduce replay value",
+      "To create dynamic and varied game content",
+      "To increase hardware dependency"
     ],
-    "answer": "The GC system checks for unreferenced `UObjects` periodically; `TWeakObjectPtr` allows a temporary, non-owning reference that won't prevent the object from being collected.",
-    "explanation": "UE uses a deferred garbage collection process. `TWeakObjectPtr` and `TSoftObjectPtr` are crucial for breaking cyclical dependencies and preventing objects that are no longer actively used from blocking the collection process.",
-    "tags": ["Unreal Engine", "C++", "Optimization"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["The 'Weak' part of the pointer name is the key."]
+    "answer": "To create dynamic and varied game content",
+    "explanation": "Procedural generation increases replayability and content diversity.",
+    "tags": ["Game Development", "Procedural Generation"],
+    "required_skills": ["Algorithmic Content Generation"],
+    "hints": ["Dynamic content"]
   },
+
   {
     "_id": "q_gd_0021",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Shader Programming",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
+    "topic": "Game Development Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
     "estimated_time_sec": 240,
-    "text": "What is 'Screen-Space Ambient Occlusion (SSAO)' and what is its computational trade-off?",
-    "options": [
-      "A technique to calculate global illumination; Trade-off is high VRAM usage.",
-      "A technique to approximate global shadows based on scene depth and normals; Trade-off is high GPU fill rate cost and approximation artifacts.",
-      "A method for post-processing bloom effects; Trade-off is high CPU cost.",
-      "A simple fog effect; Trade-off is memory fragmentation."
+    "text": "Explain what game development is and describe the main stages involved in the game development lifecycle.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of game development",
+        "Pre-production, production, and post-production stages",
+        "Role of design, development, testing, and release",
+        "Importance of iteration"
+      ],
+      "example_scenarios": [
+        "Developing a mobile puzzle game from concept to release",
+        "Creating an indie PC game with a small team"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Process Explanation", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "A technique to approximate global shadows based on scene depth and normals; Trade-off is high GPU fill rate cost and approximation artifacts.",
-    "explanation": "SSAO calculates how much a point is occluded by nearby geometry by sampling the depth buffer, simulating soft shadowing where surfaces meet. It's a relatively cheap screen-space effect, but it's an approximation and is costly due to the many texture lookups required for the 'fill rate'.",
-    "tags": ["Shader Programming", "Optimization"],
-    "required_skills": ["Shader Programming"],
-    "hints": ["It uses the depth buffer to create fake shadows near corners and crevices."]
+    "tags": ["Game Development", "Game Lifecycle"],
+    "required_skills": ["Game Basics"],
+    "hints": [
+      "Think about how games are planned, built, and released",
+      "Consider the phases before and after coding"
+    ]
   },
   {
     "_id": "q_gd_0022",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Game Physics",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 180,
-    "text": "What does a Sequential Impulse Solver do in a physics engine, and what problem does it address?",
-    "options": [
-      "It calculates friction and restitution; Solves collision detection.",
-      "It resolves contact and joint constraints by applying impulses iteratively; Solves the problem of simultaneous constraint resolution (stability).",
-      "It manages the LOD levels of a mesh; Solves rendering performance.",
-      "It handles object destruction; Solves memory leaks."
+    "topic": "Game Engines",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain what a game engine is and discuss the core components of a typical game engine.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of a game engine",
+        "Rendering engine",
+        "Physics engine",
+        "Audio, scripting, and input systems"
+      ],
+      "example_scenarios": [
+        "Using Unity to build a 2D platformer",
+        "Using Unreal Engine for a 3D action game"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Understanding", "weight": 0.4 },
+      { "criterion": "Component Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "It resolves contact and joint constraints by applying impulses iteratively; Solves the problem of simultaneous constraint resolution (stability).",
-    "explanation": "Physics solvers like the Sequential Impulse Solver (used in Box2D/PhysX/Havok) iteratively calculate the required forces (impulses) to satisfy all constraints (e.g., preventing objects from overlapping or ensuring joints hold), which is essential for stable simulations.",
-    "tags": ["Game Physics"],
-    "required_skills": ["Game Physics"],
-    "hints": ["It's the iterative core logic for enforcing physical laws."]
+    "tags": ["Game Engine", "Unity", "Unreal"],
+    "required_skills": ["Game Engines"],
+    "hints": [
+      "Focus on tools that simplify game creation",
+      "Think about rendering, physics, and scripting"
+    ]
   },
   {
     "_id": "q_gd_0023",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Unity/C# Delegates",
-    "difficulty": 4,
-    "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "In C#, what is the difference between a `delegate` (or `event`) and using the static `Action`/`Func` types for event management?",
-    "options": [
-      "There is no functional difference; only syntax.",
-      "Delegates/Events enforce a decoupled, observer pattern where listeners can subscribe/unsubscribe; static actions are typically used for simpler, one-off callbacks.",
-      "Delegates/Events are slower and should be avoided for performance.",
-      "Only Delegates/Events can pass arguments."
+    "topic": "Game Design",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the concept of game mechanics and game dynamics with suitable examples.",
+    "expected_answer": {
+      "key_points": [
+        "Definition of game mechanics",
+        "Definition of game dynamics",
+        "Relationship between mechanics and player experience",
+        "Examples from popular games"
+      ],
+      "example_scenarios": [
+        "Jump and gravity mechanics in platform games",
+        "Health and stamina systems in RPGs"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Concept Explanation", "weight": 0.4 },
+      { "criterion": "Example Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "Delegates/Events enforce a decoupled, observer pattern where listeners can subscribe/unsubscribe; static actions are typically used for simpler, one-off callbacks.",
-    "explanation": "Events are strongly encouraged for game systems as they ensure loose coupling, meaning a class doesn't need to know which other classes are listening, which is crucial for scalability and maintainability.",
-    "tags": ["Unity", "C#", "Design Patterns"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["Think about the Observer Pattern (publisher/subscriber)."]
+    "tags": ["Game Design", "Mechanics"],
+    "required_skills": ["Game Design"],
+    "hints": [
+      "Think about rules and player interactions",
+      "Relate mechanics to player behavior"
+    ]
   },
   {
     "_id": "q_gd_0024",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "3D Modeling",
-    "difficulty": 2,
-    "difficulty_label": "Novice",
-    "estimated_time_sec": 60,
-    "text": "What is a 'LOD (Level of Detail)' system in 3D rendering?",
-    "options": [
-      "A system for lighting complex scenes.",
-      "A method for reducing polygon count on meshes that are far from the camera to improve performance.",
-      "A shader effect that simulates fog.",
-      "A technique for animating joints in a character model."
+    "topic": "Graphics and Rendering",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the rendering pipeline used in game graphics and its importance in real-time games.",
+    "expected_answer": {
+      "key_points": [
+        "Stages of the rendering pipeline",
+        "Role of shaders",
+        "Real-time rendering constraints",
+        "Performance considerations"
+      ],
+      "example_scenarios": [
+        "Rendering a 3D environment in a first-person shooter",
+        "Optimizing graphics for low-end devices"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Correctness", "weight": 0.3 },
+      { "criterion": "Detail", "weight": 0.3 }
     ],
-    "answer": "A method for reducing polygon count on meshes that are far from the camera to improve performance.",
-    "explanation": "LOD systems switch between different versions of a mesh (from high-poly to low-poly) based on distance, maintaining visual quality while significantly reducing GPU load.",
-    "tags": ["3D Modeling", "Optimization"],
-    "required_skills": ["3D Modeling", "Optimization"],
-    "hints": ["It's an optimization technique based on screen space size."]
+    "tags": ["Rendering", "Graphics"],
+    "required_skills": ["Computer Graphics"],
+    "hints": [
+      "Think about how objects appear on screen",
+      "Consider performance in real-time games"
+    ]
   },
   {
     "_id": "q_gd_0025",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Unreal Engine",
-    "difficulty": 1,
-    "difficulty_label": "Easy",
-    "estimated_time_sec": 30,
-    "text": "In Unreal Engine, what is the core class used to create a new playable character with physics and input capabilities?",
-    "options": [
-      "AActor",
-      "APawn",
-      "UObject",
-      "AController"
+    "topic": "Physics in Games",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the role of physics engines in games and how they improve realism.",
+    "expected_answer": {
+      "key_points": [
+        "Purpose of physics engines",
+        "Collision detection",
+        "Rigid body dynamics",
+        "Impact on gameplay realism"
+      ],
+      "example_scenarios": [
+        "Realistic car movement in racing games",
+        "Object collisions in action games"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Conceptual Understanding", "weight": 0.4 },
+      { "criterion": "Application Examples", "weight": 0.3 },
+      { "criterion": "Explanation Quality", "weight": 0.3 }
     ],
-    "answer": "APawn",
-    "explanation": "The `APawn` class is the base class for objects that can be possessed by a player or AI controller. Playable characters are typically derived from the `ACharacter` class, which is a specialized type of `APawn`.",
-    "tags": ["Unreal Engine", "C++"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["It's the base class for the physical in-game avatar."]
+    "tags": ["Physics Engine", "Game Physics"],
+    "required_skills": ["Game Physics"],
+    "hints": [
+      "Think about movement and collisions",
+      "Consider realism vs performance"
+    ]
   },
+
   {
     "_id": "q_gd_0026",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Unity Optimization",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "In Unity C#, why should developers avoid using the `new` keyword frequently inside the `Update()` loop?",
-    "options": [
-      "It prevents garbage collection.",
-      "It causes frequent memory allocation and deallocation, leading to high Garbage Collection (GC) overhead.",
-      "It is only used for structs, not classes.",
-      "It makes the code harder to read."
-    ],
-    "answer": "It causes frequent memory allocation and deallocation, leading to high Garbage Collection (GC) overhead.",
-    "explanation": "Creating new objects (especially collections or classes) inside loops called every frame generates 'garbage'. The GC must eventually clean this up, causing noticeable 'stutters' or 'jank' in the frame rate.",
-    "tags": ["Unity", "C#", "Optimization"],
-    "required_skills": ["Unity", "C#"],
-    "hints": ["It relates to temporary memory and the GC process."]
-  },
-  {
-    "_id": "q_gd_0027",
-    "question_type": "multiple-choice",
-    "domain": "Game Development",
-    "topic": "C++ Fundamentals",
+    "topic": "Artificial Intelligence in Games",
     "difficulty": 4,
     "difficulty_label": "Advanced",
-    "estimated_time_sec": 120,
-    "text": "What is the primary danger of a 'V-Table' or virtual function usage in C++ object-oriented game code, related to performance?",
-    "options": [
-      "It increases the binary size significantly.",
-      "It prevents the use of multithreading.",
-      "It introduces potential run-time overhead due to indirect function calls and can hinder compiler optimization and caching (cache misses).",
-      "It causes memory leaks."
+    "estimated_time_sec": 360,
+    "text": "Explain how artificial intelligence is used in games to control non-player characters (NPCs).",
+    "expected_answer": {
+      "key_points": [
+        "NPC behavior control",
+        "State machines",
+        "Pathfinding algorithms",
+        "Decision-making systems"
+      ],
+      "example_scenarios": [
+        "Enemy behavior in shooting games",
+        "NPC navigation in open-world games"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Insight", "weight": 0.4 },
+      { "criterion": "Use-case Explanation", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "It introduces potential run-time overhead due to indirect function calls and can hinder compiler optimization and caching (cache misses).",
-    "explanation": "Virtual function calls require an indirect lookup through the V-Table (Virtual Table) at runtime, preventing the compiler from inlining the function. This can lead to minor but significant performance hits when executed billions of times per frame.",
-    "tags": ["C++", "Optimization"],
-    "required_skills": ["C++"],
-    "hints": ["It's the cost of dynamic dispatch and polymorphism."]
+    "tags": ["Game AI", "NPC"],
+    "required_skills": ["AI in Games"],
+    "hints": [
+      "Think about how NPCs make decisions",
+      "Consider realism and challenge balance"
+    ]
   },
+
+  {
+    "_id": "q_gd_0027",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "Level Design",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the principles of good level design in video games.",
+    "expected_answer": {
+      "key_points": [
+        "Player guidance",
+        "Difficulty progression",
+        "Environmental storytelling",
+        "Replayability"
+      ],
+      "example_scenarios": [
+        "Designing levels for a platformer game",
+        "Creating open-world exploration zones"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Design Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Level Design"],
+    "required_skills": ["Game Design"],
+    "hints": [
+      "Think about player flow",
+      "Consider difficulty and engagement"
+    ]
+  },
+
   {
     "_id": "q_gd_0028",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Shader Programming",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 90,
-    "text": "What is 'Texture Sampling' in a shader, and what hardware unit performs it?",
-    "options": [
-      "A CPU function that reads data from the disk.",
-      "The process of reading color/data from a texture; performed by the Texture Mapping Unit (TMU) or Texture Sampler.",
-      "A function that calculates complex reflections.",
-      "A technique for reducing mesh vertices."
+    "topic": "Audio Design",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of sound and music in game development.",
+    "expected_answer": {
+      "key_points": [
+        "Role of sound effects",
+        "Background music impact",
+        "Player immersion",
+        "Feedback through audio cues"
+      ],
+      "example_scenarios": [
+        "Using sound cues for enemy alerts",
+        "Background music in adventure games"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Relevance", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
     ],
-    "answer": "The process of reading color/data from a texture; performed by the Texture Mapping Unit (TMU) or Texture Sampler.",
-    "explanation": "Texture sampling is the core function of a Fragment Shader where it uses UV coordinates to look up a pixel (texel) from a texture. This is specialized hardware-accelerated by the GPU's TMUs.",
-    "tags": ["Shader Programming"],
-    "required_skills": ["Shader Programming"],
-    "hints": ["It's the core lookup operation for applying textures."]
+    "tags": ["Game Audio"],
+    "required_skills": ["Game Design"],
+    "hints": [
+      "Think about immersion",
+      "Consider feedback to players"
+    ]
   },
+
   {
     "_id": "q_gd_0029",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "Unreal Engine C++",
-    "difficulty": 3,
-    "difficulty_label": "Intermediate",
-    "estimated_time_sec": 75,
-    "text": "What is the primary purpose of the `Tick()` function in an AActor class in Unreal Engine?",
-    "options": [
-      "To handle initialization of the actor.",
-      "To process physics updates at a fixed rate.",
-      "To execute game logic every frame.",
-      "To handle collision events."
+    "topic": "Multiplayer Games",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain the challenges involved in developing multiplayer online games.",
+    "expected_answer": {
+      "key_points": [
+        "Network latency",
+        "Synchronization",
+        "Cheat prevention",
+        "Scalability"
+      ],
+      "example_scenarios": [
+        "Online battle royale games",
+        "Real-time multiplayer racing games"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Challenges", "weight": 0.4 },
+      { "criterion": "Real-world Relevance", "weight": 0.3 },
+      { "criterion": "Depth", "weight": 0.3 }
     ],
-    "answer": "To execute game logic every frame.",
-    "explanation": "The `Tick()` function is the main update loop for an Actor, executed once per frame. It's used for continuous game logic that is dependent on the framerate.",
-    "tags": ["Unreal Engine", "C++"],
-    "required_skills": ["Unreal Engine", "C++"],
-    "hints": ["It’s the equivalent of Unity's `Update()`."]
+    "tags": ["Multiplayer", "Networking"],
+    "required_skills": ["Networking Basics"],
+    "hints": [
+      "Think about real-time communication",
+      "Consider fairness and performance"
+    ]
   },
+
   {
     "_id": "q_gd_0030",
-    "question_type": "multiple-choice",
+    "question_type": "subjective",
     "domain": "Game Development",
-    "topic": "C# Fundamentals",
-    "difficulty": 5,
-    "difficulty_label": "Expert",
-    "estimated_time_sec": 210,
-    "text": "In C#, what is the difference in memory allocation between a `struct` (value type) and a `class` (reference type)?",
-    "options": [
-      "`struct` is always on the heap; `class` is always on the stack.",
-      "`struct` is typically allocated on the stack or inline within its containing type; `class` is allocated on the managed heap.",
-      "Only `class` can be passed to functions; `struct` cannot.",
-      "The memory allocation is identical for both."
+    "topic": "Game Optimization",
+    "difficulty": 4,
+    "difficulty_label": "Advanced",
+    "estimated_time_sec": 360,
+    "text": "Explain common game optimization techniques used to improve performance.",
+    "expected_answer": {
+      "key_points": [
+        "Reducing draw calls",
+        "Level of detail (LOD)",
+        "Memory management",
+        "Frame rate optimization"
+      ],
+      "example_scenarios": [
+        "Optimizing games for mobile devices",
+        "Improving FPS in open-world games"
+      ],
+      "minimum_word_count": 180
+    },
+    "evaluation_criteria": [
+      { "criterion": "Technical Depth", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.3 }
     ],
-    "answer": "`struct` is typically allocated on the stack or inline within its containing type; `class` is allocated on the managed heap.",
-    "explanation": "Value types (`struct`) avoid the overhead of heap allocation and garbage collection for small data. Reference types (`class`) are allocated on the heap, requiring garbage collection when they are no longer referenced, incurring performance cost.",
-    "tags": ["C#", "Optimization"],
+    "tags": ["Optimization"],
+    "required_skills": ["Performance Optimization"],
+    "hints": [
+      "Think about CPU and GPU limits",
+      "Consider player experience"
+    ]
+  },
+
+  {
+    "_id": "q_gd_0031",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "Testing in Games",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the role of testing and debugging in game development.",
+    "expected_answer": {
+      "key_points": [
+        "Bug detection",
+        "Gameplay balance testing",
+        "Performance testing",
+        "User experience testing"
+      ],
+      "example_scenarios": [
+        "Playtesting before game release",
+        "Fixing collision bugs"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Process Understanding", "weight": 0.4 },
+      { "criterion": "Practical Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Game Testing"],
+    "required_skills": ["Debugging"],
+    "hints": [
+      "Think about quality assurance",
+      "Consider player feedback"
+    ]
+  },
+
+  {
+    "_id": "q_gd_0032",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "Cross-Platform Games",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain the challenges of developing cross-platform games.",
+    "expected_answer": {
+      "key_points": [
+        "Hardware differences",
+        "Input handling",
+        "Performance optimization",
+        "Platform-specific constraints"
+      ],
+      "example_scenarios": [
+        "Releasing a game on PC and mobile",
+        "Console and PC cross-play games"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Challenge Identification", "weight": 0.4 },
+      { "criterion": "Practical Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Cross Platform"],
+    "required_skills": ["Game Development"],
+    "hints": [
+      "Think about different devices",
+      "Consider performance differences"
+    ]
+  },
+
+  {
+    "_id": "q_gd_0033",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "User Interface",
+    "difficulty": 2,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Explain the importance of user interface (UI) design in games.",
+    "expected_answer": {
+      "key_points": [
+        "Player interaction",
+        "Clarity and accessibility",
+        "HUD design",
+        "User experience"
+      ],
+      "example_scenarios": [
+        "Designing HUD for action games",
+        "Menu systems in mobile games"
+      ],
+      "minimum_word_count": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Game UI"],
+    "required_skills": ["UI Design"],
+    "hints": [
+      "Think about player comfort",
+      "Consider usability"
+    ]
+  },
+
+  {
+    "_id": "q_gd_0034",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "Game Monetization",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Explain different monetization strategies used in modern games.",
+    "expected_answer": {
+      "key_points": [
+        "In-app purchases",
+        "Advertisements",
+        "Subscription models",
+        "Premium pricing"
+      ],
+      "example_scenarios": [
+        "Free-to-play mobile games",
+        "Subscription-based online games"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Business Understanding", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Monetization"],
+    "required_skills": ["Game Business"],
+    "hints": [
+      "Think about revenue models",
+      "Consider player fairness"
+    ]
+  },
+
+  {
+    "_id": "q_gd_0035",
+    "question_type": "subjective",
+    "domain": "Game Development",
+    "topic": "Future of Games",
+    "difficulty": 3,
+    "difficulty_label": "Intermediate",
+    "estimated_time_sec": 300,
+    "text": "Discuss emerging trends in game development and their impact on the gaming industry.",
+    "expected_answer": {
+      "key_points": [
+        "Cloud gaming",
+        "Virtual and augmented reality",
+        "Procedural content",
+        "Cross-platform ecosystems"
+      ],
+      "example_scenarios": [
+        "Cloud-based game streaming services",
+        "VR-based immersive games"
+      ],
+      "minimum_word_count": 150
+    },
+    "evaluation_criteria": [
+      { "criterion": "Trend Awareness", "weight": 0.4 },
+      { "criterion": "Industry Insight", "weight": 0.3 },
+      { "criterion": "Clarity", "weight": 0.3 }
+    ],
+    "tags": ["Game Trends"],
+    "required_skills": ["Game Development"],
+    "hints": [
+      "Think about technology evolution",
+      "Consider player experience changes"
+    ]
+  },
+  
+  {
+    "_id": "q_game_0036",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Fundamentals",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is game development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Process of creating games",
+        "Involves design, programming, and art",
+        "Games for different platforms"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Game Basics"],
+    "required_skills": ["Programming Basics"],
+    "hints": ["Making video games"]
+  },
+  {
+    "_id": "q_game_0037",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Game Genres",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What are different types of game genres?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Action",
+        "Adventure",
+        "Puzzle or RPG"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Genres"],
+    "required_skills": ["Game Knowledge"],
+    "hints": ["Types of games"]
+  },
+  {
+    "_id": "q_game_0038",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Game Engines",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a game engine?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Software framework for games",
+        "Handles graphics and physics",
+        "Speeds up development"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Game Engine"],
+    "required_skills": ["Unity / Unreal Basics"],
+    "hints": ["Unity, Unreal"]
+  },
+  {
+    "_id": "q_game_0039",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Unity",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is Unity popular for game development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Cross-platform support",
+        "Easy to learn",
+        "Large community"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Unity"],
     "required_skills": ["C#"],
-    "hints": ["It's about where the memory is reserved: stack versus heap."]
+    "hints": ["Beginner-friendly engine"]
+  },
+  {
+    "_id": "q_game_0040",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Game Design",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is game design?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Rules and mechanics",
+        "Gameplay experience",
+        "Player interaction"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Game Design"],
+    "required_skills": ["Creativity"],
+    "hints": ["How the game works"]
+  },
+  {
+    "_id": "q_game_0041",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Game Loop",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is a game loop?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Continuous execution cycle",
+        "Handles input and updates",
+        "Renders frames"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Game Loop"],
+    "required_skills": ["Programming"],
+    "hints": ["Update and render cycle"]
+  },
+  {
+    "_id": "q_game_0042",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Graphics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What role do graphics play in games?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Visual appearance",
+        "Improves player experience",
+        "2D and 3D graphics"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Graphics"],
+    "required_skills": ["Graphics Basics"],
+    "hints": ["Visuals"]
+  },
+  {
+    "_id": "q_game_0043",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Physics",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is game physics?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Simulates real-world behavior",
+        "Movement and collisions",
+        "Gravity and forces"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Physics"],
+    "required_skills": ["Math Basics"],
+    "hints": ["Movement and collision"]
+  },
+  {
+    "_id": "q_game_0044",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Audio",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is audio important in games?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Enhances immersion",
+        "Provides feedback",
+        "Background music and effects"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Audio"],
+    "required_skills": ["Audio Basics"],
+    "hints": ["Sound effects"]
+  },
+  {
+    "_id": "q_game_0045",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How is AI used in games?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Enemy behavior",
+        "NPC decision making",
+        "Pathfinding"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Game AI"],
+    "required_skills": ["Logic"],
+    "hints": ["NPC behavior"]
+  },
+  {
+    "_id": "q_game_0046",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Testing",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "Why is testing important in game development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Finds bugs",
+        "Improves user experience",
+        "Ensures game stability"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Testing"],
+    "required_skills": ["Debugging"],
+    "hints": ["Bug fixing"]
+  },
+  {
+    "_id": "q_game_0047",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Platforms",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What platforms can games be developed for?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "PC",
+        "Mobile",
+        "Consoles"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Platforms"],
+    "required_skills": ["Game Basics"],
+    "hints": ["PC, mobile, console"]
+  },
+  {
+    "_id": "q_game_0048",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Optimization",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What is game optimization?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Improving performance",
+        "Reducing lag",
+        "Efficient resource usage"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Optimization"],
+    "required_skills": ["Performance Basics"],
+    "hints": ["Smooth gameplay"]
+  },
+  {
+    "_id": "q_game_0049",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Careers",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "What career roles exist in game development?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "Game developer",
+        "Game designer",
+        "Game artist"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Careers"],
+    "required_skills": ["Game Basics"],
+    "hints": ["Job roles"]
+  },
+  {
+    "_id": "q_game_0050",
+    "question_type": "voice",
+    "domain": "Game Development",
+    "topic": "Future Trends",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 120,
+    "text": "How do you see game development evolving in the future?",
+    "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
+    "expected_answer": {
+      "key_concepts": [
+        "AR and VR games",
+        "More realistic graphics",
+        "Online and cloud gaming"
+      ],
+      "minimum_duration_sec": 45,
+      "maximum_duration_sec": 120
+    },
+    "evaluation_criteria": [
+      { "criterion": "Clarity", "weight": 0.3 },
+      { "criterion": "Completeness", "weight": 0.4 },
+      { "criterion": "Examples", "weight": 0.3 }
+    ],
+    "transcription_required": true,
+    "tags": ["Future"],
+    "required_skills": ["Game Basics"],
+    "hints": ["Next-gen gaming"]
+  },
+   {
+    "_id": "q_game_0051",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Game Basics",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check whether a game character is alive based on health value.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_alive(health):\n    pass",
+      "function_signature": "is_alive(health: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return health > 0",
+      "key_concepts": ["Health system", "Game state"]
+    },
+    "test_cases": [
+      {
+        "input": "10",
+        "expected_output": "True",
+        "description": "Character alive"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Alive status correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero health" }
+    ],
+    "tags": ["Game Development", "Logic"],
+    "required_skills": ["Python"],
+    "hints": ["Health > 0 means alive"]
+  },
+
+  {
+    "_id": "q_game_0052",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Scoring",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to update player score after gaining points.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def update_score(score, points):\n    pass",
+      "function_signature": "update_score(score: int, points: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return score + points",
+      "key_concepts": ["Score system", "Game progression"]
+    },
+    "test_cases": [
+      {
+        "input": "50, 10",
+        "expected_output": "60",
+        "description": "Score updated"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Score updated correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero points" }
+    ],
+    "tags": ["Game Development", "Scoring"],
+    "required_skills": ["Python"],
+    "hints": ["Add points to score"]
+  },
+
+  {
+    "_id": "q_game_0053",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Movement",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to move a character to the right by a given distance.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def move_right(x, distance):\n    pass",
+      "function_signature": "move_right(x: int, distance: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return x + distance",
+      "key_concepts": ["2D movement", "Position update"]
+    },
+    "test_cases": [
+      {
+        "input": "5, 3",
+        "expected_output": "8",
+        "description": "Move right"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Position updated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero distance" }
+    ],
+    "tags": ["Game Development", "Movement"],
+    "required_skills": ["Python"],
+    "hints": ["Add distance to x"]
+  },
+
+  {
+    "_id": "q_game_0054",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Collision Detection",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to detect collision between two objects at the same position.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_collision(pos1, pos2):\n    pass",
+      "function_signature": "is_collision(pos1: int, pos2: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return pos1 == pos2",
+      "key_concepts": ["Collision detection", "Game physics"]
+    },
+    "test_cases": [
+      {
+        "input": "10, 10",
+        "expected_output": "True",
+        "description": "Collision occurred"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Collision detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles no collision" }
+    ],
+    "tags": ["Game Development", "Collision"],
+    "required_skills": ["Python"],
+    "hints": ["Same position means collision"]
+  },
+
+  {
+    "_id": "q_game_0055",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Lives System",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to decrease player lives after losing a life.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def lose_life(lives):\n    pass",
+      "function_signature": "lose_life(lives: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return lives - 1 if lives > 0 else 0",
+      "key_concepts": ["Lives system", "Game over logic"]
+    },
+    "test_cases": [
+      {
+        "input": "3",
+        "expected_output": "2",
+        "description": "Life lost"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Lives reduced correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe decrement" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero lives" }
+    ],
+    "tags": ["Game Development", "Lives"],
+    "required_skills": ["Python"],
+    "hints": ["Decrease lives by 1"]
+  },
+
+  {
+    "_id": "q_game_0056",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Game Levels",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to advance to the next level.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def next_level(level):\n    pass",
+      "function_signature": "next_level(level: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return level + 1",
+      "key_concepts": ["Levels", "Progression"]
+    },
+    "test_cases": [
+      {
+        "input": "4",
+        "expected_output": "5",
+        "description": "Level up"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Level incremented" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles first level" }
+    ],
+    "tags": ["Game Development", "Levels"],
+    "required_skills": ["Python"],
+    "hints": ["Add 1 to level"]
+  },
+
+  {
+    "_id": "q_game_0057",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Enemy AI",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to decide if enemy should attack based on distance.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def enemy_attack(distance):\n    pass",
+      "function_signature": "enemy_attack(distance: float) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return distance < 5",
+      "key_concepts": ["Enemy AI", "Decision making"]
+    },
+    "test_cases": [
+      {
+        "input": "3",
+        "expected_output": "True",
+        "description": "Enemy attacks"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Attack logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles boundary distance" }
+    ],
+    "tags": ["Game Development", "AI"],
+    "required_skills": ["Python"],
+    "hints": ["Attack if close"]
+  },
+
+  {
+    "_id": "q_game_0058",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Power-Ups",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to apply a power-up that doubles the player score.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def apply_powerup(score):\n    pass",
+      "function_signature": "apply_powerup(score: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return score * 2",
+      "key_concepts": ["Power-ups", "Game mechanics"]
+    },
+    "test_cases": [
+      {
+        "input": "20",
+        "expected_output": "40",
+        "description": "Power-up applied"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Score doubled" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple arithmetic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero score" }
+    ],
+    "tags": ["Game Development", "PowerUps"],
+    "required_skills": ["Python"],
+    "hints": ["Multiply score by 2"]
+  },
+
+  {
+    "_id": "q_game_0059",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Timer",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to decrease remaining game time.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def reduce_time(time_left, seconds):\n    pass",
+      "function_signature": "reduce_time(time_left: int, seconds: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return max(time_left - seconds, 0)",
+      "key_concepts": ["Game timer", "Time management"]
+    },
+    "test_cases": [
+      {
+        "input": "60, 10",
+        "expected_output": "50",
+        "description": "Time reduced"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Time updated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Safe subtraction" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Prevents negative time" }
+    ],
+    "tags": ["Game Development", "Timer"],
+    "required_skills": ["Python"],
+    "hints": ["Do not allow negative time"]
+  },
+
+  {
+    "_id": "q_game_0060",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Game Over",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to determine if the game is over.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def is_game_over(lives, time_left):\n    pass",
+      "function_signature": "is_game_over(lives: int, time_left: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return lives <= 0 or time_left <= 0",
+      "key_concepts": ["Game over logic", "End conditions"]
+    },
+    "test_cases": [
+      {
+        "input": "0, 30",
+        "expected_output": "True",
+        "description": "No lives"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Game over detected" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear logic" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both conditions" }
+    ],
+    "tags": ["Game Development", "GameOver"],
+    "required_skills": ["Python"],
+    "hints": ["Check lives or time"]
+  },
+
+  {
+    "_id": "q_game_0061",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Spawning",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to spawn an enemy at a given position.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def spawn_enemy(position):\n    pass",
+      "function_signature": "spawn_enemy(position: int) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"enemy_position\": position}",
+      "key_concepts": ["Spawning", "Game objects"]
+    },
+    "test_cases": [
+      {
+        "input": "15",
+        "expected_output": "{\"enemy_position\":15}",
+        "description": "Enemy spawned"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Enemy spawned correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple structure" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles any position" }
+    ],
+    "tags": ["Game Development", "Spawning"],
+    "required_skills": ["Python"],
+    "hints": ["Return a dictionary"]
+  },
+
+  {
+    "_id": "q_game_0062",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Animation",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to advance animation frame index.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def next_frame(frame, total):\n    pass",
+      "function_signature": "next_frame(frame: int, total: int) -> int"
+    },
+    "expected_answer": {
+      "solution": "return (frame + 1) % total",
+      "key_concepts": ["Animation", "Frame cycling"]
+    },
+    "test_cases": [
+      {
+        "input": "2, 5",
+        "expected_output": "3",
+        "description": "Next frame"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Frame updated" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses modulo" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Loops correctly" }
+    ],
+    "tags": ["Game Development", "Animation"],
+    "required_skills": ["Python"],
+    "hints": ["Use modulo for looping"]
+  },
+
+  {
+    "_id": "q_game_0063",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Sound",
+    "difficulty": 1,
+    "difficulty_label": "Easy",
+    "estimated_time_sec": 240,
+    "text": "Write a function to check if sound should play based on settings.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def play_sound(enabled):\n    pass",
+      "function_signature": "play_sound(enabled: bool) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return enabled",
+      "key_concepts": ["Sound", "Game settings"]
+    },
+    "test_cases": [
+      {
+        "input": "True",
+        "expected_output": "True",
+        "description": "Sound enabled"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Sound logic correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles disabled sound" }
+    ],
+    "tags": ["Game Development", "Audio"],
+    "required_skills": ["Python"],
+    "hints": ["Return the setting"]
+  },
+
+  {
+    "_id": "q_game_0064",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Save System",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to save player progress.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def save_progress(level, score):\n    pass",
+      "function_signature": "save_progress(level: int, score: int) -> dict"
+    },
+    "expected_answer": {
+      "solution": "return {\"level\": level, \"score\": score}",
+      "key_concepts": ["Save system", "Persistence"]
+    },
+    "test_cases": [
+      {
+        "input": "3, 1200",
+        "expected_output": "{\"level\":3,\"score\":1200}",
+        "description": "Progress saved"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Progress saved correctly" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear structure" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles zero score" }
+    ],
+    "tags": ["Game Development", "SaveSystem"],
+    "required_skills": ["Python"],
+    "hints": ["Store values in dict"]
+  },
+
+  {
+    "_id": "q_game_0065",
+    "question_type": "coding",
+    "domain": "Game Development",
+    "topic": "Win Condition",
+    "difficulty": 2,
+    "difficulty_label": "Novice",
+    "estimated_time_sec": 300,
+    "text": "Write a function to determine if player has won the game.",
+    "coding_instructions": {
+      "language": "python",
+      "allowed_libraries": [],
+      "starter_code": "def has_won(score, target):\n    pass",
+      "function_signature": "has_won(score: int, target: int) -> bool"
+    },
+    "expected_answer": {
+      "solution": "return score >= target",
+      "key_concepts": ["Win condition", "Game objectives"]
+    },
+    "test_cases": [
+      {
+        "input": "100, 100",
+        "expected_output": "True",
+        "description": "Target reached"
+      }
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Correctness", "weight": 0.5, "description": "Win condition correct" },
+      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear comparison" },
+      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles higher score" }
+    ],
+    "tags": ["Game Development", "WinCondition"],
+    "required_skills": ["Python"],
+    "hints": ["Score >= target"]
   }
 ]
