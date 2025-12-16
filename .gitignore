@@ -4,7 +4,11 @@ venv/
 tmp/
 
 python_models/fine_tune/skill_ner_model
-python_models/fine_tune/__pycache__/extractdata_resume.cpython-312.pyc
+python_models/fine_tune/__pycache__/
 python_models/evaluation/__pycache__/
 python_models/question_recomendation/__pycache__/
 **/__pycache__/
+python_models/fine_tune/elaborated_skill_train_data.json
+python_models/setup/artifacts/
+python_models/setup/data/
+python_models/setup/models

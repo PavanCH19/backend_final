@@ -392,39 +392,54 @@ def save_pipeline_artifacts(model_classifier, scaler, vector_builder, skill_voca
 # ============================================================================
 
 def run_prediction_pipeline():
-    """Load saved artifacts and run predictions on sample resumes"""
-    print("=== Step 8: Prediction Pipeline ===\n")
-    
     from src.prediction import (
-        get_required_artifact_files, 
-        check_required_files, 
-        load_classification_pipeline, 
-        get_sample_resumes
+        get_sample_resumes,
+        get_all_expected_domains,
+        extract_predicted_domain,
+        main
     )
-    
-    # Check required files
-    required_files = get_required_artifact_files()
-    check_required_files(required_files)
-    
-    # Load pipeline
-    classification_pipeline = load_classification_pipeline()
-    print("✓ Pipeline loaded from saved artifacts")
-    
-    # Get sample resumes
+
     sample_resumes = get_sample_resumes()
-    
-    # Classify resumes
-    print(f"\nGenerating JSON outputs for {len(sample_resumes)} resumes...")
-    results = classification_pipeline.batch_classify(
-        sample_resumes, 
-        output_file='data/sample_json_outputs.json'
-    )
-    
-    # Display example output
-    print(f"\nExample output:\n{json.dumps(results[0], indent=2)}")
-    print("\n✓ Step 8 Complete - Pipeline ready for production use\n")
-    
-    return classification_pipeline, results
+    expected_domains = get_all_expected_domains()
+
+    detected_domains = set()
+    failed_resumes = []
+
+    for i, resume in enumerate(sample_resumes):
+        print(f"\n--- Classifying Resume {i+1}/{len(sample_resumes)} ---")
+
+        try:
+            result = main(resume)
+            print(result)
+
+            predicted_domain = extract_predicted_domain(result)
+
+            if predicted_domain:
+                detected_domains.add(predicted_domain)
+            else:
+                failed_resumes.append(resume.get("id"))
+
+        except Exception as e:
+            print(f"❌ Error for resume {resume.get('id')}: {e}")
+            failed_resumes.append(resume.get("id"))
+
+    # ---------------- SUMMARY ----------------
+    print("\n================ SUMMARY ================")
+
+    print(f"Expected Domains ({len(expected_domains)}): {expected_domains}")
+    print(f"Detected Domains ({len(detected_domains)}): {detected_domains}")
+
+    missing_domains = expected_domains - detected_domains
+
+    if missing_domains:
+        print(f"❌ Missing Domains: {missing_domains}")
+    else:
+        print("🎉 All domains detected!")
+
+    if failed_resumes:
+        print(f"⚠ Failed resumes: {failed_resumes}")
+    else:
+        print("✅ All resumes processed successfully")
 
 
 # ============================================================================
@@ -468,13 +483,13 @@ def main():
     )
     
     # Step 8: Run Predictions
-    classification_pipeline, results = run_prediction_pipeline()
+    run_prediction_pipeline()
     
     print("\n" + "="*70)
     print("PIPELINE EXECUTION COMPLETE")
     print("="*70 + "\n")
     
-    return classification_pipeline, results
+    return None
 
 
 # ============================================================================
@@ -482,4 +497,5 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    classification_pipeline, results = main()
+    # classification_pipeline, results = main()
+    main()
