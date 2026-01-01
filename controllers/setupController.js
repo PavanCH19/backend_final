@@ -589,6 +589,44 @@ const classifyResume = async (resumeData) => {
 // ============================================
 // MOCK DOMAIN QUESTIONS
 // ============================================
+// const mock_domain_questions = async (userData) => {
+//   try {
+//     if (!userData || Object.keys(userData).length === 0) {
+//       return {
+//         success: false,
+//         status: 400,
+//         message: "No user data provided",
+//         data: null
+//       };
+//     }
+
+//     const result = await executePythonModel(
+//       MODEL_CONFIGS.mock_domain_question_recomendataion,
+//       "main",
+//       userData,
+//       60000
+//     );
+
+//     return {
+//       success: true,
+//       status: 200,
+//       message: "Mock questions generated successfully",
+//       data: result
+//     };
+//   } catch (error) {
+//     console.error("Mock question error:", error);
+//     return {
+//       success: false,
+//       status: 500,
+//       message: "Mock question generation error",
+//       error: error.message,
+//       data: null
+//     };
+//   }
+// };
+
+const crypto = require("crypto");
+
 const mock_domain_questions = async (userData) => {
   try {
     if (!userData || Object.keys(userData).length === 0) {
@@ -600,10 +638,15 @@ const mock_domain_questions = async (userData) => {
       };
     }
 
+    const payload = {
+      ...userData,
+      session_id: crypto.randomUUID() // 🔑 critical
+    };
+
     const result = await executePythonModel(
       MODEL_CONFIGS.mock_domain_question_recomendataion,
       "main",
-      userData,
+      payload,
       60000
     );
 

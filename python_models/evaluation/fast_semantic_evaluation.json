@@ -1,0 +1,187 @@
+{
+  "summary": {
+    "total_questions": 2,
+    "total_submissions": 2,
+    "answered": 2,
+    "average_score": 54.5,
+    "grade_distribution": {
+      "C": 2
+    }
+  },
+  "detailed_results": [
+    {
+      "question_id": "q_ai_0031",
+      "question_text": "Explain the concept of transfer learning in deep learning. Describe how it works and provide two real-world scenarios where it would be beneficial.",
+      "score": 52.3,
+      "grade": "C",
+      "performance_summary": {
+        "key_concepts": "3/6 covered (50.0%)",
+        "examples": "1/2 provided",
+        "word_count": "82/150 words",
+        "criteria_score": "68.2%"
+      },
+      "detailed_feedback": {
+        "overall_assessment": "Your answer needs significant improvement.",
+        "strengths": [
+          "\u2713 Strong coverage of key concepts (3/6)"
+        ],
+        "areas_for_improvement": [
+          {
+            "area": "Missing Key Concepts",
+            "count": 3,
+            "details": [
+              {
+                "point": "Common approach: freeze early layers, fine-tune later layers",
+                "similarity": 0.32,
+                "suggestion": "Include this concept explicitly"
+              },
+              {
+                "point": "Benefits include reduced training time and improved performance with limited data",
+                "similarity": 0.29,
+                "suggestion": "Include this concept explicitly"
+              },
+              {
+                "point": "Using BERT for domain-specific text classification tasks",
+                "similarity": 0.15,
+                "suggestion": "Include this concept explicitly"
+              }
+            ]
+          }
+        ],
+        "what_was_covered": [
+          {
+            "point": "Transfer learning involves using a pre-trained model on a new, related task",
+            "similarity": 0.83
+          },
+          {
+            "point": "The model has learned features from a large dataset that can be reused",
+            "similarity": 0.49
+          },
+          {
+            "point": "Using ImageNet pre-trained models for medical image classification",
+            "similarity": 0.48
+          }
+        ],
+        "what_to_add": {
+          "missing_concepts": [
+            {
+              "point": "Common approach: freeze early layers, fine-tune later layers",
+              "suggestion": "Add this concept"
+            },
+            {
+              "point": "Benefits include reduced training time and improved performance with limited data",
+              "suggestion": "Add this concept"
+            },
+            {
+              "point": "Using BERT for domain-specific text classification tasks",
+              "suggestion": "Add this concept"
+            }
+          ]
+        }
+      },
+      "criteria_performance": [
+        {
+          "criterion": "Conceptual Understanding",
+          "score": 64.6,
+          "weight": 0.4,
+          "weighted_score": 25.8
+        },
+        {
+          "criterion": "Real-world Application",
+          "score": 71.0,
+          "weight": 0.3,
+          "weighted_score": 21.3
+        },
+        {
+          "criterion": "Technical Depth",
+          "score": 70.5,
+          "weight": 0.3,
+          "weighted_score": 21.1
+        }
+      ]
+    },
+    {
+      "question_id": "q_ai_0033",
+      "question_text": "Explain in your own words what overfitting is and how you would detect it in a machine learning model.",
+      "score": 56.7,
+      "grade": "C",
+      "performance_summary": {
+        "key_concepts": "1/4 covered (25.0%)",
+        "examples": "0/0 provided",
+        "word_count": "29/100 words",
+        "criteria_score": "78.3%"
+      },
+      "detailed_feedback": {
+        "overall_assessment": "Your answer needs significant improvement.",
+        "strengths": [
+          "\u2713 Strong coverage of key concepts (1/4)"
+        ],
+        "areas_for_improvement": [
+          {
+            "area": "Missing Key Concepts",
+            "count": 3,
+            "details": [
+              {
+                "point": "Model performs well on training data but poorly on unseen data",
+                "similarity": 0.32,
+                "suggestion": "Include this concept explicitly"
+              },
+              {
+                "point": "Detection: gap between training and validation performance",
+                "similarity": 0.33,
+                "suggestion": "Include this concept explicitly"
+              },
+              {
+                "point": "Solutions: regularization, more data, simpler model",
+                "similarity": 0.23,
+                "suggestion": "Include this concept explicitly"
+              }
+            ]
+          }
+        ],
+        "what_was_covered": [
+          {
+            "point": "Model memorizes rather than generalizes patterns",
+            "similarity": 0.36
+          }
+        ],
+        "what_to_add": {
+          "missing_concepts": [
+            {
+              "point": "Model performs well on training data but poorly on unseen data",
+              "suggestion": "Add this concept"
+            },
+            {
+              "point": "Detection: gap between training and validation performance",
+              "suggestion": "Add this concept"
+            },
+            {
+              "point": "Solutions: regularization, more data, simpler model",
+              "suggestion": "Add this concept"
+            }
+          ]
+        }
+      },
+      "criteria_performance": [
+        {
+          "criterion": "Clarity",
+          "score": 78.1,
+          "weight": 0.3,
+          "weighted_score": 23.4
+        },
+        {
+          "criterion": "Completeness",
+          "score": 75.9,
+          "weight": 0.4,
+          "weighted_score": 30.3
+        },
+        {
+          "criterion": "Examples",
+          "score": 82.0,
+          "weight": 0.3,
+          "weighted_score": 24.6
+        }
+      ]
+    }
+  ]
+}
