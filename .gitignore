@@ -6,9 +6,15 @@ tmp/
 python_models/fine_tune/skill_ner_model
 python_models/fine_tune/__pycache__/
 python_models/evaluation/__pycache__/
+python_models/evaluation/evaluation_results_production.json
+python_models/fine_tune/elaborated_skill_train_data.json
 python_models/question_recomendation/__pycache__/
 **/__pycache__/
 python_models/fine_tune/elaborated_skill_train_data.json
 python_models/setup/artifacts/
 python_models/setup/data/
 python_models/setup/models
+
+python_models/setup/artifacts/
+python_models/setup/data/
+python_models/setup/models/
