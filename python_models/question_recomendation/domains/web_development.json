@@ -16,9 +16,16 @@
     ],
     "answer": "Build interactive and accessible websites/web applications",
     "explanation": "Web development focuses on creating functional, interactive, and accessible applications for the web.",
-    "tags": ["Web Development", "Fundamentals"],
-    "required_skills": ["Web Basics"],
-    "hints": ["Web applications"]
+    "tags": [
+      "Web Development",
+      "Fundamentals"
+    ],
+    "required_skills": [
+      "Web Basics"
+    ],
+    "hints": [
+      "Web applications"
+    ]
   },
   {
     "_id": "q_web_0002",
@@ -37,9 +44,18 @@
     ],
     "answer": "Frontend",
     "explanation": "Frontend development focuses on UI, UX, and client-side interactions.",
-    "tags": ["Web Development", "Frontend"],
-    "required_skills": ["HTML", "CSS", "JavaScript"],
-    "hints": ["Client-side"]
+    "tags": [
+      "Web Development",
+      "Frontend"
+    ],
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "hints": [
+      "Client-side"
+    ]
   },
   {
     "_id": "q_web_0003",
@@ -58,9 +74,16 @@
     ],
     "answer": "Structuring web content",
     "explanation": "HTML provides the structural foundation of web pages.",
-    "tags": ["Web Development", "HTML"],
-    "required_skills": ["HTML5"],
-    "hints": ["Page structure"]
+    "tags": [
+      "Web Development",
+      "HTML"
+    ],
+    "required_skills": [
+      "HTML5"
+    ],
+    "hints": [
+      "Page structure"
+    ]
   },
   {
     "_id": "q_web_0004",
@@ -79,9 +102,16 @@
     ],
     "answer": "Grid",
     "explanation": "CSS Grid enables two-dimensional layout control (rows and columns).",
-    "tags": ["Web Development", "CSS"],
-    "required_skills": ["CSS Grid"],
-    "hints": ["Rows and columns"]
+    "tags": [
+      "Web Development",
+      "CSS"
+    ],
+    "required_skills": [
+      "CSS Grid"
+    ],
+    "hints": [
+      "Rows and columns"
+    ]
   },
   {
     "_id": "q_web_0005",
@@ -100,9 +130,16 @@
     ],
     "answer": "Add interactivity and dynamic behavior",
     "explanation": "JavaScript enables dynamic content updates and user interaction.",
-    "tags": ["Web Development", "JavaScript"],
-    "required_skills": ["JavaScript"],
-    "hints": ["Dynamic behavior"]
+    "tags": [
+      "Web Development",
+      "JavaScript"
+    ],
+    "required_skills": [
+      "JavaScript"
+    ],
+    "hints": [
+      "Dynamic behavior"
+    ]
   },
   {
     "_id": "q_web_0006",
@@ -121,9 +158,16 @@
     ],
     "answer": "GET",
     "explanation": "GET requests retrieve data without modifying server resources.",
-    "tags": ["Web Development", "HTTP"],
-    "required_skills": ["Web Protocols"],
-    "hints": ["Fetch data"]
+    "tags": [
+      "Web Development",
+      "HTTP"
+    ],
+    "required_skills": [
+      "Web Protocols"
+    ],
+    "hints": [
+      "Fetch data"
+    ]
   },
   {
     "_id": "q_web_0007",
@@ -142,9 +186,16 @@
     ],
     "answer": "Ensure usability across different screen sizes",
     "explanation": "Responsive design adapts layouts to different devices and screen sizes.",
-    "tags": ["Web Development", "Responsive Design"],
-    "required_skills": ["Responsive Layouts"],
-    "hints": ["Multiple devices"]
+    "tags": [
+      "Web Development",
+      "Responsive Design"
+    ],
+    "required_skills": [
+      "Responsive Layouts"
+    ],
+    "hints": [
+      "Multiple devices"
+    ]
   },
   {
     "_id": "q_web_0008",
@@ -163,9 +214,16 @@
     ],
     "answer": "React",
     "explanation": "React builds UIs using reusable components.",
-    "tags": ["Web Development", "Frontend Frameworks"],
-    "required_skills": ["React"],
-    "hints": ["Components"]
+    "tags": [
+      "Web Development",
+      "Frontend Frameworks"
+    ],
+    "required_skills": [
+      "React"
+    ],
+    "hints": [
+      "Components"
+    ]
   },
   {
     "_id": "q_web_0009",
@@ -184,9 +242,16 @@
     ],
     "answer": "Handling server-side logic and APIs",
     "explanation": "Backend development manages business logic, APIs, and server operations.",
-    "tags": ["Web Development", "Backend"],
-    "required_skills": ["Server-side Programming"],
-    "hints": ["Server logic"]
+    "tags": [
+      "Web Development",
+      "Backend"
+    ],
+    "required_skills": [
+      "Server-side Programming"
+    ],
+    "hints": [
+      "Server logic"
+    ]
   },
   {
     "_id": "q_web_0010",
@@ -205,11 +270,17 @@
     ],
     "answer": "Relational database",
     "explanation": "Relational databases store structured data using tables and schemas.",
-    "tags": ["Web Development", "Databases"],
-    "required_skills": ["SQL"],
-    "hints": ["Tables"]
+    "tags": [
+      "Web Development",
+      "Databases"
+    ],
+    "required_skills": [
+      "SQL"
+    ],
+    "hints": [
+      "Tables"
+    ]
   },
-
   {
     "_id": "q_web_0011",
     "question_type": "multiple-choice",
@@ -227,9 +298,16 @@
     ],
     "answer": "Enable communication between client and server",
     "explanation": "REST APIs allow data exchange using standard HTTP methods.",
-    "tags": ["Web Development", "APIs"],
-    "required_skills": ["REST"],
-    "hints": ["Client-server"]
+    "tags": [
+      "Web Development",
+      "APIs"
+    ],
+    "required_skills": [
+      "REST"
+    ],
+    "hints": [
+      "Client-server"
+    ]
   },
   {
     "_id": "q_web_0012",
@@ -248,9 +326,16 @@
     ],
     "answer": "Input sanitization and output encoding",
     "explanation": "Proper validation and encoding prevent malicious script execution.",
-    "tags": ["Web Development", "Security"],
-    "required_skills": ["Web Security"],
-    "hints": ["Script injection"]
+    "tags": [
+      "Web Development",
+      "Security"
+    ],
+    "required_skills": [
+      "Web Security"
+    ],
+    "hints": [
+      "Script injection"
+    ]
   },
   {
     "_id": "q_web_0013",
@@ -269,9 +354,16 @@
     ],
     "answer": "JWT",
     "explanation": "JWT enables stateless authentication using signed tokens.",
-    "tags": ["Web Development", "Authentication"],
-    "required_skills": ["Auth Systems"],
-    "hints": ["Token-based"]
+    "tags": [
+      "Web Development",
+      "Authentication"
+    ],
+    "required_skills": [
+      "Auth Systems"
+    ],
+    "hints": [
+      "Token-based"
+    ]
   },
   {
     "_id": "q_web_0014",
@@ -290,9 +382,16 @@
     ],
     "answer": "Caching",
     "explanation": "Caching stores frequently accessed data to reduce repeated processing.",
-    "tags": ["Web Development", "Performance"],
-    "required_skills": ["Optimization"],
-    "hints": ["Reuse data"]
+    "tags": [
+      "Web Development",
+      "Performance"
+    ],
+    "required_skills": [
+      "Optimization"
+    ],
+    "hints": [
+      "Reuse data"
+    ]
   },
   {
     "_id": "q_web_0015",
@@ -311,9 +410,16 @@
     ],
     "answer": "Bundle and optimize frontend assets",
     "explanation": "Build tools prepare code and assets for efficient deployment.",
-    "tags": ["Web Development", "Build Tools"],
-    "required_skills": ["Webpack"],
-    "hints": ["Asset bundling"]
+    "tags": [
+      "Web Development",
+      "Build Tools"
+    ],
+    "required_skills": [
+      "Webpack"
+    ],
+    "hints": [
+      "Asset bundling"
+    ]
   },
   {
     "_id": "q_web_0016",
@@ -332,9 +438,16 @@
     ],
     "answer": "Verify complete user workflows",
     "explanation": "E2E testing ensures the application works as expected from user perspective.",
-    "tags": ["Web Development", "Testing"],
-    "required_skills": ["E2E Testing"],
-    "hints": ["User flow"]
+    "tags": [
+      "Web Development",
+      "Testing"
+    ],
+    "required_skills": [
+      "E2E Testing"
+    ],
+    "hints": [
+      "User flow"
+    ]
   },
   {
     "_id": "q_web_0017",
@@ -353,9 +466,16 @@
     ],
     "answer": "Semantic HTML and meaningful metadata",
     "explanation": "Semantic structure helps search engines understand content.",
-    "tags": ["Web Development", "SEO"],
-    "required_skills": ["SEO Basics"],
-    "hints": ["Search visibility"]
+    "tags": [
+      "Web Development",
+      "SEO"
+    ],
+    "required_skills": [
+      "SEO Basics"
+    ],
+    "hints": [
+      "Search visibility"
+    ]
   },
   {
     "_id": "q_web_0018",
@@ -374,9 +494,16 @@
     ],
     "answer": "aria-label",
     "explanation": "ARIA labels provide context for assistive technologies.",
-    "tags": ["Web Development", "Accessibility"],
-    "required_skills": ["Accessible Web Design"],
-    "hints": ["Screen readers"]
+    "tags": [
+      "Web Development",
+      "Accessibility"
+    ],
+    "required_skills": [
+      "Accessible Web Design"
+    ],
+    "hints": [
+      "Screen readers"
+    ]
   },
   {
     "_id": "q_web_0019",
@@ -395,9 +522,16 @@
     ],
     "answer": "Move applications from development to production",
     "explanation": "Deployment makes applications accessible to end users.",
-    "tags": ["Web Development", "Deployment"],
-    "required_skills": ["DevOps Basics"],
-    "hints": ["Go live"]
+    "tags": [
+      "Web Development",
+      "Deployment"
+    ],
+    "required_skills": [
+      "DevOps Basics"
+    ],
+    "hints": [
+      "Go live"
+    ]
   },
   {
     "_id": "q_web_0020",
@@ -416,11 +550,17 @@
     ],
     "answer": "They provide native-app-like experiences on the web",
     "explanation": "PWAs combine web reach with offline support and performance benefits.",
-    "tags": ["Web Development", "PWA"],
-    "required_skills": ["Modern Web"],
-    "hints": ["App-like web"]
+    "tags": [
+      "Web Development",
+      "PWA"
+    ],
+    "required_skills": [
+      "Modern Web"
+    ],
+    "hints": [
+      "App-like web"
+    ]
   },
-
   {
     "_id": "q_web_0021",
     "question_type": "subjective",
@@ -444,12 +584,26 @@
       "minimum_word_count": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Conceptual Understanding", "weight": 0.4 },
-      { "criterion": "Technical Accuracy", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Conceptual Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Technical Accuracy",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["HTTP", "Web Basics"],
-    "required_skills": ["Web Fundamentals"],
+    "tags": [
+      "HTTP",
+      "Web Basics"
+    ],
+    "required_skills": [
+      "Web Fundamentals"
+    ],
     "hints": [
       "Think about what happens when you type a URL",
       "Consider request-response flow"
@@ -478,12 +632,26 @@
       "minimum_word_count": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Structural Explanation", "weight": 0.4 },
-      { "criterion": "Use of Examples", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Structural Explanation",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Use of Examples",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["HTML", "Semantic Web"],
-    "required_skills": ["HTML"],
+    "tags": [
+      "HTML",
+      "Semantic Web"
+    ],
+    "required_skills": [
+      "HTML"
+    ],
     "hints": [
       "Think about page layout",
       "Focus on meaning rather than styling"
@@ -511,12 +679,26 @@
       "minimum_word_count": 140
     },
     "evaluation_criteria": [
-      { "criterion": "Conceptual Accuracy", "weight": 0.4 },
-      { "criterion": "Layout Understanding", "weight": 0.3 },
-      { "criterion": "Explanation Quality", "weight": 0.3 }
+      {
+        "criterion": "Conceptual Accuracy",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Layout Understanding",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Explanation Quality",
+        "weight": 0.3
+      }
     ],
-    "tags": ["CSS", "Layout"],
-    "required_skills": ["CSS"],
+    "tags": [
+      "CSS",
+      "Layout"
+    ],
+    "required_skills": [
+      "CSS"
+    ],
     "hints": [
       "Think in terms of spacing",
       "Visualize nested rectangles"
@@ -545,12 +727,26 @@
       "minimum_word_count": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Role Explanation", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Role Explanation",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["JavaScript", "Frontend"],
-    "required_skills": ["JavaScript"],
+    "tags": [
+      "JavaScript",
+      "Frontend"
+    ],
+    "required_skills": [
+      "JavaScript"
+    ],
     "hints": [
       "Think about interactivity",
       "Focus on browser execution"
@@ -579,18 +775,32 @@
       "minimum_word_count": 140
     },
     "evaluation_criteria": [
-      { "criterion": "Design Understanding", "weight": 0.4 },
-      { "criterion": "Technical Methods", "weight": 0.3 },
-      { "criterion": "Practical Insight", "weight": 0.3 }
+      {
+        "criterion": "Design Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Technical Methods",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Practical Insight",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Responsive Design", "CSS"],
-    "required_skills": ["CSS", "HTML"],
+    "tags": [
+      "Responsive Design",
+      "CSS"
+    ],
+    "required_skills": [
+      "CSS",
+      "HTML"
+    ],
     "hints": [
       "Think about different devices",
       "Consider screen width changes"
     ]
   },
-
   {
     "_id": "q_web_0026",
     "question_type": "subjective",
@@ -614,12 +824,26 @@
       "minimum_word_count": 150
     },
     "evaluation_criteria": [
-      { "criterion": "Conceptual Understanding", "weight": 0.4 },
-      { "criterion": "Practical Usage", "weight": 0.3 },
-      { "criterion": "Depth", "weight": 0.3 }
+      {
+        "criterion": "Conceptual Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Practical Usage",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Depth",
+        "weight": 0.3
+      }
     ],
-    "tags": ["React", "Angular"],
-    "required_skills": ["JavaScript"],
+    "tags": [
+      "React",
+      "Angular"
+    ],
+    "required_skills": [
+      "JavaScript"
+    ],
     "hints": [
       "Think about UI reusability",
       "Focus on application scale"
@@ -648,12 +872,26 @@
       "minimum_word_count": 140
     },
     "evaluation_criteria": [
-      { "criterion": "Architecture Understanding", "weight": 0.4 },
-      { "criterion": "Technical Coverage", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Architecture Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Technical Coverage",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Backend", "Server"],
-    "required_skills": ["Backend Development"],
+    "tags": [
+      "Backend",
+      "Server"
+    ],
+    "required_skills": [
+      "Backend Development"
+    ],
     "hints": [
       "Think about data processing",
       "Focus on server responsibilities"
@@ -682,12 +920,26 @@
       "minimum_word_count": 170
     },
     "evaluation_criteria": [
-      { "criterion": "Technical Depth", "weight": 0.4 },
-      { "criterion": "Correctness", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.3 }
+      {
+        "criterion": "Technical Depth",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Correctness",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.3
+      }
     ],
-    "tags": ["REST", "API"],
-    "required_skills": ["Web APIs"],
+    "tags": [
+      "REST",
+      "API"
+    ],
+    "required_skills": [
+      "Web APIs"
+    ],
     "hints": [
       "Think in terms of resources",
       "Focus on HTTP methods"
@@ -716,12 +968,26 @@
       "minimum_word_count": 170
     },
     "evaluation_criteria": [
-      { "criterion": "Security Understanding", "weight": 0.4 },
-      { "criterion": "Technical Explanation", "weight": 0.3 },
-      { "criterion": "Depth", "weight": 0.3 }
+      {
+        "criterion": "Security Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Technical Explanation",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Depth",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Authentication", "Security"],
-    "required_skills": ["Web Security"],
+    "tags": [
+      "Authentication",
+      "Security"
+    ],
+    "required_skills": [
+      "Web Security"
+    ],
     "hints": [
       "Think about user identity",
       "Focus on secure access"
@@ -750,12 +1016,26 @@
       "minimum_word_count": 150
     },
     "evaluation_criteria": [
-      { "criterion": "Optimization Knowledge", "weight": 0.4 },
-      { "criterion": "Practical Techniques", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Optimization Knowledge",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Practical Techniques",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Performance", "Optimization"],
-    "required_skills": ["Web Optimization"],
+    "tags": [
+      "Performance",
+      "Optimization"
+    ],
+    "required_skills": [
+      "Web Optimization"
+    ],
     "hints": [
       "Think about loading time",
       "Focus on user experience"
@@ -784,12 +1064,26 @@
       "minimum_word_count": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Concept Awareness", "weight": 0.4 },
-      { "criterion": "Practical Value", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Concept Awareness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Practical Value",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Git", "Version Control"],
-    "required_skills": ["Git"],
+    "tags": [
+      "Git",
+      "Version Control"
+    ],
+    "required_skills": [
+      "Git"
+    ],
     "hints": [
       "Think about teamwork",
       "Focus on code history"
@@ -818,12 +1112,25 @@
       "minimum_word_count": 180
     },
     "evaluation_criteria": [
-      { "criterion": "Threat Understanding", "weight": 0.4 },
-      { "criterion": "Mitigation Techniques", "weight": 0.3 },
-      { "criterion": "Depth", "weight": 0.3 }
+      {
+        "criterion": "Threat Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Mitigation Techniques",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Depth",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Web Security"],
-    "required_skills": ["Security"],
+    "tags": [
+      "Web Security"
+    ],
+    "required_skills": [
+      "Security"
+    ],
     "hints": [
       "Think like an attacker",
       "Focus on prevention"
@@ -852,12 +1159,26 @@
       "minimum_word_count": 150
     },
     "evaluation_criteria": [
-      { "criterion": "Process Understanding", "weight": 0.4 },
-      { "criterion": "Practical Insight", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Process Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Practical Insight",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Deployment", "Hosting"],
-    "required_skills": ["Deployment"],
+    "tags": [
+      "Deployment",
+      "Hosting"
+    ],
+    "required_skills": [
+      "Deployment"
+    ],
     "hints": [
       "Think about production readiness",
       "Focus on environment setup"
@@ -886,12 +1207,26 @@
       "minimum_word_count": 170
     },
     "evaluation_criteria": [
-      { "criterion": "Architectural Understanding", "weight": 0.4 },
-      { "criterion": "Advantages Explanation", "weight": 0.3 },
-      { "criterion": "Depth", "weight": 0.3 }
+      {
+        "criterion": "Architectural Understanding",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Advantages Explanation",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Depth",
+        "weight": 0.3
+      }
     ],
-    "tags": ["SPA", "Frontend Architecture"],
-    "required_skills": ["Frontend Frameworks"],
+    "tags": [
+      "SPA",
+      "Frontend Architecture"
+    ],
+    "required_skills": [
+      "Frontend Frameworks"
+    ],
     "hints": [
       "Think about navigation",
       "Focus on user flow"
@@ -920,18 +1255,31 @@
       "minimum_word_count": 150
     },
     "evaluation_criteria": [
-      { "criterion": "Awareness", "weight": 0.4 },
-      { "criterion": "Practical Relevance", "weight": 0.3 },
-      { "criterion": "Clarity", "weight": 0.3 }
+      {
+        "criterion": "Awareness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Practical Relevance",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      }
     ],
-    "tags": ["Accessibility", "Inclusive Design"],
-    "required_skills": ["Web Standards"],
+    "tags": [
+      "Accessibility",
+      "Inclusive Design"
+    ],
+    "required_skills": [
+      "Web Standards"
+    ],
     "hints": [
       "Think about diverse users",
       "Focus on usability"
     ]
   },
-
   {
     "_id": "q_web_0036",
     "question_type": "voice",
@@ -943,19 +1291,38 @@
     "text": "What is web development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Building websites and web apps", "Frontend and backend", "Runs on browsers"],
+      "key_concepts": [
+        "Building websites and web apps",
+        "Frontend and backend",
+        "Runs on browsers"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Web Basics"],
-    "required_skills": ["HTML"],
-    "hints": ["Websites and applications"]
+    "tags": [
+      "Web Basics"
+    ],
+    "required_skills": [
+      "HTML"
+    ],
+    "hints": [
+      "Websites and applications"
+    ]
   },
   {
     "_id": "q_web_0037",
@@ -968,19 +1335,40 @@
     "text": "What is the difference between frontend and backend development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Frontend is user interface", "Backend handles logic and database", "Both work together"],
+      "key_concepts": [
+        "Frontend is user interface",
+        "Backend handles logic and database",
+        "Both work together"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Frontend", "Backend"],
-    "required_skills": ["HTML", "Basics"],
-    "hints": ["Client vs server"]
+    "tags": [
+      "Frontend",
+      "Backend"
+    ],
+    "required_skills": [
+      "HTML",
+      "Basics"
+    ],
+    "hints": [
+      "Client vs server"
+    ]
   },
   {
     "_id": "q_web_0038",
@@ -993,19 +1381,38 @@
     "text": "What is HTML and why is it used?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Structure of web pages", "Uses tags", "Defines content"],
+      "key_concepts": [
+        "Structure of web pages",
+        "Uses tags",
+        "Defines content"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["HTML"],
-    "required_skills": ["HTML"],
-    "hints": ["Page structure"]
+    "tags": [
+      "HTML"
+    ],
+    "required_skills": [
+      "HTML"
+    ],
+    "hints": [
+      "Page structure"
+    ]
   },
   {
     "_id": "q_web_0039",
@@ -1018,19 +1425,38 @@
     "text": "What is CSS and how does it help web development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Styles web pages", "Controls layout and colors", "Improves appearance"],
+      "key_concepts": [
+        "Styles web pages",
+        "Controls layout and colors",
+        "Improves appearance"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["CSS"],
-    "required_skills": ["CSS"],
-    "hints": ["Styling"]
+    "tags": [
+      "CSS"
+    ],
+    "required_skills": [
+      "CSS"
+    ],
+    "hints": [
+      "Styling"
+    ]
   },
   {
     "_id": "q_web_0040",
@@ -1043,19 +1469,38 @@
     "text": "What role does JavaScript play in web development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Adds interactivity", "Handles events", "Runs in browser"],
+      "key_concepts": [
+        "Adds interactivity",
+        "Handles events",
+        "Runs in browser"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["JavaScript"],
-    "required_skills": ["JavaScript"],
-    "hints": ["Dynamic behavior"]
+    "tags": [
+      "JavaScript"
+    ],
+    "required_skills": [
+      "JavaScript"
+    ],
+    "hints": [
+      "Dynamic behavior"
+    ]
   },
   {
     "_id": "q_web_0041",
@@ -1068,19 +1513,38 @@
     "text": "What is responsive web design?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Works on all screen sizes", "Uses media queries", "Improves user experience"],
+      "key_concepts": [
+        "Works on all screen sizes",
+        "Uses media queries",
+        "Improves user experience"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Responsive Design"],
-    "required_skills": ["CSS"],
-    "hints": ["Mobile-friendly"]
+    "tags": [
+      "Responsive Design"
+    ],
+    "required_skills": [
+      "CSS"
+    ],
+    "hints": [
+      "Mobile-friendly"
+    ]
   },
   {
     "_id": "q_web_0042",
@@ -1093,19 +1557,38 @@
     "text": "What is a frontend framework?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Reusable components", "Speeds development", "Examples like React"],
+      "key_concepts": [
+        "Reusable components",
+        "Speeds development",
+        "Examples like React"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Frameworks"],
-    "required_skills": ["JavaScript"],
-    "hints": ["React, Angular"]
+    "tags": [
+      "Frameworks"
+    ],
+    "required_skills": [
+      "JavaScript"
+    ],
+    "hints": [
+      "React, Angular"
+    ]
   },
   {
     "_id": "q_web_0043",
@@ -1118,19 +1601,38 @@
     "text": "What does a backend server do?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Handles requests", "Processes logic", "Connects to database"],
+      "key_concepts": [
+        "Handles requests",
+        "Processes logic",
+        "Connects to database"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Backend"],
-    "required_skills": ["Server Basics"],
-    "hints": ["Server-side"]
+    "tags": [
+      "Backend"
+    ],
+    "required_skills": [
+      "Server Basics"
+    ],
+    "hints": [
+      "Server-side"
+    ]
   },
   {
     "_id": "q_web_0044",
@@ -1143,19 +1645,38 @@
     "text": "Why are databases used in web applications?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Store data", "Retrieve information", "Persistent storage"],
+      "key_concepts": [
+        "Store data",
+        "Retrieve information",
+        "Persistent storage"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Database"],
-    "required_skills": ["SQL Basics"],
-    "hints": ["Store data"]
+    "tags": [
+      "Database"
+    ],
+    "required_skills": [
+      "SQL Basics"
+    ],
+    "hints": [
+      "Store data"
+    ]
   },
   {
     "_id": "q_web_0045",
@@ -1168,19 +1689,38 @@
     "text": "What is HTTP and how does it work?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Client-server protocol", "Request and response", "Stateless communication"],
+      "key_concepts": [
+        "Client-server protocol",
+        "Request and response",
+        "Stateless communication"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["HTTP"],
-    "required_skills": ["Web Basics"],
-    "hints": ["Request-response"]
+    "tags": [
+      "HTTP"
+    ],
+    "required_skills": [
+      "Web Basics"
+    ],
+    "hints": [
+      "Request-response"
+    ]
   },
   {
     "_id": "q_web_0046",
@@ -1193,19 +1733,38 @@
     "text": "What is an API in web development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Communication interface", "Connects services", "Uses endpoints"],
+      "key_concepts": [
+        "Communication interface",
+        "Connects services",
+        "Uses endpoints"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["API"],
-    "required_skills": ["HTTP"],
-    "hints": ["Data exchange"]
+    "tags": [
+      "API"
+    ],
+    "required_skills": [
+      "HTTP"
+    ],
+    "hints": [
+      "Data exchange"
+    ]
   },
   {
     "_id": "q_web_0047",
@@ -1218,19 +1777,38 @@
     "text": "Why is security important in web development?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Protects data", "Prevents attacks", "User trust"],
+      "key_concepts": [
+        "Protects data",
+        "Prevents attacks",
+        "User trust"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Security"],
-    "required_skills": ["Web Basics"],
-    "hints": ["Protect users"]
+    "tags": [
+      "Security"
+    ],
+    "required_skills": [
+      "Web Basics"
+    ],
+    "hints": [
+      "Protect users"
+    ]
   },
   {
     "_id": "q_web_0048",
@@ -1243,19 +1821,38 @@
     "text": "What does deploying a website mean?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Publishing online", "Hosting servers", "Making site live"],
+      "key_concepts": [
+        "Publishing online",
+        "Hosting servers",
+        "Making site live"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Deployment"],
-    "required_skills": ["Hosting Basics"],
-    "hints": ["Go live"]
+    "tags": [
+      "Deployment"
+    ],
+    "required_skills": [
+      "Hosting Basics"
+    ],
+    "hints": [
+      "Go live"
+    ]
   },
   {
     "_id": "q_web_0049",
@@ -1268,19 +1865,38 @@
     "text": "Why is testing important for websites?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Find bugs", "Ensure quality", "Improve reliability"],
+      "key_concepts": [
+        "Find bugs",
+        "Ensure quality",
+        "Improve reliability"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Testing"],
-    "required_skills": ["Debugging"],
-    "hints": ["Bug detection"]
+    "tags": [
+      "Testing"
+    ],
+    "required_skills": [
+      "Debugging"
+    ],
+    "hints": [
+      "Bug detection"
+    ]
   },
   {
     "_id": "q_web_0050",
@@ -1293,19 +1909,38 @@
     "text": "How do you see web development evolving in the future?",
     "voice_instructions": "Speak clearly and naturally. You have 2 minutes to respond.",
     "expected_answer": {
-      "key_concepts": ["Progressive web apps", "Web3 and AI integration", "Faster web technologies"],
+      "key_concepts": [
+        "Progressive web apps",
+        "Web3 and AI integration",
+        "Faster web technologies"
+      ],
       "minimum_duration_sec": 45,
       "maximum_duration_sec": 120
     },
     "evaluation_criteria": [
-      { "criterion": "Clarity", "weight": 0.3 },
-      { "criterion": "Completeness", "weight": 0.4 },
-      { "criterion": "Examples", "weight": 0.3 }
+      {
+        "criterion": "Clarity",
+        "weight": 0.3
+      },
+      {
+        "criterion": "Completeness",
+        "weight": 0.4
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.3
+      }
     ],
     "transcription_required": true,
-    "tags": ["Future"],
-    "required_skills": ["Web Basics"],
-    "hints": ["Next-gen web"]
+    "tags": [
+      "Future"
+    ],
+    "required_skills": [
+      "Web Basics"
+    ],
+    "hints": [
+      "Next-gen web"
+    ]
   },
   {
     "_id": "q_web_0051",
@@ -1324,7 +1959,10 @@
     },
     "expected_answer": {
       "solution": "return bool(title)",
-      "key_concepts": ["HTML", "Title tag"]
+      "key_concepts": [
+        "HTML",
+        "Title tag"
+      ]
     },
     "test_cases": [
       {
@@ -1334,15 +1972,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Correct title detection" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple boolean check" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty title" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Correct title detection"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Simple boolean check"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles empty title"
+      }
     ],
-    "tags": ["Web", "HTML"],
-    "required_skills": ["Python"],
-    "hints": ["Check if string is not empty"]
+    "tags": [
+      "Web",
+      "HTML"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Check if string is not empty"
+    ]
   },
-
   {
     "_id": "q_web_0052",
     "question_type": "coding",
@@ -1360,7 +2016,10 @@
     },
     "expected_answer": {
       "solution": "return color.startswith('#') and len(color) in [4, 7]",
-      "key_concepts": ["CSS", "Colors"]
+      "key_concepts": [
+        "CSS",
+        "Colors"
+      ]
     },
     "test_cases": [
       {
@@ -1370,15 +2029,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Hex color validated" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable condition" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles invalid color" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Hex color validated"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Readable condition"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles invalid color"
+      }
     ],
-    "tags": ["Web", "CSS"],
-    "required_skills": ["Python"],
-    "hints": ["Hex colors start with #"]
+    "tags": [
+      "Web",
+      "CSS"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Hex colors start with #"
+    ]
   },
-
   {
     "_id": "q_web_0053",
     "question_type": "coding",
@@ -1396,7 +2073,10 @@
     },
     "expected_answer": {
       "solution": "return not state",
-      "key_concepts": ["JavaScript logic", "UI state"]
+      "key_concepts": [
+        "JavaScript logic",
+        "UI state"
+      ]
     },
     "test_cases": [
       {
@@ -1406,15 +2086,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Toggle works correctly" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Clean logic" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles both states" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Toggle works correctly"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Clean logic"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles both states"
+      }
     ],
-    "tags": ["Web", "JavaScript"],
-    "required_skills": ["Python"],
-    "hints": ["Use not operator"]
+    "tags": [
+      "Web",
+      "JavaScript"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Use not operator"
+    ]
   },
-
   {
     "_id": "q_web_0054",
     "question_type": "coding",
@@ -1432,7 +2130,10 @@
     },
     "expected_answer": {
       "solution": "return len(password) >= 8",
-      "key_concepts": ["Form validation", "Security"]
+      "key_concepts": [
+        "Form validation",
+        "Security"
+      ]
     },
     "test_cases": [
       {
@@ -1442,15 +2143,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Password validated" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear condition" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles short password" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Password validated"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Clear condition"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles short password"
+      }
     ],
-    "tags": ["Web", "Forms"],
-    "required_skills": ["Python"],
-    "hints": ["Minimum length is 8"]
+    "tags": [
+      "Web",
+      "Forms"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Minimum length is 8"
+    ]
   },
-
   {
     "_id": "q_web_0055",
     "question_type": "coding",
@@ -1468,7 +2187,10 @@
     },
     "expected_answer": {
       "solution": "return route.startswith('/admin')",
-      "key_concepts": ["Routing", "Authorization"]
+      "key_concepts": [
+        "Routing",
+        "Authorization"
+      ]
     },
     "test_cases": [
       {
@@ -1478,15 +2200,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Route identified correctly" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple string check" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles public routes" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Route identified correctly"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Simple string check"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles public routes"
+      }
     ],
-    "tags": ["Web", "Routing"],
-    "required_skills": ["Python"],
-    "hints": ["Admin routes start with /admin"]
+    "tags": [
+      "Web",
+      "Routing"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Admin routes start with /admin"
+    ]
   },
-
   {
     "_id": "q_web_0056",
     "question_type": "coding",
@@ -1504,7 +2244,10 @@
     },
     "expected_answer": {
       "solution": "return \"OK\" if code == 200 else \"Error\"",
-      "key_concepts": ["HTTP", "Status codes"]
+      "key_concepts": [
+        "HTTP",
+        "Status codes"
+      ]
     },
     "test_cases": [
       {
@@ -1514,15 +2257,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Status returned correctly" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable logic" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles success code" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Status returned correctly"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Readable logic"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles success code"
+      }
     ],
-    "tags": ["Web", "HTTP"],
-    "required_skills": ["Python"],
-    "hints": ["200 means OK"]
+    "tags": [
+      "Web",
+      "HTTP"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "200 means OK"
+    ]
   },
-
   {
     "_id": "q_web_0057",
     "question_type": "coding",
@@ -1540,7 +2301,10 @@
     },
     "expected_answer": {
       "solution": "return active",
-      "key_concepts": ["Sessions", "Authentication"]
+      "key_concepts": [
+        "Sessions",
+        "Authentication"
+      ]
     },
     "test_cases": [
       {
@@ -1550,15 +2314,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Session status correct" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Direct return" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles inactive session" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Session status correct"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Direct return"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles inactive session"
+      }
     ],
-    "tags": ["Web", "Sessions"],
-    "required_skills": ["Python"],
-    "hints": ["Return boolean value"]
+    "tags": [
+      "Web",
+      "Sessions"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Return boolean value"
+    ]
   },
-
   {
     "_id": "q_web_0058",
     "question_type": "coding",
@@ -1576,7 +2358,10 @@
     },
     "expected_answer": {
       "solution": "return (items + per_page - 1) // per_page",
-      "key_concepts": ["Pagination", "UI lists"]
+      "key_concepts": [
+        "Pagination",
+        "UI lists"
+      ]
     },
     "test_cases": [
       {
@@ -1586,15 +2371,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Pages calculated correctly" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses integer math" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles exact division" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Pages calculated correctly"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Uses integer math"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles exact division"
+      }
     ],
-    "tags": ["Web", "Pagination"],
-    "required_skills": ["Python"],
-    "hints": ["Use ceiling division"]
+    "tags": [
+      "Web",
+      "Pagination"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Use ceiling division"
+    ]
   },
-
   {
     "_id": "q_web_0059",
     "question_type": "coding",
@@ -1612,7 +2415,10 @@
     },
     "expected_answer": {
       "solution": "return enabled",
-      "key_concepts": ["Cookies", "Client storage"]
+      "key_concepts": [
+        "Cookies",
+        "Client storage"
+      ]
     },
     "test_cases": [
       {
@@ -1622,15 +2428,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Cookie status correct" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple return" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles enabled case" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Cookie status correct"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Simple return"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles enabled case"
+      }
     ],
-    "tags": ["Web", "Cookies"],
-    "required_skills": ["Python"],
-    "hints": ["Return flag"]
+    "tags": [
+      "Web",
+      "Cookies"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Return flag"
+    ]
   },
-
   {
     "_id": "q_web_0060",
     "question_type": "coding",
@@ -1648,7 +2472,10 @@
     },
     "expected_answer": {
       "solution": "return bool(query.strip())",
-      "key_concepts": ["Search", "User input"]
+      "key_concepts": [
+        "Search",
+        "User input"
+      ]
     },
     "test_cases": [
       {
@@ -1658,15 +2485,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Query detected" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Uses strip()" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles spaces" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Query detected"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Uses strip()"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles spaces"
+      }
     ],
-    "tags": ["Web", "Search"],
-    "required_skills": ["Python"],
-    "hints": ["Remove whitespace"]
+    "tags": [
+      "Web",
+      "Search"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Remove whitespace"
+    ]
   },
-
   {
     "_id": "q_web_0061",
     "question_type": "coding",
@@ -1684,7 +2529,10 @@
     },
     "expected_answer": {
       "solution": "return {\"status\": \"success\" if success else \"failure\"}",
-      "key_concepts": ["API response", "Backend communication"]
+      "key_concepts": [
+        "API response",
+        "Backend communication"
+      ]
     },
     "test_cases": [
       {
@@ -1694,15 +2542,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Response formatted" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear dictionary" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure case" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Response formatted"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Clear dictionary"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles failure case"
+      }
     ],
-    "tags": ["Web", "API"],
-    "required_skills": ["Python"],
-    "hints": ["Return status key"]
+    "tags": [
+      "Web",
+      "API"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Return status key"
+    ]
   },
-
   {
     "_id": "q_web_0062",
     "question_type": "coding",
@@ -1720,7 +2586,10 @@
     },
     "expected_answer": {
       "solution": "return time < 3",
-      "key_concepts": ["Performance", "Page speed"]
+      "key_concepts": [
+        "Performance",
+        "Page speed"
+      ]
     },
     "test_cases": [
       {
@@ -1730,15 +2599,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Performance validated" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Clear threshold" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles slow load" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Performance validated"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Clear threshold"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles slow load"
+      }
     ],
-    "tags": ["Web", "Performance"],
-    "required_skills": ["Python"],
-    "hints": ["Threshold is 3 seconds"]
+    "tags": [
+      "Web",
+      "Performance"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Threshold is 3 seconds"
+    ]
   },
-
   {
     "_id": "q_web_0063",
     "question_type": "coding",
@@ -1756,7 +2643,10 @@
     },
     "expected_answer": {
       "solution": "return bool(description)",
-      "key_concepts": ["SEO", "Meta tags"]
+      "key_concepts": [
+        "SEO",
+        "Meta tags"
+      ]
     },
     "test_cases": [
       {
@@ -1766,15 +2656,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Meta tag detected" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Simple check" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles empty meta" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Meta tag detected"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Simple check"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles empty meta"
+      }
     ],
-    "tags": ["Web", "SEO"],
-    "required_skills": ["Python"],
-    "hints": ["Check non-empty string"]
+    "tags": [
+      "Web",
+      "SEO"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Check non-empty string"
+    ]
   },
-
   {
     "_id": "q_web_0064",
     "question_type": "coding",
@@ -1792,7 +2700,10 @@
     },
     "expected_answer": {
       "solution": "return \"<script\" in input_text.lower()",
-      "key_concepts": ["Web security", "XSS"]
+      "key_concepts": [
+        "Web security",
+        "XSS"
+      ]
     },
     "test_cases": [
       {
@@ -1802,15 +2713,33 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "XSS detected" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Case handling" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles safe input" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "XSS detected"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Case handling"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles safe input"
+      }
     ],
-    "tags": ["Web", "Security"],
-    "required_skills": ["Python"],
-    "hints": ["Look for <script>"]
+    "tags": [
+      "Web",
+      "Security"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Look for <script>"
+    ]
   },
-
   {
     "_id": "q_web_0065",
     "question_type": "coding",
@@ -1828,7 +2757,10 @@
     },
     "expected_answer": {
       "solution": "return \"Live\" if status else \"Failed\"",
-      "key_concepts": ["Deployment", "Web hosting"]
+      "key_concepts": [
+        "Deployment",
+        "Web hosting"
+      ]
     },
     "test_cases": [
       {
@@ -1838,12 +2770,31 @@
       }
     ],
     "evaluation_criteria": [
-      { "criterion": "Correctness", "weight": 0.5, "description": "Deployment status correct" },
-      { "criterion": "Code Quality", "weight": 0.25, "description": "Readable output" },
-      { "criterion": "Edge Cases", "weight": 0.25, "description": "Handles failure" }
+      {
+        "criterion": "Correctness",
+        "weight": 0.5,
+        "description": "Deployment status correct"
+      },
+      {
+        "criterion": "Code Quality",
+        "weight": 0.25,
+        "description": "Readable output"
+      },
+      {
+        "criterion": "Edge Cases",
+        "weight": 0.25,
+        "description": "Handles failure"
+      }
     ],
-    "tags": ["Web", "Deployment"],
-    "required_skills": ["Python"],
-    "hints": ["Check status flag"]
+    "tags": [
+      "Web",
+      "Deployment"
+    ],
+    "required_skills": [
+      "Python"
+    ],
+    "hints": [
+      "Check status flag"
+    ]
   }
 ]

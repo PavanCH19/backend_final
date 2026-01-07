@@ -32,6 +32,11 @@ const MODEL_CONFIGS = {
         pythonPath: "python",
         envVars: {}
     },
+    code_evaluation: {
+        scriptPath: path.join(__dirname, "../python_models/evaluation/evaluate_code.py"),
+        pythonPath: "python",
+        envVars: {}
+    },
     build_summary: {
         scriptPath: path.join(__dirname, "../python_models/question_recomendation/build_user_summary_from_answers.py"),
         pythonPath: "python",
@@ -289,403 +294,6 @@ const evaluateMCQ = (question, userAnswer) => {
     };
 };
 
-
-
-// const submitTestController = async (req, res) => {
-//     try {
-//         console.log("SubmitTest hit. Body keys:", Object.keys(req.body));
-//         console.log("SubmitTest hit. Files keys:", req.files ? Object.keys(req.files) : "No files");
-
-//         let submissionData;
-//         // Handle different request formats (multipart with 'data' string, or direct JSON)
-//         if (req.body.data) {
-//             submissionData = typeof req.body.data === 'string' ? JSON.parse(req.body.data) : req.body.data;
-//         } else if (req.body.answers) {
-//             submissionData = req.body;
-//         } else {
-//             throw new Error("Missing submission data (body.data or direct body)");
-//         }
-//         const { domain, totalQuestions, answeredCount, hintsUsed, completedAt, timeRemaining } = submissionData;
-
-//         if (!domain) {
-//             return res.status(400).json({
-//                 type: "error",
-//                 message: "Domain is required in submission data"
-//             });
-//         }
-//         // Initialize answers from submissionData or empty object
-//         const answers = submissionData.answers || {};
-
-//         // 1. Merge "answers[qid]" fields from req.body into answers object
-//         // (This happens when FormData appends individual fields)
-//         Object.keys(req.body).forEach(key => {
-//             const match = key.match(/^answers\[(.+)\]$/);
-//             if (match) {
-//                 answers[match[1]] = req.body[key];
-//             }
-//         });
-
-//         // 2. Helper to extract pure QID from file keys like "answers[qid]"
-//         const extractQid = (key) => {
-//             const match = key.match(/^answers\[(.+)\]$/);
-//             return match ? match[1] : key;
-//         };
-
-//         const domainQuestions = getQuestionsForDomain(domain);
-//         const files = req.files || {};
-//         const results = [];
-
-//         // 3. Merge keys from answers and uploaded files using clean QIDs
-//         const fileQids = Object.keys(files).map(key => extractQid(key));
-//         const allQids = new Set([...Object.keys(answers), ...fileQids]);
-
-//         for (const qid of allQids) {
-//             const userAnswer = answers[qid] || ""; // Valid answer or empty string if only file
-
-//             // Use helper to look up question from loaded domain questions
-//             const question = domainQuestions[qid];
-
-//             if (!question) {
-//                 // If it's a file for a non-existent question or irrelevant key, we can skip or log
-//                 // results.push({ qid, status: "error", reason: "Question not found in domain" });
-//                 continue;
-//             }
-
-//             let evaluationResult;
-//             const qType = question.question_type;
-
-//             // -----------------------------------------
-//             // MCQ – normal JS evaluation
-//             // -----------------------------------------
-//             if (qType === "mcq" || qType === "multiple-choice") {
-//                 evaluationResult = evaluateMCQ(question, userAnswer);
-//             }
-
-//             // -----------------------------------------
-//             // SUBJECTIVE & CODING – call Python text evaluator
-//             // -----------------------------------------
-//             else if (qType === "subjective" || qType === "coding") {
-//                 const payload = {
-//                     question: question,
-//                     user_answer: userAnswer
-//                 };
-
-//                 evaluationResult = await executePythonModel(
-//                     MODEL_CONFIGS.text_eval,
-//                     "evaluate_text",
-//                     payload,
-//                     45000
-//                 );
-//             }
-
-//             // -----------------------------------------
-//             // VOICE – Comprehensive Voice Analysis + Text Evaluation
-//             // -----------------------------------------
-//             else if (qType === "voice") {
-//                 // Check uploaded files first, then fallback to local path in answer (for testing)
-//                 let audioFilePath = null;
-//                 let tempFilePath = null;
-
-//                 // Helper to find file by trying common FormData key variations
-//                 const findFile = (targetId) => {
-//                     if (!files) return null;
-//                     // 1. Direct match
-//                     if (files[targetId]) return files[targetId];
-//                     // 2. Array notation match (common in FormData appending)
-//                     if (files[`answers[${targetId}]`]) return files[`answers[${targetId}]`];
-//                     // 3. Fallback: Search for key containing the ID (if unique enough)
-//                     const key = Object.keys(files).find(k => k.includes(targetId));
-//                     if (key) return files[key];
-//                     return null;
-//                 };
-
-//                 const fileObj = findFile(qid);
-
-//                 if (fileObj) {
-//                     audioFilePath = fileObj.tempFilePath;
-//                 } else if (typeof userAnswer === 'string' && (userAnswer.includes('/') || userAnswer.includes('\\')) && userAnswer.endsWith('.wav')) {
-//                     // Fallback to local path if provided (testing only)
-//                     audioFilePath = userAnswer;
-//                 }
-
-//                 if (!audioFilePath) {
-//                     console.error(`[SubmitTest] Audio file missing for QID: ${qid}`);
-//                     console.error(`[SubmitTest] Received file keys: ${Object.keys(files).join(', ')}`);
-//                     results.push({
-//                         qid,
-//                         status: "error",
-//                         reason: `Audio file missing. Received keys: [${Object.keys(files).join(', ')}]`
-//                     });
-//                     continue;
-//                 }
-
-//                 const voicePayload = {
-//                     file_path: audioFilePath
-//                 };
-
-//                 // 1. Voice Analysis
-//                 const voiceResult = await executePythonModel(
-//                     MODEL_CONFIGS.voice_analysis,
-//                     "evaluate_voice",
-//                     voicePayload,
-//                     120000
-//                 );
-
-//                 // 2. Text Evaluation (if transcript exists)
-//                 let textResult = null;
-//                 const transcript = voiceResult.result?.transcription?.transcript || voiceResult.transcription?.transcript;
-
-//                 if (transcript && transcript.length > 0 && voiceResult.result?.transcription?.confidence !== "none") {
-//                     const textPayload = {
-//                         question: question,
-//                         user_answer: transcript
-//                     };
-//                     textResult = await executePythonModel(
-//                         MODEL_CONFIGS.text_eval,
-//                         "evaluate_text",
-//                         textPayload,
-//                         45000
-//                     );
-//                 }
-
-//                 // 3. Merge Results (handle wrapper if needed)
-//                 evaluationResult = {
-//                     voice_analysis: voiceResult.result || voiceResult,
-//                     text_evaluation: textResult ? (textResult.result || textResult) : null
-//                 };
-//             }
-
-//             // Final result aggregation
-//             results.push({
-//                 qid,
-//                 question_type: qType,
-//                 evaluation: evaluationResult,
-//             });
-//         }
-
-//         const responseData = {
-//             type: "success",
-//             domain: domain,
-//             message: "Test submitted successfully",
-//             results,
-//             metadata: {
-//                 totalQuestions,
-//                 answeredCount,
-//                 hintsUsed,
-//                 completedAt,
-//                 timeRemaining,
-//             },
-//         };
-
-//         // 1. Send response to frontend immediately
-//         res.status(200).json(responseData);
-
-//         // 2. Background Process: Generate Summary and Store in DB
-//         // Using setImmediate to ensure it runs after the response tick
-//         // Background Process: Generate Summary and Store in DB
-//         setImmediate(async () => {
-//             try {
-//                 // Ensure we have user ID (middleware should provide this)
-//                 const userId = req.user ? req.user.id : null;
-//                 if (!userId) {
-//                     console.error("User ID missing for background summary generation");
-//                     return;
-//                 }
-
-//                 console.log(`[Background] Generating summary for user ${userId}, domain ${domain}`);
-
-//                 const payload = {
-//                     user_id: userId,
-//                     domain: domain,
-//                     evaluation_json: responseData,
-//                     questions_dir: domainsDir
-//                 };
-
-//                 const summaryResult = await executePythonModel(
-//                     MODEL_CONFIGS.build_summary,
-//                     "process_user_summary",
-//                     payload,
-//                     30000 // 30s timeout
-//                 );
-
-//                 if (summaryResult.error) {
-//                     console.error("Summary script returned error:", summaryResult.error);
-//                     return;
-//                 }
-
-//                 console.log("✅ Summary result:", JSON.stringify(summaryResult, null, 2));
-
-//                 // Extract the actual result from the wrapper
-//                 const summary = summaryResult.success ? summaryResult.result : summaryResult;
-
-//                 // 3. Update User in DB
-//                 const user = await User.findById(userId);
-//                 if (!user) {
-//                     console.error(`[Background] User ${userId} not found`);
-//                     return;
-//                 }
-
-//                 // Find the active/latest session for this domain
-//                 const sessionIndex = user.interview_sessions.map(s => s.domain).lastIndexOf(domain);
-
-//                 if (sessionIndex !== -1) {
-//                     const session = user.interview_sessions[sessionIndex];
-
-//                     // Update session status and completion
-//                     session.status = "completed";
-//                     session.completedAt = new Date();
-
-//                     // Update score - use overall_average from session_stats
-//                     session.score = summary.session_stats?.overall_average || 0;
-
-//                     // Calculate accuracy if MCQ data available
-//                     if (summary.session_stats?.mcq_attempted > 0) {
-//                         const mcqResults = responseData.results.filter(r =>
-//                             r.question_type === 'mcq' || r.question_type === 'multiple-choice'
-//                         );
-//                         const correctCount = mcqResults.filter(r =>
-//                             r.evaluation?.correct === true
-//                         ).length;
-//                         session.accuracy = mcqResults.length > 0
-//                             ? (correctCount / mcqResults.length) * 100
-//                             : null;
-//                     }
-
-//                     // Build skill_averages Map from Python skill_analysis
-//                     const skillAverages = {};
-//                     const pySkillDetails = summary.skill_analysis || {};
-
-//                     for (const [skillName, details] of Object.entries(pySkillDetails)) {
-//                         if (details && typeof details.average_score === 'number') {
-//                             skillAverages[skillName] = details.average_score;
-//                         }
-//                     }
-
-//                     // Update skill_analysis following the schema
-//                     session.skill_analysis = {
-//                         stronger_skills: summary.top_skills || [],
-//                         weaker_skills: summary.weak_skills || [],
-//                         skill_averages: skillAverages
-//                     };
-
-//                     // Update message with recommendations
-//                     if (summary.recommendations?.next_steps?.length > 0) {
-//                         const nextSteps = summary.recommendations.next_steps.slice(0, 2).join('. ');
-//                         session.message = `Analysis complete. Suggested: ${summary.recommendations.suggested_difficulty}. Next: ${nextSteps}`;
-//                     } else {
-//                         session.message = `Session completed. Score: ${session.score.toFixed(1)}/100`;
-//                     }
-
-//                     // Store additional metadata in a new field (optional enhancement)
-//                     // You can add this to your schema if needed:
-//                     // detailed_summary: { type: Schema.Types.Mixed }
-//                     // Store additional metadata
-//                     session.detailed_summary = {
-//                         session_stats: summary.session_stats,
-//                         recommendations: summary.recommendations,
-//                         voice_insights: summary.voice_insights,
-//                         detailed_feedback: summary.detailed_feedback,
-//                         skill_analysis: summary.skill_analysis // Save rich analysis
-//                     };
-
-//                     await user.save();
-//                     console.log(`✅ [Background] User ${userId} session updated successfully`);
-//                     console.log(`   - Score: ${session.score.toFixed(1)}/100`);
-//                     console.log(`   - Stronger Skills: ${session.skill_analysis.stronger_skills.join(', ')}`);
-//                     console.log(`   - Weaker Skills: ${session.skill_analysis.weaker_skills.join(', ')}`);
-
-//                 } else {
-//                     console.warn(`[Background] No active session found for user ${userId} in domain ${domain}`);
-//                     console.log(`[Background] Creating new completed session...`);
-
-//                     // Build skill_averages Map
-//                     const skillAverages = {};
-//                     const pySkillDetails = summary.skill_analysis || {};
-
-//                     for (const [skillName, details] of Object.entries(pySkillDetails)) {
-//                         if (details && typeof details.average_score === 'number') {
-//                             skillAverages[skillName] = details.average_score;
-//                         }
-//                     }
-
-//                     // Calculate accuracy for MCQ questions
-//                     let accuracy = null;
-//                     if (summary.session_stats?.mcq_attempted > 0) {
-//                         const mcqResults = responseData.results.filter(r =>
-//                             r.question_type === 'mcq' || r.question_type === 'multiple-choice'
-//                         );
-//                         const correctCount = mcqResults.filter(r =>
-//                             r.evaluation?.correct === true
-//                         ).length;
-//                         accuracy = mcqResults.length > 0
-//                             ? (correctCount / mcqResults.length) * 100
-//                             : null;
-//                     }
-
-//                     // Create new session
-//                     const newSession = {
-//                         session_id: `sess_${domain}_${Date.now()}`,
-//                         domain: domain,
-//                         session_type: "first_time", // or determine based on previous sessions
-//                         session_number: user.interview_sessions.filter(s => s.domain === domain).length + 1,
-//                         message: summary.recommendations?.next_steps?.length > 0
-//                             ? `Analysis complete. Suggested: ${summary.recommendations.suggested_difficulty}. Next: ${summary.recommendations.next_steps.slice(0, 2).join('. ')}`
-//                             : `Session completed. Score: ${(summary.session_stats?.overall_average || 0).toFixed(1)}/100`,
-//                         skill_analysis: {
-//                             stronger_skills: summary.top_skills || [],
-//                             weaker_skills: summary.weak_skills || [],
-//                             skill_averages: skillAverages
-//                         },
-//                         questions: responseData.results ? responseData.results.map(r => r.qid) : [],
-//                         score: summary.session_stats?.overall_average || 0,
-//                         accuracy: accuracy,
-//                         status: "completed",
-//                         startedAt: responseData.metadata?.completedAt
-//                             ? new Date(responseData.metadata.completedAt)
-//                             : new Date(),
-//                         completedAt: new Date()
-//                     };
-
-//                     // Optional: Add detailed_summary
-//                     newSession.detailed_summary = {
-//                         session_stats: summary.session_stats,
-//                         recommendations: summary.recommendations,
-//                         voice_insights: summary.voice_insights,
-//                         detailed_feedback: summary.detailed_feedback,
-//                         skill_analysis: summary.skill_analysis // Save rich analysis
-//                     };
-
-//                     user.interview_sessions.push(newSession);
-//                     await user.save();
-
-//                     console.log(`✅ [Background] New session created for user ${userId}`);
-//                     console.log(`   - Score: ${newSession.score.toFixed(1)}/100`);
-//                     console.log(`   - Stronger Skills: ${newSession.skill_analysis.stronger_skills.join(', ')}`);
-//                     console.log(`   - Weaker Skills: ${newSession.skill_analysis.weaker_skills.join(', ')}`);
-//                 }
-
-//             } catch (err) {
-//                 console.error("❌ [Background] Summary generation/DB update failed:", err);
-//                 console.error(err.stack);
-//             }
-//         });
-
-//     } catch (err) {
-//         console.error(err);
-//         // If header already sent, don't send again
-//         if (!res.headersSent) {
-//             return res.status(500).json({
-//                 type: "error",
-//                 message: "Failed to submit test",
-//                 error: err.message,
-//             });
-//         }
-//     }
-// };
-
-// --- Utility: Normalize keys like "answers[q_ai_0034]" → "q_ai_0034"
-
-
 const normalizeQid = (key) => {
     if (typeof key !== "string") return key;
     if (key.startsWith("answers[")) {
@@ -735,8 +343,8 @@ const textEvalCache = new Map();
 const cachedTextEval = async (question, user_answer, timeout) => {
     const answerStr = typeof user_answer === 'string' ? user_answer.trim() : String(user_answer || '');
     if (!answerStr) return null;
-    const qid = question && (question._id || question.id || question.qid) ? (question._id || question.id || question.qid) : JSON.stringify(question).slice(0,50);
-    const key = `${qid}::${answerStr.slice(0,200)}`;
+    const qid = question && (question._id || question.id || question.qid) ? (question._id || question.id || question.qid) : JSON.stringify(question).slice(0, 50);
+    const key = `${qid}::${answerStr.slice(0, 200)}`;
     if (textEvalCache.has(key)) {
         return textEvalCache.get(key);
     }
@@ -764,7 +372,9 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
         const skills = summary.skill_analysis || {};
         for (const [name, data] of Object.entries(skills)) {
             if (typeof data.average_score === "number") {
-                skillAverages[name] = data.average_score;
+                // Mongoose Maps do not support keys with ".", so we replace with "_"
+                const safeName = name.replace(/\./g, "_");
+                skillAverages[safeName] = data.average_score;
             }
         }
         return skillAverages;
@@ -804,289 +414,6 @@ const updateUserInterviewSession = async (userId, domain, summaryResult, respons
     await user.save();
     console.log(`✅ Added new session for user ${userId}`);
 };
-
-
-// const submitTestController = async (req, res) => {
-//     try {
-//         console.log("\n================= submitTestController START =================");
-
-//         const files = req.files || {};
-//         console.log("[STEP-1] Raw form keys received:");
-//         logFormKeys(req.body, files);
-
-//         let submissionData;
-
-//         // ----------------------------
-//         // STEP 2: Extract submissionData
-//         // ----------------------------
-//         console.log("[STEP-2] Checking if req.body.data exists (FormData JSON)...");
-//         if (req.body.data) {
-//             console.log("[STEP-2] Body contains 'data' → parsing JSON");
-//             submissionData =
-//                 typeof req.body.data === "string"
-//                     ? JSON.parse(req.body.data)
-//                     : req.body.data;
-//         } else {
-//             console.log("[STEP-2] No 'data' field → using raw body");
-//             submissionData = req.body;
-//         }
-
-//         console.log("[STEP-2] submissionData =", submissionData);
-
-//         const {
-//             domain,
-//             answers = {},
-//             totalQuestions,
-//             answeredCount,
-//             hintsUsed,
-//             completedAt,
-//             timeRemaining
-//         } = submissionData;
-
-//         // ----------------------------
-//         // STEP 3: Merge answers from req.body
-//         // ----------------------------
-//         console.log("[STEP-3] Merging answers from direct body keys...");
-//         Object.keys(req.body).forEach(key => {
-//             if (key.startsWith("answers[")) {
-//                 const qid = normalizeQid(key);
-//                 console.log(`→ Found body answer key: ${key} → qid=${qid}`);
-//                 if (!answers[qid]) {
-//                     answers[qid] = req.body[key];
-//                 }
-//             }
-//         });
-
-//         console.log("[STEP-3] Final merged answers =", answers);
-
-//         if (!domain) {
-//             console.log("[ERROR] No domain found.");
-//             return res.status(400).json({
-//                 type: "error",
-//                 message: "Domain is required"
-//             });
-//         }
-
-//         // ----------------------------
-//         // STEP 4: Load domain questions
-//         // ----------------------------
-//         console.log(`[STEP-4] Loading questions for domain: ${domain}`);
-//         const domainQuestions = getQuestionsForDomain(domain);
-//         console.log(`[STEP-4] Loaded ${Object.keys(domainQuestions).length} questions.`);
-
-//         // Merge answer + file QIDs
-//         console.log("[STEP-5] Merging QIDs from answers & files...");
-//         const allQids = new Set([
-//             ...Object.keys(answers).map(normalizeQid),
-//             ...Object.keys(files).map(normalizeQid)
-//         ]);
-//         console.log("[STEP-5] Final QIDs to process:", [...allQids]);
-
-//         const results = [];
-
-//         // ----------------------------
-//         // File finder logs
-//         // ----------------------------
-//         const findFile = (qid) => {
-//             console.log(`[FILE-FIND] Searching file for QID: ${qid}`);
-
-//             if (!files) {
-//                 console.log("[FILE-FIND] No files found at all.");
-//                 return null;
-//             }
-
-//             const directKey = `answers[${qid}]`;
-//             if (files[directKey]) {
-//                 console.log(`[FILE-FIND] Found direct key: ${directKey}`);
-//                 return files[directKey];
-//             }
-
-//             if (files[qid]) {
-//                 console.log(`[FILE-FIND] Found plain key: ${qid}`);
-//                 return files[qid];
-//             }
-
-//             const foundKey = Object.keys(files).find(k => normalizeQid(k) === qid);
-//             if (foundKey) {
-//                 console.log(`[FILE-FIND] Found normalized key: ${foundKey}`);
-//                 return files[foundKey];
-//             }
-
-//             console.log("[FILE-FIND] No matching file found.");
-//             return null;
-//         };
-
-//         // ============================================
-//         // STEP 6: PROCESS EACH QUESTION
-//         // ============================================
-//         console.log("\n================= PROCESSING QUESTIONS =================");
-
-//         for (const rawQid of allQids) {
-//             const qid = normalizeQid(rawQid);
-
-//             console.log(`\n[QUESTION] Processing QID: ${qid}`);
-
-//             const question = domainQuestions[qid];
-//             if (!question) {
-//                 console.log(`⚠ [QUESTION] Skipping unknown QID: ${qid}`);
-//                 continue;
-//             }
-
-//             console.log(`[QUESTION] Question type = ${question.question_type}`);
-//             const userAnswer = answers[qid] || "";
-//             let evaluationResult = null;
-//             const qType = question.question_type;
-
-//             // ---------------- MCQ ----------------
-//             if (qType === "mcq" || qType === "multiple-choice") {
-//                 console.log(`[MCQ] Evaluating MCQ for QID ${qid}`);
-//                 evaluationResult = evaluateMCQ(question, userAnswer);
-//                 console.log(`[MCQ] Result:`, evaluationResult);
-//             }
-
-//             // ---------------- SUBJECTIVE / CODING ----------------
-//             else if (qType === "subjective" || qType === "coding") {
-//                 console.log(`[TEXT] Evaluating subjective/coding for QID ${qid}`);
-//                 evaluationResult = await executePythonModel(
-//                     MODEL_CONFIGS.text_eval,
-//                     "evaluate_text",
-//                     { question, user_answer: userAnswer },
-//                     1000000
-//                 );
-//                 console.log(`[TEXT] Python returned:`, evaluationResult);
-//             }
-
-//             // ---------------- VOICE ----------------
-//             else if (qType === "voice") {
-//                 console.log(`[VOICE] Evaluating voice for QID ${qid} ...`);
-
-//                 const fileObj = findFile(qid);
-//                 console.log(`[VOICE] fileObj =`, fileObj);
-
-//                 let audioFilePath = fileObj ? fileObj.tempFilePath : null;
-
-//                 if (!audioFilePath) {
-//                     console.error(`[VOICE] Missing audio file for QID ${qid}`);
-//                     results.push({
-//                         qid,
-//                         question_type: qType,
-//                         status: "error",
-//                         reason: `Audio file missing. Received keys: [${Object.keys(files).join(', ')}]`
-//                     });
-//                     continue;
-//                 }
-
-//                 const absoluteAudioPath = path.resolve(audioFilePath);
-//                 console.log(`[VOICE] Using absolute path: ${absoluteAudioPath}`);
-
-//                 // ----- Python Voice Analysis -----
-//                 console.log("[VOICE] Calling Python evaluate_voice...");
-//                 const voiceResult = await executePythonModel(
-//                     MODEL_CONFIGS.voice_analysis,
-//                     "evaluate_voice",
-//                     { file_path: absoluteAudioPath },
-//                     120000
-//                 );
-//                 console.log("[PY-VOICE] Returned:", voiceResult);
-
-//                 // ----- Transcript → Optional Text Eval -----
-//                 const transcript =
-//                     voiceResult?.result?.transcription?.transcript ||
-//                     voiceResult?.transcription?.transcript;
-
-//                 console.log("[VOICE] Transcript detected:", transcript);
-
-//                 let textResult = null;
-//                 if (transcript) {
-//                     console.log("[VOICE+TEXT] Running text evaluation on transcript...");
-//                     textResult = await executePythonModel(
-//                         MODEL_CONFIGS.text_eval,
-//                         "evaluate_text",
-//                         { question, user_answer: transcript },
-//                         90000
-//                     );
-//                     console.log("[VOICE+TEXT] Python returned:", textResult);
-//                 }
-
-//                 evaluationResult = {
-//                     voice_analysis: voiceResult.result || voiceResult,
-//                     text_evaluation: textResult ? textResult.result || textResult : null
-//                 };
-//             }
-
-//             console.log(`[RESULT] Final evaluation for QID ${qid}:`, evaluationResult);
-
-//             results.push({
-//                 qid,
-//                 question_type: qType,
-//                 evaluation: evaluationResult
-//             });
-//         }
-
-//         // ============= FINAL RESPONSE =============
-//         console.log("\n================= FINAL RESPONSE SENT TO FRONTEND =================");
-//         const responseData = {
-//             type: "success",
-//             message: "Test submitted successfully",
-//             domain,
-//             results,
-//             metadata: {
-//                 totalQuestions,
-//                 answeredCount,
-//                 hintsUsed,
-//                 completedAt,
-//                 timeRemaining
-//             }
-//         };
-
-//         console.log("[RESPONSE] responseData =", responseData);
-//         res.status(200).json(responseData);
-
-//         // ============= BACKGROUND SUMMARY =============
-//         console.log("\n================= BACKGROUND SUMMARY START =================");
-//         setImmediate(async () => {
-//             try {
-//                 const userId = req.user?.id;
-//                 console.log("[BG] userId =", userId);
-//                 if (!userId) return;
-
-//                 const payload = {
-//                     user_id: userId,
-//                     domain,
-//                     evaluation_json: responseData,
-//                     questions_dir: domainsDir
-//                 };
-
-//                 console.log("[BG] Calling Python build_summary...");
-//                 const summaryResult = await executePythonModel(
-//                     MODEL_CONFIGS.build_summary,
-//                     "process_user_summary",
-//                     payload,
-//                     30000
-//                 );
-
-//                 console.log("[BG] Summary result:", summaryResult);
-
-//                 await updateUserInterviewSession(userId, domain, summaryResult, responseData);
-
-//                 console.log("[BG] Session updated.");
-//             } catch (err) {
-//                 console.error("Background process error:", err);
-//             }
-//         });
-
-//     } catch (err) {
-//         console.error("Submit error:", err);
-//         if (!res.headersSent) {
-//             res.status(500).json({
-//                 type: "error",
-//                 message: "Server failed to submit test",
-//                 error: err.message
-//             });
-//         }
-//     }
-// };
-
 
 const submitTestController = async (req, res) => {
     try {
@@ -1202,13 +529,42 @@ const submitTestController = async (req, res) => {
                 }
 
                 // ---------- SUBJECTIVE / CODING ----------
-                else if (qType === "subjective" || qType === "coding") {
-                    // Skip empty answers to save time
+                // else if (qType === "subjective" || qType === "coding") {
+                //     // Skip empty answers to save time
+                //     if (!userAnswer || String(userAnswer).trim().length === 0) {
+                //         evaluationResult = { skipped: true, reason: "no answer provided" };
+                //     } else {
+                //         const textEval = await cachedTextEval(question, userAnswer, 1000000);
+                //         evaluationResult = textEval;
+                //     }
+                // }
+                // ---------- SUBJECTIVE ----------
+                else if (qType === "subjective") {
                     if (!userAnswer || String(userAnswer).trim().length === 0) {
                         evaluationResult = { skipped: true, reason: "no answer provided" };
                     } else {
-                        const textEval = await cachedTextEval(question, userAnswer, 1000000);
-                        evaluationResult = textEval;
+                        evaluationResult = await cachedTextEval(
+                            question,
+                            userAnswer,
+                            1000000
+                        );
+                    }
+                }
+
+                // ---------- CODING ----------
+                else if (qType === "coding") {
+                    if (!userAnswer || String(userAnswer).trim().length === 0) {
+                        evaluationResult = { skipped: true, reason: "no code submitted" };
+                    } else {
+                        evaluationResult = await limitedExecutePythonModel(
+                            MODEL_CONFIGS.code_evaluation,
+                            "evaluate_coding",
+                            {
+                                question,
+                                user_code: userAnswer
+                            },
+                            120000
+                        );
                     }
                 }
 
@@ -1243,10 +599,25 @@ const submitTestController = async (req, res) => {
                     };
                 }
 
+                if (qType === "coding") {
+                    console.log(`[QID ${qid}] Coding Result:`, JSON.stringify(evaluationResult, null, 2));
+                }
+
+                // Extract nested result if present (common pattern from pythonConnector)
+                const actualResult = evaluationResult?.result || evaluationResult;
+
                 return {
                     qid,
                     question_type: qType,
-                    evaluation: evaluationResult
+                    status: (actualResult?.error || actualResult?.status === "error")
+                        ? "error"
+                        : "evaluated",
+                    score: actualResult?.score || 0,
+                    grade: actualResult?.grade || "F",
+                    evaluation: evaluationResult, // Keep full original raw data
+                    feedback: actualResult?.detailed_feedback || actualResult?.feedback || null,
+                    tests: actualResult?.test_results || [],
+                    error: actualResult?.error || actualResult?.message || actualResult?.reason || null
                 };
 
             } catch (err) {
