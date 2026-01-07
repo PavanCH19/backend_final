@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "audio_file": "..\\..\\utils\\temp_analysis.wav",
+        "sample_rate": 16000,
+        "frame_duration_ms": 20,
+        "vad_aggressiveness": 3
+    },
+    "results": {
+        "silence_metrics": {
+            "silence_ratio_percent": 50.649350649350644,
+            "speech_ratio_percent": 49.350649350649356,
+            "silence_time_seconds": 2.34,
+            "normal_speech_time_seconds": 1.3,
+            "low_volume_speech_time_seconds": 0.9800000000000001,
+            "total_speech_time_seconds": 2.2800000000000002,
+            "total_duration_seconds": 4.62,
+            "silence_segment_count": 4,
+            "normal_speech_segment_count": 13,
+            "low_volume_segment_count": 12
+        },
+        "speech_rate": {
+            "estimated_syllables": 23,
+            "estimated_words": 13.529411764705882,
+            "words_per_minute_estimated": 356.03715170278633,
+            "words_per_second_estimated": 5.9339525283797725,
+            "speaking_time_seconds": 2.2800000000000002,
+            "actual_word_count": 8,
+            "words_per_minute_actual": 210.52631578947367,
+            "words_per_second_actual": 3.508771929824561
+        },
+        "pitch_variation": {
+            "mean_pitch_hz": 104.7883034305298,
+            "median_pitch_hz": 106.252996181733,
+            "pitch_std_hz": 21.38631217073532,
+            "pitch_range_hz": 97.90382695776745,
+            "min_pitch_hz": 71.73936383710603,
+            "max_pitch_hz": 169.64319079487348,
+            "pitch_variation_percent": 20.409064247245436,
+            "voiced_frame_count": 79
+        },
+        "clarity": {
+            "spectral_flatness": 0.015230563469231129,
+            "zero_crossing_rate": 0.0977404364224138,
+            "spectral_centroid_hz": 1485.7168800639638,
+            "clarity_score_percent": 98.47694396972656
+        },
+        "pacing": {
+            "avg_speech_segment_duration_seconds": 0.0912,
+            "speech_duration_std_seconds": 0.06376958522681478,
+            "pacing_consistency_percent": 30.077209181124147,
+            "total_speech_segments": 25,
+            "min_segment_duration_seconds": 0.01999999999999999,
+            "max_segment_duration_seconds": 0.20000000000000018
+        },
+        "expressiveness": {
+            "energy_variation_rms": 0.027385244145989418,
+            "mean_energy_rms": 0.025142356753349304,
+            "dynamic_range_db": 46.91869354248047,
+            "energy_variation_percent": 108.9207534790039,
+            "expressiveness_score_percent": 60.20453212362272
+        },
+        "confidence": {
+            "confidence_score_percent": 49.779212951660156,
+            "silence_contribution": 49.350649350649356,
+            "pitch_stability_contribution": 79.59093575275456,
+            "energy_contribution": 46.680198669433594,
+            "pacing_contribution": 30.077209181124147
+        },
+        "transcription": {
+            "transcript": "what is sprouting in a node JS application",
+            "word_count": 8,
+            "confidence": "high",
+            "method": "Google Speech Recognition"
+        }
+    }
+}

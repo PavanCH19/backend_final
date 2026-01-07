@@ -893,8 +893,22 @@ def evaluate_voice(data):
 # 🧪 EXAMPLE USAGE
 # ============================================================
 if __name__ == "__main__":
-    # Replace with your audio file
-    AUDIO_FILE = "input.wav"
+    import os
+    # Default test file - change this to a valid path on your system
+    AUDIO_FILE = "input.wav" 
+    
+    if not os.path.exists(AUDIO_FILE):
+        print(f"❌ Error: The file '{AUDIO_FILE}' was not found.")
+        print(f"Current directory: {os.getcwd()}")
+        print("\nNote: When running this script directly, please ensure 'input.wav' exists")
+        print("or modify the AUDIO_FILE variable in the script.")
+        # Try to find a fallback in utils if it exists
+        fallback = os.path.join("..", "..", "utils", "temp_analysis.wav")
+        if os.path.exists(fallback):
+            print(f"💡 Found a fallback: {fallback}")
+            AUDIO_FILE = fallback
+        else:
+            exit(1)
     
     # Create analyzer
     analyzer = ComprehensiveSpeechAnalyzer(
