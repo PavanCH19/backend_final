@@ -38,14 +38,8 @@ def mock_session_recommendations(user_json, k=5):
     
     # 2) Build diverse pool (match on tags OR required_skills)
     diverse_pool = []
-    # for q in questions:
-    #     q_tags = [t.lower() for t in q.get("tags", [])]
-    #     q_required = [r.lower() for r in q.get("required_skills", [])]
-    #     # match if any user skill appears in tags OR required_skills
-    #     if any(skill in q_tags or skill in q_required for skill in user_skills):
-    #         diverse_pool.append(q)
     for q in questions:
-        # Skip non-MCQ questions
+        # Skip non-MCQ questions for the direct pool
         if not is_mcq(q):
             continue
 
@@ -55,14 +49,29 @@ def mock_session_recommendations(user_json, k=5):
         if any(skill in q_tags or skill in q_required for skill in user_skills):
             diverse_pool.append(q)
 
-    
-    if not diverse_pool:
-        print("[INFO] No direct skill match found → using full question list")
-        # diverse_pool = questions
-        diverse_pool = [q for q in questions if is_mcq(q)]
+    # 🔧 FIX: Ensure we have at least k questions. If not, pad with other MCQs.
+    if len(diverse_pool) < k:
+        print(f"[INFO] Only {len(diverse_pool)} skill-matched questions found. Padding to {k}...")
+        all_mcqs = [q for q in questions if is_mcq(q)]
+        
+        # Get IDs already in diverse_pool to avoid duplicates
+        existing_ids = {q["_id"] for q in diverse_pool}
+        remaining_mcqs = [q for q in all_mcqs if q["_id"] not in existing_ids]
+        
+        # Shuffle remaining to get random ones
+        random.shuffle(remaining_mcqs)
+        needed = k - len(diverse_pool)
+        diverse_pool.extend(remaining_mcqs[:needed])
 
-    else:
-        print(f"[INFO] Diverse pool created with {len(diverse_pool)} questions")
+    # 🔧 FINAL FALLBACK: If still < k (maybe domain has very few MCQs), add ANY questions
+    if len(diverse_pool) < k:
+        existing_ids = {q["_id"] for q in diverse_pool}
+        other_questions = [q for q in questions if q["_id"] not in existing_ids]
+        random.shuffle(other_questions)
+        needed = k - len(diverse_pool)
+        diverse_pool.extend(other_questions[:needed])
+
+    print(f"[INFO] Diverse pool created with {len(diverse_pool)} questions")
     
     # 3) Score questions
     scored = []
@@ -110,23 +119,15 @@ def mock_session_recommendations(user_json, k=5):
     #     })
     #     result["question_ids"].append(q["_id"])
     for q, score in top_k:
-        if not is_mcq(q):
-            continue
-
         result["questions_recommended"].append({
             "question": q,
             "score": round(score, 2),
             "reasoning": f"Matched tags/required_skills: {', '.join((q.get('tags') or []) + (q.get('required_skills') or [])) or 'No direct match'}"
         })
         result["question_ids"].append(q["_id"])
-
-
     
     print("=== MOCK SESSION READY ===\n")
     return result
-
-
-
 
 def main(input_json):
     # Python receives data as dict

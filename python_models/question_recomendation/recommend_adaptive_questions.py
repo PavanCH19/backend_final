@@ -1178,6 +1178,11 @@ class AdaptiveRecommender:
                 "options": q.get("options", []), # Include options if available
                 "skills_required": q.get("required_skills", []),
                 "tags": q.get("tags", []),
+                # Add coding specific fields
+                "coding_instructions": q.get("coding_instructions"),
+                "expected_ans": q.get("expected_ans") or q.get("expected_answer"),
+                "testcases": q.get("testcases") or q.get("test_cases"),
+                "language": q.get("language") or (q.get("coding_instructions", {}).get("language") if isinstance(q.get("coding_instructions"), dict) else None),
                 "recommendation_score": round(item["total_score"], 2),
                 "score_breakdown": item["scores"],
                 "reasoning": item["reasoning"],

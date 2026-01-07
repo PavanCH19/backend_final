@@ -49,7 +49,12 @@ def load_domain_questions(domain_key):
             "explanation": item.get("explanation"),
             "tags": tags,
             "required_skills": required_skills,
-            "hints": hints
+            "hints": hints,
+            # Add coding specific fields
+            "coding_instructions": item.get("coding_instructions"),
+            "expected_ans": item.get("expected_ans") or item.get("expected_answer"),
+            "testcases": item.get("testcases") or item.get("test_cases"),
+            "language": item.get("language") or (item.get("coding_instructions", {}).get("language") if isinstance(item.get("coding_instructions"), dict) else None)
         }
         
         cleaned.append(cleaned_question)
