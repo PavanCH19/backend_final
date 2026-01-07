@@ -589,8 +589,21 @@ const submitTestController = async (req, res) => {
                         voiceEval?.transcription?.transcript;
 
                     let textEval = null;
-                    if (transcript) {
+                    // Only run text evaluation if transcript is valid and NOT a failure message
+                    if (transcript && !transcript.startsWith("[")) {
                         textEval = await cachedTextEval(question, transcript, 90000);
+                    } else if (transcript && transcript.startsWith("[")) {
+                        console.log(`[Voice] Skipping text evaluation due to transcription error: ${transcript}`);
+                        // Create a dummy result for failure
+                        textEval = {
+                            score: 0,
+                            grade: "F",
+                            feedback: { overall_assessment: "Audio was unintelligible. No text evaluation performed." },
+                            performance_summary: {
+                                key_concepts: "0/0 covered",
+                                word_count: "0 words"
+                            }
+                        };
                     }
 
                     evaluationResult = {

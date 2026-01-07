@@ -73,7 +73,23 @@ def main():
     # It counts as "evaluated" because the system handled it gracefully.
 
     # ----------------------------------------------------
-    # 3. PYTHON: INVALID INDENT
+    # 3. PYTHON: WITH TYPES & COMMENTS
+    # ----------------------------------------------------
+    q_py_types = {
+        "_id": "py_types_01",
+        "question_type": "coding",
+        "coding_instructions": {"language": "python", "function_signature": "is_positive(n: int) -> bool"},
+        "test_cases": [{"input": "5", "expected_output": "True"}]
+    }
+    code_py_types = """
+# This is a comment
+def is_positive(n: int) -> bool:
+    return n > 0
+    """
+    run_test("Python with Types & Comments", q_py_types, code_py_types, expected_status="evaluated", expected_grade_min=100)
+
+    # ----------------------------------------------------
+    # 4. PYTHON: INVALID INDENT
     # ----------------------------------------------------
     q_py = {
         "_id": "py_01",

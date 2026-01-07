@@ -4,6 +4,7 @@ import subprocess
 import tempfile
 import os
 import traceback
+import re
 import numpy as np
 
 # ---------------------------------------------------------
@@ -110,18 +111,34 @@ def evaluate_subjective(question, user_answer):
 # ---------------------------------------------------------
 # 2. CODING EVALUATION (PYTHON)
 # ---------------------------------------------------------
+def clean_python_signature(signature):
+    """
+    Removes type hints from Python function signatures to ensure compatibility
+    with basic exec() environments.
+    e.g. "is_positive(n: int) -> bool" -> "is_positive(n)"
+    """
+    if not signature: return ""
+    # 1. Remove return type hint "-> type"
+    signature = re.sub(r'\s*->\s*[a-zA-Z0-9_\[\], ]+', '', signature)
+    # 2. Remove parameter type hints ": type"
+    # Matches ": " followed by words, brackets, or dots
+    signature = re.sub(r':\s*[a-zA-Z0-9_\[\], \.]+', '', signature)
+    return signature
+
 def evaluate_coding_python(question, user_code):
-    print("✌️✌️✌️",question)
     """
     Evaluates Python code using restricted exec().
     Supports: NumPy, basic primitives.
     """
     tests = question.get("test_cases", [])
-    func_signature = question.get("coding_instructions", {}).get("function_signature", "")
+    raw_signature = question.get("coding_instructions", {}).get("function_signature", "")
+    
+    # CLEAN SIGNATURE for wrapping: "func(a: int) -> bool" -> "func(a)"
+    func_signature = clean_python_signature(raw_signature)
     func_name = func_signature.split("(")[0].strip()
 
     if not func_name:
-         return {"error": "Invalid function signature in question definition"}
+         return {"score": 0, "grade": "F", "error": "Invalid function signature in question definition"}
 
     passed = 0
     errors = []
@@ -146,7 +163,9 @@ def evaluate_coding_python(question, user_code):
         "abs": abs,
         "enumerate": enumerate,
         "zip": zip,
-        "sorted": sorted
+        "sorted": sorted,
+        "any": any,
+        "all": all
     }
 
     # Function Wrapper Logic (Auto-fix missing function def)
@@ -158,10 +177,16 @@ def evaluate_coding_python(question, user_code):
     # 1. Compile/Run User Code
     try:
         exec(user_code, safe_globals, local_env)
+    except SyntaxError as e:
+        return {
+            "score": 0, "grade": "F", 
+            "error": f"Syntax Error: {e.msg} at line {e.lineno}",
+            "details": f"Check your code structure near line {e.lineno}."
+        }
     except Exception as e:
         return {
             "score": 0, "grade": "F", 
-            "error": f"Syntax/Runtime Error: {str(e)}"
+            "error": f"Runtime Error: {str(e)}"
         }
 
     if func_name not in local_env:
@@ -229,8 +254,6 @@ def evaluate_coding_python(question, user_code):
         "test_results": test_results,
         "errors": errors[:3] # Limit error size
     }
-
-import re
 
 # ---------------------------------------------------------
 # 3. CODING EVALUATION (JAVASCRIPT)

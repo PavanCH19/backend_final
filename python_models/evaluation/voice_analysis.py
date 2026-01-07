@@ -720,6 +720,26 @@ class ComprehensiveSpeechAnalyzer:
             # Recalculate speech rate with actual transcript
             if transcription['word_count'] > 0:
                 results['speech_rate'] = self.calculate_speech_rate(transcription['transcript'])
+            
+            # CRITICAL FIX: If audio could not be understood, or resulted in 0 words,
+            # the audio-only metrics (Clarity, Confidence) must be penalized.
+            # Unintelligible audio should not have high clarity.
+            if transcription['confidence'] in ['none', 'error'] or transcription['word_count'] == 0:
+                print("⚠️ Transcription failed or zero words: Penalizing voice metrics.")
+                
+                # 1. Penalize Clarity
+                results['clarity']['clarity_score_percent'] = min(results['clarity']['clarity_score_percent'], 15.0)
+                
+                # 2. Penalize Confidence (which factors into grade)
+                results['confidence']['confidence_score_percent'] = min(results['confidence']['confidence_score_percent'], 10.0)
+                results['confidence']['silence_contribution'] = min(results['confidence']['silence_contribution'], 20.0)
+                results['confidence']['energy_contribution'] = min(results['confidence']['energy_contribution'], 20.0)
+                
+                # 3. Reset speech rates
+                results['speech_rate']['words_per_minute_actual'] = 0
+                results['speech_rate']['words_per_minute_estimated'] = 0
+                results['speech_rate']['estimated_words'] = 0
+                results['speech_rate']['actual_word_count'] = 0
         
         return results
     
